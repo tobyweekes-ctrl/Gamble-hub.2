@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matchday Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --white:#FFFFFF;
+    --offwhite:#F3FAF5;
+    --stripe:#E7F4EC;
+    --ink:#0E2B1B;
+    --green-deep:#0B3D25;
+    --green:#1E7A46;
+    --green-mid:#2E9459;
+    --green-light:#59B37F;
+    --amber:#B98A2E;
+    --brick:#A23B3B;
+    --line:#c9dfd0;
+    --font-head:'Poppins', sans-serif;
+    --font-body:'Inter', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--offwhite);color:var(--ink);font-family:var(--font-body);}
+  h1,h2,h3{font-family:var(--font-head);letter-spacing:0.01em;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 0 150px 0;}
+
+  header.top{background:var(--green-deep);color:var(--white);padding:26px 20px 20px;border-bottom:4px solid var(--green-light);}
+  header.top .kicker{font-size:11.5px;color:var(--green-light);font-weight:600;letter-spacing:.04em;margin-bottom:6px;}
+  header.top h1{font-size:28px;margin:0 0 6px;color:var(--white);font-weight:600;}
+  header.top p{margin:0;font-size:12.5px;line-height:1.6;color:#cfe9da;max-width:58ch;}
+
+  .controls{display:flex;gap:8px;align-items:center;padding:12px 14px;background:var(--white);border-bottom:1px solid var(--line);flex-wrap:wrap;position:sticky;top:0;z-index:15;}
+  .controls label{font-size:11px;color:var(--green-deep);font-weight:600;}
+  .controls select{font-family:var(--font-body);font-size:12px;padding:6px 8px;border:1px solid var(--green);background:var(--white);color:var(--ink);}
+
+  .coupon{background:var(--white);margin:14px 14px 0;border:1px solid var(--line);border-radius:4px;overflow:hidden;}
+  .league-head{display:flex;align-items:baseline;justify-content:space-between;padding:13px 16px;background:var(--stripe);border-bottom:2px solid var(--green);cursor:pointer;list-style:none;user-select:none;}
+  .league-head::-webkit-details-marker{display:none;}
+  .league-head::marker{content:'';}
+  .league-head h2::before{content:'▾ ';font-size:14px;color:var(--green);}
+  details.coupon:not([open]) .league-head h2::before{content:'▸ ';}
+  details.coupon:not([open]) .league-head{border-bottom:none;}
+  .quality-badge{font-size:8.5px;font-weight:700;padding:2px 5px;border-radius:3px;letter-spacing:.02em;margin-left:6px;}
+  .quality-badge.researched{background:var(--green);color:#fff;}
+  .quality-badge.estimate{background:var(--amber);color:#2b2005;}
+  .freshness{font-size:9.5px;color:#7d9689;font-weight:400;}
+  .league-head h2{font-size:18px;margin:0;font-weight:600;color:var(--green-deep);}
+  .league-head span{font-size:11px;color:#4d6b58;}
+
+  .empty-note{padding:16px;font-size:12.5px;line-height:1.7;color:#4d6b58;}
+
+  .match{padding:14px 16px;border-bottom:1px solid var(--line);}
+  .match:last-child{border-bottom:none;}
+  .match-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;gap:10px;}
+  .predict-box{flex-shrink:0;text-align:center;background:var(--stripe);border:1px solid var(--green);border-radius:4px;padding:6px 8px;min-width:104px;}
+  .predict-score{font-family:var(--font-head);font-size:16px;font-weight:600;color:var(--green-deep);line-height:1.1;white-space:nowrap;}
+  .predict-label{font-size:8.5px;color:#4d6b58;text-transform:uppercase;letter-spacing:.03em;margin-top:1px;}
+  .predict-goals{font-size:10.5px;color:var(--green);font-weight:600;margin-top:3px;}
+  .teams{font-family:var(--font-head);font-size:16px;font-weight:500;color:var(--ink);}
+  .kickoff{font-size:11px;color:#4d6b58;white-space:nowrap;margin-top:2px;font-weight:400;}
+
+  .probs{display:flex;gap:6px;margin-bottom:8px;}
+  .probfield{flex:1;}
+  .probfield label{display:block;font-size:9.5px;color:#4d6b58;margin-bottom:2px;}
+  .probfield input{width:100%;padding:6px 4px;font-family:var(--font-body);font-size:13px;border:1px solid var(--line);background:var(--white);text-align:center;border-radius:3px;}
+
+  .bar{height:8px;background:#dfeee3;display:flex;overflow:hidden;margin-bottom:10px;border:1px solid var(--line);border-radius:3px;}
+  .prob-warn{background:#fdf0d5;color:#7a4a10;border:1px solid var(--amber);border-radius:4px;padding:6px 8px;font-size:10.5px;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:8px;}
+  .prob-warn button{font-size:10px;padding:3px 8px;border:1px solid #7a4a10;background:#fff;border-radius:3px;cursor:pointer;flex-shrink:0;}
+  .bar div{height:100%;}
+  .bar .h{background:var(--green);}
+  .bar .d{background:var(--amber);}
+  .bar .a{background:var(--brick);}
+
+  .tier-row{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
+  .tier{font-size:10.5px;font-weight:600;padding:3px 8px;letter-spacing:.02em;border-radius:3px;}
+  .tier.nailed{background:var(--green);color:#fff;}
+  .tier.strong{background:var(--green-mid);color:#fff;}
+  .tier.lean{background:var(--amber);color:#2b2005;}
+  .tier.toss{background:var(--brick);color:#fff;}
+  .rec-text{font-size:12px;color:#2f4a3a;}
+
+  .market{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);}
+  .market-label{font-size:10.5px;font-weight:600;color:var(--green-deep);margin-bottom:6px;text-transform:none;}
+  .market-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .market-row input{width:52px;padding:6px;font-family:var(--font-body);font-size:12px;border:1px solid var(--line);text-align:center;border-radius:3px;}
+  .market-row .pct-label{font-size:10.5px;color:#4d6b58;}
+
+  .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px;}
+  .actions button{font-family:var(--font-body);font-size:11px;padding:7px 9px;border:1px solid var(--green-deep);background:var(--white);color:var(--green-deep);cursor:pointer;border-radius:3px;}
+  .actions button:hover{background:var(--green-deep);color:#fff;}
+  .actions button:disabled{opacity:.35;cursor:not-allowed;}
+
+  details.stats-toggle{margin-top:12px;border-top:1px solid var(--line);padding-top:10px;}
+  details.detail-toggle{margin-top:12px;border-top:1px solid var(--line);padding-top:10px;}
+  details.detail-toggle summary{cursor:pointer;font-size:12px;color:var(--green);font-weight:600;list-style:none;}
+  details.detail-toggle summary::-webkit-details-marker{display:none;}
+  details.detail-toggle summary::before{content:"▸ ";}
+  details.detail-toggle[open] summary::before{content:"▾ ";}
+  details.stats-toggle summary{cursor:pointer;font-size:12px;color:var(--green);font-weight:600;list-style:none;}
+  details.stats-toggle summary::-webkit-details-marker{display:none;}
+  details.stats-toggle summary::before{content:"▸ ";}
+  details.stats-toggle[open] summary::before{content:"▾ ";}
+  .stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;}
+  .stats-col h4{font-size:11.5px;margin:0 0 6px;color:var(--green-deep);}
+  .stat-line{display:flex;justify-content:space-between;align-items:center;font-size:11px;margin-bottom:4px;color:#2f4a3a;}
+  .stat-line input{width:52px;padding:4px;font-size:11px;border:1px solid var(--line);text-align:center;border-radius:3px;font-family:var(--font-body);}
+  .ref-row{grid-column:1/3;font-size:11px;margin-top:4px;}
+  .ref-row input{padding:5px;border:1px solid var(--line);border-radius:3px;font-family:var(--font-body);font-size:11px;}
+  .ref-row input.ref-name{width:60%;margin-right:6px;}
+  .ref-row input.ref-cards{width:70px;}
+  .note-row{grid-column:1/3;font-size:11px;margin-top:8px;}
+  .note-row label{display:block;color:var(--green-deep);font-weight:600;margin-bottom:3px;}
+  .note-row textarea{width:100%;font-family:var(--font-body);font-size:11px;padding:6px;border:1px solid var(--line);border-radius:3px;resize:vertical;min-height:38px;}
+  .est-flag{font-size:9.5px;color:var(--amber);margin-top:6px;grid-column:1/3;}
+
+  .del-match{margin-left:auto;background:none;border:none;color:var(--brick);font-size:11px;cursor:pointer;text-decoration:underline;padding:0;}
+
+  .add-match{padding:14px 16px;background:var(--stripe);}
+  .add-match summary{cursor:pointer;font-size:12.5px;color:var(--green);font-weight:600;}
+  .add-form{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;}
+  .add-form input{padding:7px;font-family:var(--font-body);font-size:12px;border:1px solid var(--line);border-radius:3px;}
+  .add-form button{grid-column:1/3;padding:8px;font-family:var(--font-body);font-size:12px;background:var(--green-deep);color:#fff;border:none;cursor:pointer;margin-top:2px;border-radius:3px;}
+
+  .caveat{margin:18px 14px 0;padding:14px 16px;background:var(--green-deep);color:#cfe9da;font-size:11px;line-height:1.7;border-left:4px solid var(--green-light);border-radius:4px;}
+
+  .slip-toggle{position:fixed;bottom:0;left:0;right:0;background:var(--green-deep);color:var(--white);padding:10px 16px;display:flex;justify-content:space-between;align-items:center;font-family:var(--font-head);font-size:14px;cursor:pointer;border-top:2px solid var(--green-light);z-index:20;}
+  .slip-toggle .n{background:var(--green-light);color:var(--green-deep);border-radius:50%;width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-family:var(--font-body);margin-right:8px;}
+  .slip-panel{position:fixed;bottom:0;left:0;right:0;max-height:80vh;overflow-y:auto;background:var(--white);border-top:3px solid var(--green-light);z-index:30;transform:translateY(100%);transition:transform .25s ease;}
+  .slip-panel.open{transform:translateY(0);}
+  .slip-head{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:2px solid var(--green-deep);}
+  .slip-head h3{margin:0;font-size:17px;color:var(--green-deep);}
+  .slip-head button{background:none;border:none;font-size:20px;cursor:pointer;color:var(--green-deep);}
+  .slip-leg{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid var(--line);font-size:13px;}
+  .slip-leg .x{background:none;border:none;color:var(--brick);cursor:pointer;font-size:14px;}
+  .slip-empty{padding:20px 16px;font-size:12.5px;color:#4d6b58;}
+  .slip-summary{padding:14px 16px;background:var(--stripe);}
+  .slip-summary-row{display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;}
+  .slip-summary-row.big{font-family:var(--font-head);font-size:19px;font-weight:600;margin-top:6px;color:var(--green-deep);}
+  .slip-btns{display:flex;gap:8px;padding:14px 16px;}
+  .slip-btns button{flex:1;padding:10px;font-family:var(--font-body);font-size:12.5px;border:1px solid var(--green-deep);background:var(--white);color:var(--green-deep);cursor:pointer;border-radius:3px;}
+  .slip-btns button.primary{background:var(--green);color:#fff;border-color:var(--green);}
+
+  .history{padding:0 16px 16px;}
+  .history h4{font-size:13px;margin:12px 0 8px;color:var(--green-deep);}
+  .hist-item{border:1px solid var(--line);padding:10px 12px;margin-bottom:8px;font-size:12px;background:var(--white);border-radius:4px;}
+  .hist-item .legs{color:#4d6b58;margin:4px 0;}
+  .hist-item .row{display:flex;justify-content:space-between;align-items:center;}
+  .hist-item button{font-size:10.5px;padding:4px 8px;border:1px solid var(--green-deep);background:var(--white);cursor:pointer;margin-left:6px;border-radius:3px;}
+  .status-won{color:var(--green);font-weight:600;}
+  .status-lost{color:var(--brick);font-weight:600;}
+  .status-pending{color:var(--amber);font-weight:600;}
+  .stats-line{font-size:11.5px;color:#4d6b58;padding:0 16px 8px;}
+
+  @media (max-width:420px){
+    .probs{gap:4px;}
+    .teams{font-size:14.5px;}
+    .stats-grid{grid-template-columns:1fr;}
+    .ref-row,.note-row,.est-flag{grid-column:1/2;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="kicker">MATCH PROBABILITY LEDGER</div>
+    <h1>Matchday Ledger</h1>
+    <p>Win, BTTS and Over/Under markets for every fixture, plus a stats panel per game. Tap a fixture's "Match stats & history" to see goals for/against, cards, referee and form — edit any number to match your own data.</p>
+  </header>
+
+  <div class="controls">
+    <label for="sortMode">Sort games by</label>
+    <select id="sortMode">
+      <option value="kickoff">Kickoff time</option>
+      <option value="confidence">Confidence (highest first)</option>
+      <option value="alpha">Home team A–Z</option>
+    </select>
+  </div>
+  <div class="controls" style="border-top:none;flex-direction:column;align-items:stretch;">
+    <label style="margin-bottom:2px;">Generate a slip targeting real bookmaker-style odds</label>
+    <div style="display:flex;gap:8px;">
+      <button id="slip5" style="flex:1;padding:10px;font-family:var(--font-body);font-size:12.5px;background:var(--green);color:#fff;border:none;border-radius:4px;cursor:pointer;">~5/1</button>
+      <button id="slip10" style="flex:1;padding:10px;font-family:var(--font-body);font-size:12.5px;background:var(--green);color:#fff;border:none;border-radius:4px;cursor:pointer;">~10/1</button>
+      <button id="slip20" style="flex:1;padding:10px;font-family:var(--font-body);font-size:12.5px;background:var(--green);color:#fff;border:none;border-radius:4px;cursor:pointer;">~20/1</button>
+    </div>
+  </div>
+
+  <div id="leagues"></div>
+
+  <div class="caveat">
+    <strong>Read this before you stake anything:</strong> combined probability multiplies each leg's chance together, which assumes independence — it always overstates how "safe" a long acca really is. Goals-for/against, cards and referee figures are pre-filled from general club profile knowledge where shown — they are <em>estimates for illustration, not verified live season data</em> — replace them with real numbers from a stats site before relying on them. This tool doesn't know about injuries, lineups or news after you entered the data. Gamble responsibly.
+  </div>
+
+  <div class="stats-line" id="statsLine"></div>
+  <div class="history" id="historyList"></div>
+</div>
+
+<div class="slip-toggle" id="slipToggle">
+  <span><span class="n" id="slipCount">0</span>Bet slip</span>
+  <span id="slipPreview">Tap to build your acca</span>
+</div>
+
+<div class="slip-panel" id="slipPanel">
+  <div class="slip-head">
+    <h3>Bet slip</h3>
+    <button id="closeSlip">&times;</button>
+  </div>
+  <div id="slipLegs"></div>
+  <div class="slip-summary" id="slipSummary"></div>
+  <div class="slip-btns">
+    <button id="clearSlip">Clear slip</button>
+    <button id="saveSlip" class="primary">Save this acca</button>
+  </div>
+</div>
+
+<script>
+const STORAGE_KEY = 'matches:v2';
+const SLIP_KEY = 'slip:v2';
+const HISTORY_KEY = 'history:v2';
+
+// Estimated season profile stats (Claude's general football knowledge, NOT live-verified).
+// gf/ga = goals per game (season), cards = cards per game (season). Blank/undefined = no confident estimate.
+const TEAM_PROFILE = {
+  'Fenerbahçe': {gf:1.7, ga:1.3, cards:2.3},
+  'AS Roma': {gf:1.6, ga:1.1, cards:2.0},
+  'PSV Eindhoven': {gf:2.1, ga:1.0, cards:1.8},
+  'Shakhtar Donetsk': {gf:1.5, ga:1.2, cards:2.1},
+  'Como 1907': {gf:1.3, ga:1.4, cards:1.9},
+  'RB Leipzig': {gf:1.9, ga:1.2, cards:1.9},
+  'Bayern Munich': {gf:2.6, ga:0.9, cards:1.5},
+  'Bodø/Glimt': {gf:1.8, ga:1.3, cards:1.6},
+  'Manchester United': {gf:1.6, ga:1.3, cards:2.0},
+  'Slavia Prague': {gf:1.7, ga:1.0, cards:1.8},
+  'Racing Lens': {gf:1.5, ga:1.2, cards:2.2},
+  'Aston Villa': {gf:1.6, ga:1.3, cards:1.9},
+  'Nottingham Forest': {gf:1.3, ga:1.4, cards:2.1},
+  'Bournemouth': {gf:1.5, ga:1.4, cards:1.8},
+  'Brentford': {gf:1.5, ga:1.4, cards:1.9},
+  'Chelsea': {gf:1.9, ga:1.2, cards:2.0},
+  'Crystal Palace': {gf:1.4, ga:1.2, cards:2.1},
+  'Ipswich Town': {gf:1.1, ga:1.9, cards:1.8},
+  'Liverpool': {gf:2.1, ga:1.1, cards:1.7},
+  'Fulham': {gf:1.4, ga:1.4, cards:1.8},
+  'Tottenham': {gf:1.9, ga:1.4, cards:2.0},
+  'Everton': {gf:1.3, ga:1.3, cards:2.1},
+  'Arsenal': {gf:1.9, ga:0.9, cards:1.9},
+  'Brighton': {gf:1.6, ga:1.3, cards:1.9},
+  'Manchester City': {gf:2.2, ga:1.0, cards:1.7},
+  'Leeds United': {gf:1.4, ga:1.6, cards:2.0},
+  'Newcastle United': {gf:1.8, ga:1.1, cards:2.0},
+};
+
+const SEED_MATCHES = [
+  // Champions League: no fixtures this week (round just finished; next matchday is 13 Oct).
+  {id:'ep1', league:'Premier League', home:'Aston Villa', away:'Nottingham Forest', kickoff:'2026-09-12T15:00:00+01:00', hw:41.7, dw:28.2, aw:30.1, btts:40, ou25:35, referee:'', refCards:null,
+    form:"Villa are yet to score or win in the league this season (0 goals in 3 PL games), though they beat Club Brugge 3-2 in the Champions League midweek. Forest are also winless (D2 L1), including a 0-0 draw with Tottenham.",
+    h2h:"16 meetings: Aston Villa have won 8, Forest 4, with 4 draws. Forest haven't won at Villa Park since October 1994.",
+    gfH:0.7, gaH:1.3, gfA:1.3, gaA:1.5},
+  {id:'ep2', league:'Premier League', home:'Bournemouth', away:'Brentford', kickoff:'2026-09-12T15:00:00+01:00', hw:38.4, dw:26.4, aw:35.2, btts:68, ou25:62, referee:'', refCards:null,
+    form:"Bournemouth have 2 points from 3 (1 win, 2 draws), scoring at 1.5/game but leaking goals. Brentford are unbeaten (1 win, 2 draws), conceding just 2 in 3 league games.",
+    h2h:"48 meetings all-time: Brentford lead 23 wins to 14, with 11 draws. The last meeting finished 0-0.",
+    gfH:1.5, gaH:1.7, gfA:1.7, gaA:0.7},
+  {id:'ep3', league:'Premier League', home:'Chelsea', away:'Hull City', kickoff:'2026-09-12T15:00:00+01:00', hw:78.6, dw:13.4, aw:8.0, btts:55, ou25:65, referee:'', refCards:null,
+    form:"Chelsea: 2 wins, 1 loss, 8 scored/7 conceded — a high-event start under Xabi Alonso. Hull are unbeaten (2W 1D) and yet to concede a Premier League goal all season.",
+    h2h:"Chelsea have won the last 9 head-to-heads; Hull have never won in 18 visits to Stamford Bridge (D3 L15).",
+    gfH:2.7, gaH:2.3, gfA:1.0, gaA:0.0},
+  {id:'ep4', league:'Premier League', home:'Crystal Palace', away:'Ipswich Town', kickoff:'2026-09-12T15:00:00+01:00', hw:50.6, dw:25.4, aw:24.0, btts:55, ou25:58, referee:'', refCards:null,
+    form:"Palace have won back-to-back games after a slow start, including a 3-2 comeback at Fulham. Ipswich have lost their last 5 meetings with Palace and sit 14th after 3 games.",
+    h2h:"85 meetings: Ipswich actually lead 32-29 with 24 draws, but Palace have won the last 5 in a row, outscoring Ipswich 9-3 in that run.",
+    gfH:1.5, gaH:1.8, gfA:1.1, gaA:1.9},
+  {id:'ep5', league:'Premier League', home:'Liverpool', away:'Fulham', kickoff:'2026-09-12T15:00:00+01:00', hw:67.9, dw:17.9, aw:14.2, btts:62, ou25:60, referee:'', refCards:null,
+    form:"Liverpool are unbeaten in all competitions (W2 D2), including a 2-1 Champions League win over Atletico midweek, but have kept only one clean sheet. Fulham are winless in 7 under new boss Alvaro Arbeloa and have lost all 3 league games.",
+    h2h:"Liverpool have won just 2 of the last 6 meetings but are unbeaten in 5 home H2Hs (W4 D1); Fulham haven't won at Anfield since 2021.",
+    gfH:2.0, gaH:1.3, gfA:1.3, gaA:2.3},
+  {id:'ep6', league:'Premier League', home:'Tottenham', away:'Everton', kickoff:'2026-09-12T17:30:00+01:00', hw:46.6, dw:26.8, aw:26.6, btts:45, ou25:38, referee:'', refCards:null,
+    form:"Spurs are 18th with 1 point from 3 (0-3 at Brentford, 0-2 vs Newcastle, 0-0 at Forest) and are yet to register a shot on target in some games. Everton are unbeaten — one of 8 teams with a clean record — and have drawn their last 2.",
+    h2h:"64 meetings: Spurs lead 15-6 with 12 draws, and haven't lost at home to Everton since the 2020-21 season opener.",
+    gfH:0.7, gaH:1.3, gfA:1.2, gaA:0.9},
+  {id:'ep7', league:'Premier League', home:'Sunderland', away:'Arsenal', kickoff:'2026-09-12T20:00:00+01:00', hw:12.6, dw:22.2, aw:65.2, btts:40, ou25:40, referee:'', refCards:null,
+    form:"Sunderland have the division's second-tightest defence, facing just 5 shots on target in 3 games. Arsenal have won all 5 competitive matches this season, conceding only once.",
+    h2h:"38 meetings: Arsenal dominate 23-4 with 11 draws; Sunderland haven't beaten Arsenal in their last 14 meetings across all competitions.",
+    gfH:1.0, gaH:0.7, gfA:2.0, gaA:0.3},
+  {id:'ep8', league:'Premier League', home:'Coventry City', away:'Brighton', kickoff:'2026-09-13T14:00:00+01:00', hw:24.1, dw:25.3, aw:50.6, btts:60, ou25:62, referee:'', refCards:null,
+    form:"Coventry have lost all 3 league games since promotion (-5 goal difference). Brighton's last 5 read W L W L D, including a 4-0 win at Villa and a 4-3 defeat at Chelsea.",
+    h2h:"8 meetings: Coventry actually lead 4-2 with 2 draws, though Brighton have won 2 of the last 3.",
+    gfH:0.7, gaH:2.2, gfA:2.0, gaA:2.0},
+  {id:'ep9', league:'Premier League', home:'Manchester United', away:'Manchester City', kickoff:'2026-09-13T16:30:00+01:00', hw:30.6, dw:25.1, aw:44.3, btts:69.6, ou25:63.4, referee:'Michael Oliver (reported)', refCards:null,
+    form:"United: 5 wins, 2 draws, 1 loss in last 8, averaging 2.3 goals for and 1.4 against. City lead the table with a perfect 9 points from 3 games.",
+    h2h:"70 meetings all-time: United lead 34-26 with 10 draws. United won the last meeting at Old Trafford 2-0 in January 2026.",
+    gfH:2.3, gaH:1.4, gfA:2.4, gaA:0.7},
+  {id:'ep10', league:'Premier League', home:'Leeds United', away:'Newcastle United', kickoff:'2026-09-14T20:00:00+01:00', hw:39.4, dw:27.2, aw:33.4, btts:55, ou25:52, referee:'', refCards:null,
+    form:"Leeds have a strong home record (6 wins, 1 draw in last 10 at Elland Road). Newcastle have won just 1 of their last 5 away games.",
+    h2h:"31 meetings: Newcastle lead 15-7 with 9 draws; the last meeting finished Leeds 0-2 Newcastle.",
+    gfH:1.4, gaH:0.9, gfA:1.8, gaA:1.4},
+
+  // Championship — no live odds feed for this division; probabilities are general estimates.
+  {id:'ch1', league:'Championship', home:'Sheffield United', away:'Wolverhampton Wanderers', kickoff:'2026-09-13T12:00:00+01:00', hw:32, dw:27, aw:41, btts:55, ou25:52, referee:'', refCards:null,
+    form:"General estimate: Wolves dropped into the Championship as one of the division's bigger-spending squads and are expected to be near the top of the table. Sheffield United have home advantage at Bramall Lane.",
+    h2h:"No specific H2H record pulled for this fixture — add your own if you have it.",
+    gfH:1.1, gaH:1.5, gfA:1.5, gaA:1.1},
+  {id:'ch2', league:'Championship', home:'West Bromwich Albion', away:'Queens Park Rangers', kickoff:'2026-09-12T12:30:00+01:00', hw:45, dw:27, aw:28, btts:58, ou25:55, referee:'', refCards:null,
+    form:"General estimate based on typical recent standing: West Brom have usually finished mid-to-upper table in recent Championship seasons; QPR have often been in the lower half.",
+    h2h:"No specific H2H record pulled for this fixture — add your own if you have it.",
+    gfH:1.3, gaH:1.2, gfA:1.1, gaA:1.4},
+  {id:'ch3', league:'Championship', home:'Southampton', away:'Bristol City', kickoff:'2026-09-12T15:00:00+01:00', hw:52, dw:26, aw:22, btts:52, ou25:50, referee:'', refCards:null,
+    form:"Southampton dropped into the Championship as one of the highest-budget squads in the division and are expected to challenge near the top. Bristol City have historically been a solid mid-table side.",
+    h2h:"No specific H2H record pulled for this fixture — add your own if you have it.",
+    gfH:1.6, gaH:1.1, gfA:1.2, gaA:1.4},
+  {id:'ch4', league:'Championship', home:'Middlesbrough', away:'Norwich City', kickoff:'2026-09-12T15:00:00+01:00', hw:44, dw:28, aw:28, btts:55, ou25:53, referee:'', refCards:null,
+    form:"Middlesbrough reached last season's play-off final (lost to Hull City) and carry that momentum into this campaign. Norwich have been solid without being prolific in recent Championship seasons.",
+    h2h:"No specific H2H record pulled for this fixture — add your own if you have it.",
+    gfH:1.5, gaH:1.0, gfA:1.3, gaA:1.3},
+
+  // La Liga — major fixtures only, from this week's round.
+  {id:'ll1', league:'La Liga', home:'Real Madrid', away:'Rayo Vallecano', kickoff:'2026-09-12T20:00:00+01:00', hw:87.5, dw:8.4, aw:4.1, btts:40, ou25:62, referee:'', refCards:null,
+    form:"Real Madrid suffered a shock 1-0 loss away to Real Betis last time out, but remain the strong favourites at home. Rayo are unbeaten in their last two (W1 D1) after a 3-2 win over Racing Santander.",
+    h2h:"Real Madrid have historically dominated this fixture at the Bernabéu, rarely dropping points against Rayo at home.",
+    gfH:2.2, gaH:1.0, gfA:1.2, gaA:1.5},
+  {id:'ll2', league:'La Liga', home:'Levante', away:'FC Barcelona', kickoff:'2026-09-13T15:15:00+01:00', hw:5.6, dw:9.8, aw:84.6, btts:45, ou25:68, referee:'', refCards:null,
+    form:"Levante drew 0-0 with Malaga last time out and sit in the bottom half. Barcelona have been prolific, winning 5-0 away at Valencia in their last league outing.",
+    h2h:"Barcelona's squad quality gives them a heavy historical edge in this fixture, especially away from home.",
+    gfH:0.9, gaH:1.8, gfA:2.8, gaA:1.3},
+  {id:'ll3', league:'La Liga', home:'Real Sociedad', away:'Atletico Madrid', kickoff:'2026-09-13T20:00:00+01:00', hw:33.2, dw:26.8, aw:40.0, btts:52, ou25:50, referee:'', refCards:null,
+    form:"Real Sociedad won 3-2 away at Elche last time out. Atletico Madrid are unbeaten in 2 (W1 D0 in this stretch), including a 3-0 win away at Athletic Bilbao.",
+    h2h:"Close recent meetings between the sides, with no team dominating this fixture over the last several seasons.",
+    gfH:1.4, gaH:1.3, gfA:1.6, gaA:1.0},
+
+  // Serie A — major fixtures only, from this week's round.
+  {id:'sa1', league:'Serie A', home:'Lazio', away:'AC Milan', kickoff:'2026-09-12T17:00:00+01:00', hw:28.6, dw:29.7, aw:41.7, btts:60, ou25:58, referee:'', refCards:null,
+    form:"Lazio lost 2-1 away at Udinese last time out. Milan drew 1-1 at Juventus in a game they'll feel they should have won.",
+    h2h:"Milan have generally had the upper hand in recent meetings between the two sides.",
+    gfH:1.5, gaH:1.4, gfA:1.6, gaA:1.2},
+  {id:'sa2', league:'Serie A', home:'Napoli', away:'Bologna', kickoff:'2026-09-13T17:00:00+01:00', hw:54.3, dw:26.3, aw:19.4, btts:50, ou25:52, referee:'', refCards:null,
+    form:"Napoli lost 1-0 away at Arsenal in the Champions League midweek but remain one of Serie A's strongest sides. Bologna drew 2-2 at home to Sassuolo last time out.",
+    h2h:"Napoli have historically been strong at home against mid-table opposition like Bologna.",
+    gfH:1.7, gaH:1.0, gfA:1.3, gaA:1.3},
+  {id:'sa3', league:'Serie A', home:'Inter Milan', away:'Udinese', kickoff:'2026-09-14T19:45:00+01:00', hw:77.3, dw:14.4, aw:8.3, btts:45, ou25:60, referee:'', refCards:null,
+    form:"Inter won a high-scoring 3-2 thriller against Napoli last time out. Udinese beat Lazio 2-1 away, a rare positive result on the road.",
+    h2h:"Inter's squad depth gives them a heavy historical edge over Udinese at San Siro.",
+    gfH:2.2, gaH:1.3, gfA:1.1, gaA:1.8},
+
+  // Bundesliga — major fixtures only, from this week's round.
+  {id:'bl1', league:'Bundesliga', home:'Borussia Dortmund', away:'SC Paderborn', kickoff:'2026-09-12T14:30:00+01:00', hw:78.3, dw:13.0, aw:8.7, btts:45, ou25:68, referee:'', refCards:null,
+    form:"Dortmund won 3-2 away at Hoffenheim last time out, continuing a strong scoring run. Paderborn, newly promoted, lost 0-1 at home to Freiburg.",
+    h2h:"Dortmund's quality gap over a newly promoted side like Paderborn is historically significant.",
+    gfH:2.2, gaH:1.3, gfA:0.9, gaA:2.0},
+  {id:'bl2', league:'Bundesliga', home:'FC Augsburg', away:'Bayer Leverkusen', kickoff:'2026-09-12T14:30:00+01:00', hw:24.0, dw:22.7, aw:53.3, btts:55, ou25:58, referee:'', refCards:null,
+    form:"Augsburg won 4-1 away at Eintracht Frankfurt last time out — good recent attacking form. Leverkusen hammered Union Berlin 4-0 in their last outing.",
+    h2h:"Leverkusen have generally had the upper hand in recent seasons against Augsburg.",
+    gfH:1.9, gaH:1.4, gfA:2.3, gaA:1.0},
+  {id:'bl3', league:'Bundesliga', home:'SV Elversberg', away:'Bayern Munich', kickoff:'2026-09-13T16:30:00+01:00', hw:6.4, dw:9.5, aw:84.1, btts:35, ou25:78, referee:'', refCards:null,
+    form:"Elversberg, newly promoted, won a wild 4-3 game against Borussia Monchengladbach last time out. Bayern are unbeaten in 2026 barring a single 0-0 draw at Schalke.",
+    h2h:"First meetings in the top flight are rare for Elversberg against a club of Bayern's stature — expect a heavy quality gap.",
+    gfH:1.4, gaH:1.8, gfA:3.0, gaA:1.0},
+
+  // Ligue 1 — major fixtures only, from this week's round.
+  {id:'lg1', league:'Ligue 1', home:'Stade Brest', away:'Paris Saint-Germain', kickoff:'2026-09-13T19:45:00+01:00', hw:9.6, dw:14.3, aw:76.1, btts:42, ou25:62, referee:'', refCards:null,
+    form:"Brest beat Le Havre 2-1 last time out. PSG are in ruthless form, having beaten Slovan Bratislava 6-1 in the Champions League and Monaco 2-1 in Ligue 1.",
+    h2h:"PSG's squad quality gives them a heavy historical edge over Brest, especially away from home.",
+    gfH:1.3, gaH:1.6, gfA:2.5, gaA:1.0},
+  {id:'lg2', league:'Ligue 1', home:'Strasbourg', away:'AS Monaco', kickoff:'2026-09-12T16:15:00+01:00', hw:30.8, dw:25.5, aw:43.7, btts:58, ou25:55, referee:'', refCards:null,
+    form:"Strasbourg thrashed Troyes 6-2 last time out — eye-catching attacking form. Monaco lost 2-1 away at PSG despite taking the lead.",
+    h2h:"Fairly even recent meetings between the two sides with goals at both ends common.",
+    gfH:2.0, gaH:1.5, gfA:1.6, gaA:1.2},
+  {id:'lg3', league:'Ligue 1', home:'Lille', away:'ESTAC Troyes', kickoff:'2026-09-13T14:00:00+01:00', hw:68.9, dw:18.6, aw:12.5, btts:48, ou25:55, referee:'', refCards:null,
+    form:"Lille beat Toulouse 1-0 away last time out. Troyes were thrashed 6-2 by Strasbourg, exposing a leaky defence.",
+    h2h:"Lille have generally had the upper hand at home against newly promoted sides like Troyes.",
+    gfH:1.5, gaH:1.0, gfA:1.0, gaA:2.2},
+];
+
+const LEAGUE_ORDER = ['Champions League','Premier League','Championship','La Liga','Serie A','Bundesliga','Ligue 1','Europa League'];
+const LEAGUES_WITH_NO_SEED = ['Europa League'];
+
+// When this batch of fixtures/probabilities was last researched, and how confident
+// the underlying numbers are. Championship has no live odds feed, so its win/draw/away
+// splits are general estimates rather than pulled from a modelled source.
+const DATA_UPDATED = 'Fri 11 Sep, 09:30';
+const LEAGUE_QUALITY = {
+  'Premier League':'researched', 'La Liga':'researched', 'Serie A':'researched',
+  'Bundesliga':'researched', 'Ligue 1':'researched', 'Champions League':'researched',
+  'Championship':'estimate', 'Europa League':'estimate',
+};
+
+let matches = [];
+let slip = [];
+let history = [];
+let slipOpen = false;
+let sortMode = 'kickoff';
+
+function loadJSON(key, fallback){
+  try{
+    const value = localStorage.getItem(key);
+    return value !== null ? JSON.parse(value) : fallback;
+  }catch(e){
+    console.error('load failed for', key, e);
+    return fallback;
+  }
+}
+function saveJSON(key, value){
+  try{
+    localStorage.setItem(key, JSON.stringify(value));
+    return true;
+  }catch(e){
+    console.error('save failed for', key, e);
+    return false;
+  }
+}
+
+function loadAll(){
+  matches = loadJSON(STORAGE_KEY, SEED_MATCHES.slice());
+  slip = loadJSON(SLIP_KEY, []);
+  history = loadJSON(HISTORY_KEY, []);
+  render();
+}
+
+function persistMatches(){ saveJSON(STORAGE_KEY, matches); }
+function persistSlip(){ saveJSON(SLIP_KEY, slip); }
+function persistHistory(){ saveJSON(HISTORY_KEY, history); }
+
+function tierFor(pct){
+  if(pct>=80) return {cls:'nailed', label:'NAILED ON'};
+  if(pct>=65) return {cls:'strong', label:'STRONG'};
+  if(pct>=55) return {cls:'lean', label:'LEAN'};
+  return {cls:'toss', label:'TOSS-UP'};
+}
+
+function recommendation(m){
+  const best = Math.max(m.hw, m.aw);
+  const bestTeam = m.hw>=m.aw ? m.home : m.away;
+  const tier = tierFor(best);
+  if(tier.cls==='toss'){
+    if(m.btts!=null && m.btts>=58){
+      return {text:`No safe winner here (${best.toFixed(0)}%) — BTTS at ${m.btts}% is the better angle.`, tier};
+    }
+    return {text:`Genuine toss-up (${best.toFixed(0)}% best side). Check BTTS/Over-Under below instead.`, tier};
+  }
+  return {text:`${bestTeam} to win — ${best.toFixed(0)}% modelled probability.`, tier};
+}
+
+function marketRec(prob, yesLabel, noLabel){
+  if(prob==null) return {text:'No estimate available for this market yet.', tier:{cls:'toss', label:'NO DATA'}};
+  const side = prob>=50 ? yesLabel : noLabel;
+  const sideProb = prob>=50 ? prob : (100-prob);
+  const tier = tierFor(sideProb);
+  return {text:`${side} — ${sideProb.toFixed(0)}% modelled probability.`, tier};
+}
+
+function predictScore(m){
+  // Total goals: anchor to the Over/Under 2.5 estimate when we have one (keeps the
+  // scoreline consistent with the O/U market shown right below it), else fall back
+  // to the gf/ga blend.
+  let totalGoals;
+  if(m.ou25!=null){
+    totalGoals = 2.5 + (m.ou25 - 50) / 22;
+  } else if(m.gfH!=null && m.gaA!=null && m.gfA!=null && m.gaH!=null){
+    totalGoals = ((m.gfH + m.gaA) / 2) + ((m.gfA + m.gaH) / 2);
+  } else {
+    totalGoals = 2.5;
+  }
+  totalGoals = Math.min(Math.max(totalGoals, 1.2), 4.5);
+
+  // Goal split: driven by the win/draw/away percentages, not a separate calculation —
+  // this is what keeps the scoreline lined up with the win-probability tier shown above it.
+  const diff = (m.hw - m.aw) / 100; // -1..1, positive favours home
+  let homeShare = 0.5 + diff * 0.42;
+  homeShare = Math.min(Math.max(homeShare, 0.12), 0.88);
+
+  let expH = totalGoals * homeShare;
+  let expA = totalGoals * (1 - homeShare);
+  let roundedH = Math.max(0, Math.round(expH));
+  let roundedA = Math.max(0, Math.round(expA));
+
+  return {home:roundedH, away:roundedA, expH, expA, total: totalGoals};
+}
+
+// Bookmaker-style odds: real books shorten fair odds by an overround margin.
+// 1x2/win markets run a smaller margin (~6%) than two-way markets like BTTS/Over-Under (~9%),
+// broadly in line with what a book like Bet365 prices around a modelled probability.
+const MARGIN_WIN = 0.06;
+const MARGIN_TWOWAY = 0.09;
+
+function toBookOdds(prob, type){
+  if(prob==null || prob<=0) return null;
+  const margin = (type==='btts' || type==='ou') ? MARGIN_TWOWAY : MARGIN_WIN;
+  const fair = 100/prob;
+  return fair / (1+margin);
+}
+
+function fractionApprox(decimalOdds){
+  const frac = Math.max(decimalOdds-1, 0.01);
+  return `${frac.toFixed(frac<3?1:0)}/1`;
+}
+
+const TEAM_SHORT = {
+  'Manchester United':'Man Utd', 'Manchester City':'Man City', 'Nottingham Forest':"Nott'm Forest",
+  'Paris Saint-Germain':'PSG', 'Tottenham':'Spurs', 'Wolverhampton Wanderers':'Wolves',
+  'West Bromwich Albion':'West Brom', 'Queens Park Rangers':'QPR', 'Bristol City':'Bristol C',
+  'Crystal Palace':'C Palace', 'Newcastle United':'Newcastle', 'Leeds United':'Leeds',
+  'Real Sociedad':'Sociedad', 'Atletico Madrid':'Atletico', 'Real Madrid':'Real Madrid',
+  'Rayo Vallecano':'Rayo', 'AS Monaco':'Monaco', 'Racing Lens':'Lens',
+  'Bayer Leverkusen':'Leverkusen', 'Borussia Dortmund':'Dortmund', 'SC Paderborn':'Paderborn',
+  'SV Elversberg':'Elversberg', 'Bayern Munich':'Bayern', 'Inter Milan':'Inter',
+  'AC Milan':'Milan', 'Stade Brest':'Brest', 'ESTAC Troyes':'Troyes',
+  'Sheffield United':'Sheff Utd', 'Aston Villa':'Aston Villa',
+};
+
+function escapeHTML(str){
+  if(str==null) return '';
+  return String(str)
+    .replaceAll('&','&amp;')
+    .replaceAll('<','&lt;')
+    .replaceAll('>','&gt;')
+    .replaceAll('"','&quot;')
+    .replaceAll("'",'&#039;');
+}
+
+function abbrev(name){
+  if(TEAM_SHORT[name]) return TEAM_SHORT[name];
+  return name.length>14 ? name.split(' ').map(w=>w[0]).join('').slice(0,4).toUpperCase() : name;
+}
+
+function formatKickoff(raw){
+  const d = new Date(raw);
+  if(isNaN(d.getTime())) return raw; // freeform text from manually-added fixtures
+  return d.toLocaleString('en-GB', {weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'});
+}
+
+function sortedList(list){
+  const arr = list.slice();
+  if(sortMode==='confidence'){
+    arr.sort((a,b)=> Math.max(b.hw,b.aw) - Math.max(a.hw,a.aw));
+  } else if(sortMode==='alpha'){
+    arr.sort((a,b)=> a.home.localeCompare(b.home));
+  } else {
+    arr.sort((a,b)=>{
+      const da = new Date(a.kickoff), db = new Date(b.kickoff);
+      const va = isNaN(da.getTime()) ? Infinity : da.getTime();
+      const vb = isNaN(db.getTime()) ? Infinity : db.getTime();
+      return va - vb;
+    });
+  }
+  return arr;
+}
+
+function render(){
+  renderLeagues();
+  renderSlip();
+  renderHistory();
+}
+
+function renderLeagues(){
+  const container = document.getElementById('leagues');
+  container.innerHTML='';
+  LEAGUE_ORDER.forEach(league=>{
+    const list = sortedList(matches.filter(m=>m.league===league));
+    const coupon = document.createElement('details');
+    coupon.className='coupon';
+    coupon.open = true;
+
+    const head = document.createElement('summary');
+    head.className='league-head';
+    const quality = LEAGUE_QUALITY[league] || 'estimate';
+    const qualityBadge = quality==='researched'
+      ? `<span class="quality-badge researched">RESEARCHED</span>`
+      : `<span class="quality-badge estimate">ESTIMATE</span>`;
+    head.innerHTML = `<h2>${league}</h2><span>${list.length} fixture${list.length!==1?'s':''} ${qualityBadge}<br><span class="freshness">Updated: ${DATA_UPDATED}</span></span>`;
+    coupon.appendChild(head);
+
+    const body = document.createElement('div');
+    body.className='league-body';
+
+    if(list.length===0){
+      const note = document.createElement('div');
+      note.className='empty-note';
+      note.textContent = LEAGUES_WITH_NO_SEED.includes(league)
+        ? "No fixtures loaded for this competition yet — ask for this league's games to be researched and added, and they'll be filled in the same way as the ones above."
+        : 'No fixtures loaded for this window — check back closer to the next round, or add one below.';
+      body.appendChild(note);
+    }
+
+    list.forEach(m=>body.appendChild(matchRow(m)));
+    body.appendChild(addMatchForm(league));
+    coupon.appendChild(body);
+    container.appendChild(coupon);
+  });
+}
+
+function profileFieldsHTML(m){
+  const hp = TEAM_PROFILE[m.home] || {};
+  const ap = TEAM_PROFILE[m.away] || {};
+  // fall back to stored overrides on the match object if present
+  const gfH = m.gfH!=null ? m.gfH : (hp.gf!=null ? hp.gf : '');
+  const gaH = m.gaH!=null ? m.gaH : (hp.ga!=null ? hp.ga : '');
+  const cardsH = m.cardsH!=null ? m.cardsH : (hp.cards!=null ? hp.cards : '');
+  const gfA = m.gfA!=null ? m.gfA : (ap.gf!=null ? ap.gf : '');
+  const gaA = m.gaA!=null ? m.gaA : (ap.ga!=null ? ap.ga : '');
+  const cardsA = m.cardsA!=null ? m.cardsA : (ap.cards!=null ? ap.cards : '');
+  const anyEstimate = (hp.gf!=null || ap.gf!=null);
+
+  return `
+    <div class="stats-grid">
+      <div class="stats-col">
+        <h4>${escapeHTML(m.home)}</h4>
+        <div class="stat-line"><span>Goals for / game</span><input data-id="${m.id}" data-field="gfH" type="number" step="0.1" value="${gfH}"></div>
+        <div class="stat-line"><span>Goals against / game</span><input data-id="${m.id}" data-field="gaH" type="number" step="0.1" value="${gaH}"></div>
+        <div class="stat-line"><span>Cards / game</span><input data-id="${m.id}" data-field="cardsH" type="number" step="0.1" value="${cardsH}"></div>
+      </div>
+      <div class="stats-col">
+        <h4>${escapeHTML(m.away)}</h4>
+        <div class="stat-line"><span>Goals for / game</span><input data-id="${m.id}" data-field="gfA" type="number" step="0.1" value="${gfA}"></div>
+        <div class="stat-line"><span>Goals against / game</span><input data-id="${m.id}" data-field="gaA" type="number" step="0.1" value="${gaA}"></div>
+        <div class="stat-line"><span>Cards / game</span><input data-id="${m.id}" data-field="cardsA" type="number" step="0.1" value="${cardsA}"></div>
+      </div>
+      <div class="ref-row">
+        <span style="color:var(--green-deep);font-weight:600;">Referee </span>
+        <input class="ref-name" data-id="${m.id}" data-field="referee" placeholder="Add referee name" value="${escapeHTML(m.referee||'')}">
+        <input class="ref-cards" data-id="${m.id}" data-field="refCards" type="number" step="0.1" placeholder="cards/gm" value="${m.refCards!=null?m.refCards:''}">
+      </div>
+      <div class="note-row">
+        <label>Recent form (last 5, all competitions)</label>
+        <textarea data-id="${m.id}" data-field="form" placeholder="e.g. W W D L W">${escapeHTML(m.form||'')}</textarea>
+      </div>
+      <div class="note-row">
+        <label>Head-to-head history</label>
+        <textarea data-id="${m.id}" data-field="h2h" placeholder="e.g. last 5 meetings: 3 home wins, 1 draw, 1 away win">${escapeHTML(m.h2h||'')}</textarea>
+      </div>
+      <div class="est-flag">Goals-for/against and form/H2H text are pulled from recent previews and results where available. Cards-per-game figures are still general profile estimates, not live disciplinary data — overwrite if you have real numbers.</div>
+    </div>
+  `;
+}
+
+function matchRow(m){
+  const row = document.createElement('div');
+  row.className='match';
+  const rec = recommendation(m);
+  const bttsRec = marketRec(m.btts, 'BTTS Yes', 'BTTS No');
+  const ouRec = marketRec(m.ou25, 'Over 2.5', 'Under 2.5');
+  const pred = predictScore(m);
+
+  row.innerHTML = `
+    <div class="match-top">
+      <div class="teams">${escapeHTML(m.home)} vs ${escapeHTML(m.away)}
+        <div class="kickoff">${formatKickoff(m.kickoff)}</div>
+      </div>
+      <div class="predict-box">
+        <div class="predict-score">${pred.expH.toFixed(2)}–${pred.expA.toFixed(2)}</div>
+        <div class="predict-label">expected goals</div>
+        <div class="predict-goals">likely score ${pred.home}-${pred.away}</div>
+      </div>
+    </div>
+    <div class="probs">
+      <div class="probfield"><label>${abbrev(m.home)} win %</label><input type="number" min="0" max="100" step="0.1" value="${m.hw}" data-id="${m.id}" data-field="hw"></div>
+      <div class="probfield"><label>Draw %</label><input type="number" min="0" max="100" step="0.1" value="${m.dw}" data-id="${m.id}" data-field="dw"></div>
+      <div class="probfield"><label>${abbrev(m.away)} win %</label><input type="number" min="0" max="100" step="0.1" value="${m.aw}" data-id="${m.id}" data-field="aw"></div>
+    </div>
+    <div class="prob-warn" data-warn="${m.id}" style="${Math.abs(m.hw+m.dw+m.aw-100)>0.5 ? '' : 'display:none;'}">
+      ⚠ Win/draw/away add up to ${(m.hw+m.dw+m.aw).toFixed(1)}%, not 100%.
+      <button data-action="normalize" data-id="${m.id}">Normalise</button>
+    </div>
+    <div class="bar">
+      <div class="h" style="width:${m.hw}%"></div>
+      <div class="d" style="width:${m.dw}%"></div>
+      <div class="a" style="width:${m.aw}%"></div>
+    </div>
+    <div class="tier-row" data-market="win">
+      <span class="tier ${rec.tier.cls}">${rec.tier.label}</span>
+      <span class="rec-text">${rec.text}</span>
+    </div>
+    <div class="actions">
+      <button data-action="addwinh" data-id="${m.id}">+ Add ${abbrev(m.home)} win (${m.hw}%)</button>
+      <button data-action="addwina" data-id="${m.id}">+ Add ${abbrev(m.away)} win (${m.aw}%)</button>
+      <button class="del-match" data-action="delete" data-id="${m.id}">remove</button>
+    </div>
+
+    <details class="detail-toggle">
+      <summary>Detailed analysis — BTTS, Over/Under, stats &amp; history</summary>
+
+      <div class="market">
+        <div class="market-label">Both teams to score</div>
+        <div class="market-row">
+          <span class="pct-label">BTTS Yes %</span><input type="number" min="0" max="100" step="1" value="${m.btts==null?'':m.btts}" data-id="${m.id}" data-field="btts">
+          <button data-action="addbttsy" data-id="${m.id}" ${m.btts==null?'disabled':''}>+ Add Yes</button>
+          <button data-action="addbttsn" data-id="${m.id}" ${m.btts==null?'disabled':''}>+ Add No</button>
+        </div>
+        <div class="tier-row" data-market="btts" style="margin-top:8px;">
+          <span class="tier ${bttsRec.tier.cls}">${bttsRec.tier.label}</span>
+          <span class="rec-text">${bttsRec.text}</span>
+        </div>
+      </div>
+
+      <div class="market">
+        <div class="market-label">Over / Under 2.5 goals</div>
+        <div class="market-row">
+          <span class="pct-label">Over 2.5 %</span><input type="number" min="0" max="100" step="1" value="${m.ou25==null?'':m.ou25}" data-id="${m.id}" data-field="ou25">
+          <button data-action="addoveryes" data-id="${m.id}" ${m.ou25==null?'disabled':''}>+ Add Over</button>
+          <button data-action="addoverno" data-id="${m.id}" ${m.ou25==null?'disabled':''}>+ Add Under</button>
+        </div>
+        <div class="tier-row" data-market="ou" style="margin-top:8px;">
+          <span class="tier ${ouRec.tier.cls}">${ouRec.tier.label}</span>
+          <span class="rec-text">${ouRec.text}</span>
+        </div>
+      </div>
+
+      <details class="stats-toggle">
+        <summary>Match stats &amp; history</summary>
+        ${profileFieldsHTML(m)}
+      </details>
+    </details>
+  `;
+  return row;
+}
+
+function addMatchForm(league){
+  const det = document.createElement('details');
+  det.className='add-match';
+  det.innerHTML = `
+    <summary>+ Add a fixture to ${league}</summary>
+    <div class="add-form">
+      <input placeholder="Home team" data-new="home">
+      <input placeholder="Away team" data-new="away">
+      <input placeholder="Kickoff (e.g. Sat 13 Sep, 15:00)" data-new="kickoff">
+      <input placeholder="Home win %" type="number" data-new="hw">
+      <input placeholder="Draw %" type="number" data-new="dw">
+      <input placeholder="Away win %" type="number" data-new="aw">
+      <button data-action="addmatch" data-league="${league}">Add fixture</button>
+    </div>
+  `;
+  return det;
+}
+
+function bestPickForMatch(m){
+  const candidates = [];
+  candidates.push({label:`${m.home} to win`, prob:m.hw, matchId:m.id, type:'win'});
+  candidates.push({label:`${m.away} to win`, prob:m.aw, matchId:m.id, type:'win'});
+  candidates.push({label:`Draw — ${m.home} vs ${m.away}`, prob:m.dw, matchId:m.id, type:'win'});
+  if(m.btts!=null){
+    candidates.push({label:`BTTS Yes — ${m.home} vs ${m.away}`, prob:m.btts, matchId:m.id, type:'btts'});
+    candidates.push({label:`BTTS No — ${m.home} vs ${m.away}`, prob:100-m.btts, matchId:m.id, type:'btts'});
+  }
+  if(m.ou25!=null){
+    candidates.push({label:`Over 2.5 — ${m.home} vs ${m.away}`, prob:m.ou25, matchId:m.id, type:'ou'});
+    candidates.push({label:`Under 2.5 — ${m.home} vs ${m.away}`, prob:100-m.ou25, matchId:m.id, type:'ou'});
+  }
+  candidates.sort((a,b)=>b.prob-a.prob);
+  const best = candidates[0];
+  best.bookOdds = toBookOdds(best.prob, best.type);
+  return best;
+}
+
+function buildTargetSlip(targetDecimal){
+  // One candidate per match (its most probable outcome), sorted shortest-odds first,
+  // then add legs in that order, stopping at whichever point (just under or just over
+  // the target) lands closest to the target odds.
+  const pool = matches.map(bestPickForMatch).filter(c=>c.bookOdds!=null);
+  pool.sort((a,b)=> a.bookOdds - b.bookOdds);
+  const legs = [];
+  let cumulative = 1;
+  let prevCumulative = 1;
+  for(const c of pool){
+    prevCumulative = cumulative;
+    cumulative *= c.bookOdds;
+    legs.push(c);
+    if(cumulative >= targetDecimal){
+      const overshoot = Math.abs(cumulative - targetDecimal);
+      const undershoot = Math.abs(prevCumulative - targetDecimal);
+      if(undershoot < overshoot && legs.length > 1){
+        legs.pop();
+        cumulative = prevCumulative;
+      }
+      break;
+    }
+  }
+  return {legs, achieved:cumulative};
+}
+
+function generateTargetSlip(targetDecimal, targetLabel){
+  if(slip.length && !confirm(`This replaces the current slip with a ~${targetLabel} accumulator built from today's most probable outcomes. Continue?`)) return;
+  const result = buildTargetSlip(targetDecimal);
+  slip = result.legs;
+  persistSlip();
+  renderSlip();
+  openSlip();
+}
+
+document.getElementById('slip5').addEventListener('click', ()=>generateTargetSlip(6.0, '5/1'));
+document.getElementById('slip10').addEventListener('click', ()=>generateTargetSlip(11.0, '10/1'));
+document.getElementById('slip20').addEventListener('click', ()=>generateTargetSlip(21.0, '20/1'));
+
+document.getElementById('sortMode').addEventListener('change', e=>{
+  sortMode = e.target.value;
+  renderLeagues();
+});
+
+document.getElementById('leagues').addEventListener('input', e=>{
+  const id = e.target.getAttribute('data-id');
+  const field = e.target.getAttribute('data-field');
+  if(!id || !field) return;
+  const m = matches.find(x=>x.id===id);
+  if(!m) return;
+
+  const numericFields = ['hw','dw','aw','btts','ou25','gfH','gaH','cardsH','gfA','gaA','cardsA','refCards'];
+  const textFields = ['referee','form','h2h'];
+
+  if(numericFields.includes(field)){
+    const val = e.target.value;
+    m[field] = val==='' ? null : parseFloat(val);
+  } else if(textFields.includes(field)){
+    m[field] = e.target.value;
+  }
+  persistMatches();
+  refreshRowVisuals(m);
+});
+
+function refreshRowVisuals(m){
+  const rows = document.querySelectorAll('.match');
+  rows.forEach(row=>{
+    const input = row.querySelector(`input[data-id="${m.id}"]`);
+    if(!input) return;
+    const bar = row.querySelector('.bar');
+    bar.querySelector('.h').style.width = m.hw+'%';
+    bar.querySelector('.d').style.width = m.dw+'%';
+    bar.querySelector('.a').style.width = m.aw+'%';
+    const rec = recommendation(m);
+    const winRow = row.querySelector('.tier-row[data-market="win"]');
+    winRow.querySelector('.tier').className = 'tier '+rec.tier.cls;
+    winRow.querySelector('.tier').textContent = rec.tier.label;
+    winRow.querySelector('.rec-text').textContent = rec.text;
+
+    const bttsRec = marketRec(m.btts, 'BTTS Yes', 'BTTS No');
+    const bttsRow = row.querySelector('.tier-row[data-market="btts"]');
+    bttsRow.querySelector('.tier').className = 'tier '+bttsRec.tier.cls;
+    bttsRow.querySelector('.tier').textContent = bttsRec.tier.label;
+    bttsRow.querySelector('.rec-text').textContent = bttsRec.text;
+
+    const ouRec = marketRec(m.ou25, 'Over 2.5', 'Under 2.5');
+    const ouRow = row.querySelector('.tier-row[data-market="ou"]');
+    ouRow.querySelector('.tier').className = 'tier '+ouRec.tier.cls;
+    ouRow.querySelector('.tier').textContent = ouRec.tier.label;
+    ouRow.querySelector('.rec-text').textContent = ouRec.text;
+
+    row.querySelector('button[data-action="addwinh"]').textContent = `+ Add ${abbrev(m.home)} win (${m.hw}%)`;
+    row.querySelector('button[data-action="addwina"]').textContent = `+ Add ${abbrev(m.away)} win (${m.aw}%)`;
+    row.querySelector('button[data-action="addbttsy"]').disabled = m.btts==null;
+    row.querySelector('button[data-action="addbttsn"]').disabled = m.btts==null;
+    row.querySelector('button[data-action="addoveryes"]').disabled = m.ou25==null;
+    row.querySelector('button[data-action="addoverno"]').disabled = m.ou25==null;
+
+    const warn = row.querySelector(`.prob-warn[data-warn="${m.id}"]`);
+    const sum = m.hw + m.dw + m.aw;
+    if(Math.abs(sum-100) > 0.5){
+      warn.style.display = '';
+      warn.firstChild.textContent = `⚠ Win/draw/away add up to ${sum.toFixed(1)}%, not 100%. `;
+    } else {
+      warn.style.display = 'none';
+    }
+
+    const pred = predictScore(m);
+    const predBox = row.querySelector('.predict-box');
+    predBox.querySelector('.predict-score').textContent = `${pred.expH.toFixed(2)}–${pred.expA.toFixed(2)}`;
+    predBox.querySelector('.predict-goals').textContent = `likely score ${pred.home}-${pred.away}`;
+  });
+}
+
+document.getElementById('leagues').addEventListener('click', e=>{
+  const action = e.target.getAttribute('data-action');
+  if(!action) return;
+  const id = e.target.getAttribute('data-id');
+  const m = id ? matches.find(x=>x.id===id) : null;
+
+  if(action==='normalize'){
+    const sum = m.hw + m.dw + m.aw;
+    if(sum > 0){
+      m.hw = Math.round((m.hw / sum) * 1000) / 10;
+      m.dw = Math.round((m.dw / sum) * 1000) / 10;
+      m.aw = Math.round((m.aw / sum) * 1000) / 10;
+      persistMatches();
+      renderLeagues();
+    }
+  }
+  if(action==='addwinh'){
+    addLeg({matchId:m.id, label:`${m.home} to win`, prob:m.hw, type:'win', bookOdds:toBookOdds(m.hw,'win'), fixture:`${m.home} vs ${m.away}`});
+  }
+  if(action==='addwina'){
+    addLeg({matchId:m.id, label:`${m.away} to win`, prob:m.aw, type:'win', bookOdds:toBookOdds(m.aw,'win'), fixture:`${m.home} vs ${m.away}`});
+  }
+  if(action==='addbttsy'){
+    addLeg({matchId:m.id, label:`BTTS Yes — ${m.home} vs ${m.away}`, prob:m.btts, type:'btts', bookOdds:toBookOdds(m.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
+  }
+  if(action==='addbttsn'){
+    addLeg({matchId:m.id, label:`BTTS No — ${m.home} vs ${m.away}`, prob:100-m.btts, type:'btts', bookOdds:toBookOdds(100-m.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
+  }
+  if(action==='addoveryes'){
+    addLeg({matchId:m.id, label:`Over 2.5 — ${m.home} vs ${m.away}`, prob:m.ou25, type:'ou', bookOdds:toBookOdds(m.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
+  }
+  if(action==='addoverno'){
+    addLeg({matchId:m.id, label:`Under 2.5 — ${m.home} vs ${m.away}`, prob:100-m.ou25, type:'ou', bookOdds:toBookOdds(100-m.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
+  }
+  if(action==='delete'){
+    matches = matches.filter(x=>x.id!==id);
+    persistMatches();
+    renderLeagues();
+  }
+  if(action==='addmatch'){
+    const league = e.target.getAttribute('data-league');
+    const form = e.target.closest('.add-form');
+    const get = f=>form.querySelector(`[data-new="${f}"]`).value;
+    const home = get('home'), away = get('away');
+    if(!home || !away){ alert('Enter both team names.'); return; }
+    const newMatch = {
+      id: 'm'+Date.now(),
+      league, home, away,
+      kickoff: get('kickoff')||'TBC',
+      hw: parseFloat(get('hw'))||0,
+      dw: parseFloat(get('dw'))||0,
+      aw: parseFloat(get('aw'))||0,
+      btts:null, ou25:null, referee:'', refCards:null, form:'', h2h:''
+    };
+    matches.push(newMatch);
+    persistMatches();
+    renderLeagues();
+  }
+});
+
+function addLeg(leg){
+  if(leg.prob==null || isNaN(leg.prob)) return;
+  if(slip.some(l=>l.matchId===leg.matchId && l.label===leg.label)) return;
+  slip.push(leg);
+  persistSlip();
+  renderSlip();
+  openSlip();
+}
+
+function removeLeg(idx){
+  slip.splice(idx,1);
+  persistSlip();
+  renderSlip();
+}
+
+function renderSlip(){
+  document.getElementById('slipCount').textContent = slip.length;
+  document.getElementById('slipPreview').textContent = slip.length===0 ? 'Tap to build your acca' : `${slip.length} leg${slip.length!==1?'s':''} added`;
+
+  const legsDiv = document.getElementById('slipLegs');
+  if(slip.length===0){
+    legsDiv.innerHTML = '<div class="slip-empty">No legs yet. Add a Win, BTTS or Over/Under pick from any fixture above.</div>';
+  } else {
+    legsDiv.innerHTML = slip.map((l,i)=>`
+      <div class="slip-leg">
+        <span>${escapeHTML(l.label)} <span style="color:#4d6b58">(${l.prob.toFixed ? l.prob.toFixed(1) : l.prob}%)</span></span>
+        <button class="x" data-idx="${i}">&times;</button>
+      </div>
+    `).join('');
+    legsDiv.querySelectorAll('.x').forEach(btn=>{
+      btn.addEventListener('click', ()=>removeLeg(parseInt(btn.getAttribute('data-idx'))));
+    });
+  }
+
+  const summary = document.getElementById('slipSummary');
+  if(slip.length===0){
+    summary.innerHTML='';
+  } else {
+    const combined = slip.reduce((acc,l)=>acc*(l.prob/100), 1);
+    const pct = (combined*100);
+    const fairOdds = combined>0 ? (1/combined) : 0;
+    const bookCombined = slip.reduce((acc,l)=> acc*(l.bookOdds!=null ? l.bookOdds : toBookOdds(l.prob, l.type||'win')), 1);
+    summary.innerHTML = `
+      <div class="slip-summary-row"><span>Legs</span><span>${slip.length}</span></div>
+      <div class="slip-summary-row"><span>Combined probability</span><span>${pct.toFixed(1)}%</span></div>
+      <div class="slip-summary-row"><span>Fair odds (no margin)</span><span>${fairOdds.toFixed(2)}</span></div>
+      <div class="slip-summary-row big"><span>Bookmaker-style odds</span><span>${bookCombined.toFixed(2)} (~${fractionApprox(bookCombined)})</span></div>
+    `;
+  }
+}
+
+function renderHistory(){
+  const wins = history.filter(h=>h.status==='won').length;
+  const losses = history.filter(h=>h.status==='lost').length;
+  const settled = wins+losses;
+  const statsLine = document.getElementById('statsLine');
+  statsLine.textContent = history.length===0 ? '' : `Track record: ${wins}W ${losses}L${settled?` (${(wins/settled*100).toFixed(0)}% hit rate)`:''} · ${history.length} saved acca${history.length!==1?'s':''}`;
+
+  const list = document.getElementById('historyList');
+  if(history.length===0){ list.innerHTML=''; return; }
+  list.innerHTML = '<h4>Saved accas</h4>' + history.slice().reverse().map(h=>{
+    const statusClass = h.status==='won'?'status-won':h.status==='lost'?'status-lost':'status-pending';
+    const statusLabel = h.status==='won'?'WON':h.status==='lost'?'LOST':'PENDING';
+    return `
+      <div class="hist-item">
+        <div class="row">
+          <span>${h.date} · ${h.legs.length} legs · ${h.combinedPct}%</span>
+          <span class="${statusClass}">${statusLabel}</span>
+        </div>
+        <div class="legs">${h.legs.map(l=>escapeHTML(l.label)).join(' · ')}</div>
+        ${h.status==='pending' ? `
+          <div>
+            <button data-hist="${h.id}" data-result="won">Mark won</button>
+            <button data-hist="${h.id}" data-result="lost">Mark lost</button>
+          </div>` : ''}
+      </div>
+    `;
+  }).join('');
+
+  list.querySelectorAll('button[data-hist]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const id = btn.getAttribute('data-hist');
+      const result = btn.getAttribute('data-result');
+      const h = history.find(x=>x.id===id);
+      if(h){ h.status = result; persistHistory(); renderHistory(); }
+    });
+  });
+}
+
+function openSlip(){
+  slipOpen = true;
+  document.getElementById('slipPanel').classList.add('open');
+}
+function closeSlipFn(){
+  slipOpen = false;
+  document.getElementById('slipPanel').classList.remove('open');
+}
+
+document.getElementById('slipToggle').addEventListener('click', ()=>{
+  slipOpen ? closeSlipFn() : openSlip();
+});
+document.getElementById('closeSlip').addEventListener('click', closeSlipFn);
+document.getElementById('clearSlip').addEventListener('click', ()=>{
+  if(slip.length && !confirm('Clear all legs from the slip?')) return;
+  slip = [];
+  persistSlip();
+  renderSlip();
+});
+document.getElementById('saveSlip').addEventListener('click', ()=>{
+  if(slip.length===0) return;
+  const combined = slip.reduce((acc,l)=>acc*(l.prob/100), 1);
+  const entry = {
+    id: 'h'+Date.now(),
+    date: new Date().toLocaleDateString('en-GB', {day:'2-digit',month:'short',year:'numeric'}),
+    legs: slip.slice(),
+    combinedPct: (combined*100).toFixed(1),
+    status: 'pending'
+  };
+  history.push(entry);
+  persistHistory();
+  slip = [];
+  persistSlip();
+  renderSlip();
+  renderHistory();
+  closeSlipFn();
+});
+
+loadAll();
+</script>
+</body>
+</html>
