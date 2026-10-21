@@ -1,0 +1,28 @@
+{
+ "tunedOn": "2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss",
+ "tunedAt": "2026-10-21T22:51:08.430Z",
+ "goals": {
+  "xi": 0.0025,
+  "sigma": 1.5
+ },
+ "shots": {
+  "xi": 0.006,
+  "sigma": 1.5
+ },
+ "elo": {
+  "k": 20,
+  "hfa": 80
+ },
+ "weights": {
+  "goals": 0.6,
+  "shots": 0.4,
+  "elo": 0
+ },
+ "validationLogLoss": {
+  "goals": 0.9956553461904489,
+  "shots": 0.9985317731617445,
+  "elo": 1.0048154084242105,
+  "ensemble": 0.9929493956227694
+ },
+ "context": {}
+}

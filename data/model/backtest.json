@@ -1,0 +1,443 @@
+{
+ "generatedAt": "2026-10-21T22:52:08.056Z",
+ "config": {
+  "tunedOn": "2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss",
+  "tunedAt": "2026-10-21T22:51:08.430Z",
+  "goals": {
+   "xi": 0.0025,
+   "sigma": 1.5
+  },
+  "shots": {
+   "xi": 0.006,
+   "sigma": 1.5
+  },
+  "elo": {
+   "k": 20,
+   "hfa": 80
+  },
+  "weights": {
+   "goals": 0.6,
+   "shots": 0.4,
+   "elo": 0
+  },
+  "validationLogLoss": {
+   "goals": 0.9956553461904489,
+   "shots": 0.9985317731617445,
+   "elo": 1.0048154084242105,
+   "ensemble": 0.9929493956227694
+  },
+  "context": {}
+ },
+ "testSeasons": "2025/26 and 2026/27 to date",
+ "overall": {
+  "model": {
+   "n": 2313,
+   "brier": 0.6073,
+   "logloss": 1.014
+  },
+  "modelUncalibrated": {
+   "n": 2313,
+   "brier": 0.6076,
+   "logloss": 1.0146
+  },
+  "goalsModel": {
+   "n": 2313,
+   "brier": 0.6111,
+   "logloss": 1.0197
+  },
+  "shotsModel": {
+   "n": 2313,
+   "brier": 0.6091,
+   "logloss": 1.0167
+  },
+  "eloModel": {
+   "n": 2313,
+   "brier": 0.6068,
+   "logloss": 1.0134
+  },
+  "bet365PreMatch": {
+   "n": 2313,
+   "brier": 0.5978,
+   "logloss": 0.9997
+  },
+  "closing": {
+   "n": 2313,
+   "brier": 0.5974,
+   "logloss": 0.9984
+  },
+  "knowNothing": {
+   "brier": 0.6667
+  }
+ },
+ "byLeague": {
+  "Premier League": {
+   "model": {
+    "n": 450,
+    "brier": 0.6199,
+    "logloss": 1.0319
+   },
+   "bet365PreMatch": {
+    "n": 450,
+    "brier": 0.6096,
+    "logloss": 1.0162
+   },
+   "closing": {
+    "n": 450,
+    "brier": 0.6079,
+    "logloss": 1.0126
+   }
+  },
+  "Championship": {
+   "model": {
+    "n": 684,
+    "brier": 0.6408,
+    "logloss": 1.0608
+   },
+   "bet365PreMatch": {
+    "n": 684,
+    "brier": 0.6296,
+    "logloss": 1.0433
+   },
+   "closing": {
+    "n": 684,
+    "brier": 0.6289,
+    "logloss": 1.0424
+   }
+  },
+  "Bundesliga": {
+   "model": {
+    "n": 360,
+    "brier": 0.5692,
+    "logloss": 0.9622
+   },
+   "bet365PreMatch": {
+    "n": 360,
+    "brier": 0.5657,
+    "logloss": 0.9553
+   },
+   "closing": {
+    "n": 360,
+    "brier": 0.5658,
+    "logloss": 0.9555
+   }
+  },
+  "Serie A": {
+   "model": {
+    "n": 450,
+    "brier": 0.5879,
+    "logloss": 0.9864
+   },
+   "bet365PreMatch": {
+    "n": 450,
+    "brier": 0.5773,
+    "logloss": 0.9727
+   },
+   "closing": {
+    "n": 450,
+    "brier": 0.5764,
+    "logloss": 0.9694
+   }
+  },
+  "Ligue 1": {
+   "model": {
+    "n": 369,
+    "brier": 0.5907,
+    "logloss": 0.9894
+   },
+   "bet365PreMatch": {
+    "n": 369,
+    "brier": 0.5809,
+    "logloss": 0.9748
+   },
+   "closing": {
+    "n": 369,
+    "brier": 0.5825,
+    "logloss": 0.9771
+   }
+  }
+ },
+ "twoWay": {
+  "o25": {
+   "model": {
+    "n": 2313,
+    "brier": 0.2455
+   },
+   "market": {
+    "n": 2313,
+    "brier": 0.2426
+   }
+  },
+  "btts": {
+   "model": {
+    "n": 2313,
+    "brier": 0.2466
+   }
+  }
+ },
+ "context": {
+  "measuredOn": "validation seasons 2023/24-2024/25",
+  "report": {
+   "shortRest": {
+    "teamMatches": 1257,
+    "scored": {
+     "f": 1.031,
+     "raw": 1.032,
+     "obs": 1915,
+     "exp": 1855,
+     "keep": false
+    },
+    "conceded": {
+     "f": 0.983,
+     "raw": 0.982,
+     "obs": 1616,
+     "exp": 1645.3,
+     "keep": false
+    }
+   },
+   "europeBefore": {
+    "teamMatches": 537,
+    "scored": {
+     "f": 0.996,
+     "raw": 0.995,
+     "obs": 954,
+     "exp": 958.7,
+     "keep": false
+    },
+    "conceded": {
+     "f": 1.031,
+     "raw": 1.036,
+     "obs": 686,
+     "exp": 662.3,
+     "keep": false
+    }
+   },
+   "europeAfter": {
+    "teamMatches": 470,
+    "scored": {
+     "f": 1.007,
+     "raw": 1.008,
+     "obs": 857,
+     "exp": 849.9,
+     "keep": false
+    },
+    "conceded": {
+     "f": 0.991,
+     "raw": 0.989,
+     "obs": 549,
+     "exp": 555.1,
+     "keep": false
+    }
+   },
+   "newcomer": {
+    "teamMatches": 1314,
+    "scored": {
+     "f": 0.991,
+     "raw": 0.99,
+     "obs": 1608,
+     "exp": 1623.6,
+     "keep": false
+    },
+    "conceded": {
+     "f": 1.013,
+     "raw": 1.013,
+     "obs": 2064,
+     "exp": 2036.5,
+     "keep": false
+    }
+   },
+   "derby": {
+    "matches": 104,
+    "home": {
+     "f": 0.997,
+     "raw": 0.995,
+     "obs": 160,
+     "exp": 160.9,
+     "keep": false
+    },
+    "away": {
+     "f": 0.922,
+     "raw": 0.864,
+     "obs": 116,
+     "exp": 134.2,
+     "keep": false
+    }
+   },
+   "recentForm": {
+    "note": "Goals scored v model expectation after a 5-match run more than 3 goals above (hot) or below (cold) expectation. Not applied.",
+    "hot": {
+     "f": 1.019,
+     "raw": 1.02,
+     "obs": 1410,
+     "exp": 1382.1,
+     "keep": false
+    },
+    "hotN": 878,
+    "cold": {
+     "f": 1.008,
+     "raw": 1.009,
+     "obs": 1051,
+     "exp": 1041.8,
+     "keep": false
+    },
+    "coldN": 760
+   }
+  },
+  "kept": {}
+ },
+ "calibration": [
+  {
+   "bin": "0-10%",
+   "n": 22,
+   "predicted": 0.074,
+   "actual": 0.045
+  },
+  {
+   "bin": "10-20%",
+   "n": 149,
+   "predicted": 0.163,
+   "actual": 0.141
+  },
+  {
+   "bin": "20-30%",
+   "n": 298,
+   "predicted": 0.253,
+   "actual": 0.245
+  },
+  {
+   "bin": "30-40%",
+   "n": 545,
+   "predicted": 0.353,
+   "actual": 0.358
+  },
+  {
+   "bin": "40-50%",
+   "n": 590,
+   "predicted": 0.448,
+   "actual": 0.449
+  },
+  {
+   "bin": "50-60%",
+   "n": 373,
+   "predicted": 0.545,
+   "actual": 0.515
+  },
+  {
+   "bin": "60-70%",
+   "n": 239,
+   "predicted": 0.643,
+   "actual": 0.686
+  },
+  {
+   "bin": "70-80%",
+   "n": 67,
+   "predicted": 0.743,
+   "actual": 0.746
+  },
+  {
+   "bin": "80-90%",
+   "n": 26,
+   "predicted": 0.841,
+   "actual": 0.808
+  }
+ ],
+ "modelWeightInBlendWithMarket": {
+  "fittedOnValidation": 0,
+  "testScore": {
+   "n": 2313,
+   "brier": 0.5978,
+   "logloss": 0.9997
+  }
+ },
+ "valueBets": {
+  "note": "Flat 1-unit stakes at Bet365 pre-match prices on the test seasons. Bookmaker margin is included.",
+  "1x2": [
+   {
+    "threshold": 0.02,
+    "bets": 1464,
+    "roi": -0.1612,
+    "roi95": [
+     -0.2416,
+     -0.0821
+    ],
+    "meanClaimedEdge": 0.1408,
+    "beatClosingShare": 0.467,
+    "meanCLV": 0.014
+   },
+   {
+    "threshold": 0.05,
+    "bets": 1138,
+    "roi": -0.1702,
+    "roi95": [
+     -0.2596,
+     -0.07
+    ],
+    "meanClaimedEdge": 0.1711,
+    "beatClosingShare": 0.464,
+    "meanCLV": 0.0152
+   },
+   {
+    "threshold": 0.1,
+    "bets": 743,
+    "roi": -0.191,
+    "roi95": [
+     -0.3116,
+     -0.0602
+    ],
+    "meanClaimedEdge": 0.2236,
+    "beatClosingShare": 0.479,
+    "meanCLV": 0.0193
+   },
+   {
+    "threshold": 0.2,
+    "bets": 289,
+    "roi": -0.2633,
+    "roi95": [
+     -0.47,
+     -0.036
+    ],
+    "meanClaimedEdge": 0.3507,
+    "beatClosingShare": 0.471,
+    "meanCLV": 0.0301
+   }
+  ],
+  "overUnder2.5": [
+   {
+    "threshold": 0.02,
+    "bets": 1000,
+    "roi": -0.0796,
+    "roi95": [
+     -0.1479,
+     -0.011
+    ],
+    "meanClaimedEdge": 0.0854,
+    "beatClosingShare": 0.419,
+    "meanCLV": 0.0069
+   },
+   {
+    "threshold": 0.05,
+    "bets": 630,
+    "roi": -0.0619,
+    "roi95": [
+     -0.151,
+     0.0226
+    ],
+    "meanClaimedEdge": 0.1155,
+    "beatClosingShare": 0.417,
+    "meanCLV": 0.0079
+   },
+   {
+    "threshold": 0.1,
+    "bets": 286,
+    "roi": -0.0374,
+    "roi95": [
+     -0.1794,
+     0.098
+    ],
+    "meanClaimedEdge": 0.1674,
+    "beatClosingShare": 0.448,
+    "meanCLV": 0.0157
+   }
+  ]
+ },
+ "verdict": "The model was less accurate than Bet365's pre-match prices (Brier 0.6073 v 0.5978), as expected for a model without team news. Betting its edges lost money, so its disagreements with the bookmaker have not been bargains."
+}

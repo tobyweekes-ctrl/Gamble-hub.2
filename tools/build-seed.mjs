@@ -14,6 +14,8 @@
 // - BTTS and Over 2.5: (1/yes) / (1/yes + 1/no) per source, averaged, rounded.
 // - Goal rates: table goals for/against per game, regressed halfway to the league
 //   average goals per team per game from the same table.
+// - Our model (tools/model/): fitted on data/raw/ results with tools/model/config.json
+//   and the context factors in data/model/context.json. No bookmaker price goes in.
 // Nothing is filled in when a source is missing: the field stays null and the app
 // shows the gap.
 
@@ -21,6 +23,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadApp, SEED_BEGIN, SEED_END } from './lib/app.mjs';
+import { modelForRound } from './model/round.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const roundPath = process.argv[2];
@@ -113,6 +116,7 @@ function tableLine(team, t) {
   return `${team}: ${pos}P${t.p} GF${t.gf} GA${t.ga}.`;
 }
 
+const model = modelForRound(root, round.fixtures.map(f => ({ ...f, id: fixtureId(f) })));
 const seen = new Set();
 const fixtures = round.fixtures.map(f => {
   const id = fixtureId(f);
@@ -125,7 +129,14 @@ const fixtures = round.fixtures.map(f => {
   const btts = twoWay(f.oddsBtts, 'yes', 'no');
   const ou25 = twoWay(f.oddsOu25, 'over', 'under');
   const priceSources = [...new Set([...(f.odds1x2 || []), ...(f.oddsBtts || []), ...(f.oddsOu25 || [])].map(s => s.source))];
-  const goalText = h && a
+  const mod = model.byId[id] || null;
+  const firstPrice = (list, keys) => (list && list.length ? keys.map(k => decimal(list[0][k])) : null);
+  const p1 = firstPrice(f.odds1x2, ['h', 'd', 'a']), pb = firstPrice(f.oddsBtts, ['yes', 'no']), po = firstPrice(f.oddsOu25, ['over', 'under']);
+  const prices = p1 ? { source: f.odds1x2[0].source, h: p1[0], d: p1[1], a: p1[2],
+    bttsY: pb ? pb[0] : null, bttsN: pb ? pb[1] : null, o25: po ? po[0] : null, u25: po ? po[1] : null } : null;
+  const goalText = mod
+    ? `Our model: fitted on league results to ${model.asOfLabel}. Table for reference: ${h ? tableLine(f.home, h.row) : f.home + ': no table.'} ${a ? tableLine(f.away, a.row) : f.away + ': no table.'}`
+    : h && a
     ? `Goal rates from the ${f.league} table (${table.source}, ${table.asOf}), regressed halfway to the league average of ${avg.toFixed(3)} per team per game. ${tableLine(f.home, h.row)} ${tableLine(f.away, a.row)}`
     : 'No goal-rate table for at least one side, so the model column is the market price restated (market-implied).';
   const priceText = x
@@ -147,8 +158,11 @@ const fixtures = round.fixtures.map(f => {
       ? `Reported, not confirmed, not applied to the maths: ${f.teamNews}`
       : 'No team news gathered for this fixture. Baseline model, no adjustment.',
     compNote: '',
+    prices,
+    model: mod,
   };
 });
+for (const w of model.warnings) console.warn('model:', w);
 
 const now = Date.now();
 const seedResults = {};
@@ -174,6 +188,9 @@ const LEAGUES_WITH_NO_SEED = ${JSON.stringify(empty)};
 // entry in this browser's prediction log is graded automatically.
 const SEED_RESULTS = ${JSON.stringify(seedResults)};
 
+// Model settings and backtest summary from tools/model/ (filled in by the build).
+const MODEL_INFO = ${JSON.stringify(model.info)};
+
 const DATA_UPDATED = ${JSON.stringify(round.dataUpdated)};
 const SEED_VERSION = ${JSON.stringify(round.seedVersion)};
 const LEAGUE_QUALITY = ${JSON.stringify(quality)};
@@ -193,7 +210,9 @@ for (const m of app.SEED_MATCHES) {
   if (Date.parse(m.kickoff) <= now || m.hw == null) continue;
   const mp = app.computeModelProbs(m);
   let goalModel = null;
-  if (mp && mp.basis === 'anchored') {
+  if (mp && mp.basis === 'independent') {
+    goalModel = pct({ h: mp.hw, d: mp.dw, a: mp.aw });
+  } else if (mp && mp.basis === 'anchored') {
     const rateH = mp.seasonExpH * mp.lineupFactorApplied.h * mp.compFactorApplied.h;
     const rateA = mp.seasonExpA * mp.lineupFactorApplied.a * mp.compFactorApplied.a;
     const q = app.quickProbs(rateH, rateA);
@@ -203,7 +222,8 @@ for (const m of app.SEED_MATCHES) {
     id: m.id, league: m.league, fixture: `${m.home} vs ${m.away}`, kickoff: m.kickoff,
     loggedAt: new Date(now).toISOString(), modelVersion: app.MODEL_VERSION, seedVersion: app.SEED_VERSION,
     market: { h: m.hw, d: m.dw, a: m.aw }, btts: m.btts, ou25: m.ou25,
-    goalModel, blend: mp && mp.basis !== 'market-implied' ? pct({ h: mp.hw, d: mp.dw, a: mp.aw }) : null,
+    goalModel, blend: mp && mp.basis === 'anchored' ? pct({ h: mp.hw, d: mp.dw, a: mp.aw }) : null,
+    modelBasis: mp ? mp.basis : null, prices: m.prices || null,
     inputs: { gfH: m.gfH, gaH: m.gaH, gfA: m.gfA, gaA: m.gaA },
     result: null,
   };

@@ -1,6 +1,8 @@
 # Weekly update routine
 
-This runs every Friday morning (UK time) as a scheduled Claude session, and can also be run by hand. Its job is to grade last week's games, load the next 7 days and publish the site. Never fabricate results, odds, lineups, xG or injuries. A gap is labelled, not filled.
+This runs every Friday morning (UK time) as a scheduled Claude session, and can also be run by hand. Its job is to grade last week's games, refit our model, load the next 7 days and publish the site.
+
+The predictions come from **our own model** (`tools/model/`), which is fitted on match results and never sees bookmaker prices. Bookmaker prices are still collected each week, but only to compare against and to find possible mispricing. Never fabricate results, odds, lineups, xG or injuries. A gap is labelled, not filled.
 
 ## Scope
 
@@ -18,22 +20,29 @@ This runs every Friday morning (UK time) as a scheduled Claude session, and can 
    - BTTS and Over 2.5 where priced.
 
    Use `node tools/fit-blend.mjs data/ledger.json` for the Brier figures. Say plainly when the model loses. Do not change any weight below a few hundred graded games; the fitter refuses below 300.
-4. **Research the next round:**
+4. **Refresh the model data:**
+   - `sh tools/model/fetch.sh` downloads results and match stats from football-data.co.uk.
+   - `node tools/model/fetch-europe.mjs` downloads European fixtures and results from UEFA.
+   - On the first Friday of each month, also run `node tools/model/backtest.mjs` (about 15 minutes). It refreshes the context factors and the backtest summary shown on the site.
+   - Re-tune (`node tools/model/tune.mjs`, about 30 minutes, then the backtest) only at the start of a season, not week to week.
+5. **Research the next round:**
    - full league tables (P, GF, GA, position);
    - fixtures with UK kick-off times;
    - prices for 1X2, BTTS and Over 2.5;
    - reported team news.
 
    Write `data/rounds/<seedVersion>.json`, with seedVersion in the form `YYYY-MM-DD-weekly`. Flag any disagreement between sources in that fixture's `form` text.
-5. **Build and check:**
-   - `node tools/build-seed.mjs data/rounds/<seedVersion>.json`
+6. **Build and check:**
+   - `node tools/build-seed.mjs data/rounds/<seedVersion>.json`. This fits the model to every result before the round and stores its numbers on each fixture. Any "model:" warning, such as a team name not found, must be fixed in `TEAM_ALIASES` in `tools/model/data.mjs`.
    - `node tools/verify.mjs --browser` must pass. It checks the copy is identical, the script compiles, it runs in a Node vm, and the page renders in Chromium with no errors.
-6. **Publish.** Commit on a new branch `claude/weekly-YYYY-MM-DD`, push, open a pull request into `main`, and merge it. GitHub Pages serves `main`. `verify-shot.png` is ignored by git.
-7. **Report** in the session:
+7. **Publish.** Commit on a new branch `claude/weekly-YYYY-MM-DD`, push, open a pull request into `main`, and merge it. GitHub Pages serves `main`. `verify-shot.png` is ignored by git. On 21 Oct 2026 the owner asked for weekly updates to go onto the website automatically. So if the session has no GitHub pull-request tools, merge the branch into `main` locally and push `main`, but only after `tools/verify.mjs --browser` has passed.
+8. **Report** in the session:
    - what was graded;
    - the record to date;
    - the fixtures loaded and anything not found;
    - any source conflicts;
+   - the model's own record against the bookmaker's for the graded games;
+   - the top items on the mispricing list. These are only bets to check, and the backtest has to be quoted with them;
    - this reminder: an accumulator has no edge when the model is built on the market price.
 
 ## Sources
