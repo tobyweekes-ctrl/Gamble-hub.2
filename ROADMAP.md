@@ -4,10 +4,11 @@ Status as of Wed 21 Oct 2026. 55 games graded. The market favourite won 39 of 55
 
 This file says what to build, in what order and what has to be true first. It does not claim the app is calibrated or profitable. There is no evidence for either.
 
-## 0. Housekeeping (now)
+## 0. Housekeeping
 
-- **The deployed file is stale.** In this repo, `index.html` is the 11 Sep build. It has no `SEED_VERSION`, model toggle, ensemble or prediction log. `matchday-ledger.html` is missing. GitHub Pages is serving that old build. Upload the current file as both `index.html` and `matchday-ledger.html` before anything else.
-- `matchday-ledger.pdf` is a printout of the old build and can go.
+- Done 21 Oct: the current app is now deployed as `index.html` and `matchday-ledger.html`.
+- Done 21 Oct: the weekly build (`tools/build-seed.mjs`) logs the goal model on its own and the raw goal rates to `data/ledger.json`, which covers items 1.2 and 1.3 below for every fixture built from now on.
+- Open: the cloud environment's network policy blocks the football sites, so the weekly update can't fetch data until they are allowed (see `ROUTINE.md`).
 
 ## 1. Things we can do now, with no new data
 
