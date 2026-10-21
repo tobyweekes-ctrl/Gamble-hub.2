@@ -43,6 +43,21 @@ Scores agree on two sources: BBC Sport scores page and UEFA match data.
 - **Market 1X2 Brier:** about 0.430. This combines 0.420 on the first 55 games with 0.492 on these 9.
 - The model has still not beaten the market anywhere. Forward v3 sample: 4 games.
 
+## Model change, 22 Oct 2026
+
+From the 2026-10-21-weekly round, "model" means the independent model v4 (`tools/model/`), which is built without bookmaker prices. Before that it meant ensemble v3, the 70/30 market blend. Log entries carry the model version, so the two are never mixed.
+
+Backtest of v4 on seasons it never saw (2025/26 and 2026/27 to date, 2,313 matches; see `data/model/backtest.json`):
+
+| | Brier (3-way) | Log-loss |
+|---|---|---|
+| Our model | 0.6073 | 1.014 |
+| Bet365 pre-match | 0.5978 | 1.000 |
+| Closing prices | 0.5974 | 0.998 |
+
+- **Value bets:** flat stakes on every 1X2 edge above 5% placed 1,138 bets and returned -17.0% per unit (95% range -26% to -7%). The price shortened after the bet 46% of the time. Over 2.5 edges also lost.
+- **Verdict:** the model is calibrated, but it is less accurate than the bookmaker. Its disagreements have not been bargains so far.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.
