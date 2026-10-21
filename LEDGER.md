@@ -34,7 +34,7 @@ Scores agree on two sources: BBC Sport scores page and UEFA match data.
 | uc18 | Sporting CP v LASK | 2-3 | 79/14/7 | no |
 
 - **Market:** favourite won 6 of 9. 3-way Brier 0.492 on these 9 games. BTTS calls 6 of 9, Over 2.5 calls 7 of 9.
-- **Model:** only 2 entries (uc10, uc13), both using the unverified team-profile estimates. Brier 0.693 against the market's figure for those games. Two games mean nothing either way.
+- **Model:** only 2 entries (uc10, uc13), both using the unverified team-profile estimates. Brier 0.693 against the market's 0.672 on the same two games, so the model lost narrowly. Two games mean nothing either way.
 - **Goals:** 3.8 per game on the night.
 
 ## Record to 21 Oct 2026 (64 games graded)
