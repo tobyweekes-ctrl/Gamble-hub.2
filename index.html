@@ -35,6 +35,19 @@
   .controls{display:flex;gap:8px;align-items:center;padding:12px 14px;background:var(--white);border-bottom:1px solid var(--line);flex-wrap:wrap;position:sticky;top:0;z-index:15;}
   .controls label{font-size:11px;color:var(--green-deep);font-weight:600;}
   .controls select{font-family:var(--font-body);font-size:12px;padding:6px 8px;border:1px solid var(--green);background:var(--white);color:var(--ink);}
+  .src-btn{background:var(--white);color:var(--green-deep);font-weight:600;transition:background .15s,color .15s;}
+  .src-btn.active{background:var(--green);color:#fff;}
+  .readonly-prob{display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-body);font-size:13px;font-weight:600;color:var(--green-deep);background:var(--stripe);border:1px solid var(--line);border-radius:3px;padding:7px 4px;width:100%;box-sizing:border-box;}
+  .model-flag{font-size:11px;color:var(--amber);font-weight:600;margin-top:4px;}
+  .conf-badge{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:3px 8px;border-radius:3px;margin-top:6px;cursor:help;}
+  .conf-high{background:#DCEFE2;color:var(--green-deep);}
+  .conf-medium{background:#FBF1DC;color:var(--amber);}
+  .conf-low{background:#F6E3E3;color:var(--brick);}
+  .scoreline-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin-bottom:8px;}
+  .scorelines-top3{display:flex;gap:8px;flex-wrap:wrap;}
+  .scoreline-chip{font-size:12px;background:var(--stripe);border:1px solid var(--line);border-radius:3px;padding:4px 8px;}
+  .scoreline-chip b{color:var(--green-deep);}
+  .model-insufficient{font-size:12px;color:var(--brick);padding:10px 0;}
 
   .coupon{background:var(--white);margin:14px 14px 0;border:1px solid var(--line);border-radius:4px;overflow:hidden;}
   .league-head{display:flex;align-items:baseline;justify-content:space-between;padding:13px 16px;background:var(--stripe);border-bottom:2px solid var(--green);cursor:pointer;list-style:none;user-select:none;}
@@ -47,6 +60,32 @@
   .quality-badge.researched{background:var(--green);color:#fff;}
   .quality-badge.estimate{background:var(--amber);color:#2b2005;}
   .freshness{font-size:9.5px;color:#7d9689;font-weight:400;}
+
+  .track-record{margin:14px 14px 0;background:var(--white);border:1px solid var(--line);border-radius:4px;overflow:hidden;}
+  .track-record summary{cursor:pointer;padding:13px 16px;background:var(--stripe);border-bottom:2px solid var(--green);font-weight:600;color:var(--green-deep);list-style:none;}
+  .track-record summary::-webkit-details-marker{display:none;}
+  .track-record summary::before{content:'▾ ';font-size:14px;color:var(--green);}
+  .track-record:not([open]) summary::before{content:'▸ ';}
+  .track-record:not([open]) summary{border-bottom:none;}
+  .tr-body{padding:14px 16px;}
+  .tr-summary-row{display:flex;gap:8px;margin-bottom:14px;}
+  .tr-stat{flex:1;text-align:center;background:var(--stripe);border-radius:4px;padding:10px 6px;}
+  .tr-stat .pct{font-family:var(--font-head);font-size:20px;font-weight:600;color:var(--green-deep);}
+  .tr-stat .lbl{font-size:9.5px;color:#4d6b58;text-transform:uppercase;letter-spacing:.02em;margin-top:2px;}
+  .tr-stat .frac{font-size:10px;color:#7d9689;}
+  .tr-game{font-size:11px;padding:7px 0;border-bottom:1px solid var(--line);}
+  .tr-game:last-child{border-bottom:none;}
+  .tr-game .fixture{font-weight:600;color:var(--ink);margin-bottom:3px;}
+  .tr-tags{display:flex;gap:6px;flex-wrap:wrap;}
+  .tr-tag{font-size:9.5px;padding:2px 6px;border-radius:3px;}
+  .tr-tag.hit{background:var(--green);color:#fff;}
+  .tr-tag.miss{background:var(--brick);color:#fff;}
+  .tr-note{font-size:11px;color:#4d6b58;margin-top:10px;line-height:1.6;}
+  .grade-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+  .grade-inputs{display:flex;align-items:center;gap:6px;}
+  .grade-score{width:56px;padding:4px 6px;font-size:12px;border:1px solid var(--line);border-radius:3px;}
+  .btn-grade{font-size:11px;padding:4px 10px;border-radius:3px;border:1px solid var(--green-deep);background:var(--green-deep);color:#fff;cursor:pointer;}
+  .btn-grade:hover{opacity:.9;}
   .league-head h2{font-size:18px;margin:0;font-weight:600;color:var(--green-deep);}
   .league-head span{font-size:11px;color:#4d6b58;}
 
@@ -171,6 +210,16 @@
     <h1>Matchday Ledger</h1>
     <p>Win, BTTS and Over/Under markets for every fixture, plus a stats panel per game. Tap a fixture's "Match stats & history" to see goals for/against, cards, referee and form — edit any number to match your own data.</p>
   </header>
+<noscript><div style="margin:16px;padding:14px 16px;background:#fff4d6;border:1px solid #b98a2e;border-radius:8px;color:#0e2b1b;font-family:sans-serif;font-size:15px;line-height:1.45;"><b>This page needs JavaScript to show the fixtures.</b> You are probably looking at a file preview. Open this file in a normal browser (Chrome, Safari, Edge or Firefox) or from its GitHub Pages address.</div></noscript>
+
+  <div class="controls" style="flex-direction:column;align-items:stretch;">
+    <label style="margin-bottom:6px;">Probability source</label>
+    <div style="display:flex;gap:8px;">
+      <button id="srcMarket" class="src-btn" style="flex:1;padding:10px;font-family:var(--font-body);font-size:12.5px;border:1px solid var(--green);border-radius:4px;cursor:pointer;">Market odds</button>
+      <button id="srcModel" class="src-btn" style="flex:1;padding:10px;font-family:var(--font-body);font-size:12.5px;border:1px solid var(--green);border-radius:4px;cursor:pointer;">Model-only (Poisson)</button>
+    </div>
+    <p id="srcExplainer" style="font-size:11.5px;color:var(--green-deep);opacity:0.8;margin:8px 0 0;line-height:1.4;"></p>
+  </div>
 
   <div class="controls">
     <label for="sortMode">Sort games by</label>
@@ -188,6 +237,10 @@
       <button id="slip20" style="flex:1;padding:10px;font-family:var(--font-body);font-size:12.5px;background:var(--green);color:#fff;border:none;border-radius:4px;cursor:pointer;">~20/1</button>
     </div>
   </div>
+
+  <div id="disparities"></div>
+
+  <div id="trackRecord"></div>
 
   <div id="leagues"></div>
 
@@ -221,6 +274,8 @@
 const STORAGE_KEY = 'matches:v2';
 const SLIP_KEY = 'slip:v2';
 const HISTORY_KEY = 'history:v2';
+const PROB_SOURCE_KEY = 'probSource:v1';
+const PREDICTIONS_LOG_KEY = 'predictionsLog:v1';
 
 // Estimated season profile stats (Claude's general football knowledge, NOT live-verified).
 // gf/ga = goals per game (season), cards = cards per game (season). Blank/undefined = no confident estimate.
@@ -255,141 +310,50 @@ const TEAM_PROFILE = {
 };
 
 const SEED_MATCHES = [
-  // Champions League: no fixtures this week (round just finished; next matchday is 13 Oct).
-  {id:'ep1', league:'Premier League', home:'Aston Villa', away:'Nottingham Forest', kickoff:'2026-09-12T15:00:00+01:00', hw:41.7, dw:28.2, aw:30.1, btts:40, ou25:35, referee:'', refCards:null,
-    form:"Villa are yet to score or win in the league this season (0 goals in 3 PL games), though they beat Club Brugge 3-2 in the Champions League midweek. Forest are also winless (D2 L1), including a 0-0 draw with Tottenham.",
-    h2h:"16 meetings: Aston Villa have won 8, Forest 4, with 4 draws. Forest haven't won at Villa Park since October 1994.",
-    gfH:0.7, gaH:1.3, gfA:1.3, gaA:1.5},
-  {id:'ep2', league:'Premier League', home:'Bournemouth', away:'Brentford', kickoff:'2026-09-12T15:00:00+01:00', hw:38.4, dw:26.4, aw:35.2, btts:68, ou25:62, referee:'', refCards:null,
-    form:"Bournemouth have 2 points from 3 (1 win, 2 draws), scoring at 1.5/game but leaking goals. Brentford are unbeaten (1 win, 2 draws), conceding just 2 in 3 league games.",
-    h2h:"48 meetings all-time: Brentford lead 23 wins to 14, with 11 draws. The last meeting finished 0-0.",
-    gfH:1.5, gaH:1.7, gfA:1.7, gaA:0.7},
-  {id:'ep3', league:'Premier League', home:'Chelsea', away:'Hull City', kickoff:'2026-09-12T15:00:00+01:00', hw:78.6, dw:13.4, aw:8.0, btts:55, ou25:65, referee:'', refCards:null,
-    form:"Chelsea: 2 wins, 1 loss, 8 scored/7 conceded — a high-event start under Xabi Alonso. Hull are unbeaten (2W 1D) and yet to concede a Premier League goal all season.",
-    h2h:"Chelsea have won the last 9 head-to-heads; Hull have never won in 18 visits to Stamford Bridge (D3 L15).",
-    gfH:2.7, gaH:2.3, gfA:1.0, gaA:0.0},
-  {id:'ep4', league:'Premier League', home:'Crystal Palace', away:'Ipswich Town', kickoff:'2026-09-12T15:00:00+01:00', hw:50.6, dw:25.4, aw:24.0, btts:55, ou25:58, referee:'', refCards:null,
-    form:"Palace have won back-to-back games after a slow start, including a 3-2 comeback at Fulham. Ipswich have lost their last 5 meetings with Palace and sit 14th after 3 games.",
-    h2h:"85 meetings: Ipswich actually lead 32-29 with 24 draws, but Palace have won the last 5 in a row, outscoring Ipswich 9-3 in that run.",
-    gfH:1.5, gaH:1.8, gfA:1.1, gaA:1.9},
-  {id:'ep5', league:'Premier League', home:'Liverpool', away:'Fulham', kickoff:'2026-09-12T15:00:00+01:00', hw:67.9, dw:17.9, aw:14.2, btts:62, ou25:60, referee:'', refCards:null,
-    form:"Liverpool are unbeaten in all competitions (W2 D2), including a 2-1 Champions League win over Atletico midweek, but have kept only one clean sheet. Fulham are winless in 7 under new boss Alvaro Arbeloa and have lost all 3 league games.",
-    h2h:"Liverpool have won just 2 of the last 6 meetings but are unbeaten in 5 home H2Hs (W4 D1); Fulham haven't won at Anfield since 2021.",
-    gfH:2.0, gaH:1.3, gfA:1.3, gaA:2.3},
-  {id:'ep6', league:'Premier League', home:'Tottenham', away:'Everton', kickoff:'2026-09-12T17:30:00+01:00', hw:46.6, dw:26.8, aw:26.6, btts:45, ou25:38, referee:'', refCards:null,
-    form:"Spurs are 18th with 1 point from 3 (0-3 at Brentford, 0-2 vs Newcastle, 0-0 at Forest) and are yet to register a shot on target in some games. Everton are unbeaten — one of 8 teams with a clean record — and have drawn their last 2.",
-    h2h:"64 meetings: Spurs lead 15-6 with 12 draws, and haven't lost at home to Everton since the 2020-21 season opener.",
-    gfH:0.7, gaH:1.3, gfA:1.2, gaA:0.9},
-  {id:'ep7', league:'Premier League', home:'Sunderland', away:'Arsenal', kickoff:'2026-09-12T20:00:00+01:00', hw:12.6, dw:22.2, aw:65.2, btts:40, ou25:40, referee:'', refCards:null,
-    form:"Sunderland have the division's second-tightest defence, facing just 5 shots on target in 3 games. Arsenal have won all 5 competitive matches this season, conceding only once.",
-    h2h:"38 meetings: Arsenal dominate 23-4 with 11 draws; Sunderland haven't beaten Arsenal in their last 14 meetings across all competitions.",
-    gfH:1.0, gaH:0.7, gfA:2.0, gaA:0.3},
-  {id:'ep8', league:'Premier League', home:'Coventry City', away:'Brighton', kickoff:'2026-09-13T14:00:00+01:00', hw:24.1, dw:25.3, aw:50.6, btts:60, ou25:62, referee:'', refCards:null,
-    form:"Coventry have lost all 3 league games since promotion (-5 goal difference). Brighton's last 5 read W L W L D, including a 4-0 win at Villa and a 4-3 defeat at Chelsea.",
-    h2h:"8 meetings: Coventry actually lead 4-2 with 2 draws, though Brighton have won 2 of the last 3.",
-    gfH:0.7, gaH:2.2, gfA:2.0, gaA:2.0},
-  {id:'ep9', league:'Premier League', home:'Manchester United', away:'Manchester City', kickoff:'2026-09-13T16:30:00+01:00', hw:30.6, dw:25.1, aw:44.3, btts:69.6, ou25:63.4, referee:'Michael Oliver (reported)', refCards:null,
-    form:"United: 5 wins, 2 draws, 1 loss in last 8, averaging 2.3 goals for and 1.4 against. City lead the table with a perfect 9 points from 3 games.",
-    h2h:"70 meetings all-time: United lead 34-26 with 10 draws. United won the last meeting at Old Trafford 2-0 in January 2026.",
-    gfH:2.3, gaH:1.4, gfA:2.4, gaA:0.7},
-  {id:'ep10', league:'Premier League', home:'Leeds United', away:'Newcastle United', kickoff:'2026-09-14T20:00:00+01:00', hw:39.4, dw:27.2, aw:33.4, btts:55, ou25:52, referee:'', refCards:null,
-    form:"Leeds have a strong home record (6 wins, 1 draw in last 10 at Elland Road). Newcastle have won just 1 of their last 5 away games.",
-    h2h:"31 meetings: Newcastle lead 15-7 with 9 draws; the last meeting finished Leeds 0-2 Newcastle.",
-    gfH:1.4, gaH:0.9, gfA:1.8, gaA:1.4},
-
-  // Championship — no live odds feed for this division; probabilities are general estimates.
-  {id:'ch1', league:'Championship', home:'Sheffield United', away:'Wolverhampton Wanderers', kickoff:'2026-09-13T12:00:00+01:00', hw:32, dw:27, aw:41, btts:55, ou25:52, referee:'', refCards:null,
-    form:"General estimate: Wolves dropped into the Championship as one of the division's bigger-spending squads and are expected to be near the top of the table. Sheffield United have home advantage at Bramall Lane.",
-    h2h:"No specific H2H record pulled for this fixture — add your own if you have it.",
-    gfH:1.1, gaH:1.5, gfA:1.5, gaA:1.1},
-  {id:'ch2', league:'Championship', home:'West Bromwich Albion', away:'Queens Park Rangers', kickoff:'2026-09-12T12:30:00+01:00', hw:45, dw:27, aw:28, btts:58, ou25:55, referee:'', refCards:null,
-    form:"General estimate based on typical recent standing: West Brom have usually finished mid-to-upper table in recent Championship seasons; QPR have often been in the lower half.",
-    h2h:"No specific H2H record pulled for this fixture — add your own if you have it.",
-    gfH:1.3, gaH:1.2, gfA:1.1, gaA:1.4},
-  {id:'ch3', league:'Championship', home:'Southampton', away:'Bristol City', kickoff:'2026-09-12T15:00:00+01:00', hw:52, dw:26, aw:22, btts:52, ou25:50, referee:'', refCards:null,
-    form:"Southampton dropped into the Championship as one of the highest-budget squads in the division and are expected to challenge near the top. Bristol City have historically been a solid mid-table side.",
-    h2h:"No specific H2H record pulled for this fixture — add your own if you have it.",
-    gfH:1.6, gaH:1.1, gfA:1.2, gaA:1.4},
-  {id:'ch4', league:'Championship', home:'Middlesbrough', away:'Norwich City', kickoff:'2026-09-12T15:00:00+01:00', hw:44, dw:28, aw:28, btts:55, ou25:53, referee:'', refCards:null,
-    form:"Middlesbrough reached last season's play-off final (lost to Hull City) and carry that momentum into this campaign. Norwich have been solid without being prolific in recent Championship seasons.",
-    h2h:"No specific H2H record pulled for this fixture — add your own if you have it.",
-    gfH:1.5, gaH:1.0, gfA:1.3, gaA:1.3},
-
-  // La Liga — major fixtures only, from this week's round.
-  {id:'ll1', league:'La Liga', home:'Real Madrid', away:'Rayo Vallecano', kickoff:'2026-09-12T20:00:00+01:00', hw:87.5, dw:8.4, aw:4.1, btts:40, ou25:62, referee:'', refCards:null,
-    form:"Real Madrid suffered a shock 1-0 loss away to Real Betis last time out, but remain the strong favourites at home. Rayo are unbeaten in their last two (W1 D1) after a 3-2 win over Racing Santander.",
-    h2h:"Real Madrid have historically dominated this fixture at the Bernabéu, rarely dropping points against Rayo at home.",
-    gfH:2.2, gaH:1.0, gfA:1.2, gaA:1.5},
-  {id:'ll2', league:'La Liga', home:'Levante', away:'FC Barcelona', kickoff:'2026-09-13T15:15:00+01:00', hw:5.6, dw:9.8, aw:84.6, btts:45, ou25:68, referee:'', refCards:null,
-    form:"Levante drew 0-0 with Malaga last time out and sit in the bottom half. Barcelona have been prolific, winning 5-0 away at Valencia in their last league outing.",
-    h2h:"Barcelona's squad quality gives them a heavy historical edge in this fixture, especially away from home.",
-    gfH:0.9, gaH:1.8, gfA:2.8, gaA:1.3},
-  {id:'ll3', league:'La Liga', home:'Real Sociedad', away:'Atletico Madrid', kickoff:'2026-09-13T20:00:00+01:00', hw:33.2, dw:26.8, aw:40.0, btts:52, ou25:50, referee:'', refCards:null,
-    form:"Real Sociedad won 3-2 away at Elche last time out. Atletico Madrid are unbeaten in 2 (W1 D0 in this stretch), including a 3-0 win away at Athletic Bilbao.",
-    h2h:"Close recent meetings between the sides, with no team dominating this fixture over the last several seasons.",
-    gfH:1.4, gaH:1.3, gfA:1.6, gaA:1.0},
-
-  // Serie A — major fixtures only, from this week's round.
-  {id:'sa1', league:'Serie A', home:'Lazio', away:'AC Milan', kickoff:'2026-09-12T17:00:00+01:00', hw:28.6, dw:29.7, aw:41.7, btts:60, ou25:58, referee:'', refCards:null,
-    form:"Lazio lost 2-1 away at Udinese last time out. Milan drew 1-1 at Juventus in a game they'll feel they should have won.",
-    h2h:"Milan have generally had the upper hand in recent meetings between the two sides.",
-    gfH:1.5, gaH:1.4, gfA:1.6, gaA:1.2},
-  {id:'sa2', league:'Serie A', home:'Napoli', away:'Bologna', kickoff:'2026-09-13T17:00:00+01:00', hw:54.3, dw:26.3, aw:19.4, btts:50, ou25:52, referee:'', refCards:null,
-    form:"Napoli lost 1-0 away at Arsenal in the Champions League midweek but remain one of Serie A's strongest sides. Bologna drew 2-2 at home to Sassuolo last time out.",
-    h2h:"Napoli have historically been strong at home against mid-table opposition like Bologna.",
-    gfH:1.7, gaH:1.0, gfA:1.3, gaA:1.3},
-  {id:'sa3', league:'Serie A', home:'Inter Milan', away:'Udinese', kickoff:'2026-09-14T19:45:00+01:00', hw:77.3, dw:14.4, aw:8.3, btts:45, ou25:60, referee:'', refCards:null,
-    form:"Inter won a high-scoring 3-2 thriller against Napoli last time out. Udinese beat Lazio 2-1 away, a rare positive result on the road.",
-    h2h:"Inter's squad depth gives them a heavy historical edge over Udinese at San Siro.",
-    gfH:2.2, gaH:1.3, gfA:1.1, gaA:1.8},
-
-  // Bundesliga — major fixtures only, from this week's round.
-  {id:'bl1', league:'Bundesliga', home:'Borussia Dortmund', away:'SC Paderborn', kickoff:'2026-09-12T14:30:00+01:00', hw:78.3, dw:13.0, aw:8.7, btts:45, ou25:68, referee:'', refCards:null,
-    form:"Dortmund won 3-2 away at Hoffenheim last time out, continuing a strong scoring run. Paderborn, newly promoted, lost 0-1 at home to Freiburg.",
-    h2h:"Dortmund's quality gap over a newly promoted side like Paderborn is historically significant.",
-    gfH:2.2, gaH:1.3, gfA:0.9, gaA:2.0},
-  {id:'bl2', league:'Bundesliga', home:'FC Augsburg', away:'Bayer Leverkusen', kickoff:'2026-09-12T14:30:00+01:00', hw:24.0, dw:22.7, aw:53.3, btts:55, ou25:58, referee:'', refCards:null,
-    form:"Augsburg won 4-1 away at Eintracht Frankfurt last time out — good recent attacking form. Leverkusen hammered Union Berlin 4-0 in their last outing.",
-    h2h:"Leverkusen have generally had the upper hand in recent seasons against Augsburg.",
-    gfH:1.9, gaH:1.4, gfA:2.3, gaA:1.0},
-  {id:'bl3', league:'Bundesliga', home:'SV Elversberg', away:'Bayern Munich', kickoff:'2026-09-13T16:30:00+01:00', hw:6.4, dw:9.5, aw:84.1, btts:35, ou25:78, referee:'', refCards:null,
-    form:"Elversberg, newly promoted, won a wild 4-3 game against Borussia Monchengladbach last time out. Bayern are unbeaten in 2026 barring a single 0-0 draw at Schalke.",
-    h2h:"First meetings in the top flight are rare for Elversberg against a club of Bayern's stature — expect a heavy quality gap.",
-    gfH:1.4, gaH:1.8, gfA:3.0, gaA:1.0},
-
-  // Ligue 1 — major fixtures only, from this week's round.
-  {id:'lg1', league:'Ligue 1', home:'Stade Brest', away:'Paris Saint-Germain', kickoff:'2026-09-13T19:45:00+01:00', hw:9.6, dw:14.3, aw:76.1, btts:42, ou25:62, referee:'', refCards:null,
-    form:"Brest beat Le Havre 2-1 last time out. PSG are in ruthless form, having beaten Slovan Bratislava 6-1 in the Champions League and Monaco 2-1 in Ligue 1.",
-    h2h:"PSG's squad quality gives them a heavy historical edge over Brest, especially away from home.",
-    gfH:1.3, gaH:1.6, gfA:2.5, gaA:1.0},
-  {id:'lg2', league:'Ligue 1', home:'Strasbourg', away:'AS Monaco', kickoff:'2026-09-12T16:15:00+01:00', hw:30.8, dw:25.5, aw:43.7, btts:58, ou25:55, referee:'', refCards:null,
-    form:"Strasbourg thrashed Troyes 6-2 last time out — eye-catching attacking form. Monaco lost 2-1 away at PSG despite taking the lead.",
-    h2h:"Fairly even recent meetings between the two sides with goals at both ends common.",
-    gfH:2.0, gaH:1.5, gfA:1.6, gaA:1.2},
-  {id:'lg3', league:'Ligue 1', home:'Lille', away:'ESTAC Troyes', kickoff:'2026-09-13T14:00:00+01:00', hw:68.9, dw:18.6, aw:12.5, btts:48, ou25:55, referee:'', refCards:null,
-    form:"Lille beat Toulouse 1-0 away last time out. Troyes were thrashed 6-2 by Strasbourg, exposing a leaky defence.",
-    h2h:"Lille have generally had the upper hand at home against newly promoted sides like Troyes.",
-    gfH:1.5, gaH:1.0, gfA:1.0, gaA:2.2},
+  // Wed 21 Oct 2026: Champions League matchday 3, the nine games played today.
+  // Prices refreshed from kickoff.co.uk on 21 Oct (Bet365 BTTS and Over 2.5 included). Lineups predicted only, so no lineup factor is applied.
+  {"id":"uc10","league":"Champions League","home":"Como 1907","away":"Manchester United","kickoff":"2026-10-21T17:45:00+01:00","hw":43,"dw":25,"aw":32,"btts":63,"ou25":60,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"Reported by a preview (predicted, not official, not applied to the maths): Como have Diao out and Chalobah and Kean needing fitness checks. Man Utd reported without Ugarte, Dorgu, Yoro (suspended), Sesko, Mainoo, Martinez, Rashford and Shaw; De Ligt (first start in almost a year) or Amass expected at centre-back.","compNote":""},
+  {"id":"uc11","league":"Champions League","home":"Lille","away":"Galatasaray","kickoff":"2026-10-21T17:45:00+01:00","hw":43,"dw":26,"aw":31,"btts":61,"ou25":57,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"No lineup or team news found for this fixture from any source — baseline model, no adjustment.","compNote":""},
+  {"id":"uc12","league":"Champions League","home":"Aston Villa","away":"Viking","kickoff":"2026-10-21T20:00:00+01:00","hw":78,"dw":14,"aw":8,"btts":56,"ou25":72,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"No lineup or team news found for this fixture from any source — baseline model, no adjustment.","compNote":""},
+  {"id":"uc13","league":"Champions League","home":"Bayern Munich","away":"Arsenal","kickoff":"2026-10-21T20:00:00+01:00","hw":45,"dw":25,"aw":30,"btts":63,"ou25":60,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"Reported by a preview (predicted lineups, not official, not applied to the maths): Bayern without Olise (suspended) and probably Kim; Musiala doubtful; Neuer expected back. Arsenal without Hincapié, Tzolis and Saliba; Zubimendi recovered. Note the two kickoff.co.uk readings of the 1X2 disagree (Bayern 2.25 v 2.05), so the prices are averaged.","compNote":""},
+  {"id":"uc14","league":"Champions League","home":"Club Brugge","away":"Racing Lens","kickoff":"2026-10-21T20:00:00+01:00","hw":49,"dw":23,"aw":28,"btts":66,"ou25":68,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"No lineup or team news found for this fixture from any source — baseline model, no adjustment.","compNote":""},
+  {"id":"uc15","league":"Champions League","home":"Inter Milan","away":"Shakhtar Donetsk","kickoff":"2026-10-21T20:00:00+01:00","hw":79,"dw":14,"aw":7,"btts":55,"ou25":74,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"One earlier roundup reported Lautaro Martinez (thigh) out for Inter. Not applied to the maths.","compNote":""},
+  {"id":"uc16","league":"Champions League","home":"Real Madrid","away":"RB Leipzig","kickoff":"2026-10-21T20:00:00+01:00","hw":78,"dw":13,"aw":9,"btts":65,"ou25":81,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"Reported by a preview (not applied to the maths): Real Madrid without Rodrygo, Mendy and Asencio; Vinicius available. Leipzig without Baumgartner and Ouedraogo. Predicted lineups only.","compNote":""},
+  {"id":"uc17","league":"Champions League","home":"Real Betis","away":"Feyenoord","kickoff":"2026-10-21T20:00:00+01:00","hw":60,"dw":21,"aw":19,"btts":65,"ou25":70,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"No lineup or team news found for this fixture from any source — baseline model, no adjustment.","compNote":""},
+  {"id":"uc18","league":"Champions League","home":"Sporting CP","away":"LASK","kickoff":"2026-10-21T20:00:00+01:00","hw":79,"dw":14,"aw":7,"btts":53,"ou25":73,"referee":"","refCards":null,"form":"Champions League league phase, matchday 3 (Wed 21 Oct). Prices refreshed 21 Oct from kickoff.co.uk: 1X2 = average of the match-page Bet365 price and the listing price (each margin-removed); BTTS and Over 2.5 = Bet365 two-way, margin removed. No sourced goal data for most of these teams, so the model column is either market-implied or a blend with the app's unverified team-profile estimates (see the card flag). Lineups are predicted only; none confirmed when this was built.","h2h":"No H2H data pulled.","gfH":null,"gaH":null,"gfA":null,"gaA":null,"gfHome":null,"gaHome":null,"gfAway":null,"gaAway":null,"lineupFactorH":1,"lineupStatusH":"unconfirmed","lineupFactorA":1,"lineupStatusA":"unconfirmed","compFactorH":1,"compFactorA":1,"lineupNote":"No lineup or team news found for this fixture from any source — baseline model, no adjustment.","compNote":""},
 ];
 
-const LEAGUE_ORDER = ['Champions League','Premier League','Championship','La Liga','Serie A','Bundesliga','Ligue 1','Europa League'];
-const LEAGUES_WITH_NO_SEED = ['Europa League'];
+const LEAGUE_ORDER = ['Champions League'];
+const LEAGUES_WITH_NO_SEED = [];
 
-// When this batch of fixtures/probabilities was last researched, and how confident
-// the underlying numbers are. Championship has no live odds feed, so its win/draw/away
-// splits are general estimates rather than pulled from a modelled source.
-const DATA_UPDATED = 'Fri 11 Sep, 09:30';
+// Champions League: Bet365 1X2, BTTS and Over/Under 2.5 via kickoff.co.uk. No goal-rate data for most teams.
+const DATA_UPDATED = 'Wed 21 Oct, 18:00';
+const SEED_VERSION = '2026-10-21-ucl-md3-wed';
+const SEED_VERSION_KEY = 'seedVersion:v1';
 const LEAGUE_QUALITY = {
-  'Premier League':'researched', 'La Liga':'researched', 'Serie A':'researched',
-  'Bundesliga':'researched', 'Ligue 1':'researched', 'Champions League':'researched',
-  'Championship':'estimate', 'Europa League':'estimate',
+  'Champions League':'estimate',
 };
+
+
+// ─────────────────────────────────────────────────────────────────────────
+// PREDICTION LOG & CALIBRATION — replaces an earlier version of this panel
+// that showed fixed, hand-typed sample results under a "Track Record"
+// label. That was demo content, not a real record, and kept under that
+// label it would have been actively misleading. This is the real thing:
+// every prediction (market AND model, logged separately) is snapshotted
+// to localStorage the first time it's seen, before being told any result,
+// and is never edited after the fact — only graded once a real score comes
+// in. A model-version tag means a later change to the model's maths doesn't
+// erase or rewrite what was predicted under an earlier version.
+const MODEL_VERSION = 'ensemble-v3-2026-10-19';
 
 let matches = [];
 let slip = [];
 let history = [];
+let predictionsLog = [];
 let slipOpen = false;
 let sortMode = 'kickoff';
+let probSource = 'market'; // 'market' = researched bookmaker odds, 'model' = Poisson model below
 
 function loadJSON(key, fallback){
   try{
@@ -411,15 +375,129 @@ function saveJSON(key, value){
 }
 
 function loadAll(){
-  matches = loadJSON(STORAGE_KEY, SEED_MATCHES.slice());
+  // Fixtures are saved in the browser, so a returning visitor would otherwise keep
+  // yesterday's fixtures forever. When the built-in fixture set changes (SEED_VERSION),
+  // swap in the new fixtures and clear the draft bet slip (its legs point at old games).
+  // The prediction log and saved accas are kept: they are the permanent record.
+  if(loadJSON(SEED_VERSION_KEY, null) !== SEED_VERSION){
+    matches = SEED_MATCHES.slice();
+    persistMatches();
+    saveJSON(SLIP_KEY, []);
+    saveJSON(SEED_VERSION_KEY, SEED_VERSION);
+  } else {
+    matches = loadJSON(STORAGE_KEY, SEED_MATCHES.slice());
+  }
   slip = loadJSON(SLIP_KEY, []);
   history = loadJSON(HISTORY_KEY, []);
+  probSource = loadJSON(PROB_SOURCE_KEY, 'market');
+  predictionsLog = loadJSON(PREDICTIONS_LOG_KEY, []);
+  syncProbSourceButtons();
+  logAllPredictions();
   render();
 }
 
 function persistMatches(){ saveJSON(STORAGE_KEY, matches); }
 function persistSlip(){ saveJSON(SLIP_KEY, slip); }
 function persistHistory(){ saveJSON(HISTORY_KEY, history); }
+function persistPredictionsLog(){ saveJSON(PREDICTIONS_LOG_KEY, predictionsLog); }
+
+// Snapshots every fixture's market probabilities and (where enough data
+// exists) model probabilities into the permanent log, exactly once per
+// fixture/source/model-version combination. Called once on load; never
+// overwrite an entry once its game has kicked off or been graded (see logPredictionSnapshot),
+// so a later edit or a model-version bump never rewrites history.
+function logAllPredictions(){
+  let added = false;
+  matches.forEach(m=>{
+    if(m.hw!=null && m.dw!=null && m.aw!=null){
+      if(logPredictionSnapshot(m, 'market', {hw:m.hw, dw:m.dw, aw:m.aw, btts:m.btts, ou25:m.ou25})) added = true;
+    }
+    const mp = computeModelProbs(m);
+    // A 'market-implied' result is just the bookmaker price re-expressed as goals, so
+    // logging it as a "model" prediction would inflate the model's record. Skip it.
+    if(mp && mp.basis!=='market-implied'){
+      if(logPredictionSnapshot(m, 'model', {hw:mp.hw, dw:mp.dw, aw:mp.aw, btts:mp.btts, ou25:mp.ou25})) added = true;
+    }
+  });
+  if(added) persistPredictionsLog();
+}
+
+function logPredictionSnapshot(m, source, probs){
+  const id = `${m.id}__${source}__${MODEL_VERSION}`;
+  const existing = predictionsLog.find(p=>p.id===id);
+  if(existing){
+    // History is never rewritten once a game has kicked off or been graded. Before kick-off,
+    // a refreshed price (new odds, or a market that wasn't priced earlier) replaces the earlier snapshot.
+    const prekick = !existing.graded && m.kickoff && new Date(m.kickoff).getTime() > Date.now();
+    const changed = ['hw','dw','aw','btts','ou25'].some(k=>existing[k]!==probs[k]);
+    if(!(prekick && changed)) return false;
+    Object.assign(existing, {hw:probs.hw, dw:probs.dw, aw:probs.aw, btts:probs.btts, ou25:probs.ou25,
+      loggedAt:new Date().toISOString(), revisions:(existing.revisions||0)+1});
+    return true;
+  }
+  predictionsLog.push({
+    id, matchId:m.id, fixture:`${m.home} vs ${m.away}`, league:m.league,
+    kickoff:m.kickoff, loggedAt:new Date().toISOString(), modelVersion:MODEL_VERSION,
+    source, hw:probs.hw, dw:probs.dw, aw:probs.aw, btts:probs.btts, ou25:probs.ou25,
+    result:null, graded:false
+  });
+  return true;
+}
+
+// Grades every logged prediction for one fixture (both market and model,
+// any model version) against a real final score, exactly once per
+// grading action — entries already graded are left untouched.
+function gradePredictionsForMatch(matchId, homeGoals, awayGoals){
+  const actualWin = homeGoals>awayGoals ? 'home' : (homeGoals<awayGoals ? 'away' : 'draw');
+  const actualBTTS = (homeGoals>0 && awayGoals>0);
+  const actualOver25 = (homeGoals+awayGoals) > 2;
+  let gradedAny = false;
+  predictionsLog.forEach(p=>{
+    if(p.matchId!==matchId || p.graded) return;
+    p.result = {homeGoals, awayGoals, actualWin, actualBTTS, actualOver25};
+    p.graded = true;
+    gradedAny = true;
+  });
+  if(gradedAny) persistPredictionsLog();
+  return gradedAny;
+}
+
+// Aggregate calibration stats for one source ('market' or 'model') across
+// every graded entry on file. Brier score needs a real sample to mean
+// anything, so it's only reported once there's enough of one — otherwise
+// this says so plainly instead of printing a number from 3 games.
+const BRIER_MIN_SAMPLE = 20;
+function calibrationStats(source){
+  const graded = predictionsLog.filter(p=>p.source===source && p.graded);
+  const n = graded.length;
+  if(n===0) return {n:0};
+
+  let winHits=0, bttsN=0, bttsHits=0, ouN=0, ouHits=0, brierSum3=0;
+  graded.forEach(p=>{
+    const pickSide = p.hw>=p.dw && p.hw>=p.aw ? 'home' : (p.aw>=p.dw ? 'away' : 'draw');
+    if(pickSide===p.result.actualWin) winHits++;
+    const pHome=p.hw/100, pDraw=p.dw/100, pAway=p.aw/100;
+    const aHome = p.result.actualWin==='home'?1:0, aDraw = p.result.actualWin==='draw'?1:0, aAway = p.result.actualWin==='away'?1:0;
+    brierSum3 += (pHome-aHome)**2 + (pDraw-aDraw)**2 + (pAway-aAway)**2;
+    if(p.btts!=null){
+      bttsN++;
+      const pickYes = p.btts>=50;
+      if(pickYes === p.result.actualBTTS) bttsHits++;
+    }
+    if(p.ou25!=null){
+      ouN++;
+      const pickOver = p.ou25>=50;
+      if(pickOver === p.result.actualOver25) ouHits++;
+    }
+  });
+  const stats = {
+    n, winHitRate: winHits/n,
+    bttsN, bttsHitRate: bttsN? bttsHits/bttsN : null,
+    ouN, ouHitRate: ouN? ouHits/ouN : null,
+  };
+  if(n>=BRIER_MIN_SAMPLE) stats.brier3way = brierSum3/n;
+  return stats;
+}
 
 function tierFor(pct){
   if(pct>=80) return {cls:'nailed', label:'NAILED ON'};
@@ -475,6 +553,325 @@ function predictScore(m){
   let roundedA = Math.max(0, Math.round(expA));
 
   return {home:roundedH, away:roundedA, expH, expA, total: totalGoals};
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// MODEL-ONLY MODE: an ensemble of several simple statistical sub-models,
+// blended into one set of expected goals and run through a single Poisson +
+// Dixon-Coles pass. As of v3 the result is then anchored to the market-implied
+// goals (see MARKET_ANCHOR_WEIGHT below); sub-models 1-4 form the goal-rate
+// component. Sub-models, in the order they're combined:
+//
+//   1. SEASON MODEL      — each side's own season goals-for/against, blended
+//                           attack-vs-defence, with a generic home-advantage
+//                           factor (since season figures aren't home/away split).
+//   2. VENUE MODEL        — the same blend, but using each team's own
+//                           home-specific and away-specific goals-for/against
+//                           when that's been researched (gfHome/gaHome for the
+//                           home side, gfAway/gaAway for the away side). No
+//                           generic home-advantage factor is needed here,
+//                           because a real venue split already contains it.
+//                           Weighted higher than the season model whenever
+//                           it's available, since it's the more specific read.
+//   3. LINEUP ADJUSTMENT  — a multiplier on each side's expected goals
+//                           reflecting researched injuries/suspensions/
+//                           rotation risk for this exact fixture (lineupFactorH/A).
+//   4. COMPETITION-FORM ADJUSTMENT — a multiplier reflecting whether a side
+//                           is in better or worse form in this specific
+//                           competition (e.g. Champions League) than their
+//                           general season numbers alone would suggest
+//                           (compFactorH/A) — e.g. a team that just lost
+//                           heavily in Europe despite a fine league season.
+//
+// If a fixture is missing season goals-for/against for either team, the
+// whole model honestly reports that it can't produce a number, rather than
+// guessing. The venue model and the two adjustment factors are each optional
+// on top of that baseline — anything not researched for a given fixture
+// defaults to "no effect" rather than being faked.
+function teamProfileStat(teamName, key){
+  const p = TEAM_PROFILE[teamName];
+  return (p && p[key]!=null) ? p[key] : null;
+}
+
+function effectiveGoalStats(m){
+  const gfH = m.gfH!=null ? m.gfH : teamProfileStat(m.home,'gf');
+  const gaH = m.gaH!=null ? m.gaH : teamProfileStat(m.home,'ga');
+  const gfA = m.gfA!=null ? m.gfA : teamProfileStat(m.away,'gf');
+  const gaA = m.gaA!=null ? m.gaA : teamProfileStat(m.away,'ga');
+  return {gfH, gaH, gfA, gaA};
+}
+
+function factorial(n){ let r=1; for(let i=2;i<=n;i++) r*=i; return r; }
+function poissonP(k, lambda){ return Math.exp(-lambda) * Math.pow(lambda,k) / factorial(k); }
+
+// Home advantage for the SEASON sub-model only: season figures aren't split
+// by home/away, so without this the model would be blind to home advantage
+// entirely. A standard, literature-typical size for football (home sides
+// average roughly a 0.25-0.35 goal boost over a neutral expectation).
+const HOME_GOAL_BOOST = 1.10;
+const AWAY_GOAL_PENALTY = 0.92;
+
+// How much more weight the venue-specific sub-model gets over the season
+// sub-model when real home/away splits are available for both teams.
+const VENUE_MODEL_WEIGHT = 1.3;
+const SEASON_MODEL_WEIGHT = 1.0;
+
+// Dixon-Coles (1997) low-score correlation correction: plain independent
+// Poisson slightly under-rates 0-0/1-1 draws and slightly over-rates 1-0/0-1,
+// because real match goals aren't quite independent events. RHO is the
+// correlation term from that paper, applied only to the four low-scoring
+// cells — a small, well-established correction, not a free-form fudge.
+const DC_RHO = -0.08;
+function dcTau(x, y, lambda, mu, rho){
+  if(x===0 && y===0) return 1 - (lambda*mu*rho);
+  if(x===0 && y===1) return 1 + (lambda*rho);
+  if(x===1 && y===0) return 1 + (mu*rho);
+  if(x===1 && y===1) return 1 - rho;
+  return 1;
+}
+
+// Sub-model 1: season-wide goals-for/against, generic home-advantage factor.
+function seasonExpectedGoals(m){
+  const {gfH, gaH, gfA, gaA} = effectiveGoalStats(m);
+  if(gfH==null || gaH==null || gfA==null || gaA==null) return null;
+  return {
+    expH: ((gfH + gaA) / 2) * HOME_GOAL_BOOST,
+    expA: ((gfA + gaH) / 2) * AWAY_GOAL_PENALTY
+  };
+}
+
+// Sub-model 2: real home-specific / away-specific goals-for/against, when
+// researched for this fixture. No generic home-advantage factor applied —
+// a genuine venue split already carries it.
+function venueExpectedGoals(m){
+  if(m.gfHome==null || m.gaHome==null || m.gfAway==null || m.gaAway==null) return null;
+  return {
+    expH: (m.gfHome + m.gaAway) / 2,
+    expA: (m.gfAway + m.gaHome) / 2
+  };
+}
+
+// A lineup factor is only ever applied to the maths when the status next to
+// it says "confirmed" — a real, verified starting XI. "predicted" (a
+// preview site's guess, which tonight's LASK-Liverpool mix-up showed can be
+// flatly wrong) and "unconfirmed"/missing all fall back to no adjustment
+// (1.0) instead. The researched factor and note are still stored and shown,
+// just not multiplied into the probabilities, so nothing confirmed-sounding
+// gets applied on an unconfirmed premise.
+function effectiveLineupFactor(factor, status){
+  if(status==='confirmed' && factor!=null) return factor;
+  return 1;
+}
+
+// ---- Market anchoring (ensemble-v3) -------------------------------------
+// Evidence from the first graded weekend (see results ledger): the goal-rate
+// model on its own was far less confident than the bookmaker prices and scored
+// worse (Brier 0.568 v 0.407 on the same 10 games). So v3 treats the market as
+// the strong prior: it finds the expected goals that reproduce the market's
+// 1X2 (and Over 2.5, when priced) through the same Dixon-Coles grid, then blends
+// them with the goal-rate expectation. The weight is a judgement call made BEFORE
+// back-testing, not a fitted value; it is not tuned on a few dozen games.
+const MARKET_ANCHOR_WEIGHT = 0.7;
+const MARKET_TOTAL_PRIOR = 2.8;           // typical goals per match
+const MARKET_TOTAL_PRIOR_STRENGTH = 0.0003; // deliberately weak: keeps the 1X2 fit within about a point
+
+// Lean grid used only for fitting (normalised, goals capped at 8 each).
+function quickProbs(expH, expA){
+  const MG = 8, rh = [], ra = [];
+  for(let g=0; g<=MG; g++){ rh.push(poissonP(g, expH)); ra.push(poissonP(g, expA)); }
+  let H=0, D=0, A=0, O=0, T=0;
+  for(let h=0; h<=MG; h++){
+    for(let a=0; a<=MG; a++){
+      const p = rh[h]*ra[a]*dcTau(h, a, expH, expA, DC_RHO);
+      T += p;
+      if(h>a) H+=p; else if(h===a) D+=p; else A+=p;
+      if(h+a>2) O+=p;
+    }
+  }
+  return {hw:H/T, dw:D/T, aw:A/T, o25:O/T};
+}
+
+// Expected goals that reproduce the stored market numbers. Coarse grid, then a
+// fine grid around the best cell. Cached because render calls this repeatedly.
+const _marketGoalCache = {};
+function marketImpliedGoals(m){
+  if(m.hw==null || m.dw==null || m.aw==null) return null;
+  const key = [m.hw, m.dw, m.aw, m.ou25].join('|');
+  if(_marketGoalCache[key]) return _marketGoalCache[key];
+  const loss = (h, a)=>{
+    const q = quickProbs(h, a);
+    let l = (q.hw-m.hw/100)**2 + (q.dw-m.dw/100)**2 + (q.aw-m.aw/100)**2;
+    if(m.ou25!=null) l += (q.o25-m.ou25/100)**2;
+    // Weak prior on total goals: a 1X2 price alone says little about the total
+    // (it leans on the draw price, which carries bookmaker margin), so pull gently
+    // towards a typical match total instead of letting a thin draw price imply 4+ goals.
+    l += MARKET_TOTAL_PRIOR_STRENGTH * ((h+a)-MARKET_TOTAL_PRIOR)**2;
+    return l;
+  };
+  let best = {h:1.4, a:1.1, l:Infinity};
+  for(let i=2; i<=40; i++){
+    for(let j=2; j<=40; j++){
+      const h = i/10, a = j/10, l = loss(h, a);
+      if(l<best.l) best = {h, a, l};
+    }
+  }
+  const c = {h:best.h, a:best.a, l:best.l};
+  for(let i=-10; i<=10; i++){
+    for(let j=-10; j<=10; j++){
+      const h = Math.max(0.1, c.h + i/100), a = Math.max(0.1, c.a + j/100), l = loss(h, a);
+      if(l<best.l) best = {h, a, l};
+    }
+  }
+  const out = {h:best.h, a:best.a, rmsErr: Math.sqrt(best.l/(m.ou25!=null?4:3))};
+  _marketGoalCache[key] = out;
+  return out;
+}
+
+function computeModelProbs(m){
+  const season = seasonExpectedGoals(m);
+  const mkt = marketImpliedGoals(m);
+  if(!season && !mkt) return null;
+  const venue = season ? venueExpectedGoals(m) : null;
+
+  // Rate component: blend sub-models 1 and 2 at the expected-goals stage (a
+  // weighted average of means), keeping a single coherent Poisson distribution.
+  let rateH=null, rateA=null, venueUsed=false;
+  if(season){
+    if(venue){
+      const wTotal = SEASON_MODEL_WEIGHT + VENUE_MODEL_WEIGHT;
+      rateH = (season.expH*SEASON_MODEL_WEIGHT + venue.expH*VENUE_MODEL_WEIGHT) / wTotal;
+      rateA = (season.expA*SEASON_MODEL_WEIGHT + venue.expA*VENUE_MODEL_WEIGHT) / wTotal;
+      venueUsed = true;
+    } else { rateH = season.expH; rateA = season.expA; }
+  }
+  const baseRateH = rateH, baseRateA = rateA; // pre-adjustment copy for the transparency breakdown
+
+  // Sub-model 3: lineup/availability, gated by confirmation status. Sub-model 4:
+  // competition-form, from results that have already happened. Both act on the
+  // RATE component only: the market price already reflects team news, so
+  // applying them to the market part would double count.
+  const lineupH = effectiveLineupFactor(m.lineupFactorH, m.lineupStatusH);
+  const lineupA = effectiveLineupFactor(m.lineupFactorA, m.lineupStatusA);
+  const compH = m.compFactorH!=null ? m.compFactorH : 1;
+  const compA = m.compFactorA!=null ? m.compFactorA : 1;
+  if(season){ rateH = rateH*lineupH*compH; rateA = rateA*lineupA*compA; }
+
+  let expH, expA, basis;
+  if(season && mkt){
+    const w = MARKET_ANCHOR_WEIGHT;
+    expH = w*mkt.h + (1-w)*rateH; expA = w*mkt.a + (1-w)*rateA; basis = 'anchored';
+  } else if(mkt){
+    expH = mkt.h; expA = mkt.a; basis = 'market-implied';
+  } else { expH = rateH; expA = rateA; basis = 'rates'; }
+  expH = Math.min(Math.max(expH, 0.15), 4.5);
+  expA = Math.min(Math.max(expA, 0.15), 4.5);
+
+  const MAXG = 10;
+  const rowH = [], rowA = [];
+  for(let g=0; g<=MAXG; g++){ rowH.push(poissonP(g, expH)); rowA.push(poissonP(g, expA)); }
+
+  let pHome=0, pDraw=0, pAway=0, pBTTS=0, pOver15=0, pOver25=0, pOver35=0, pTotal=0;
+  let pCleanH=0, pCleanA=0; // home clean sheet = away scores 0; away clean sheet = home scores 0
+  const scorelines = [];
+  for(let h=0; h<=MAXG; h++){
+    for(let a=0; a<=MAXG; a++){
+      const p = rowH[h]*rowA[a]*dcTau(h, a, expH, expA, DC_RHO);
+      pTotal += p;
+      if(h>a) pHome+=p; else if(h===a) pDraw+=p; else pAway+=p;
+      if(h>0 && a>0) pBTTS+=p;
+      if(h+a>1) pOver15+=p;
+      if(h+a>2) pOver25+=p;
+      if(h+a>3) pOver35+=p;
+      if(a===0) pCleanH+=p;
+      if(h===0) pCleanA+=p;
+      scorelines.push({h, a, p});
+    }
+  }
+  // pTotal is ~0.999+ (truncated at 10 goals each, plus the DC correction) —
+  // every share is normalised against it so they all come off the same grid
+  // (over/under, BTTS and clean-sheet numbers can never disagree with each other).
+  scorelines.sort((x,y)=> y.p - x.p);
+  const topScorelines = scorelines.slice(0,3).map(s=>({h:s.h, a:s.a, pct:+(s.p/pTotal*100).toFixed(1)}));
+
+  return {
+    hw: +(pHome/pTotal*100).toFixed(1),
+    dw: +(pDraw/pTotal*100).toFixed(1),
+    aw: +(pAway/pTotal*100).toFixed(1),
+    btts: +(pBTTS/pTotal*100).toFixed(1),
+    ou25: +(pOver25/pTotal*100).toFixed(1),
+    over15: +(pOver15/pTotal*100).toFixed(1),
+    over35: +(pOver35/pTotal*100).toFixed(1),
+    cleanSheetH: +(pCleanH/pTotal*100).toFixed(1),
+    cleanSheetA: +(pCleanA/pTotal*100).toFixed(1),
+    topScorelines,
+    expH, expA,
+    seasonExpH: baseRateH!=null ? baseRateH : expH,
+    seasonExpA: baseRateA!=null ? baseRateA : expA,
+    basis, anchorWeight: basis==='anchored' ? MARKET_ANCHOR_WEIGHT : (basis==='market-implied' ? 1 : 0),
+    mktExpH: mkt ? mkt.h : null, mktExpA: mkt ? mkt.a : null,
+    venueUsed,
+    lineupAdjusted: (season && (lineupH!==1 || lineupA!==1)),
+    lineupFactorApplied: {h:lineupH, a:lineupA},
+    compAdjusted: (season && (compH!==1 || compA!==1)),
+    compFactorApplied: {h:compH, a:compA}
+  };
+}
+
+function modelFlagHTML(ap){
+  const f = x=>x.toFixed(2);
+  let txt;
+  if(ap.basis==='market-implied'){
+    txt = `Market-implied: the goals that reproduce the bookmaker price (${f(ap.expH)}–${f(ap.expA)}). No goal-rate data on file, so this is the market restated, not an independent model.`;
+  } else if(ap.basis==='anchored'){
+    txt = `Model v3: ${Math.round(ap.anchorWeight*100)}% market-implied goals (${f(ap.mktExpH)}–${f(ap.mktExpA)}) + ${Math.round((1-ap.anchorWeight)*100)}% goal-rate Poisson (${f(ap.seasonExpH)}–${f(ap.seasonExpA)})${ap.venueUsed?' incl. venue split':''}${ap.lineupAdjusted?` + lineup ×${ap.lineupFactorApplied.h}/×${ap.lineupFactorApplied.a}`:''}${ap.compAdjusted?` + competition-form ×${ap.compFactorApplied.h}/×${ap.compFactorApplied.a}`:''} → final ${f(ap.expH)}–${f(ap.expA)}. Not bookmaker odds.`;
+  } else {
+    txt = `Model-only: goal-rate Poisson (${f(ap.seasonExpH)}–${f(ap.seasonExpA)})${ap.venueUsed?' + venue-split Poisson':''}${ap.lineupAdjusted?` + lineup ×${ap.lineupFactorApplied.h}/×${ap.lineupFactorApplied.a}`:''}${ap.compAdjusted?` + competition-form ×${ap.compFactorApplied.h}/×${ap.compFactorApplied.a}`:''} → final ${f(ap.expH)}–${f(ap.expA)}. No market price on file. Not bookmaker odds.`;
+  }
+  return `<div class="model-flag">${escapeHTML(txt)}</div>`;
+}
+
+// Confidence in the DATA behind a prediction is a different thing from the
+// probability itself (a 70% favourite backed by solid inputs isn't "more
+// true" than a 70% favourite backed by shaky ones, but it's more trustworthy).
+// This is a simple, explainable point score, not a statistically fitted one.
+function computeModelConfidence(m){
+  const reasons = [];
+  let score = 0;
+  const {gfH, gaH, gfA, gaA} = effectiveGoalStats(m);
+  if(gfH==null || gaH==null || gfA==null || gaA==null){
+    return {level:'none', label:'NO MODEL', reasons:['Missing season goals-for/against for at least one side.']};
+  }
+  score += 1; reasons.push('Season goals-for/against on file for both sides.');
+
+  if(venueExpectedGoals(m)){ score += 1; reasons.push('Real home/away-venue goal splits on file.'); }
+  else reasons.push('No venue-specific split researched — falling back to season figures.');
+
+  const lineupConfirmed = (m.lineupStatusH==='confirmed' && m.lineupStatusA==='confirmed');
+  const lineupPredicted = (m.lineupStatusH==='predicted' || m.lineupStatusA==='predicted');
+  if(lineupConfirmed){ score += 2; reasons.push('Lineups confirmed by an official team sheet.'); }
+  else if(lineupPredicted){ reasons.push('Lineups are previewed/predicted, not confirmed — lineup factor not applied to the maths.'); }
+  else { reasons.push('Lineup status unknown — lineup factor not applied to the maths.'); }
+
+  if(m.hw!=null && m.dw!=null && m.aw!=null) reasons.push(`Blended ${Math.round(MARKET_ANCHOR_WEIGHT*100)}% with the market-implied goals (model v3).`);
+  if(m.compNote){ score += 1; reasons.push('Competition-form adjustment backed by an actual recorded result.'); }
+
+  let level, label;
+  if(score>=4){ level='high'; label='HIGH'; }
+  else if(score>=2){ level='medium'; label='MEDIUM'; }
+  else { level='low'; label='LOW'; }
+  return {level, label, reasons};
+}
+
+// Returns the probabilities actually shown on screen for a match, switching
+// between the researched market odds stored on the match object and the
+// Poisson model above, depending on the global probSource toggle.
+function activeProbs(m){
+  if(probSource==='model'){
+    const mp = computeModelProbs(m);
+    if(!mp) return {hw:null, dw:null, aw:null, btts:null, ou25:null, expH:null, expA:null, editable:false, available:false};
+    return Object.assign({}, mp, {editable:false, available:true});
+  }
+  return {hw:m.hw, dw:m.dw, aw:m.aw, btts:m.btts, ou25:m.ou25, expH:null, expA:null, editable:true, available:true};
 }
 
 // Bookmaker-style odds: real books shorten fair odds by an overround margin.
@@ -547,9 +944,161 @@ function sortedList(list){
 }
 
 function render(){
+  renderDisparities();
+  renderTrackRecord();
   renderLeagues();
   renderSlip();
   renderHistory();
+}
+
+// Flags every fixture/market where this app's own Poisson model and the
+// researched bookmaker odds disagree most — regardless of which one is
+// currently the active display mode, since this is a standing comparison
+// between the two, not a view of "the" probabilities.
+function computeDisparities(){
+  const rows = [];
+  matches.forEach(m=>{
+    if(m.hw==null || m.dw==null || m.aw==null) return;
+    const mp = computeModelProbs(m);
+    if(!mp || mp.basis==='market-implied') return;
+    const fixture = `${m.home} vs ${m.away}`;
+    rows.push({fixture, league:m.league, market:`${m.home} win`, marketPct:m.hw, modelPct:mp.hw, delta:mp.hw-m.hw});
+    rows.push({fixture, league:m.league, market:'Draw', marketPct:m.dw, modelPct:mp.dw, delta:mp.dw-m.dw});
+    rows.push({fixture, league:m.league, market:`${m.away} win`, marketPct:m.aw, modelPct:mp.aw, delta:mp.aw-m.aw});
+    if(m.btts!=null){
+      rows.push({fixture, league:m.league, market:'BTTS Yes', marketPct:m.btts, modelPct:mp.btts, delta:mp.btts-m.btts});
+    }
+    if(m.ou25!=null){
+      rows.push({fixture, league:m.league, market:'Over 2.5', marketPct:m.ou25, modelPct:mp.ou25, delta:mp.ou25-m.ou25});
+    }
+  });
+  rows.sort((a,b)=> Math.abs(b.delta) - Math.abs(a.delta));
+  return rows;
+}
+
+function renderDisparities(){
+  const container = document.getElementById('disparities');
+  if(!container) return;
+  const rows = computeDisparities().slice(0, 8);
+
+  if(rows.length===0){
+    container.innerHTML = `
+      <details class="track-record">
+        <summary>Model vs Market — biggest disparities</summary>
+        <div class="tr-body">
+          <div class="empty-note">Need both researched market odds and enough goals-for/against data on the same fixtures to compare the two. Fill in goals-for/against in a match's stats panel to bring it into this list.</div>
+        </div>
+      </details>
+    `;
+    return;
+  }
+
+  const rowsHTML = rows.map(r=>{
+    const up = r.delta>0;
+    return `
+      <div class="tr-game">
+        <div class="fixture">${escapeHTML(r.fixture)} <span style="opacity:.6;font-weight:400;">· ${escapeHTML(r.league)}</span></div>
+        <div class="tr-tags">
+          <span class="tr-tag ${up?'hit':'miss'}">${escapeHTML(r.market)} — market ${r.marketPct}% ${up?'→':'→'} model ${r.modelPct}% (${up?'+':''}${r.delta.toFixed(1)}pts ${up?'model higher':'model lower'})</span>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  container.innerHTML = `
+    <details class="track-record" open>
+      <summary>Model vs Market — biggest disparities (${rows.length>8?'top 8 of '+rows.length:rows.length})</summary>
+      <div class="tr-body">
+        <div class="tr-note">Where this app's own Poisson model (home-advantage adjusted, Dixon-Coles low-score corrected) disagrees most with the researched bookmaker odds, across every market on every fixture with enough data for both. A big gap isn't a tip or a "value bet" signal on its own — it just means the two methods read the same match differently. Worth a second look at the fixture, not an automatic pick. On the first graded weekend the market beat the model, so a gap is more likely the model being wrong than a bargain.</div>
+        ${rowsHTML}
+      </div>
+    </details>
+  `;
+}
+
+// Real, persistent track record: every prediction (market AND model) is logged
+// to localStorage before kickoff via logAllPredictions(); the user grades a
+// fixture once they know the final score; calibrationStats() then reports hit
+// rates (and Brier score once there's enough sample) for each source. This
+// replaces the old static demo panel, which never persisted or updated at all.
+function renderTrackRecord(){
+  const container = document.getElementById('trackRecord');
+  if(!container) return;
+
+  const marketStats = calibrationStats('market');
+  const modelStats = calibrationStats('model');
+
+  const statsBlockHTML = (label, s) => {
+    if(s.n===0){
+      return `<div class="tr-stat"><div class="pct">—</div><div class="lbl">${label}</div><div class="frac">0 graded</div></div>`;
+    }
+    const brierNote = s.brier3way!=null
+      ? `Brier (3-way): ${s.brier3way.toFixed(3)}`
+      : `Brier score needs ${BRIER_MIN_SAMPLE}+ graded (${s.n}/${BRIER_MIN_SAMPLE})`;
+    return `
+      <div class="tr-stat">
+        <div class="pct">${Math.round(s.winHitRate*100)}%</div>
+        <div class="lbl">${label} win-pick</div>
+        <div class="frac">${s.n} graded</div>
+      </div>
+      <div class="tr-stat">
+        <div class="pct">${s.bttsN? Math.round(s.bttsHitRate*100)+'%' : '—'}</div>
+        <div class="lbl">${label} BTTS</div>
+        <div class="frac">${s.bttsN} graded</div>
+      </div>
+      <div class="tr-stat">
+        <div class="pct">${s.ouN? Math.round(s.ouHitRate*100)+'%' : '—'}</div>
+        <div class="lbl">${label} O/U 2.5</div>
+        <div class="frac">${s.ouN} graded, ${brierNote}</div>
+      </div>
+    `;
+  };
+
+  // Fixtures with a logged prediction that hasn't been graded yet (no final score entered).
+  // Built from the log itself (not the current fixture list), so games from earlier
+  // days stay gradable after the fixtures are refreshed. Only games that have kicked
+  // off are offered, since a result can't exist before then.
+  const seen = {};
+  const ungraded = [];
+  predictionsLog.forEach(p=>{
+    if(p.graded || seen[p.matchId]) return;
+    seen[p.matchId] = true;
+    const t = new Date(p.kickoff).getTime();
+    if(!isNaN(t) && t > Date.now()) return;
+    ungraded.push(p);
+  });
+  ungraded.sort((a,b)=> (new Date(a.kickoff).getTime()||0) - (new Date(b.kickoff).getTime()||0));
+
+  const gradeRowsHTML = ungraded.map(p => `
+    <div class="tr-game grade-row" data-match-id="${escapeHTML(p.matchId)}">
+      <div class="fixture">${escapeHTML(p.fixture)} <span style="opacity:.6;font-weight:400;">· ${escapeHTML(p.league)}</span></div>
+      <div class="grade-inputs">
+        <input type="number" min="0" max="20" class="grade-score grade-home" placeholder="H goals" data-match-id="${escapeHTML(p.matchId)}">
+        <span>–</span>
+        <input type="number" min="0" max="20" class="grade-score grade-away" placeholder="A goals" data-match-id="${escapeHTML(p.matchId)}">
+        <button type="button" class="btn-grade" data-match-id="${escapeHTML(p.matchId)}">Save result</button>
+      </div>
+    </div>
+  `).join('');
+
+  container.innerHTML = `
+    <details class="track-record">
+      <summary>Track record — model vs market, graded against real results (${marketStats.n + modelStats.n ? Math.max(marketStats.n, modelStats.n) : 0} fixtures graded)</summary>
+      <div class="tr-body">
+        <div class="tr-note">Every fixture's market odds AND this app's own model probabilities are logged here before kickoff (model version: ${escapeHTML(MODEL_VERSION)}). Enter the real final score below once a match finishes to grade both sources on the same result — nothing here is hardcoded or reset on refresh; it's saved in this browser's storage permanently.</div>
+        <div class="tr-summary-row">
+          ${statsBlockHTML('Market', marketStats)}
+        </div>
+        <div class="tr-summary-row">
+          ${statsBlockHTML('Model', modelStats)}
+        </div>
+        ${gradeRowsHTML ? `
+          <div class="tr-note" style="margin-top:14px;">Enter final scores to grade:</div>
+          ${gradeRowsHTML}
+        ` : `<div class="empty-note">No fixtures currently awaiting a result — add matches or wait for kickoff.</div>`}
+      </div>
+    </details>
+  `;
 }
 
 function renderLeagues(){
@@ -605,14 +1154,36 @@ function profileFieldsHTML(m){
     <div class="stats-grid">
       <div class="stats-col">
         <h4>${escapeHTML(m.home)}</h4>
-        <div class="stat-line"><span>Goals for / game</span><input data-id="${m.id}" data-field="gfH" type="number" step="0.1" value="${gfH}"></div>
-        <div class="stat-line"><span>Goals against / game</span><input data-id="${m.id}" data-field="gaH" type="number" step="0.1" value="${gaH}"></div>
+        <div class="stat-line"><span>Goals for / game (season)</span><input data-id="${m.id}" data-field="gfH" type="number" step="0.1" value="${gfH}"></div>
+        <div class="stat-line"><span>Goals against / game (season)</span><input data-id="${m.id}" data-field="gaH" type="number" step="0.1" value="${gaH}"></div>
+        <div class="stat-line"><span>Goals for / game (home venue)</span><input data-id="${m.id}" data-field="gfHome" type="number" step="0.1" placeholder="not researched" value="${m.gfHome!=null?m.gfHome:''}"></div>
+        <div class="stat-line"><span>Goals against / game (home venue)</span><input data-id="${m.id}" data-field="gaHome" type="number" step="0.1" placeholder="not researched" value="${m.gaHome!=null?m.gaHome:''}"></div>
+        <div class="stat-line"><span>Lineup status</span>
+          <select data-id="${m.id}" data-field="lineupStatusH">
+            <option value="unconfirmed" ${(!m.lineupStatusH||m.lineupStatusH==='unconfirmed')?'selected':''}>Unconfirmed</option>
+            <option value="predicted" ${m.lineupStatusH==='predicted'?'selected':''}>Predicted (preview)</option>
+            <option value="confirmed" ${m.lineupStatusH==='confirmed'?'selected':''}>Confirmed (official sheet)</option>
+          </select>
+        </div>
+        <div class="stat-line"><span>Lineup factor</span><input data-id="${m.id}" data-field="lineupFactorH" type="number" step="0.01" min="0.5" max="1.2" placeholder="1.00" value="${m.lineupFactorH!=null?m.lineupFactorH:''}"></div>
+        <div class="stat-line"><span>Competition-form factor</span><input data-id="${m.id}" data-field="compFactorH" type="number" step="0.01" min="0.5" max="1.2" placeholder="1.00" value="${m.compFactorH!=null?m.compFactorH:''}"></div>
         <div class="stat-line"><span>Cards / game</span><input data-id="${m.id}" data-field="cardsH" type="number" step="0.1" value="${cardsH}"></div>
       </div>
       <div class="stats-col">
         <h4>${escapeHTML(m.away)}</h4>
-        <div class="stat-line"><span>Goals for / game</span><input data-id="${m.id}" data-field="gfA" type="number" step="0.1" value="${gfA}"></div>
-        <div class="stat-line"><span>Goals against / game</span><input data-id="${m.id}" data-field="gaA" type="number" step="0.1" value="${gaA}"></div>
+        <div class="stat-line"><span>Goals for / game (season)</span><input data-id="${m.id}" data-field="gfA" type="number" step="0.1" value="${gfA}"></div>
+        <div class="stat-line"><span>Goals against / game (season)</span><input data-id="${m.id}" data-field="gaA" type="number" step="0.1" value="${gaA}"></div>
+        <div class="stat-line"><span>Goals for / game (away venue)</span><input data-id="${m.id}" data-field="gfAway" type="number" step="0.1" placeholder="not researched" value="${m.gfAway!=null?m.gfAway:''}"></div>
+        <div class="stat-line"><span>Goals against / game (away venue)</span><input data-id="${m.id}" data-field="gaAway" type="number" step="0.1" placeholder="not researched" value="${m.gaAway!=null?m.gaAway:''}"></div>
+        <div class="stat-line"><span>Lineup status</span>
+          <select data-id="${m.id}" data-field="lineupStatusA">
+            <option value="unconfirmed" ${(!m.lineupStatusA||m.lineupStatusA==='unconfirmed')?'selected':''}>Unconfirmed</option>
+            <option value="predicted" ${m.lineupStatusA==='predicted'?'selected':''}>Predicted (preview)</option>
+            <option value="confirmed" ${m.lineupStatusA==='confirmed'?'selected':''}>Confirmed (official sheet)</option>
+          </select>
+        </div>
+        <div class="stat-line"><span>Lineup factor</span><input data-id="${m.id}" data-field="lineupFactorA" type="number" step="0.01" min="0.5" max="1.2" placeholder="1.00" value="${m.lineupFactorA!=null?m.lineupFactorA:''}"></div>
+        <div class="stat-line"><span>Competition-form factor</span><input data-id="${m.id}" data-field="compFactorA" type="number" step="0.01" min="0.5" max="1.2" placeholder="1.00" value="${m.compFactorA!=null?m.compFactorA:''}"></div>
         <div class="stat-line"><span>Cards / game</span><input data-id="${m.id}" data-field="cardsA" type="number" step="0.1" value="${cardsA}"></div>
       </div>
       <div class="ref-row">
@@ -628,7 +1199,15 @@ function profileFieldsHTML(m){
         <label>Head-to-head history</label>
         <textarea data-id="${m.id}" data-field="h2h" placeholder="e.g. last 5 meetings: 3 home wins, 1 draw, 1 away win">${escapeHTML(m.h2h||'')}</textarea>
       </div>
-      <div class="est-flag">Goals-for/against and form/H2H text are pulled from recent previews and results where available. Cards-per-game figures are still general profile estimates, not live disciplinary data — overwrite if you have real numbers.</div>
+      <div class="note-row">
+        <label>Lineup / availability note (what's driving the lineup factors above)</label>
+        <textarea data-id="${m.id}" data-field="lineupNote" placeholder="e.g. Home side missing 3 first-choice defenders through injury">${escapeHTML(m.lineupNote||'')}</textarea>
+      </div>
+      <div class="note-row">
+        <label>Competition-form note (what's driving the competition-form factors above)</label>
+        <textarea data-id="${m.id}" data-field="compNote" placeholder="e.g. Heavy defeat in this competition's opening round despite a good domestic run">${escapeHTML(m.compNote||'')}</textarea>
+      </div>
+      <div class="est-flag">Goals-for/against and form/H2H text are pulled from recent previews and results where available. Cards-per-game figures are still general profile estimates, not live disciplinary data — overwrite if you have real numbers. Home/away-venue splits are blank unless specifically researched for this fixture — the model falls back to season figures until they're filled in. Lineup/competition-form factors are multipliers on expected goals (1.00 = no effect, 0.90 = roughly 10% weaker going into this game, 1.10 = roughly 10% stronger) — edit them directly if you disagree with the read.</div>
     </div>
   `;
 }
@@ -636,10 +1215,73 @@ function profileFieldsHTML(m){
 function matchRow(m){
   const row = document.createElement('div');
   row.className='match';
-  const rec = recommendation(m);
-  const bttsRec = marketRec(m.btts, 'BTTS Yes', 'BTTS No');
-  const ouRec = marketRec(m.ou25, 'Over 2.5', 'Under 2.5');
-  const pred = predictScore(m);
+  const ap = activeProbs(m);
+  const modelMode = probSource==='model';
+
+  if(modelMode && !ap.available){
+    row.innerHTML = `
+      <div class="match-top">
+        <div class="teams">${escapeHTML(m.home)} vs ${escapeHTML(m.away)}
+          <div class="kickoff">${formatKickoff(m.kickoff)}</div>
+        </div>
+      </div>
+      <div class="model-insufficient">⚠ Not enough goals-for/against data on file for this fixture to run the model. Switch to Market odds, or fill in both teams' goals for/against in the stats panel below to enable it.</div>
+      <div class="actions">
+        <button class="del-match" data-action="delete" data-id="${m.id}">remove</button>
+      </div>
+      <details class="detail-toggle">
+        <summary>Match stats &amp; history</summary>
+        ${profileFieldsHTML(m)}
+      </details>
+    `;
+    return row;
+  }
+
+  // dm = the object every downstream helper (recommendation, marketRec, predictScore)
+  // reads from — same match, but with whichever probabilities are currently active.
+  const dm = Object.assign({}, m, {hw:ap.hw, dw:ap.dw, aw:ap.aw, btts:ap.btts, ou25:ap.ou25});
+  const rec = recommendation(dm);
+  const bttsRec = marketRec(dm.btts, 'BTTS Yes', 'BTTS No');
+  const ouRec = marketRec(dm.ou25, 'Over 2.5', 'Under 2.5');
+  const pred = modelMode ? {expH:ap.expH, expA:ap.expA, home:Math.round(ap.expH), away:Math.round(ap.expA)} : predictScore(dm);
+
+  // Confidence in the DATA is separate from the probability number itself,
+  // and shown regardless of which source is currently on screen.
+  const conf = computeModelConfidence(m);
+  const confBadgeHTML = conf.level==='none' ? '' : `
+    <div class="conf-badge conf-${conf.level}" title="${escapeHTML(conf.reasons.join(' '))}">Data confidence: ${conf.label}</div>`;
+
+  // Extra markets (Over 1.5/3.5, clean sheets, top scorelines) always come
+  // from the Poisson/Dixon-Coles model, since there's no researched
+  // bookmaker line for these stored per fixture — shown regardless of the
+  // active toggle, clearly labelled as model output.
+  const extraMp = computeModelProbs(m);
+  const extraMarketsHTML = !extraMp ? `<div class="empty-note">Not enough data to compute a scoreline breakdown for this fixture.</div>` : `
+    ${extraMp.basis==='market-implied' ? '<div class="empty-note">These extra markets are derived from the bookmaker 1X2 price (no goal data on file), so treat them as market-consistent estimates, not independent predictions.</div>' : ''}
+    <div class="scoreline-grid">
+      <div class="stat-line"><span>Over 1.5 goals</span><b>${extraMp.over15}%</b></div>
+      <div class="stat-line"><span>Over 3.5 goals</span><b>${extraMp.over35}%</b></div>
+      <div class="stat-line"><span>${abbrev(m.home)} clean sheet</span><b>${extraMp.cleanSheetH}%</b></div>
+      <div class="stat-line"><span>${abbrev(m.away)} clean sheet</span><b>${extraMp.cleanSheetA}%</b></div>
+    </div>
+    <div class="scorelines-top3">${extraMp.topScorelines.map(s=>`<span class="scoreline-chip">${s.h}-${s.a} <b>${s.pct}%</b></span>`).join('')}</div>
+  `;
+
+  const winInputs = modelMode
+    ? `<div class="probfield"><label>${abbrev(m.home)} win %</label><span class="readonly-prob">${ap.hw}%</span></div>
+       <div class="probfield"><label>Draw %</label><span class="readonly-prob">${ap.dw}%</span></div>
+       <div class="probfield"><label>${abbrev(m.away)} win %</label><span class="readonly-prob">${ap.aw}%</span></div>`
+    : `<div class="probfield"><label>${abbrev(m.home)} win %</label><input type="number" min="0" max="100" step="0.1" value="${m.hw}" data-id="${m.id}" data-field="hw"></div>
+       <div class="probfield"><label>Draw %</label><input type="number" min="0" max="100" step="0.1" value="${m.dw}" data-id="${m.id}" data-field="dw"></div>
+       <div class="probfield"><label>${abbrev(m.away)} win %</label><input type="number" min="0" max="100" step="0.1" value="${m.aw}" data-id="${m.id}" data-field="aw"></div>`;
+
+  const bttsInput = modelMode
+    ? `<span class="pct-label">BTTS Yes %</span><span class="readonly-prob" style="width:auto;flex:0 0 70px;">${ap.btts==null?'—':ap.btts+'%'}</span>`
+    : `<span class="pct-label">BTTS Yes %</span><input type="number" min="0" max="100" step="1" value="${m.btts==null?'':m.btts}" data-id="${m.id}" data-field="btts">`;
+
+  const ouInput = modelMode
+    ? `<span class="pct-label">Over 2.5 %</span><span class="readonly-prob" style="width:auto;flex:0 0 70px;">${ap.ou25==null?'—':ap.ou25+'%'}</span>`
+    : `<span class="pct-label">Over 2.5 %</span><input type="number" min="0" max="100" step="1" value="${m.ou25==null?'':m.ou25}" data-id="${m.id}" data-field="ou25">`;
 
   row.innerHTML = `
     <div class="match-top">
@@ -652,27 +1294,27 @@ function matchRow(m){
         <div class="predict-goals">likely score ${pred.home}-${pred.away}</div>
       </div>
     </div>
+    ${confBadgeHTML}
+    ${modelMode ? modelFlagHTML(ap) : ''}
     <div class="probs">
-      <div class="probfield"><label>${abbrev(m.home)} win %</label><input type="number" min="0" max="100" step="0.1" value="${m.hw}" data-id="${m.id}" data-field="hw"></div>
-      <div class="probfield"><label>Draw %</label><input type="number" min="0" max="100" step="0.1" value="${m.dw}" data-id="${m.id}" data-field="dw"></div>
-      <div class="probfield"><label>${abbrev(m.away)} win %</label><input type="number" min="0" max="100" step="0.1" value="${m.aw}" data-id="${m.id}" data-field="aw"></div>
+      ${winInputs}
     </div>
-    <div class="prob-warn" data-warn="${m.id}" style="${Math.abs(m.hw+m.dw+m.aw-100)>0.5 ? '' : 'display:none;'}">
+    <div class="prob-warn" data-warn="${m.id}" style="${(!modelMode && Math.abs(m.hw+m.dw+m.aw-100)>0.5) ? '' : 'display:none;'}">
       ⚠ Win/draw/away add up to ${(m.hw+m.dw+m.aw).toFixed(1)}%, not 100%.
       <button data-action="normalize" data-id="${m.id}">Normalise</button>
     </div>
     <div class="bar">
-      <div class="h" style="width:${m.hw}%"></div>
-      <div class="d" style="width:${m.dw}%"></div>
-      <div class="a" style="width:${m.aw}%"></div>
+      <div class="h" style="width:${ap.hw}%"></div>
+      <div class="d" style="width:${ap.dw}%"></div>
+      <div class="a" style="width:${ap.aw}%"></div>
     </div>
     <div class="tier-row" data-market="win">
       <span class="tier ${rec.tier.cls}">${rec.tier.label}</span>
       <span class="rec-text">${rec.text}</span>
     </div>
     <div class="actions">
-      <button data-action="addwinh" data-id="${m.id}">+ Add ${abbrev(m.home)} win (${m.hw}%)</button>
-      <button data-action="addwina" data-id="${m.id}">+ Add ${abbrev(m.away)} win (${m.aw}%)</button>
+      <button data-action="addwinh" data-id="${m.id}">+ Add ${abbrev(m.home)} win (${ap.hw}%)</button>
+      <button data-action="addwina" data-id="${m.id}">+ Add ${abbrev(m.away)} win (${ap.aw}%)</button>
       <button class="del-match" data-action="delete" data-id="${m.id}">remove</button>
     </div>
 
@@ -682,9 +1324,9 @@ function matchRow(m){
       <div class="market">
         <div class="market-label">Both teams to score</div>
         <div class="market-row">
-          <span class="pct-label">BTTS Yes %</span><input type="number" min="0" max="100" step="1" value="${m.btts==null?'':m.btts}" data-id="${m.id}" data-field="btts">
-          <button data-action="addbttsy" data-id="${m.id}" ${m.btts==null?'disabled':''}>+ Add Yes</button>
-          <button data-action="addbttsn" data-id="${m.id}" ${m.btts==null?'disabled':''}>+ Add No</button>
+          ${bttsInput}
+          <button data-action="addbttsy" data-id="${m.id}" ${ap.btts==null?'disabled':''}>+ Add Yes</button>
+          <button data-action="addbttsn" data-id="${m.id}" ${ap.btts==null?'disabled':''}>+ Add No</button>
         </div>
         <div class="tier-row" data-market="btts" style="margin-top:8px;">
           <span class="tier ${bttsRec.tier.cls}">${bttsRec.tier.label}</span>
@@ -695,14 +1337,19 @@ function matchRow(m){
       <div class="market">
         <div class="market-label">Over / Under 2.5 goals</div>
         <div class="market-row">
-          <span class="pct-label">Over 2.5 %</span><input type="number" min="0" max="100" step="1" value="${m.ou25==null?'':m.ou25}" data-id="${m.id}" data-field="ou25">
-          <button data-action="addoveryes" data-id="${m.id}" ${m.ou25==null?'disabled':''}>+ Add Over</button>
-          <button data-action="addoverno" data-id="${m.id}" ${m.ou25==null?'disabled':''}>+ Add Under</button>
+          ${ouInput}
+          <button data-action="addoveryes" data-id="${m.id}" ${ap.ou25==null?'disabled':''}>+ Add Over</button>
+          <button data-action="addoverno" data-id="${m.id}" ${ap.ou25==null?'disabled':''}>+ Add Under</button>
         </div>
         <div class="tier-row" data-market="ou" style="margin-top:8px;">
           <span class="tier ${ouRec.tier.cls}">${ouRec.tier.label}</span>
           <span class="rec-text">${ouRec.text}</span>
         </div>
+      </div>
+
+      <div class="market">
+        <div class="market-label">Scoreline breakdown (model)</div>
+        ${extraMarketsHTML}
       </div>
 
       <details class="stats-toggle">
@@ -733,17 +1380,20 @@ function addMatchForm(league){
 }
 
 function bestPickForMatch(m){
+  const ap = activeProbs(m);
+  if(!ap.available) return {label:'', prob:null, matchId:m.id, type:'win', bookOdds:null};
+  const tag = probSource==='model' ? ' (model)' : '';
   const candidates = [];
-  candidates.push({label:`${m.home} to win`, prob:m.hw, matchId:m.id, type:'win'});
-  candidates.push({label:`${m.away} to win`, prob:m.aw, matchId:m.id, type:'win'});
-  candidates.push({label:`Draw — ${m.home} vs ${m.away}`, prob:m.dw, matchId:m.id, type:'win'});
-  if(m.btts!=null){
-    candidates.push({label:`BTTS Yes — ${m.home} vs ${m.away}`, prob:m.btts, matchId:m.id, type:'btts'});
-    candidates.push({label:`BTTS No — ${m.home} vs ${m.away}`, prob:100-m.btts, matchId:m.id, type:'btts'});
+  candidates.push({label:`${m.home} to win${tag}`, prob:ap.hw, matchId:m.id, type:'win'});
+  candidates.push({label:`${m.away} to win${tag}`, prob:ap.aw, matchId:m.id, type:'win'});
+  candidates.push({label:`Draw${tag} — ${m.home} vs ${m.away}`, prob:ap.dw, matchId:m.id, type:'win'});
+  if(ap.btts!=null){
+    candidates.push({label:`BTTS Yes${tag} — ${m.home} vs ${m.away}`, prob:ap.btts, matchId:m.id, type:'btts'});
+    candidates.push({label:`BTTS No${tag} — ${m.home} vs ${m.away}`, prob:100-ap.btts, matchId:m.id, type:'btts'});
   }
-  if(m.ou25!=null){
-    candidates.push({label:`Over 2.5 — ${m.home} vs ${m.away}`, prob:m.ou25, matchId:m.id, type:'ou'});
-    candidates.push({label:`Under 2.5 — ${m.home} vs ${m.away}`, prob:100-m.ou25, matchId:m.id, type:'ou'});
+  if(ap.ou25!=null){
+    candidates.push({label:`Over 2.5${tag} — ${m.home} vs ${m.away}`, prob:ap.ou25, matchId:m.id, type:'ou'});
+    candidates.push({label:`Under 2.5${tag} — ${m.home} vs ${m.away}`, prob:100-ap.ou25, matchId:m.id, type:'ou'});
   }
   candidates.sort((a,b)=>b.prob-a.prob);
   const best = candidates[0];
@@ -751,16 +1401,22 @@ function bestPickForMatch(m){
   return best;
 }
 
-function buildTargetSlip(targetDecimal){
-  // One candidate per match (its most probable outcome), sorted shortest-odds first,
-  // then add legs in that order, stopping at whichever point (just under or just over
-  // the target) lands closest to the target odds.
+function partitionedPools(){
+  // One candidate per match, sorted shortest-odds first, then split round-robin into
+  // three groups so each tier gets a mix of safe and risky legs — and, critically,
+  // no match ever appears in more than one of the three generated slips.
   const pool = matches.map(bestPickForMatch).filter(c=>c.bookOdds!=null);
   pool.sort((a,b)=> a.bookOdds - b.bookOdds);
+  const groups = [[],[],[]];
+  pool.forEach((c,i)=> groups[i%3].push(c));
+  return groups;
+}
+
+function buildTargetSlip(candidatePool, targetDecimal){
   const legs = [];
   let cumulative = 1;
   let prevCumulative = 1;
-  for(const c of pool){
+  for(const c of candidatePool){
     prevCumulative = cumulative;
     cumulative *= c.bookOdds;
     legs.push(c);
@@ -777,21 +1433,49 @@ function buildTargetSlip(targetDecimal){
   return {legs, achieved:cumulative};
 }
 
-function generateTargetSlip(targetDecimal, targetLabel){
-  if(slip.length && !confirm(`This replaces the current slip with a ~${targetLabel} accumulator built from today's most probable outcomes. Continue?`)) return;
-  const result = buildTargetSlip(targetDecimal);
+function generateTargetSlip(targetDecimal, targetLabel, groupIndex){
+  if(slip.length && !confirm(`This replaces the current slip with a ~${targetLabel} accumulator, using a set of games kept separate from the other two tiers. Continue?`)) return;
+  const groups = partitionedPools();
+  const result = buildTargetSlip(groups[groupIndex], targetDecimal);
   slip = result.legs;
   persistSlip();
   renderSlip();
   openSlip();
 }
 
-document.getElementById('slip5').addEventListener('click', ()=>generateTargetSlip(6.0, '5/1'));
-document.getElementById('slip10').addEventListener('click', ()=>generateTargetSlip(11.0, '10/1'));
-document.getElementById('slip20').addEventListener('click', ()=>generateTargetSlip(21.0, '20/1'));
+document.getElementById('slip5').addEventListener('click', ()=>generateTargetSlip(6.0, '5/1', 0));
+document.getElementById('slip10').addEventListener('click', ()=>generateTargetSlip(11.0, '10/1', 1));
+document.getElementById('slip20').addEventListener('click', ()=>generateTargetSlip(21.0, '20/1', 2));
 
 document.getElementById('sortMode').addEventListener('change', e=>{
   sortMode = e.target.value;
+  renderLeagues();
+});
+
+const SRC_EXPLAINERS = {
+  market: "Win/draw/away, BTTS and Over/Under are the researched bookmaker-implied probabilities for each fixture (editable above).",
+  model: "Model v3. Where a bookmaker price is on file, these numbers are 70% market-implied goals (the expected goals that reproduce the bookmaker's win/draw/away) and 30% this app's goal-rate Poisson blend (season, venue split, confirmed lineups only), then a Poisson + Dixon-Coles pass. It is NOT independent of the market, because on its own the goal-rate model scored clearly worse than the market on the first graded weekend. Where there is a price but no goal data it simply restates the market as goals (flagged 'market-implied') and is not logged as a model prediction. Read-only, since it is calculated.",
+};
+
+function syncProbSourceButtons(){
+  document.getElementById('srcMarket').classList.toggle('active', probSource==='market');
+  document.getElementById('srcModel').classList.toggle('active', probSource==='model');
+  document.getElementById('srcExplainer').textContent = SRC_EXPLAINERS[probSource];
+}
+
+document.getElementById('srcMarket').addEventListener('click', ()=>{
+  if(probSource==='market') return;
+  probSource = 'market';
+  saveJSON(PROB_SOURCE_KEY, probSource);
+  syncProbSourceButtons();
+  renderLeagues();
+});
+
+document.getElementById('srcModel').addEventListener('click', ()=>{
+  if(probSource==='model') return;
+  probSource = 'model';
+  saveJSON(PROB_SOURCE_KEY, probSource);
+  syncProbSourceButtons();
   renderLeagues();
 });
 
@@ -802,8 +1486,9 @@ document.getElementById('leagues').addEventListener('input', e=>{
   const m = matches.find(x=>x.id===id);
   if(!m) return;
 
-  const numericFields = ['hw','dw','aw','btts','ou25','gfH','gaH','cardsH','gfA','gaA','cardsA','refCards'];
-  const textFields = ['referee','form','h2h'];
+  const numericFields = ['hw','dw','aw','btts','ou25','gfH','gaH','cardsH','gfA','gaA','cardsA','refCards',
+    'gfHome','gaHome','gfAway','gaAway','lineupFactorH','lineupFactorA','compFactorH','compFactorA'];
+  const textFields = ['referee','form','h2h','lineupNote','compNote','lineupStatusH','lineupStatusA'];
 
   if(numericFields.includes(field)){
     const val = e.target.value;
@@ -812,7 +1497,15 @@ document.getElementById('leagues').addEventListener('input', e=>{
     m[field] = e.target.value;
   }
   persistMatches();
-  refreshRowVisuals(m);
+  // In model mode every number on screen is derived from goals-for/against, and a
+  // fixture can flip between "insufficient data" and "available" as those fields
+  // are filled in — simplest and most correct is a full re-render in that mode.
+  if(probSource==='model'){
+    renderLeagues();
+  } else {
+    refreshRowVisuals(m);
+  }
+  renderDisparities();
 });
 
 function refreshRowVisuals(m){
@@ -871,6 +1564,9 @@ document.getElementById('leagues').addEventListener('click', e=>{
   const id = e.target.getAttribute('data-id');
   const m = id ? matches.find(x=>x.id===id) : null;
 
+  const modelMode = probSource==='model';
+  const tag = modelMode ? ' (model)' : '';
+
   if(action==='normalize'){
     const sum = m.hw + m.dw + m.aw;
     if(sum > 0){
@@ -879,30 +1575,38 @@ document.getElementById('leagues').addEventListener('click', e=>{
       m.aw = Math.round((m.aw / sum) * 1000) / 10;
       persistMatches();
       renderLeagues();
+      renderDisparities();
     }
   }
   if(action==='addwinh'){
-    addLeg({matchId:m.id, label:`${m.home} to win`, prob:m.hw, type:'win', bookOdds:toBookOdds(m.hw,'win'), fixture:`${m.home} vs ${m.away}`});
+    const ap = activeProbs(m);
+    addLeg({matchId:m.id, label:`${m.home} to win${tag}`, prob:ap.hw, type:'win', bookOdds:toBookOdds(ap.hw,'win'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addwina'){
-    addLeg({matchId:m.id, label:`${m.away} to win`, prob:m.aw, type:'win', bookOdds:toBookOdds(m.aw,'win'), fixture:`${m.home} vs ${m.away}`});
+    const ap = activeProbs(m);
+    addLeg({matchId:m.id, label:`${m.away} to win${tag}`, prob:ap.aw, type:'win', bookOdds:toBookOdds(ap.aw,'win'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addbttsy'){
-    addLeg({matchId:m.id, label:`BTTS Yes — ${m.home} vs ${m.away}`, prob:m.btts, type:'btts', bookOdds:toBookOdds(m.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
+    const ap = activeProbs(m);
+    addLeg({matchId:m.id, label:`BTTS Yes${tag} — ${m.home} vs ${m.away}`, prob:ap.btts, type:'btts', bookOdds:toBookOdds(ap.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addbttsn'){
-    addLeg({matchId:m.id, label:`BTTS No — ${m.home} vs ${m.away}`, prob:100-m.btts, type:'btts', bookOdds:toBookOdds(100-m.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
+    const ap = activeProbs(m);
+    addLeg({matchId:m.id, label:`BTTS No${tag} — ${m.home} vs ${m.away}`, prob:100-ap.btts, type:'btts', bookOdds:toBookOdds(100-ap.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addoveryes'){
-    addLeg({matchId:m.id, label:`Over 2.5 — ${m.home} vs ${m.away}`, prob:m.ou25, type:'ou', bookOdds:toBookOdds(m.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
+    const ap = activeProbs(m);
+    addLeg({matchId:m.id, label:`Over 2.5${tag} — ${m.home} vs ${m.away}`, prob:ap.ou25, type:'ou', bookOdds:toBookOdds(ap.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addoverno'){
-    addLeg({matchId:m.id, label:`Under 2.5 — ${m.home} vs ${m.away}`, prob:100-m.ou25, type:'ou', bookOdds:toBookOdds(100-m.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
+    const ap = activeProbs(m);
+    addLeg({matchId:m.id, label:`Under 2.5${tag} — ${m.home} vs ${m.away}`, prob:100-ap.ou25, type:'ou', bookOdds:toBookOdds(100-ap.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='delete'){
     matches = matches.filter(x=>x.id!==id);
     persistMatches();
     renderLeagues();
+    renderDisparities();
   }
   if(action==='addmatch'){
     const league = e.target.getAttribute('data-league');
@@ -922,7 +1626,26 @@ document.getElementById('leagues').addEventListener('click', e=>{
     matches.push(newMatch);
     persistMatches();
     renderLeagues();
+    renderDisparities();
   }
+});
+
+document.getElementById('trackRecord').addEventListener('click', e=>{
+  const btn = e.target.closest('.btn-grade');
+  if(!btn) return;
+  const matchId = btn.getAttribute('data-match-id');
+  const row = btn.closest('.grade-row');
+  const hInput = row.querySelector('.grade-home');
+  const aInput = row.querySelector('.grade-away');
+  const hGoals = parseInt(hInput.value, 10);
+  const aGoals = parseInt(aInput.value, 10);
+  if(isNaN(hGoals) || isNaN(aGoals) || hGoals<0 || aGoals<0){
+    hInput.style.borderColor = 'var(--brick)';
+    aInput.style.borderColor = 'var(--brick)';
+    return;
+  }
+  gradePredictionsForMatch(matchId, hGoals, aGoals);
+  renderTrackRecord();
 });
 
 function addLeg(leg){
