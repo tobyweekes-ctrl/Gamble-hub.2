@@ -1,0 +1,1702 @@
+{
+ "seedVersion": "2026-10-21-weekly",
+ "dataUpdated": "Wed 21 Oct, 23:30",
+ "notes": [
+  "Thu 22 - Thu 29 Oct 2026. Premier League and Championship in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
+  "No Champions League games in this window (next league-phase matchday is in November).",
+  "Prices: Bet365 via kickoff.co.uk match pages, 21 Oct. Tables: BBC Sport, 21 Oct. No team news gathered this round."
+ ],
+ "leagues": [
+  "Premier League",
+  "Championship",
+  "Champions League",
+  "Bundesliga",
+  "Serie A",
+  "Ligue 1"
+ ],
+ "leagueQuality": {
+  "Premier League": "researched",
+  "Championship": "researched",
+  "Bundesliga": "researched",
+  "Serie A": "researched",
+  "Ligue 1": "researched"
+ },
+ "tables": {
+  "Premier League": {
+   "source": "bbc.co.uk table",
+   "asOf": "21 Oct 2026",
+   "teams": {
+    "Manchester City": {
+     "pos": 1,
+     "p": 7,
+     "gf": 19,
+     "ga": 7
+    },
+    "Arsenal": {
+     "pos": 2,
+     "p": 7,
+     "gf": 11,
+     "ga": 5
+    },
+    "Brighton & Hove Albion": {
+     "pos": 3,
+     "p": 7,
+     "gf": 23,
+     "ga": 5
+    },
+    "Chelsea": {
+     "pos": 4,
+     "p": 7,
+     "gf": 17,
+     "ga": 13
+    },
+    "Liverpool": {
+     "pos": 5,
+     "p": 7,
+     "gf": 9,
+     "ga": 8
+    },
+    "Brentford": {
+     "pos": 6,
+     "p": 7,
+     "gf": 13,
+     "ga": 8
+    },
+    "Leeds United": {
+     "pos": 7,
+     "p": 7,
+     "gf": 9,
+     "ga": 6
+    },
+    "Everton": {
+     "pos": 8,
+     "p": 7,
+     "gf": 8,
+     "ga": 7
+    },
+    "Hull City": {
+     "pos": 9,
+     "p": 7,
+     "gf": 8,
+     "ga": 7
+    },
+    "Ipswich Town": {
+     "pos": 10,
+     "p": 7,
+     "gf": 11,
+     "ga": 15
+    },
+    "Newcastle United": {
+     "pos": 11,
+     "p": 7,
+     "gf": 10,
+     "ga": 14
+    },
+    "Aston Villa": {
+     "pos": 12,
+     "p": 7,
+     "gf": 7,
+     "ga": 11
+    },
+    "Manchester United": {
+     "pos": 13,
+     "p": 7,
+     "gf": 10,
+     "ga": 10
+    },
+    "Crystal Palace": {
+     "pos": 14,
+     "p": 7,
+     "gf": 9,
+     "ga": 17
+    },
+    "Bournemouth": {
+     "pos": 15,
+     "p": 7,
+     "gf": 9,
+     "ga": 13
+    },
+    "Tottenham Hotspur": {
+     "pos": 16,
+     "p": 7,
+     "gf": 6,
+     "ga": 10
+    },
+    "Coventry City": {
+     "pos": 17,
+     "p": 7,
+     "gf": 6,
+     "ga": 14
+    },
+    "Fulham": {
+     "pos": 18,
+     "p": 7,
+     "gf": 7,
+     "ga": 10
+    },
+    "Nottingham Forest": {
+     "pos": 19,
+     "p": 7,
+     "gf": 5,
+     "ga": 9
+    },
+    "Sunderland": {
+     "pos": 20,
+     "p": 7,
+     "gf": 6,
+     "ga": 14
+    }
+   }
+  },
+  "Championship": {
+   "source": "bbc.co.uk table",
+   "asOf": "21 Oct 2026",
+   "teams": {
+    "Swansea City": {
+     "pos": 1,
+     "p": 11,
+     "gf": 16,
+     "ga": 8
+    },
+    "West Ham United": {
+     "pos": 2,
+     "p": 11,
+     "gf": 30,
+     "ga": 12
+    },
+    "Middlesbrough": {
+     "pos": 3,
+     "p": 11,
+     "gf": 22,
+     "ga": 16
+    },
+    "Birmingham City": {
+     "pos": 4,
+     "p": 11,
+     "gf": 20,
+     "ga": 11
+    },
+    "West Bromwich Albion": {
+     "pos": 5,
+     "p": 11,
+     "gf": 15,
+     "ga": 12
+    },
+    "Stoke City": {
+     "pos": 6,
+     "p": 11,
+     "gf": 18,
+     "ga": 16
+    },
+    "Wolverhampton Wanderers": {
+     "pos": 7,
+     "p": 11,
+     "gf": 19,
+     "ga": 16
+    },
+    "Southampton": {
+     "pos": 8,
+     "p": 11,
+     "gf": 21,
+     "ga": 10
+    },
+    "Queens Park Rangers": {
+     "pos": 9,
+     "p": 11,
+     "gf": 15,
+     "ga": 12
+    },
+    "Blackburn Rovers": {
+     "pos": 10,
+     "p": 11,
+     "gf": 17,
+     "ga": 16
+    },
+    "Sheffield United": {
+     "pos": 11,
+     "p": 11,
+     "gf": 15,
+     "ga": 14
+    },
+    "Millwall": {
+     "pos": 12,
+     "p": 11,
+     "gf": 18,
+     "ga": 18
+    },
+    "Portsmouth": {
+     "pos": 13,
+     "p": 11,
+     "gf": 14,
+     "ga": 14
+    },
+    "Wrexham": {
+     "pos": 14,
+     "p": 11,
+     "gf": 15,
+     "ga": 16
+    },
+    "Bolton Wanderers": {
+     "pos": 15,
+     "p": 11,
+     "gf": 15,
+     "ga": 18
+    },
+    "Bristol City": {
+     "pos": 16,
+     "p": 11,
+     "gf": 12,
+     "ga": 15
+    },
+    "Charlton Athletic": {
+     "pos": 17,
+     "p": 11,
+     "gf": 10,
+     "ga": 15
+    },
+    "Lincoln City": {
+     "pos": 18,
+     "p": 11,
+     "gf": 9,
+     "ga": 19
+    },
+    "Cardiff City": {
+     "pos": 19,
+     "p": 11,
+     "gf": 18,
+     "ga": 17
+    },
+    "Watford": {
+     "pos": 20,
+     "p": 11,
+     "gf": 10,
+     "ga": 19
+    },
+    "Norwich City": {
+     "pos": 21,
+     "p": 11,
+     "gf": 17,
+     "ga": 21
+    },
+    "Burnley": {
+     "pos": 22,
+     "p": 11,
+     "gf": 16,
+     "ga": 21
+    },
+    "Derby County": {
+     "pos": 23,
+     "p": 11,
+     "gf": 9,
+     "ga": 20
+    },
+    "Preston North End": {
+     "pos": 24,
+     "p": 11,
+     "gf": 9,
+     "ga": 24
+    }
+   }
+  },
+  "Bundesliga": {
+   "source": "bbc.co.uk table",
+   "asOf": "21 Oct 2026",
+   "teams": {
+    "Bayern Munich": {
+     "pos": 1,
+     "p": 6,
+     "gf": 22,
+     "ga": 5
+    },
+    "Borussia Dortmund": {
+     "pos": 2,
+     "p": 6,
+     "gf": 11,
+     "ga": 4
+    },
+    "Freiburg": {
+     "pos": 3,
+     "p": 6,
+     "gf": 15,
+     "ga": 6
+    },
+    "Bayer 04 Leverkusen": {
+     "pos": 4,
+     "p": 6,
+     "gf": 16,
+     "ga": 9
+    },
+    "Mainz 05": {
+     "pos": 5,
+     "p": 6,
+     "gf": 14,
+     "ga": 10
+    },
+    "Elversberg": {
+     "pos": 6,
+     "p": 6,
+     "gf": 12,
+     "ga": 11
+    },
+    "RB Leipzig": {
+     "pos": 7,
+     "p": 6,
+     "gf": 16,
+     "ga": 11
+    },
+    "Werder Bremen": {
+     "pos": 8,
+     "p": 6,
+     "gf": 12,
+     "ga": 12
+    },
+    "Hamburger SV": {
+     "pos": 9,
+     "p": 6,
+     "gf": 6,
+     "ga": 15
+    },
+    "Augsburg": {
+     "pos": 10,
+     "p": 6,
+     "gf": 16,
+     "ga": 12
+    },
+    "Eintracht Frankfurt": {
+     "pos": 11,
+     "p": 6,
+     "gf": 10,
+     "ga": 16
+    },
+    "Köln": {
+     "pos": 12,
+     "p": 6,
+     "gf": 8,
+     "ga": 11
+    },
+    "Stuttgart": {
+     "pos": 13,
+     "p": 6,
+     "gf": 8,
+     "ga": 10
+    },
+    "Hoffenheim": {
+     "pos": 14,
+     "p": 6,
+     "gf": 11,
+     "ga": 14
+    },
+    "Schalke 04": {
+     "pos": 15,
+     "p": 6,
+     "gf": 4,
+     "ga": 7
+    },
+    "Paderborn": {
+     "pos": 16,
+     "p": 6,
+     "gf": 5,
+     "ga": 9
+    },
+    "Union Berlin": {
+     "pos": 17,
+     "p": 6,
+     "gf": 5,
+     "ga": 17
+    },
+    "Borussia M'gladbach": {
+     "pos": 18,
+     "p": 6,
+     "gf": 8,
+     "ga": 20
+    }
+   }
+  },
+  "Serie A": {
+   "source": "bbc.co.uk table",
+   "asOf": "21 Oct 2026",
+   "teams": {
+    "Inter Milan": {
+     "pos": 1,
+     "p": 7,
+     "gf": 21,
+     "ga": 9
+    },
+    "Lazio": {
+     "pos": 2,
+     "p": 7,
+     "gf": 14,
+     "ga": 4
+    },
+    "Roma": {
+     "pos": 3,
+     "p": 7,
+     "gf": 16,
+     "ga": 3
+    },
+    "AC Milan": {
+     "pos": 4,
+     "p": 7,
+     "gf": 14,
+     "ga": 7
+    },
+    "Como": {
+     "pos": 5,
+     "p": 7,
+     "gf": 12,
+     "ga": 7
+    },
+    "Frosinone": {
+     "pos": 6,
+     "p": 7,
+     "gf": 13,
+     "ga": 9
+    },
+    "Cagliari": {
+     "pos": 7,
+     "p": 7,
+     "gf": 6,
+     "ga": 7
+    },
+    "Juventus": {
+     "pos": 8,
+     "p": 7,
+     "gf": 9,
+     "ga": 8
+    },
+    "Napoli": {
+     "pos": 9,
+     "p": 7,
+     "gf": 10,
+     "ga": 7
+    },
+    "Torino": {
+     "pos": 10,
+     "p": 7,
+     "gf": 10,
+     "ga": 9
+    },
+    "Atalanta": {
+     "pos": 11,
+     "p": 7,
+     "gf": 10,
+     "ga": 11
+    },
+    "Lecce": {
+     "pos": 12,
+     "p": 7,
+     "gf": 9,
+     "ga": 12
+    },
+    "Sassuolo": {
+     "pos": 13,
+     "p": 7,
+     "gf": 12,
+     "ga": 14
+    },
+    "Monza": {
+     "pos": 14,
+     "p": 7,
+     "gf": 13,
+     "ga": 15
+    },
+    "Bologna": {
+     "pos": 15,
+     "p": 7,
+     "gf": 6,
+     "ga": 10
+    },
+    "Udinese": {
+     "pos": 16,
+     "p": 7,
+     "gf": 9,
+     "ga": 16
+    },
+    "Genoa": {
+     "pos": 17,
+     "p": 7,
+     "gf": 5,
+     "ga": 13
+    },
+    "Fiorentina": {
+     "pos": 18,
+     "p": 7,
+     "gf": 8,
+     "ga": 17
+    },
+    "Parma": {
+     "pos": 19,
+     "p": 7,
+     "gf": 4,
+     "ga": 13
+    },
+    "Venezia": {
+     "pos": 20,
+     "p": 7,
+     "gf": 6,
+     "ga": 16
+    }
+   }
+  },
+  "Ligue 1": {
+   "source": "bbc.co.uk table",
+   "asOf": "21 Oct 2026",
+   "teams": {
+    "Olympique Lyonnais": {
+     "pos": 1,
+     "p": 7,
+     "gf": 13,
+     "ga": 5
+    },
+    "Paris Saint-Germain": {
+     "pos": 2,
+     "p": 7,
+     "gf": 14,
+     "ga": 9
+    },
+    "Paris FC": {
+     "pos": 3,
+     "p": 7,
+     "gf": 12,
+     "ga": 7
+    },
+    "Lille": {
+     "pos": 4,
+     "p": 7,
+     "gf": 10,
+     "ga": 5
+    },
+    "Monaco": {
+     "pos": 5,
+     "p": 7,
+     "gf": 10,
+     "ga": 6
+    },
+    "Rennes": {
+     "pos": 6,
+     "p": 7,
+     "gf": 15,
+     "ga": 14
+    },
+    "Lorient": {
+     "pos": 7,
+     "p": 7,
+     "gf": 7,
+     "ga": 6
+    },
+    "Lens": {
+     "pos": 8,
+     "p": 7,
+     "gf": 14,
+     "ga": 11
+    },
+    "Marseille": {
+     "pos": 9,
+     "p": 7,
+     "gf": 14,
+     "ga": 10
+    },
+    "Brest": {
+     "pos": 10,
+     "p": 7,
+     "gf": 13,
+     "ga": 10
+    },
+    "Toulouse": {
+     "pos": 11,
+     "p": 7,
+     "gf": 12,
+     "ga": 11
+    },
+    "Auxerre": {
+     "pos": 12,
+     "p": 7,
+     "gf": 11,
+     "ga": 17
+    },
+    "Nice": {
+     "pos": 13,
+     "p": 7,
+     "gf": 6,
+     "ga": 9
+    },
+    "Strasbourg": {
+     "pos": 14,
+     "p": 7,
+     "gf": 12,
+     "ga": 15
+    },
+    "Angers": {
+     "pos": 15,
+     "p": 7,
+     "gf": 9,
+     "ga": 15
+    },
+    "Le Mans": {
+     "pos": 16,
+     "p": 7,
+     "gf": 10,
+     "ga": 15
+    },
+    "Troyes": {
+     "pos": 17,
+     "p": 7,
+     "gf": 5,
+     "ga": 16
+    },
+    "Le Havre": {
+     "pos": 18,
+     "p": 7,
+     "gf": 5,
+     "ga": 11
+    }
+   }
+  }
+ },
+ "fixtures": [
+  {
+   "league": "Premier League",
+   "home": "Ipswich Town",
+   "away": "Nottingham Forest",
+   "kickoff": "2026-10-23T20:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 3.25,
+     "d": 3.4,
+     "a": 2.2
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.57,
+     "no": 2.25
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.73,
+     "under": 2.1
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Bolton Wanderers",
+   "away": "Middlesbrough",
+   "kickoff": "2026-10-23T20:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 5.25,
+     "d": 4.1,
+     "a": 1.57
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.57,
+     "no": 2.25
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.53,
+     "under": 2.5
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Aston Villa",
+   "away": "Manchester City",
+   "kickoff": "2026-10-24T12:30:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 5.0,
+     "d": 4.0,
+     "a": 1.67
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.53,
+     "no": 2.38
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.53,
+     "under": 2.5
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Charlton Athletic",
+   "away": "Norwich City",
+   "kickoff": "2026-10-24T12:30:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 3.2,
+     "d": 3.5,
+     "a": 2.15
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.73,
+     "no": 2.0
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.91,
+     "under": 1.91
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Portsmouth",
+   "away": "Millwall",
+   "kickoff": "2026-10-24T12:30:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.35,
+     "d": 3.3,
+     "a": 3.0
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.73,
+     "no": 2.0
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 2.0,
+     "under": 1.8
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Sheffield United",
+   "away": "Derby County",
+   "kickoff": "2026-10-24T12:30:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.8,
+     "d": 3.6,
+     "a": 4.33
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.73,
+     "no": 2.0
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.8,
+     "under": 2.0
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Arsenal",
+   "away": "Everton",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.42,
+     "d": 4.75,
+     "a": 7.0
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 2.0,
+     "no": 1.75
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.8,
+     "under": 2.0
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Coventry City",
+   "away": "Fulham",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 3.2,
+     "d": 3.4,
+     "a": 2.25
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.57,
+     "no": 2.25
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.73,
+     "under": 2.1
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Blackburn Rovers",
+   "away": "Wrexham",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.7,
+     "d": 3.2,
+     "a": 2.6
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.83,
+     "no": 1.83
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 2.2,
+     "under": 1.67
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Cardiff City",
+   "away": "Birmingham City",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.6,
+     "d": 3.7,
+     "a": 2.5
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.5,
+     "no": 2.5
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.62,
+     "under": 2.3
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Lincoln City",
+   "away": "Burnley",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 3.0,
+     "d": 3.4,
+     "a": 2.3
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.67,
+     "no": 2.1
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.91,
+     "under": 1.91
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Preston North End",
+   "away": "West Bromwich Albion",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 3.75,
+     "d": 3.5,
+     "a": 1.95
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.73,
+     "no": 2.0
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.91,
+     "under": 1.91
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Queens Park Rangers",
+   "away": "Swansea City",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.4,
+     "d": 3.3,
+     "a": 2.8
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.73,
+     "no": 2.0
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.91,
+     "under": 1.91
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Stoke City",
+   "away": "Bristol City",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.3,
+     "d": 3.4,
+     "a": 3.0
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.73,
+     "no": 2.0
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.91,
+     "under": 1.91
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "West Ham United",
+   "away": "Southampton",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.67,
+     "d": 4.1,
+     "a": 4.5
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.5,
+     "no": 2.5
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.5,
+     "under": 2.63
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Championship",
+   "home": "Wolverhampton Wanderers",
+   "away": "Watford",
+   "kickoff": "2026-10-24T15:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.36,
+     "d": 4.75,
+     "a": 8.0
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.83,
+     "no": 1.83
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.57,
+     "under": 2.38
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Serie A",
+   "home": "Napoli",
+   "away": "Roma",
+   "kickoff": "2026-10-24T17:00:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.8,
+     "d": 3.2,
+     "a": 2.63
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.67,
+     "no": 2.1
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.91,
+     "under": 1.91
+    }
+   ],
+   "form": "Included because Roma is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Chelsea",
+   "away": "Tottenham Hotspur",
+   "kickoff": "2026-10-24T17:30:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.67,
+     "d": 4.2,
+     "a": 4.75
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.53,
+     "no": 2.38
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.5,
+     "under": 2.63
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Bundesliga",
+   "home": "Borussia Dortmund",
+   "away": "Eintracht Frankfurt",
+   "kickoff": "2026-10-24T17:30:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.48,
+     "d": 5.0,
+     "a": 5.75
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.44,
+     "no": 2.63
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.33,
+     "under": 3.4
+    }
+   ],
+   "form": "Included because Borussia Dortmund is in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Serie A",
+   "home": "Lazio",
+   "away": "Parma",
+   "kickoff": "2026-10-24T19:45:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.42,
+     "d": 4.33,
+     "a": 8.5
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 2.05,
+     "no": 1.7
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.91,
+     "under": 1.91
+    }
+   ],
+   "form": "Included because Lazio is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Ligue 1",
+   "home": "Lens",
+   "away": "Paris FC",
+   "kickoff": "2026-10-24T19:45:00+01:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.38,
+     "d": 3.5,
+     "a": 2.88
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.53,
+     "no": 2.38
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.67,
+     "under": 2.2
+    }
+   ],
+   "form": "Included because Paris FC is in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Serie A",
+   "home": "Inter Milan",
+   "away": "Fiorentina",
+   "kickoff": "2026-10-25T11:30:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.33,
+     "d": 5.25,
+     "a": 9.0
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.67,
+     "no": 2.1
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.44,
+     "under": 2.75
+    }
+   ],
+   "form": "Included because Inter Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Crystal Palace",
+   "away": "Newcastle United",
+   "kickoff": "2026-10-25T14:00:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.88,
+     "d": 3.6,
+     "a": 2.38
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.53,
+     "no": 2.38
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.62,
+     "under": 2.3
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Hull City",
+   "away": "Brentford",
+   "kickoff": "2026-10-25T14:00:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 5.0,
+     "d": 3.9,
+     "a": 1.7
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.67,
+     "no": 2.1
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.67,
+     "under": 2.2
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Liverpool",
+   "away": "Brighton & Hove Albion",
+   "kickoff": "2026-10-25T14:00:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.15,
+     "d": 3.6,
+     "a": 3.25
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.5,
+     "no": 2.5
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.53,
+     "under": 2.5
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Manchester United",
+   "away": "Bournemouth",
+   "kickoff": "2026-10-25T14:00:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.95,
+     "d": 3.8,
+     "a": 3.7
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.53,
+     "no": 2.38
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.62,
+     "under": 2.3
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Ligue 1",
+   "home": "Monaco",
+   "away": "Lille",
+   "kickoff": "2026-10-25T14:00:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.1,
+     "d": 3.5,
+     "a": 3.5
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.67,
+     "no": 2.1
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.8,
+     "under": 2.0
+    }
+   ],
+   "form": "Included because Lille is in the Ligue 1 top 4. Monaco (5th) are level on points with Lille (4th), separated only by goal difference. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Bundesliga",
+   "home": "Hoffenheim",
+   "away": "Bayer 04 Leverkusen",
+   "kickoff": "2026-10-25T14:30:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.88,
+     "d": 3.75,
+     "a": 2.3
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.36,
+     "no": 3.0
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.4,
+     "under": 3.0
+    }
+   ],
+   "form": "Included because Bayer 04 Leverkusen is in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Premier League",
+   "home": "Sunderland",
+   "away": "Leeds United",
+   "kickoff": "2026-10-25T16:30:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 3.1,
+     "d": 3.25,
+     "a": 2.35
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.8,
+     "no": 1.95
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 2.1,
+     "under": 1.73
+    }
+   ],
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Bundesliga",
+   "home": "Freiburg",
+   "away": "Bayern Munich",
+   "kickoff": "2026-10-25T16:30:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 6.5,
+     "d": 5.75,
+     "a": 1.38
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.4,
+     "no": 2.75
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.25,
+     "under": 4.0
+    }
+   ],
+   "form": "Included because Freiburg and Bayern Munich are in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Serie A",
+   "home": "Udinese",
+   "away": "AC Milan",
+   "kickoff": "2026-10-25T19:45:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 5.5,
+     "d": 3.75,
+     "a": 1.65
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.8,
+     "no": 1.95
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.8,
+     "under": 2.0
+    }
+   ],
+   "form": "Included because AC Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Ligue 1",
+   "home": "Paris Saint-Germain",
+   "away": "Olympique Lyonnais",
+   "kickoff": "2026-10-25T19:45:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.42,
+     "d": 5.0,
+     "a": 7.0
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.53,
+     "no": 2.38
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.4,
+     "under": 3.0
+    }
+   ],
+   "form": "Included because Paris Saint-Germain and Olympique Lyonnais are in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Serie A",
+   "home": "Sassuolo",
+   "away": "Lazio",
+   "kickoff": "2026-10-27T17:30:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 2.75,
+     "d": 3.4,
+     "a": 2.45
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.62,
+     "no": 2.2
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.73,
+     "under": 2.1
+    }
+   ],
+   "form": "Included because Lazio is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Serie A",
+   "home": "Roma",
+   "away": "Cagliari",
+   "kickoff": "2026-10-27T19:45:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.36,
+     "d": 4.75,
+     "a": 9.0
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 2.0,
+     "no": 1.75
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.73,
+     "under": 2.1
+    }
+   ],
+   "form": "Included because Roma is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Serie A",
+   "home": "AC Milan",
+   "away": "Bologna",
+   "kickoff": "2026-10-28T17:30:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 1.6,
+     "d": 3.8,
+     "a": 5.5
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.8,
+     "no": 1.95
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.8,
+     "under": 2.0
+    }
+   ],
+   "form": "Included because AC Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  },
+  {
+   "league": "Serie A",
+   "home": "Venezia",
+   "away": "Inter Milan",
+   "kickoff": "2026-10-28T17:30:00+00:00",
+   "odds1x2": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "h": 8.5,
+     "d": 5.0,
+     "a": 1.33
+    }
+   ],
+   "oddsBtts": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "yes": 1.53,
+     "no": 2.38
+    }
+   ],
+   "oddsOu25": [
+    {
+     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "over": 1.33,
+     "under": 3.4
+    }
+   ],
+   "form": "Included because Inter Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+  }
+ ]
+}

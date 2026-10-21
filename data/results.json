@@ -1,1 +1,110 @@
-{}
+{
+ "uc10": {
+  "kickoff": "2026-10-21T17:45:00+01:00",
+  "score": [
+   4,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ },
+ "uc11": {
+  "kickoff": "2026-10-21T17:45:00+01:00",
+  "score": [
+   2,
+   4
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ },
+ "uc12": {
+  "kickoff": "2026-10-21T20:00:00+01:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ },
+ "uc13": {
+  "kickoff": "2026-10-21T20:00:00+01:00",
+  "score": [
+   2,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ },
+ "uc14": {
+  "kickoff": "2026-10-21T20:00:00+01:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ },
+ "uc15": {
+  "kickoff": "2026-10-21T20:00:00+01:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ },
+ "uc16": {
+  "kickoff": "2026-10-21T20:00:00+01:00",
+  "score": [
+   4,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ },
+ "uc17": {
+  "kickoff": "2026-10-21T20:00:00+01:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ },
+ "uc18": {
+  "kickoff": "2026-10-21T20:00:00+01:00",
+  "score": [
+   2,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "match.uefa.com"
+  ],
+  "note": ""
+ }
+}
