@@ -309,6 +309,7 @@ const TEAM_PROFILE = {
   'Newcastle United': {gf:1.8, ga:1.1, cards:2.0},
 };
 
+// BEGIN GENERATED SEED: rewritten each round by tools/build-seed.mjs. Edit the round file in data/, not this block.
 const SEED_MATCHES = [
   // Wed 21 Oct 2026: Champions League matchday 3, the nine games played today.
   // Prices refreshed from kickoff.co.uk on 21 Oct (Bet365 BTTS and Over 2.5 included). Lineups predicted only, so no lineup factor is applied.
@@ -326,13 +327,19 @@ const SEED_MATCHES = [
 const LEAGUE_ORDER = ['Champions League'];
 const LEAGUES_WITH_NO_SEED = [];
 
+// Final scores for recent fixtures (id -> [home, away]). On load, any matching
+// entry in this browser's prediction log is graded automatically.
+const SEED_RESULTS = {};
+
 // Champions League: Bet365 1X2, BTTS and Over/Under 2.5 via kickoff.co.uk. No goal-rate data for most teams.
 const DATA_UPDATED = 'Wed 21 Oct, 18:00';
 const SEED_VERSION = '2026-10-21-ucl-md3-wed';
-const SEED_VERSION_KEY = 'seedVersion:v1';
 const LEAGUE_QUALITY = {
   'Champions League':'estimate',
 };
+// END GENERATED SEED
+const SEED_VERSION_KEY = 'seedVersion:v1';
+
 
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -393,6 +400,10 @@ function loadAll(){
   predictionsLog = loadJSON(PREDICTIONS_LOG_KEY, []);
   syncProbSourceButtons();
   logAllPredictions();
+  Object.keys(SEED_RESULTS).forEach(id=>{
+    const r = SEED_RESULTS[id];
+    gradePredictionsForMatch(id, r[0], r[1]);
+  });
   render();
 }
 
@@ -435,6 +446,8 @@ function logPredictionSnapshot(m, source, probs){
       loggedAt:new Date().toISOString(), revisions:(existing.revisions||0)+1});
     return true;
   }
+  // A first snapshot taken after kick-off would not be a prediction, so none is made.
+  if(m.kickoff && new Date(m.kickoff).getTime() <= Date.now()) return false;
   predictionsLog.push({
     id, matchId:m.id, fixture:`${m.home} vs ${m.away}`, league:m.league,
     kickoff:m.kickoff, loggedAt:new Date().toISOString(), modelVersion:MODEL_VERSION,

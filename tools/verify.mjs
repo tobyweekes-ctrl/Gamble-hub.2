@@ -15,7 +15,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import vm from 'node:vm';
+import { loadApp } from './lib/app.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const html = readFileSync(path.join(root, 'index.html'), 'utf8');
@@ -23,35 +23,7 @@ const copy = readFileSync(path.join(root, 'matchday-ledger.html'), 'utf8');
 const errors = [];
 if (html !== copy) errors.push('matchday-ledger.html differs from index.html');
 
-const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1]);
-if (scripts.length !== 1) throw new Error(`Expected one inline <script>, found ${scripts.length}`);
-const code = scripts[0] + `
-;globalThis.__out = { SEED_MATCHES, SEED_VERSION, LEAGUE_ORDER, MODEL_VERSION,
-  computeModelProbs, predictionsLog: () => predictionsLog,
-  SEED_RESULTS: typeof SEED_RESULTS !== 'undefined' ? SEED_RESULTS : null };`;
-
-new vm.Script(code, { filename: 'index.html<script>' }); // syntax check
-
-// A DOM stub that accepts any property access or call.
-const stub = () => new Proxy(function () {}, {
-  get: (t, k) => k === Symbol.toPrimitive ? () => '' : k === 'length' ? 0 : stub(),
-  set: () => true,
-  apply: () => stub(),
-});
-const store = new Map();
-const ctx = {
-  console, Date, Math, JSON, Intl,
-  localStorage: {
-    getItem: k => (store.has(k) ? store.get(k) : null),
-    setItem: (k, v) => store.set(k, String(v)),
-    removeItem: k => store.delete(k),
-  },
-  document: stub(), window: stub(), navigator: stub(),
-  setTimeout: () => 0, clearTimeout: () => {},
-};
-vm.createContext(ctx);
-vm.runInContext(code, ctx, { filename: 'index.html<script>' });
-const out = ctx.__out;
+const out = loadApp(html);
 
 const ids = new Set();
 const ok2 = v => v === null || (typeof v === 'number' && v >= 0 && v <= 100);
@@ -75,7 +47,7 @@ for (const m of out.SEED_MATCHES) {
   const md = mp ? `${mp.hw}/${mp.dw}/${mp.aw} (${mp.basis})` : 'no model';
   console.log(`${m.id.padEnd(6)} ${m.league.padEnd(17)} ${(m.home + ' v ' + m.away).padEnd(44)} market ${mk.padEnd(9)} model ${md}`);
 }
-const results = out.SEED_RESULTS || {};
+const results = out.SEED_RESULTS;
 for (const [id, r] of Object.entries(results)) {
   if (!Array.isArray(r) || r.length !== 2 || !r.every(Number.isInteger)) errors.push(`SEED_RESULTS ${id}: bad score`);
 }
