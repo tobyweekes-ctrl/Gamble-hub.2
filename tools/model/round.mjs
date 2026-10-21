@@ -1,0 +1,128 @@
+// Runs the independent model for a round's fixtures (used by tools/build-seed.mjs).
+// Fits on every result in data/raw/ played before the build, applies the context
+// factors measured by the backtest, and returns per-fixture numbers for the app.
+
+import { readFileSync, existsSync } from 'node:fs';
+import path from 'node:path';
+import { loadMatches, LEAGUE_DIV, GROUPS, fdName } from './data.mjs';
+import { buildState, predict, DEFAULT_CONFIG } from './ensemble.mjs';
+import { fitRatings } from './models.mjs';
+import { calibrate1x2, calibrate2 } from './calibration.mjs';
+import { loadEurope, schedule, teamFlags, isDerby, contextMultipliers, FLAGS } from './context.mjs';
+
+const DAY = 864e5;
+const FLAG_TEXT = {
+  shortRest: 'played within the last 3 days',
+  europeBefore: 'played a European game in the previous 4 days',
+  europeAfter: 'has a European game in the next 4 days (rotation risk)',
+  newcomer: 'is new to this division this season',
+};
+
+export function modelForRound(root, fixtures) {
+  const raw = path.join(root, 'data/raw');
+  const warnings = [];
+  if (!existsSync(raw)) return { byId: {}, info: {}, warnings: ['data/raw missing: run tools/model/fetch.sh; no model numbers built'], asOfLabel: '' };
+  const cfgPath = path.join(root, 'tools/model/config.json');
+  const cfg = existsSync(cfgPath) ? JSON.parse(readFileSync(cfgPath, 'utf8')) : DEFAULT_CONFIG;
+  if (!existsSync(cfgPath)) warnings.push('tools/model/config.json missing: using untuned defaults');
+  const ctxPath = path.join(root, 'data/model/context.json');
+  const ctxFile = existsSync(ctxPath) ? JSON.parse(readFileSync(ctxPath, 'utf8')) : {};
+  const factors = ctxFile.factors || {};
+  const calib = ctxFile.calibration || null;
+  if (!calib) warnings.push('no calibration in data/model/context.json: run tools/model/backtest.mjs');
+  const btPath = path.join(root, 'data/model/backtest.json');
+  const bt = existsSync(btPath) ? JSON.parse(readFileSync(btPath, 'utf8')) : null;
+
+  const matches = loadMatches(raw);
+  const now = Date.now();
+  const asOf = Math.min(now, ...fixtures.map(f => Date.parse(f.kickoff)));
+  const state = buildState(matches, asOf, cfg);
+  const europe = loadEurope(raw);
+  const divOf = f => LEAGUE_DIV[f.league];
+  const upcoming = fixtures.filter(divOf).map(f => ({ home: fdName(f.home), away: fdName(f.away), date: Date.parse(f.kickoff) }));
+  const sched = schedule(matches.filter(m => m.date < asOf), europe, upcoming);
+
+  // Division membership by season, for the "new to this division" flag.
+  const seasons = [...new Set(matches.map(m => m.season))].sort();
+  const cur = seasons[seasons.length - 1], prev = seasons[seasons.length - 2];
+  const members = (div, season) => new Set(matches.filter(m => m.div === div && m.season === season).flatMap(m => [m.home, m.away]));
+
+  // Match-stat models (shots, shots on target, corners, cards, fouls): the same
+  // attack/defence rating model on counts. Settings are not tuned and there are no
+  // bookmaker prices to compare against yet, so the app shows them as expectations only.
+  const STAT_KEYS = { shots: ['hs', 'as'], shotsOnTarget: ['hst', 'ast'], corners: ['hc', 'ac'], cards: ['hy', 'ay'], fouls: ['hf', 'af'] };
+  const statModels = {};
+  for (const g of Object.keys(GROUPS)) {
+    const gm = matches.filter(m => m.group === g && m.date < asOf && asOf - m.date < 1500 * DAY);
+    statModels[g] = Object.fromEntries(Object.entries(STAT_KEYS).map(([k, [hk, ak]]) =>
+      [k, fitRatings(gm.filter(m => m[hk] != null && m[ak] != null), { asOf, xi: 0.004, sigma: 0.6, hKey: hk, aKey: ak })]));
+  }
+
+  const byId = {};
+  for (const f of fixtures) {
+    const div = divOf(f);
+    if (!div) continue; // e.g. Champions League: no cross-league model yet
+    const group = Object.keys(GROUPS).find(g => GROUPS[g].includes(div));
+    const home = fdName(f.home), away = fdName(f.away);
+    const t = Date.parse(f.kickoff);
+    const last = members(div, prev);
+    const fh = { ...teamFlags(sched, home, t), newcomer: !last.has(home) };
+    const fa = { ...teamFlags(sched, away, t), newcomer: !last.has(away) };
+    const derby = isDerby(home, away);
+    const mult = contextMultipliers(factors, fh, fa, derby);
+    const p = predict(state, { group, div, home, away }, mult);
+    if (!p) { warnings.push(`${f.home} v ${f.away}: team not found in the results data (check TEAM_ALIASES)`); continue; }
+    const context = [];
+    for (const k of FLAGS) for (const [side, flags, name] of [['h', fh, f.home], ['a', fa, f.away]]) {
+      if (!flags[k]) continue;
+      const fac = factors[k];
+      context.push(fac
+        ? `${name} ${FLAG_TEXT[k]} (applied: scores x${fac.att}, concedes x${fac.def}, measured on past seasons)`
+        : `${name} ${FLAG_TEXT[k]} (noted only: no measurable effect on past seasons)`);
+    }
+    if (derby) context.push(factors.derby ? `Derby (applied: home goals x${factors.derby.h}, away goals x${factors.derby.a})` : 'Derby (noted only: no measurable effect on past seasons)');
+    const recent = team => matches.filter(m => m.date < asOf && asOf - m.date < 365 * DAY && (m.home === team || m.away === team)).length;
+    const r1 = x => +(x * 100).toFixed(1);
+    // Calibrated with the settings the backtest fitted on past seasons (calibration.mjs).
+    const x3 = calib ? calibrate1x2([p.h, p.d, p.a], calib.x12) : [p.h, p.d, p.a];
+    const btts = calib ? calibrate2(p.btts, calib.btts) : p.btts, o25 = calib ? calibrate2(p.o25, calib.o25) : p.o25;
+    byId[f.id] = {
+      hw: r1(x3[0]), dw: r1(x3[1]), aw: r1(x3[2]), btts: r1(btts), ou25: r1(o25),
+      over15: r1(p.o15), over35: r1(p.o35), cleanSheetH: r1(p.csH), cleanSheetA: r1(p.csA),
+      topScorelines: p.top.map(s => ({ h: s.h, a: s.a, pct: r1(s.p) })),
+      expH: +p.expH.toFixed(3), expA: +p.expA.toFixed(3),
+      components: {
+        goals: round3(p.components.goals), shots: round3(p.components.shots), elo: round3(p.components.elo),
+      },
+      context, teamGames: { h: recent(home), a: recent(away) },
+      stats: Object.fromEntries(Object.entries(statModels[group]).map(([k, r]) => {
+        const e = r.expected(div, home, away);
+        return [k, e ? { h: +e.h.toFixed(1), a: +e.a.toFixed(1) } : null];
+      })),
+    };
+  }
+  const info = {
+    version: 'independent-v4',
+    fittedTo: new Date(asOf).toISOString().slice(0, 10),
+    weights: cfg.weights, settings: { goals: cfg.goals, shots: cfg.shots, elo: cfg.elo },
+    contextFactors: factors, calibration: calib,
+    backtest: bt && summary(bt),
+  };
+  return { byId, info, warnings, asOfLabel: new Date(asOf).toISOString().slice(0, 10) };
+}
+
+function round3(o) {
+  return Object.fromEntries(Object.entries(o).map(([k, v]) => [k, typeof v === 'number' ? +v.toFixed(3) : v]));
+}
+
+function summary(bt) {
+  const o = bt.overall;
+  const v = (bt.valueBets['1x2'] || []).find(x => x.threshold === 0.05) || bt.valueBets['1x2'][0];
+  return {
+    testSeasons: bt.testSeasons, n: o.model.n,
+    modelBrier: o.model.brier, marketBrier: o.bet365PreMatch.brier, closingBrier: o.closing.brier,
+    modelLogLoss: o.model.logloss, marketLogLoss: o.bet365PreMatch.logloss,
+    blendWeight: bt.modelWeightInBlendWithMarket?.fittedOnValidation,
+    value1x2: v, verdict: bt.verdict || '',
+  };
+}

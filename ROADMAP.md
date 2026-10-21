@@ -10,6 +10,27 @@ This file says what to build, in what order and what has to be true first. It do
 - Done 21 Oct: the weekly build (`tools/build-seed.mjs`) logs the goal model on its own and the raw goal rates to `data/ledger.json`, which covers items 1.2 and 1.3 below for every fixture built from now on.
 - Open: the cloud environment's network policy blocks the football sites, so the weekly update can't fetch data until they are allowed (see `ROUTINE.md`).
 
+## 0b. Independent model (built 21-22 Oct)
+
+The predictions now come from our own model (`tools/model/`), not from bookmaker prices. It has three parts:
+
+- **Goals model:** Dixon-Coles, with team attack and defence ratings, time decay, and home advantage and scoring level per division. England tiers 1-3, and the top two tiers in Germany, Italy and France, are each fitted together, so promoted teams are rated on one scale.
+- **Shots model:** the same ratings fitted to shots on target, converted to goals.
+- **Elo rating:** a goal-difference rating per team.
+
+The weights for combining them are chosen on the 2023/24 and 2024/25 seasons; Elo got zero weight. Calibration is fitted on the same seasons. The test is on 2025/26 and 2026/27, which the model never saw; see `data/model/backtest.json`.
+
+Context factors were measured, not assumed: rest days, European games before or after, derbies, promoted teams and recent form. None showed an effect beyond what the ratings already capture, so none are applied. They are re-measured monthly.
+
+Not in the model yet: lineups, injuries, suspensions, referees, weather, xG history (football-data.co.uk only has xG from 2026/27), and Champions League fixtures (they need ratings that work across leagues).
+
+**Next model steps, in order of expected value:**
+
+1. **Team news as a measured input.** This needs a structured, reliable source of confirmed lineups. Preview sites have been wrong.
+2. **xG.** Use it as a fourth component once a season of xG exists to test it on, from summer 2027.
+3. **Cross-league ratings, for the Champions League.** Add Portugal, the Netherlands, Belgium, Scotland and Turkey from football-data.co.uk, and link the leagues through UEFA results.
+4. **Match-stat markets:** shots, corners, cards and fouls. Expected counts are shown already. To test for value we need historical bookmaker lines for these markets, which football-data.co.uk doesn't have.
+
 ## 1. Things we can do now, with no new data
 
 | # | Item | Gate before acting |

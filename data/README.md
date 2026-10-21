@@ -47,3 +47,17 @@
 ```
 
 Give two sources where possible. Write `"note": "single source"` when there is only one. Leave out a game whose score you couldn't find.
+
+## Model files
+
+- **`raw/`** (not committed): the inputs, re-downloaded each week.
+  - `sh tools/model/fetch.sh`: football-data.co.uk results and match stats for England tiers 1-3 and the top two tiers of Germany, Italy and France, 2021/22 onwards.
+  - `node tools/model/fetch-europe.mjs`: UEFA club-competition fixtures for those countries' clubs.
+- **`model/backtest.json`**: the out-of-sample test, written by `tools/model/backtest.mjs`. It covers accuracy against Bet365 and closing prices, a per-league breakdown, calibration, the value-bet simulation and the context-factor measurements. The site's backtest note is built from it.
+- **`model/context.json`**: the context factors and the calibration the weekly build applies, both measured on the validation seasons only.
+- **`tools/model/config.json`**: model settings chosen by `tools/model/tune.mjs` on the validation seasons.
+
+Each built fixture also carries:
+
+- **`model`**: our model's probabilities, expected goals, component models, context notes and expected match stats.
+- **`prices`**: the first listed source's actual decimal prices, used for the edge calculation on the mispricing list.
