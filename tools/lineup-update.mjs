@@ -16,7 +16,7 @@ import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { kickoffMatchPage, kickoffPrices, sameTeam } from './research/sources.mjs';
-import { loadLineups, teamHistory, lineupFeatures, missingRegulars } from './model/lineups.mjs';
+import { loadLineups, teamHistory, lineupFeatures, missingRegulars, usualXI } from './model/lineups.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const roundsDir = path.join(root, 'data/rounds');
@@ -34,11 +34,17 @@ run('tools/results.mjs');
 run('tools/model/fetch-lineups.mjs', '--since', new Date(now - 150 * 864e5).toISOString().slice(0, 10), '--upcoming');
 const lineups = loadLineups(path.join(root, 'data/raw'), { includeUpcoming: true });
 const hist = teamHistory(lineups);
-const upcoming = lineups.filter(l => l.upcoming && l.home && l.away);
-let withLineups = 0, priced = 0;
+const upcoming = lineups.filter(l => l.upcoming);
+let withLineups = 0, probable = 0, priced = 0;
 for (const f of round.fixtures) {
   const t = Date.parse(f.kickoff);
-  const l = upcoming.find(u => Math.abs(u.t - t) < 3 * 3600e3 && sameTeam(u.homeName, f.home) && sameTeam(u.awayName, f.away));
+  const u = upcoming.find(x => Math.abs(x.t - t) < 3 * 3600e3 && sameTeam(x.homeName, f.home) && sameTeam(x.awayName, f.away));
+  const l = u && u.home && u.away ? u : null;
+  // Before team sheets: each side's usual XI, for the player markets (labelled probable).
+  if (u && !l && t > now) {
+    const h = usualXI(hist, u.homeId, u.t), a = usualXI(hist, u.awayId, u.t);
+    if (h && a) { f.probableXI = { source: 'ESPN, most-started players in the last 8 matches', at: new Date(now).toISOString(), home: h, away: a }; probable++; }
+  }
   if (l) {
     const side = team => {
       const feats = lineupFeatures(hist, team, l.t);
@@ -46,11 +52,13 @@ for (const f of round.fixtures) {
         team: team.name, formation: team.formation,
         xi: team.players.filter(p => p.start).map(p => p.name),
         missing: missingRegulars(hist, team, l.t),
+        starters: team.players.filter(p => p.start).map(p => ({ id: p.id, name: p.name, pos: p.pos })),
         reg: feats ? +feats.reg.toFixed(3) : null, att: feats ? +feats.att.toFixed(3) : null,
         backupKeeper: feats ? feats.gk : null, history: feats ? feats.n : 0,
       };
     };
     f.lineups = { source: 'ESPN', at: new Date(now).toISOString(), home: side(l.home), away: side(l.away) };
+    delete f.probableXI;
     withLineups++;
   }
   // 3. Prices, for fixtures not yet started
@@ -70,7 +78,7 @@ for (const f of round.fixtures) {
 round.updateTag = label(now);
 round.dataUpdated = label(now);
 writeFileSync(roundPath, JSON.stringify(round, null, 1) + '\n');
-console.log(`lineup update: ${withLineups} fixtures with confirmed lineups, ${priced} prices refreshed`);
+console.log(`lineup update: ${withLineups} fixtures with confirmed lineups, ${probable} with probable XIs, ${priced} prices refreshed`);
 
 // 4. Season simulator (uses the results added above), then rebuild
 run('tools/model/season-sim.mjs');

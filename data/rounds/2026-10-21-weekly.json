@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-10-21-weekly",
- "dataUpdated": "Thu 22 Oct 08:47",
+ "dataUpdated": "Thu 22 Oct 10:29",
  "notes": [
   "Thu 22 - Thu 29 Oct 2026. Premier League and Championship in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "No Champions League games in this window (next league-phase matchday is in November).",
@@ -661,7 +661,7 @@
    "kickoff": "2026-10-23T20:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 3.25,
      "d": 3.4,
      "a": 2.2
@@ -669,20 +669,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.73,
      "under": 2.1
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/ipswich-vs-nottingham-forest/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/ipswich-vs-nottingham-forest/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "230963",
+      "name": "Issa Diop",
+      "pos": "CD",
+      "started": "7/7"
+     },
+     {
+      "id": "283086",
+      "name": "Leif Davis",
+      "pos": "LM",
+      "started": "7/7"
+     },
+     {
+      "id": "243440",
+      "name": "Dara O'Shea",
+      "pos": "CD-R",
+      "started": "7/7"
+     },
+     {
+      "id": "20975",
+      "name": "Julio Enciso",
+      "pos": "CF-L",
+      "started": "7/7"
+     },
+     {
+      "id": "322654",
+      "name": "Emersonn",
+      "pos": "F",
+      "started": "7/7"
+     },
+     {
+      "id": "222300",
+      "name": "Sasa Lukic",
+      "pos": "RM",
+      "started": "6/7"
+     },
+     {
+      "id": "291174",
+      "name": "Jacob Greaves",
+      "pos": "CD-L",
+      "started": "5/7"
+     },
+     {
+      "id": "286347",
+      "name": "Daizen Maeda",
+      "pos": "CF-R",
+      "started": "5/7"
+     },
+     {
+      "id": "318680",
+      "name": "Fatawu Issahaku",
+      "pos": "AM-R",
+      "started": "5/7"
+     },
+     {
+      "id": "246244",
+      "name": "Kjell Scherpen",
+      "pos": "G",
+      "started": "4/7"
+     },
+     {
+      "id": "228393",
+      "name": "Exequiel Palacios",
+      "pos": "CM-L",
+      "started": "4/7"
+     }
+    ],
+    "away": [
+     {
+      "id": "179497",
+      "name": "Matz Sels",
+      "pos": "G",
+      "started": "7/7"
+     },
+     {
+      "id": "338894",
+      "name": "Murillo",
+      "pos": "CD-L",
+      "started": "7/7"
+     },
+     {
+      "id": "298518",
+      "name": "James McAtee",
+      "pos": "CM-R",
+      "started": "7/7"
+     },
+     {
+      "id": "291638",
+      "name": "Neco Williams",
+      "pos": "LM",
+      "started": "7/7"
+     },
+     {
+      "id": "275842",
+      "name": "Dan Ndoye",
+      "pos": "CF-L",
+      "started": "7/7"
+     },
+     {
+      "id": "243396",
+      "name": "Morgan Gibbs-White",
+      "pos": "CF-R",
+      "started": "6/7"
+     },
+     {
+      "id": "238886",
+      "name": "Xaver Schlager",
+      "pos": "CM-L",
+      "started": "6/7"
+     },
+     {
+      "id": "338876",
+      "name": "Jair Paula",
+      "pos": "CD-R",
+      "started": "5/7"
+     },
+     {
+      "id": "206227",
+      "name": "Ola Aina",
+      "pos": "CD-R",
+      "started": "5/7"
+     },
+     {
+      "id": "307114",
+      "name": "Liam Delap",
+      "pos": "F",
+      "started": "5/7"
+     },
+     {
+      "id": "343964",
+      "name": "Ousmane Diomande",
+      "pos": "CD",
+      "started": "4/7"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -691,7 +831,7 @@
    "kickoff": "2026-10-23T20:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 5.5,
      "d": 4.33,
      "a": 1.53
@@ -699,20 +839,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.5,
      "under": 2.63
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/bolton-vs-middlesbrough/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/bolton-vs-middlesbrough/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "187177",
+      "name": "Josh Sheehan",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "248860",
+      "name": "Gaizka Larrazabal",
+      "pos": "AM-R",
+      "started": "7/8"
+     },
+     {
+      "id": "243385",
+      "name": "Sam Dalby",
+      "pos": "F",
+      "started": "7/8"
+     },
+     {
+      "id": "272245",
+      "name": "Thierry Gale",
+      "pos": "AM-L",
+      "started": "6/8"
+     },
+     {
+      "id": "275735",
+      "name": "Gavin Bazunu",
+      "pos": "G",
+      "started": "6/8"
+     },
+     {
+      "id": "260007",
+      "name": "Eoin Toal",
+      "pos": "CD-R",
+      "started": "6/8"
+     },
+     {
+      "id": "219599",
+      "name": "Ben Davies",
+      "pos": "CD-L",
+      "started": "5/8"
+     },
+     {
+      "id": "341273",
+      "name": "Samuel Iling-Junior",
+      "pos": "RM",
+      "started": "5/8"
+     },
+     {
+      "id": "259884",
+      "name": "Ethan Erhahon",
+      "pos": "CM-L",
+      "started": "5/8"
+     },
+     {
+      "id": "241449",
+      "name": "Akin Famewo",
+      "pos": "LB",
+      "started": "4/8"
+     },
+     {
+      "id": "308549",
+      "name": "Max Conway",
+      "pos": "LB",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "325556",
+      "name": "Radek Vítek",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "232311",
+      "name": "Callum Brittain",
+      "pos": "RB",
+      "started": "8/8"
+     },
+     {
+      "id": "293826",
+      "name": "Aidan Morris",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "272281",
+      "name": "Neto Borges",
+      "pos": "LB",
+      "started": "7/8"
+     },
+     {
+      "id": "312130",
+      "name": "Adilson Malanda",
+      "pos": "LM",
+      "started": "7/8"
+     },
+     {
+      "id": "349181",
+      "name": "Will Lankshear",
+      "pos": "F",
+      "started": "7/8"
+     },
+     {
+      "id": "235096",
+      "name": "Riley McGree",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "295771",
+      "name": "Sebastian Berhalter",
+      "pos": "CM-R",
+      "started": "6/8"
+     },
+     {
+      "id": "273628",
+      "name": "Ashley Phillips",
+      "pos": "CD-L",
+      "started": "6/8"
+     },
+     {
+      "id": "327170",
+      "name": "Amario Cozier-Duberry",
+      "pos": "AM-R",
+      "started": "6/8"
+     },
+     {
+      "id": "136380",
+      "name": "Luke Ayling",
+      "pos": "CD-R",
+      "started": "5/8"
+     }
+    ]
+   }
   },
   {
    "league": "Premier League",
@@ -721,7 +1001,7 @@
    "kickoff": "2026-10-24T12:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 5.25,
      "d": 4,
      "a": 1.67
@@ -729,20 +1009,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.53,
      "under": 2.5
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/aston-villa-vs-man-city/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/aston-villa-vs-man-city/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "265958",
+      "name": "Zion Suzuki",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "204679",
+      "name": "Victor Lindelöf",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "308524",
+      "name": "Nicolas Jackson",
+      "pos": "F",
+      "started": "8/8"
+     },
+     {
+      "id": "214375",
+      "name": "Emiliano Buendía",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "250936",
+      "name": "Boubacar Kamara",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "162843",
+      "name": "John McGinn",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "181312",
+      "name": "Tyrone Mings",
+      "pos": "LB",
+      "started": "5/8"
+     },
+     {
+      "id": "250945",
+      "name": "Aaron Wan-Bissaka",
+      "pos": "LB",
+      "started": "5/8"
+     },
+     {
+      "id": "301524",
+      "name": "João Gomes",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "234698",
+      "name": "Matty Cash",
+      "pos": "RB",
+      "started": "4/8"
+     },
+     {
+      "id": "152469",
+      "name": "Ross Barkley",
+      "pos": "LM",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "217092",
+      "name": "Gianluigi Donnarumma",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "234878",
+      "name": "Rúben Dias",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "265907",
+      "name": "Marc Guéhi",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "298008",
+      "name": "Rayan Cherki",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "285450",
+      "name": "Enzo Fernández",
+      "pos": "LM",
+      "started": "7/8"
+     },
+     {
+      "id": "253989",
+      "name": "Erling Haaland",
+      "pos": "F",
+      "started": "7/8"
+     },
+     {
+      "id": "299910",
+      "name": "Josko Gvardiol",
+      "pos": "LB",
+      "started": "6/8"
+     },
+     {
+      "id": "238472",
+      "name": "Elliot Anderson",
+      "pos": "RM",
+      "started": "6/8"
+     },
+     {
+      "id": "273292",
+      "name": "Antoine Semenyo",
+      "pos": "AM-R",
+      "started": "6/8"
+     },
+     {
+      "id": "303785",
+      "name": "Matheus Nunes",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "268641",
+      "name": "Iliman Ndiaye",
+      "pos": "AM-R",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -751,7 +1171,7 @@
    "kickoff": "2026-10-24T12:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 3,
      "d": 3.5,
      "a": 2.25
@@ -759,20 +1179,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.91,
      "under": 1.91
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/charlton-athletic-vs-norwich/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/charlton-athletic-vs-norwich/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "280554",
+      "name": "Arthur Okonkwo",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "186298",
+      "name": "Lloyd Jones",
+      "pos": "CD",
+      "started": "8/8"
+     },
+     {
+      "id": "212520",
+      "name": "Karlan Grant",
+      "pos": "CF-R",
+      "started": "8/8"
+     },
+     {
+      "id": "346449",
+      "name": "Miles Leaburn",
+      "pos": "F",
+      "started": "8/8"
+     },
+     {
+      "id": "336361",
+      "name": "Tyreece Campbell",
+      "pos": "CF-L",
+      "started": "8/8"
+     },
+     {
+      "id": "243543",
+      "name": "Conor Coventry",
+      "pos": "CM-L",
+      "started": "7/8"
+     },
+     {
+      "id": "261448",
+      "name": "Oliver Skipp",
+      "pos": "CM-R",
+      "started": "7/8"
+     },
+     {
+      "id": "260748",
+      "name": "Dan McNamara",
+      "pos": "RM",
+      "started": "6/8"
+     },
+     {
+      "id": "367427",
+      "name": "Tyler Bindon",
+      "pos": "CD-L",
+      "started": "5/8"
+     },
+     {
+      "id": "289548",
+      "name": "Ivan Mesik",
+      "pos": "LM",
+      "started": "5/8"
+     },
+     {
+      "id": "192034",
+      "name": "Amari'i Bell",
+      "pos": "LM",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "286667",
+      "name": "José Córdoba",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "328008",
+      "name": "Ruairi McConville",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "290037",
+      "name": "Pelle Mattsson",
+      "pos": "LM",
+      "started": "8/8"
+     },
+     {
+      "id": "350353",
+      "name": "Andre Brooks",
+      "pos": "AM-R",
+      "started": "8/8"
+     },
+     {
+      "id": "257938",
+      "name": "Vladan Kovacevic",
+      "pos": "G",
+      "started": "6/8"
+     },
+     {
+      "id": "206219",
+      "name": "Jack Stacey",
+      "pos": "RB",
+      "started": "6/8"
+     },
+     {
+      "id": "345568",
+      "name": "Oscar Schwartau",
+      "pos": "AM-L",
+      "started": "6/8"
+     },
+     {
+      "id": "292004",
+      "name": "Benjamin Chrisene",
+      "pos": "LB",
+      "started": "6/8"
+     },
+     {
+      "id": "302944",
+      "name": "Anis Slimane",
+      "pos": "AM",
+      "started": "5/8"
+     },
+     {
+      "id": "141870",
+      "name": "Kenny McLean",
+      "pos": "RM",
+      "started": "5/8"
+     },
+     {
+      "id": "302688",
+      "name": "Mohamed Toure",
+      "pos": "F",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -781,7 +1341,7 @@
    "kickoff": "2026-10-24T12:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.4,
      "d": 3.25,
      "a": 2.9
@@ -789,20 +1349,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 2,
      "under": 1.8
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/portsmouth-vs-millwall/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/portsmouth-vs-millwall/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "275674",
+      "name": "Abu Kamara",
+      "pos": "AM-R",
+      "started": "8/8"
+     },
+     {
+      "id": "320459",
+      "name": "Adrian Segecic",
+      "pos": "AM-L",
+      "started": "7/8"
+     },
+     {
+      "id": "126574",
+      "name": "Marlon Pack",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "352820",
+      "name": "Jayden Meghoma",
+      "pos": "LB",
+      "started": "7/8"
+     },
+     {
+      "id": "369506",
+      "name": "Madiodio Dia",
+      "pos": "CD-L",
+      "started": "6/8"
+     },
+     {
+      "id": "293335",
+      "name": "Zak Swanson",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "399895",
+      "name": "Ryan Kavuma-Mcqueen",
+      "pos": "AM-L",
+      "started": "5/8"
+     },
+     {
+      "id": "255481",
+      "name": "Tyrese Shade",
+      "pos": "F",
+      "started": "5/8"
+     },
+     {
+      "id": "275751",
+      "name": "Daniel Bielica",
+      "pos": "G",
+      "started": "4/8"
+     },
+     {
+      "id": "338292",
+      "name": "Terry Devlin",
+      "pos": "RB",
+      "started": "4/8"
+     },
+     {
+      "id": "97026",
+      "name": "Marko Milovanovic",
+      "pos": "F",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "190963",
+      "name": "Jake Cooper",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "308572",
+      "name": "Caleb Taylor",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "328018",
+      "name": "Jenson Metcalfe",
+      "pos": "LM",
+      "started": "8/8"
+     },
+     {
+      "id": "328014",
+      "name": "Zak Sturge",
+      "pos": "LB",
+      "started": "8/8"
+     },
+     {
+      "id": "207538",
+      "name": "Lyndon Dykes",
+      "pos": "F",
+      "started": "8/8"
+     },
+     {
+      "id": "324659",
+      "name": "Derek Mazou-Sacko",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "310173",
+      "name": "Camiel Neghli",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "205701",
+      "name": "Mark Sykes",
+      "pos": "AM-R",
+      "started": "5/8"
+     },
+     {
+      "id": "267300",
+      "name": "Jordi Osei-Tutu",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "315189",
+      "name": "Taïryk Arconte",
+      "pos": "F",
+      "started": "5/8"
+     },
+     {
+      "id": "168747",
+      "name": "Max Crocombe",
+      "pos": "G",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -811,7 +1511,7 @@
    "kickoff": "2026-10-24T12:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.8,
      "d": 3.6,
      "a": 4.33
@@ -819,20 +1519,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.8,
      "under": 2
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/sheff-utd-vs-derby/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/sheff-utd-vs-derby/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "262792",
+      "name": "Michael Cooper",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "256912",
+      "name": "Japhet Tanganga",
+      "pos": "RB",
+      "started": "8/8"
+     },
+     {
+      "id": "251701",
+      "name": "Ben Brereton Díaz",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "234320",
+      "name": "Hamza Choudhury",
+      "pos": "RB",
+      "started": "7/8"
+     },
+     {
+      "id": "354729",
+      "name": "Sydie Peck",
+      "pos": "CM-R",
+      "started": "7/8"
+     },
+     {
+      "id": "269341",
+      "name": "Liam Kitching",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "167114",
+      "name": "Patrick Bamford",
+      "pos": "CF-L",
+      "started": "6/8"
+     },
+     {
+      "id": "280550",
+      "name": "Sam McCallum",
+      "pos": "LB",
+      "started": "5/8"
+     },
+     {
+      "id": "328023",
+      "name": "Thomas Cannon",
+      "pos": "CF-R",
+      "started": "4/8"
+     },
+     {
+      "id": "290105",
+      "name": "Mark McGuinness",
+      "pos": "CD-R",
+      "started": "3/8"
+     },
+     {
+      "id": "357477",
+      "name": "Romelle Donovan",
+      "pos": "RM",
+      "started": "3/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "223547",
+      "name": "Sammie Szmodics",
+      "pos": "AM-L",
+      "started": "8/8"
+     },
+     {
+      "id": "243581",
+      "name": "Dion Sanderson",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "366455",
+      "name": "Sondre Langas",
+      "pos": "CD-R",
+      "started": "7/8"
+     },
+     {
+      "id": "330607",
+      "name": "Bobby Clark",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "192991",
+      "name": "Ryan Hedges",
+      "pos": "LB",
+      "started": "7/8"
+     },
+     {
+      "id": "191596",
+      "name": "Alex Mowatt",
+      "pos": "LM",
+      "started": "6/8"
+     },
+     {
+      "id": "345407",
+      "name": "David Ozoh",
+      "pos": "RM",
+      "started": "6/8"
+     },
+     {
+      "id": "138821",
+      "name": "Charlie Taylor",
+      "pos": "LB",
+      "started": "5/8"
+     },
+     {
+      "id": "344595",
+      "name": "Mohammed Fuseini",
+      "pos": "AM-R",
+      "started": "5/8"
+     },
+     {
+      "id": "308509",
+      "name": "Joe Ward",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "194823",
+      "name": "Carlton Morris",
+      "pos": "F",
+      "started": "5/8"
+     }
+    ]
+   }
   },
   {
    "league": "Premier League",
@@ -841,7 +1681,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.36,
      "d": 5,
      "a": 8
@@ -849,20 +1689,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 2,
      "no": 1.75
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.8,
      "under": 2
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/arsenal-vs-everton/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/arsenal-vs-everton/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "196176",
+      "name": "David Raya",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "236322",
+      "name": "Gabriel Magalhães",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "231859",
+      "name": "Ezri Konsa",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "238262",
+      "name": "Declan Rice",
+      "pos": "LM",
+      "started": "8/8"
+     },
+     {
+      "id": "203669",
+      "name": "Martin Ødegaard",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "280555",
+      "name": "Bukayo Saka",
+      "pos": "RF",
+      "started": "7/8"
+     },
+     {
+      "id": "298329",
+      "name": "Riccardo Calafiori",
+      "pos": "LB",
+      "started": "6/8"
+     },
+     {
+      "id": "231182",
+      "name": "Kai Havertz",
+      "pos": "F",
+      "started": "6/8"
+     },
+     {
+      "id": "241077",
+      "name": "Ben White",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "352758",
+      "name": "Myles Lewis-Skelly",
+      "pos": "LB",
+      "started": "4/8"
+     },
+     {
+      "id": "218522",
+      "name": "Bruno Guimarães",
+      "pos": "CM",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "159443",
+      "name": "Jordan Pickford",
+      "pos": "G",
+      "started": "7/7"
+     },
+     {
+      "id": "286965",
+      "name": "Jarrad Branthwaite",
+      "pos": "CD-L",
+      "started": "7/7"
+     },
+     {
+      "id": "155226",
+      "name": "James Tarkowski",
+      "pos": "CD-R",
+      "started": "7/7"
+     },
+     {
+      "id": "252389",
+      "name": "Kiernan Dewsbury-Hall",
+      "pos": "AM",
+      "started": "7/7"
+     },
+     {
+      "id": "378458",
+      "name": "Harrison Armstrong",
+      "pos": "RM",
+      "started": "7/7"
+     },
+     {
+      "id": "301166",
+      "name": "Thierno Barry",
+      "pos": "F",
+      "started": "7/7"
+     },
+     {
+      "id": "262594",
+      "name": "Vitaliy Mykolenko",
+      "pos": "LB",
+      "started": "6/7"
+     },
+     {
+      "id": "276220",
+      "name": "James Garner",
+      "pos": "LM",
+      "started": "6/7"
+     },
+     {
+      "id": "311963",
+      "name": "Merlin Röhl",
+      "pos": "AM-R",
+      "started": "4/7"
+     },
+     {
+      "id": "368864",
+      "name": "Tyrique George",
+      "pos": "LM",
+      "started": "4/7"
+     },
+     {
+      "id": "291307",
+      "name": "Brennan Johnson",
+      "pos": "AM-R",
+      "started": "4/7"
+     }
+    ]
+   }
   },
   {
    "league": "Premier League",
@@ -871,7 +1851,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 3.2,
      "d": 3.4,
      "a": 2.25
@@ -879,20 +1859,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.73,
      "under": 2.1
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/coventry-vs-fulham/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/coventry-vs-fulham/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "307069",
+      "name": "Carl Rushworth",
+      "pos": "G",
+      "started": "7/7"
+     },
+     {
+      "id": "303931",
+      "name": "Bobby Thomas",
+      "pos": "CD-R",
+      "started": "7/7"
+     },
+     {
+      "id": "191337",
+      "name": "Matt Grimes",
+      "pos": "LM",
+      "started": "7/7"
+     },
+     {
+      "id": "206172",
+      "name": "Jay Da Silva",
+      "pos": "LB",
+      "started": "7/7"
+     },
+     {
+      "id": "281139",
+      "name": "Milan van Ewijk",
+      "pos": "RB",
+      "started": "6/7"
+     },
+     {
+      "id": "286967",
+      "name": "Jack Rudoni",
+      "pos": "AM",
+      "started": "6/7"
+     },
+     {
+      "id": "387659",
+      "name": "Caleb Yirenkyi",
+      "pos": "RM",
+      "started": "5/7"
+     },
+     {
+      "id": "246954",
+      "name": "Ephron Mason-Clark",
+      "pos": "AM-L",
+      "started": "5/7"
+     },
+     {
+      "id": "241093",
+      "name": "Ethan Pinnock",
+      "pos": "CD-L",
+      "started": "5/7"
+     },
+     {
+      "id": "319404",
+      "name": "Aurèle Amenda",
+      "pos": "CD-R",
+      "started": "4/7"
+     },
+     {
+      "id": "258491",
+      "name": "Frank Onyeka",
+      "pos": "CM-R",
+      "started": "4/7"
+     }
+    ],
+    "away": [
+     {
+      "id": "153765",
+      "name": "Bernd Leno",
+      "pos": "G",
+      "started": "7/7"
+     },
+     {
+      "id": "263110",
+      "name": "Calvin Bassey",
+      "pos": "CD-L",
+      "started": "7/7"
+     },
+     {
+      "id": "409541",
+      "name": "Josh King",
+      "pos": "AM",
+      "started": "7/7"
+     },
+     {
+      "id": "175063",
+      "name": "Alex Iwobi",
+      "pos": "AM-L",
+      "started": "7/7"
+     },
+     {
+      "id": "87297",
+      "name": "Gonzalo García",
+      "pos": "F",
+      "started": "7/7"
+     },
+     {
+      "id": "307111",
+      "name": "Oscar Bobb",
+      "pos": "AM-R",
+      "started": "7/7"
+     },
+     {
+      "id": "222396",
+      "name": "Antonee Robinson",
+      "pos": "LB",
+      "started": "6/7"
+     },
+     {
+      "id": "197163",
+      "name": "Timothy Castagne",
+      "pos": "RB",
+      "started": "6/7"
+     },
+     {
+      "id": "218998",
+      "name": "Sander Berge",
+      "pos": "RM",
+      "started": "6/7"
+     },
+     {
+      "id": "324164",
+      "name": "Shea Charles",
+      "pos": "LM",
+      "started": "5/7"
+     },
+     {
+      "id": "313230",
+      "name": "David Affengruber",
+      "pos": "CD-R",
+      "started": "4/7"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -901,7 +2021,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.7,
      "d": 3.25,
      "a": 2.6
@@ -909,20 +2029,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.83,
      "no": 1.83
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 2.2,
      "under": 1.67
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/blackburn-vs-wrexham/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/blackburn-vs-wrexham/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "274535",
+      "name": "Sean McLoughlin",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "307162",
+      "name": "Ryan Alebiousu",
+      "pos": "RB",
+      "started": "8/8"
+     },
+     {
+      "id": "243380",
+      "name": "Todd Cantwell",
+      "pos": "AM",
+      "started": "8/8"
+     },
+     {
+      "id": "355361",
+      "name": "Kristi Montgomery",
+      "pos": "LM",
+      "started": "8/8"
+     },
+     {
+      "id": "138879",
+      "name": "Sam Morsy",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "252916",
+      "name": "Oladapo Afolayan",
+      "pos": "AM-L",
+      "started": "8/8"
+     },
+     {
+      "id": "303060",
+      "name": "Ryoya Morishita",
+      "pos": "AM-R",
+      "started": "8/8"
+     },
+     {
+      "id": "369509",
+      "name": "Tom Atcheson",
+      "pos": "CD-R",
+      "started": "6/8"
+     },
+     {
+      "id": "305052",
+      "name": "Balazs Toth",
+      "pos": "G",
+      "started": "5/8"
+     },
+     {
+      "id": "227224",
+      "name": "Yuri Ribeiro",
+      "pos": "LB",
+      "started": "4/8"
+     },
+     {
+      "id": "326075",
+      "name": "Andri Gudjohnsen",
+      "pos": "F",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "281705",
+      "name": "Anthony Patterson",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "223590",
+      "name": "Benjamin Whiteman",
+      "pos": "CM-R",
+      "started": "8/8"
+     },
+     {
+      "id": "231572",
+      "name": "Dominic Hyam",
+      "pos": "CD-R",
+      "started": "7/8"
+     },
+     {
+      "id": "310598",
+      "name": "Callum Doyle",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "333218",
+      "name": "Jacques Ekomie",
+      "pos": "LM",
+      "started": "7/8"
+     },
+     {
+      "id": "189605",
+      "name": "Kieffer Moore",
+      "pos": "CF-R",
+      "started": "6/8"
+     },
+     {
+      "id": "254023",
+      "name": "Callum O'Hare",
+      "pos": "AM",
+      "started": "6/8"
+     },
+     {
+      "id": "294427",
+      "name": "Issa Kaboré",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "135430",
+      "name": "Matty James",
+      "pos": "CM-L",
+      "started": "4/8"
+     },
+     {
+      "id": "269288",
+      "name": "Lewis O'Brien",
+      "pos": "CM-L",
+      "started": "4/8"
+     },
+     {
+      "id": "182338",
+      "name": "Josh Windass",
+      "pos": "CF-R",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -931,7 +2191,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.6,
      "d": 3.6,
      "a": 2.5
@@ -939,20 +2199,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
-     "over": 1.62,
-     "under": 2.3
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
+     "over": 1.57,
+     "under": 2.38
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/cardiff-vs-birmingham/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/cardiff-vs-birmingham/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "243429",
+      "name": "Nathan Trott",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "302640",
+      "name": "Joel Bagan",
+      "pos": "LB",
+      "started": "8/8"
+     },
+     {
+      "id": "243400",
+      "name": "Gabriel Osho",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "311181",
+      "name": "Alex Robertson",
+      "pos": "DM",
+      "started": "8/8"
+     },
+     {
+      "id": "378638",
+      "name": "Jack Moylan",
+      "pos": "F",
+      "started": "8/8"
+     },
+     {
+      "id": "293212",
+      "name": "Ollie Tanner",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "205676",
+      "name": "Perry Ng",
+      "pos": "RB",
+      "started": "7/8"
+     },
+     {
+      "id": "222154",
+      "name": "Chris Willock",
+      "pos": "LM",
+      "started": "6/8"
+     },
+     {
+      "id": "347306",
+      "name": "Joel Colwill",
+      "pos": "CM-R",
+      "started": "6/8"
+     },
+     {
+      "id": "320915",
+      "name": "Yousef Salech",
+      "pos": "F",
+      "started": "5/8"
+     },
+     {
+      "id": "212257",
+      "name": "Krystian Bielik",
+      "pos": "CD-R",
+      "started": "5/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "329170",
+      "name": "James Beadle",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "263133",
+      "name": "Christoph Klarer",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "238884",
+      "name": "Phil Neumann",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "217071",
+      "name": "Bright Osayi-Samuel",
+      "pos": "RB",
+      "started": "8/8"
+     },
+     {
+      "id": "301248",
+      "name": "Jay Stansfield",
+      "pos": "AM",
+      "started": "8/8"
+     },
+     {
+      "id": "286056",
+      "name": "Tomoki Iwata",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "251627",
+      "name": "Alex Cochrane",
+      "pos": "LB",
+      "started": "7/8"
+     },
+     {
+      "id": "330460",
+      "name": "August Priske",
+      "pos": "F",
+      "started": "7/8"
+     },
+     {
+      "id": "271879",
+      "name": "Liam Millar",
+      "pos": "AM-L",
+      "started": "7/8"
+     },
+     {
+      "id": "285048",
+      "name": "Jhon Solís",
+      "pos": "LM",
+      "started": "6/8"
+     },
+     {
+      "id": "172019",
+      "name": "Carlos Vicente",
+      "pos": "AM-R",
+      "started": "5/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -961,7 +2361,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 3,
      "d": 3.4,
      "a": 2.3
@@ -969,20 +2369,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.91,
      "under": 1.91
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/lincoln-vs-burnley/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/lincoln-vs-burnley/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "279794",
+      "name": "George Wickens",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "324580",
+      "name": "Ayodeji Elerewe",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "177166",
+      "name": "Conor McGrandles",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "157747",
+      "name": "Adam Reach",
+      "pos": "LB",
+      "started": "7/8"
+     },
+     {
+      "id": "312600",
+      "name": "Freddie Draper",
+      "pos": "F",
+      "started": "7/8"
+     },
+     {
+      "id": "154794",
+      "name": "Sonny Bradley",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "263120",
+      "name": "Ben House",
+      "pos": "AM-L",
+      "started": "6/8"
+     },
+     {
+      "id": "306847",
+      "name": "Ryley Towler",
+      "pos": "CD-L",
+      "started": "5/8"
+     },
+     {
+      "id": "312940",
+      "name": "Robert Street",
+      "pos": "AM",
+      "started": "5/8"
+     },
+     {
+      "id": "260816",
+      "name": "Tom Bayliss",
+      "pos": "CM-R",
+      "started": "4/8"
+     },
+     {
+      "id": "294382",
+      "name": "Dom Jefferies",
+      "pos": "AM-L",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "347046",
+      "name": "Max Alleyne",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "190936",
+      "name": "Josh Laurent",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "129358",
+      "name": "Kyle Walker",
+      "pos": "RB",
+      "started": "6/8"
+     },
+     {
+      "id": "291435",
+      "name": "Largie Ramazani",
+      "pos": "AM-R",
+      "started": "6/8"
+     },
+     {
+      "id": "234143",
+      "name": "Igor Julio",
+      "pos": "CD-L",
+      "started": "6/8"
+     },
+     {
+      "id": "233073",
+      "name": "Jacob Bruun Larsen",
+      "pos": "AM-L",
+      "started": "5/8"
+     },
+     {
+      "id": "320757",
+      "name": "Zeki Amdouni",
+      "pos": "F",
+      "started": "5/8"
+     },
+     {
+      "id": "288891",
+      "name": "Reo Hatate",
+      "pos": "LM",
+      "started": "5/8"
+     },
+     {
+      "id": "329987",
+      "name": "Max Weiß",
+      "pos": "G",
+      "started": "4/8"
+     },
+     {
+      "id": "245857",
+      "name": "Anel Ahmedhodzic",
+      "pos": "CD-R",
+      "started": "4/8"
+     },
+     {
+      "id": "177110",
+      "name": "Connor Roberts",
+      "pos": "RB",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -991,7 +2531,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 3.75,
      "d": 3.5,
      "a": 1.95
@@ -999,20 +2539,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.91,
      "under": 1.91
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/preston-vs-west-brom/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/preston-vs-west-brom/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "233301",
+      "name": "Daniel Iversen",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "223046",
+      "name": "Jordan Thompson",
+      "pos": "CM-L",
+      "started": "8/8"
+     },
+     {
+      "id": "306013",
+      "name": "Alfie Devine",
+      "pos": "CF-L",
+      "started": "8/8"
+     },
+     {
+      "id": "286120",
+      "name": "Leo Leroy",
+      "pos": "CM-R",
+      "started": "7/8"
+     },
+     {
+      "id": "241314",
+      "name": "Jordan Storey",
+      "pos": "CD-R",
+      "started": "7/8"
+     },
+     {
+      "id": "240158",
+      "name": "Callum Lang",
+      "pos": "CF-R",
+      "started": "7/8"
+     },
+     {
+      "id": "293337",
+      "name": "Harrison Clarke",
+      "pos": "RM",
+      "started": "6/8"
+     },
+     {
+      "id": "328022",
+      "name": "Stanley Mills",
+      "pos": "RM",
+      "started": "5/8"
+     },
+     {
+      "id": "308243",
+      "name": "Odeluga Offiah",
+      "pos": "RM",
+      "started": "5/8"
+     },
+     {
+      "id": "221307",
+      "name": "Andrija Vukcevic",
+      "pos": "LM",
+      "started": "5/8"
+     },
+     {
+      "id": "318052",
+      "name": "Johnny Kenny",
+      "pos": "F",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "195607",
+      "name": "Max O'Leary",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "236141",
+      "name": "Callum Styles",
+      "pos": "LB",
+      "started": "8/8"
+     },
+     {
+      "id": "317857",
+      "name": "Isaac Price",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "231066",
+      "name": "George Campbell",
+      "pos": "CD-L",
+      "started": "6/8"
+     },
+     {
+      "id": "243465",
+      "name": "Jayson Molumby",
+      "pos": "CM-R",
+      "started": "6/8"
+     },
+     {
+      "id": "347415",
+      "name": "Jimmy Morgan",
+      "pos": "LM",
+      "started": "6/8"
+     },
+     {
+      "id": "275109",
+      "name": "Nathaniel Phillips",
+      "pos": "CD-R",
+      "started": "5/8"
+     },
+     {
+      "id": "228558",
+      "name": "Ousmane Diakite",
+      "pos": "CM-R",
+      "started": "5/8"
+     },
+     {
+      "id": "251509",
+      "name": "Chris Mepham",
+      "pos": "CD-R",
+      "started": "5/8"
+     },
+     {
+      "id": "365932",
+      "name": "Rabby Nzingoula",
+      "pos": "CM-L",
+      "started": "5/8"
+     },
+     {
+      "id": "272749",
+      "name": "Aune Heggebo",
+      "pos": "CF-R",
+      "started": "5/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -1021,7 +2701,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.45,
      "d": 3.3,
      "a": 2.8
@@ -1029,20 +2709,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.91,
      "under": 1.91
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/qpr-vs-swansea/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/qpr-vs-swansea/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "352759",
+      "name": "Pierce Charles",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "300966",
+      "name": "Ronnie Edwards",
+      "pos": "CD",
+      "started": "8/8"
+     },
+     {
+      "id": "259089",
+      "name": "Jimmy Dunne",
+      "pos": "CD-R",
+      "started": "7/8"
+     },
+     {
+      "id": "272629",
+      "name": "Nicolas Madsen",
+      "pos": "RM",
+      "started": "6/8"
+     },
+     {
+      "id": "175064",
+      "name": "Glen Kamara",
+      "pos": "CM-L",
+      "started": "6/8"
+     },
+     {
+      "id": "306532",
+      "name": "Harvey Vale",
+      "pos": "CM-R",
+      "started": "6/8"
+     },
+     {
+      "id": "231890",
+      "name": "Paul Smyth",
+      "pos": "LM",
+      "started": "6/8"
+     },
+     {
+      "id": "292221",
+      "name": "Kwame Poku",
+      "pos": "RM",
+      "started": "5/8"
+     },
+     {
+      "id": "325989",
+      "name": "Amadou Salif Mbengue",
+      "pos": "RB",
+      "started": "4/8"
+     },
+     {
+      "id": "281722",
+      "name": "Rumarn Burrell",
+      "pos": "CF-L",
+      "started": "4/8"
+     },
+     {
+      "id": "219781",
+      "name": "Jake Clark-Salter",
+      "pos": "CD-L",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "195816",
+      "name": "Lawrence Vigouroux",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "233348",
+      "name": "Josh Tymon",
+      "pos": "LB",
+      "started": "8/8"
+     },
+     {
+      "id": "168050",
+      "name": "Stephen Welsh",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "350646",
+      "name": "Moussa Yeo",
+      "pos": "RF",
+      "started": "7/8"
+     },
+     {
+      "id": "367446",
+      "name": "Filip Lissah",
+      "pos": "RB",
+      "started": "6/8"
+     },
+     {
+      "id": "297798",
+      "name": "Marko Stamenic",
+      "pos": "LM",
+      "started": "6/8"
+     },
+     {
+      "id": "288958",
+      "name": "Adam Idah",
+      "pos": "F",
+      "started": "6/8"
+     },
+     {
+      "id": "275596",
+      "name": "Ben Cabango",
+      "pos": "CD-R",
+      "started": "6/8"
+     },
+     {
+      "id": "266555",
+      "name": "Elijah Just",
+      "pos": "RM",
+      "started": "5/8"
+     },
+     {
+      "id": "406203",
+      "name": "Joseph Opoku",
+      "pos": "LF",
+      "started": "5/8"
+     },
+     {
+      "id": "150603",
+      "name": "Jay Fulton",
+      "pos": "CM",
+      "started": "5/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -1051,7 +2871,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.3,
      "d": 3.4,
      "a": 3
@@ -1059,20 +2879,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
-     "over": 1.91,
-     "under": 1.91
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
+     "over": 2,
+     "under": 1.8
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/stoke-vs-bristol-city/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/stoke-vs-bristol-city/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "258902",
+      "name": "Viktor Johansson",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "40299",
+      "name": "Luke Graham",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "246945",
+      "name": "Ben Wilmot",
+      "pos": "CD",
+      "started": "8/8"
+     },
+     {
+      "id": "163274",
+      "name": "Ethan Galbraith",
+      "pos": "CM-L",
+      "started": "8/8"
+     },
+     {
+      "id": "366358",
+      "name": "Djibril Soumaré",
+      "pos": "CM-R",
+      "started": "8/8"
+     },
+     {
+      "id": "9426",
+      "name": "Ben Johnson",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "301853",
+      "name": "Eric Bocat",
+      "pos": "LM",
+      "started": "7/8"
+     },
+     {
+      "id": "291468",
+      "name": "Justin Devenny",
+      "pos": "CF-L",
+      "started": "6/8"
+     },
+     {
+      "id": "30173",
+      "name": "Lamine Cisse",
+      "pos": "F",
+      "started": "5/8"
+     },
+     {
+      "id": "303512",
+      "name": "Jack McGlynn",
+      "pos": "CF-R",
+      "started": "5/8"
+     },
+     {
+      "id": "326672",
+      "name": "Maksym Taloverov",
+      "pos": "CD",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "306811",
+      "name": "Sam Tickle",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "41011",
+      "name": "Jason Knight",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "363444",
+      "name": "Rio Cardines",
+      "pos": "AM-R",
+      "started": "7/8"
+     },
+     {
+      "id": "236014",
+      "name": "Scott Twine",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "378851",
+      "name": "Yu Hirakawa",
+      "pos": "AM-L",
+      "started": "6/8"
+     },
+     {
+      "id": "406479",
+      "name": "Lisav Eissat",
+      "pos": "CD-R",
+      "started": "5/8"
+     },
+     {
+      "id": "291438",
+      "name": "George Tanner",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "328040",
+      "name": "Dominic Ballard",
+      "pos": "F",
+      "started": "5/8"
+     },
+     {
+      "id": "229789",
+      "name": "Robert Dickie",
+      "pos": "CD-R",
+      "started": "4/8"
+     },
+     {
+      "id": "277172",
+      "name": "Lorent Tolaj",
+      "pos": "F",
+      "started": "4/8"
+     },
+     {
+      "id": "267325",
+      "name": "Cameron Pring",
+      "pos": "LB",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -1081,7 +3041,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.67,
      "d": 4.1,
      "a": 4.5
@@ -1089,20 +3049,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.5,
      "under": 2.63
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/west-ham-vs-southampton/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/west-ham-vs-southampton/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "281564",
+      "name": "Mads Hermansen",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "229967",
+      "name": "Max Kilman",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "242705",
+      "name": "Konstantinos Mavropanos",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "314177",
+      "name": "Arne Engels",
+      "pos": "LM",
+      "started": "8/8"
+     },
+     {
+      "id": "201089",
+      "name": "Jarrod Bowen",
+      "pos": "AM-R",
+      "started": "8/8"
+     },
+     {
+      "id": "358577",
+      "name": "Divine Mukasa",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "257256",
+      "name": "Manor Solomon",
+      "pos": "AM-L",
+      "started": "7/8"
+     },
+     {
+      "id": "245562",
+      "name": "Joël Piroe",
+      "pos": "F",
+      "started": "5/8"
+     },
+     {
+      "id": "201304",
+      "name": "Morato",
+      "pos": "LB",
+      "started": "5/8"
+     },
+     {
+      "id": "235129",
+      "name": "Kyle Walker-Peters",
+      "pos": "RB",
+      "started": "4/8"
+     },
+     {
+      "id": "313229",
+      "name": "Pablo",
+      "pos": "F",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "305926",
+      "name": "Daniel Peretz",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "274893",
+      "name": "Keven Schlotterbeck",
+      "pos": "CD-L",
+      "started": "8/8"
+     },
+     {
+      "id": "251631",
+      "name": "Finn Azaz",
+      "pos": "AM-R",
+      "started": "8/8"
+     },
+     {
+      "id": "204286",
+      "name": "James Bree",
+      "pos": "RB",
+      "started": "7/8"
+     },
+     {
+      "id": "255916",
+      "name": "Flynn Downes",
+      "pos": "LM",
+      "started": "7/8"
+     },
+     {
+      "id": "205024",
+      "name": "Cyle Larin",
+      "pos": "F",
+      "started": "7/8"
+     },
+     {
+      "id": "343995",
+      "name": "Léo Scienza",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "163111",
+      "name": "James Ward-Prowse",
+      "pos": "RM",
+      "started": "7/8"
+     },
+     {
+      "id": "251399",
+      "name": "Ryan Manning",
+      "pos": "LB",
+      "started": "6/8"
+     },
+     {
+      "id": "277005",
+      "name": "Nathan Wood",
+      "pos": "CD-R",
+      "started": "4/8"
+     },
+     {
+      "id": "152475",
+      "name": "Jack Stephens",
+      "pos": "CD-R",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Championship",
@@ -1111,7 +3211,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.36,
      "d": 4.75,
      "a": 8
@@ -1119,20 +3219,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.83,
      "no": 1.83
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.62,
      "under": 2.3
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/wolves-vs-watford/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/wolves-vs-watford/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "181278",
+      "name": "José Sá",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "319987",
+      "name": "Nasser Djiga",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "304216",
+      "name": "André",
+      "pos": "RM",
+      "started": "8/8"
+     },
+     {
+      "id": "189777",
+      "name": "Hugo Bueno",
+      "pos": "LB",
+      "started": "7/8"
+     },
+     {
+      "id": "395625",
+      "name": "Fernando López",
+      "pos": "AM",
+      "started": "7/8"
+     },
+     {
+      "id": "266096",
+      "name": "Marshall Munetsi",
+      "pos": "LM",
+      "started": "7/8"
+     },
+     {
+      "id": "380196",
+      "name": "Mateus Mané",
+      "pos": "AM-R",
+      "started": "6/8"
+     },
+     {
+      "id": "312186",
+      "name": "Jackson Tchatchoua",
+      "pos": "RB",
+      "started": "5/8"
+     },
+     {
+      "id": "308456",
+      "name": "Rodrigo Gomes",
+      "pos": "AM-R",
+      "started": "5/8"
+     },
+     {
+      "id": "194116",
+      "name": "Adam Armstrong",
+      "pos": "F",
+      "started": "5/8"
+     },
+     {
+      "id": "320848",
+      "name": "Toti Gomes",
+      "pos": "CD-L",
+      "started": "4/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "245626",
+      "name": "Federico Ravaglia",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "281721",
+      "name": "Matthew Pollock",
+      "pos": "CD",
+      "started": "8/8"
+     },
+     {
+      "id": "289365",
+      "name": "Hector Kyprianou",
+      "pos": "CM",
+      "started": "8/8"
+     },
+     {
+      "id": "313891",
+      "name": "Kévin Keben",
+      "pos": "CD-R",
+      "started": "7/8"
+     },
+     {
+      "id": "268986",
+      "name": "Edo Kayembe",
+      "pos": "CM-R",
+      "started": "7/8"
+     },
+     {
+      "id": "330242",
+      "name": "Iker Bravo",
+      "pos": "CM-L",
+      "started": "6/8"
+     },
+     {
+      "id": "137393",
+      "name": "Mamadou Doumbia",
+      "pos": "AM-R",
+      "started": "5/8"
+     },
+     {
+      "id": "283171",
+      "name": "Jordan Zemura",
+      "pos": "LB",
+      "started": "4/8"
+     },
+     {
+      "id": "291914",
+      "name": "Omar-Haktab Traoré",
+      "pos": "RB",
+      "started": "4/8"
+     },
+     {
+      "id": "380187",
+      "name": "Amin Nabizada",
+      "pos": "AM-L",
+      "started": "4/8"
+     },
+     {
+      "id": "376535",
+      "name": "Othmane Maamma",
+      "pos": "AM-R",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Serie A",
@@ -1141,7 +3381,7 @@
    "kickoff": "2026-10-24T17:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.88,
      "d": 3.2,
      "a": 2.6
@@ -1149,20 +3389,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.91,
      "under": 1.91
     }
    ],
    "form": "Included because Roma is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/napoli-vs-roma/"
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/napoli-vs-roma/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "205576",
+      "name": "Amir Rrahmani",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "155904",
+      "name": "Giovanni Di Lorenzo",
+      "pos": "RB",
+      "started": "8/8"
+     },
+     {
+      "id": "297360",
+      "name": "Rafa Marín",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "309273",
+      "name": "Rasmus Højlund",
+      "pos": "F",
+      "started": "7/8"
+     },
+     {
+      "id": "188412",
+      "name": "Stanislav Lobotka",
+      "pos": "CM-L",
+      "started": "6/8"
+     },
+     {
+      "id": "188306",
+      "name": "Matteo Politano",
+      "pos": "RF",
+      "started": "6/8"
+     },
+     {
+      "id": "134947",
+      "name": "Kevin De Bruyne",
+      "pos": "CM",
+      "started": "6/8"
+     },
+     {
+      "id": "209746",
+      "name": "Alex Meret",
+      "pos": "G",
+      "started": "5/8"
+     },
+     {
+      "id": "148974",
+      "name": "Leonardo Spinazzola",
+      "pos": "LB",
+      "started": "5/8"
+     },
+     {
+      "id": "274217",
+      "name": "Billy Gilmour",
+      "pos": "CM-R",
+      "started": "5/8"
+     },
+     {
+      "id": "219531",
+      "name": "Vanja Milinkovic-Savic",
+      "pos": "G",
+      "started": "3/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "222529",
+      "name": "Mario Hermoso",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "259481",
+      "name": "Donyell Malen",
+      "pos": "F",
+      "started": "7/8"
+     },
+     {
+      "id": "212597",
+      "name": "Gianluca Mancini",
+      "pos": "CD-R",
+      "started": "6/8"
+     },
+     {
+      "id": "332354",
+      "name": "Wesley",
+      "pos": "LM",
+      "started": "6/8"
+     },
+     {
+      "id": "164839",
+      "name": "Paulo Dybala",
+      "pos": "CF-L",
+      "started": "6/8"
+     },
+     {
+      "id": "242593",
+      "name": "Evan Ndicka",
+      "pos": "CD",
+      "started": "5/8"
+     },
+     {
+      "id": "285226",
+      "name": "Manu Koné",
+      "pos": "CM-L",
+      "started": "5/8"
+     },
+     {
+      "id": "323974",
+      "name": "Matìas Soulè",
+      "pos": "CF-R",
+      "started": "5/8"
+     },
+     {
+      "id": "164826",
+      "name": "Nahuel Molina",
+      "pos": "RM",
+      "started": "5/8"
+     },
+     {
+      "id": "238798",
+      "name": "Mile Svilar",
+      "pos": "G",
+      "started": "4/8"
+     },
+     {
+      "id": "169213",
+      "name": "Bryan Cristante",
+      "pos": "CM-R",
+      "started": "4/8"
+     }
+    ]
+   }
   },
   {
    "league": "Premier League",
@@ -1171,7 +3551,7 @@
    "kickoff": "2026-10-24T17:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.67,
      "d": 4.2,
      "a": 4.75
@@ -1179,20 +3559,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.53,
      "under": 2.5
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/chelsea-vs-tottenham/"
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/chelsea-vs-tottenham/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "265653",
+      "name": "Morgan Rogers",
+      "pos": "AM-L",
+      "started": "7/7"
+     },
+     {
+      "id": "296395",
+      "name": "Cole Palmer",
+      "pos": "AM",
+      "started": "7/7"
+     },
+     {
+      "id": "265918",
+      "name": "Maxence Lacroix",
+      "pos": "CD-R",
+      "started": "6/7"
+     },
+     {
+      "id": "296410",
+      "name": "Levi Colwill",
+      "pos": "CD-L",
+      "started": "6/7"
+     },
+     {
+      "id": "284960",
+      "name": "João Pedro",
+      "pos": "F",
+      "started": "6/7"
+     },
+     {
+      "id": "158626",
+      "name": "Emiliano Martínez",
+      "pos": "G",
+      "started": "6/7"
+     },
+     {
+      "id": "256115",
+      "name": "Pedro Neto",
+      "pos": "AM-R",
+      "started": "6/7"
+     },
+     {
+      "id": "353951",
+      "name": "Jorrel Hato",
+      "pos": "LB",
+      "started": "5/7"
+     },
+     {
+      "id": "368317",
+      "name": "Josh Acheampong",
+      "pos": "RB",
+      "started": "4/7"
+     },
+     {
+      "id": "308217",
+      "name": "Romeo Lavia",
+      "pos": "LM",
+      "started": "4/7"
+     },
+     {
+      "id": "270190",
+      "name": "Wesley Fofana",
+      "pos": "CD-R",
+      "started": "4/7"
+     }
+    ],
+    "away": [
+     {
+      "id": "324393",
+      "name": "Antonín Kinsky",
+      "pos": "G",
+      "started": "7/7"
+     },
+     {
+      "id": "282583",
+      "name": "Jan Paul van Hecke",
+      "pos": "CD-R",
+      "started": "7/7"
+     },
+     {
+      "id": "261047",
+      "name": "Sandro Tonali",
+      "pos": "SW",
+      "started": "7/7"
+     },
+     {
+      "id": "104943",
+      "name": "Andy Robertson",
+      "pos": "LM",
+      "started": "5/7"
+     },
+     {
+      "id": "328050",
+      "name": "Archie Gray",
+      "pos": "CM-R",
+      "started": "5/7"
+     },
+     {
+      "id": "296512",
+      "name": "Micky van de Ven",
+      "pos": "CD-L",
+      "started": "5/7"
+     },
+     {
+      "id": "303745",
+      "name": "Omar Marmoush",
+      "pos": "CF-L",
+      "started": "5/7"
+     },
+     {
+      "id": "215772",
+      "name": "Rodrigo Bentancur",
+      "pos": "RM",
+      "started": "4/7"
+     },
+     {
+      "id": "304470",
+      "name": "Sávio",
+      "pos": "AM-L",
+      "started": "4/7"
+     },
+     {
+      "id": "194115",
+      "name": "Dominic Solanke",
+      "pos": "CF-R",
+      "started": "4/7"
+     },
+     {
+      "id": "266696",
+      "name": "Conor Gallagher",
+      "pos": "AM",
+      "started": "3/7"
+     }
+    ]
+   }
   },
   {
    "league": "Bundesliga",
@@ -1201,7 +3721,7 @@
    "kickoff": "2026-10-24T17:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.48,
      "d": 5,
      "a": 5.75
@@ -1209,20 +3729,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.33,
      "under": 3.4
     }
    ],
    "form": "Included because Borussia Dortmund is in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/german-bundesliga-predictions-stats-odds/borussia-dortmund-vs-e-frankfurt/"
+   "kickoffUrl": "https://www.kickoff.co.uk/german-bundesliga-predictions-stats-odds/borussia-dortmund-vs-e-frankfurt/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "238544",
+      "name": "Gregor Kobel",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "220714",
+      "name": "Waldemar Anton",
+      "pos": "CD-R",
+      "started": "8/8"
+     },
+     {
+      "id": "310709",
+      "name": "Daniel Svensson",
+      "pos": "LM",
+      "started": "8/8"
+     },
+     {
+      "id": "371500",
+      "name": "Kouakou Gadou",
+      "pos": "CD-R",
+      "started": "7/8"
+     },
+     {
+      "id": "186381",
+      "name": "Serhou Guirassy",
+      "pos": "CF-R",
+      "started": "7/8"
+     },
+     {
+      "id": "281122",
+      "name": "Felix Nmecha",
+      "pos": "CM-L",
+      "started": "6/8"
+     },
+     {
+      "id": "222991",
+      "name": "Julian Ryerson",
+      "pos": "RM",
+      "started": "6/8"
+     },
+     {
+      "id": "290639",
+      "name": "Maximilian Beier",
+      "pos": "CF-L",
+      "started": "6/8"
+     },
+     {
+      "id": "324820",
+      "name": "Jobe Bellingham",
+      "pos": "CM-R",
+      "started": "5/8"
+     },
+     {
+      "id": "240912",
+      "name": "Joey Veerman",
+      "pos": "SW",
+      "started": "5/8"
+     },
+     {
+      "id": "286828",
+      "name": "Nico Schlotterbeck",
+      "pos": "CD",
+      "started": "5/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "321064",
+      "name": "Noah Atubolu",
+      "pos": "G",
+      "started": "6/6"
+     },
+     {
+      "id": "208285",
+      "name": "Robin Koch",
+      "pos": "CD-R",
+      "started": "6/6"
+     },
+     {
+      "id": "371596",
+      "name": "Keita Kosugi",
+      "pos": "LB",
+      "started": "6/6"
+     },
+     {
+      "id": "320882",
+      "name": "Raphael Onyedika",
+      "pos": "CM-R",
+      "started": "6/6"
+     },
+     {
+      "id": "274887",
+      "name": "Jonathan Burkardt",
+      "pos": "CF-R",
+      "started": "6/6"
+     },
+     {
+      "id": "355369",
+      "name": "Can Uzun",
+      "pos": "CF-L",
+      "started": "5/6"
+     },
+     {
+      "id": "290141",
+      "name": "Lilian Brassier",
+      "pos": "CD-L",
+      "started": "5/6"
+     },
+     {
+      "id": "219627",
+      "name": "Ritsu Doan",
+      "pos": "RM",
+      "started": "5/6"
+     },
+     {
+      "id": "372788",
+      "name": "Elias Baum",
+      "pos": "RB",
+      "started": "4/6"
+     },
+     {
+      "id": "359793",
+      "name": "Younes Ebnoutalib",
+      "pos": "CF-L",
+      "started": "4/6"
+     },
+     {
+      "id": "352179",
+      "name": "Noël Aséko",
+      "pos": "CM-L",
+      "started": "3/6"
+     }
+    ]
+   }
   },
   {
    "league": "Serie A",
@@ -1231,7 +3891,7 @@
    "kickoff": "2026-10-24T19:45:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.42,
      "d": 4.33,
      "a": 8.5
@@ -1239,20 +3899,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 2.05,
      "no": 1.7
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.91,
      "under": 1.91
     }
    ],
    "form": "Included because Lazio is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/lazio-vs-parma/"
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/lazio-vs-parma/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "265140",
+      "name": "Christos Mandas",
+      "pos": "G",
+      "started": "7/7"
+     },
+     {
+      "id": "333311",
+      "name": "Oliver Provstgaard",
+      "pos": "CD-L",
+      "started": "7/7"
+     },
+     {
+      "id": "282228",
+      "name": "Kenneth Taylor",
+      "pos": "LM",
+      "started": "7/7"
+     },
+     {
+      "id": "204669",
+      "name": "Mattia Zaccagni",
+      "pos": "LF",
+      "started": "7/7"
+     },
+     {
+      "id": "288901",
+      "name": "Nuno Tavares",
+      "pos": "LB",
+      "started": "6/7"
+     },
+     {
+      "id": "330041",
+      "name": "Romano Floriani",
+      "pos": "RB",
+      "started": "6/7"
+     },
+     {
+      "id": "250850",
+      "name": "Davide Frattesi",
+      "pos": "RM",
+      "started": "6/7"
+     },
+     {
+      "id": "345323",
+      "name": "Reda Belahyane",
+      "pos": "CM",
+      "started": "5/7"
+     },
+     {
+      "id": "233622",
+      "name": "Danilho Doekhi",
+      "pos": "CD-R",
+      "started": "4/7"
+     },
+     {
+      "id": "308944",
+      "name": "Matteo Cancellieri",
+      "pos": "RF",
+      "started": "4/7"
+     },
+     {
+      "id": "323113",
+      "name": "Tijjani Noslin",
+      "pos": "F",
+      "started": "4/7"
+     }
+    ],
+    "away": [
+     {
+      "id": "290792",
+      "name": "Edoardo Corvi",
+      "pos": "G",
+      "started": "7/7"
+     },
+     {
+      "id": "366526",
+      "name": "Mariano Troilo",
+      "pos": "CD",
+      "started": "7/7"
+     },
+     {
+      "id": "261274",
+      "name": "Emanuele Valeri",
+      "pos": "LM",
+      "started": "7/7"
+     },
+     {
+      "id": "272694",
+      "name": "Enrico Del Prato",
+      "pos": "CD-L",
+      "started": "7/7"
+     },
+     {
+      "id": "287430",
+      "name": "El Bilal Toure",
+      "pos": "CF-L",
+      "started": "7/7"
+     },
+     {
+      "id": "316609",
+      "name": "Mandela Keita",
+      "pos": "CM-L",
+      "started": "7/7"
+     },
+     {
+      "id": "196860",
+      "name": "Diego Carlos",
+      "pos": "CD-R",
+      "started": "5/7"
+     },
+     {
+      "id": "413818",
+      "name": "Simone Lontani",
+      "pos": "CF-R",
+      "started": "4/7"
+     },
+     {
+      "id": "396009",
+      "name": "Sascha Britschgi",
+      "pos": "RM",
+      "started": "4/7"
+     },
+     {
+      "id": "339198",
+      "name": "Christian Ordoñez",
+      "pos": "CM-R",
+      "started": "3/7"
+     },
+     {
+      "id": "276653",
+      "name": "Adrián Bernabé",
+      "pos": "CM-R",
+      "started": "3/7"
+     }
+    ]
+   }
   },
   {
    "league": "Ligue 1",
@@ -1261,7 +4061,7 @@
    "kickoff": "2026-10-24T19:45:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.38,
      "d": 3.5,
      "a": 2.88
@@ -1269,20 +4069,160 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.67,
      "under": 2.2
     }
    ],
    "form": "Included because Paris FC is in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
-   "kickoffUrl": "https://www.kickoff.co.uk/french-ligue-predictions-stats-odds/lens-vs-paris/"
+   "kickoffUrl": "https://www.kickoff.co.uk/french-ligue-predictions-stats-odds/lens-vs-paris/",
+   "probableXI": {
+    "source": "ESPN, most-started players in the last 8 matches",
+    "at": "2026-10-22T09:29:46.294Z",
+    "home": [
+     {
+      "id": "344517",
+      "name": "Robin Risser",
+      "pos": "G",
+      "started": "8/8"
+     },
+     {
+      "id": "233199",
+      "name": "Matthieu Udol",
+      "pos": "CD-L",
+      "started": "7/8"
+     },
+     {
+      "id": "393432",
+      "name": "Kyllian Antonio",
+      "pos": "CD-R",
+      "started": "7/8"
+     },
+     {
+      "id": "156898",
+      "name": "Florian Thauvin",
+      "pos": "CF-R",
+      "started": "7/8"
+     },
+     {
+      "id": "181946",
+      "name": "Ruben Aguilar",
+      "pos": "CD-R",
+      "started": "6/8"
+     },
+     {
+      "id": "350577",
+      "name": "Pierre Ganiou",
+      "pos": "CD",
+      "started": "5/8"
+     },
+     {
+      "id": "228557",
+      "name": "Amadou Haidara",
+      "pos": "CM-L",
+      "started": "5/8"
+     },
+     {
+      "id": "288481",
+      "name": "Michal Skoras",
+      "pos": "LM",
+      "started": "5/8"
+     },
+     {
+      "id": "258871",
+      "name": "Michaël Cuisance",
+      "pos": "CM-R",
+      "started": "5/8"
+     },
+     {
+      "id": "308246",
+      "name": "Abdallah Sima",
+      "pos": "F",
+      "started": "4/8"
+     },
+     {
+      "id": "341720",
+      "name": "Yassine Titraoui",
+      "pos": "CM-R",
+      "started": "3/8"
+     }
+    ],
+    "away": [
+     {
+      "id": "122280",
+      "name": "Kevin Trapp",
+      "pos": "G",
+      "started": "7/7"
+     },
+     {
+      "id": "332549",
+      "name": "Diego Coppola",
+      "pos": "CD-L",
+      "started": "7/7"
+     },
+     {
+      "id": "364746",
+      "name": "Adama Camara",
+      "pos": "RB",
+      "started": "7/7"
+     },
+     {
+      "id": "334359",
+      "name": "Pablo Pagis",
+      "pos": "AM",
+      "started": "7/7"
+     },
+     {
+      "id": "221527",
+      "name": "Pierre Lees-Melou",
+      "pos": "LM",
+      "started": "7/7"
+     },
+     {
+      "id": "271137",
+      "name": "Lassine Sinayoko",
+      "pos": "F",
+      "started": "7/7"
+     },
+     {
+      "id": "304918",
+      "name": "Ilan Kebbal",
+      "pos": "AM-R",
+      "started": "7/7"
+     },
+     {
+      "id": "341333",
+      "name": "Luca Koleosho",
+      "pos": "AM-L",
+      "started": "6/7"
+     },
+     {
+      "id": "223122",
+      "name": "Maxime López",
+      "pos": "RM",
+      "started": "6/7"
+     },
+     {
+      "id": "287572",
+      "name": "Samir Chergui",
+      "pos": "CD-R",
+      "started": "5/7"
+     },
+     {
+      "id": "196729",
+      "name": "Hamari Traoré",
+      "pos": "LB",
+      "started": "5/7"
+     }
+    ]
+   }
   },
   {
    "league": "Serie A",
@@ -1291,7 +4231,7 @@
    "kickoff": "2026-10-25T11:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.33,
      "d": 5.25,
      "a": 9
@@ -1299,14 +4239,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.44,
      "under": 2.75
     }
@@ -1321,7 +4261,7 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.88,
      "d": 3.6,
      "a": 2.38
@@ -1329,14 +4269,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.62,
      "under": 2.3
     }
@@ -1351,7 +4291,7 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 5,
      "d": 3.8,
      "a": 1.7
@@ -1359,14 +4299,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.67,
      "under": 2.2
     }
@@ -1381,7 +4321,7 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.15,
      "d": 3.6,
      "a": 3.25
@@ -1389,14 +4329,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.53,
      "under": 2.5
     }
@@ -1411,7 +4351,7 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.95,
      "d": 3.8,
      "a": 3.7
@@ -1419,14 +4359,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.62,
      "under": 2.3
     }
@@ -1441,22 +4381,22 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.1,
      "d": 3.5,
-     "a": 3.5
+     "a": 3.6
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.8,
      "under": 2
     }
@@ -1471,7 +4411,7 @@
    "kickoff": "2026-10-25T14:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.88,
      "d": 3.75,
      "a": 2.3
@@ -1479,14 +4419,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.36,
      "no": 3
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.4,
      "under": 3
     }
@@ -1501,24 +4441,24 @@
    "kickoff": "2026-10-25T16:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
-     "h": 3.1,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
+     "h": 3.2,
      "d": 3.25,
      "a": 2.35
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
-     "yes": 1.8,
-     "no": 1.95
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
+     "yes": 1.91,
+     "no": 1.91
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
-     "over": 2.1,
-     "under": 1.73
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
+     "over": 2.2,
+     "under": 1.67
     }
    ],
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
@@ -1531,7 +4471,7 @@
    "kickoff": "2026-10-25T16:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 6.5,
      "d": 5.75,
      "a": 1.38
@@ -1539,14 +4479,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.4,
      "no": 2.75
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.25,
      "under": 4
     }
@@ -1561,7 +4501,7 @@
    "kickoff": "2026-10-25T19:45:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 5.5,
      "d": 3.75,
      "a": 1.65
@@ -1569,14 +4509,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.8,
      "no": 1.95
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.8,
      "under": 2
     }
@@ -1591,22 +4531,22 @@
    "kickoff": "2026-10-25T19:45:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
-     "h": 1.48,
-     "d": 4.75,
-     "a": 6.25
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
+     "h": 1.45,
+     "d": 5,
+     "a": 6.5
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
-     "yes": 1.5,
-     "no": 2.5
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
+     "yes": 1.53,
+     "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.4,
      "under": 3
     }
@@ -1621,7 +4561,7 @@
    "kickoff": "2026-10-27T17:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 2.75,
      "d": 3.4,
      "a": 2.45
@@ -1629,14 +4569,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.73,
      "under": 2.1
     }
@@ -1651,7 +4591,7 @@
    "kickoff": "2026-10-27T19:45:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.36,
      "d": 4.75,
      "a": 9
@@ -1659,14 +4599,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 2,
      "no": 1.75
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.73,
      "under": 2.1
     }
@@ -1681,7 +4621,7 @@
    "kickoff": "2026-10-28T17:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 1.6,
      "d": 3.8,
      "a": 5.5
@@ -1689,14 +4629,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.8,
      "no": 1.95
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.8,
      "under": 2
     }
@@ -1711,7 +4651,7 @@
    "kickoff": "2026-10-28T17:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "h": 8.5,
      "d": 5,
      "a": 1.33
@@ -1719,14 +4659,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 10:29",
      "over": 1.33,
      "under": 3.4
     }
@@ -1735,5 +4675,5 @@
    "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/venezia-vs-inter-milan/"
   }
  ],
- "updateTag": "Thu 22 Oct 08:47"
+ "updateTag": "Thu 22 Oct 10:29"
 }

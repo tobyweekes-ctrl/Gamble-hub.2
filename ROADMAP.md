@@ -43,6 +43,13 @@ For lineups, the share of regulars starting and a back-up goalkeeper were both m
 - **Per-fixture breakdown:** "played 100 times" margins and totals, from the calibrated score grid.
 - **Bet slip:** legs from the same game are priced together from that grid, instead of multiplied.
 
+**Player markets (added 22 Oct):**
+
+- **Model:** a per-player rate for each starter, from ESPN match stats. It is shrunk towards the position average and scaled by the team's expected shots and fouls in the match.
+- **Test:** on 46,240 test player-matches it beat position averages in every market and was well calibrated.
+- **Not tested:** whether it beats bookmaker prices. No feed of player-prop prices is reachable (oddschecker, Bet365, Sky Bet, Paddy Power, Betfair and DraftKings all refuse automated access), so the site has a price checker where you type the price in.
+- **Next:** an odds feed with player props, for example a paid odds API key added as an environment secret. Then rank mispricing automatically and backtest it.
+
 **Next model steps, in order of expected value:**
 
 1. **Player-quality lineups.** Rate players (for example by minutes-weighted on-pitch goal difference or xG) instead of counting regulars. Missing a star is not the same as missing a squad player.

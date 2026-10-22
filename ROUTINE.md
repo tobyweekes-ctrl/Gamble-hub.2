@@ -23,7 +23,9 @@ The predictions come from **our own model** (`tools/model/`), which is fitted on
 4. **Refresh the model data:**
    - `sh tools/model/fetch.sh` downloads results and match stats from football-data.co.uk.
    - `node tools/model/fetch-europe.mjs` downloads European fixtures and results from UEFA.
-   - On the first Friday of each month, also run `node tools/model/backtest.mjs` (about 15 minutes). It refreshes the context factors and the backtest summary shown on the site.
+   - On the first Friday of each month, also run:
+     - `node tools/model/backtest.mjs` (about 15 minutes). It refreshes the context factors and the backtest summary shown on the site.
+     - `node tools/model/fetch-lineups.mjs` then `node tools/model/backtest-players.mjs` (about 6 minutes). These refresh the player model's parameters and its test.
    - Re-tune (`node tools/model/tune.mjs`, about 30 minutes, then the backtest) only at the start of a season, not week to week.
 5. **Build the next round:** run `node tools/make-round.mjs`. It writes `data/rounds/<YYYY-MM-DD>-weekly.json`:
    - BBC Sport tables and fixtures, with UK kick-off times;

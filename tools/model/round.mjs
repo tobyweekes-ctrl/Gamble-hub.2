@@ -8,7 +8,8 @@ import { loadMatches, LEAGUE_DIV, GROUPS, fdName } from './data.mjs';
 import { buildState, predict, DEFAULT_CONFIG } from './ensemble.mjs';
 import { fitRatings, marketsFromGrid } from './models.mjs';
 import { calibrate1x2, calibrate2 } from './calibration.mjs';
-import { lineupMultipliers } from './lineups.mjs';
+import { lineupMultipliers, loadLineups } from './lineups.mjs';
+import { playerTable, playerProps, groupOf, MARKETS } from './players.mjs';
 import { loadEurope, schedule, teamFlags, isDerby, contextMultipliers, FLAGS } from './context.mjs';
 
 const DAY = 864e5;
@@ -58,6 +59,42 @@ export function modelForRound(root, fixtures) {
     const gm = matches.filter(m => m.group === g && m.date < asOf && asOf - m.date < 1500 * DAY);
     statModels[g] = Object.fromEntries(Object.entries(STAT_KEYS).map(([k, [hk, ak]]) =>
       [k, fitRatings(gm.filter(m => m[hk] != null && m[ak] != null), { asOf, xi: 0.004, sigma: 0.6, hKey: hk, aKey: ak })]));
+  }
+
+  // Player markets (players.mjs), with the parameters the player backtest fitted.
+  const plPath = path.join(root, 'data/model/players.json');
+  const plReport = existsSync(plPath) ? JSON.parse(readFileSync(plPath, 'utf8')) : null;
+  const plParams = plReport && {
+    k: plReport.params.k,
+    r: Object.fromEntries(Object.entries(plReport.params.r).map(([s, v]) => [s, v == null ? Infinity : v])),
+    context: plReport.params.context || {},
+  };
+  const plTable = plParams ? playerTable(loadLineups(raw), asOf) : null;
+  const teamAvg = (team, hk, ak) => {
+    let s = 0, n = 0;
+    for (const m of matches) {
+      if (m.date >= asOf || asOf - m.date > 365 * DAY || m[hk] == null) continue;
+      if (m.home === team) { s += m[hk]; n++; } else if (m.away === team) { s += m[ak]; n++; }
+    }
+    return n >= 5 ? s / n : null;
+  };
+  function playerMarkets(f, group, div, home, away) {
+    const xi = f.lineups ? { status: 'confirmed', h: f.lineups.home.starters, a: f.lineups.away.starters }
+      : f.probableXI ? { status: 'probable', h: f.probableXI.home, a: f.probableXI.away } : null;
+    if (!plParams || !xi || !xi.h || !xi.a) return null;
+    const es = statModels[group].shots.expected(div, home, away), ef = statModels[group].fouls.expected(div, home, away);
+    const ratio = (e, a) => (e && a ? e / a : 1);
+    const ctx = {
+      h: { shots: ratio(es && es.h, teamAvg(home, 'hs', 'as')), fouls: ratio(ef && ef.h, teamAvg(home, 'hf', 'af')), oppFouls: ratio(ef && ef.a, teamAvg(away, 'hf', 'af')) },
+      a: { shots: ratio(es && es.a, teamAvg(away, 'hs', 'as')), fouls: ratio(ef && ef.a, teamAvg(away, 'hf', 'af')), oppFouls: ratio(ef && ef.h, teamAvg(home, 'hf', 'af')) },
+    };
+    // A stat whose context didn't help in the backtest uses the plain player rate.
+    const useCtx = c => ({ shots: c.shots, fouls: c.fouls, oppFouls: plParams.context.fw === false ? 1 : c.oppFouls });
+    const side = (list, c) => list.filter(p => groupOf(p.pos) !== 'G').map(p => {
+      const r = playerProps(plTable, p, div, useCtx(c), plParams);
+      return { name: p.name, pos: p.pos, starts: r.starts, p: Object.fromEntries(MARKETS.map(mk => [mk.key, +(r.p[mk.key] * 100).toFixed(1)])) };
+    });
+    return { status: xi.status, home: side(xi.h, ctx.h), away: side(xi.a, ctx.a) };
   }
 
   const byId = {};
@@ -112,6 +149,7 @@ export function modelForRound(root, fixtures) {
         const e = r.expected(div, home, away);
         return [k, e ? { h: +e.h.toFixed(1), a: +e.a.toFixed(1) } : null];
       })),
+      players: playerMarkets(f, group, div, home, away),
     };
   }
   const info = {
@@ -120,6 +158,7 @@ export function modelForRound(root, fixtures) {
     weights: cfg.weights, settings: { goals: cfg.goals, shots: cfg.shots, elo: cfg.elo },
     contextFactors: factors, calibration: calib, lineupEnabled: !!lineupFit,
     backtest: bt && summary(bt),
+    players: plReport && { testSeasons: plReport.testSeasons, markets: Object.fromEntries(Object.entries(plReport.markets).map(([k, v]) => [k, { label: v.label, model: v.model.logloss, position: v.position.logloss, n: v.model.n }])) },
   };
   return { byId, info, warnings, asOfLabel: new Date(asOf).toISOString().slice(0, 10) };
 }
