@@ -92,7 +92,12 @@ export function modelForRound(root, fixtures) {
     const useCtx = c => ({ shots: c.shots, fouls: c.fouls, oppFouls: plParams.context.fw === false ? 1 : c.oppFouls });
     const side = (list, c) => list.filter(p => groupOf(p.pos) !== 'G').map(p => {
       const r = playerProps(plTable, p, div, useCtx(c), plParams);
-      return { name: p.name, pos: p.pos, starts: r.starts, p: Object.fromEntries(MARKETS.map(mk => [mk.key, +(r.p[mk.key] * 100).toFixed(1)])) };
+      return {
+        name: p.name, pos: p.pos, starts: r.starts,
+        p: Object.fromEntries(MARKETS.map(mk => [mk.key, +(r.p[mk.key] * 100).toFixed(1)])),
+        // Expected counts, so the site can price any line (2+ shots on target, 3+ shots...).
+        exp: Object.fromEntries(Object.entries(r.exp).map(([k, v]) => [k, +v.toFixed(3)])),
+      };
     });
     return { status: xi.status, home: side(xi.h, ctx.h), away: side(xi.a, ctx.a) };
   }
@@ -158,7 +163,7 @@ export function modelForRound(root, fixtures) {
     weights: cfg.weights, settings: { goals: cfg.goals, shots: cfg.shots, elo: cfg.elo },
     contextFactors: factors, calibration: calib, lineupEnabled: !!lineupFit,
     backtest: bt && summary(bt),
-    players: plReport && { testSeasons: plReport.testSeasons, markets: Object.fromEntries(Object.entries(plReport.markets).map(([k, v]) => [k, { label: v.label, model: v.model.logloss, position: v.position.logloss, n: v.model.n }])) },
+    players: plReport && { testSeasons: plReport.testSeasons, dispersion: plReport.params.r, markets: Object.fromEntries(Object.entries(plReport.markets).map(([k, v]) => [k, { label: v.label, model: v.model.logloss, position: v.position.logloss, n: v.model.n }])) },
   };
   return { byId, info, warnings, asOfLabel: new Date(asOf).toISOString().slice(0, 10) };
 }
