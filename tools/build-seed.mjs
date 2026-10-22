@@ -39,7 +39,7 @@ const ledger = existsSync(ledgerPath) ? JSON.parse(readFileSync(ledgerPath, 'utf
 const RESULTS_DAYS = 28; // how far back SEED_RESULTS reaches for auto-grading in the browser
 
 const LEAGUE_CODES = {
-  'Premier League': 'pl', 'Championship': 'ch', 'Champions League': 'ucl',
+  'Premier League': 'pl', 'Championship': 'ch', 'Champions League': 'ucl', 'Europa League': 'uel', 'Conference League': 'uecl',
   'Bundesliga': 'bl', 'Serie A': 'sa', 'Ligue 1': 'l1',
 };
 
