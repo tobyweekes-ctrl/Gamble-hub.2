@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-10-21-weekly",
- "dataUpdated": "Thu 22 Oct 17:16",
+ "dataUpdated": "Thu 22 Oct 17:31",
  "notes": [
   "Thu 22 - Thu 29 Oct 2026. Premier League and Championship in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "No Champions League games in this window (next league-phase matchday is in November).",
@@ -8802,7 +8802,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Juventus",
      "formation": "3-4-1-2",
@@ -8953,7 +8953,24 @@
      "reg": 0.648,
      "att": null,
      "backupKeeper": null,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Lucumí",
+       "Kalulu",
+       "Sarr",
+       "Alajbegovic",
+       "González"
+      ],
+      "in": [
+       "Gatti",
+       "Cambiaso",
+       "Woltemade",
+       "Koopmeiners",
+       "Kelly"
+      ]
+     }
     },
     "away": {
      "team": "Stade Rennais",
@@ -9111,7 +9128,26 @@
      "reg": 0.818,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Frankowski",
+       "Cissé",
+       "Szymanski",
+       "Lepaul",
+       "Soumaré",
+       "Blas"
+      ],
+      "in": [
+       "Boudlal",
+       "Nagida",
+       "Camara",
+       "Rongier",
+       "Al-Tamari",
+       "Dia"
+      ]
+     }
     }
    }
   },
@@ -9129,7 +9165,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Ferencvaros",
      "formation": "4-3-3",
@@ -9302,7 +9338,24 @@
      "reg": 0.486,
      "att": null,
      "backupKeeper": null,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Raemaekers",
+       "Cadu",
+       "Osvath",
+       "Corbu",
+       "Lisztes"
+      ],
+      "in": [
+       "Madarász",
+       "O'Dowda",
+       "Zohoré",
+       "Nagy",
+       "Arzani"
+      ]
+     }
     },
     "away": {
      "team": "Torreense",
@@ -9443,7 +9496,16 @@
      "reg": null,
      "att": null,
      "backupKeeper": null,
-     "history": 2
+     "history": 2,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Abubakari"
+      ],
+      "in": [
+       "Drammeh"
+      ]
+     }
     }
    }
   },
@@ -9461,7 +9523,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Union St.-Gilloise",
      "formation": "3-1-4-2",
@@ -9600,7 +9662,12 @@
      "reg": 0.921,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 0,
+      "out": [],
+      "in": []
+     }
     },
     "away": {
      "team": "Hapoel Be'er",
@@ -9741,7 +9808,22 @@
      "reg": 0.931,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Nachmias",
+       "Diop",
+       "Ventura",
+       "Rumi"
+      ],
+      "in": [
+       "Vítor",
+       "Rotman",
+       "Yehoshua",
+       "East"
+      ]
+     }
     }
    }
   },
@@ -9759,7 +9841,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Dinamo Zagreb",
      "formation": "4-1-4-1",
@@ -9916,7 +9998,16 @@
      "reg": 0.75,
      "att": null,
      "backupKeeper": null,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Radeljic"
+      ],
+      "in": [
+       "McKenna"
+      ]
+     }
     },
     "away": {
      "team": "NEC Nijmegen",
@@ -10050,7 +10141,18 @@
      "reg": 0.883,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 2,
+      "out": [
+       "Kers",
+       "Monteiro"
+      ],
+      "in": [
+       "Schuurs",
+       "Chery"
+      ]
+     }
     }
    }
   },
@@ -10068,7 +10170,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "SK Sturm Graz",
      "formation": "3-4-1-2",
@@ -10202,7 +10304,18 @@
      "reg": 0.909,
      "att": null,
      "backupKeeper": true,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 2,
+      "out": [
+       "Khudiakov",
+       "Balbo"
+      ],
+      "in": [
+       "Helac",
+       "Hödl"
+      ]
+     }
     },
     "away": {
      "team": "Marseille",
@@ -10372,7 +10485,28 @@
      "reg": 0.514,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Egan-Riley",
+       "Emerson",
+       "Weah",
+       "Abdelli",
+       "Nnadi",
+       "Paixão",
+       "Harit"
+      ],
+      "in": [
+       "Garcia",
+       "Meïté",
+       "Aguerd",
+       "Bezahaf",
+       "Gomes",
+       "Maupay",
+       "Abdallah"
+      ]
+     }
     }
    }
   },
@@ -10390,7 +10524,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Lech Poznan",
      "formation": "4-2-3-1",
@@ -10533,7 +10667,22 @@
      "reg": 0.849,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Monka",
+       "Beggren",
+       "Bengtsson",
+       "Palma"
+      ],
+      "in": [
+       "Yegbe",
+       "Rodriguez",
+       "Murawski",
+       "Håkans"
+      ]
+     }
     },
     "away": {
      "team": "Sunderland",
@@ -10699,7 +10848,26 @@
      "reg": 0.689,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Alderete",
+       "Mandava",
+       "Rigg",
+       "Sadiki",
+       "Fée",
+       "Hume"
+      ],
+      "in": [
+       "O'Nien",
+       "Methalie",
+       "Ahoka",
+       "Fofana",
+       "Diarra",
+       "Angulo"
+      ]
+     }
     }
    }
   },
@@ -10717,7 +10885,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "OFI Crete",
      "formation": "3-4-3",
@@ -10870,7 +11038,26 @@
      "reg": 0.857,
      "att": null,
      "backupKeeper": true,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Christogeorgos",
+       "Nikolaou",
+       "Kanellopoulos",
+       "Karachalios",
+       "González",
+       "Chatzigiovanis"
+      ],
+      "in": [
+       "Lilo",
+       "Poungouras",
+       "Dickmann",
+       "Bouchalakis",
+       "Androutsos",
+       "Cantalapiedra"
+      ]
+     }
     },
     "away": {
      "team": "Bayer Leverkusen",
@@ -11017,7 +11204,24 @@
      "reg": 0.653,
      "att": null,
      "backupKeeper": true,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Flekken",
+       "Tapsoba",
+       "Gutiérrez",
+       "Maza",
+       "Diaby"
+      ],
+      "in": [
+       "Blaswich",
+       "Badé",
+       "Vázquez",
+       "Tillman",
+       "Hofmann"
+      ]
+     }
     }
    }
   },
@@ -11035,7 +11239,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Ararat-Armenia",
      "formation": "4-3-3",
@@ -11168,7 +11372,20 @@
      "reg": 0.753,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Felipe",
+       "Tera",
+       "Banjaqui"
+      ],
+      "in": [
+       "Malis",
+       "Ambartsumyan",
+       "Shaghoyan"
+      ]
+     }
     },
     "away": {
      "team": "AZ Alkmaar",
@@ -11338,7 +11555,28 @@
      "reg": 0.541,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Goes",
+       "Chávez",
+       "Dijkstra",
+       "Stengs",
+       "Clasie",
+       "Meerdink",
+       "Daal"
+      ],
+      "in": [
+       "Maikuma",
+       "Wit",
+       "Hoedt",
+       "Kwakman",
+       "Byskov",
+       "Patati",
+       "Kovács"
+      ]
+     }
     }
    }
   },
@@ -11486,7 +11724,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Red Star Belgrade",
      "formation": "3-4-2-1",
@@ -11655,7 +11893,12 @@
      "reg": 0.608,
      "att": null,
      "backupKeeper": null,
-     "history": 7
+     "history": 7,
+     "changes": {
+      "n": 0,
+      "out": [],
+      "in": []
+     }
     },
     "away": {
      "team": "F.C. København",
@@ -11821,7 +12064,26 @@
      "reg": 0.575,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Markgráf",
+       "López",
+       "Elyounoussi",
+       "Clem",
+       "Král",
+       "Dadason"
+      ],
+      "in": [
+       "Meling",
+       "Huescas",
+       "Németh",
+       "Delaney",
+       "Cornelius",
+       "Carrizo"
+      ]
+     }
     }
    }
   },
@@ -11839,7 +12101,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Pafos",
      "formation": "4-3-3",
@@ -11980,7 +12242,22 @@
      "reg": 0.667,
      "att": null,
      "backupKeeper": false,
-     "history": 7
+     "history": 7,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Sunjic",
+       "Pêpê",
+       "Lelê",
+       "Quina"
+      ],
+      "in": [
+       "Guga",
+       "Brito",
+       "Correia",
+       "Silva"
+      ]
+     }
     },
     "away": {
      "team": "Riga FC",
@@ -12118,7 +12395,16 @@
      "reg": 0.808,
      "att": null,
      "backupKeeper": true,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Badamosi"
+      ],
+      "in": [
+       "Ramires"
+      ]
+     }
     }
    }
   },
@@ -12136,7 +12422,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Getafe",
      "formation": "4-2-3-1",
@@ -12295,7 +12581,28 @@
      "reg": 0.565,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Mojica",
+       "Carvajal",
+       "Martín",
+       "Gudelj",
+       "Satriano",
+       "Ünal",
+       "Terrats"
+      ],
+      "in": [
+       "Abqar",
+       "Davinchi",
+       "Azón",
+       "García",
+       "Mayoral",
+       "Serrano",
+       "Risco"
+      ]
+     }
     },
     "away": {
      "team": "FC Lugano",
@@ -12435,7 +12742,18 @@
      "reg": 0.824,
      "att": null,
      "backupKeeper": false,
-     "history": 7
+     "history": 7,
+     "changes": {
+      "n": 2,
+      "out": [
+       "Karimov",
+       "Steffen"
+      ],
+      "in": [
+       "Zanotti",
+       "Moncada"
+      ]
+     }
     }
    }
   },
@@ -12453,7 +12771,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Trabzonspor",
      "formation": "4-3-3",
@@ -12621,7 +12939,28 @@
      "reg": 0.507,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Savic",
+       "Nwaiwu",
+       "Pina",
+       "Muçi",
+       "Fabinho",
+       "Tufan",
+       "Simsir"
+      ],
+      "in": [
+       "Özkacar",
+       "Akaydin",
+       "Kabasakal",
+       "Mendy",
+       "Bouchouari",
+       "Jabol-Folcarelli",
+       "Saviolo"
+      ]
+     }
     },
     "away": {
      "team": "Heart of Midlothian",
@@ -12773,7 +13112,22 @@
      "reg": 0.768,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Kingsley",
+       "McEntee",
+       "Mendy",
+       "McPake"
+      ],
+      "in": [
+       "Borchgrevink",
+       "Magnússon",
+       "Wilson",
+       "Mato"
+      ]
+     }
     }
    }
   },
@@ -12791,7 +13145,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Jablonec",
      "formation": "4-2-3-1",
@@ -12935,7 +13289,12 @@
      "reg": 0.881,
      "att": null,
      "backupKeeper": null,
-     "history": 7
+     "history": 7,
+     "changes": {
+      "n": 0,
+      "out": [],
+      "in": []
+     }
     },
     "away": {
      "team": "Brighton & Hove Albion",
@@ -13105,7 +13464,30 @@
      "reg": 0.529,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 8,
+      "out": [
+       "Dunk",
+       "Vuskovic",
+       "Kadioglu",
+       "Ayari",
+       "Andrés",
+       "Kostoulas",
+       "Cuyper",
+       "Gómez"
+      ],
+      "in": [
+       "Svoboda",
+       "Hadjam",
+       "Costinha",
+       "Yalcouyé",
+       "Hinshelwood",
+       "Osman",
+       "O'Riley",
+       "Rutter"
+      ]
+     }
     }
    }
   },
@@ -13123,7 +13505,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "FC Nordsjælland",
      "formation": "3-4-3",
@@ -13276,7 +13658,20 @@
      "reg": 0.863,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Salquist",
+       "Christensen",
+       "Amoako"
+      ],
+      "in": [
+       "Acquah",
+       "Janssen",
+       "Adel"
+      ]
+     }
     },
     "away": {
      "team": "CSKA Sofia",
@@ -13411,7 +13806,16 @@
      "reg": 0.859,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Pereira"
+      ],
+      "in": [
+       "Panayotov"
+      ]
+     }
     }
    }
   },
@@ -13429,7 +13833,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Inter D'Escaldes",
      "formation": "4-1-4-1",
@@ -13569,7 +13973,12 @@
      "reg": 0.957,
      "att": null,
      "backupKeeper": false,
-     "history": 7
+     "history": 7,
+     "changes": {
+      "n": 0,
+      "out": [],
+      "in": []
+     }
     },
     "away": {
      "team": "CSU Craiova",
@@ -13714,7 +14123,16 @@
      "reg": 0.887,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Teles"
+      ],
+      "in": [
+       "Mora"
+      ]
+     }
     }
    }
   },
@@ -13732,7 +14150,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Kauno Zalgiris",
      "formation": "4-1-4-1",
@@ -13880,7 +14298,22 @@
      "reg": 0.75,
      "att": null,
      "backupKeeper": null,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Hernández",
+       "Baldassarra",
+       "Karashima",
+       "Benchaib"
+      ],
+      "in": [
+       "Fiolic",
+       "Sirgedas",
+       "Kalik",
+       "Lekiatas"
+      ]
+     }
     },
     "away": {
      "team": "SK Brann",
@@ -14024,7 +14457,20 @@
      "reg": 0.864,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Kasanwirjo",
+       "Pedersen",
+       "Eriksen"
+      ],
+      "in": [
+       "Torsvik",
+       "Ingason",
+       "Holm"
+      ]
+     }
     }
    }
   },
@@ -14042,7 +14488,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:16:08.350Z",
+    "at": "2026-10-22T16:31:40.721Z",
     "home": {
      "team": "Iberia 1999",
      "formation": "4-3-3",
@@ -14191,7 +14637,16 @@
      "reg": 0.948,
      "att": null,
      "backupKeeper": false,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Cancar"
+      ],
+      "in": [
+       "Kobuladze"
+      ]
+     }
     },
     "away": {
      "team": "Mjällby AIF",
@@ -14339,7 +14794,20 @@
      "reg": 0.838,
      "att": null,
      "backupKeeper": true,
-     "history": 8
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Pettersson",
+       "Jensen",
+       "Nielsen"
+      ],
+      "in": [
+       "Gustafson",
+       "Hoffman",
+       "Samuelsen"
+      ]
+     }
     }
    }
   },
@@ -14448,5 +14916,5 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
   }
  ],
- "updateTag": "Thu 22 Oct 17:16"
+ "updateTag": "Thu 22 Oct 17:31"
 }

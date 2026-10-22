@@ -133,34 +133,47 @@ export function modelForRound(root, fixtures) {
     const r1 = x => +(x * 100).toFixed(1);
     const th = cross.model.team(hk), ta = cross.model.team(ak);
     const domestic = t => !t.group.startsWith('U-');
-    const context = ['Cross-league model: domestic league results from 27 divisions plus every European club result since 2021, so clubs from different countries are rated on one scale. Goals only (no shots, xG, Elo or lineups for most of these leagues).'];
-    for (const [t, name] of [[th, f.home], [ta, f.away]]) {
-      context.push(domestic(t)
-        ? `${name}: rated from ${DIV_NAME[t.group] || t.group} results and ${t.euroGames} European games.`
-        : `${name}: no domestic league data, so rated from ${t.euroGames} European games only (weaker rating).`);
+    if (!cross.recent) { // games per team in the last 365 days, domestic and European
+      cross.recent = new Map();
+      for (const m of [...cross.data.rows, ...cross.data.euro]) {
+        if (m.hg == null || m.date >= cross.asOf || cross.asOf - m.date > 365 * DAY) continue;
+        for (const k of [m.home, m.away]) {
+          const c = cross.recent.get(k) || { dom: 0, eur: 0 };
+          c[m.div === 'EUR' ? 'eur' : 'dom']++; cross.recent.set(k, c);
+        }
+      }
     }
+    const ratings = [[th, hk, f.home], [ta, ak, f.away]].map(([t, k, name]) => {
+      const c = cross.recent.get(k) || { dom: 0, eur: 0 };
+      return { name, games: c.dom + c.eur, domestic: domestic(t),
+        text: domestic(t) ? `${name}: ${c.dom} ${DIV_NAME[t.group] || t.group} + ${c.eur} European games in the last year`
+          : `${name}: ${c.eur} European games in the last year, no league data (weaker rating)` };
+    });
     // Confirmed lineups (tools/europe-lineups.mjs): shown, and a lineup-adjusted
     // figure alongside, using the lineup effect measured on past league seasons. That
     // effect did not improve the test seasons, so it does not replace the main numbers.
     const L = f.lineups, Lfit = ctxFile.lineup;
+    let adjusted = null;
     if (L && L.home.reg != null && L.away.reg != null && Lfit && Lfit.gamma != null) {
-      const asFeat = s => ({ reg: s.reg, gk: !!s.backupKeeper });
-      const lm = lineupMultipliers(asFeat(L.home), asFeat(L.away), Lfit);
+      const lm = lineupMultipliers({ reg: L.home.reg, gk: !!L.home.backupKeeper }, { reg: L.away.reg, gk: !!L.away.backupKeeper }, Lfit);
       const qa = probsFor(e.h * lm.h, e.a * lm.a, xbt.rho);
       const xa = calibrate1x2([qa.h, qa.d, qa.a], xbt.calibration.x12);
-      const pc = v => Math.round(v * 100);
-      const rot = s => s.reg < 0.7 ? ` HEAVILY ROTATED: ${pc(s.reg)}% of usual starters` : ` ${pc(s.reg)}% of usual starters`;
-      context.push(`Confirmed lineups: ${f.home}${rot(L.home)}${L.home.backupKeeper ? ', back-up keeper' : ''}; ${f.away}${rot(L.away)}${L.away.backupKeeper ? ', back-up keeper' : ''}. Lineup-adjusted: ${f.home} ${pc(xa[0])}%, draw ${pc(xa[1])}%, ${f.away} ${pc(xa[2])}% (expected goals ${(e.h * lm.h).toFixed(2)}-${(e.a * lm.a).toFixed(2)}). The adjustment uses the lineup effect measured on past league seasons, which did not make predictions more accurate on the test seasons, so the main numbers are not changed.`);
+      adjusted = xa.map(v => Math.round(v * 100));
     }
     const T = xbt.test;
-    context.push(`Tested on ${T.n} European games it never saw (2024/25 to now): win/draw/loss log-loss ${T.x12.logloss} against ${T.x12.baseLogloss} for base rates, so it knows something; no bookmaker prices for these games, so it is not shown to beat the market. Over 2.5 ${T.o25.logloss < T.o25.base ? 'slightly better than' : 'no better than'} base rates; BTTS ${T.btts.logloss < T.btts.base ? 'slightly better than' : 'no better than'} base rates.`);
+    const { keyPoints, confidence } = summarise({
+      base: ratings.every(r => r.domestic) ? 55 : ratings.some(r => r.domestic) ? 40 : 30, // goals only, not tested against bookmakers: MEDIUM at best
+      model: `Cross-league goals model. Tested on ${T.n.toLocaleString('en-GB')} past European games: clearly better than base rates; not tested against bookmakers`,
+      ratings, lineups: L, probable: null, adjusted, f,
+      notes: ratings.every(r => r.domestic) ? [] : ['A side with no league data is rated from European games only'],
+    });
     byId[f.id] = {
       hw: r1(x3[0]), dw: r1(x3[1]), aw: r1(x3[2]), btts: r1(btts), ou25: r1(o25),
       over15: r1(gm.o15), over35: r1(gm.o35), cleanSheetH: r1(gm.csH), cleanSheetA: r1(gm.csA),
       grid, topScorelines: gm.top.map(s => ({ h: s.h, a: s.a, pct: r1(s.p) })),
       expH: +e.h.toFixed(3), expA: +e.a.toFixed(3),
       components: { goals: round3({ h: q.h, d: q.d, a: q.a }) },
-      cross: true, context, teamGames: { h: th.euroGames, a: ta.euroGames },
+      cross: true, keyPoints, confidence, context: [], teamGames: { h: ratings[0].games, a: ratings[1].games },
       stats: {}, players: null,
     };
   };
@@ -210,7 +223,13 @@ export function modelForRound(root, fixtures) {
       components: {
         goals: round3(p.components.goals), shots: round3(p.components.shots), elo: round3(p.components.elo),
       },
-      context, teamGames: { h: recent(home), a: recent(away) },
+      context, teamGames: { h: recent(home), a: recent(away) }, ...summarise({
+        base: 65, // HIGH once team sheets are confirmed
+        model: bt ? `Goals, shots and Elo models combined. Tested on ${summary(bt).n.toLocaleString('en-GB')} past league games: ${summary(bt).modelBrier <= summary(bt).marketBrier ? 'as accurate as' : 'slightly less accurate than'} Bet365` : 'Goals, shots and Elo models combined',
+        ratings: [[home, f.home], [away, f.away]].map(([t, name]) => ({ name, games: recent(t), domestic: true, text: `${name}: ${recent(t)} league games in the last year` })),
+        lineups: f.lineups || null, probable: f.probableXI || null, adjusted: null, f,
+        notes: context.filter(c => /applied:/.test(c)).map(c => c.replace(/\s*\(applied:.*$/, '')),
+      }),
       stats: Object.fromEntries(Object.entries(statModels[group]).map(([k, r]) => {
         const e = r.expected(div, home, away);
         return [k, e ? { h: +e.h.toFixed(1), a: +e.a.toFixed(1) } : null];
@@ -269,4 +288,38 @@ function summary(bt) {
     blendWeight: bt.modelWeightInBlendWithMarket?.fittedOnValidation,
     value1x2: v, verdict: bt.verdict || '',
   };
+}
+
+// Key points and data confidence for a fixture, from what is actually on file.
+// Data confidence is about how much the numbers rest on, not about how likely the
+// favourite is: the model type and its test, how many recent games rate each side,
+// whether team sheets are confirmed, and heavy rotation the model does not adjust for.
+function summarise({ base, model, ratings, lineups, probable, adjusted, f, notes }) {
+  let score = base;
+  const reasons = [], keyPoints = [];
+  keyPoints.push({ label: 'Model', text: model });
+  keyPoints.push({ label: 'Rated on', text: ratings.map(r => r.text.replace(`${r.name}: `, `${r.name} `)).join(' · ') });
+  const fewest = Math.min(...ratings.map(r => r.games));
+  if (fewest < 10) { score -= 20; reasons.push('A side has fewer than 10 rated games in the last year'); }
+  else if (fewest < 20) { score -= 10; reasons.push('A side has fewer than 20 rated games in the last year'); }
+  if (ratings.some(r => !r.domestic)) reasons.push('A side has no league data');
+  const changeText = (side, name) => {
+    const c = side.changes;
+    if (!c) return null;
+    const head = c.n === 0 ? 'same XI as last game' : `${c.n} change${c.n > 1 ? 's' : ''} from last game${c.n >= 5 ? ' (heavily rotated)' : ''}`;
+    return `${name}: ${head}${c.n ? ` — out ${c.out.join(', ')}` : ''}${side.backupKeeper ? ' · back-up keeper' : ''}`;
+  };
+  if (lineups) {
+    score += 10; reasons.push('Team sheets confirmed');
+    const lines = [changeText(lineups.home, f.home), changeText(lineups.away, f.away)].filter(Boolean);
+    keyPoints.push({ label: 'Lineups', text: lines.length ? lines.join(' · ') : 'Confirmed (team sheets out)' });
+    if ([lineups.home, lineups.away].some(s => s.changes && s.changes.n >= 5)) { score -= 10; reasons.push('Heavy rotation, which the main numbers do not adjust for'); }
+    if (adjusted) keyPoints.push({ label: 'With lineups', text: `${f.home} ${adjusted[0]}% · draw ${adjusted[1]}% · ${f.away} ${adjusted[2]}% (lineup effect from past seasons; it didn't improve accuracy in testing, so the main numbers are unchanged)` });
+  } else {
+    reasons.push('Team sheets not out yet');
+    if (probable) keyPoints.push({ label: 'Lineups', text: 'Not out yet; player markets use each side\'s usual XI' });
+  }
+  for (const n of notes) keyPoints.push({ label: 'Context', text: n });
+  const level = score >= 70 ? 'high' : score >= 50 ? 'medium' : 'low';
+  return { keyPoints, confidence: { level, score, reasons } };
 }
