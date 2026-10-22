@@ -173,6 +173,8 @@ const fixtures = round.fixtures.map(f => {
       : 'Lineups not announced yet (they are added about an hour before kick-off). No team news applied.',
     compNote: '',
     prices,
+    // Unibet player props and totals (tools/props.mjs), set against our model in the app.
+    props: f.props || null,
     model: mod,
   };
 });

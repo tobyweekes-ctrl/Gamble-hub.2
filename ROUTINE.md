@@ -34,6 +34,8 @@ The predictions come from **our own model** (`tools/model/`), which is fitted on
    - the top-4 filter for Bundesliga, Serie A and Ligue 1;
    - Bet365 1X2, BTTS and Over 2.5 prices from kickoff.co.uk match pages, after checking the page's match date.
 
+   Then run `node tools/props.mjs` (Unibet player fouls/shots/cards prices and totals, set against our player model on the site, and logged to `data/props/log.jsonl`) and `node tools/grade-props.mjs` (grades logged prices for finished games against ESPN player stats; report its summary, and say plainly if backing the model's player-prop "value" is losing).
+
    Then run `node tools/europe-fixtures.mjs --lead 30` to add the coming week's Europa League and Conference League games that haven't kicked off (UEFA match data, cross-league model, no bookmaker prices).
 
    It prints any gaps (a missing price or table). Fill a gap by hand only from a named source, and never estimate. Lineups are not known on Friday morning; the lineup-time runs add them.
@@ -56,7 +58,7 @@ The predictions come from **our own model** (`tools/model/`), which is fitted on
 Separate scheduled sessions run at Fri 19:00, Sat 11:20, 14:00 and 17:00, and Sun 13:00 and 15:15 (UK time). Team sheets come out about 60-75 minutes before kick-off. Each run:
 
 1. `sh tools/model/fetch.sh` and `node tools/model/fetch-europe.mjs`. The model needs the results data to build.
-2. `node tools/lineup-update.mjs`. This updates the latest round file:
+2. `node tools/lineup-update.mjs`. It also refreshes Unibet player-prop prices (tools/props.mjs) and grades finished ones. This updates the latest round file:
    - results for finished games;
    - confirmed XIs from ESPN, naming each side's missing regulars and any back-up goalkeeper;
    - fresh Bet365 prices for games not yet started.
