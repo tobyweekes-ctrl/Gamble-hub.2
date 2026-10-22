@@ -85,7 +85,30 @@ export function loadMatches(rawDir) {
       });
     }
   }
-  return out.sort((a, b) => a.date - b.date);
+  return addShotQuality(out.sort((a, b) => a.date - b.date));
+}
+
+// Shot quality per match for the shots model: xG where football-data.co.uk has it
+// (2026/27 onwards), expressed in shots-on-target units using the division's
+// goals-per-shot-on-target rate from the previous season; shots on target otherwise.
+// Sets m.qh / m.qa. A within-season walk-forward test on 2026/27 (286 matches) gave
+// log-loss 1.0069 with xG against 1.0081 with shots on target alone.
+export function addShotQuality(matches) {
+  const rate = {};
+  for (const m of matches) {
+    if (m.hst == null) continue;
+    const k = `${m.div}|${m.season}`;
+    rate[k] = rate[k] || { g: 0, s: 0 };
+    rate[k].g += m.hg + m.ag; rate[k].s += m.hst + m.ast;
+  }
+  const prev = s => String(Number(s.slice(0, 2)) - 1).padStart(2, '0') + s.slice(0, 2);
+  for (const m of matches) {
+    const r = rate[`${m.div}|${prev(m.season)}`];
+    const k = r ? r.g / r.s : null;
+    m.qh = m.xgh != null && k ? m.xgh / k : m.hst;
+    m.qa = m.xga != null && k ? m.xga / k : m.ast;
+  }
+  return matches;
 }
 
 // Margin-free probabilities from a set of decimal prices.

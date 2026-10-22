@@ -22,6 +22,7 @@ import { weeks, rateComponent, eloComponent, rhoBySeason, outcome, brier3, loglo
 import { scoreGrid, marketsFromGrid } from './models.mjs';
 import { loadEurope, schedule, teamFlags, isDerby, FLAGS, contextMultipliers } from './context.mjs';
 import { calibrate1x2, calibrate2, fitCalibration } from './calibration.mjs';
+import { loadLineups, joinLineups, teamHistory, lineupFeatures, fitLineupEffects, lineupMultipliers } from './lineups.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
@@ -47,7 +48,7 @@ const newcomer = (team, m) => {
 const wks = weeks(matches, '2324');
 console.log(`Walk-forward over ${wks.length} weeks...`);
 const G = rateComponent(matches, wks, { ...cfg.goals, hKey: 'hg', aKey: 'ag' });
-const S = rateComponent(matches, wks, { ...cfg.shots, hKey: 'hst', aKey: 'ast', toGoals: true });
+const S = rateComponent(matches, wks, { ...cfg.shots, hKey: 'qh', aKey: 'qa', toGoals: true });
 const E = eloComponent(matches, wks, cfg.elo);
 const rhos = rhoBySeason(matches, G, ['2324', '2425', '2526', '2627']);
 
@@ -73,6 +74,19 @@ for (const { matches: wk } of wks) for (const m of wk) {
   const fh = { ...teamFlags(sched, m.home, m.date), newcomer: newcomer(m.home, m) };
   const fa = { ...teamFlags(sched, m.away, m.date), newcomer: newcomer(m.away, m) };
   recs.push({ m, fh, fa, derby: isDerby(m.home, m.away), base: ensemble(m, { h: 1, a: 1 }) });
+}
+// Confirmed lineups (ESPN), joined to the results data.
+{
+  const lineups = loadLineups(path.join(root, 'data/raw'));
+  const joined = joinLineups(recs.map(r => r.m), lineups);
+  const hist = teamHistory(lineups);
+  for (const r of recs) {
+    const l = joined.get(r.m);
+    if (!l) continue;
+    const fh = lineupFeatures(hist, l.home, l.t), fa = lineupFeatures(hist, l.away, l.t);
+    if (fh && fa) r.lu = { fh, fa };
+  }
+  console.log(`Lineup features for ${recs.filter(r => r.lu).length} of ${recs.length} predictions`);
 }
 const valid = recs.filter(r => r.m.season < TEST_FROM), test = recs.filter(r => r.m.season >= TEST_FROM);
 console.log(`${valid.length} validation and ${test.length} test predictions`);
@@ -134,12 +148,20 @@ const calibrated = p => {
   return { ...p, h: x[0], d: x[1], a: x[2], btts: calibrate2(p.btts, calibration.btts), o25: calibrate2(p.o25, calibration.o25) };
 };
 
+// ---- Lineup effects, measured on validation only ---------------------------
+const lineupFit = fitLineupEffects(valid.filter(r => r.lu).map(r => ({ lh: r.base.lh, la: r.base.la, hg: r.m.hg, ag: r.m.ag, fh: r.lu.fh, fa: r.lu.fa })));
+console.log('Lineup effects (validation):', JSON.stringify(lineupFit));
+
 // ---- Test-season evaluation -------------------------------------------------
 for (const r of test) {
   const mult = contextMultipliers(factors, r.fh, r.fa, r.derby);
   r.raw = ensemble(r.m, mult);
   r.p = calibrated(r.raw);
   r.o = outcome(r.m);
+  if (r.lu) {
+    const lm = lineupMultipliers(r.lu.fh, r.lu.fa, lineupFit);
+    r.pl = calibrated(ensemble(r.m, { h: mult.h * lm.h, a: mult.a * lm.a }));
+  }
 }
 const mean = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
 function scoreSet(rs, getP) {
@@ -179,6 +201,15 @@ const report = {
     btts: { model: binScore(both, r => r.p.btts, r => r.m.hg > 0 && r.m.ag > 0) },
   },
   context: { measuredOn: 'validation seasons 2023/24-2024/25', report: ctxReport, kept: factors },
+  lineups: (() => {
+    const lu = both.filter(r => r.pl);
+    return {
+      effects: lineupFit,
+      note: 'Test matches with confirmed XIs for both sides. "withLineups" applies the lineup effects measured on validation.',
+      model: scoreSet(lu, r => r.p), withLineups: scoreSet(lu, r => r.pl),
+      bet365PreMatch: scoreSet(lu, pre), closing: scoreSet(lu, closing),
+    };
+  })(),
   calibration,
 };
 for (const [div, lg] of Object.entries(DIV_LEAGUE)) {
@@ -262,6 +293,18 @@ report.valueBets = {
 }
 
 mkdirSync(path.join(root, 'data/model'), { recursive: true });
+// Compact per-match predictions for quick follow-up analysis (not committed).
+mkdirSync(path.join(root, 'data/raw/cache'), { recursive: true });
+writeFileSync(path.join(root, 'data/raw/cache/records.json'), JSON.stringify(recs.map(r => ({
+  div: r.m.div, season: r.m.season, date: r.m.date, home: r.m.home, away: r.m.away, hg: r.m.hg, ag: r.m.ag,
+  lh: r.base.lh, la: r.base.la, p: r.p || null, base: { h: r.base.h, d: r.base.d, a: r.base.a, btts: r.base.btts, o25: r.base.o25 },
+  lu: r.lu || null, odds: r.m.odds,
+}))));
 writeFileSync(path.join(root, 'data/model/backtest.json'), JSON.stringify(report, null, 1) + '\n');
-writeFileSync(path.join(root, 'data/model/context.json'), JSON.stringify({ measuredOn: report.context.measuredOn, factors, calibration, report: ctxReport }, null, 1) + '\n');
-console.log(JSON.stringify({ overall: report.overall, blend: report.modelWeightInBlendWithMarket, value: report.valueBets }, null, 1));
+// Lineup effects are switched on for the published model only if they improved the
+// test seasons; otherwise lineups are shown on the site but leave the numbers alone.
+const lineupEnabled = report.lineups.withLineups.logloss < report.lineups.model.logloss;
+report.lineups.enabled = lineupEnabled;
+writeFileSync(path.join(root, 'data/model/backtest.json'), JSON.stringify(report, null, 1) + '\n');
+writeFileSync(path.join(root, 'data/model/context.json'), JSON.stringify({ measuredOn: report.context.measuredOn, factors, calibration, lineup: { ...lineupFit, enabled: lineupEnabled }, report: ctxReport }, null, 1) + '\n');
+console.log(JSON.stringify({ overall: report.overall, lineups: report.lineups, blend: report.modelWeightInBlendWithMarket, value: report.valueBets }, null, 1));

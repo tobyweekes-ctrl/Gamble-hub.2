@@ -1,28 +1,46 @@
 {
- "tunedOn": "2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss",
- "tunedAt": "2026-10-21T22:51:08.430Z",
+ "tunedOn": "2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss; combination method by two-fold CV across those seasons",
+ "tunedAt": "2026-10-22T07:34:44.349Z",
  "goals": {
-  "xi": 0.0025,
-  "sigma": 1.5
+  "xi": 0.0015,
+  "sigma": 1.5,
+  "seasonDiscount": 0.7
  },
  "shots": {
-  "xi": 0.006,
-  "sigma": 1.5
+  "xi": 0.004,
+  "sigma": 1.5,
+  "seasonDiscount": 0.5
  },
  "elo": {
   "k": 20,
-  "hfa": 80
+  "hfa": 80,
+  "carry": 0.8
  },
+ "method": "linear",
  "weights": {
   "goals": 0.6,
   "shots": 0.4,
   "elo": 0
  },
- "validationLogLoss": {
-  "goals": 0.9956553461904489,
-  "shots": 0.9985317731617445,
-  "elo": 1.0048154084242105,
-  "ensemble": 0.9929493956227694
+ "stacker": {
+  "features": [
+   "log goals-model home/away expected goals",
+   "log shots-model home/away expected goals",
+   "Elo gap /100"
+  ],
+  "b": [
+   0.5768659529986554,
+   0.8879432403511667,
+   0.07535136965659701
+  ],
+  "t1": -0.5223295363167179,
+  "t2": 0.688052615006849
  },
- "context": {}
+ "validationLogLoss": {
+  "goals": 0.9955855911903052,
+  "shots": 0.9981798345365703,
+  "elo": 1.0045184233146742,
+  "cvLinear": 0.9912472616500143,
+  "cvStack": 0.9919881938938749
+ }
 }

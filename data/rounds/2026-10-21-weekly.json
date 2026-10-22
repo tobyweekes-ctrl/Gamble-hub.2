@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-10-21-weekly",
- "dataUpdated": "Wed 21 Oct, 23:30",
+ "dataUpdated": "Thu 22 Oct 08:47",
  "notes": [
   "Thu 22 - Thu 29 Oct 2026. Premier League and Championship in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "No Champions League games in this window (next league-phase matchday is in November).",
@@ -661,7 +661,7 @@
    "kickoff": "2026-10-23T20:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 3.25,
      "d": 3.4,
      "a": 2.2
@@ -669,19 +669,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.73,
      "under": 2.1
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/ipswich-vs-nottingham-forest/"
   },
   {
    "league": "Championship",
@@ -690,27 +691,28 @@
    "kickoff": "2026-10-23T20:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 5.25,
-     "d": 4.1,
-     "a": 1.57
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 5.5,
+     "d": 4.33,
+     "a": 1.53
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "over": 1.53,
-     "under": 2.5
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "over": 1.5,
+     "under": 2.63
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/bolton-vs-middlesbrough/"
   },
   {
    "league": "Premier League",
@@ -719,27 +721,28 @@
    "kickoff": "2026-10-24T12:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 5.0,
-     "d": 4.0,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 5.25,
+     "d": 4,
      "a": 1.67
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.53,
      "under": 2.5
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/aston-villa-vs-man-city/"
   },
   {
    "league": "Championship",
@@ -748,27 +751,28 @@
    "kickoff": "2026-10-24T12:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 3.2,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 3,
      "d": 3.5,
-     "a": 2.15
+     "a": 2.25
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.73,
-     "no": 2.0
+     "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.91,
      "under": 1.91
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/charlton-athletic-vs-norwich/"
   },
   {
    "league": "Championship",
@@ -777,27 +781,28 @@
    "kickoff": "2026-10-24T12:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 2.35,
-     "d": 3.3,
-     "a": 3.0
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 2.4,
+     "d": 3.25,
+     "a": 2.9
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.73,
-     "no": 2.0
+     "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "over": 2.0,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "over": 2,
      "under": 1.8
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/portsmouth-vs-millwall/"
   },
   {
    "league": "Championship",
@@ -806,7 +811,7 @@
    "kickoff": "2026-10-24T12:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.8,
      "d": 3.6,
      "a": 4.33
@@ -814,19 +819,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.73,
-     "no": 2.0
+     "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.8,
-     "under": 2.0
+     "under": 2
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/sheff-utd-vs-derby/"
   },
   {
    "league": "Premier League",
@@ -835,27 +841,28 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 1.42,
-     "d": 4.75,
-     "a": 7.0
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 1.36,
+     "d": 5,
+     "a": 8
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "yes": 2.0,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "yes": 2,
      "no": 1.75
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.8,
-     "under": 2.0
+     "under": 2
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/arsenal-vs-everton/"
   },
   {
    "league": "Premier League",
@@ -864,7 +871,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 3.2,
      "d": 3.4,
      "a": 2.25
@@ -872,19 +879,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.73,
      "under": 2.1
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/coventry-vs-fulham/"
   },
   {
    "league": "Championship",
@@ -893,27 +901,28 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.7,
-     "d": 3.2,
+     "d": 3.25,
      "a": 2.6
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.83,
      "no": 1.83
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 2.2,
      "under": 1.67
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/blackburn-vs-wrexham/"
   },
   {
    "league": "Championship",
@@ -922,27 +931,28 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.6,
-     "d": 3.7,
+     "d": 3.6,
      "a": 2.5
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.62,
      "under": 2.3
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/cardiff-vs-birmingham/"
   },
   {
    "league": "Championship",
@@ -951,27 +961,28 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 3.0,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 3,
      "d": 3.4,
      "a": 2.3
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.91,
      "under": 1.91
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/lincoln-vs-burnley/"
   },
   {
    "league": "Championship",
@@ -980,7 +991,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 3.75,
      "d": 3.5,
      "a": 1.95
@@ -988,19 +999,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.73,
-     "no": 2.0
+     "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.91,
      "under": 1.91
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/preston-vs-west-brom/"
   },
   {
    "league": "Championship",
@@ -1009,27 +1021,28 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 2.4,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 2.45,
      "d": 3.3,
      "a": 2.8
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.73,
-     "no": 2.0
+     "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.91,
      "under": 1.91
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/qpr-vs-swansea/"
   },
   {
    "league": "Championship",
@@ -1038,27 +1051,28 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.3,
      "d": 3.4,
-     "a": 3.0
+     "a": 3
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.73,
-     "no": 2.0
+     "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.91,
      "under": 1.91
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/stoke-vs-bristol-city/"
   },
   {
    "league": "Championship",
@@ -1067,7 +1081,7 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.67,
      "d": 4.1,
      "a": 4.5
@@ -1075,19 +1089,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.5,
      "under": 2.63
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/west-ham-vs-southampton/"
   },
   {
    "league": "Championship",
@@ -1096,27 +1111,28 @@
    "kickoff": "2026-10-24T15:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.36,
      "d": 4.75,
-     "a": 8.0
+     "a": 8
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.83,
      "no": 1.83
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "over": 1.57,
-     "under": 2.38
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "over": 1.62,
+     "under": 2.3
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-championship-predictions-stats-odds/wolves-vs-watford/"
   },
   {
    "league": "Serie A",
@@ -1125,27 +1141,28 @@
    "kickoff": "2026-10-24T17:00:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 2.8,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 2.88,
      "d": 3.2,
-     "a": 2.63
+     "a": 2.6
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.91,
      "under": 1.91
     }
    ],
-   "form": "Included because Roma is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Roma is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/napoli-vs-roma/"
   },
   {
    "league": "Premier League",
@@ -1154,7 +1171,7 @@
    "kickoff": "2026-10-24T17:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.67,
      "d": 4.2,
      "a": 4.75
@@ -1162,19 +1179,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "over": 1.5,
-     "under": 2.63
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "over": 1.53,
+     "under": 2.5
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/chelsea-vs-tottenham/"
   },
   {
    "league": "Bundesliga",
@@ -1183,27 +1201,28 @@
    "kickoff": "2026-10-24T17:30:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.48,
-     "d": 5.0,
+     "d": 5,
      "a": 5.75
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.33,
      "under": 3.4
     }
    ],
-   "form": "Included because Borussia Dortmund is in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Borussia Dortmund is in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/german-bundesliga-predictions-stats-odds/borussia-dortmund-vs-e-frankfurt/"
   },
   {
    "league": "Serie A",
@@ -1212,7 +1231,7 @@
    "kickoff": "2026-10-24T19:45:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.42,
      "d": 4.33,
      "a": 8.5
@@ -1220,19 +1239,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 2.05,
      "no": 1.7
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.91,
      "under": 1.91
     }
    ],
-   "form": "Included because Lazio is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Lazio is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/lazio-vs-parma/"
   },
   {
    "league": "Ligue 1",
@@ -1241,7 +1261,7 @@
    "kickoff": "2026-10-24T19:45:00+01:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.38,
      "d": 3.5,
      "a": 2.88
@@ -1249,19 +1269,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.67,
      "under": 2.2
     }
    ],
-   "form": "Included because Paris FC is in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Paris FC is in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/french-ligue-predictions-stats-odds/lens-vs-paris/"
   },
   {
    "league": "Serie A",
@@ -1270,27 +1291,28 @@
    "kickoff": "2026-10-25T11:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.33,
      "d": 5.25,
-     "a": 9.0
+     "a": 9
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.44,
      "under": 2.75
     }
    ],
-   "form": "Included because Inter Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Inter Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/inter-milan-vs-fiorentina/"
   },
   {
    "league": "Premier League",
@@ -1299,7 +1321,7 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.88,
      "d": 3.6,
      "a": 2.38
@@ -1307,19 +1329,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.62,
      "under": 2.3
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/crystal-palace-vs-newcastle/"
   },
   {
    "league": "Premier League",
@@ -1328,27 +1351,28 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 5.0,
-     "d": 3.9,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 5,
+     "d": 3.8,
      "a": 1.7
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.67,
      "under": 2.2
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/hull-vs-brentford/"
   },
   {
    "league": "Premier League",
@@ -1357,7 +1381,7 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.15,
      "d": 3.6,
      "a": 3.25
@@ -1365,19 +1389,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.53,
      "under": 2.5
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/liverpool-vs-brighton/"
   },
   {
    "league": "Premier League",
@@ -1386,7 +1411,7 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.95,
      "d": 3.8,
      "a": 3.7
@@ -1394,19 +1419,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.62,
      "under": 2.3
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/man-united-vs-bournemouth/"
   },
   {
    "league": "Ligue 1",
@@ -1415,7 +1441,7 @@
    "kickoff": "2026-10-25T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.1,
      "d": 3.5,
      "a": 3.5
@@ -1423,19 +1449,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.8,
-     "under": 2.0
+     "under": 2
     }
    ],
-   "form": "Included because Lille is in the Ligue 1 top 4. Monaco (5th) are level on points with Lille (4th), separated only by goal difference. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Lille is in the Ligue 1 top 4. Monaco (5th) are level on points with Lille (4th), separated only by goal difference. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/french-ligue-predictions-stats-odds/monaco-vs-lille/"
   },
   {
    "league": "Bundesliga",
@@ -1444,7 +1471,7 @@
    "kickoff": "2026-10-25T14:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.88,
      "d": 3.75,
      "a": 2.3
@@ -1452,19 +1479,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.36,
-     "no": 3.0
+     "no": 3
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.4,
-     "under": 3.0
+     "under": 3
     }
    ],
-   "form": "Included because Bayer 04 Leverkusen is in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Bayer 04 Leverkusen is in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/german-bundesliga-predictions-stats-odds/hoffenheim-vs-leverkusen/"
   },
   {
    "league": "Premier League",
@@ -1473,7 +1501,7 @@
    "kickoff": "2026-10-25T16:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 3.1,
      "d": 3.25,
      "a": 2.35
@@ -1481,19 +1509,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.8,
      "no": 1.95
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 2.1,
      "under": 1.73
     }
    ],
-   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/english-premier-league-predictions-stats-odds/sunderland-vs-leeds-united/"
   },
   {
    "league": "Bundesliga",
@@ -1502,7 +1531,7 @@
    "kickoff": "2026-10-25T16:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 6.5,
      "d": 5.75,
      "a": 1.38
@@ -1510,19 +1539,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.4,
      "no": 2.75
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.25,
-     "under": 4.0
+     "under": 4
     }
    ],
-   "form": "Included because Freiburg and Bayern Munich are in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Freiburg and Bayern Munich are in the Bundesliga top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/german-bundesliga-predictions-stats-odds/freiburg-vs-bayern-munich/"
   },
   {
    "league": "Serie A",
@@ -1531,7 +1561,7 @@
    "kickoff": "2026-10-25T19:45:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 5.5,
      "d": 3.75,
      "a": 1.65
@@ -1539,19 +1569,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.8,
      "no": 1.95
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.8,
-     "under": 2.0
+     "under": 2
     }
    ],
-   "form": "Included because AC Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because AC Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/udinese-vs-ac-milan/"
   },
   {
    "league": "Ligue 1",
@@ -1560,27 +1591,28 @@
    "kickoff": "2026-10-25T19:45:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "h": 1.42,
-     "d": 5.0,
-     "a": 7.0
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "h": 1.48,
+     "d": 4.75,
+     "a": 6.25
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "yes": 1.53,
-     "no": 2.38
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "yes": 1.5,
+     "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.4,
-     "under": 3.0
+     "under": 3
     }
    ],
-   "form": "Included because Paris Saint-Germain and Olympique Lyonnais are in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Paris Saint-Germain and Olympique Lyonnais are in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/french-ligue-predictions-stats-odds/psg-vs-olympique-lyonnais/"
   },
   {
    "league": "Serie A",
@@ -1589,7 +1621,7 @@
    "kickoff": "2026-10-27T17:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 2.75,
      "d": 3.4,
      "a": 2.45
@@ -1597,19 +1629,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.73,
      "under": 2.1
     }
    ],
-   "form": "Included because Lazio is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Lazio is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/sassuolo-vs-lazio/"
   },
   {
    "league": "Serie A",
@@ -1618,27 +1651,28 @@
    "kickoff": "2026-10-27T19:45:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.36,
      "d": 4.75,
-     "a": 9.0
+     "a": 9
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
-     "yes": 2.0,
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
+     "yes": 2,
      "no": 1.75
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.73,
      "under": 2.1
     }
    ],
-   "form": "Included because Roma is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Roma is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/roma-vs-cagliari/"
   },
   {
    "league": "Serie A",
@@ -1647,7 +1681,7 @@
    "kickoff": "2026-10-28T17:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 1.6,
      "d": 3.8,
      "a": 5.5
@@ -1655,19 +1689,20 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.8,
      "no": 1.95
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.8,
-     "under": 2.0
+     "under": 2
     }
    ],
-   "form": "Included because AC Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because AC Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/ac-milan-vs-bologna/"
   },
   {
    "league": "Serie A",
@@ -1676,27 +1711,29 @@
    "kickoff": "2026-10-28T17:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "h": 8.5,
-     "d": 5.0,
+     "d": 5,
      "a": 1.33
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), 21 Oct",
+     "source": "kickoff.co.uk match page (Bet365), Thu 22 Oct 08:47",
      "over": 1.33,
      "under": 3.4
     }
    ],
-   "form": "Included because Inter Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365)."
+   "form": "Included because Inter Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/venezia-vs-inter-milan/"
   }
- ]
+ ],
+ "updateTag": "Thu 22 Oct 08:47"
 }
