@@ -34,7 +34,7 @@ for (const e of latest.values()) {
   const players = [...g.home.players, ...g.away.players];
   for (const r of e.rows) {
     const n = norm(r.name);
-    const p = players.find(x => norm(x.name) === n) || players.find(x => norm(x.name).split(' ').pop() === n.split(' ').pop());
+    const p = players.find(x => norm(x.name) === n) || players.find(x => norm(x.name).split(' ').pop() === n.split(' ').pop() && norm(x.name)[0] === n[0]);
     if (!p) continue; // did not play: bets on non-runners are usually void
     if (r.mk === 'yc' && p.rc) { graded.push({ ...r, won: true }); continue; } // "to get a card" includes reds
     graded.push({ ...r, won: (p[STAT[r.mk]] || 0) >= r.k, started: p.start });
