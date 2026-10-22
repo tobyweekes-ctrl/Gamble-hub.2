@@ -16,7 +16,7 @@ import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { kickoffMatchPage, kickoffPrices, sameTeam } from './research/sources.mjs';
-import { loadLineups, teamHistory, lineupFeatures, missingRegulars, usualXI } from './model/lineups.mjs';
+import { loadLineups, teamHistory, lineupFeatures, missingRegulars, usualXI, recentSquad } from './model/lineups.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const roundsDir = path.join(root, 'data/rounds');
@@ -43,7 +43,15 @@ for (const f of round.fixtures) {
   // Before team sheets: each side's usual XI, for the player markets (labelled probable).
   if (u && !l && t > now) {
     const h = usualXI(hist, u.homeId, u.t), a = usualXI(hist, u.awayId, u.t);
-    if (h && a) { f.probableXI = { source: 'ESPN, most-started players in the last 8 matches', at: new Date(now).toISOString(), home: h, away: a }; probable++; }
+    if (h && a) {
+      const inXI = (list, xi) => (list || []).filter(p => !xi.some(x => x.id === p.id));
+      f.probableXI = {
+        source: 'ESPN, most-started players in the last 8 matches', at: new Date(now).toISOString(), home: h, away: a,
+        // The rest of each squad, for bookmaker lists that include squad players.
+        homeExtra: inXI(recentSquad(hist, u.homeId, u.t), h), awayExtra: inXI(recentSquad(hist, u.awayId, u.t), a),
+      };
+      probable++;
+    }
   }
   if (l) {
     const side = team => {
@@ -53,6 +61,7 @@ for (const f of round.fixtures) {
         xi: team.players.filter(p => p.start).map(p => p.name),
         missing: missingRegulars(hist, team, l.t),
         starters: team.players.filter(p => p.start).map(p => ({ id: p.id, name: p.name, pos: p.pos })),
+        bench: team.players.filter(p => !p.start).map(p => ({ id: p.id, name: p.name, pos: p.pos })),
         reg: feats ? +feats.reg.toFixed(3) : null, att: feats ? +feats.att.toFixed(3) : null,
         backupKeeper: feats ? feats.gk : null, history: feats ? feats.n : 0,
       };
