@@ -15,6 +15,21 @@ export const DEFAULT_CONFIG = {
   context: {},       // multiplicative factors fitted by the backtest (see context.mjs)
 };
 
+// Win/draw/loss from the three components, combined as tools/model/tune.mjs chose:
+// 'linear' (weighted average) or 'logpool' (weighted geometric mean, renormalised,
+// which leans towards the components that agree). g, s, e: {h, d, a}. Shared with
+// tools/model/backtest.mjs, so the published combination is the tested one.
+export function pool3(g, s, e, cfg) {
+  const w = cfg.weights, K = ['h', 'd', 'a'];
+  if (cfg.method === 'logpool') {
+    const q = K.map(k => Math.exp(w.goals * Math.log(g[k]) + w.shots * Math.log(s[k]) + w.elo * Math.log(e[k])));
+    const t = q[0] + q[1] + q[2];
+    return q.map(x => x / t);
+  }
+  const W = w.goals + w.shots + w.elo;
+  return K.map(k => (w.goals * g[k] + w.shots * s[k] + w.elo * e[k]) / W);
+}
+
 export function buildState(matches, asOf, cfg = DEFAULT_CONFIG) {
   const past = matches.filter(m => m.date < asOf);
   const groups = {};
@@ -65,8 +80,7 @@ export function predict(state, fx, ctx = { h: 1, a: 1 }) {
   const goals = marketsFromGrid(gGrid), shots = marketsFromGrid(sGrid);
   const elo = eloProbs((rh + state.cfg.elo.hfa - ra) / 100, state.eloLink);
   const w = state.cfg.weights;
-  const wsum = w.goals + w.shots + w.elo;
-  const x3 = [0, 1, 2].map(i => (w.goals * [goals.h, goals.d, goals.a][i] + w.shots * [shots.h, shots.d, shots.a][i] + w.elo * elo[i]) / wsum);
+  const x3 = pool3(goals, shots, { h: elo[0], d: elo[1], a: elo[2] }, state.cfg);
   // Totals and BTTS come from the two goal models only (Elo has no score distribution).
   const wg = w.goals / (w.goals + w.shots || 1), ws = 1 - wg;
   const mix = k => wg * goals[k] + ws * shots[k];

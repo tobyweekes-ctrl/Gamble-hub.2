@@ -98,6 +98,22 @@ Checked because most player-prop "value" flags against Unibet were 1+ shots on t
 
 Unibet's player prices imply far higher chances on average (booked about 27%, 1+ fouls about 80%), so most of the gap is bookmaker margin. Whether the few flagged prices are real value is being tested: every price is logged (`data/props/log.jsonl`) and graded (`data/props/graded.json`).
 
+## Model v4.2 (23 Oct 2026, overnight refinement)
+
+Everything below was chosen on the validation seasons (2023/24, 2024/25) and only then scored on the test seasons (2025/26, 2026/27 to date). A change is kept only if validation chose it.
+
+**Kept**
+- **Log pooling of the three components** (weighted geometric mean, then calibrated) in place of a weighted average. Two-fold CV on validation: 0.9910 v 0.9912. Weights goals 0.55, shots 0.55, Elo 0. Test seasons, 2,313 matches: log-loss 1.0128 (v4.1: 1.0136), Brier 0.6065 (0.6070). Bet365: 0.9997 / 0.5978. Still behind the bookmaker; value bets on 1X2 edges above 5% still lose (-16.3% per unit, 1,121 bets).
+- **Cross-league (European) model:** slower time decay and no extra between-season discount (xi 0.001, season discount 1; was 0.0015 and 0.7). Validation 0.9169 (0.9194); test 0.9484 (0.9519), against 1.0385 for base rates.
+
+**Tried and not kept (no gain on validation)**
+- Shrinkage of team ratings towards the league mean in the domestic model: flat across settings (validation 0.9956-0.9997); the leagues have enough data.
+- Off-target shots in the shots model's chance-quality measure (SoT + w x off-target shots): worse at every weight (w 0.1: 0.9983 v 0.9982).
+- A shots component for the European model from ESPN team stats (36,209 matches; 443 clubs linked between UEFA and ESPN). Shots alone were much weaker than goals (validation 0.96 v 0.917), so validation gave it zero weight: ESPN's stats are patchy for smaller leagues and qualifiers. Kept in the code for re-testing.
+- Direct models for BTTS and Over 2.5 (logistic on expected goals and shots) instead of recalibrated Poisson: all within 0.0003 of each other. BTTS test log-loss: league base rate 0.6865, current 0.6858, best alternative 0.6855. BTTS is close to unpredictable beyond its base rate with this data.
+
+Log entries from this version are under `independent-v4.2-2026-10-23`.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.

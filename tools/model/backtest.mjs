@@ -22,6 +22,7 @@ import { weeks, rateComponent, eloComponent, rhoBySeason, outcome, brier3, loglo
 import { scoreGrid, marketsFromGrid } from './models.mjs';
 import { loadEurope, schedule, teamFlags, isDerby, FLAGS, contextMultipliers } from './context.mjs';
 import { calibrate1x2, calibrate2, fitCalibration } from './calibration.mjs';
+import { pool3 } from './ensemble.mjs';
 import { loadLineups, joinLineups, teamHistory, lineupFeatures, fitLineupEffects, lineupMultipliers } from './lineups.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -59,10 +60,9 @@ function ensemble(m, mult) {
   const rho = rhos[`${m.group}|${m.season}`];
   const gl = { h: g.lh * mult.h, a: g.la * mult.a }, sl = { h: s.lh * mult.h, a: s.la * mult.a };
   const gm = marketsFromGrid(scoreGrid(gl.h, gl.a, rho)), sm = marketsFromGrid(scoreGrid(sl.h, sl.a, rho));
-  const W = w.goals + w.shots + w.elo;
-  const mix3 = k => (w.goals * gm[k] + w.shots * sm[k] + w.elo * e[k]) / W;
+  const [ph, pd, pa] = pool3(gm, sm, e, cfg);
   return {
-    h: mix3('h'), d: mix3('d'), a: mix3('a'),
+    h: ph, d: pd, a: pa,
     btts: wg * gm.btts + ws * sm.btts, o25: wg * gm.o25 + ws * sm.o25,
     lh: wg * gl.h + ws * sl.h, la: wg * gl.a + ws * sl.a,
   };

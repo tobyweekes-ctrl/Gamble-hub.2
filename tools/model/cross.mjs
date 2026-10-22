@@ -161,13 +161,13 @@ export function loadCross(root) {
 
 // Fit: domestic + European matches before asOf. Shrinkage group: a team's latest
 // domestic division, or "U-<country>" for clubs rated from European games only.
-export function fitCross(rows, euro, { asOf, xi = 0.0015, sigma = 0.4, seasonDiscount = 0.7, iters = 40 }) {
+export function fitCross(rows, euro, { asOf, xi = 0.0015, sigma = 0.4, seasonDiscount = 0.7, iters = 40, hKey = 'hg', aKey = 'ag' }) {
   const all = [];
   let cur = '';
   for (const m of [...rows, ...euro]) if (m.date < asOf && m.season > cur) cur = m.season;
   const back = s => Number(cur.slice(0, 2)) - Number(s.slice(0, 2));
   for (const m of [...rows, ...euro]) {
-    if (m.date >= asOf || m.hg == null || m.ag == null || m.date < FROM) continue;
+    if (m.date >= asOf || m[hKey] == null || m[aKey] == null || m.date < FROM) continue;
     const w = Math.exp(-xi * (asOf - m.date) / DAY) * seasonDiscount ** back(m.season);
     if (w < 1e-3) continue;
     all.push({ m, w });
@@ -190,13 +190,13 @@ export function fitCross(rows, euro, { asOf, xi = 0.0015, sigma = 0.4, seasonDis
   const gOf = new Int32Array(nT);
   for (const [t, i] of teams) gOf[i] = groups.get(group.get(t));
   const A = new Float64Array(nT), D = new Float64Array(nT), O = new Float64Array(nD), H = new Float64Array(nD).fill(0.2);
-  { let s = 0, n = 0; for (const { m, w } of all) { s += w * (m.hg + m.ag); n += 2 * w; } O.fill(Math.log(s / n)); }
+  { let s = 0, n = 0; for (const { m, w } of all) { s += w * (m[hKey] + m[aKey]); n += 2 * w; } O.fill(Math.log(s / n)); }
   const idx = all.map(({ m }) => [teams.get(m.home), teams.get(m.away), divs.get(m.div), m.neutral ? 0 : 1]);
   const LH = new Float64Array(all.length), LA = new Float64Array(all.length);
   const refresh = () => all.forEach((r, k) => { const [i, j, d, ha] = idx[k]; LH[k] = Math.exp(O[d] + ha * H[d] + A[i] - D[j]); LA[k] = Math.exp(O[d] + A[j] - D[i]); });
   const step = (n, acc, apply) => {
     const g = new Float64Array(n), h = new Float64Array(n);
-    all.forEach(({ m, w }, k) => acc(g, h, idx[k], w * (m.hg - LH[k]), w * (m.ag - LA[k]), w * LH[k], w * LA[k]));
+    all.forEach(({ m, w }, k) => acc(g, h, idx[k], w * (m[hKey] - LH[k]), w * (m[aKey] - LA[k]), w * LH[k], w * LA[k]));
     apply(g, h); refresh();
   };
   const means = () => {
@@ -238,3 +238,52 @@ export const probsFor = (lh, la, rho) => {
   return { grid: g, ...marketsFromGrid(g) };
 };
 export { fitRho };
+
+// ---- Shots component (ESPN team stats, tools/model/fetch-espn-shots.mjs) --------
+// The same rating model fitted to shots on target, from every match ESPN lists with
+// team stats: European club competitions and the domestic leagues of most clubs in
+// them. Teams are keyed by ESPN id ("espn:<id>"), the same in every competition.
+// Expected shots on target become expected goals with the goals-per-shot-on-target
+// rate of recent European games.
+export function loadEspnShots(root) {
+  const f = path.join(root, 'data/raw/cross/espn-shots.json');
+  if (!existsSync(f)) return null;
+  const dom = [], eur = [];
+  for (const m of JSON.parse(readFileSync(f, 'utf8'))) {
+    const date = Date.parse(m.date);
+    if (!Number.isFinite(date) || date < FROM) continue;
+    const r = { div: m.league.startsWith('uefa.') ? 'EUR' : m.league, season: seasonOf(date), date, home: `espn:${m.homeId}`, away: `espn:${m.awayId}`,
+      homeName: m.home, awayName: m.away, hg: m.hg, ag: m.ag, hst: m.hst, ast: m.ast };
+    (r.div === 'EUR' ? eur : dom).push(r);
+  }
+  return { dom, eur };
+}
+export function goalsPerSot(eur, asOf) {
+  let g = 0, s = 0;
+  for (const m of eur) if (m.date < asOf && asOf - m.date < 365 * DAY && m.hst != null) { g += m.hg + m.ag; s += m.hst + m.ast; }
+  return s ? g / s : null;
+}
+// UEFA club name (with country) -> ESPN team id, learnt from European games found in
+// both sources: same kick-off (within 2 hours) and same score, at least one team
+// name in common or the only such game. Each pairing is a vote; the most-voted id wins.
+export function linkEspn(euro, espnEur) {
+  const byDay = new Map();
+  for (const m of espnEur) { const k = Math.floor(m.date / DAY); if (!byDay.has(k)) byDay.set(k, []); byDay.get(k).push(m); }
+  const w = s => new Set(norm(s).split(/[^a-z0-9]+/).filter(x => x.length > 2 && !STOP.has(x)));
+  const near = (a, b) => { const B = w(b); return [...w(a)].some(x => B.has(x) || [...B].some(y => x.length >= 4 && y.length >= 4 && (x.startsWith(y) || y.startsWith(x)))); };
+  const votes = new Map();
+  const vote = (key, id) => { if (!votes.has(key)) votes.set(key, new Map()); const v = votes.get(key); v.set(id, (v.get(id) || 0) + 1); };
+  for (const m of euro) {
+    if (m.hg == null) continue;
+    const day = Math.floor(m.date / DAY);
+    const cands = [...(byDay.get(day) || []), ...(byDay.get(day - 1) || []), ...(byDay.get(day + 1) || [])]
+      .filter(e => Math.abs(e.date - m.date) < 2 * 3600e3 && e.hg === m.hg && e.ag === m.ag);
+    const named = cands.filter(e => near(e.homeName, m.homeName) || near(e.awayName, m.awayName));
+    const hit = named.length === 1 ? named[0] : cands.length === 1 ? cands[0] : null;
+    if (!hit) continue;
+    vote(m.home, hit.home); vote(m.away, hit.away);
+  }
+  const map = new Map();
+  for (const [k, v] of votes) map.set(k, [...v].sort((a, b) => b[1] - a[1])[0][0]);
+  return map;
+}
