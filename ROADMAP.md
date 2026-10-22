@@ -48,6 +48,7 @@ For lineups, the share of regulars starting and a back-up goalkeeper were both m
 - **Model:** a per-player rate for each starter, from ESPN match stats. It is shrunk towards the position average and scaled by the team's expected shots and fouls in the match.
 - **Test:** on 46,240 test player-matches it beat position averages in every market and was well calibrated.
 - **Not tested:** whether it beats bookmaker prices. No feed of player-prop prices is reachable (oddschecker, Bet365, Sky Bet, Paddy Power, Betfair and DraftKings all refuse automated access), so the site has a price checker where you type the price in.
+- **Screenshot checker (added 22 Oct):** upload a bookmaker screenshot of player shots, shots on target, fouls or cards, or paste the text. It is read in the browser with Tesseract.js, matched to this round's priced players, and each price is compared with the model. Tested on a rendered dark-mode Bet365-style list, where every price was read correctly.
 - **Next:** an odds feed with player props, for example a paid odds API key added as an environment secret. Then rank mispricing automatically and backtest it.
 
 **Next model steps, in order of expected value:**
