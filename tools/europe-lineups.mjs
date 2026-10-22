@@ -36,12 +36,14 @@ async function pool(items, n, fn) {
   return out;
 }
 // ESPN spellings that share no word with UEFA's.
-const ESPN_ALIAS = { 'crvena zvezda': 'red star belgrade', copenhagen: 'kobenhavn', 'h. beer-sheva': "hapoel be'er sheva", 'univ. craiova': 'csu craiova' };
+const ESPN_ALIAS = { 'crvena zvezda': 'red star belgrade', copenhagen: 'kobenhavn', 'h. beer-sheva': "hapoel be'er sheva", 'univ. craiova': 'csu craiova',
+  'l. red imps': 'lincoln red imps', 'iberia tbilisi': 'iberia 1999', aarhus: 'agf', 'n.e.c.': 'nec nijmegen', borac: 'borac banja luka', rennes: 'stade rennais' };
 const words = s => new Set(norm(ESPN_ALIAS[norm(s)] || s).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !['fc', 'afc', 'club', 'the'].includes(w)));
 const overlap = (a, b) => { const B = new Set([...words(b), ...words(ESPN_ALIAS[norm(b)] || b)]); return [...words(a)].some(w => B.has(w) || [...B].some(x => x.length >= 4 && w.length >= 4 && (x.startsWith(w) || w.startsWith(x)))); };
 const starters = (summary, teamId) => {
   const r = (summary.rosters || []).find(x => String(x.team.id) === String(teamId));
-  if (!r || !r.roster || !r.roster.some(p => p.starter)) return null;
+  // A sheet counts once all 11 starters are listed (ESPN sometimes shows a partial one).
+  if (!r || !r.roster || r.roster.filter(p => p.starter).length < 11) return null;
   return { formation: r.formation || null, players: r.roster.map(p => ({ id: String(p.athlete.id), name: p.athlete.displayName, pos: p.position?.abbreviation || '', start: !!p.starter })) };
 };
 
@@ -56,7 +58,7 @@ for (const f of due) {
   const t = Date.parse(f.kickoff);
   const ev = boards[LEAGUE[f.league]].find(e => {
     const c = e.competitions[0].competitors, h = c.find(x => x.homeAway === 'home'), a = c.find(x => x.homeAway === 'away');
-    return Math.abs(Date.parse(e.date) - t) < 3 * 3600e3 && (overlap(h.team.displayName, f.home) || overlap(a.team.displayName, f.away));
+    return Math.abs(Date.parse(e.date) - t) < 3 * 3600e3 && overlap(h.team.displayName, f.home) && overlap(a.team.displayName, f.away);
   });
   if (!ev) { console.log(`${f.home} v ${f.away}: not found on ESPN`); continue; }
   const comp = ev.competitions[0];
