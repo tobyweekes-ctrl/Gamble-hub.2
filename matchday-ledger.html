@@ -985,9 +985,32 @@ function toBookOdds(prob, type){
   return fair / (1+margin);
 }
 
+// Fractional odds as UK bookmakers show them: the nearest rung of the standard
+// ladder (1/10 ... 4/6, evens, 6/4 ... 500/1). Prices read from a screenshot keep the
+// fraction exactly as written; this is for computed odds (fair odds, combinations).
+const FRACTION_LADDER = ['1/10','1/8','2/13','1/6','1/5','2/9','1/4','2/7','3/10','1/3','4/11','2/5','4/9','1/2','8/15','4/7','8/13','4/6','8/11','4/5','5/6','10/11','1/1',
+  '11/10','6/5','5/4','11/8','6/4','13/8','7/4','15/8','2/1','85/40','9/4','12/5','5/2','13/5','11/4','3/1','10/3','7/2','4/1','9/2','5/1','11/2','6/1','13/2','7/1','15/2','8/1','17/2','9/1','10/1',
+  '11/1','12/1','14/1','16/1','18/1','20/1','22/1','25/1','28/1','33/1','40/1','50/1','66/1','80/1','100/1','125/1','150/1','200/1','250/1','300/1','400/1','500/1'];
 function fractionApprox(decimalOdds){
-  const frac = Math.max(decimalOdds-1, 0.01);
-  return `${frac.toFixed(frac<3?1:0)}/1`;
+  if(!(decimalOdds>1)) return '—';
+  const x = decimalOdds-1;
+  if(x>500) return '500/1+';
+  let best = null;
+  for(const f of FRACTION_LADDER){
+    const [a,b] = f.split('/').map(Number);
+    const err = Math.abs(Math.log((a/b)/x));
+    if(!best || err<best.err) best = {f, err};
+  }
+  return best.f==='1/1' ? 'evens' : best.f;
+}
+// Reads a typed price: "6/4", "evens"/"evs", or a decimal like "2.5". Returns decimal odds.
+function parseOddsInput(str){
+  const t = String(str||'').trim().toLowerCase();
+  if(/^ev(en)?s?$/.test(t)) return 2;
+  const f = /^(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)$/.exec(t);
+  if(f) return 1 + Number(f[1])/Number(f[2]);
+  const d = Number(t);
+  return d>1 ? d : null;
 }
 
 const TEAM_SHORT = {
@@ -1114,9 +1137,9 @@ function renderDisparities(){
 
   const rowsHTML = rows.map(r=>{
     const good = r.edge!=null ? r.edge>0 : r.delta>0;
-    const fairPrice = r.modelPct>0 ? (100/r.modelPct).toFixed(2) : '—';
+    const fairPrice = r.modelPct>0 ? fractionApprox(100/r.modelPct) : '—';
     const text = r.edge!=null
-      ? `${r.market}: Bet365 ${r.price.toFixed(2)} v our fair price ${fairPrice} (model ${r.modelPct}%, bookmaker ${r.marketPct}%) → edge ${r.edge>0?'+':''}${(r.edge*100).toFixed(1)}%`
+      ? `${r.market}: Bet365 ${fractionApprox(r.price)} v our fair price ${fairPrice} (model ${r.modelPct}%, bookmaker ${r.marketPct}%) → edge ${r.edge>0?'+':''}${(r.edge*100).toFixed(1)}%`
       : `${r.market}: bookmaker ${r.marketPct}% v model ${r.modelPct}% (${r.delta>0?'+':''}${r.delta.toFixed(1)}pts)`;
     return `
       <div class="tr-game">
@@ -1160,7 +1183,7 @@ function playerMarketsHTML(m, P){
     <div class="player-check" data-id="${escapeHTML(m.id)}" style="margin-top:8px;">
       <select class="sim-select pc-pick" style="width:100%;">${options.join('')}</select>
       <div style="display:flex;gap:6px;align-items:center;margin-top:6px;">
-        <input type="number" step="0.01" min="1.01" class="pc-price" placeholder="Your price, e.g. 2.50" style="flex:1;padding:6px;border:1px solid var(--line);border-radius:4px;">
+        <input type="text" inputmode="text" class="pc-price" placeholder="Your odds, e.g. 6/4" style="flex:1;padding:6px;border:1px solid var(--line);border-radius:4px;">
         <span class="pc-out" style="flex:2;font-size:12px;"></span>
       </div>
     </div>`;
@@ -1172,8 +1195,8 @@ function updatePlayerCheck(box){
   const [side, i, k] = box.querySelector('.pc-pick').value.split('|');
   const pl = P[side][+i];
   const prob = pl.p[k]/100;
-  const price = parseFloat(box.querySelector('.pc-price').value);
-  const fair = prob>0 ? (1/prob).toFixed(2) : '—';
+  const price = parseOddsInput(box.querySelector('.pc-price').value);
+  const fair = prob>0 ? fractionApprox(1/prob) : '—';
   box.querySelector('.pc-out').textContent = !(price>1)
     ? `Model ${Math.round(prob*100)}%, fair price ${fair}`
     : `Model ${Math.round(prob*100)}%, fair ${fair} → edge ${((prob*price-1)*100).toFixed(1)}%`;
@@ -1254,9 +1277,9 @@ function ocPrices(line){
   const re = /(\d{1,3})\s*\/\s*(\d{1,3})|\bev(en)?s\b|\b(\d{1,3}\.\d{1,2})\b/gi;
   let mt;
   while((mt = re.exec(cleaned))){
-    if(mt[1]) out.push(1 + (+mt[1])/(+mt[2]));
-    else if(mt[4]){ const v = +mt[4]; if(v>=1.01 && v<=500) out.push(v); }
-    else out.push(2);
+    if(mt[1]) out.push({dec: 1 + (+mt[1])/(+mt[2]), txt: `${+mt[1]}/${+mt[2]}`});
+    else if(mt[4]){ const v = +mt[4]; if(v>=1.01 && v<=500) out.push({dec: v, txt: fractionApprox(v)}); }
+    else out.push({dec: 2, txt: 'evens'});
   }
   return out;
 }
@@ -1291,7 +1314,8 @@ function ocFindPlayer(line, index){
   }
   return cands.length ? {hit:cands[0], ambiguous:cands.length>1} : null;
 }
-function ocParse(text){
+// forced: the market the user picked for the whole screenshot ('auto' = read captions).
+function ocParse(text, forced){
   const index = ocPlayers();
   const rows = [];
   let market = null, columns = null, header = [], pending = null;
@@ -1309,11 +1333,11 @@ function ocParse(text){
     if(!target) continue;
     if(!prices.length){ pending = who; continue; }
     pending = null;
-    if(columns && prices.length===columns.length && !mks.length){
-      prices.forEach((price, i)=>rows.push({who:target, market:columns[i], k:1, price, assumed:false}));
+    if(columns && prices.length===columns.length && !mks.length && (!forced || forced==='auto')){
+      prices.forEach((pr, i)=>rows.push({who:target, market:columns[i], k:1, price:pr.dec, priceText:pr.txt, assumed:false}));
       continue;
     }
-    const m = mks[0] || market;
+    const m = forced && forced!=='auto' ? forced : (mks[0] || market);
     if(!m) continue;
     // A column header the reader cut short (1+ 2+ read, 3+ missed) is extended in steps of one.
     let hdr = header;
@@ -1324,7 +1348,7 @@ function ocParse(text){
     let lines_ = th.length===1 ? [th[0]] : (hdr.length>=prices.length ? hdr.slice(0, prices.length) : null);
     const assumed = !lines_ && !single;
     if(!lines_) lines_ = prices.map((_, i)=>i+1);
-    prices.forEach((price, i)=>rows.push({who:target, market:m, k:single?1:lines_[i], price, assumed}));
+    prices.forEach((pr, i)=>rows.push({who:target, market:m, k:single?1:lines_[i], price:pr.dec, priceText:pr.txt, assumed}));
   }
   return rows;
 }
@@ -1344,33 +1368,42 @@ function ocModelChance(r){
   if(exp[r.market]==null) return {prob:null};
   return {prob: ocAtLeast(exp[r.market], r.k, disp)};
 }
+// Markets the user can pick, per screenshot or per row. Lines (1+, 2+...) apply to
+// the count markets; bookings, first card and red card are yes/no.
+const OC_PICK = [['sh','Shots'],['sot','Shots on target'],['fc','Fouls committed'],['fw','Fouls won'],['yc','Yellow card (booked)'],['first','First card'],['rc','Red card (sent off)'],['none','Not a player market we price']];
+const OC_COUNT = ['sh','sot','fc','fw'];
 function ocRowHTML(r, i){
   const mc = ocModelChance(r), prob = mc.prob;
   const edge = prob==null ? null : prob*r.price - 1;
-  const lbl = ['yc','rc','first','none'].includes(r.market) ? OC_MARKETS[r.market].label : `${r.k}+ ${OC_MARKETS[r.market].label}`;
   const flags = [r.assumed ? 'line assumed' : '', r.who.ambiguous ? 'name matched more than one player' : '', mc.approx ? 'approximation, not backtested' : '', r.who.hit.status==='probable' ? 'probable XI' : ''].filter(Boolean).join('; ');
-  return {edge, html:`<tr data-oc="${i}">
-    <td>${escapeHTML(r.who.hit.p.name)}<div style="opacity:.6;font-size:10px;">${escapeHTML(r.who.hit.fixture)}${flags?' · '+escapeHTML(flags):''}</div></td>
-    <td>${escapeHTML(lbl)}</td>
-    <td><input type="number" step="0.01" min="1.01" class="oc-price" value="${r.price.toFixed(2)}" style="width:62px;padding:3px;border:1px solid var(--line);border-radius:3px;"></td>
-    <td>${(100/r.price).toFixed(0)}%</td>
-    <td>${prob==null?'—':(prob*100).toFixed(prob<0.1?1:0)+'%'}</td>
-    <td style="font-weight:600;color:${edge>0?'var(--green)':'var(--brick)'}">${edge==null?'—':(edge>0?'+':'')+(edge*100).toFixed(1)+'%'}</td></tr>`};
+  const marketSel = `<select class="oc-market sim-select" style="font-size:12px;padding:3px;">${OC_PICK.map(([k,l])=>`<option value="${k}"${k===r.market?' selected':''}>${l}</option>`).join('')}</select>`;
+  const lineSel = OC_COUNT.includes(r.market) ? `<select class="oc-line sim-select" style="font-size:12px;padding:3px;">${[1,2,3,4,5].map(k=>`<option value="${k}"${k===r.k?' selected':''}>${k}+</option>`).join('')}</select>` : '';
+  return {edge, html:`<div class="oc-row" data-oc="${i}" style="border-top:1px solid var(--line);padding:8px 0;">
+    <div style="font-weight:600;font-size:13px;">${escapeHTML(r.who.hit.p.name)} <span style="opacity:.6;font-weight:400;font-size:11px;">${escapeHTML(r.who.hit.fixture)}${flags?' · '+escapeHTML(flags):''}</span></div>
+    <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap;">${marketSel}${lineSel}
+      <span style="font-size:12px;">Odds</span><input type="text" class="oc-price" value="${escapeHTML(r.priceText || fractionApprox(r.price))}" style="width:58px;padding:3px;border:1px solid var(--line);border-radius:3px;"></div>
+    <div style="font-size:12px;margin-top:4px;">Bookmaker ${(100/r.price).toFixed(0)}% · Model ${prob==null?'—':(prob*100).toFixed(prob<0.1?1:0)+'%'} · Fair ${prob>0 ? fractionApprox(1/prob) : '—'} ·
+      <b style="color:${edge>0?'var(--green)':'var(--brick)'}">Edge ${edge==null?'—':(edge>0?'+':'')+(edge*100).toFixed(1)+'%'}</b></div>
+  </div>`};
 }
 let ocRows = [];
 function ocRender(){
   const box = document.getElementById('ocResults');
   if(!ocRows.length){ box.innerHTML = '<div class="empty-note">No player prices recognised. The players must be in this round\'s fixtures with a confirmed or probable XI. Try a sharper crop, or paste the text.</div>'; return; }
   const built = ocRows.map((r,i)=>({i, ...ocRowHTML(r,i)})).sort((a,b)=>(b.edge??-9)-(a.edge??-9));
-  box.innerHTML = `<div class="sim-wrap"><table class="sim-table">
-    <thead><tr><th>Player</th><th>Market</th><th>Price</th><th>Book %</th><th>Model %</th><th>Edge</th></tr></thead>
-    <tbody>${built.map(b=>b.html).join('')}</tbody></table></div>
-    <div class="tr-note" style="margin-top:6px;">Biggest disagreement first. Book % includes the bookmaker's margin. Edge = model chance x price - 1. Check each price against your screenshot: the reader can misread. The player model is calibrated on past seasons but has not been tested against bookmaker prices, so a positive edge is something to check, not a sure thing.</div>`;
+  box.innerHTML = `<div>${built.map(b=>b.html).join('')}</div>
+    <div class="tr-note" style="margin-top:6px;">Biggest disagreement first. Bookmaker: the chance its odds imply (including its margin). Model: our model's chance. Fair odds: the odds our model's chance is worth. Edge = model chance x decimal odds - 1. Change a row's market or line if it was read wrong. Check each price against your screenshot: the reader can misread. The player model is calibrated on past seasons but has not been tested against bookmaker prices, so a positive edge is something to check, not a sure thing.</div>`;
+  const rowOf = e => ocRows[+e.target.closest('.oc-row').getAttribute('data-oc')];
   box.querySelectorAll('.oc-price').forEach(inp=>inp.addEventListener('change', e=>{
-    const i = +e.target.closest('tr').getAttribute('data-oc');
-    const v = parseFloat(e.target.value);
-    if(v>1){ ocRows[i].price = v; ocRender(); }
+    const v = parseOddsInput(e.target.value), r = rowOf(e);
+    if(v){ r.price = v; r.priceText = e.target.value.trim(); ocRender(); } else { e.target.style.borderColor = 'var(--brick)'; }
   }));
+  box.querySelectorAll('.oc-market').forEach(sel=>sel.addEventListener('change', e=>{
+    const r = rowOf(e); r.market = e.target.value; r.assumed = false;
+    if(!OC_COUNT.includes(r.market)) r.k = 1;
+    ocRender();
+  }));
+  box.querySelectorAll('.oc-line').forEach(sel=>sel.addEventListener('change', e=>{ const r = rowOf(e); r.k = +e.target.value; r.assumed = false; ocRender(); }));
 }
 function ocLoadTesseract(){
   return new Promise((resolve, reject)=>{
@@ -1418,7 +1451,7 @@ async function ocFromImage(file){
     const canvas = await ocPrepare(file);
     const res = await T.recognize(canvas, 'eng', {logger: m=>{ if(m.status==='recognizing text') status.textContent = `Reading the screenshot… ${Math.round(m.progress*100)}%`; }});
     document.getElementById('ocText').value = res.data.text;
-    ocRows = ocParse(res.data.text);
+    ocRows = ocParse(res.data.text, document.getElementById('ocForced').value);
     status.textContent = `Read ${res.data.text.split('\n').filter(Boolean).length} lines; matched ${ocRows.length} prices. The text read is in the box above, so you can correct it and press Analyse again.`;
     ocRender();
   }catch(e){
@@ -1434,6 +1467,12 @@ function renderOddsCheck(){
       <summary>📷 Check bookmaker odds from a screenshot — player shots, fouls, cards</summary>
       <div class="tr-body">
         <div class="tr-note">SoT = shots on target; fouls = fouls committed; fouled = fouls won. Upload a screenshot of a bookmaker's player markets (shots, shots on target, fouls committed, fouls won, to be booked/carded, first card, red card/sent off), or paste the text. The section captions decide the market, so keep them in the screenshot. It is read on your device, matched to the ${n} players our model has priced this round, and each price is compared with the model. Works best with one market per screenshot, cropped to the list.</div>
+        <label style="display:block;font-size:13px;margin-top:6px;">What's in this screenshot?
+          <select id="ocForced" class="sim-select" style="width:100%;margin-top:4px;">
+            <option value="auto">Read the section captions (auto)</option>
+            ${OC_PICK.filter(([k])=>k!=='none').map(([k,l])=>`<option value="${k}">${l}</option>`).join('')}
+          </select>
+        </label>
         <label for="ocFile" style="display:block;margin:8px 0;padding:14px;text-align:center;background:var(--green);color:#fff;font-family:var(--font-head);font-weight:600;font-size:15px;border-radius:6px;cursor:pointer;">📷 Upload screenshot</label>
         <input type="file" accept="image/*" id="ocFile" style="position:absolute;width:1px;height:1px;opacity:0;">
         <textarea id="ocText" rows="4" placeholder="…or paste the odds text, e.g.&#10;Shots on target 1+ 2+&#10;Bukayo Saka 6/4 9/2" style="width:100%;font-family:var(--font-body);font-size:12px;padding:6px;border:1px solid var(--line);border-radius:4px;"></textarea>
@@ -1443,8 +1482,10 @@ function renderOddsCheck(){
       </div>
     </details>`;
   container.querySelector('#ocFile').addEventListener('change', e=>{ if(e.target.files[0]) ocFromImage(e.target.files[0]); });
+  // Changing the market re-reads the text already there.
+  container.querySelector('#ocForced').addEventListener('change', ()=>{ if(document.getElementById('ocText').value.trim()) container.querySelector('#ocAnalyse').click(); });
   container.querySelector('#ocAnalyse').addEventListener('click', ()=>{
-    ocRows = ocParse(document.getElementById('ocText').value);
+    ocRows = ocParse(document.getElementById('ocText').value, document.getElementById('ocForced').value);
     document.getElementById('ocStatus').textContent = `Matched ${ocRows.length} prices.`;
     ocRender();
   });
@@ -2172,11 +2213,11 @@ function renderSlip(){
       <div class="slip-summary-row"><span>Legs</span><span>${slip.length}</span></div>
       <div class="slip-summary-row"><span>Chance all legs win${sc.sameGame?' (same-game legs priced together)':''}</span><span>${pct.toFixed(1)}%</span></div>
       ${sc.sameGame && Math.abs(sc.independent-sc.joint)>0.0005 ? `<div class="slip-summary-row"><span>Multiplying the legs separately would say</span><span>${(sc.independent*100).toFixed(1)}%</span></div>` : ''}
-      <div class="slip-summary-row"><span>Fair odds (no margin)</span><span>${fairOdds.toFixed(2)}</span></div>
-      ${bet365 ? `<div class="slip-summary-row big"><span>Bet365 prices multiplied</span><span>${bet365.toFixed(2)} (~${fractionApprox(bet365)})</span></div>
+      <div class="slip-summary-row"><span>Fair odds (no margin)</span><span>${fractionApprox(fairOdds)}</span></div>
+      ${bet365 ? `<div class="slip-summary-row big"><span>Bet365 prices multiplied</span><span>${fractionApprox(bet365)}</span></div>
         <div class="slip-summary-row"><span>Edge if the model is right</span><span>${((sc.joint*bet365-1)*100).toFixed(1)}%</span></div>
         <div class="slip-empty" style="padding:6px 0 0;">Bookmakers price same-game combinations differently from multiplying singles, and the backtest found the model's edges lost money, so treat this as a check, not a reason to bet.</div>`
-      : `<div class="slip-summary-row big"><span>Bookmaker-style odds (estimated margin)</span><span>${bookCombined.toFixed(2)} (~${fractionApprox(bookCombined)})</span></div>`}
+      : `<div class="slip-summary-row big"><span>Bookmaker-style odds (estimated margin)</span><span>${fractionApprox(bookCombined)}</span></div>`}
     `;
   }
 }
