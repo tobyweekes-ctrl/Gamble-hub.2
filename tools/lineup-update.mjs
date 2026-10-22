@@ -102,3 +102,6 @@ console.log(`lineup update: ${withLineups} fixtures with confirmed lineups, ${pr
 // 4. Season simulator (uses the results added above), then rebuild
 run('tools/model/season-sim.mjs');
 run('tools/build-seed.mjs', path.relative(root, roundPath));
+// 5. Unibet player props and totals for games not yet started (rebuilds the seed
+//    again), and grading of logged props for games now finished.
+try { run('tools/props.mjs', path.relative(root, roundPath)); run('tools/grade-props.mjs'); } catch (e) { console.warn('props step failed:', e.message); }

@@ -25,6 +25,7 @@ function stub() {
 export function loadApp(html, { now } = {}) {
   const code = appScript(html) + `
 ;globalThis.__out = { SEED_MATCHES, SEED_VERSION, SEED_RESULTS, LEAGUE_ORDER, MODEL_VERSION,
+  propRows: typeof propRows === "function" ? propRows : null, propTotals: typeof propTotals === "function" ? propTotals : null,
   computeModelProbs, quickProbs, predictionsLog: () => predictionsLog };`;
   new vm.Script(code, { filename: 'index.html<script>' }); // syntax check first
   const store = new Map();
