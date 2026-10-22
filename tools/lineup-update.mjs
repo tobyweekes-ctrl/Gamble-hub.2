@@ -30,8 +30,10 @@ const label = t => new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London',
 // 1. Results
 run('tools/results.mjs');
 
-// 2. Lineups (the last 150 days of lineups give every team's usual XI)
-run('tools/model/fetch-lineups.mjs', '--since', new Date(now - 150 * 864e5).toISOString().slice(0, 10), '--upcoming');
+// 2. Lineups: the last 370 days, because the player model rates players on their
+//    last 365 days (players.mjs playerTable); 150 days also covers every team's usual XI.
+//    A fresh checkout has none cached, so the first run takes about 10 minutes.
+run('tools/model/fetch-lineups.mjs', '--since', new Date(now - 370 * 864e5).toISOString().slice(0, 10), '--upcoming');
 const lineups = loadLineups(path.join(root, 'data/raw'), { includeUpcoming: true });
 const hist = teamHistory(lineups);
 const upcoming = lineups.filter(l => l.upcoming);
