@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-22T13:02:18.696Z",
+ "generatedAt": "2026-10-22T23:28:33.427Z",
  "sims": 10000,
  "tau": 0.08,
  "season": "2627",
  "leagues": {
   "Premier League": {
-   "remainingFixtures": 310,
+   "remainingFixtures": 293,
    "zones": [
     "Title",
     "Top 4",
@@ -14,28 +14,28 @@
    "zoneNote": "Top 4: Champions League places. Down: bottom three, relegated.",
    "table": [
     {
-     "team": "Man City",
-     "played": 7,
-     "points": 21,
-     "gd": 12,
-     "projectedPoints": 81.5,
-     "averagePosition": 1.8,
-     "zones": {
-      "Title": 48.3,
-      "Top 4": 97.3,
-      "Down": 0
-     }
-    },
-    {
      "team": "Arsenal",
      "played": 7,
      "points": 18,
      "gd": 6,
-     "projectedPoints": 81,
+     "projectedPoints": 78.6,
+     "averagePosition": 1.8,
+     "zones": {
+      "Title": 48.6,
+      "Top 4": 98,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Man City",
+     "played": 7,
+     "points": 21,
+     "gd": 12,
+     "projectedPoints": 77.2,
      "averagePosition": 1.9,
      "zones": {
-      "Title": 43.2,
-      "Top 4": 97.8,
+      "Title": 42.2,
+      "Top 4": 97,
       "Down": 0
      }
     },
@@ -44,11 +44,11 @@
      "played": 7,
      "points": 16,
      "gd": 18,
-     "projectedPoints": 68.8,
-     "averagePosition": 4,
+     "projectedPoints": 66.2,
+     "averagePosition": 3.9,
      "zones": {
-      "Title": 5.6,
-      "Top 4": 71.1,
+      "Title": 5.9,
+      "Top 4": 73.6,
       "Down": 0
      }
     },
@@ -57,11 +57,11 @@
      "played": 7,
      "points": 12,
      "gd": 1,
-     "projectedPoints": 64,
-     "averagePosition": 5.4,
+     "projectedPoints": 62.3,
+     "averagePosition": 5.1,
      "zones": {
-      "Title": 1.8,
-      "Top 4": 47,
+      "Title": 2.4,
+      "Top 4": 52.8,
       "Down": 0.1
      }
     },
@@ -70,25 +70,12 @@
      "played": 7,
      "points": 13,
      "gd": 4,
-     "projectedPoints": 59.8,
-     "averagePosition": 6.8,
+     "projectedPoints": 55.9,
+     "averagePosition": 7.3,
      "zones": {
-      "Title": 0.8,
-      "Top 4": 27.7,
-      "Down": 0.4
-     }
-    },
-    {
-     "team": "Brentford",
-     "played": 7,
-     "points": 10,
-     "gd": 5,
-     "projectedPoints": 55,
-     "averagePosition": 8.6,
-     "zones": {
-      "Title": 0.2,
-      "Top 4": 12.8,
-      "Down": 1.8
+      "Title": 0.4,
+      "Top 4": 22,
+      "Down": 0.7
      }
     },
     {
@@ -96,12 +83,12 @@
      "played": 7,
      "points": 7,
      "gd": 0,
-     "projectedPoints": 54.5,
-     "averagePosition": 8.8,
+     "projectedPoints": 52,
+     "averagePosition": 8.9,
      "zones": {
       "Title": 0.1,
-      "Top 4": 12.3,
-      "Down": 1.9
+      "Top 4": 11.2,
+      "Down": 2
      }
     },
     {
@@ -109,12 +96,25 @@
      "played": 7,
      "points": 10,
      "gd": 3,
-     "projectedPoints": 53.8,
-     "averagePosition": 9.2,
+     "projectedPoints": 51.1,
+     "averagePosition": 9.3,
      "zones": {
-      "Title": 0,
-      "Top 4": 9.6,
-      "Down": 2.2
+      "Title": 0.1,
+      "Top 4": 9,
+      "Down": 2.5
+     }
+    },
+    {
+     "team": "Brentford",
+     "played": 7,
+     "points": 10,
+     "gd": 5,
+     "projectedPoints": 50.9,
+     "averagePosition": 9.4,
+     "zones": {
+      "Title": 0.1,
+      "Top 4": 9.5,
+      "Down": 2.9
      }
     },
     {
@@ -122,12 +122,12 @@
      "played": 7,
      "points": 6,
      "gd": -4,
-     "projectedPoints": 52.4,
-     "averagePosition": 9.8,
+     "projectedPoints": 50.4,
+     "averagePosition": 9.6,
      "zones": {
       "Title": 0.1,
-      "Top 4": 7.4,
-      "Down": 3.6
+      "Top 4": 7.7,
+      "Down": 3.2
      }
     },
     {
@@ -135,12 +135,12 @@
      "played": 7,
      "points": 8,
      "gd": -4,
-     "projectedPoints": 51.1,
-     "averagePosition": 10.5,
+     "projectedPoints": 48.3,
+     "averagePosition": 10.7,
      "zones": {
-      "Title": 0,
-      "Top 4": 5.6,
-      "Down": 4.7
+      "Title": 0.1,
+      "Top 4": 5.1,
+      "Down": 5.3
      }
     },
     {
@@ -148,12 +148,12 @@
      "played": 7,
      "points": 10,
      "gd": 1,
-     "projectedPoints": 48.3,
-     "averagePosition": 11.8,
+     "projectedPoints": 47.8,
+     "averagePosition": 10.9,
      "zones": {
       "Title": 0,
-      "Top 4": 2.6,
-      "Down": 8
+      "Top 4": 4.3,
+      "Down": 5.7
      }
     },
     {
@@ -161,12 +161,12 @@
      "played": 7,
      "points": 5,
      "gd": -4,
-     "projectedPoints": 48.3,
-     "averagePosition": 11.7,
+     "projectedPoints": 47.6,
+     "averagePosition": 11,
      "zones": {
       "Title": 0,
-      "Top 4": 3,
-      "Down": 8.3
+      "Top 4": 4,
+      "Down": 6.5
      }
     },
     {
@@ -174,12 +174,12 @@
      "played": 7,
      "points": 8,
      "gd": -4,
-     "projectedPoints": 47.8,
-     "averagePosition": 12,
+     "projectedPoints": 46,
+     "averagePosition": 11.9,
      "zones": {
       "Title": 0,
-      "Top 4": 2.6,
-      "Down": 10.4
+      "Top 4": 3,
+      "Down": 9.9
      }
     },
     {
@@ -187,12 +187,12 @@
      "played": 7,
      "points": 6,
      "gd": -4,
-     "projectedPoints": 44.2,
-     "averagePosition": 13.7,
+     "projectedPoints": 41.9,
+     "averagePosition": 13.8,
      "zones": {
       "Title": 0,
-      "Top 4": 0.9,
-      "Down": 19
+      "Top 4": 0.7,
+      "Down": 19.4
      }
     },
     {
@@ -200,11 +200,11 @@
      "played": 7,
      "points": 5,
      "gd": -3,
-     "projectedPoints": 43.9,
-     "averagePosition": 13.8,
+     "projectedPoints": 41.5,
+     "averagePosition": 13.9,
      "zones": {
       "Title": 0,
-      "Top 4": 1,
+      "Top 4": 0.8,
       "Down": 20
      }
     },
@@ -213,12 +213,12 @@
      "played": 7,
      "points": 7,
      "gd": -8,
-     "projectedPoints": 43.3,
-     "averagePosition": 14.2,
+     "projectedPoints": 40.6,
+     "averagePosition": 14.5,
      "zones": {
       "Title": 0,
-      "Top 4": 0.8,
-      "Down": 23.3
+      "Top 4": 0.6,
+      "Down": 25
      }
     },
     {
@@ -226,12 +226,12 @@
      "played": 7,
      "points": 9,
      "gd": -4,
-     "projectedPoints": 40.1,
-     "averagePosition": 15.6,
+     "projectedPoints": 38.8,
+     "averagePosition": 15.3,
      "zones": {
       "Title": 0,
       "Top 4": 0.3,
-      "Down": 37.1
+      "Down": 33.8
      }
     },
     {
@@ -239,12 +239,12 @@
      "played": 7,
      "points": 6,
      "gd": -8,
-     "projectedPoints": 38.8,
-     "averagePosition": 16.1,
+     "projectedPoints": 36.5,
+     "averagePosition": 16.3,
      "zones": {
       "Title": 0,
       "Top 4": 0.1,
-      "Down": 43.8
+      "Down": 44.8
      }
     },
     {
@@ -252,12 +252,12 @@
      "played": 7,
      "points": 4,
      "gd": -8,
-     "projectedPoints": 38.4,
-     "averagePosition": 16.2,
+     "projectedPoints": 36.2,
+     "averagePosition": 16.3,
      "zones": {
       "Title": 0,
-      "Top 4": 0.2,
-      "Down": 43.6
+      "Top 4": 0.1,
+      "Down": 45.2
      }
     },
     {
@@ -265,18 +265,18 @@
      "played": 7,
      "points": 9,
      "gd": 1,
-     "projectedPoints": 33.1,
-     "averagePosition": 18.1,
+     "projectedPoints": 31.1,
+     "averagePosition": 18.2,
      "zones": {
       "Title": 0,
       "Top 4": 0,
-      "Down": 71.7
+      "Down": 73
      }
     }
    ]
   },
   "Championship": {
-   "remainingFixtures": 420,
+   "remainingFixtures": 397,
    "zones": [
     "Title",
     "Top 2",
@@ -290,12 +290,12 @@
      "played": 11,
      "points": 22,
      "gd": 18,
-     "projectedPoints": 92.8,
-     "averagePosition": 1.8,
+     "projectedPoints": 88.1,
+     "averagePosition": 1.9,
      "zones": {
-      "Title": 62.3,
-      "Top 2": 82.3,
-      "Top 6": 98.5,
+      "Title": 55.7,
+      "Top 2": 77.8,
+      "Top 6": 97.7,
       "Down": 0
      }
     },
@@ -304,12 +304,12 @@
      "played": 11,
      "points": 22,
      "gd": 6,
-     "projectedPoints": 82.9,
-     "averagePosition": 3.8,
+     "projectedPoints": 81.7,
+     "averagePosition": 3.4,
      "zones": {
-      "Title": 14.7,
-      "Top 2": 39,
-      "Top 6": 86.4,
+      "Title": 21.6,
+      "Top 2": 47.4,
+      "Top 6": 89.4,
       "Down": 0
      }
     },
@@ -318,12 +318,12 @@
      "played": 11,
      "points": 21,
      "gd": 11,
-     "projectedPoints": 79.1,
+     "projectedPoints": 76.2,
      "averagePosition": 4.9,
      "zones": {
-      "Title": 8.5,
-      "Top 2": 24.6,
-      "Top 6": 75.3,
+      "Title": 8.3,
+      "Top 2": 23.8,
+      "Top 6": 76.4,
       "Down": 0
      }
     },
@@ -332,12 +332,12 @@
      "played": 11,
      "points": 18,
      "gd": 3,
-     "projectedPoints": 78.6,
-     "averagePosition": 5.1,
+     "projectedPoints": 74.9,
+     "averagePosition": 5.3,
      "zones": {
-      "Title": 6.6,
-      "Top 2": 21.2,
-      "Top 6": 74.3,
+      "Title": 5.7,
+      "Top 2": 18.5,
+      "Top 6": 71.6,
       "Down": 0
      }
     },
@@ -346,12 +346,12 @@
      "played": 11,
      "points": 20,
      "gd": 9,
-     "projectedPoints": 75,
-     "averagePosition": 6.4,
+     "projectedPoints": 72.7,
+     "averagePosition": 6.1,
      "zones": {
-      "Title": 3.2,
-      "Top 2": 12.3,
-      "Top 6": 60,
+      "Title": 4,
+      "Top 2": 13.1,
+      "Top 6": 63.1,
       "Down": 0.1
      }
     },
@@ -360,12 +360,12 @@
      "played": 11,
      "points": 23,
      "gd": 8,
-     "projectedPoints": 74.4,
-     "averagePosition": 6.7,
+     "projectedPoints": 71.2,
+     "averagePosition": 6.8,
      "zones": {
       "Title": 2.6,
-      "Top 2": 10.2,
-      "Top 6": 55.8,
+      "Top 2": 9.2,
+      "Top 6": 54.6,
       "Down": 0.1
      }
     },
@@ -374,13 +374,13 @@
      "played": 11,
      "points": 20,
      "gd": 3,
-     "projectedPoints": 68.4,
-     "averagePosition": 9.5,
+     "projectedPoints": 66.2,
+     "averagePosition": 9.2,
      "zones": {
-      "Title": 0.6,
-      "Top 2": 2.7,
-      "Top 6": 29.8,
-      "Down": 0.8
+      "Title": 0.5,
+      "Top 2": 2.9,
+      "Top 6": 31.2,
+      "Down": 0.6
      }
     },
     {
@@ -388,13 +388,13 @@
      "played": 11,
      "points": 15,
      "gd": 0,
-     "projectedPoints": 68.3,
-     "averagePosition": 9.4,
+     "projectedPoints": 65.6,
+     "averagePosition": 9.3,
      "zones": {
-      "Title": 0.7,
-      "Top 2": 3.1,
-      "Top 6": 30.4,
-      "Down": 1
+      "Title": 0.8,
+      "Top 2": 3.2,
+      "Top 6": 31.5,
+      "Down": 0.7
      }
     },
     {
@@ -402,13 +402,13 @@
      "played": 11,
      "points": 17,
      "gd": 3,
-     "projectedPoints": 64.1,
-     "averagePosition": 11.6,
+     "projectedPoints": 62.5,
+     "averagePosition": 11,
      "zones": {
       "Title": 0.2,
-      "Top 2": 1.1,
-      "Top 6": 16.6,
-      "Down": 2.6
+      "Top 2": 1.3,
+      "Top 6": 19.5,
+      "Down": 2
      }
     },
     {
@@ -416,55 +416,13 @@
      "played": 11,
      "points": 15,
      "gd": 1,
-     "projectedPoints": 62.5,
-     "averagePosition": 12.4,
-     "zones": {
-      "Title": 0.2,
-      "Top 2": 0.8,
-      "Top 6": 12.9,
-      "Down": 3.7
-     }
-    },
-    {
-     "team": "Wrexham",
-     "played": 11,
-     "points": 14,
-     "gd": -1,
-     "projectedPoints": 61,
-     "averagePosition": 13.2,
+     "projectedPoints": 58.6,
+     "averagePosition": 13.1,
      "zones": {
       "Title": 0.1,
-      "Top 2": 0.4,
-      "Top 6": 9.5,
-      "Down": 5.3
-     }
-    },
-    {
-     "team": "Stoke",
-     "played": 11,
-     "points": 19,
-     "gd": 2,
-     "projectedPoints": 60.3,
-     "averagePosition": 13.8,
-     "zones": {
-      "Title": 0.1,
-      "Top 2": 0.3,
-      "Top 6": 7.7,
-      "Down": 5.8
-     }
-    },
-    {
-     "team": "Burnley",
-     "played": 11,
-     "points": 8,
-     "gd": -5,
-     "projectedPoints": 59.8,
-     "averagePosition": 13.8,
-     "zones": {
-      "Title": 0,
-      "Top 2": 0.4,
-      "Top 6": 8.5,
-      "Down": 6.7
+      "Top 2": 0.6,
+      "Top 6": 9.7,
+      "Down": 4.9
      }
     },
     {
@@ -472,13 +430,41 @@
      "played": 11,
      "points": 15,
      "gd": 0,
-     "projectedPoints": 59.6,
-     "averagePosition": 14,
+     "projectedPoints": 57.9,
+     "averagePosition": 13.6,
      "zones": {
       "Title": 0.1,
       "Top 2": 0.4,
-      "Top 6": 7.3,
-      "Down": 6.5
+      "Top 6": 8.1,
+      "Down": 5.8
+     }
+    },
+    {
+     "team": "Wrexham",
+     "played": 11,
+     "points": 14,
+     "gd": -1,
+     "projectedPoints": 57.8,
+     "averagePosition": 13.6,
+     "zones": {
+      "Title": 0.1,
+      "Top 2": 0.3,
+      "Top 6": 7.8,
+      "Down": 5.8
+     }
+    },
+    {
+     "team": "Stoke",
+     "played": 11,
+     "points": 19,
+     "gd": 2,
+     "projectedPoints": 56.4,
+     "averagePosition": 14.5,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.2,
+      "Top 6": 5.4,
+      "Down": 7.4
      }
     },
     {
@@ -486,41 +472,27 @@
      "played": 11,
      "points": 14,
      "gd": -3,
-     "projectedPoints": 58.7,
+     "projectedPoints": 56.1,
      "averagePosition": 14.6,
      "zones": {
       "Title": 0,
       "Top 2": 0.3,
-      "Top 6": 5.9,
-      "Down": 8.7
+      "Top 6": 5.6,
+      "Down": 8
      }
     },
     {
-     "team": "Norwich",
+     "team": "Burnley",
      "played": 11,
-     "points": 9,
-     "gd": -4,
-     "projectedPoints": 58.5,
+     "points": 8,
+     "gd": -5,
+     "projectedPoints": 55.8,
      "averagePosition": 14.6,
      "zones": {
-      "Title": 0,
-      "Top 2": 0.3,
-      "Top 6": 6,
-      "Down": 9
-     }
-    },
-    {
-     "team": "Lincoln",
-     "played": 11,
-     "points": 12,
-     "gd": -10,
-     "projectedPoints": 57,
-     "averagePosition": 15.6,
-     "zones": {
-      "Title": 0,
+      "Title": 0.1,
       "Top 2": 0.2,
-      "Top 6": 4.2,
-      "Down": 12.2
+      "Top 6": 6.1,
+      "Down": 9.3
      }
     },
     {
@@ -528,27 +500,41 @@
      "played": 11,
      "points": 14,
      "gd": -3,
-     "projectedPoints": 56,
-     "averagePosition": 16,
+     "projectedPoints": 55.4,
+     "averagePosition": 15.1,
      "zones": {
       "Title": 0,
-      "Top 2": 0.1,
-      "Top 6": 3.2,
-      "Down": 14.7
+      "Top 2": 0.2,
+      "Top 6": 5.3,
+      "Down": 11.1
      }
     },
     {
-     "team": "Blackburn",
+     "team": "Norwich",
      "played": 11,
-     "points": 15,
-     "gd": 1,
-     "projectedPoints": 55.9,
-     "averagePosition": 16.1,
+     "points": 9,
+     "gd": -4,
+     "projectedPoints": 55,
+     "averagePosition": 15.1,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.2,
+      "Top 6": 4.9,
+      "Down": 11.1
+     }
+    },
+    {
+     "team": "Lincoln",
+     "played": 11,
+     "points": 12,
+     "gd": -10,
+     "projectedPoints": 54.9,
+     "averagePosition": 15.4,
      "zones": {
       "Title": 0,
       "Top 2": 0.1,
-      "Top 6": 2.9,
-      "Down": 13.4
+      "Top 6": 4.3,
+      "Down": 11.6
      }
     },
     {
@@ -556,13 +542,27 @@
      "played": 11,
      "points": 11,
      "gd": 1,
-     "projectedPoints": 55,
-     "averagePosition": 16.4,
+     "projectedPoints": 53.1,
+     "averagePosition": 16,
      "zones": {
       "Title": 0,
       "Top 2": 0.1,
-      "Top 6": 3.4,
-      "Down": 17
+      "Top 6": 3.7,
+      "Down": 16
+     }
+    },
+    {
+     "team": "Blackburn",
+     "played": 11,
+     "points": 15,
+     "gd": 1,
+     "projectedPoints": 53,
+     "averagePosition": 16.3,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0,
+      "Top 6": 2.7,
+      "Down": 14.3
      }
     },
     {
@@ -570,13 +570,13 @@
      "played": 11,
      "points": 14,
      "gd": -5,
-     "projectedPoints": 51,
-     "averagePosition": 18.6,
+     "projectedPoints": 49.3,
+     "averagePosition": 18.4,
      "zones": {
       "Title": 0,
       "Top 2": 0,
-      "Top 6": 0.7,
-      "Down": 30.5
+      "Top 6": 0.9,
+      "Down": 28.2
      }
     },
     {
@@ -584,13 +584,13 @@
      "played": 11,
      "points": 11,
      "gd": -9,
-     "projectedPoints": 49.1,
-     "averagePosition": 19.5,
+     "projectedPoints": 47.2,
+     "averagePosition": 19.3,
      "zones": {
       "Title": 0,
       "Top 2": 0,
       "Top 6": 0.4,
-      "Down": 39.6
+      "Down": 38.3
      }
     },
     {
@@ -598,13 +598,13 @@
      "played": 11,
      "points": 6,
      "gd": -11,
-     "projectedPoints": 46.8,
-     "averagePosition": 20.3,
+     "projectedPoints": 44.3,
+     "averagePosition": 20.5,
      "zones": {
       "Title": 0,
       "Top 2": 0,
       "Top 6": 0.2,
-      "Down": 49.1
+      "Down": 51.4
      }
     },
     {
@@ -612,19 +612,19 @@
      "played": 11,
      "points": 4,
      "gd": -15,
-     "projectedPoints": 41.5,
+     "projectedPoints": 39.6,
      "averagePosition": 22.1,
      "zones": {
       "Title": 0,
       "Top 2": 0,
-      "Top 6": 0.1,
-      "Down": 73.2
+      "Top 6": 0,
+      "Down": 73.3
      }
     }
    ]
   },
   "Bundesliga": {
-   "remainingFixtures": 252,
+   "remainingFixtures": 237,
    "zones": [
     "Title",
     "Top 4",
@@ -637,10 +637,10 @@
      "played": 6,
      "points": 14,
      "gd": 17,
-     "projectedPoints": 82,
+     "projectedPoints": 77.5,
      "averagePosition": 1.1,
      "zones": {
-      "Title": 91.5,
+      "Title": 92.3,
       "Top 4": 99.9,
       "Bottom 3": 0
      }
@@ -650,11 +650,11 @@
      "played": 6,
      "points": 14,
      "gd": 7,
-     "projectedPoints": 65.1,
+     "projectedPoints": 61.6,
      "averagePosition": 3.3,
      "zones": {
-      "Title": 4.5,
-      "Top 4": 81.7,
+      "Title": 4,
+      "Top 4": 79.7,
       "Bottom 3": 0
      }
     },
@@ -663,12 +663,12 @@
      "played": 6,
      "points": 13,
      "gd": 7,
-     "projectedPoints": 63,
-     "averagePosition": 3.7,
+     "projectedPoints": 59.2,
+     "averagePosition": 3.9,
      "zones": {
-      "Title": 2.7,
-      "Top 4": 74,
-      "Bottom 3": 0
+      "Title": 2.4,
+      "Top 4": 71.2,
+      "Bottom 3": 0.1
      }
     },
     {
@@ -676,25 +676,12 @@
      "played": 6,
      "points": 9,
      "gd": 5,
-     "projectedPoints": 58.9,
-     "averagePosition": 4.7,
+     "projectedPoints": 54.7,
+     "averagePosition": 5.1,
      "zones": {
-      "Title": 0.8,
-      "Top 4": 55.4,
+      "Title": 0.6,
+      "Top 4": 48.1,
       "Bottom 3": 0.1
-     }
-    },
-    {
-     "team": "Freiburg",
-     "played": 6,
-     "points": 13,
-     "gd": 9,
-     "projectedPoints": 53.6,
-     "averagePosition": 6.5,
-     "zones": {
-      "Title": 0.2,
-      "Top 4": 27.7,
-      "Bottom 3": 0.4
      }
     },
     {
@@ -702,12 +689,25 @@
      "played": 6,
      "points": 6,
      "gd": -2,
-     "projectedPoints": 52.9,
-     "averagePosition": 6.7,
+     "projectedPoints": 51.7,
+     "averagePosition": 6.3,
      "zones": {
-      "Title": 0.1,
-      "Top 4": 26.3,
-      "Bottom 3": 1
+      "Title": 0.4,
+      "Top 4": 32.4,
+      "Bottom 3": 0.7
+     }
+    },
+    {
+     "team": "Freiburg",
+     "played": 6,
+     "points": 13,
+     "gd": 9,
+     "projectedPoints": 51.7,
+     "averagePosition": 6.2,
+     "zones": {
+      "Title": 0.2,
+      "Top 4": 31.6,
+      "Bottom 3": 0.3
      }
     },
     {
@@ -715,25 +715,12 @@
      "played": 6,
      "points": 10,
      "gd": 4,
-     "projectedPoints": 49.2,
-     "averagePosition": 8.2,
+     "projectedPoints": 46.1,
+     "averagePosition": 8.5,
      "zones": {
       "Title": 0.1,
-      "Top 4": 13,
-      "Bottom 3": 2.2
-     }
-    },
-    {
-     "team": "Hoffenheim",
-     "played": 6,
-     "points": 6,
-     "gd": -3,
-     "projectedPoints": 45,
-     "averagePosition": 9.9,
-     "zones": {
-      "Title": 0,
-      "Top 4": 4.8,
-      "Bottom 3": 7
+      "Top 4": 11.3,
+      "Bottom 3": 2.7
      }
     },
     {
@@ -741,25 +728,25 @@
      "played": 6,
      "points": 8,
      "gd": -6,
-     "projectedPoints": 44.8,
-     "averagePosition": 10.2,
+     "projectedPoints": 44.1,
+     "averagePosition": 9.6,
      "zones": {
       "Title": 0,
-      "Top 4": 4.3,
-      "Bottom 3": 7.6
+      "Top 4": 7.3,
+      "Bottom 3": 5.9
      }
     },
     {
-     "team": "Augsburg",
+     "team": "Hoffenheim",
      "played": 6,
-     "points": 8,
-     "gd": 4,
-     "projectedPoints": 43.8,
-     "averagePosition": 10.4,
+     "points": 6,
+     "gd": -3,
+     "projectedPoints": 42.8,
+     "averagePosition": 10,
      "zones": {
       "Title": 0,
-      "Top 4": 4.2,
-      "Bottom 3": 9.1
+      "Top 4": 5.5,
+      "Bottom 3": 6.9
      }
     },
     {
@@ -767,25 +754,12 @@
      "played": 6,
      "points": 9,
      "gd": 0,
-     "projectedPoints": 43.4,
-     "averagePosition": 10.7,
+     "projectedPoints": 41.2,
+     "averagePosition": 10.8,
      "zones": {
       "Title": 0,
-      "Top 4": 3.2,
-      "Bottom 3": 9.8
-     }
-    },
-    {
-     "team": "Elversberg",
-     "played": 6,
-     "points": 10,
-     "gd": 1,
-     "projectedPoints": 41.8,
-     "averagePosition": 11.4,
-     "zones": {
-      "Title": 0,
-      "Top 4": 2,
-      "Bottom 3": 13.2
+      "Top 4": 3.1,
+      "Bottom 3": 9.5
      }
     },
     {
@@ -793,12 +767,38 @@
      "played": 6,
      "points": 9,
      "gd": -9,
-     "projectedPoints": 41.7,
+     "projectedPoints": 40.6,
+     "averagePosition": 11.2,
+     "zones": {
+      "Title": 0,
+      "Top 4": 2.6,
+      "Bottom 3": 12.3
+     }
+    },
+    {
+     "team": "Augsburg",
+     "played": 6,
+     "points": 8,
+     "gd": 4,
+     "projectedPoints": 40.3,
+     "averagePosition": 11,
+     "zones": {
+      "Title": 0,
+      "Top 4": 3.3,
+      "Bottom 3": 11.6
+     }
+    },
+    {
+     "team": "Elversberg",
+     "played": 6,
+     "points": 10,
+     "gd": 1,
+     "projectedPoints": 39.4,
      "averagePosition": 11.6,
      "zones": {
       "Title": 0,
       "Top 4": 1.9,
-      "Bottom 3": 13.9
+      "Bottom 3": 14
      }
     },
     {
@@ -806,12 +806,12 @@
      "played": 6,
      "points": 7,
      "gd": -3,
-     "projectedPoints": 39.3,
-     "averagePosition": 12.5,
+     "projectedPoints": 38.1,
+     "averagePosition": 12.2,
      "zones": {
       "Title": 0,
-      "Top 4": 1.1,
-      "Bottom 3": 20.6
+      "Top 4": 1.4,
+      "Bottom 3": 18.9
      }
     },
     {
@@ -819,12 +819,12 @@
      "played": 6,
      "points": 5,
      "gd": -12,
-     "projectedPoints": 34.9,
-     "averagePosition": 14.3,
+     "projectedPoints": 34.4,
+     "averagePosition": 13.9,
      "zones": {
       "Title": 0,
-      "Top 4": 0.2,
-      "Bottom 3": 42.9
+      "Top 4": 0.5,
+      "Bottom 3": 36.7
      }
     },
     {
@@ -832,12 +832,12 @@
      "played": 6,
      "points": 5,
      "gd": -3,
-     "projectedPoints": 33.4,
+     "projectedPoints": 31.6,
      "averagePosition": 14.8,
      "zones": {
       "Title": 0,
       "Top 4": 0.1,
-      "Bottom 3": 49.1
+      "Bottom 3": 49.8
      }
     },
     {
@@ -845,12 +845,12 @@
      "played": 6,
      "points": 5,
      "gd": -4,
-     "projectedPoints": 32.5,
-     "averagePosition": 15.1,
+     "projectedPoints": 30,
+     "averagePosition": 15.4,
      "zones": {
       "Title": 0,
       "Top 4": 0,
-      "Bottom 3": 54.5
+      "Bottom 3": 59.7
      }
     },
     {
@@ -858,18 +858,18 @@
      "played": 6,
      "points": 0,
      "gd": -12,
-     "projectedPoints": 29.7,
-     "averagePosition": 16,
+     "projectedPoints": 27.8,
+     "averagePosition": 16.1,
      "zones": {
       "Title": 0,
       "Top 4": 0,
-      "Bottom 3": 68.5
+      "Bottom 3": 70.9
      }
     }
    ]
   },
   "Serie A": {
-   "remainingFixtures": 310,
+   "remainingFixtures": 288,
    "zones": [
     "Title",
     "Top 4",
@@ -882,11 +882,11 @@
      "played": 7,
      "points": 19,
      "gd": 12,
-     "projectedPoints": 85.3,
+     "projectedPoints": 78.8,
      "averagePosition": 1.5,
      "zones": {
-      "Title": 72.5,
-      "Top 4": 98.1,
+      "Title": 68.3,
+      "Top 4": 97.3,
       "Down": 0
      }
     },
@@ -895,11 +895,11 @@
      "played": 7,
      "points": 17,
      "gd": 13,
-     "projectedPoints": 76,
-     "averagePosition": 2.8,
+     "projectedPoints": 70.2,
+     "averagePosition": 3,
      "zones": {
-      "Title": 17.2,
-      "Top 4": 86,
+      "Title": 16.9,
+      "Top 4": 81.5,
       "Down": 0
      }
     },
@@ -908,11 +908,11 @@
      "played": 7,
      "points": 11,
      "gd": 1,
-     "projectedPoints": 66.6,
-     "averagePosition": 5.1,
+     "projectedPoints": 63.5,
+     "averagePosition": 4.8,
      "zones": {
-      "Title": 2.2,
-      "Top 4": 44.5,
+      "Title": 3.8,
+      "Top 4": 50.1,
       "Down": 0
      }
     },
@@ -921,11 +921,11 @@
      "played": 7,
      "points": 19,
      "gd": 10,
-     "projectedPoints": 66.6,
+     "projectedPoints": 62.6,
      "averagePosition": 5.2,
      "zones": {
-      "Title": 2.4,
-      "Top 4": 44,
+      "Title": 3.5,
+      "Top 4": 44.2,
       "Down": 0
      }
     },
@@ -934,11 +934,24 @@
      "played": 7,
      "points": 14,
      "gd": 5,
-     "projectedPoints": 66,
+     "projectedPoints": 62.3,
      "averagePosition": 5.3,
      "zones": {
-      "Title": 2.2,
-      "Top 4": 41.9,
+      "Title": 3.2,
+      "Top 4": 43.3,
+      "Down": 0.1
+     }
+    },
+    {
+     "team": "Napoli",
+     "played": 7,
+     "points": 10,
+     "gd": 3,
+     "projectedPoints": 61,
+     "averagePosition": 5.6,
+     "zones": {
+      "Title": 2.3,
+      "Top 4": 37.4,
       "Down": 0
      }
     },
@@ -947,25 +960,12 @@
      "played": 7,
      "points": 15,
      "gd": 7,
-     "projectedPoints": 65.5,
-     "averagePosition": 5.4,
-     "zones": {
-      "Title": 2.1,
-      "Top 4": 39.3,
-      "Down": 0
-     }
-    },
-    {
-     "team": "Napoli",
-     "played": 7,
-     "points": 10,
-     "gd": 3,
-     "projectedPoints": 64.1,
+     "projectedPoints": 60.4,
      "averagePosition": 5.8,
      "zones": {
-      "Title": 1.3,
-      "Top 4": 34.5,
-      "Down": 0.1
+      "Title": 1.8,
+      "Top 4": 33.9,
+      "Down": 0
      }
     },
     {
@@ -973,64 +973,12 @@
      "played": 7,
      "points": 9,
      "gd": -1,
-     "projectedPoints": 54.4,
-     "averagePosition": 9.2,
+     "projectedPoints": 49.8,
+     "averagePosition": 9.9,
      "zones": {
-      "Title": 0,
-      "Top 4": 6.2,
-      "Down": 1.8
-     }
-    },
-    {
-     "team": "Bologna",
-     "played": 7,
-     "points": 5,
-     "gd": -4,
-     "projectedPoints": 48.3,
-     "averagePosition": 11.6,
-     "zones": {
-      "Title": 0,
-      "Top 4": 1.1,
-      "Down": 6.4
-     }
-    },
-    {
-     "team": "Frosinone",
-     "played": 7,
-     "points": 13,
-     "gd": 4,
-     "projectedPoints": 48.2,
-     "averagePosition": 11.8,
-     "zones": {
-      "Title": 0,
-      "Top 4": 1.3,
-      "Down": 7.2
-     }
-    },
-    {
-     "team": "Sassuolo",
-     "played": 7,
-     "points": 8,
-     "gd": -2,
-     "projectedPoints": 47.1,
-     "averagePosition": 12.2,
-     "zones": {
-      "Title": 0,
-      "Top 4": 0.9,
-      "Down": 8.7
-     }
-    },
-    {
-     "team": "Cagliari",
-     "played": 7,
-     "points": 13,
-     "gd": -1,
-     "projectedPoints": 47,
-     "averagePosition": 12.4,
-     "zones": {
-      "Title": 0,
-      "Top 4": 0.6,
-      "Down": 8.3
+      "Title": 0.1,
+      "Top 4": 4.6,
+      "Down": 2.5
      }
     },
     {
@@ -1038,12 +986,64 @@
      "played": 7,
      "points": 10,
      "gd": 1,
-     "projectedPoints": 46.9,
-     "averagePosition": 12.3,
+     "projectedPoints": 45.9,
+     "averagePosition": 11.7,
      "zones": {
       "Title": 0,
-      "Top 4": 0.9,
-      "Down": 8.8
+      "Top 4": 1.8,
+      "Down": 7.4
+     }
+    },
+    {
+     "team": "Sassuolo",
+     "played": 7,
+     "points": 8,
+     "gd": -2,
+     "projectedPoints": 45.5,
+     "averagePosition": 11.8,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1.4,
+      "Down": 7.7
+     }
+    },
+    {
+     "team": "Cagliari",
+     "played": 7,
+     "points": 13,
+     "gd": -1,
+     "projectedPoints": 45.3,
+     "averagePosition": 12,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1.4,
+      "Down": 7.4
+     }
+    },
+    {
+     "team": "Frosinone",
+     "played": 7,
+     "points": 13,
+     "gd": 4,
+     "projectedPoints": 45.1,
+     "averagePosition": 12.1,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1.2,
+      "Down": 8.2
+     }
+    },
+    {
+     "team": "Bologna",
+     "played": 7,
+     "points": 5,
+     "gd": -4,
+     "projectedPoints": 44.1,
+     "averagePosition": 12.4,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.8,
+      "Down": 9.7
      }
     },
     {
@@ -1051,12 +1051,12 @@
      "played": 7,
      "points": 4,
      "gd": -9,
-     "projectedPoints": 43.2,
-     "averagePosition": 13.9,
+     "projectedPoints": 41.7,
+     "averagePosition": 13.6,
      "zones": {
       "Title": 0,
       "Top 4": 0.4,
-      "Down": 18.8
+      "Down": 16.6
      }
     },
     {
@@ -1064,12 +1064,12 @@
      "played": 7,
      "points": 7,
      "gd": -2,
-     "projectedPoints": 41.9,
-     "averagePosition": 14.4,
+     "projectedPoints": 40.8,
+     "averagePosition": 13.9,
      "zones": {
       "Title": 0,
-      "Top 4": 0.1,
-      "Down": 22.3
+      "Top 4": 0.4,
+      "Down": 19.3
      }
     },
     {
@@ -1077,12 +1077,12 @@
      "played": 7,
      "points": 9,
      "gd": -3,
-     "projectedPoints": 39.4,
-     "averagePosition": 15.5,
+     "projectedPoints": 37.9,
+     "averagePosition": 15.3,
      "zones": {
       "Title": 0,
       "Top 4": 0.1,
-      "Down": 32.9
+      "Down": 30.5
      }
     },
     {
@@ -1090,25 +1090,12 @@
      "played": 7,
      "points": 4,
      "gd": -8,
-     "projectedPoints": 39,
+     "projectedPoints": 37.1,
      "averagePosition": 15.6,
      "zones": {
       "Title": 0,
-      "Top 4": 0,
-      "Down": 34.1
-     }
-    },
-    {
-     "team": "Udinese",
-     "played": 7,
-     "points": 4,
-     "gd": -7,
-     "projectedPoints": 37.9,
-     "averagePosition": 16.1,
-     "zones": {
-      "Title": 0,
-      "Top 4": 0,
-      "Down": 40.9
+      "Top 4": 0.1,
+      "Down": 34.5
      }
     },
     {
@@ -1116,12 +1103,25 @@
      "played": 7,
      "points": 3,
      "gd": -10,
-     "projectedPoints": 36.8,
-     "averagePosition": 16.5,
+     "projectedPoints": 35.1,
+     "averagePosition": 16.4,
      "zones": {
       "Title": 0,
       "Top 4": 0,
-      "Down": 46
+      "Down": 45.7
+     }
+    },
+    {
+     "team": "Udinese",
+     "played": 7,
+     "points": 4,
+     "gd": -7,
+     "projectedPoints": 34.7,
+     "averagePosition": 16.4,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Down": 46.3
      }
     },
     {
@@ -1129,18 +1129,18 @@
      "played": 7,
      "points": 4,
      "gd": -9,
-     "projectedPoints": 33.4,
+     "projectedPoints": 31.6,
      "averagePosition": 17.7,
      "zones": {
       "Title": 0,
       "Top 4": 0,
-      "Down": 63.6
+      "Down": 64.3
      }
     }
    ]
   },
   "Ligue 1": {
-   "remainingFixtures": 243,
+   "remainingFixtures": 229,
    "zones": [
     "Title",
     "Top 4",
@@ -1153,25 +1153,12 @@
      "played": 7,
      "points": 14,
      "gd": 5,
-     "projectedPoints": 72.5,
-     "averagePosition": 1.4,
+     "projectedPoints": 68.1,
+     "averagePosition": 1.5,
      "zones": {
-      "Title": 77.6,
-      "Top 4": 97.6,
+      "Title": 74.4,
+      "Top 4": 96.9,
       "Bottom 3": 0
-     }
-    },
-    {
-     "team": "Lyon",
-     "played": 7,
-     "points": 14,
-     "gd": 8,
-     "projectedPoints": 57.6,
-     "averagePosition": 5,
-     "zones": {
-      "Title": 5.8,
-      "Top 4": 51.9,
-      "Bottom 3": 0.1
      }
     },
     {
@@ -1179,12 +1166,25 @@
      "played": 7,
      "points": 14,
      "gd": 4,
-     "projectedPoints": 56.9,
+     "projectedPoints": 54.6,
      "averagePosition": 5.3,
      "zones": {
-      "Title": 4.3,
-      "Top 4": 47.3,
-      "Bottom 3": 0.1
+      "Title": 5.4,
+      "Top 4": 48.6,
+      "Bottom 3": 0.2
+     }
+    },
+    {
+     "team": "Lyon",
+     "played": 7,
+     "points": 14,
+     "gd": 8,
+     "projectedPoints": 54.3,
+     "averagePosition": 5.2,
+     "zones": {
+      "Title": 5.7,
+      "Top 4": 49,
+      "Bottom 3": 0.2
      }
     },
     {
@@ -1192,12 +1192,12 @@
      "played": 7,
      "points": 14,
      "gd": 5,
-     "projectedPoints": 56.3,
-     "averagePosition": 5.5,
+     "projectedPoints": 53,
+     "averagePosition": 5.8,
      "zones": {
-      "Title": 3.6,
-      "Top 4": 44.8,
-      "Bottom 3": 0.1
+      "Title": 3.4,
+      "Top 4": 40.8,
+      "Bottom 3": 0.3
      }
     },
     {
@@ -1205,25 +1205,12 @@
      "played": 7,
      "points": 10,
      "gd": 3,
-     "projectedPoints": 55.5,
-     "averagePosition": 5.8,
+     "projectedPoints": 52.1,
+     "averagePosition": 6.1,
      "zones": {
-      "Title": 3.3,
-      "Top 4": 41.7,
-      "Bottom 3": 0.2
-     }
-    },
-    {
-     "team": "Marseille",
-     "played": 7,
-     "points": 9,
-     "gd": 4,
-     "projectedPoints": 52.3,
-     "averagePosition": 7,
-     "zones": {
-      "Title": 1.5,
-      "Top 4": 28,
-      "Bottom 3": 1
+      "Title": 3.2,
+      "Top 4": 37.2,
+      "Bottom 3": 0.3
      }
     },
     {
@@ -1231,12 +1218,25 @@
      "played": 7,
      "points": 14,
      "gd": 5,
-     "projectedPoints": 52.3,
-     "averagePosition": 7.2,
+     "projectedPoints": 52.1,
+     "averagePosition": 6.3,
      "zones": {
-      "Title": 1.3,
-      "Top 4": 24.6,
-      "Bottom 3": 0.8
+      "Title": 3.3,
+      "Top 4": 36,
+      "Bottom 3": 0.5
+     }
+    },
+    {
+     "team": "Marseille",
+     "played": 7,
+     "points": 9,
+     "gd": 4,
+     "projectedPoints": 49.6,
+     "averagePosition": 7.3,
+     "zones": {
+      "Title": 1.7,
+      "Top 4": 26.2,
+      "Bottom 3": 1.1
      }
     },
     {
@@ -1244,12 +1244,12 @@
      "played": 7,
      "points": 13,
      "gd": 1,
-     "projectedPoints": 52.2,
-     "averagePosition": 7.3,
+     "projectedPoints": 48.7,
+     "averagePosition": 7.8,
      "zones": {
-      "Title": 1.2,
-      "Top 4": 25.7,
-      "Bottom 3": 1.2
+      "Title": 1.1,
+      "Top 4": 21.5,
+      "Bottom 3": 1.4
      }
     },
     {
@@ -1257,25 +1257,12 @@
      "played": 7,
      "points": 9,
      "gd": 1,
-     "projectedPoints": 49.1,
-     "averagePosition": 8.5,
+     "projectedPoints": 47.5,
+     "averagePosition": 8.3,
      "zones": {
-      "Title": 0.6,
-      "Top 4": 14.7,
-      "Bottom 3": 2.3
-     }
-    },
-    {
-     "team": "Lorient",
-     "played": 7,
-     "points": 11,
-     "gd": 1,
-     "projectedPoints": 46.4,
-     "averagePosition": 9.8,
-     "zones": {
-      "Title": 0.2,
-      "Top 4": 7.8,
-      "Bottom 3": 4.4
+      "Title": 0.9,
+      "Top 4": 17.2,
+      "Bottom 3": 2.2
      }
     },
     {
@@ -1283,12 +1270,25 @@
      "played": 7,
      "points": 9,
      "gd": 3,
-     "projectedPoints": 45.6,
-     "averagePosition": 10,
+     "projectedPoints": 44.9,
+     "averagePosition": 9.4,
+     "zones": {
+      "Title": 0.4,
+      "Top 4": 10.6,
+      "Bottom 3": 3.8
+     }
+    },
+    {
+     "team": "Lorient",
+     "played": 7,
+     "points": 11,
+     "gd": 1,
+     "projectedPoints": 43.7,
+     "averagePosition": 10.1,
      "zones": {
       "Title": 0.3,
-      "Top 4": 7.5,
-      "Bottom 3": 5.3
+      "Top 4": 6.4,
+      "Bottom 3": 4.8
      }
     },
     {
@@ -1296,12 +1296,12 @@
      "played": 7,
      "points": 7,
      "gd": -3,
-     "projectedPoints": 44.4,
+     "projectedPoints": 42.7,
      "averagePosition": 10.6,
      "zones": {
       "Title": 0.2,
-      "Top 4": 5.5,
-      "Bottom 3": 7.9
+      "Top 4": 6.1,
+      "Bottom 3": 7.7
      }
     },
     {
@@ -1309,12 +1309,12 @@
      "played": 7,
      "points": 9,
      "gd": -6,
-     "projectedPoints": 39.6,
-     "averagePosition": 12.8,
+     "projectedPoints": 38,
+     "averagePosition": 12.7,
      "zones": {
       "Title": 0,
-      "Top 4": 1.3,
-      "Bottom 3": 20.6
+      "Top 4": 1.6,
+      "Bottom 3": 20.2
      }
     },
     {
@@ -1322,12 +1322,12 @@
      "played": 7,
      "points": 8,
      "gd": -3,
-     "projectedPoints": 39.2,
-     "averagePosition": 12.9,
+     "projectedPoints": 37.8,
+     "averagePosition": 12.8,
      "zones": {
       "Title": 0.1,
-      "Top 4": 1,
-      "Bottom 3": 21.3
+      "Top 4": 1.3,
+      "Bottom 3": 20.6
      }
     },
     {
@@ -1335,12 +1335,12 @@
      "played": 7,
      "points": 6,
      "gd": -5,
-     "projectedPoints": 36.1,
-     "averagePosition": 14.1,
+     "projectedPoints": 33.9,
+     "averagePosition": 14.3,
      "zones": {
       "Title": 0,
       "Top 4": 0.4,
-      "Bottom 3": 35.9
+      "Bottom 3": 37.9
      }
     },
     {
@@ -1348,12 +1348,12 @@
      "played": 7,
      "points": 7,
      "gd": -6,
-     "projectedPoints": 31.8,
+     "projectedPoints": 30.3,
      "averagePosition": 15.6,
      "zones": {
       "Title": 0,
       "Top 4": 0.1,
-      "Bottom 3": 60.7
+      "Bottom 3": 61.6
      }
     },
     {
@@ -1361,12 +1361,12 @@
      "played": 7,
      "points": 2,
      "gd": -6,
-     "projectedPoints": 30.3,
+     "projectedPoints": 29.2,
      "averagePosition": 15.8,
      "zones": {
       "Title": 0,
-      "Top 4": 0.1,
-      "Bottom 3": 65.2
+      "Top 4": 0,
+      "Bottom 3": 63.9
      }
     },
     {
@@ -1374,12 +1374,12 @@
      "played": 7,
      "points": 4,
      "gd": -11,
-     "projectedPoints": 29.4,
-     "averagePosition": 16.2,
+     "projectedPoints": 27.9,
+     "averagePosition": 16.3,
      "zones": {
       "Title": 0,
       "Top 4": 0,
-      "Bottom 3": 72.9
+      "Bottom 3": 73.4
      }
     }
    ]

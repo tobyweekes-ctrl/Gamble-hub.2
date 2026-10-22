@@ -95,36 +95,54 @@ function fitLinear(train) {
 }
 const linearProbs = (r, f) => { const p = linear(r, f.w); const q = calibrate1x2([p.h, p.d, p.a], f.cal); return { h: q[0], d: q[1], a: q[2] }; };
 const stackProbs = (r, f) => { const q = orderedProbs(r.x, f); return { h: q[0], d: q[1], a: q[2] }; };
+// Log pooling: weighted geometric mean of the components, renormalised (weights need
+// not sum to 1; above 1 in total sharpens). Implemented for publishing in ensemble.mjs (pool3).
+const logpool = (r, w) => { const q = ['h', 'd', 'a'].map(k => Math.exp(w.goals * Math.log(r.g[k]) + w.shots * Math.log(r.s[k]) + w.elo * Math.log(r.e[k]))); const t = q[0] + q[1] + q[2]; return { h: q[0] / t, d: q[1] / t, a: q[2] / t }; };
+function fitLogpool(train) {
+  let top = null;
+  for (let wg = 0; wg <= 1.5001; wg += 0.05) for (let ws = 0; ws <= 1.5001; ws += 0.05) for (let we = 0; we <= 1.0001; we += 0.05) {
+    const w = { goals: +wg.toFixed(2), shots: +ws.toFixed(2), elo: +we.toFixed(2) };
+    if (!(w.goals + w.shots + w.elo)) continue;
+    const ll = train.reduce((s, r) => s + logloss3(logpool(r, w), r.o), 0) / train.length;
+    if (!top || ll < top.ll) top = { w, ll };
+  }
+  const cal = fitCalibration(train.map(r => ({ p: { ...logpool(r, top.w), btts: 0.5, o25: 0.5 }, m: r.m }))).x12;
+  return { w: top.w, cal };
+}
+const logpoolProbs = (r, f) => { const p = logpool(r, f.w); const q = calibrate1x2([p.h, p.d, p.a], f.cal); return { h: q[0], d: q[1], a: q[2] }; };
 
 // Two-fold cross-validation across the two validation seasons.
-const cv = { linear: [], stack: [] };
+const cv = { linear: [], stack: [], logpool: [] };
 for (const [trainS, testS] of [['2324', '2425'], ['2425', '2324']]) {
   const tr = rows.filter(r => r.season === trainS), te = rows.filter(r => r.season === testS);
   const fl = fitLinear(tr), fs = fitOrdered(tr.map(r => ({ x: r.x, o: r.o })));
   cv.linear.push(te.reduce((s, r) => s + logloss3(linearProbs(r, fl), r.o), 0) / te.length);
   cv.stack.push(te.reduce((s, r) => s + logloss3(stackProbs(r, fs), r.o), 0) / te.length);
+  const fp = fitLogpool(tr);
+  cv.logpool.push(te.reduce((s, r) => s + logloss3(logpoolProbs(r, fp), r.o), 0) / te.length);
 }
 const cvMean = k => (cv[k][0] + cv[k][1]) / 2;
-console.log(`Two-fold CV log-loss: linear ${cvMean('linear').toFixed(4)}, stacker ${cvMean('stack').toFixed(4)}`);
+console.log(`Two-fold CV log-loss: linear ${cvMean('linear').toFixed(4)}, log pool ${cvMean('logpool').toFixed(4)}, stacker ${cvMean('stack').toFixed(4)}`);
 // The published model (ensemble.mjs, backtest.mjs) implements the weighted average.
 // If the stacker ever wins the cross-validation, say so: it must be implemented in
 // both before it can be used.
-const method = 'linear';
+const method = cvMean('logpool') < cvMean('linear') ? 'logpool' : 'linear';
 if (cvMean('stack') < cvMean('linear')) console.log('NOTE: the stacker beat the weighted average in cross-validation; implement it in ensemble.mjs and backtest.mjs to use it.');
-const finalLinear = fitLinear(rows);
+const finalLinear = fitLinear(rows), finalLogpool = fitLogpool(rows);
 const finalStack = fitOrdered(rows.map(r => ({ x: r.x, o: r.o })));
-console.log('Chosen:', method, method === 'stack' ? JSON.stringify(finalStack) : JSON.stringify(finalLinear));
+console.log('Chosen:', method, JSON.stringify(method === 'logpool' ? finalLogpool : finalLinear));
 
 const config = {
-  tunedOn: '2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss; combination method by two-fold CV across those seasons',
+  tunedOn: '2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss; combination method (weighted average, log pool or stacker) by two-fold CV across those seasons',
   tunedAt: new Date().toISOString(),
   goals: pick(best.goals),
   shots: pick(best.shots),
   elo: pick(best.elo),
   method,
-  weights: finalLinear.w,
+  weights: method === 'logpool' ? finalLogpool.w : finalLinear.w,
+  linearWeights: finalLinear.w,
   stacker: { features: ['log goals-model home/away expected goals', 'log shots-model home/away expected goals', 'Elo gap /100'], ...finalStack },
-  validationLogLoss: { goals: best.goals.ll, shots: best.shots.ll, elo: best.elo.ll, cvLinear: cvMean('linear'), cvStack: cvMean('stack') },
+  validationLogLoss: { goals: best.goals.ll, shots: best.shots.ll, elo: best.elo.ll, cvLinear: cvMean('linear'), cvLogpool: cvMean('logpool'), cvStack: cvMean('stack') },
 };
 writeFileSync(path.join(here, 'config.json'), JSON.stringify(config, null, 1) + '\n');
 console.log('Wrote tools/model/config.json');

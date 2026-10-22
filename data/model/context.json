@@ -3,8 +3,8 @@
  "factors": {},
  "calibration": {
   "x12": {
-   "T": 1.16,
-   "kd": 1.1
+   "T": 1.06,
+   "kd": 1.12
   },
   "btts": {
    "a": 0.12,
@@ -18,8 +18,8 @@
  "lineup": {
   "regRef": 0.8529411764705882,
   "gamma": 0.15,
-  "delta": 0.25,
-  "kappa": 1.025,
+  "delta": 0.2,
+  "kappa": 1.05,
   "enabled": false
  },
  "report": {
@@ -27,67 +27,67 @@
    "teamMatches": 1257,
    "scored": {
     "f": 1.03,
-    "raw": 1.031,
+    "raw": 1.032,
     "obs": 1915,
-    "exp": 1857.1,
+    "exp": 1855.6,
     "keep": false
    },
    "conceded": {
-    "f": 0.983,
-    "raw": 0.982,
+    "f": 0.981,
+    "raw": 0.98,
     "obs": 1616,
-    "exp": 1645,
+    "exp": 1648.7,
     "keep": false
    }
   },
   "europeBefore": {
    "teamMatches": 537,
    "scored": {
-    "f": 0.994,
-    "raw": 0.993,
+    "f": 0.998,
+    "raw": 0.998,
     "obs": 954,
-    "exp": 960.5,
+    "exp": 955.7,
     "keep": false
    },
    "conceded": {
-    "f": 1.033,
-    "raw": 1.038,
+    "f": 1.029,
+    "raw": 1.033,
     "obs": 686,
-    "exp": 661,
+    "exp": 664.1,
     "keep": false
    }
   },
   "europeAfter": {
    "teamMatches": 470,
    "scored": {
-    "f": 1.007,
-    "raw": 1.007,
+    "f": 1.013,
+    "raw": 1.014,
     "obs": 857,
-    "exp": 850.7,
+    "exp": 844.9,
     "keep": false
    },
    "conceded": {
-    "f": 0.992,
-    "raw": 0.99,
+    "f": 0.986,
+    "raw": 0.984,
     "obs": 549,
-    "exp": 554.5,
+    "exp": 558,
     "keep": false
    }
   },
   "newcomer": {
    "teamMatches": 1314,
    "scored": {
-    "f": 0.991,
-    "raw": 0.991,
+    "f": 0.989,
+    "raw": 0.988,
     "obs": 1608,
-    "exp": 1623,
+    "exp": 1627.3,
     "keep": false
    },
    "conceded": {
-    "f": 1.011,
-    "raw": 1.011,
+    "f": 1.014,
+    "raw": 1.014,
     "obs": 2064,
-    "exp": 2041.3,
+    "exp": 2035,
     "keep": false
    }
   },
@@ -97,14 +97,14 @@
     "f": 0.998,
     "raw": 0.997,
     "obs": 160,
-    "exp": 160.5,
+    "exp": 160.4,
     "keep": false
    },
    "away": {
-    "f": 0.924,
-    "raw": 0.867,
+    "f": 0.923,
+    "raw": 0.866,
     "obs": 116,
-    "exp": 133.8,
+    "exp": 134,
     "keep": false
    }
   },
@@ -113,19 +113,19 @@
    "hot": {
     "f": 1.017,
     "raw": 1.018,
-    "obs": 1398,
-    "exp": 1373.3,
+    "obs": 1395,
+    "exp": 1370.7,
     "keep": false
    },
-   "hotN": 874,
+   "hotN": 871,
    "cold": {
-    "f": 1.027,
-    "raw": 1.03,
-    "obs": 1085,
-    "exp": 1053.6,
+    "f": 1.008,
+    "raw": 1.009,
+    "obs": 1060,
+    "exp": 1051,
     "keep": false
    },
-   "coldN": 766
+   "coldN": 768
   }
  }
 }

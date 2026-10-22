@@ -241,9 +241,9 @@ export function modelForRound(root, fixtures) {
     };
   }
   const info = {
-    version: 'independent-v4.1',
+    version: 'independent-v4.2',
     fittedTo: new Date(asOf).toISOString().slice(0, 10),
-    weights: cfg.weights, settings: { goals: cfg.goals, shots: cfg.shots, elo: cfg.elo },
+    weights: cfg.weights, method: cfg.method || 'linear', settings: { goals: cfg.goals, shots: cfg.shots, elo: cfg.elo },
     contextFactors: factors, calibration: calib, lineupEnabled: !!lineupFit,
     backtest: bt && summary(bt),
     players: plReport && { testSeasons: plReport.testSeasons, dispersion: plReport.params.r, markets: Object.fromEntries(Object.entries(plReport.markets).map(([k, v]) => [k, { label: v.label, model: v.model.logloss, position: v.position.logloss, n: v.model.n }])) },

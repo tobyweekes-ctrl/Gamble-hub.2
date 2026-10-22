@@ -1,6 +1,6 @@
 {
- "tunedOn": "2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss; combination method by two-fold CV across those seasons",
- "tunedAt": "2026-10-22T07:34:44.349Z",
+ "tunedOn": "2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss; combination method (weighted average, log pool or stacker) by two-fold CV across those seasons",
+ "tunedAt": "2026-10-22T23:27:35.835Z",
  "goals": {
   "xi": 0.0015,
   "sigma": 1.5,
@@ -16,8 +16,13 @@
   "hfa": 80,
   "carry": 0.8
  },
- "method": "linear",
+ "method": "logpool",
  "weights": {
+  "goals": 0.55,
+  "shots": 0.55,
+  "elo": 0
+ },
+ "linearWeights": {
   "goals": 0.6,
   "shots": 0.4,
   "elo": 0
@@ -41,6 +46,7 @@
   "shots": 0.9981798345365703,
   "elo": 1.0045184233146742,
   "cvLinear": 0.9912472616500143,
+  "cvLogpool": 0.9909932526010781,
   "cvStack": 0.9919881938938749
  }
 }
