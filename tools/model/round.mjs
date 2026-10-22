@@ -79,8 +79,8 @@ export function modelForRound(root, fixtures) {
     return n >= 5 ? s / n : null;
   };
   function playerMarkets(f, group, div, home, away) {
-    const xi = f.lineups ? { status: 'confirmed', h: f.lineups.home.starters, a: f.lineups.away.starters }
-      : f.probableXI ? { status: 'probable', h: f.probableXI.home, a: f.probableXI.away } : null;
+    const xi = f.lineups ? { status: 'confirmed', h: f.lineups.home.starters, a: f.lineups.away.starters, hx: f.lineups.home.bench, ax: f.lineups.away.bench }
+      : f.probableXI ? { status: 'probable', h: f.probableXI.home, a: f.probableXI.away, hx: f.probableXI.homeExtra, ax: f.probableXI.awayExtra } : null;
     if (!plParams || !xi || !xi.h || !xi.a) return null;
     const es = statModels[group].shots.expected(div, home, away), ef = statModels[group].fouls.expected(div, home, away);
     const ratio = (e, a) => (e && a ? e / a : 1);
@@ -99,7 +99,9 @@ export function modelForRound(root, fixtures) {
         exp: Object.fromEntries(Object.entries(r.exp).map(([k, v]) => [k, +v.toFixed(3)])),
       };
     });
-    return { status: xi.status, home: side(xi.h, ctx.h), away: side(xi.a, ctx.a) };
+    // homeExtra/awayExtra: squad players outside the XI (bench once team sheets are out).
+    // Their chances assume they start, so the site flags them.
+    return { status: xi.status, home: side(xi.h, ctx.h), away: side(xi.a, ctx.a), homeExtra: side(xi.hx || [], ctx.h), awayExtra: side(xi.ax || [], ctx.a) };
   }
 
   const byId = {};

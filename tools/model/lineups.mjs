@@ -100,6 +100,20 @@ export function usualXI(hist, teamId, t) {
     .map(([id, n]) => ({ ...info.get(id), started: `${n}/${past.length}` }));
 }
 
+// Everyone who started at least once in the team's last 8 matches (within 120 days),
+// most-used first: bookmakers list the whole squad in player markets, not just the XI.
+export function recentSquad(hist, teamId, t) {
+  const past = (hist.get(String(teamId)) || []).filter(x => x.t < t - 3600e3 && t - x.t < 120 * DAY).slice(-8);
+  if (past.length < 4) return null;
+  const starts = new Map(), info = new Map();
+  for (const g of past) for (const p of g.players) {
+    if (!p.start) continue;
+    starts.set(p.id, (starts.get(p.id) || 0) + 1);
+    info.set(p.id, { id: p.id, name: p.name, pos: p.pos });
+  }
+  return [...starts.entries()].sort((a, b) => b[1] - a[1]).map(([id, n]) => ({ ...info.get(id), started: `${n}/${past.length}` }));
+}
+
 // Match ESPN fixtures to football-data matches: same division, kick-off within a
 // day, and team names that agree on at least one word (ESPN and football-data
 // spell clubs differently). Returns Map(fdMatch -> espnMatch).
