@@ -222,19 +222,6 @@
   .btn-grade{font-size:13px;font-weight:600;padding:8px 14px;border-radius:10px;border:none;background:var(--accent);color:var(--on-accent);cursor:pointer;}
   .btn-grade:hover{filter:brightness(1.08);}
 
-  /* Odds screenshot checker */
-  .oc-field{display:block;font-size:12px;font-weight:600;color:var(--ink-2);margin-top:12px;}
-  .oc-field .sim-select{width:100%;margin-top:6px;}
-  .upload-btn{display:flex;align-items:center;justify-content:center;gap:8px;margin:12px 0 10px;padding:14px;background:var(--accent);color:var(--on-accent);font-family:var(--font-head);font-weight:700;font-size:15px;border-radius:12px;cursor:pointer;}
-  .upload-btn:hover{filter:brightness(1.08);}
-  .oc-text{width:100%;font-size:13px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:10px;resize:vertical;}
-  .oc-row{border-top:1px solid var(--line);padding:10px 0;}
-  .oc-name{font-weight:600;font-size:13.5px;}
-  .oc-controls{display:flex;gap:6px;align-items:center;margin-top:6px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);}
-  .oc-controls .sim-select{font-size:12.5px;padding:5px 6px;margin-top:0;}
-  .oc-price{width:64px;padding:5px 6px;font-size:12.5px;border:1px solid var(--line-strong);border-radius:8px;}
-  .oc-figs{font-size:12.5px;margin-top:6px;color:var(--ink-2);font-variant-numeric:tabular-nums;}
-  .oc-alert{margin:10px 0;padding:10px 12px;border:1px solid var(--danger);background:var(--danger-soft);border-radius:10px;font-size:13px;line-height:1.5;}
   .player-check{margin-top:10px;}
   .player-check .sim-select{width:100%;}
   .pc-line{display:flex;gap:8px;align-items:center;margin-top:8px;}
@@ -399,7 +386,6 @@
     .controls{padding:16px 20px;}
     .track-record,.coupon,.caveat{margin-left:0;margin-right:0;}
     .track-record{margin-top:16px;}
-    .panel + #oddsCheck .track-record{margin-top:24px;}
     .match{padding:20px;}
     .history{padding-left:0;padding-right:0;}
   }
@@ -460,7 +446,6 @@
     </div>
   </section>
 
-  <div id="oddsCheck"></div>
 
   <div id="propBoard"></div>
   <div id="disparities"></div>
@@ -1270,8 +1255,8 @@ function toBookOdds(prob, type){
 }
 
 // Fractional odds as UK bookmakers show them: the nearest rung of the standard
-// ladder (1/10 ... 4/6, evens, 6/4 ... 500/1). Prices read from a screenshot keep the
-// fraction exactly as written; this is for computed odds (fair odds, combinations).
+// ladder (1/10 ... 4/6, evens, 6/4 ... 500/1). Used for computed odds
+// (fair odds, combinations).
 const FRACTION_LADDER = ['1/10','1/8','2/13','1/6','1/5','2/9','1/4','2/7','3/10','1/3','4/11','2/5','4/9','1/2','8/15','4/7','8/13','4/6','8/11','4/5','5/6','10/11','1/1',
   '11/10','6/5','5/4','11/8','6/4','13/8','7/4','15/8','2/1','85/40','9/4','12/5','5/2','13/5','11/4','3/1','10/3','7/2','4/1','9/2','5/1','11/2','6/1','13/2','7/1','15/2','8/1','17/2','9/1','10/1',
   '11/1','12/1','14/1','16/1','18/1','20/1','22/1','25/1','28/1','33/1','40/1','50/1','66/1','80/1','100/1','125/1','150/1','200/1','250/1','300/1','400/1','500/1'];
@@ -1357,7 +1342,6 @@ function render(){
   renderPropBoard();
   renderDisparities();
   renderSeasonSim();
-  renderOddsCheck();
   renderLiveRecord();
   renderTrackRecord();
   renderLeagues();
@@ -1376,7 +1360,7 @@ function render(){
 function computeDisparities(){
   const rows = [];
   matches.forEach(m=>{
-    if(m.hw==null || m.dw==null || m.aw==null) return;
+    if(m.hw==null || m.dw==null || m.aw==null || isFinished(m)) return;
     const mp = computeModelProbs(m);
     if(!mp || mp.basis==='market-implied') return;
     const fixture = `${m.home} vs ${m.away}`;
@@ -1461,7 +1445,7 @@ function propRows(m){
   for(const o of m.props.players){
     const hit = find(o.name);
     if(!hit || !hit.p.exp || hit.p.exp[o.mk]==null){ unmatched++; continue; }
-    const prob = ocAtLeast(hit.p.exp[o.mk], o.k, disp[o.mk]);
+    const prob = atLeastCount(hit.p.exp[o.mk], o.k, disp[o.mk]);
     if(!(prob>0)) continue;
     rows.push({m, name:hit.p.name, team:hit.team, extra:hit.extra, thin:(hit.p.starts||0) < 5, mk:o.mk, k:o.k, odds:o.odds, prob, edge:prob*o.odds-1});
   }
@@ -1478,7 +1462,7 @@ function propTotals(m){
     const s = S[key[t.mk]];
     if(!s) continue;
     const mu = t.scope==='match' ? s.h+s.a : t.scope==='home' ? s.h : s.a;
-    const pOver = ocAtLeast(mu, Math.floor(t.line)+1, null);
+    const pOver = atLeastCount(mu, Math.floor(t.line)+1, null);
     const who = t.scope==='match' ? 'Match' : t.scope==='home' ? m.home : m.away;
     out.push({m, name:who, mk:t.mk, label:`over ${t.line} ${TOT_MK[t.mk]}`, odds:t.over, prob:pOver, edge:pOver*t.over-1, rough:true});
     out.push({m, name:who, mk:t.mk, label:`under ${t.line} ${TOT_MK[t.mk]}`, odds:t.under, prob:1-pOver, edge:(1-pOver)*t.under-1, rough:true});
@@ -1710,605 +1694,14 @@ function replayHTML(m, grid){
     <div class="replay-grid" style="grid-template-columns:repeat(6,1fr);">${cells(totals)}</div>`;
 }
 
-// ---- Odds screenshot checker ---------------------------------------------------
-// The user uploads a screenshot of a bookmaker's player markets (shots, shots on
-// target, fouls, cards) or pastes the text. The image is read in the browser with
-// Tesseract.js (open-source OCR, loaded only when used; the image never leaves the
-// device). Lines are matched to the players our model has priced this round, and
-// each selection gets the model's chance and the edge against the price read.
-// OCR can misread, so every price stays editable.
-// Market captions, checked in this order so the more specific phrase wins:
-// "booking points" before "booking", "first card" and "red card" before "card",
-// "shots on target" before "shots", "fouls won" before "fouls".
-const OC_MARKETS = {
-  none:  {label:'not priced by our model', re:/booking\s*points|card\s*points|goal\s*scorer|goalscorer|to\s*score|assists?|tackles?|passes|saves|offsides?|headers?|corners?/},
-  first: {label:'first card', re:/first\s*(player\s*)?(to\s*be\s*)?(card(ed)?|booked|booking)|1st\s*(player\s*)?(card(ed)?|booked)/},
-  rc:    {label:'sent off', re:/red\s*card|sent\s*off|sending\s*off|straight\s*red/},
-  sot:   {label:'SoT', re:/shots?\s*on\s*target|\bsot\b/},
-  fw:    {label:'fouled', re:/fouls?\s*(won|drawn|suffered)|to\s*be\s*fouled|fouled/},
-  fc:    {label:'fouls', re:/fouls?/},
-  yc:    {label:'booked', re:/card(ed)?|booked|booking|yellow/},
-  sh:    {label:'shots', re:/shots?/},
-};
-const OC_ORDER = ['none','first','rc','sot','fw','fc','yc','sh'];
-function ocNorm(s){ return s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase(); }
-function ocPlayers(){
-  const out = [];
-  matches.forEach(m=>{
-    const P = m.model && m.model.players;
-    if(!P) return;
-    [['home', m.home], ['away', m.away], ['homeExtra', m.home], ['awayExtra', m.away]].forEach(([side, team])=>(P[side]||[]).forEach(p=>{
-      const parts = ocNorm(p.name).split(/[^a-z]+/).filter(Boolean);
-      out.push({p, m, team, fixture:`${abbrev(m.home)} v ${abbrev(m.away)}`, status:P.status, extra:/Extra$/.test(side), last:parts[parts.length-1], first:parts[0]});
-    }));
-  });
-  return out;
-}
-// P(X >= k) for a negative binomial with mean mu and dispersion r (Poisson if r is null).
-function ocAtLeast(mu, k, r){
+// P(X >= k) for a count with mean mu: negative binomial with dispersion r, Poisson if r is null.
+function atLeastCount(mu, k, r){
   if(mu<=0) return 0;
   let p, c;
   if(r==null){ p = Math.exp(-mu); c = p; for(let x=1;x<k;x++){ p *= mu/x; c += p; } return 1-c; }
   const q = r/(r+mu); p = Math.pow(q, r); c = p;
   for(let x=1;x<k;x++){ p *= (x-1+r)/x*(1-q); c += p; }
   return Math.max(0, 1-c);
-}
-function ocPrices(line){
-  const cleaned = line.replace(/(over|under|o|u)\s*\d+\.5/gi, ' ').replace(/\d\s*\+/g, ' ')
-    .replace(/(\d)\s*(or\s*more|plus)\b/gi, ' ').replace(/at\s*least\s*\d/gi, ' ');
-  const out = [];
-  const re = /(\d{1,3})\s*\/\s*(\d{1,3})|\bev(en)?s\b|\b(\d{1,3}\.\d{1,2})\b/gi;
-  let mt;
-  while((mt = re.exec(cleaned))){
-    if(mt[1]) out.push({dec: 1 + (+mt[1])/(+mt[2]), txt: `${+mt[1]}/${+mt[2]}`});
-    else if(mt[4]){ const v = +mt[4]; if(v>=1.01 && v<=500) out.push({dec: v, txt: fractionApprox(v)}); }
-    else out.push({dec: 2, txt: 'evens'});
-  }
-  return out;
-}
-// Lines (1+, 2+ ...) named in a line of text, left to right. Bookmakers write them
-// many ways: "2+", "Over 1.5", "2 or more", "at least 2", "two or more", "2 fouls".
-const OC_WORDNUM = {one:1, two:2, three:3, four:4, five:5};
-const OC_LINE_PATTERNS = [
-  [/(\d)\s*\+/g, m=>+m[1]],
-  [/over\s*(\d+)\.5/gi, m=>+m[1]+1],
-  [/(\d)\s*(?:or\s*more|plus)\b/gi, m=>+m[1]],
-  [/at\s*least\s*(\d)/gi, m=>+m[1]],
-  [/\b(one|two|three|four|five)\s*(?:or\s*more|\+|plus)/gi, m=>OC_WORDNUM[m[1].toLowerCase()]],
-  [/\b(\d)\s*(?:fouls?|shots?|tackles?|cards?)\b/gi, m=>+m[1]],
-];
-function ocThresholds(line){
-  const found = [], taken = [];
-  for(const [re, val] of OC_LINE_PATTERNS){
-    re.lastIndex = 0;
-    let m;
-    while((m = re.exec(line))){
-      if(taken.some(([a,b])=>m.index<b && m.index+m[0].length>a)) continue; // already read by an earlier pattern
-      taken.push([m.index, m.index+m[0].length]);
-      found.push({at:m.index, v:val(m)});
-    }
-  }
-  return found.sort((a,b)=>a.at-b.at).map(f=>f.v).filter(v=>v>=1 && v<=9);
-}
-// Every market named in a line, in left-to-right order. Each phrase is claimed by
-// the most specific market and blanked out, so "first card" is not also a "card".
-function ocMarketsIn(line){
-  let work = ocNorm(line);
-  const found = [];
-  for(const k of OC_ORDER){
-    const re = new RegExp(OC_MARKETS[k].re.source, 'g');
-    let mt;
-    while((mt = re.exec(work))){
-      found.push({k, at: mt.index});
-      work = work.slice(0, mt.index) + ' '.repeat(mt[0].length) + work.slice(mt.index + mt[0].length);
-      re.lastIndex = mt.index + mt[0].length;
-    }
-  }
-  return found.sort((a,b)=>a.at-b.at).map(f=>f.k).filter((k,i,a)=>i===0 || a[i-1]!==k);
-}
-// Whether a line has a name-like word left once odds, lines and market words are removed.
-function ocHasName(line){
-  let t = ocNorm(line).replace(/\d+\s*\/\s*\d+|\d+(\.\d+)?|\bev(en)?s\b|\b(over|under|or|more|at|least|plus|to|commit|win|be|player|fouls?|shots?|on|target|cards?|carded|booked|yes|no)\b/g, ' ');
-  return /[a-z]{3,}/.test(t);
-}
-function ocFindPlayer(line, index){
-  const order = ocNorm(line).split(/[^a-z]+/).filter(w=>w.length>2);
-  const words = new Set(order);
-  // A surname that is the first of two or more name words is probably someone's first
-  // name ("Taylor Harwood-Bellis" is not Caleb Taylor), unless his first name is there too.
-  let cands = index.filter(x=>words.has(x.last) && !(order.length>1 && order[0]===x.last && !words.has(x.first)));
-  if(cands.length>1){
-    const narrowed = cands.filter(x=>words.has(x.first) || new RegExp(`\\b${x.first[0]}\\b`).test(ocNorm(line)));
-    if(narrowed.length) cands = narrowed;
-  }
-  return cands.length ? {hit:cands[0], ambiguous:cands.length>1} : null;
-}
-// forced: the market the user picked for the whole screenshot ('auto' = read captions).
-function ocParse(text, forced){
-  const index = ocPlayers();
-  const rows = [];
-  let market = null, columns = null, header = [], pending = null, last = null;
-  const unmatched = [];
-  const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
-  for(const line of lines){
-    const mks = ocMarketsIn(line), th = ocThresholds(line), prices = ocPrices(line), who = ocFindPlayer(line, index);
-    // A caption: names a market, no player, no prices. Two or more markets = column headings.
-    if(mks.length && !who && !prices.length){
-      if(mks.length>1){ columns = mks; market = null; } else { market = mks[0]; columns = null; }
-      header = th; last = null;
-      continue;
-    }
-    // A line-only caption or tab ("2+", "Over 1.5", "1+ 2+ 3+") sets the line(s).
-    if(!who && !prices.length && th.length){ header = th; last = null; continue; }
-    // A line with a name we can't match (not in our player list, or misread) and a
-    // price: listed as unmatched, never attached to the player above.
-    if(!who && prices.length && ocHasName(line)){
-      unmatched.push(line); last = null; pending = null;
-      continue;
-    }
-    // Prices on a line of their own continue the previous player's row: the reader
-    // often splits a grid row ("Liam Delap" / "4/6" / "3/1").
-    if(!who && prices.length && !pending && last && !mks.length){
-      prices.forEach(pr=>{
-        const k = last.lines ? last.lines[last.n] : null;
-        rows.push({who:last.who, market:last.market, k:k || last.n+1, price:pr.dec, priceText:pr.txt, assumed:!k});
-        last.n++;
-      });
-      continue;
-    }
-    const target = who || (prices.length && pending ? pending : null);
-    if(!target) continue;
-    if(!prices.length){ pending = who; last = null; continue; }
-    pending = null;
-    if(columns && prices.length===columns.length && !mks.length && (!forced || forced==='auto')){
-      prices.forEach((pr, i)=>rows.push({who:target, market:columns[i], k:1, price:pr.dec, priceText:pr.txt, assumed:false}));
-      continue;
-    }
-    // No caption and no market picked: kept, with the market left for the user to pick.
-    const m = (forced && forced!=='auto' ? forced : (mks[0] || market)) || null;
-    // A column header the reader cut short (1+ 2+ read, 3+ missed) is extended in steps of one.
-    let hdr = header;
-    if(hdr.length && prices.length>hdr.length && hdr.every((v,i)=>i===0 || v===hdr[i-1]+1)){
-      hdr = hdr.slice(); while(hdr.length<prices.length) hdr.push(hdr[hdr.length-1]+1);
-    }
-    const single = ['none','first','rc','yc'].includes(m);
-    let lines_ = th.length===1 ? [th[0]] : (hdr.length>=prices.length ? hdr.slice(0, prices.length) : null);
-    const assumed = !lines_ && !single;
-    if(!lines_) lines_ = prices.map((_, i)=>i+1);
-    prices.forEach((pr, i)=>rows.push({who:target, market:m, k:single?1:lines_[i], price:pr.dec, priceText:pr.txt, assumed}));
-    // Remember the row, in case its remaining prices arrive on the following lines.
-    last = single ? null : {who:target, market:m, n:prices.length, lines:hdr.length>prices.length ? hdr : null};
-  }
-  ocCheckOrder(rows);
-  ocCheckFixture(rows, unmatched);
-  rows.unmatched = unmatched;
-  return rows;
-}
-// ---- Reading a screenshot by position --------------------------------------------
-// Bookmaker screens are grids. Reading them as lines of text breaks when a cell is
-// empty or two lists sit side by side: prices shift into the wrong column. So the
-// screenshot is read by position, using where the reader found each word:
-//   column (1+, 2+, 1 foul, 2 fouls, Over 0.5 ...): the column header above the price
-//   player: the name to the left of the price on the same row (or on the row above,
-//           for layouts that put the prices under the name)
-//   market: the section caption above, or the column's caption when the header
-//           names markets ("Carded | Sent off")
-// A price beside a name we can't match is listed as unmatched, never given to
-// another player.
-const OC_PRICE_WORD = /^(\d{1,3})\/(\d{1,3})$|^ev(en)?s$|^(\d{1,3}\.\d{1,2})$/i;
-const OC_UNIT = /^(fouls?|shots?|cards?|tackles?|sot)$/i;
-function ocWordPrice(w, prev){
-  const m = OC_PRICE_WORD.exec(w.t.replace(/[,;:|]+$/,''));
-  if(!m) return null;
-  if(m[4] && prev && /^(over|under|o|u)$/i.test(prev.t)) return null; // "Over 1.5" is a line, not a price
-  if(m[1]) return {dec: 1 + (+m[1])/(+m[2]), txt: `${+m[1]}/${+m[2]}`};
-  if(m[4]){ const v = +m[4]; return v>=1.01 && v<=500 ? {dec:v, txt:fractionApprox(v)} : null; }
-  return {dec:2, txt:'evens'};
-}
-// Lines named in a row of words, each with the x-centre of the words that name it.
-function ocWordLines(ws){
-  const out = [];
-  for(let i=0;i<ws.length;i++){
-    const t = ws[i].t.toLowerCase(), nx = ws[i+1] ? ws[i+1].t.toLowerCase() : '', nx2 = ws[i+2] ? ws[i+2].t.toLowerCase() : '';
-    const at = (a, b)=>(ws[a].x0 + ws[b].x1)/2;
-    let m;
-    if((m = /^(\d)\+$/.exec(t))){ out.push({k:+m[1], cx:ws[i].cx}); continue; }
-    if(/^(over|o)$/.test(t) && (m = /^(\d+)\.5$/.exec(nx))){ out.push({k:+m[1]+1, cx:at(i,i+1)}); i++; continue; }
-    if(/^\d$/.test(t) && OC_UNIT.test(nx)){ out.push({k:+t, cx:at(i,i+1)}); i++; continue; }
-    if(/^\d$/.test(t) && nx==='or' && /^more/.test(nx2)){ out.push({k:+t, cx:at(i,i+2)}); i+=2; continue; }
-    if(OC_WORDNUM[t] && ((nx==='or' && /^more/.test(nx2)) || nx==='+')){ out.push({k:OC_WORDNUM[t], cx:at(i, nx==='or'?i+2:i+1)}); i+= nx==='or'?2:1; continue; }
-  }
-  return out;
-}
-// Markets named in a row of words, each with the x-centre where its caption starts.
-function ocWordMarkets(ws){
-  let text = '', starts = [];
-  ws.forEach(w=>{ starts.push(text.length); text += ocNorm(w.t) + ' '; });
-  let work = text;
-  const found = [];
-  for(const k of OC_ORDER){
-    const re = new RegExp(OC_MARKETS[k].re.source, 'g');
-    let mt;
-    while((mt = re.exec(work))){
-      let wi = 0;
-      while(wi+1<starts.length && starts[wi+1]<=mt.index) wi++;
-      found.push({k, cx: ws[wi].cx, at: mt.index});
-      work = work.slice(0, mt.index) + ' '.repeat(mt[0].length) + work.slice(mt.index + mt[0].length);
-      re.lastIndex = mt.index + mt[0].length;
-    }
-  }
-  return found.sort((a,b)=>a.at-b.at).filter((f,i,a)=>i===0 || a[i-1].k!==f.k);
-}
-function ocNearest(list, cx){
-  if(!list || !list.length) return null;
-  let best = list[0];
-  for(const c of list) if(Math.abs(c.cx-cx) < Math.abs(best.cx-cx)) best = c;
-  return best;
-}
-// The column (line) for a price at cx. Beyond the last header column, columns are
-// extrapolated from the header spacing (the reader sometimes misses a header, e.g.
-// reading "3+" as "=").
-function ocColumnLine(cols, cx){
-  if(!cols || !cols.length) return null;
-  const sorted = cols.slice().sort((a,b)=>a.cx-b.cx);
-  const gap = sorted.length>1 ? (sorted[sorted.length-1].cx - sorted[0].cx)/(sorted.length-1) : null;
-  const last = sorted[sorted.length-1], first = sorted[0];
-  if(gap && cx > last.cx + gap/2) return last.k + Math.round((cx-last.cx)/gap);
-  if(gap && cx < first.cx - gap/2) return Math.max(1, first.k - Math.round((first.cx-cx)/gap));
-  return ocNearest(sorted, cx).k;
-}
-// Words (with positions) grouped into rows by vertical position, left to right.
-function ocGroupRows(words){
-  const W = words.map(w=>({t:String(w.text||'').trim(), x0:w.bbox.x0, x1:w.bbox.x1, y0:w.bbox.y0, y1:w.bbox.y1})).filter(w=>w.t);
-  W.forEach(w=>{ w.cx = (w.x0+w.x1)/2; w.cy = (w.y0+w.y1)/2; });
-  const hs = W.map(w=>w.y1-w.y0).sort((a,b)=>a-b), hMed = hs[Math.floor(hs.length/2)] || 10;
-  const lines = [];
-  W.slice().sort((a,b)=>a.cy-b.cy).forEach(w=>{
-    const row = lines.find(r=>Math.abs(r.cy-w.cy) < hMed*0.6);
-    if(row){ row.ws.push(w); row.cy = (row.cy*(row.ws.length-1)+w.cy)/row.ws.length; } else lines.push({cy:w.cy, ws:[w]});
-  });
-  lines.forEach(r=>r.ws.sort((a,b)=>a.x0-b.x0));
-  return {lines, hMed};
-}
-// Second read of the price columns only, allowing just digits, "/" and ".": small
-// fractions like 2/11 are often misread by the first read ("2111", "4m"), and this
-// fixes them. Columns come from the column headers (1+, 2+ ...) or, without headers,
-// from where the prices sit. Returns the words with the price columns replaced.
-async function ocRefinePrices(T, canvas, words){
-  const {lines, hMed} = ocGroupRows(words);
-  const strips = [];
-  lines.forEach((r, i)=>{
-    const hasPrice = r.ws.some((w,j)=>ocWordPrice(w, r.ws[j-1]));
-    const cols = hasPrice ? [] : ocWordLines(r.ws);
-    if(cols.length<2) return; // a caption like "1+ Fouls" is not a row of column headers
-    const next = lines.slice(i+1).find(x=>!x.ws.some((w,j)=>ocWordPrice(w, x.ws[j-1])) && (ocWordLines(x.ws).length || ocWordMarkets(x.ws).length) && !ocFindPlayer(x.ws.map(w=>w.t).join(' '), ocPlayers()));
-    const y0 = r.cy + hMed, y1 = next ? next.cy - hMed : canvas.height;
-    const xs = cols.map(c=>c.cx).sort((a,b)=>a-b);
-    const half = xs.length>1 ? (xs[xs.length-1]-xs[0])/(xs.length-1)/2 : 220;
-    xs.forEach(cx=>strips.push({x0:Math.max(0, cx-half), x1:Math.min(canvas.width, cx+half), y0, y1}));
-  });
-  if(!strips.length){
-    // No column headers: one strip per cluster of prices found by the first read.
-    const px = [];
-    lines.forEach(r=>r.ws.forEach((w,j)=>{ if(ocWordPrice(w, r.ws[j-1])) px.push(w.cx); }));
-    px.sort((a,b)=>a-b).forEach(cx=>{
-      const s = strips.find(st=>Math.abs((st.x0+st.x1)/2-cx)<120);
-      if(!s) strips.push({x0:Math.max(0,cx-150), x1:Math.min(canvas.width,cx+150), y0:0, y1:canvas.height});
-    });
-  }
-  if(!strips.length) return words;
-  const worker = await T.createWorker('eng');
-  await worker.setParameters({ tessedit_char_whitelist:'0123456789/.', tessedit_pageseg_mode:'6' });
-  let out = words.slice();
-  for(const st of strips){
-    if(st.y1-st.y0 < 10 || st.x1-st.x0 < 10) continue;
-    const scale = 1.5, c = document.createElement('canvas');
-    c.width = Math.round((st.x1-st.x0)*scale); c.height = Math.round((st.y1-st.y0)*scale);
-    c.getContext('2d').drawImage(canvas, st.x0, st.y0, st.x1-st.x0, st.y1-st.y0, 0, 0, c.width, c.height);
-    const r = await worker.recognize(c);
-    const fresh = (r.data.words||[]).filter(w=>/\d/.test(w.text)).map(w=>({text:w.text, bbox:{
-      x0:st.x0+w.bbox.x0/scale, x1:st.x0+w.bbox.x1/scale, y0:st.y0+w.bbox.y0/scale, y1:st.y0+w.bbox.y1/scale}}));
-    // Use the second read only where the first read has no valid price at that spot:
-    // a valid first-read price is kept, a misread one ("2111", "4m") is replaced.
-    const isPrice = w=>!!ocWordPrice({t:String(w.text||'').trim()});
-    const overlaps = (a, b)=>{ const cx = (b.bbox.x0+b.bbox.x1)/2, cy = (b.bbox.y0+b.bbox.y1)/2;
-      return cx>=a.bbox.x0-15 && cx<=a.bbox.x1+15 && cy>=a.bbox.y0-15 && cy<=a.bbox.y1+15; };
-    for(const f of fresh){
-      const same = out.filter(w=>overlaps(w, f) || overlaps(f, w));
-      if(same.some(isPrice)) continue;
-      out = out.filter(w=>!(same.includes(w) && !/[a-z]{2,}/i.test(w.text))).concat([f]);
-    }
-  }
-  await worker.terminate();
-  return out;
-}
-function ocParseWords(words, forced){
-  const index = ocPlayers();
-  const rows = [], unmatched = [];
-  const {lines} = ocGroupRows(words);
-  if(!lines.length){ rows.unmatched = unmatched; return rows; }
-  let market = null, colMarkets = null, cols = null, abovePlayer = null, aboveUnknown = null, defaultK = null;
-  // Unmatched players are listed with their prices; other unreadable text is ignored.
-  const unknown = new Map();
-  const noteUnknown = (name, price)=>{ if(!unknown.has(name)) unknown.set(name, []); unknown.get(name).push(price); };
-  const forcedM = forced && forced!=='auto' ? forced : null;
-  // Without column headers (a scrolled screenshot), the price columns are found from
-  // where the prices sit: the leftmost column is 1+, the next 2+ and so on (flagged as assumed).
-  const pxs = [];
-  lines.forEach(r=>r.ws.forEach((w,i)=>{ if(ocWordPrice(w, r.ws[i-1])) pxs.push(w.cx); }));
-  const hMed = ocGroupRows(words).hMed, priceCols = [];
-  pxs.sort((a,b)=>a-b).forEach(cx=>{
-    const c = priceCols[priceCols.length-1];
-    if(c && cx - c.max < hMed*3){ c.max = cx; c.n++; c.sum += cx; } else priceCols.push({max:cx, n:1, sum:cx});
-  });
-  const colCentres = priceCols.filter(c=>c.n>=2).map(c=>c.sum/c.n);
-  for(const r of lines){
-    const ws = r.ws;
-    const prices = [];
-    ws.forEach((w,i)=>{ const p = ocWordPrice(w, ws[i-1]); if(p){ w.price = p; prices.push(w); } });
-    const lns = ocWordLines(ws), mks = ocWordMarkets(ws);
-    const text = ws.map(w=>w.t).join(' ');
-    if(!prices.length){
-      const who = ocFindPlayer(text, index);
-      if(who){ abovePlayer = who; aboveUnknown = null; continue; }
-      if(lns.length>=2 || (lns.length===1 && !mks.length)){ cols = lns; if(mks.length===1 && !colMarkets) market = mks[0].k; defaultK = null; abovePlayer = null; continue; }
-      if(lns.length===1 && mks.length){ market = mks[0].k; colMarkets = null; cols = null; defaultK = lns[0].k; abovePlayer = null; continue; }
-      if(mks.length){
-        if(mks.length>1){ colMarkets = mks; market = null; } else { market = mks[0].k; colMarkets = null; }
-        cols = null; defaultK = null; abovePlayer = null; aboveUnknown = null; continue;
-      }
-      if(ocHasName(text)){ abovePlayer = null; aboveUnknown = text.replace(/^[^A-Za-z]+/, ''); }
-      continue;
-    }
-    // A row with prices: walk left to right; the name before each price is its player.
-    let seg = [], rowPlayer = null, rowUnmatched = null, nInRow = 0;
-    const inlineLines = cols ? [] : lns;
-    for(const w of ws){
-      if(!w.price){ seg.push(w.t); continue; }
-      const segText = seg.join(' ');
-      seg = [];
-      if(ocHasName(segText)){
-        const who = ocFindPlayer(segText, index);
-        if(who){ rowPlayer = who; rowUnmatched = null; nInRow = 0; }
-        else { rowPlayer = null; rowUnmatched = segText.replace(/^[^A-Za-z]+/, ''); noteUnknown(rowUnmatched, w.price.txt); continue; }
-      } else if(rowUnmatched){ noteUnknown(rowUnmatched, w.price.txt); continue; }
-      const who = rowPlayer || abovePlayer;
-      if(!who){ if(aboveUnknown) noteUnknown(aboveUnknown, w.price.txt); continue; }
-      const inlineM = ocMarketsIn(segText)[0];
-      const colM = colMarkets ? ocNearest(colMarkets, w.cx).k : null;
-      const m = forcedM || inlineM || colM || market;
-      const single = ['none','first','rc','yc'].includes(m);
-      let k = 1, assumed = false;
-      if(!single){
-        const own = ocWordLines(segText.split(/\s+/).map((t,i)=>({t, x0:i, x1:i, cx:i})));
-        if(own.length===1) k = own[0].k;
-        else if(cols) k = ocColumnLine(cols, w.cx);
-        else if(defaultK) k = defaultK;
-        else if(inlineLines.length===prices.length) k = inlineLines[prices.indexOf(w)].k;
-        else if(colCentres.length>1){ k = colCentres.indexOf(ocNearest(colCentres.map(cx=>({cx})), w.cx).cx) + 1; assumed = true; }
-        else { k = nInRow+1; assumed = true; }
-      }
-      nInRow++;
-      // No caption and no market picked: kept, with the market left for the user to pick.
-      rows.push({who, market:m || null, k, price:w.price.dec, priceText:w.price.txt, assumed});
-    }
-  }
-  unknown.forEach((prices, name)=>{ if(!OC_DATE_JUNK.test(name)) unmatched.push(`${name}: ${prices.join(', ')}`); });
-  ocCheckOrder(rows);
-  ocCheckFixture(rows, unmatched);
-  rows.unmatched = unmatched;
-  return rows;
-}
-// A screenshot is normally one match. When nearly all of it is one match, a player
-// from another fixture is a name matched to the wrong player ("Rayan Ait Nouri" to
-// Bournemouth's Rayan): moved to the unmatched list. Otherwise such rows are flagged.
-function ocCheckFixture(rows, unmatched){
-  const n = new Map();
-  rows.forEach(r=>n.set(r.who.hit.fixture, (n.get(r.who.hit.fixture)||0)+1));
-  const [top, c] = [...n.entries()].sort((a,b)=>b[1]-a[1])[0] || [];
-  if(!top || c < rows.length*0.6) return;
-  const moved = new Map();
-  for(let i=rows.length-1;i>=0;i--){
-    const r = rows[i];
-    if(r.who.hit.fixture===top) continue;
-    if(c>=4 && c>=rows.length*0.8){
-      const key = `${r.who.hit.p.name} (${r.who.hit.fixture}, not this match: probably a misread or missing name)`;
-      moved.set(key, [r.priceText, ...(moved.get(key)||[])]);
-      rows.splice(i, 1);
-    } else r.note = (r.note ? r.note+'; ' : '') + `a different match from the rest of the screenshot (${top}): check the name`;
-  }
-  moved.forEach((prices, key)=>unmatched.push(`${key}: ${prices.join(', ')}`));
-}
-// Kick-off times and dates in the page header ("24 Oct 12:30") are not players.
-const OC_DATE_JUNK = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b|\d+:\d+/i;
-// In a count market the odds lengthen from 1+ to 2+ to 3+. A price that breaks this
-// was misread: most often a leading 1 is lost ("11/4" read as "1/4"). That case is
-// corrected and flagged; anything else is flagged for checking.
-function ocCheckOrder(rows){
-  const groups = new Map();
-  rows.forEach(r=>{
-    if(r.market && !OC_COUNT.includes(r.market)) return;
-    const key = r.who.hit.p.name + '|' + r.market;
-    if(!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(r);
-  });
-  groups.forEach(g=>{
-    g.sort((a,b)=>a.k-b.k);
-    for(let i=1;i<g.length;i++){
-      const a = g[i-1], b = g[i];
-      if(b.k===a.k || b.price>a.price) continue;
-      const m = /^1\/(\d+)$/.exec(b.priceText||'');
-      const fixed = m ? parseOddsInput('11/'+m[1]) : null;
-      if(fixed && fixed>a.price && (!g[i+1] || g[i+1].k===b.k || fixed<g[i+1].price)){
-        b.note = `read as ${b.priceText}, taken as 11/${m[1]} (odds must lengthen from ${a.k}+ to ${b.k}+): check`;
-        b.price = fixed; b.priceText = '11/'+m[1];
-      } else b.note = `shorter than the ${a.k}+ price, so probably misread: check`;
-    }
-  });
-}
-
-// Model chance for a parsed row. First card: each player's booking rate against the
-// match's expected total cards, as a race between independent card rates:
-// P(first) = own rate / total x (1 - e^-total). An approximation, not backtested.
-function ocModelChance(r){
-  const hit = r.who.hit, exp = hit.p.exp;
-  if(!exp || !r.market || r.market==='none') return {prob:null};
-  const disp = MODEL_INFO.players && MODEL_INFO.players.dispersion ? MODEL_INFO.players.dispersion[r.market] : null;
-  if(r.market==='first'){
-    const cards = hit.m.model.stats && hit.m.model.stats.cards;
-    if(!cards) return {prob:null};
-    const total = Math.max(cards.h + cards.a, exp.yc);
-    return {prob: exp.yc/total*(1-Math.exp(-total)), approx:true};
-  }
-  if(exp[r.market]==null) return {prob:null};
-  return {prob: ocAtLeast(exp[r.market], r.k, disp)};
-}
-// Markets the user can pick, per screenshot or per row. Lines (1+, 2+...) apply to
-// the count markets; bookings, first card and red card are yes/no.
-const OC_PICK = [['sh','Shots'],['sot','Shots on target'],['fc','Fouls committed'],['fw','Fouls won'],['yc','Yellow card (booked)'],['first','First card'],['rc','Red card (sent off)'],['none','Not a player market we price']];
-const OC_COUNT = ['sh','sot','fc','fw'];
-function ocRowHTML(r, i){
-  const mc = ocModelChance(r), prob = mc.prob;
-  const edge = prob==null ? null : prob*r.price - 1;
-  const flags = [r.note || '', r.assumed ? 'line assumed' : '', r.who.ambiguous ? 'name matched more than one player' : '', mc.approx ? 'approximation, not backtested' : '',
-    r.who.hit.extra ? (r.who.hit.status==='confirmed' ? 'on the bench: chance assumes he starts' : 'not in our probable XI: chance assumes he starts') : (r.who.hit.status==='probable' ? 'probable XI' : '')].filter(Boolean).join('; ');
-  const marketSel = `<select class="oc-market sim-select"${r.market?'':' style="border:2px solid var(--brick);"'}>${r.market?'':'<option value="" selected>Pick the market</option>'}${OC_PICK.map(([k,l])=>`<option value="${k}"${k===r.market?' selected':''}>${l}</option>`).join('')}</select>`;
-  const lineSel = !r.market || OC_COUNT.includes(r.market) ? `<select class="oc-line sim-select">${[1,2,3,4,5].map(k=>`<option value="${k}"${k===r.k?' selected':''}>${k}+</option>`).join('')}</select>` : '';
-  return {edge, html:`<div class="oc-row" data-oc="${i}">
-    <div class="oc-name">${escapeHTML(r.who.hit.p.name)} <span class="fx-meta">${escapeHTML(r.who.hit.fixture)}${flags?' · '+escapeHTML(flags):''}</span></div>
-    <div class="oc-controls">${marketSel}${lineSel}
-      <span>Odds</span><input type="text" class="oc-price" value="${escapeHTML(r.priceText || fractionApprox(r.price))}"></div>
-    <div class="oc-figs">Bookmaker ${(100/r.price).toFixed(0)}% · Model ${prob==null?'—':(prob*100).toFixed(prob<0.1?1:0)+'%'} · Fair ${prob>0 ? fractionApprox(1/prob) : '—'} ·
-      <b style="color:${edge>0?'var(--green)':'var(--brick)'}">Edge ${edge==null?'—':(edge>0?'+':'')+(edge*100).toFixed(1)+'%'}</b></div>
-  </div>`};
-}
-let ocRows = [], ocWordsCache = null;
-function ocRender(){
-  const box = document.getElementById('ocResults');
-  if(!ocRows.length){
-    const um = ocRows.unmatched && ocRows.unmatched.length ? `<div class="tr-note">Lines read but not matched to a player: ${ocRows.unmatched.map(l=>escapeHTML(l)).join(' · ')}</div>` : '';
-    box.innerHTML = `<div class="empty-note">No player prices recognised. The players must be in this round's fixtures with a confirmed or probable XI. Try a sharper crop, or paste the text.</div>${um}`;
-    return;
-  }
-  const built = ocRows.map((r,i)=>({i, ...ocRowHTML(r,i)})).sort((a,b)=>(b.edge??-9)-(a.edge??-9));
-  const noMarket = ocRows.filter(r=>!r.market).length;
-  box.innerHTML = `${noMarket ? `<div class="oc-alert"><b>Which market is this?</b> The screenshot doesn't show the market name (the caption is scrolled off), so ${noMarket} price${noMarket>1?'s are':' is'} waiting. Pick it in <b>What's in this screenshot?</b> above (for example Fouls committed) and every row updates.${ocRows.some(r=>r.assumed)?' The columns are taken as 1+, 2+, 3+ from left to right.':''}</div>` : ''}<div>${built.map(b=>b.html).join('')}</div>
-    ${ocRows.unmatched && ocRows.unmatched.length ? `<div class="tr-note" style="margin-top:8px;"><b>Couldn't match these lines</b> (player not in our list for this round, or the name was misread): ${ocRows.unmatched.map(l=>escapeHTML(l)).join(' · ')}</div>` : ''}
-    <div class="tr-note" style="margin-top:6px;">Biggest disagreement first. Bookmaker: the chance its odds imply (including its margin). Model: our model's chance. Fair odds: the odds our model's chance is worth. Edge = model chance x decimal odds - 1. Change a row's market or line if it was read wrong. Check each price against your screenshot: the reader can misread. The player model is calibrated on past seasons but has not been tested against bookmaker prices, so a positive edge is something to check, not a sure thing.</div>`;
-  const rowOf = e => ocRows[+e.target.closest('.oc-row').getAttribute('data-oc')];
-  box.querySelectorAll('.oc-price').forEach(inp=>inp.addEventListener('change', e=>{
-    const v = parseOddsInput(e.target.value), r = rowOf(e);
-    if(v){ r.price = v; r.priceText = e.target.value.trim(); ocRender(); } else { e.target.style.borderColor = 'var(--brick)'; }
-  }));
-  box.querySelectorAll('.oc-market').forEach(sel=>sel.addEventListener('change', e=>{
-    const r = rowOf(e), was = r.market; r.market = e.target.value;
-    if(!OC_COUNT.includes(r.market)) r.k = 1;
-    // Picking the market for one unlabelled row fills in the rest of the unlabelled rows.
-    if(!was) ocRows.forEach(x=>{ if(!x.market){ x.market = r.market; if(!OC_COUNT.includes(x.market)) x.k = 1; } });
-    ocRender();
-  }));
-  box.querySelectorAll('.oc-line').forEach(sel=>sel.addEventListener('change', e=>{ const r = rowOf(e); r.k = +e.target.value; r.assumed = false; ocRender(); }));
-}
-function ocLoadTesseract(){
-  return new Promise((resolve, reject)=>{
-    if(window.Tesseract) return resolve(window.Tesseract);
-    const s = document.createElement('script');
-    s.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
-    s.onload = ()=>resolve(window.Tesseract);
-    s.onerror = ()=>reject(new Error('Could not load the text reader (check the connection).'));
-    document.head.appendChild(s);
-  });
-}
-// Enlarge, greyscale and (for dark-mode screenshots) invert: the reader is far more
-// accurate on dark text on a light background.
-function ocPrepare(file){
-  return new Promise((resolve, reject)=>{
-    const img = new Image();
-    img.onload = ()=>{
-      const scale = img.width < 1400 ? 2 : 1;
-      const c = document.createElement('canvas');
-      c.width = img.width*scale; c.height = img.height*scale;
-      const g = c.getContext('2d');
-      g.drawImage(img, 0, 0, c.width, c.height);
-      const d = g.getImageData(0, 0, c.width, c.height), px = d.data;
-      let sum = 0;
-      for(let i=0;i<px.length;i+=4) sum += 0.299*px[i]+0.587*px[i+1]+0.114*px[i+2];
-      const dark = sum/(px.length/4) < 110;
-      for(let i=0;i<px.length;i+=4){
-        let y = 0.299*px[i]+0.587*px[i+1]+0.114*px[i+2];
-        if(dark) y = 255-y;
-        px[i]=px[i+1]=px[i+2]=y;
-      }
-      g.putImageData(d, 0, 0);
-      URL.revokeObjectURL(img.src);
-      resolve(c);
-    };
-    img.onerror = ()=>reject(new Error('Could not open that image.'));
-    img.src = URL.createObjectURL(file);
-  });
-}
-async function ocFromImage(file){
-  const status = document.getElementById('ocStatus');
-  try{
-    status.textContent = 'Loading the text reader…';
-    const T = await ocLoadTesseract();
-    const canvas = await ocPrepare(file);
-    const res = await T.recognize(canvas, 'eng', {logger: m=>{ if(m.status==='recognizing text') status.textContent = `Reading the screenshot… ${Math.round(m.progress*100)}%`; }});
-    document.getElementById('ocText').value = res.data.text;
-    // Read by position when the reader gives word positions; the text box keeps the
-    // plain text for correcting and re-analysing.
-    const forced = document.getElementById('ocForced').value;
-    ocWordsCache = res.data.words && res.data.words.length ? res.data.words : null;
-    if(ocWordsCache){
-      status.textContent = 'Checking the prices again…';
-      ocWordsCache = await ocRefinePrices(T, canvas, ocWordsCache);
-    }
-    ocRows = ocWordsCache ? ocParseWords(ocWordsCache, forced) : ocParse(res.data.text, forced);
-    status.textContent = `Read ${res.data.text.split('\n').filter(Boolean).length} lines; matched ${ocRows.length} prices. The text read is in the box above, so you can correct it and press Analyse again.`;
-    ocRender();
-  }catch(e){
-    status.textContent = e.message || String(e);
-  }
-}
-function renderOddsCheck(){
-  const container = document.getElementById('oddsCheck');
-  if(!container || container.childElementCount) return;
-  const n = ocPlayers().length;
-  container.innerHTML = `
-    <details class="track-record" open>
-      <summary>📷 Check bookmaker odds from a screenshot — player shots, fouls, cards <span class="fx-meta">(reader v5)</span></summary>
-      <div class="tr-body">
-        <div class="tr-note">SoT = shots on target; fouls = fouls committed; fouled = fouls won. Upload a screenshot of a bookmaker's player markets (shots, shots on target, fouls committed, fouls won, to be booked/carded, first card, red card/sent off), or paste the text. The section captions decide the market, so keep them in the screenshot. It is read on your device, matched to the ${n} players our model has priced this round, and each price is compared with the model. Works best with one market per screenshot, cropped to the list.</div>
-        <label class="oc-field">What's in this screenshot?
-          <select id="ocForced" class="sim-select">
-            <option value="auto">Read the section captions (auto)</option>
-            ${OC_PICK.filter(([k])=>k!=='none').map(([k,l])=>`<option value="${k}">${l}</option>`).join('')}
-          </select>
-        </label>
-        <label for="ocFile" class="upload-btn">📷 Upload screenshot</label>
-        <input type="file" accept="image/*" id="ocFile" style="position:absolute;width:1px;height:1px;opacity:0;">
-        <textarea id="ocText" rows="4" placeholder="…or paste the odds text, e.g.&#10;Shots on target 1+ 2+&#10;Bukayo Saka 6/4 9/2" class="oc-text"></textarea>
-        <button type="button" id="ocAnalyse" class="btn-grade" style="margin-top:6px;">Analyse</button>
-        <div id="ocStatus" class="tr-note" style="margin-top:6px;"></div>
-        <div id="ocResults"></div>
-      </div>
-    </details>`;
-  container.querySelector('#ocFile').addEventListener('change', e=>{ if(e.target.files[0]) ocFromImage(e.target.files[0]); });
-  // Changing the market re-reads the text already there.
-  container.querySelector('#ocForced').addEventListener('change', e=>{
-    if(ocWordsCache){ ocRows = ocParseWords(ocWordsCache, e.target.value); ocRender(); return; }
-    if(document.getElementById('ocText').value.trim()) container.querySelector('#ocAnalyse').click();
-  });
-  // Editing the text means it is read as text from now on.
-  container.querySelector('#ocText').addEventListener('input', ()=>{ ocWordsCache = null; });
-  container.querySelector('#ocAnalyse').addEventListener('click', ()=>{
-    // After an upload, Analyse reads the screenshot by position (columns); typed or
-    // edited text is read as text.
-    const forced = document.getElementById('ocForced').value;
-    ocRows = ocWordsCache ? ocParseWords(ocWordsCache, forced) : ocParse(document.getElementById('ocText').value, forced);
-    document.getElementById('ocStatus').textContent = `Matched ${ocRows.length} prices.`;
-    ocRender();
-  });
 }
 
 // Season simulator: the rest of each league season played many times with our
@@ -2428,11 +1821,21 @@ function renderTrackRecord(){
   `;
 }
 
+// A game drops out of the predictions once it has finished: a final score is on
+// file, or it kicked off more than 2.5 hours ago. Finished games are graded in
+// "Results so far" instead.
+function isFinished(m){
+  if(typeof SEED_RESULTS!=='undefined' && SEED_RESULTS[m.id]) return true;
+  const t = Date.parse(m.kickoff);
+  return !isNaN(t) && Date.now() - t > 2.5*3600e3;
+}
 function renderLeagues(){
   const container = document.getElementById('leagues');
   container.innerHTML='';
   LEAGUE_ORDER.forEach(league=>{
-    const list = sortedList(matches.filter(m=>m.league===league));
+    const all = matches.filter(m=>m.league===league);
+    const list = sortedList(all.filter(m=>!isFinished(m)));
+    const played = all.length - list.length;
     const coupon = document.createElement('details');
     coupon.className='coupon';
     coupon.open = true;
@@ -2454,6 +1857,7 @@ function renderLeagues(){
       note.className='empty-note';
       note.textContent = LEAGUES_WITH_NO_SEED.includes(league)
         ? "No fixtures loaded for this competition yet — ask for this league's games to be researched and added, and they'll be filled in the same way as the ones above."
+        : played ? `All ${played} game${played!==1?'s':''} in this window have been played: see "Results so far" for how our predictions did.`
         : 'No fixtures loaded for this window — check back closer to the next round, or add one below.';
       body.appendChild(note);
     }
