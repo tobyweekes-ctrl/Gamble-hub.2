@@ -1737,7 +1737,7 @@ function renderOddsCheck(){
   const n = ocPlayers().length;
   container.innerHTML = `
     <details class="track-record" open>
-      <summary>📷 Check bookmaker odds from a screenshot — player shots, fouls, cards</summary>
+      <summary>📷 Check bookmaker odds from a screenshot — player shots, fouls, cards <span style="font-weight:400;font-size:11px;opacity:.6;">(reader v4)</span></summary>
       <div class="tr-body">
         <div class="tr-note">SoT = shots on target; fouls = fouls committed; fouled = fouls won. Upload a screenshot of a bookmaker's player markets (shots, shots on target, fouls committed, fouls won, to be booked/carded, first card, red card/sent off), or paste the text. The section captions decide the market, so keep them in the screenshot. It is read on your device, matched to the ${n} players our model has priced this round, and each price is compared with the model. Works best with one market per screenshot, cropped to the list.</div>
         <label style="display:block;font-size:13px;margin-top:6px;">What's in this screenshot?
@@ -1763,7 +1763,10 @@ function renderOddsCheck(){
   // Editing the text means it is read as text from now on.
   container.querySelector('#ocText').addEventListener('input', ()=>{ ocWordsCache = null; });
   container.querySelector('#ocAnalyse').addEventListener('click', ()=>{
-    ocRows = ocParse(document.getElementById('ocText').value, document.getElementById('ocForced').value);
+    // After an upload, Analyse reads the screenshot by position (columns); typed or
+    // edited text is read as text.
+    const forced = document.getElementById('ocForced').value;
+    ocRows = ocWordsCache ? ocParseWords(ocWordsCache, forced) : ocParse(document.getElementById('ocText').value, forced);
     document.getElementById('ocStatus').textContent = `Matched ${ocRows.length} prices.`;
     ocRender();
   });
