@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-10-21-weekly",
- "dataUpdated": "Thu 22 Oct 19:03",
+ "dataUpdated": "Thu 22 Oct 19:17",
  "notes": [
   "Thu 22 - Thu 29 Oct 2026. Premier League and Championship in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "No Champions League games in this window (next league-phase matchday is in November).",
@@ -8802,22 +8802,22 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Juventus",
-     "formation": "3-4-1-2",
+     "formation": "3-5-2",
      "xi": [
-      "Federico Gatti",
-      "Weston McKennie",
-      "Andrea Cambiaso",
       "Guglielmo Vicario",
-      "Douglas Luiz",
-      "Nick Woltemade",
-      "Zeki Çelik",
-      "Teun Koopmeiners",
       "Bremer",
+      "Lloyd Kelly",
+      "Federico Gatti",
+      "Teun Koopmeiners",
+      "Weston McKennie",
+      "Douglas Luiz",
+      "Andrea Cambiaso",
+      "Zeki Çelik",
       "Randal Kolo Muani",
-      "Lloyd Kelly"
+      "Nick Woltemade"
      ],
      "missing": [
       {
@@ -8843,59 +8843,59 @@
      ],
      "starters": [
       {
-       "id": "323147",
-       "name": "Federico Gatti",
-       "pos": "SUB"
-      },
-      {
-       "id": "256715",
-       "name": "Weston McKennie",
-       "pos": "SUB"
-      },
-      {
-       "id": "308029",
-       "name": "Andrea Cambiaso",
-       "pos": "SUB"
-      },
-      {
        "id": "204082",
        "name": "Guglielmo Vicario",
-       "pos": "SUB"
-      },
-      {
-       "id": "320074",
-       "name": "Douglas Luiz",
-       "pos": "SUB"
-      },
-      {
-       "id": "298349",
-       "name": "Nick Woltemade",
-       "pos": "SUB"
-      },
-      {
-       "id": "271873",
-       "name": "Zeki Çelik",
-       "pos": "SUB"
-      },
-      {
-       "id": "258968",
-       "name": "Teun Koopmeiners",
-       "pos": "SUB"
+       "pos": "G"
       },
       {
        "id": "258307",
        "name": "Bremer",
-       "pos": "SUB"
-      },
-      {
-       "id": "252971",
-       "name": "Randal Kolo Muani",
-       "pos": "SUB"
+       "pos": "CD"
       },
       {
        "id": "243787",
        "name": "Lloyd Kelly",
-       "pos": "SUB"
+       "pos": "CD-L"
+      },
+      {
+       "id": "323147",
+       "name": "Federico Gatti",
+       "pos": "CD-R"
+      },
+      {
+       "id": "258968",
+       "name": "Teun Koopmeiners",
+       "pos": "CM-L"
+      },
+      {
+       "id": "256715",
+       "name": "Weston McKennie",
+       "pos": "CM-R"
+      },
+      {
+       "id": "320074",
+       "name": "Douglas Luiz",
+       "pos": "AM"
+      },
+      {
+       "id": "308029",
+       "name": "Andrea Cambiaso",
+       "pos": "LM"
+      },
+      {
+       "id": "271873",
+       "name": "Zeki Çelik",
+       "pos": "RM"
+      },
+      {
+       "id": "252971",
+       "name": "Randal Kolo Muani",
+       "pos": "CF-L"
+      },
+      {
+       "id": "298349",
+       "name": "Nick Woltemade",
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -8952,7 +8952,7 @@
      ],
      "reg": 0.648,
      "att": null,
-     "backupKeeper": null,
+     "backupKeeper": false,
      "history": 8,
      "changes": {
       "n": 5,
@@ -8964,11 +8964,11 @@
        "González"
       ],
       "in": [
+       "Kelly",
        "Gatti",
-       "Cambiaso",
-       "Woltemade",
        "Koopmeiners",
-       "Kelly"
+       "Cambiaso",
+       "Woltemade"
       ]
      }
     },
@@ -8979,11 +8979,11 @@
       "Brice Samba",
       "Charlie Cresswell",
       "Anthony Rouault",
-      "Bryan Reynolds",
       "Abdelhamid Aït Boudlal",
       "Mahamadou Nagida",
-      "Mahdi Camara",
+      "Bryan Reynolds",
       "Valentin Rongier",
+      "Mahdi Camara",
       "Adrien Thomasson",
       "Mousa Al-Tamari",
       "Boulaye Dia"
@@ -9015,52 +9015,52 @@
       {
        "id": "307713",
        "name": "Charlie Cresswell",
-       "pos": "D"
+       "pos": "CD"
       },
       {
        "id": "291614",
        "name": "Anthony Rouault",
-       "pos": "D"
-      },
-      {
-       "id": "250758",
-       "name": "Bryan Reynolds",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
        "id": "376339",
        "name": "Abdelhamid Aït Boudlal",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
        "id": "372260",
        "name": "Mahamadou Nagida",
-       "pos": "D"
+       "pos": "LB"
       },
       {
-       "id": "268966",
-       "name": "Mahdi Camara",
-       "pos": "M"
+       "id": "250758",
+       "name": "Bryan Reynolds",
+       "pos": "RB"
       },
       {
        "id": "207136",
        "name": "Valentin Rongier",
-       "pos": "M"
+       "pos": "CM"
+      },
+      {
+       "id": "268966",
+       "name": "Mahdi Camara",
+       "pos": "CM-L"
       },
       {
        "id": "173266",
        "name": "Adrien Thomasson",
-       "pos": "M"
+       "pos": "CM-R"
       },
       {
        "id": "257489",
        "name": "Mousa Al-Tamari",
-       "pos": "F"
+       "pos": "CF-L"
       },
       {
        "id": "282381",
        "name": "Boulaye Dia",
-       "pos": "F"
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -9142,8 +9142,8 @@
       "in": [
        "Boudlal",
        "Nagida",
-       "Camara",
        "Rongier",
+       "Camara",
        "Al-Tamari",
        "Dia"
       ]
@@ -9165,7 +9165,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Ferencvaros",
      "formation": "4-2-3-1",
@@ -9523,7 +9523,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Union St.-Gilloise",
      "formation": "3-1-4-2",
@@ -9841,7 +9841,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Dinamo Zagreb",
      "formation": "4-1-4-1",
@@ -10170,7 +10170,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "SK Sturm Graz",
      "formation": "3-4-1-2",
@@ -10519,7 +10519,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Lech Poznan",
      "formation": "4-2-3-1",
@@ -10880,7 +10880,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "OFI Crete",
      "formation": "3-4-3",
@@ -11234,7 +11234,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Ararat-Armenia",
      "formation": "4-2-3-1",
@@ -11589,7 +11589,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Olympiacos",
      "formation": "4-2-3-1",
@@ -11956,7 +11956,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Viktoria Plzen",
      "formation": "4-1-2-1-2",
@@ -12310,7 +12310,347 @@
     "away": "Celta",
     "awayCountry": "ESP"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:17:20.473Z",
+    "home": {
+     "team": "Celtic",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Sam Johnstone",
+      "Liam Scales",
+      "Dane Murray",
+      "Kieran Tierney",
+      "Colby Donovan",
+      "Benjamin Nygren",
+      "Mika Baur",
+      "Callum McGregor",
+      "Camilo Durán",
+      "Callum Osmand",
+      "Haissem Hassan"
+     ],
+     "missing": [
+      {
+       "name": "Viljami Sinisalo",
+       "started": "6/8"
+      },
+      {
+       "name": "Auston Trusty",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "162338",
+       "name": "Sam Johnstone",
+       "pos": "G"
+      },
+      {
+       "id": "288959",
+       "name": "Liam Scales",
+       "pos": "CD-L"
+      },
+      {
+       "id": "291504",
+       "name": "Dane Murray",
+       "pos": "CD-R"
+      },
+      {
+       "id": "214794",
+       "name": "Kieran Tierney",
+       "pos": "LB"
+      },
+      {
+       "id": "387200",
+       "name": "Colby Donovan",
+       "pos": "RB"
+      },
+      {
+       "id": "274522",
+       "name": "Benjamin Nygren",
+       "pos": "AM"
+      },
+      {
+       "id": "367926",
+       "name": "Mika Baur",
+       "pos": "LM"
+      },
+      {
+       "id": "84049",
+       "name": "Callum McGregor",
+       "pos": "RM"
+      },
+      {
+       "id": "367591",
+       "name": "Camilo Durán",
+       "pos": "F"
+      },
+      {
+       "id": "365343",
+       "name": "Callum Osmand",
+       "pos": "AM-L"
+      },
+      {
+       "id": "276440",
+       "name": "Haissem Hassan",
+       "pos": "AM-R"
+      }
+     ],
+     "bench": [
+      {
+       "id": "307098",
+       "name": "Viljami Sinisalo",
+       "pos": "SUB"
+      },
+      {
+       "id": "303702",
+       "name": "Sebastian Tounekti",
+       "pos": "SUB"
+      },
+      {
+       "id": "141303",
+       "name": "James Forrest",
+       "pos": "SUB"
+      },
+      {
+       "id": "408331",
+       "name": "Joseph Haney",
+       "pos": "SUB"
+      },
+      {
+       "id": "145392",
+       "name": "Alex Oxlade-Chamberlain",
+       "pos": "SUB"
+      },
+      {
+       "id": "297751",
+       "name": "Oliver Sørensen",
+       "pos": "SUB"
+      },
+      {
+       "id": "418762",
+       "name": "Liam Kennedy",
+       "pos": "SUB"
+      },
+      {
+       "id": "238878",
+       "name": "Jordan Lotomba",
+       "pos": "SUB"
+      },
+      {
+       "id": "224305",
+       "name": "Anthony Ralston",
+       "pos": "SUB"
+      },
+      {
+       "id": "272624",
+       "name": "Kasper Høgh",
+       "pos": "SUB"
+      },
+      {
+       "id": "259208",
+       "name": "Luke McCowan",
+       "pos": "SUB"
+      },
+      {
+       "id": "387202",
+       "name": "Sean Mcardle",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.896,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Sinisalo"
+      ],
+      "in": [
+       "Johnstone"
+      ]
+     }
+    },
+    "away": {
+     "team": "Celta Vigo",
+     "formation": "3-4-3",
+     "xi": [
+      "Andrei Radu",
+      "Marcos Alonso",
+      "Sebastián Cáceres",
+      "Javi Rodríguez",
+      "Aleix Febas",
+      "Hugo Burcio",
+      "Sergio Carreira",
+      "Javi Rueda",
+      "Iago Aspas",
+      "Hugo Álvarez",
+      "Ferran Jutglà"
+     ],
+     "missing": [
+      {
+       "name": "Yoel Lago",
+       "started": "7/8"
+      },
+      {
+       "name": "Ilaix Moriba",
+       "started": "7/8"
+      },
+      {
+       "name": "Miguel Román",
+       "started": "5/8"
+      },
+      {
+       "name": "Williot Swedberg",
+       "started": "4/8"
+      },
+      {
+       "name": "Álvaro Núñez",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "144720",
+       "name": "Andrei Radu",
+       "pos": "G"
+      },
+      {
+       "id": "146127",
+       "name": "Marcos Alonso",
+       "pos": "D"
+      },
+      {
+       "id": "285756",
+       "name": "Sebastián Cáceres",
+       "pos": "D"
+      },
+      {
+       "id": "376147",
+       "name": "Javi Rodríguez",
+       "pos": "D"
+      },
+      {
+       "id": "240235",
+       "name": "Aleix Febas",
+       "pos": "M"
+      },
+      {
+       "id": "414293",
+       "name": "Hugo Burcio",
+       "pos": "M"
+      },
+      {
+       "id": "298343",
+       "name": "Sergio Carreira",
+       "pos": "M"
+      },
+      {
+       "id": "331586",
+       "name": "Javi Rueda",
+       "pos": "M"
+      },
+      {
+       "id": "92800",
+       "name": "Iago Aspas",
+       "pos": "F"
+      },
+      {
+       "id": "188391",
+       "name": "Hugo Álvarez",
+       "pos": "F"
+      },
+      {
+       "id": "279904",
+       "name": "Ferran Jutglà",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "138448",
+       "name": "Pablo Durán",
+       "pos": "SUB"
+      },
+      {
+       "id": "322652",
+       "name": "Williot Swedberg",
+       "pos": "SUB"
+      },
+      {
+       "id": "304592",
+       "name": "Couhaib Driouech",
+       "pos": "SUB"
+      },
+      {
+       "id": "21990",
+       "name": "Abdoulaye Faye",
+       "pos": "SUB"
+      },
+      {
+       "id": "415036",
+       "name": "Ángel Arcos",
+       "pos": "SUB"
+      },
+      {
+       "id": "414292",
+       "name": "Andrés Antañón",
+       "pos": "SUB"
+      },
+      {
+       "id": "274272",
+       "name": "Altay Bayindir",
+       "pos": "SUB"
+      },
+      {
+       "id": "324811",
+       "name": "Hugo Gonzalez",
+       "pos": "SUB"
+      },
+      {
+       "id": "231838",
+       "name": "Javi Galán",
+       "pos": "SUB"
+      },
+      {
+       "id": "3100792",
+       "name": "Frank Germain Jonathan Miller",
+       "pos": "SUB"
+      },
+      {
+       "id": "384643",
+       "name": "Yoel Lago",
+       "pos": "SUB"
+      },
+      {
+       "id": "297829",
+       "name": "Ilaix Moriba",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.746,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Lago",
+       "Moriba",
+       "Swedberg",
+       "Driouech"
+      ],
+      "in": [
+       "Alonso",
+       "Febas",
+       "Rueda",
+       "Aspas"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -12326,7 +12666,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "AFC Bournemouth",
      "formation": "4-4-2",
@@ -12682,7 +13022,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "NK Celje",
      "formation": "4-3-3",
@@ -13042,7 +13382,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Jagiellonia Bialystok",
      "formation": "4-3-3",
@@ -13398,7 +13738,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Omonia Nicosia",
      "formation": "4-4-2",
@@ -13772,7 +14112,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "TSG Hoffenheim",
      "formation": "4-4-2",
@@ -14149,7 +14489,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Besiktas",
      "formation": "4-1-4-1",
@@ -14530,7 +14870,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Lillestrom",
      "formation": "4-3-3",
@@ -14890,7 +15230,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Red Star Belgrade",
      "formation": "3-2-4-1",
@@ -15267,7 +15607,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Pafos",
      "formation": "4-3-3",
@@ -15588,7 +15928,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Getafe",
      "formation": "4-4-2",
@@ -15937,7 +16277,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Trabzonspor",
      "formation": "4-3-3",
@@ -16311,7 +16651,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Jablonec",
      "formation": "4-2-3-1",
@@ -16671,7 +17011,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "FC Nordsjælland",
      "formation": "3-4-3",
@@ -16999,7 +17339,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Inter D'Escaldes",
      "formation": "4-1-4-1",
@@ -17316,7 +17656,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Kauno Zalgiris",
      "formation": "4-1-4-1",
@@ -17654,7 +17994,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Iberia 1999",
      "formation": "4-4-1-1",
@@ -17991,7 +18331,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Braga",
      "formation": "4-4-2",
@@ -18343,7 +18683,345 @@
     "away": "Atalanta",
     "awayCountry": "ITA"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:17:20.473Z",
+    "home": {
+     "team": "Ajax Amsterdam",
+     "formation": "4-3-3",
+     "xi": [
+      "Marc-André ter Stegen",
+      "Marcos Leonardo",
+      "Julian Brandt",
+      "Sofyan Amrabat",
+      "Lucas Rosa",
+      "Owen Wijndal",
+      "Oscar Gloukh",
+      "Youri Baas",
+      "Aaron Bouwman",
+      "Jorthy Mokio",
+      "Davy Klaassen"
+     ],
+     "missing": [
+      {
+       "name": "Thilo Kehrer",
+       "started": "5/8"
+      },
+      {
+       "name": "Tolu Arokodare",
+       "started": "5/8"
+      },
+      {
+       "name": "Caio Henrique",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "140740",
+       "name": "Marc-André ter Stegen",
+       "pos": "SUB"
+      },
+      {
+       "id": "304571",
+       "name": "Marcos Leonardo",
+       "pos": "SUB"
+      },
+      {
+       "id": "197628",
+       "name": "Julian Brandt",
+       "pos": "SUB"
+      },
+      {
+       "id": "195226",
+       "name": "Sofyan Amrabat",
+       "pos": "SUB"
+      },
+      {
+       "id": "351281",
+       "name": "Lucas Rosa",
+       "pos": "SUB"
+      },
+      {
+       "id": "241392",
+       "name": "Owen Wijndal",
+       "pos": "SUB"
+      },
+      {
+       "id": "325609",
+       "name": "Oscar Gloukh",
+       "pos": "SUB"
+      },
+      {
+       "id": "305590",
+       "name": "Youri Baas",
+       "pos": "SUB"
+      },
+      {
+       "id": "384127",
+       "name": "Aaron Bouwman",
+       "pos": "SUB"
+      },
+      {
+       "id": "381074",
+       "name": "Jorthy Mokio",
+       "pos": "SUB"
+      },
+      {
+       "id": "168993",
+       "name": "Davy Klaassen",
+       "pos": "SUB"
+      }
+     ],
+     "bench": [
+      {
+       "id": "212231",
+       "name": "Viktor Tsygankov",
+       "pos": "SUB"
+      },
+      {
+       "id": "397492",
+       "name": "Rayane Bounida",
+       "pos": "SUB"
+      },
+      {
+       "id": "397257",
+       "name": "Diego Pugno",
+       "pos": "SUB"
+      },
+      {
+       "id": "214401",
+       "name": "Thilo Kehrer",
+       "pos": "SUB"
+      },
+      {
+       "id": "417684",
+       "name": "Mohamed Abdalla",
+       "pos": "SUB"
+      },
+      {
+       "id": "396040",
+       "name": "Joeri Heerkens",
+       "pos": "SUB"
+      },
+      {
+       "id": "403588",
+       "name": "Jofre Torrents",
+       "pos": "SUB"
+      },
+      {
+       "id": "403927",
+       "name": "Abdellah Ouazane",
+       "pos": "SUB"
+      },
+      {
+       "id": "368818",
+       "name": "Dies Janse",
+       "pos": "SUB"
+      },
+      {
+       "id": "305372",
+       "name": "Tolu Arokodare",
+       "pos": "SUB"
+      },
+      {
+       "id": "238919",
+       "name": "Maarten Paes",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.887,
+     "att": null,
+     "backupKeeper": null,
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Janse"
+      ],
+      "in": [
+       "Baas"
+      ]
+     }
+    },
+    "away": {
+     "team": "Atalanta",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Marco Carnesecchi",
+      "Davide Zappacosta",
+      "Relja Obric",
+      "Raoul Bellanova",
+      "Thomas Kristensen",
+      "Gianluca Gaetano",
+      "Nicola Zalewski",
+      "Eljif Elmas",
+      "Charles De Ketelaere",
+      "Éderson",
+      "Gianluca Scamacca"
+     ],
+     "missing": [
+      {
+       "name": "Sead Kolasinac",
+       "started": "6/8"
+      },
+      {
+       "name": "Giorgio Scalvini",
+       "started": "6/8"
+      },
+      {
+       "name": "Lazar Samardzic",
+       "started": "5/8"
+      },
+      {
+       "name": "Nikola Krstovic",
+       "started": "4/8"
+      },
+      {
+       "name": "Jon Rowe",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "284804",
+       "name": "Marco Carnesecchi",
+       "pos": "G"
+      },
+      {
+       "id": "182627",
+       "name": "Davide Zappacosta",
+       "pos": "D"
+      },
+      {
+       "id": "399540",
+       "name": "Relja Obric",
+       "pos": "D"
+      },
+      {
+       "id": "268452",
+       "name": "Raoul Bellanova",
+       "pos": "D"
+      },
+      {
+       "id": "99909",
+       "name": "Thomas Kristensen",
+       "pos": "D"
+      },
+      {
+       "id": "276692",
+       "name": "Gianluca Gaetano",
+       "pos": "M"
+      },
+      {
+       "id": "288488",
+       "name": "Nicola Zalewski",
+       "pos": "M"
+      },
+      {
+       "id": "237435",
+       "name": "Eljif Elmas",
+       "pos": "M"
+      },
+      {
+       "id": "296319",
+       "name": "Charles De Ketelaere",
+       "pos": "M"
+      },
+      {
+       "id": "278210",
+       "name": "Éderson",
+       "pos": "M"
+      },
+      {
+       "id": "233140",
+       "name": "Gianluca Scamacca",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "378197",
+       "name": "Andrea Bonanomi",
+       "pos": "SUB"
+      },
+      {
+       "id": "303988",
+       "name": "Lorenzo Bernasconi",
+       "pos": "SUB"
+      },
+      {
+       "id": "258158",
+       "name": "Nikola Krstovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "403445",
+       "name": "Javison Idele",
+       "pos": "SUB"
+      },
+      {
+       "id": "174915",
+       "name": "Marco Sportiello",
+       "pos": "SUB"
+      },
+      {
+       "id": "3128883",
+       "name": "Isaac Collins Isoa",
+       "pos": "SUB"
+      },
+      {
+       "id": "387841",
+       "name": "Sergej Levak",
+       "pos": "SUB"
+      },
+      {
+       "id": "118279",
+       "name": "Jon Rowe",
+       "pos": "SUB"
+      },
+      {
+       "id": "3130628",
+       "name": "Mattia Sonzogni",
+       "pos": "SUB"
+      },
+      {
+       "id": "303296",
+       "name": "Lazar Samardzic",
+       "pos": "SUB"
+      },
+      {
+       "id": "189668",
+       "name": "Mario Pasalic",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.783,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Kolasinac",
+       "Bernasconi",
+       "Pasalic",
+       "Samardzic",
+       "Krstovic",
+       "Rowe"
+      ],
+      "in": [
+       "Zappacosta",
+       "Obric",
+       "Gaetano",
+       "Zalewski",
+       "Elmas",
+       "Scamacca"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Conference League",
@@ -18356,7 +19034,351 @@
     "away": "Freiburg",
     "awayCountry": "GER"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:17:20.473Z",
+    "home": {
+     "team": "AS Monaco",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Lukas Hradecky",
+      "Sadibou Sané",
+      "Vanderson",
+      "Jordan Teze",
+      "Christian Mawissa",
+      "Edan Diop",
+      "Lamine Camara",
+      "Mamadou Coulibaly",
+      "Mathys Detourbet",
+      "Aleksandr Golovin",
+      "Paris Brunner"
+     ],
+     "missing": [
+      {
+       "name": "Názinho",
+       "started": "7/8"
+      },
+      {
+       "name": "Denis Zakaria",
+       "started": "7/8"
+      },
+      {
+       "name": "Eric Dier",
+       "started": "6/8"
+      },
+      {
+       "name": "Stanis Idumbo",
+       "started": "5/8"
+      },
+      {
+       "name": "Matthis Abline",
+       "started": "3/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "134169",
+       "name": "Lukas Hradecky",
+       "pos": "G"
+      },
+      {
+       "id": "362288",
+       "name": "Sadibou Sané",
+       "pos": "D"
+      },
+      {
+       "id": "310640",
+       "name": "Vanderson",
+       "pos": "D"
+      },
+      {
+       "id": "240660",
+       "name": "Jordan Teze",
+       "pos": "D"
+      },
+      {
+       "id": "350525",
+       "name": "Christian Mawissa",
+       "pos": "D"
+      },
+      {
+       "id": "345645",
+       "name": "Edan Diop",
+       "pos": "M"
+      },
+      {
+       "id": "38721",
+       "name": "Lamine Camara",
+       "pos": "M"
+      },
+      {
+       "id": "208518",
+       "name": "Mamadou Coulibaly",
+       "pos": "M"
+      },
+      {
+       "id": "397994",
+       "name": "Mathys Detourbet",
+       "pos": "M"
+      },
+      {
+       "id": "195501",
+       "name": "Aleksandr Golovin",
+       "pos": "M"
+      },
+      {
+       "id": "365789",
+       "name": "Paris Brunner",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "159348",
+       "name": "Takumi Minamino",
+       "pos": "SUB"
+      },
+      {
+       "id": "318389",
+       "name": "Matthis Abline",
+       "pos": "SUB"
+      },
+      {
+       "id": "292957",
+       "name": "Ansu Fati",
+       "pos": "SUB"
+      },
+      {
+       "id": "258875",
+       "name": "Philipp Köhn",
+       "pos": "SUB"
+      },
+      {
+       "id": "222628",
+       "name": "Denis Zakaria",
+       "pos": "SUB"
+      },
+      {
+       "id": "3124795",
+       "name": "Anis Soubeir",
+       "pos": "SUB"
+      },
+      {
+       "id": "277718",
+       "name": "Mohammed Salisu",
+       "pos": "SUB"
+      },
+      {
+       "id": "411449",
+       "name": "Pape Cabral",
+       "pos": "SUB"
+      },
+      {
+       "id": "411027",
+       "name": "Ilane Touré",
+       "pos": "SUB"
+      },
+      {
+       "id": "388329",
+       "name": "Jules Stawiecki",
+       "pos": "SUB"
+      },
+      {
+       "id": "316559",
+       "name": "Názinho",
+       "pos": "SUB"
+      },
+      {
+       "id": "308552",
+       "name": "Mika Biereth",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.736,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Salisu",
+       "Názinho",
+       "Fati",
+       "Zakaria",
+       "Abline",
+       "Minamino"
+      ],
+      "in": [
+       "Teze",
+       "Mawissa",
+       "Diop",
+       "Coulibaly",
+       "Detourbet",
+       "Brunner"
+      ]
+     }
+    },
+    "away": {
+     "team": "SC Freiburg",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Lukas Kübler",
+      "Jordy Makengo",
+      "Mio Backhaus",
+      "Yannick Engelhardt",
+      "Yuito Suzuki",
+      "Vincenzo Grifo",
+      "Matthias Ginter",
+      "Max Rosenfelder",
+      "Igor Matanovic",
+      "Niklas Beste",
+      "Maximilian Eggestein"
+     ],
+     "missing": [
+      {
+       "name": "Derry Scherhant",
+       "started": "7/8"
+      },
+      {
+       "name": "Philipp Lienhart",
+       "started": "6/8"
+      },
+      {
+       "name": "Philipp Treu",
+       "started": "6/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "171701",
+       "name": "Lukas Kübler",
+       "pos": "SUB"
+      },
+      {
+       "id": "367558",
+       "name": "Jordy Makengo",
+       "pos": "SUB"
+      },
+      {
+       "id": "338852",
+       "name": "Mio Backhaus",
+       "pos": "SUB"
+      },
+      {
+       "id": "337079",
+       "name": "Yannick Engelhardt",
+       "pos": "SUB"
+      },
+      {
+       "id": "303031",
+       "name": "Yuito Suzuki",
+       "pos": "SUB"
+      },
+      {
+       "id": "179571",
+       "name": "Vincenzo Grifo",
+       "pos": "SUB"
+      },
+      {
+       "id": "170209",
+       "name": "Matthias Ginter",
+       "pos": "SUB"
+      },
+      {
+       "id": "367557",
+       "name": "Max Rosenfelder",
+       "pos": "SUB"
+      },
+      {
+       "id": "310883",
+       "name": "Igor Matanovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "231190",
+       "name": "Niklas Beste",
+       "pos": "SUB"
+      },
+      {
+       "id": "214203",
+       "name": "Maximilian Eggestein",
+       "pos": "SUB"
+      }
+     ],
+     "bench": [
+      {
+       "id": "238525",
+       "name": "Lucas Höler",
+       "pos": "SUB"
+      },
+      {
+       "id": "224246",
+       "name": "Jannik Huth",
+       "pos": "SUB"
+      },
+      {
+       "id": "346208",
+       "name": "Keisuke Goto",
+       "pos": "SUB"
+      },
+      {
+       "id": "291203",
+       "name": "Patrick Osterhage",
+       "pos": "SUB"
+      },
+      {
+       "id": "347980",
+       "name": "Rihito Yamamoto",
+       "pos": "SUB"
+      },
+      {
+       "id": "169753",
+       "name": "Anthony Jung",
+       "pos": "SUB"
+      },
+      {
+       "id": "390031",
+       "name": "Cyriaque Irié",
+       "pos": "SUB"
+      },
+      {
+       "id": "346619",
+       "name": "Derry Scherhant",
+       "pos": "SUB"
+      },
+      {
+       "id": "174618",
+       "name": "Christian Günter",
+       "pos": "SUB"
+      },
+      {
+       "id": "364596",
+       "name": "Philipp Treu",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.816,
+     "att": null,
+     "backupKeeper": null,
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Lienhart",
+       "Treu",
+       "Goto",
+       "Scherhant"
+      ],
+      "in": [
+       "Kübler",
+       "Suzuki",
+       "Grifo",
+       "Rosenfelder"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Conference League",
@@ -18372,7 +19394,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "FC Midtjylland",
      "formation": "3-4-2-1",
@@ -18734,7 +19756,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "Lincoln Red Imps",
      "formation": "4-4-2",
@@ -19071,7 +20093,361 @@
     "away": "KuPS Kuopio",
     "awayCountry": "FIN"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:17:20.473Z",
+    "home": {
+     "team": "Borac Banja Luka",
+     "formation": "4-3-3",
+     "xi": [
+      "Mladen Jurkas",
+      "Sinisa Sanicanin",
+      "Bart Meijers",
+      "Sebastián Herrera",
+      "Branimir Cipetic",
+      "Matej Deket",
+      "Amer Hiros",
+      "Milos Jojic",
+      "Luka Juricic",
+      "Stefan Savic",
+      "Ante Roguljic"
+     ],
+     "missing": [
+      {
+       "name": "Sandi Ogrinec",
+       "started": "6/8"
+      },
+      {
+       "name": "Jurich Carolina",
+       "started": "6/8"
+      },
+      {
+       "name": "Damir Hrelja",
+       "started": "6/8"
+      },
+      {
+       "name": "Viktor Rogan",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "401246",
+       "name": "Mladen Jurkas",
+       "pos": "G"
+      },
+      {
+       "id": "306809",
+       "name": "Sinisa Sanicanin",
+       "pos": "CD-L"
+      },
+      {
+       "id": "226123",
+       "name": "Bart Meijers",
+       "pos": "CD-R"
+      },
+      {
+       "id": "237364",
+       "name": "Sebastián Herrera",
+       "pos": "LB"
+      },
+      {
+       "id": "289600",
+       "name": "Branimir Cipetic",
+       "pos": "RB"
+      },
+      {
+       "id": "420872",
+       "name": "Matej Deket",
+       "pos": "CM"
+      },
+      {
+       "id": "222967",
+       "name": "Amer Hiros",
+       "pos": "LM"
+      },
+      {
+       "id": "178607",
+       "name": "Milos Jojic",
+       "pos": "RM"
+      },
+      {
+       "id": "305410",
+       "name": "Luka Juricic",
+       "pos": "F"
+      },
+      {
+       "id": "150541",
+       "name": "Stefan Savic",
+       "pos": "LF"
+      },
+      {
+       "id": "194772",
+       "name": "Ante Roguljic",
+       "pos": "RF"
+      }
+     ],
+     "bench": [
+      {
+       "id": "224045",
+       "name": "Jurich Carolina",
+       "pos": "SUB"
+      },
+      {
+       "id": "3114284",
+       "name": "Ivan Kukavica",
+       "pos": "SUB"
+      },
+      {
+       "id": "344608",
+       "name": "David Vukovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "165340",
+       "name": "Damjan Siskovski",
+       "pos": "SUB"
+      },
+      {
+       "id": "3098715",
+       "name": "Erik Riđan",
+       "pos": "SUB"
+      },
+      {
+       "id": "385431",
+       "name": "Nemanja Jaksic",
+       "pos": "SUB"
+      },
+      {
+       "id": "239710",
+       "name": "Sandi Ogrinec",
+       "pos": "SUB"
+      },
+      {
+       "id": "322066",
+       "name": "Viktor Rogan",
+       "pos": "SUB"
+      },
+      {
+       "id": "196702",
+       "name": "Daniel Romera",
+       "pos": "SUB"
+      },
+      {
+       "id": "299225",
+       "name": "Abel Pascual",
+       "pos": "SUB"
+      },
+      {
+       "id": "173663",
+       "name": "Stojan Vranjes",
+       "pos": "SUB"
+      },
+      {
+       "id": "386962",
+       "name": "Amar Milak",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.778,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Ogrinec"
+      ],
+      "in": [
+       "Deket"
+      ]
+     }
+    },
+    "away": {
+     "team": "KuPS Kuopio",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Johannes Kreidl",
+      "Akseli Puukko",
+      "Niilo Kujasalo",
+      "Arttu Lotjonen",
+      "Brahima Magassa",
+      "Saikou Touray",
+      "Julius Eskesen",
+      "Tommi Jyry",
+      "Gustav Engvall",
+      "Ayman Aiki",
+      "Piotr Parzyszek"
+     ],
+     "missing": [
+      {
+       "name": "Kasim Nuhu",
+       "started": "8/8"
+      },
+      {
+       "name": "Bob Armah",
+       "started": "8/8"
+      },
+      {
+       "name": "Petteri Pennanen",
+       "started": "7/8"
+      },
+      {
+       "name": "Valentín Gasc",
+       "started": "7/8"
+      },
+      {
+       "name": "Clinton Antwi",
+       "started": "6/8"
+      },
+      {
+       "name": "Jaime Moreno",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "219318",
+       "name": "Johannes Kreidl",
+       "pos": "G"
+      },
+      {
+       "id": "414673",
+       "name": "Akseli Puukko",
+       "pos": "D"
+      },
+      {
+       "id": "360348",
+       "name": "Niilo Kujasalo",
+       "pos": "D"
+      },
+      {
+       "id": "363064",
+       "name": "Arttu Lotjonen",
+       "pos": "D"
+      },
+      {
+       "id": "421172",
+       "name": "Brahima Magassa",
+       "pos": "D"
+      },
+      {
+       "id": "304949",
+       "name": "Saikou Touray",
+       "pos": "M"
+      },
+      {
+       "id": "259165",
+       "name": "Julius Eskesen",
+       "pos": "M"
+      },
+      {
+       "id": "289683",
+       "name": "Tommi Jyry",
+       "pos": "M"
+      },
+      {
+       "id": "186483",
+       "name": "Gustav Engvall",
+       "pos": "M"
+      },
+      {
+       "id": "346564",
+       "name": "Ayman Aiki",
+       "pos": "M"
+      },
+      {
+       "id": "150441",
+       "name": "Piotr Parzyszek",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "305906",
+       "name": "Hemmo Riihimäki",
+       "pos": "SUB"
+      },
+      {
+       "id": "305480",
+       "name": "Taneli Hämäläinen",
+       "pos": "SUB"
+      },
+      {
+       "id": "137073",
+       "name": "Petteri Pennanen",
+       "pos": "SUB"
+      },
+      {
+       "id": "405641",
+       "name": "Bob Armah",
+       "pos": "SUB"
+      },
+      {
+       "id": "308238",
+       "name": "Ricardo Araujo",
+       "pos": "SUB"
+      },
+      {
+       "id": "345797",
+       "name": "Valentín Gasc",
+       "pos": "SUB"
+      },
+      {
+       "id": "274974",
+       "name": "Clinton Antwi",
+       "pos": "SUB"
+      },
+      {
+       "id": "199030",
+       "name": "Jaime Moreno",
+       "pos": "SUB"
+      },
+      {
+       "id": "275714",
+       "name": "Saku Savolainen",
+       "pos": "SUB"
+      },
+      {
+       "id": "364040",
+       "name": "Saku Heiskanen",
+       "pos": "SUB"
+      },
+      {
+       "id": "385662",
+       "name": "Joslyn Luyeye-Lutumba",
+       "pos": "SUB"
+      },
+      {
+       "id": "212534",
+       "name": "Kasim Nuhu",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.542,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Nuhu",
+       "Pennanen",
+       "Pasanen",
+       "Armah",
+       "Luyeye-Lutumba"
+      ],
+      "in": [
+       "Magassa",
+       "Touray",
+       "Jyry",
+       "Engvall",
+       "Aiki"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Conference League",
@@ -19087,7 +20463,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "AGF",
      "formation": "3-4-2-1",
@@ -19428,7 +20804,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T18:03:14.576Z",
+    "at": "2026-10-22T18:17:20.473Z",
     "home": {
      "team": "FC Thun",
      "formation": "4-4-2",
@@ -19756,5 +21132,5 @@
    }
   }
  ],
- "updateTag": "Thu 22 Oct 19:03"
+ "updateTag": "Thu 22 Oct 19:17"
 }
