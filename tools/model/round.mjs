@@ -8,6 +8,7 @@ import { loadMatches, LEAGUE_DIV, GROUPS, fdName } from './data.mjs';
 import { buildState, predict, DEFAULT_CONFIG } from './ensemble.mjs';
 import { fitRatings } from './models.mjs';
 import { calibrate1x2, calibrate2 } from './calibration.mjs';
+import { lineupMultipliers } from './lineups.mjs';
 import { loadEurope, schedule, teamFlags, isDerby, contextMultipliers, FLAGS } from './context.mjs';
 
 const DAY = 864e5;
@@ -29,6 +30,7 @@ export function modelForRound(root, fixtures) {
   const ctxFile = existsSync(ctxPath) ? JSON.parse(readFileSync(ctxPath, 'utf8')) : {};
   const factors = ctxFile.factors || {};
   const calib = ctxFile.calibration || null;
+  const lineupFit = ctxFile.lineup && ctxFile.lineup.enabled ? ctxFile.lineup : null;
   if (!calib) warnings.push('no calibration in data/model/context.json: run tools/model/backtest.mjs');
   const btPath = path.join(root, 'data/model/backtest.json');
   const bt = existsSync(btPath) ? JSON.parse(readFileSync(btPath, 'utf8')) : null;
@@ -70,6 +72,13 @@ export function modelForRound(root, fixtures) {
     const fa = { ...teamFlags(sched, away, t), newcomer: !last.has(away) };
     const derby = isDerby(home, away);
     const mult = contextMultipliers(factors, fh, fa, derby);
+    // Confirmed lineups (tools/lineup-update.mjs), only when the backtest switched them on.
+    if (lineupFit && f.lineups && f.lineups.home.reg != null && f.lineups.away.reg != null) {
+      const asFeat = s => ({ reg: s.reg, gk: !!s.backupKeeper });
+      const lm = lineupMultipliers(asFeat(f.lineups.home), asFeat(f.lineups.away), lineupFit);
+      mult.h *= lm.h; mult.a *= lm.a;
+      mult.applied.push(`confirmed lineups (x${lm.h.toFixed(3)} / x${lm.a.toFixed(3)} expected goals)`);
+    }
     const p = predict(state, { group, div, home, away }, mult);
     if (!p) { warnings.push(`${f.home} v ${f.away}: team not found in the results data (check TEAM_ALIASES)`); continue; }
     const context = [];
@@ -81,6 +90,7 @@ export function modelForRound(root, fixtures) {
         : `${name} ${FLAG_TEXT[k]} (noted only: no measurable effect on past seasons)`);
     }
     if (derby) context.push(factors.derby ? `Derby (applied: home goals x${factors.derby.h}, away goals x${factors.derby.a})` : 'Derby (noted only: no measurable effect on past seasons)');
+    for (const a of mult.applied.filter(x => x.startsWith('confirmed lineups'))) context.push(`Applied: ${a}, sizes measured on past seasons`);
     const recent = team => matches.filter(m => m.date < asOf && asOf - m.date < 365 * DAY && (m.home === team || m.away === team)).length;
     const r1 = x => +(x * 100).toFixed(1);
     // Calibrated with the settings the backtest fitted on past seasons (calibration.mjs).
@@ -102,10 +112,10 @@ export function modelForRound(root, fixtures) {
     };
   }
   const info = {
-    version: 'independent-v4',
+    version: 'independent-v4.1',
     fittedTo: new Date(asOf).toISOString().slice(0, 10),
     weights: cfg.weights, settings: { goals: cfg.goals, shots: cfg.shots, elo: cfg.elo },
-    contextFactors: factors, calibration: calib,
+    contextFactors: factors, calibration: calib, lineupEnabled: !!lineupFit,
     backtest: bt && summary(bt),
   };
   return { byId, info, warnings, asOfLabel: new Date(asOf).toISOString().slice(0, 10) };

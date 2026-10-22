@@ -12,24 +12,37 @@ This file says what to build, in what order and what has to be true first. It do
 
 ## 0b. Independent model (built 21-22 Oct)
 
-The predictions now come from our own model (`tools/model/`), not from bookmaker prices. It has three parts:
+The predictions come from our own model (`tools/model/`), not from bookmaker prices. It has three parts:
 
-- **Goals model:** Dixon-Coles, with team attack and defence ratings, time decay, and home advantage and scoring level per division. England tiers 1-3, and the top two tiers in Germany, Italy and France, are each fitted together, so promoted teams are rated on one scale.
-- **Shots model:** the same ratings fitted to shots on target, converted to goals.
-- **Elo rating:** a goal-difference rating per team.
+- **Goals model:** Dixon-Coles, with team attack and defence ratings, time decay, a discount on earlier seasons (squads change over the summer), and home advantage and scoring level per division. England tiers 1-3, and the top two tiers in Germany, Italy and France, are each fitted together, so promoted teams are rated on one scale.
+- **Shots model:** the same ratings fitted to chance quality. That is xG where football-data.co.uk has it (2026/27), shots on target before that.
+- **Elo rating:** with between-season regression. It got zero weight.
 
-The weights for combining them are chosen on the 2023/24 and 2024/25 seasons; Elo got zero weight. Calibration is fitted on the same seasons. The test is on 2025/26 and 2026/27, which the model never saw; see `data/model/backtest.json`.
+The weights for combining them are chosen on 2023/24 and 2024/25, then calibrated. A fitted stacker was tried in place of the weighted average and did not beat it in cross-validation. The test is on 2025/26 and 2026/27, which the model never saw; see `data/model/backtest.json`.
 
-Context factors were measured, not assumed: rest days, European games before or after, derbies, promoted teams and recent form. None showed an effect beyond what the ratings already capture, so none are applied. They are re-measured monthly.
+**Measured and not applied**, because none beat the ratings on the test seasons:
 
-Not in the model yet: lineups, injuries, suspensions, referees, weather, xG history (football-data.co.uk only has xG from 2026/27), and Champions League fixtures (they need ratings that work across leagues).
+- rest days;
+- European games before and after;
+- derbies;
+- promoted teams;
+- recent form;
+- confirmed lineups.
+
+For lineups, the share of regulars starting and a back-up goalkeeper were both measured from 6,700 ESPN lineups. They improved the validation seasons but made the test seasons slightly worse, so the site shows confirmed lineups and missing regulars without changing the numbers. `backtest.mjs` switches lineups on automatically if they ever pass on the test seasons.
+
+**What testing showed (22 Oct):**
+
+- The between-season discount moved the out-of-place predictions (Lazio, Wolves, Arsenal) towards current form.
+- xG this season improved the within-season test (286 matches): log-loss 1.0069 against 1.0081.
+- The model is still less accurate than Bet365: test Brier 0.607 against 0.598.
 
 **Next model steps, in order of expected value:**
 
-1. **Team news as a measured input.** This needs a structured, reliable source of confirmed lineups. Preview sites have been wrong.
-2. **xG.** Use it as a fourth component once a season of xG exists to test it on, from summer 2027.
+1. **Player-quality lineups.** Rate players (for example by minutes-weighted on-pitch goal difference or xG) instead of counting regulars. Missing a star is not the same as missing a squad player.
+2. **Squad changes over the summer.** Use the share of last season's minutes by players still at the club, to set the between-season discount per team instead of per league.
 3. **Cross-league ratings, for the Champions League.** Add Portugal, the Netherlands, Belgium, Scotland and Turkey from football-data.co.uk, and link the leagues through UEFA results.
-4. **Match-stat markets:** shots, corners, cards and fouls. Expected counts are shown already. To test for value we need historical bookmaker lines for these markets, which football-data.co.uk doesn't have.
+4. **Match-stat markets:** shots, corners, cards and fouls. Expected counts are shown already. To test for value we need historical bookmaker lines for these markets.
 
 ## 1. Things we can do now, with no new data
 

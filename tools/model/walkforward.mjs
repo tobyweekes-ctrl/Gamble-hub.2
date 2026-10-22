@@ -23,7 +23,7 @@ export function weeks(matches, fromSeason, toDate = Infinity) {
   return out;
 }
 
-export function rateComponent(matches, wks, { xi, sigma, hKey, aKey, toGoals }) {
+export function rateComponent(matches, wks, { xi, sigma, hKey, aKey, toGoals, seasonDiscount = 1 }) {
   // Returns Map(match -> {lh, la}) of expected GOALS from a rating model refitted each week.
   const out = new Map();
   for (const { asOf, matches: wk } of wks) {
@@ -31,7 +31,7 @@ export function rateComponent(matches, wks, { xi, sigma, hKey, aKey, toGoals }) 
       const target = wk.filter(m => m.group === g);
       if (!target.length) continue;
       const gm = matches.filter(m => m.group === g && m.date < asOf && asOf - m.date < 1500 * DAY);
-      const r = fitRatings(gm, { asOf, xi, sigma, hKey, aKey });
+      const r = fitRatings(gm, { asOf, xi, sigma, hKey, aKey, seasonDiscount });
       const conv = toGoals ? goalsPerShot(gm, asOf) : null;
       for (const m of target) {
         const e = r.expected(m.div, m.home, m.away);
@@ -69,10 +69,10 @@ export function rhoBySeason(matches, goalsL, seasons) {
   return out;
 }
 
-export function eloComponent(matches, wks, { k, hfa }) {
+export function eloComponent(matches, wks, { k, hfa, carry = 1 }) {
   // Elo ratings are walk-forward by construction (pre-match ratings). The link from
   // rating gap to probabilities is refitted each week on the previous three years.
-  const elo = runElo(matches, { k, hfa });
+  const elo = runElo(matches, { k, hfa, carry });
   const out = new Map();
   let link = null, linkAt = -Infinity;
   for (const { asOf, matches: wk } of wks) {
@@ -87,8 +87,9 @@ export function eloComponent(matches, wks, { k, hfa }) {
     }
     for (const m of wk) {
       const r = elo.pre.get(m);
-      const p = eloProbs((r.rh + hfa - r.ra) / 100, link);
-      out.set(m, { h: p[0], d: p[1], a: p[2] });
+      const x = (r.rh + hfa - r.ra) / 100;
+      const p = eloProbs(x, link);
+      out.set(m, { h: p[0], d: p[1], a: p[2], x });
     }
   }
   return out;

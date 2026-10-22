@@ -117,6 +117,17 @@ function tableLine(team, t) {
 }
 
 const model = modelForRound(root, round.fixtures.map(f => ({ ...f, id: fixtureId(f) })));
+function lineupText(L, applied) {
+  const side = s => {
+    const miss = s.missing && s.missing.length ? `without regulars ${s.missing.map(m => `${m.name} (${m.started} recent starts)`).join(', ')}` : 'usual XI';
+    const gk = s.backupKeeper ? '; back-up goalkeeper starts' : '';
+    return `${s.team}${s.formation ? ` (${s.formation})` : ''}: ${miss}${gk}.`;
+  };
+  const when = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(L.at));
+  return `Confirmed lineups (${L.source}, ${when}). ${side(L.home)} ${side(L.away)} ` +
+    (applied ? 'Lineup effects measured in the backtest are applied to the model.' : 'Not applied to the model: in testing on past seasons, adjusting for lineups did not improve its accuracy.');
+}
+
 const seen = new Set();
 const fixtures = round.fixtures.map(f => {
   const id = fixtureId(f);
@@ -151,12 +162,12 @@ const fixtures = round.fixtures.map(f => {
     h2h: f.h2h || 'No H2H data pulled.',
     gfH: h ? h.gf : null, gaH: h ? h.ga : null, gfA: a ? a.gf : null, gaA: a ? a.ga : null,
     gfHome: null, gaHome: null, gfAway: null, gaAway: null,
-    // Weekly builds run days before team sheets exist, so lineups are never confirmed here.
-    lineupFactorH: 1, lineupStatusH: 'unconfirmed', lineupFactorA: 1, lineupStatusA: 'unconfirmed',
+    // Lineups are confirmed only once tools/lineup-update.mjs has found the team sheets.
+    lineupFactorH: 1, lineupStatusH: f.lineups ? 'confirmed' : 'unconfirmed', lineupFactorA: 1, lineupStatusA: f.lineups ? 'confirmed' : 'unconfirmed',
     compFactorH: 1, compFactorA: 1,
-    lineupNote: f.teamNews
-      ? `Reported, not confirmed, not applied to the maths: ${f.teamNews}`
-      : 'No team news gathered for this fixture. Baseline model, no adjustment.',
+    lineupNote: f.lineups ? lineupText(f.lineups, model.info.lineupEnabled)
+      : f.teamNews ? `Reported, not confirmed, not applied to the maths: ${f.teamNews}`
+      : 'Lineups not announced yet (they are added about an hour before kick-off). No team news applied.',
     compNote: '',
     prices,
     model: mod,
@@ -192,7 +203,7 @@ const SEED_RESULTS = ${JSON.stringify(seedResults)};
 const MODEL_INFO = ${JSON.stringify(model.info)};
 
 const DATA_UPDATED = ${JSON.stringify(round.dataUpdated)};
-const SEED_VERSION = ${JSON.stringify(round.seedVersion)};
+const SEED_VERSION = ${JSON.stringify(round.seedVersion + (round.updateTag ? '@' + round.updateTag : ''))};
 const LEAGUE_QUALITY = ${JSON.stringify(quality)};
 ${SEED_END}`;
 

@@ -16,11 +16,17 @@ const DAY = 864e5;
 // ---- Generic weighted Poisson rating model ---------------------------------
 // log E[home count] = O[div] + H[div] + A[home] - D[away]
 // log E[away count] = O[div] + A[away] - D[home]
-export function fitRatings(matches, { asOf, xi, sigma, hKey, aKey, iters = 30 }) {
+// seasonDiscount (0-1] multiplies the weight of a match once per season boundary
+// between it and the latest season in the data: squads change over the summer, so
+// last season says less about this one than its age alone suggests.
+export function fitRatings(matches, { asOf, xi, sigma, hKey, aKey, seasonDiscount = 1, iters = 30 }) {
   const rows = [];
+  let cur = '';
+  for (const m of matches) if (m.date < asOf && m.season > cur) cur = m.season;
+  const seasonsBack = s => Number(cur.slice(0, 2)) - Number(s.slice(0, 2));
   for (const m of matches) {
     if (m.date >= asOf || m[hKey] == null || m[aKey] == null) continue;
-    const w = Math.exp(-xi * (asOf - m.date) / DAY);
+    const w = Math.exp(-xi * (asOf - m.date) / DAY) * seasonDiscount ** seasonsBack(m.season);
     if (w < 1e-3) continue;
     rows.push({ m, w });
   }
@@ -157,8 +163,9 @@ export function fitRho(pairs) {
 // ---- Elo ---------------------------------------------------------------------
 // Ratings run through every match in date order. A team new to a division starts
 // at the mean rating of the teams that left that division at the end of the
-// previous season (promoted/relegated sides swap places).
-export function runElo(matches, { k, hfa }) {
+// previous season (promoted/relegated sides swap places). A team staying in its
+// division keeps a share `carry` of its distance from the division mean.
+export function runElo(matches, { k, hfa, carry = 1 }) {
   const R = new Map(), pre = new Map();
   const members = new Map(); // `${div}|${season}` -> Set(team)
   for (const m of matches) {
@@ -181,6 +188,10 @@ export function runElo(matches, { k, hfa }) {
           if (left.length) { R.set(t, left.reduce((s, x) => s + R.get(x), 0) / left.length); continue; }
         }
         if (!R.has(t)) R.set(t, 1500);
+      } else if (last && carry < 1) {
+        const rated = [...last].filter(x => R.has(x));
+        const mu = rated.reduce((s, x) => s + R.get(x), 0) / rated.length;
+        R.set(t, mu + carry * (R.get(t) - mu));
       }
     }
     const rh = R.get(m.home), ra = R.get(m.away);
@@ -222,4 +233,37 @@ export function fitEloLink(samples) {
     p = { b: p.b + lr * gb / n, t1: p.t1 + lr * g1 / n, t2: Math.max(p.t1 + 0.05, p.t2 + lr * g2 / n) };
   }
   return p;
+}
+
+// ---- Ordered logistic stacker -------------------------------------------------
+// Combines the component models through features rather than a fixed average:
+// z = sum(b_i * x_i); P(away) = s(t1 - z), P(away or draw) = s(t2 - z).
+export function orderedProbs(x, { b, t1, t2 }) {
+  const z = x.reduce((s, v, i) => s + b[i] * v, 0);
+  const pa = sig(t1 - z), pad = sig(t2 - z);
+  return [1 - pad, pad - pa, pa];
+}
+export function fitOrdered(samples, { iters = 600, lr = 0.3, l2 = 1e-3 } = {}) {
+  const nf = samples[0].x.length;
+  let b = new Array(nf).fill(0), t1 = -0.6, t2 = 0.6;
+  for (let it = 0; it < iters; it++) {
+    const gb = new Array(nf).fill(0);
+    let g1 = 0, g2 = 0;
+    for (const { x, o } of samples) {
+      const z = x.reduce((s, v, i) => s + b[i] * v, 0);
+      const pa = sig(t1 - z), pad = sig(t2 - z);
+      let dz;
+      if (o === 2) { g1 += 1 - pa; dz = -(1 - pa); }
+      else if (o === 0) { g2 += -pad; dz = pad; }
+      else {
+        const pd = Math.max(pad - pa, 1e-9), d2 = pad * (1 - pad), d1 = pa * (1 - pa);
+        g2 += d2 / pd; g1 += -d1 / pd; dz = (-d2 + d1) / pd;
+      }
+      for (let i = 0; i < nf; i++) gb[i] += dz * x[i];
+    }
+    const n = samples.length;
+    b = b.map((v, i) => v + lr * (gb[i] / n - l2 * v));
+    t1 += lr * g1 / n; t2 = Math.max(t1 + 0.05, t2 + lr * g2 / n);
+  }
+  return { b, t1, t2 };
 }

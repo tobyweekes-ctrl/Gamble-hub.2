@@ -21,7 +21,7 @@ export function buildState(matches, asOf, cfg = DEFAULT_CONFIG) {
   for (const g of Object.keys(GROUPS)) {
     const gm = past.filter(m => m.group === g);
     const goals = fitRatings(gm, { asOf, ...cfg.goals, hKey: 'hg', aKey: 'ag' });
-    const shots = fitRatings(gm, { asOf, ...cfg.shots, hKey: 'hst', aKey: 'ast' });
+    const shots = fitRatings(gm, { asOf, ...cfg.shots, hKey: 'qh', aKey: 'qa' });
     // Goals per shot on target, per division, over the last year.
     const conv = {};
     for (const m of gm) {

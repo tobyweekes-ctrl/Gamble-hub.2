@@ -15,38 +15,45 @@
    "b": 0.8
   }
  },
+ "lineup": {
+  "regRef": 0.8529411764705882,
+  "gamma": 0.15,
+  "delta": 0.25,
+  "kappa": 1.025,
+  "enabled": false
+ },
  "report": {
   "shortRest": {
    "teamMatches": 1257,
    "scored": {
-    "f": 1.031,
-    "raw": 1.032,
+    "f": 1.03,
+    "raw": 1.031,
     "obs": 1915,
-    "exp": 1855,
+    "exp": 1857.1,
     "keep": false
    },
    "conceded": {
     "f": 0.983,
     "raw": 0.982,
     "obs": 1616,
-    "exp": 1645.3,
+    "exp": 1645,
     "keep": false
    }
   },
   "europeBefore": {
    "teamMatches": 537,
    "scored": {
-    "f": 0.996,
-    "raw": 0.995,
+    "f": 0.994,
+    "raw": 0.993,
     "obs": 954,
-    "exp": 958.7,
+    "exp": 960.5,
     "keep": false
    },
    "conceded": {
-    "f": 1.031,
-    "raw": 1.036,
+    "f": 1.033,
+    "raw": 1.038,
     "obs": 686,
-    "exp": 662.3,
+    "exp": 661,
     "keep": false
    }
   },
@@ -54,16 +61,16 @@
    "teamMatches": 470,
    "scored": {
     "f": 1.007,
-    "raw": 1.008,
+    "raw": 1.007,
     "obs": 857,
-    "exp": 849.9,
+    "exp": 850.7,
     "keep": false
    },
    "conceded": {
-    "f": 0.991,
-    "raw": 0.989,
+    "f": 0.992,
+    "raw": 0.99,
     "obs": 549,
-    "exp": 555.1,
+    "exp": 554.5,
     "keep": false
    }
   },
@@ -71,54 +78,54 @@
    "teamMatches": 1314,
    "scored": {
     "f": 0.991,
-    "raw": 0.99,
+    "raw": 0.991,
     "obs": 1608,
-    "exp": 1623.6,
+    "exp": 1623,
     "keep": false
    },
    "conceded": {
-    "f": 1.013,
-    "raw": 1.013,
+    "f": 1.011,
+    "raw": 1.011,
     "obs": 2064,
-    "exp": 2036.5,
+    "exp": 2041.3,
     "keep": false
    }
   },
   "derby": {
    "matches": 104,
    "home": {
-    "f": 0.997,
-    "raw": 0.995,
+    "f": 0.998,
+    "raw": 0.997,
     "obs": 160,
-    "exp": 160.9,
+    "exp": 160.5,
     "keep": false
    },
    "away": {
-    "f": 0.922,
-    "raw": 0.864,
+    "f": 0.924,
+    "raw": 0.867,
     "obs": 116,
-    "exp": 134.2,
+    "exp": 133.8,
     "keep": false
    }
   },
   "recentForm": {
    "note": "Goals scored v model expectation after a 5-match run more than 3 goals above (hot) or below (cold) expectation. Not applied.",
    "hot": {
-    "f": 1.019,
-    "raw": 1.02,
-    "obs": 1410,
-    "exp": 1382.1,
+    "f": 1.017,
+    "raw": 1.018,
+    "obs": 1398,
+    "exp": 1373.3,
     "keep": false
    },
-   "hotN": 878,
+   "hotN": 874,
    "cold": {
-    "f": 1.008,
-    "raw": 1.009,
-    "obs": 1051,
-    "exp": 1041.8,
+    "f": 1.027,
+    "raw": 1.03,
+    "obs": 1085,
+    "exp": 1053.6,
     "keep": false
    },
-   "coldN": 760
+   "coldN": 766
   }
  }
 }
