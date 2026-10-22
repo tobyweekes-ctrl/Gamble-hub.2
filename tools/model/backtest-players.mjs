@@ -129,6 +129,19 @@ for (const mk of MARKETS) {
     if (n >= 50) bins.push({ bin: `${+(lo * 100).toFixed(0)}-${+((lo + step) * 100).toFixed(0)}%`, n, predicted: +(ps / n).toFixed(4), actual: +(ys / n).toFixed(4) });
   }
   res.calibration = bins;
+  // By position group: average predicted chance against how often it happened, so a
+  // bias for one kind of player (say midfielders' shots on target) shows up.
+  res.byPosition = {};
+  for (const g of ['D', 'M', 'F']) {
+    let n = 0, ps = 0, ys = 0;
+    for (const r of test) {
+      if (groupOf(r.p.pos) !== g) continue;
+      const q = prob(r, mk, k, rr, 'model');
+      if (q == null) continue;
+      n++; ps += q; ys += r.p[mk.stat] >= mk.atLeast ? 1 : 0;
+    }
+    if (n) res.byPosition[g] = { n, predicted: +(ps / n).toFixed(4), actual: +(ys / n).toFixed(4) };
+  }
   report.markets[mk.key] = { label: mk.label, ...res };
   console.log(`${mk.label}: position ${res.position.logloss}, player ${res.player.logloss}, model ${res.model.logloss} (n=${res.model.n})`);
 }

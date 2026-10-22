@@ -85,6 +85,19 @@ Log entries from this round are under `independent-v4.1-2026-10-22`.
 
 Read: better than guessing on the result and Over 2.5, no better on BTTS (as the backtest said), and behind Bet365 on the few games with prices. One night is far too small to judge.
 
+## Player model by position (test seasons 2025/26-2026/27, 46,000 player-matches)
+
+Checked because most player-prop "value" flags against Unibet were 1+ shots on target for midfielders and full-backs. The model is calibrated within each position group, so those flags are not a position bias:
+
+| Market | Defenders: predicted / actual | Midfielders | Forwards |
+|---|---|---|---|
+| 1+ shots on target | 13.6% / 13.9% | 28.6% / 29.3% | 49.2% / 49.8% |
+| 2+ shots | 11.6% / 12.0% | 29.8% / 31.3% | 52.2% / 54.5% |
+| 1+ fouls committed | 57.5% / 57.4% | 62.2% / 60.7% | 63.0% / 61.2% |
+| Booked | 15.2% / 16.8% | 14.4% / 15.2% | 9.7% / 10.1% |
+
+Unibet's player prices imply far higher chances on average (booked about 27%, 1+ fouls about 80%), so most of the gap is bookmaker margin. Whether the few flagged prices are real value is being tested: every price is logged (`data/props/log.jsonl`) and graded (`data/props/graded.json`).
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.
