@@ -73,6 +73,18 @@ Backtest of v4 on seasons it never saw (2025/26 and 2026/27 to date, 2,313 match
 
 Log entries from this round are under `independent-v4.1-2026-10-22`.
 
+## Thu 22 Oct 2026: Europa League and Conference League (cross-league model)
+
+35 games graded; Kairat v Panathinaikos was already in play when the model went up and has no prediction. Predictions are the site version of 17:34 UK, before every kick-off (added to `data/ledger.json` with `tools/ledger-from-history.mjs`). Scores from match.uefa.com and ESPN, which agreed on all 35.
+
+| Market | Our model | Know-nothing guess | Bet365, 10 priced games |
+|---|---|---|---|
+| Win/draw/loss | favourite won 16/35; Brier 0.620, log-loss 1.024 | 0.667 / 1.099 | Bet365 favourite 6/10 (ours 5/10); Brier 0.53 v ours 0.58 |
+| BTTS | 18/35 calls right; log-loss 0.704 | 0.693 | level on log-loss (0.711) |
+| Over 2.5 | 21/35 calls right; log-loss 0.676 | 0.693 | Bet365 better (0.543 v 0.586) |
+
+Read: better than guessing on the result and Over 2.5, no better on BTTS (as the backtest said), and behind Bet365 on the few games with prices. One night is far too small to judge.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.

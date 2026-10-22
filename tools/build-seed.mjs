@@ -24,6 +24,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadApp, SEED_BEGIN, SEED_END } from './lib/app.mjs';
 import { modelForRound } from './model/round.mjs';
+import { liveRecord } from './model/live-record.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const roundPath = process.argv[2];
@@ -214,20 +215,24 @@ const SEASON_SIM = ${JSON.stringify(seasonSim)};
 const DATA_UPDATED = ${JSON.stringify(round.dataUpdated)};
 const SEED_VERSION = ${JSON.stringify(round.seedVersion + '@' + (round.updateTag || 'weekly') + ' build ' + new Date(now).toISOString().slice(0, 16))};
 const LEAGUE_QUALITY = ${JSON.stringify(quality)};
+
+// The model's live record: predictions logged before kick-off, graded (tools/model/live-record.mjs).
+const LIVE_RECORD = __LIVE_RECORD__;
 ${SEED_END}`;
 
 const indexPath = path.join(root, 'index.html');
 const html = readFileSync(indexPath, 'utf8');
 const a = html.indexOf(SEED_BEGIN), b = html.indexOf(SEED_END);
 if (a < 0 || b < 0) throw new Error('Seed markers not found in index.html');
-const out = html.slice(0, a) + block + html.slice(b + SEED_END.length);
+let out = html.slice(0, a) + block.replace('__LIVE_RECORD__', 'null') + html.slice(b + SEED_END.length);
 
 // Ledger: snapshot market, goal-model-alone and blend for fixtures not yet kicked off,
 // and attach results to graded ones. Entries are never changed after kick-off.
 const app = loadApp(out);
 const pct = t => t && { h: +t.h.toFixed(1), d: +t.d.toFixed(1), a: +t.a.toFixed(1) };
 for (const m of app.SEED_MATCHES) {
-  if (Date.parse(m.kickoff) <= now || m.hw == null) continue;
+  // Every fixture with a prediction is logged before kick-off, priced or not.
+  if (Date.parse(m.kickoff) <= now || (m.hw == null && !m.model)) continue;
   const mp = app.computeModelProbs(m);
   let goalModel = null;
   if (mp && mp.basis === 'independent') {
@@ -242,7 +247,11 @@ for (const m of app.SEED_MATCHES) {
     id: m.id, league: m.league, fixture: `${m.home} vs ${m.away}`, kickoff: m.kickoff,
     loggedAt: new Date(now).toISOString(), modelVersion: app.MODEL_VERSION, seedVersion: app.SEED_VERSION,
     market: { h: m.hw, d: m.dw, a: m.aw }, btts: m.btts, ou25: m.ou25,
-    goalModel, blend: mp && mp.basis === 'anchored' ? pct({ h: mp.hw, d: mp.dw, a: mp.aw }) : null,
+    goalModel,
+    // Our own BTTS / Over 2.5 chances (the btts/ou25 fields above are the market's).
+    modelMarkets: m.model ? { btts: m.model.btts, ou25: m.model.ou25, expH: m.model.expH, expA: m.model.expA } : null,
+    confidence: m.model && m.model.confidence ? m.model.confidence.level : null,
+    blend: mp && mp.basis === 'anchored' ? pct({ h: mp.hw, d: mp.dw, a: mp.aw }) : null,
     modelBasis: mp ? mp.basis : null, prices: m.prices || null,
     inputs: { gfH: m.gfH, gaH: m.gaH, gfA: m.gfA, gaA: m.gaA },
     result: null,
@@ -256,6 +265,8 @@ for (const e of ledger) {
   if (r && !e.result) { e.result = { home: r.score[0], away: r.score[1] }; graded++; }
 }
 
+const record = liveRecord(ledger);
+out = out.replace('const LIVE_RECORD = null;', `const LIVE_RECORD = ${JSON.stringify(record)};`);
 writeFileSync(indexPath, out);
 writeFileSync(path.join(root, 'matchday-ledger.html'), out);
 writeFileSync(ledgerPath, JSON.stringify(ledger, null, 1) + '\n');
