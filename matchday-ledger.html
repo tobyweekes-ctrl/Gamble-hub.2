@@ -247,11 +247,11 @@
     </div>
   </div>
 
+  <div id="oddsCheck"></div>
+
   <div id="disparities"></div>
 
   <div id="seasonSim"></div>
-
-  <div id="oddsCheck"></div>
 
   <div id="trackRecord"></div>
 
@@ -1388,11 +1388,12 @@ function renderOddsCheck(){
   if(!container || container.childElementCount) return;
   const n = ocPlayers().length;
   container.innerHTML = `
-    <details class="track-record">
-      <summary>Check bookmaker odds from a screenshot — player shots, fouls, cards</summary>
+    <details class="track-record" open>
+      <summary>📷 Check bookmaker odds from a screenshot — player shots, fouls, cards</summary>
       <div class="tr-body">
         <div class="tr-note">SoT = shots on target; fouls = fouls committed; fouled = fouls won. Upload a screenshot of a bookmaker's player markets (shots, shots on target, fouls committed, fouls won, to be booked/carded), or paste the text. It is read on your device, matched to the ${n} players our model has priced this round, and each price is compared with the model. Works best with one market per screenshot, cropped to the list.</div>
-        <input type="file" accept="image/*" id="ocFile" style="margin:6px 0;max-width:100%;">
+        <label for="ocFile" style="display:block;margin:8px 0;padding:14px;text-align:center;background:var(--green);color:#fff;font-family:var(--font-head);font-weight:600;font-size:15px;border-radius:6px;cursor:pointer;">📷 Upload screenshot</label>
+        <input type="file" accept="image/*" id="ocFile" style="position:absolute;width:1px;height:1px;opacity:0;">
         <textarea id="ocText" rows="4" placeholder="…or paste the odds text, e.g.&#10;Shots on target 1+ 2+&#10;Bukayo Saka 6/4 9/2" style="width:100%;font-family:var(--font-body);font-size:12px;padding:6px;border:1px solid var(--line);border-radius:4px;"></textarea>
         <button type="button" id="ocAnalyse" class="btn-grade" style="margin-top:6px;">Analyse</button>
         <div id="ocStatus" class="tr-note" style="margin-top:6px;"></div>
