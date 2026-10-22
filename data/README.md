@@ -55,6 +55,7 @@ Give two sources where possible. Write `"note": "single source"` when there is o
   - `node tools/model/fetch-europe.mjs`: UEFA club-competition fixtures for those countries' clubs.
   - `node tools/model/fetch-lineups.mjs [--since YYYY-MM-DD] [--upcoming]`: ESPN starting XIs and player match stats, cached in `raw/lineups/`, plus announced lineups for the next 3 days.
 - **`model/backtest.json`**: the out-of-sample test, written by `tools/model/backtest.mjs`. It covers accuracy against Bet365 and closing prices, a per-league breakdown, calibration, the value-bet simulation and the context-factor measurements. The site's backtest note is built from it.
+- **`model/season.json`**: the season simulator's output from `tools/model/season-sim.mjs`. It has projected points and title, top-4, promotion and relegation chances.
 - **`model/context.json`**: the context factors and the calibration the weekly build applies, both measured on the validation seasons only.
 - **`tools/model/config.json`**: model settings chosen by `tools/model/tune.mjs` on the validation seasons.
 

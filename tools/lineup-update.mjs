@@ -4,7 +4,8 @@
 //   1. results: finished fixtures get their scores (tools/results.mjs)
 //   2. lineups: confirmed XIs from ESPN, with the regulars missing from each side
 //   3. prices: Bet365 prices refreshed for every fixture not yet kicked off
-//   4. rebuild: tools/build-seed.mjs with the same round, tagged with the time
+//   4. season simulator refreshed, then tools/build-seed.mjs with the same round,
+//      tagged with the time
 // The model's numbers change with lineups only if the backtest enabled the lineup
 // effects (data/model/context.json -> lineup.enabled).
 //
@@ -71,5 +72,6 @@ round.dataUpdated = label(now);
 writeFileSync(roundPath, JSON.stringify(round, null, 1) + '\n');
 console.log(`lineup update: ${withLineups} fixtures with confirmed lineups, ${priced} prices refreshed`);
 
-// 4. Rebuild
+// 4. Season simulator (uses the results added above), then rebuild
+run('tools/model/season-sim.mjs');
 run('tools/build-seed.mjs', path.relative(root, roundPath));

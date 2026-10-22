@@ -37,6 +37,12 @@ For lineups, the share of regulars starting and a back-up goalkeeper were both m
 - xG this season improved the within-season test (286 matches): log-loss 1.0069 against 1.0081.
 - The model is still less accurate than Bet365: test Brier 0.607 against 0.598.
 
+**Simulations (added 22 Oct):**
+
+- **Season simulator:** 10,000 seasons per league, with team-strength uncertainty. The size of that uncertainty is a judgement (sd 0.08), not fitted. Next step: backtest the simulator's top-4 and relegation chances from past mid-season points.
+- **Per-fixture breakdown:** "played 100 times" margins and totals, from the calibrated score grid.
+- **Bet slip:** legs from the same game are priced together from that grid, instead of multiplied.
+
 **Next model steps, in order of expected value:**
 
 1. **Player-quality lineups.** Rate players (for example by minutes-weighted on-pitch goal difference or xG) instead of counting regulars. Missing a star is not the same as missing a squad player.

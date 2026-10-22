@@ -6,7 +6,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { loadMatches, LEAGUE_DIV, GROUPS, fdName } from './data.mjs';
 import { buildState, predict, DEFAULT_CONFIG } from './ensemble.mjs';
-import { fitRatings } from './models.mjs';
+import { fitRatings, marketsFromGrid } from './models.mjs';
 import { calibrate1x2, calibrate2 } from './calibration.mjs';
 import { lineupMultipliers } from './lineups.mjs';
 import { loadEurope, schedule, teamFlags, isDerby, contextMultipliers, FLAGS } from './context.mjs';
@@ -96,10 +96,13 @@ export function modelForRound(root, fixtures) {
     // Calibrated with the settings the backtest fitted on past seasons (calibration.mjs).
     const x3 = calib ? calibrate1x2([p.h, p.d, p.a], calib.x12) : [p.h, p.d, p.a];
     const btts = calib ? calibrate2(p.btts, calib.btts) : p.btts, o25 = calib ? calibrate2(p.o25, calib.o25) : p.o25;
+    const grid = calibratedGrid(p.grid, { h: x3[0], d: x3[1], a: x3[2], btts, o25 });
+    const gm = marketsFromGrid(grid);
     byId[f.id] = {
       hw: r1(x3[0]), dw: r1(x3[1]), aw: r1(x3[2]), btts: r1(btts), ou25: r1(o25),
-      over15: r1(p.o15), over35: r1(p.o35), cleanSheetH: r1(p.csH), cleanSheetA: r1(p.csA),
-      topScorelines: p.top.map(s => ({ h: s.h, a: s.a, pct: r1(s.p) })),
+      over15: r1(gm.o15), over35: r1(gm.o35), cleanSheetH: r1(gm.csH), cleanSheetA: r1(gm.csA),
+      grid,
+      topScorelines: gm.top.map(s => ({ h: s.h, a: s.a, pct: r1(s.p) })),
       expH: +p.expH.toFixed(3), expA: +p.expA.toFixed(3),
       components: {
         goals: round3(p.components.goals), shots: round3(p.components.shots), elo: round3(p.components.elo),
@@ -119,6 +122,32 @@ export function modelForRound(root, fixtures) {
     backtest: bt && summary(bt),
   };
   return { byId, info, warnings, asOfLabel: new Date(asOf).toISOString().slice(0, 10) };
+}
+
+// Adjust the score grid (iterative proportional fitting) so it agrees with the
+// calibrated win/draw/loss, BTTS and Over 2.5 shown on the site; scorelines,
+// margins, totals and same-game combinations then all come from one distribution.
+// Returned as rows 0-7 x columns 0-7 (home x away goals), the tail beyond 7 folded in.
+export function calibratedGrid(grid, t) {
+  const N = 8;
+  const g = Array.from({ length: N }, (_, x) => Array.from({ length: N }, (_, y) => 0));
+  grid.forEach((row, x) => row.forEach((p, y) => { g[Math.min(x, N - 1)][Math.min(y, N - 1)] += p; }));
+  const parts = [
+    [(x, y) => x > y, t.h], [(x, y) => x === y, t.d], [(x, y) => x < y, t.a],
+    [(x, y) => x + y > 2, t.o25], [(x, y) => x + y <= 2, 1 - t.o25],
+    [(x, y) => x > 0 && y > 0, t.btts], [(x, y) => !(x > 0 && y > 0), 1 - t.btts],
+  ];
+  for (let it = 0; it < 200; it++) {
+    for (const [inPart, target] of parts) {
+      let s = 0;
+      for (let x = 0; x < N; x++) for (let y = 0; y < N; y++) if (inPart(x, y)) s += g[x][y];
+      if (s <= 0) continue;
+      const k = target / s;
+      for (let x = 0; x < N; x++) for (let y = 0; y < N; y++) if (inPart(x, y)) g[x][y] *= k;
+    }
+  }
+  const tot = g.flat().reduce((a, b) => a + b, 0);
+  return g.map(row => row.map(p => +(p / tot).toFixed(5)));
 }
 
 function round3(o) {
