@@ -112,6 +112,11 @@ Everything below was chosen on the validation seasons (2023/24, 2024/25) and onl
 - A shots component for the European model from ESPN team stats (36,209 matches; 443 clubs linked between UEFA and ESPN). Shots alone were much weaker than goals (validation 0.96 v 0.917), so validation gave it zero weight: ESPN's stats are patchy for smaller leagues and qualifiers. Kept in the code for re-testing.
 - Direct models for BTTS and Over 2.5 (logistic on expected goals and shots) instead of recalibrated Poisson: all within 0.0003 of each other. BTTS test log-loss: league base rate 0.6865, current 0.6858, best alternative 0.6855. BTTS is close to unpredictable beyond its base rate with this data.
 
+- Player-quality lineups: each XI's share of the team's usual shots on target and assists (and, separately, share of regulars) as a multiplier on expected goals, on 5,719 matches with ESPN lineups. Validation improved slightly (0.9901 v 0.9927) but the test seasons got worse (1.0171 v 1.0145), the same pattern as the regulars-only test in v4, so lineups stay off the numbers.
+- Referee effect on yellow cards (Premier League, where football-data records referees): a referee's past card rate did not predict cards beyond the two teams' own rates (Poisson log-loss, test: 2.0748 with the referee, 2.0737 without). Referees' raw rates (0.88-1.22 of average) mostly reflect which games they are given.
+
+Pipeline check: the lineup-time update was run end to end from a fresh clone (fetch, results, lineups, prices, Unibet props, grading, build, verify) and passed. That run showed the scheduled updates fetched only 150 days of ESPN lineups while the player model rates players on 365 days; they now fetch 370 days.
+
 Log entries from this version are under `independent-v4.2-2026-10-23`.
 
 ## Pending
