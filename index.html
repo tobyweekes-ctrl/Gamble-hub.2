@@ -1201,6 +1201,12 @@ function activeProbs(m){
     if(!mp) return {hw:null, dw:null, aw:null, btts:null, ou25:null, expH:null, expA:null, editable:false, available:false};
     return Object.assign({}, mp, {editable:false, available:true});
   }
+  // No bookmaker price on file (e.g. the European ties): show our model instead of
+  // empty boxes, flagged on the card.
+  if(m.hw==null && m.dw==null && m.aw==null){
+    const mp = computeModelProbs(m);
+    if(mp) return Object.assign({}, mp, {editable:false, available:true, fallback:true});
+  }
   return {hw:m.hw, dw:m.dw, aw:m.aw, btts:m.btts, ou25:m.ou25, expH:null, expA:null, editable:true, available:true};
 }
 
@@ -2320,7 +2326,7 @@ function matchRow(m){
   const rec = recommendation(dm);
   const bttsRec = marketRec(dm.btts, 'BTTS Yes', 'BTTS No');
   const ouRec = marketRec(dm.ou25, 'Over 2.5', 'Under 2.5');
-  const pred = modelMode ? {expH:ap.expH, expA:ap.expA, home:Math.round(ap.expH), away:Math.round(ap.expA)} : predictScore(dm);
+  const pred = (modelMode || ap.fallback) ? {expH:ap.expH, expA:ap.expA, home:Math.round(ap.expH), away:Math.round(ap.expA)} : predictScore(dm);
 
   // Confidence in the DATA is separate from the probability number itself,
   // and shown regardless of which source is currently on screen.
@@ -2354,7 +2360,8 @@ function matchRow(m){
       </div>` : ''}
   `;
 
-  const winInputs = modelMode
+  const showModel = modelMode || !!ap.fallback;
+  const winInputs = showModel
     ? `<div class="probfield"><label>${abbrev(m.home)} win %</label><span class="readonly-prob">${ap.hw}%</span></div>
        <div class="probfield"><label>Draw %</label><span class="readonly-prob">${ap.dw}%</span></div>
        <div class="probfield"><label>${abbrev(m.away)} win %</label><span class="readonly-prob">${ap.aw}%</span></div>`
@@ -2362,11 +2369,11 @@ function matchRow(m){
        <div class="probfield"><label>Draw %</label><input type="number" min="0" max="100" step="0.1" value="${m.dw}" data-id="${m.id}" data-field="dw"></div>
        <div class="probfield"><label>${abbrev(m.away)} win %</label><input type="number" min="0" max="100" step="0.1" value="${m.aw}" data-id="${m.id}" data-field="aw"></div>`;
 
-  const bttsInput = modelMode
+  const bttsInput = showModel
     ? `<span class="pct-label">BTTS Yes %</span><span class="readonly-prob" style="width:auto;flex:0 0 70px;">${ap.btts==null?'—':ap.btts+'%'}</span>`
     : `<span class="pct-label">BTTS Yes %</span><input type="number" min="0" max="100" step="1" value="${m.btts==null?'':m.btts}" data-id="${m.id}" data-field="btts">`;
 
-  const ouInput = modelMode
+  const ouInput = showModel
     ? `<span class="pct-label">Over 2.5 %</span><span class="readonly-prob" style="width:auto;flex:0 0 70px;">${ap.ou25==null?'—':ap.ou25+'%'}</span>`
     : `<span class="pct-label">Over 2.5 %</span><input type="number" min="0" max="100" step="1" value="${m.ou25==null?'':m.ou25}" data-id="${m.id}" data-field="ou25">`;
 
@@ -2382,11 +2389,12 @@ function matchRow(m){
       </div>
     </div>
     ${confBadgeHTML}
-    ${modelMode ? modelFlagHTML(ap) : ''}
+    ${ap.fallback ? '<div class="model-flag">No bookmaker price on file for this game, so our model is shown here.</div>' : ''}
+    ${showModel ? modelFlagHTML(ap) : ''}
     <div class="probs">
       ${winInputs}
     </div>
-    <div class="prob-warn" data-warn="${m.id}" style="${(!modelMode && Math.abs(m.hw+m.dw+m.aw-100)>0.5) ? '' : 'display:none;'}">
+    <div class="prob-warn" data-warn="${m.id}" style="${(!showModel && Math.abs(m.hw+m.dw+m.aw-100)>0.5) ? '' : 'display:none;'}">
       ⚠ Win/draw/away add up to ${(m.hw+m.dw+m.aw).toFixed(1)}%, not 100%.
       <button data-action="normalize" data-id="${m.id}">Normalise</button>
     </div>
@@ -2469,18 +2477,19 @@ function addMatchForm(league){
 function bestPickForMatch(m){
   const ap = activeProbs(m);
   if(!ap.available) return {label:'', prob:null, matchId:m.id, type:'win', bookOdds:null};
-  const tag = probSource==='model' ? ' (model)' : '';
+  const tag = (probSource==='model' || ap.fallback) ? ' (model)' : '';
+  const legSrc = ap.fallback ? 'model' : probSource;
   const candidates = [];
-  candidates.push({label:`${m.home} to win${tag}`, prob:ap.hw, sel:'H', src:probSource, matchId:m.id, type:'win'});
-  candidates.push({label:`${m.away} to win${tag}`, prob:ap.aw, sel:'A', src:probSource, matchId:m.id, type:'win'});
-  candidates.push({label:`Draw${tag} — ${m.home} vs ${m.away}`, prob:ap.dw, sel:'D', src:probSource, matchId:m.id, type:'win'});
+  candidates.push({label:`${m.home} to win${tag}`, prob:ap.hw, sel:'H', src:legSrc, matchId:m.id, type:'win'});
+  candidates.push({label:`${m.away} to win${tag}`, prob:ap.aw, sel:'A', src:legSrc, matchId:m.id, type:'win'});
+  candidates.push({label:`Draw${tag} — ${m.home} vs ${m.away}`, prob:ap.dw, sel:'D', src:legSrc, matchId:m.id, type:'win'});
   if(ap.btts!=null){
-    candidates.push({label:`BTTS Yes${tag} — ${m.home} vs ${m.away}`, prob:ap.btts, sel:'BTTSY', src:probSource, matchId:m.id, type:'btts'});
-    candidates.push({label:`BTTS No${tag} — ${m.home} vs ${m.away}`, prob:100-ap.btts, sel:'BTTSN', src:probSource, matchId:m.id, type:'btts'});
+    candidates.push({label:`BTTS Yes${tag} — ${m.home} vs ${m.away}`, prob:ap.btts, sel:'BTTSY', src:legSrc, matchId:m.id, type:'btts'});
+    candidates.push({label:`BTTS No${tag} — ${m.home} vs ${m.away}`, prob:100-ap.btts, sel:'BTTSN', src:legSrc, matchId:m.id, type:'btts'});
   }
   if(ap.ou25!=null){
-    candidates.push({label:`Over 2.5${tag} — ${m.home} vs ${m.away}`, prob:ap.ou25, sel:'O25', src:probSource, matchId:m.id, type:'ou'});
-    candidates.push({label:`Under 2.5${tag} — ${m.home} vs ${m.away}`, prob:100-ap.ou25, sel:'U25', src:probSource, matchId:m.id, type:'ou'});
+    candidates.push({label:`Over 2.5${tag} — ${m.home} vs ${m.away}`, prob:ap.ou25, sel:'O25', src:legSrc, matchId:m.id, type:'ou'});
+    candidates.push({label:`Under 2.5${tag} — ${m.home} vs ${m.away}`, prob:100-ap.ou25, sel:'U25', src:legSrc, matchId:m.id, type:'ou'});
   }
   candidates.sort((a,b)=>b.prob-a.prob);
   const best = candidates[0];
@@ -2651,8 +2660,10 @@ document.getElementById('leagues').addEventListener('click', e=>{
   const id = e.target.getAttribute('data-id');
   const m = id ? matches.find(x=>x.id===id) : null;
 
-  const modelMode = probSource==='model';
+  // A game with no bookmaker price shows our model in either view, so its legs are model legs.
+  const modelMode = probSource==='model' || !!(m && activeProbs(m).fallback);
   const tag = modelMode ? ' (model)' : '';
+  const legSrc = modelMode ? 'model' : probSource;
 
   if(action==='normalize'){
     const sum = m.hw + m.dw + m.aw;
@@ -2667,27 +2678,27 @@ document.getElementById('leagues').addEventListener('click', e=>{
   }
   if(action==='addwinh'){
     const ap = activeProbs(m);
-    addLeg({matchId:m.id, label:`${m.home} to win${tag}`, prob:ap.hw, sel:'H', src:probSource, type:'win', bookOdds:toBookOdds(ap.hw,'win'), fixture:`${m.home} vs ${m.away}`});
+    addLeg({matchId:m.id, label:`${m.home} to win${tag}`, prob:ap.hw, sel:'H', src:legSrc, type:'win', bookOdds:toBookOdds(ap.hw,'win'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addwina'){
     const ap = activeProbs(m);
-    addLeg({matchId:m.id, label:`${m.away} to win${tag}`, prob:ap.aw, sel:'A', src:probSource, type:'win', bookOdds:toBookOdds(ap.aw,'win'), fixture:`${m.home} vs ${m.away}`});
+    addLeg({matchId:m.id, label:`${m.away} to win${tag}`, prob:ap.aw, sel:'A', src:legSrc, type:'win', bookOdds:toBookOdds(ap.aw,'win'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addbttsy'){
     const ap = activeProbs(m);
-    addLeg({matchId:m.id, label:`BTTS Yes${tag} — ${m.home} vs ${m.away}`, prob:ap.btts, sel:'BTTSY', src:probSource, type:'btts', bookOdds:toBookOdds(ap.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
+    addLeg({matchId:m.id, label:`BTTS Yes${tag} — ${m.home} vs ${m.away}`, prob:ap.btts, sel:'BTTSY', src:legSrc, type:'btts', bookOdds:toBookOdds(ap.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addbttsn'){
     const ap = activeProbs(m);
-    addLeg({matchId:m.id, label:`BTTS No${tag} — ${m.home} vs ${m.away}`, prob:100-ap.btts, sel:'BTTSN', src:probSource, type:'btts', bookOdds:toBookOdds(100-ap.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
+    addLeg({matchId:m.id, label:`BTTS No${tag} — ${m.home} vs ${m.away}`, prob:100-ap.btts, sel:'BTTSN', src:legSrc, type:'btts', bookOdds:toBookOdds(100-ap.btts,'btts'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addoveryes'){
     const ap = activeProbs(m);
-    addLeg({matchId:m.id, label:`Over 2.5${tag} — ${m.home} vs ${m.away}`, prob:ap.ou25, sel:'O25', src:probSource, type:'ou', bookOdds:toBookOdds(ap.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
+    addLeg({matchId:m.id, label:`Over 2.5${tag} — ${m.home} vs ${m.away}`, prob:ap.ou25, sel:'O25', src:legSrc, type:'ou', bookOdds:toBookOdds(ap.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='addoverno'){
     const ap = activeProbs(m);
-    addLeg({matchId:m.id, label:`Under 2.5${tag} — ${m.home} vs ${m.away}`, prob:100-ap.ou25, sel:'U25', src:probSource, type:'ou', bookOdds:toBookOdds(100-ap.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
+    addLeg({matchId:m.id, label:`Under 2.5${tag} — ${m.home} vs ${m.away}`, prob:100-ap.ou25, sel:'U25', src:legSrc, type:'ou', bookOdds:toBookOdds(100-ap.ou25,'ou'), fixture:`${m.home} vs ${m.away}`});
   }
   if(action==='delete'){
     matches = matches.filter(x=>x.id!==id);
