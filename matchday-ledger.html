@@ -1341,8 +1341,11 @@ function ocHasName(line){
   return /[a-z]{3,}/.test(t);
 }
 function ocFindPlayer(line, index){
-  const words = new Set(ocNorm(line).split(/[^a-z]+/).filter(w=>w.length>2));
-  let cands = index.filter(x=>words.has(x.last));
+  const order = ocNorm(line).split(/[^a-z]+/).filter(w=>w.length>2);
+  const words = new Set(order);
+  // A surname that is the first of two or more name words is probably someone's first
+  // name ("Taylor Harwood-Bellis" is not Caleb Taylor), unless his first name is there too.
+  let cands = index.filter(x=>words.has(x.last) && !(order.length>1 && order[0]===x.last && !words.has(x.first)));
   if(cands.length>1){
     const narrowed = cands.filter(x=>words.has(x.first) || new RegExp(`\\b${x.first[0]}\\b`).test(ocNorm(line)));
     if(narrowed.length) cands = narrowed;
@@ -1390,8 +1393,8 @@ function ocParse(text, forced){
       prices.forEach((pr, i)=>rows.push({who:target, market:columns[i], k:1, price:pr.dec, priceText:pr.txt, assumed:false}));
       continue;
     }
-    const m = forced && forced!=='auto' ? forced : (mks[0] || market);
-    if(!m) continue;
+    // No caption and no market picked: kept, with the market left for the user to pick.
+    const m = (forced && forced!=='auto' ? forced : (mks[0] || market)) || null;
     // A column header the reader cut short (1+ 2+ read, 3+ missed) is extended in steps of one.
     let hdr = header;
     if(hdr.length && prices.length>hdr.length && hdr.every((v,i)=>i===0 || v===hdr[i-1]+1)){
@@ -1405,6 +1408,8 @@ function ocParse(text, forced){
     // Remember the row, in case its remaining prices arrive on the following lines.
     last = single ? null : {who:target, market:m, n:prices.length, lines:hdr.length>prices.length ? hdr : null};
   }
+  ocCheckOrder(rows);
+  ocCheckFixture(rows, unmatched);
   rows.unmatched = unmatched;
   return rows;
 }
@@ -1556,6 +1561,16 @@ function ocParseWords(words, forced){
   const unknown = new Map();
   const noteUnknown = (name, price)=>{ if(!unknown.has(name)) unknown.set(name, []); unknown.get(name).push(price); };
   const forcedM = forced && forced!=='auto' ? forced : null;
+  // Without column headers (a scrolled screenshot), the price columns are found from
+  // where the prices sit: the leftmost column is 1+, the next 2+ and so on (flagged as assumed).
+  const pxs = [];
+  lines.forEach(r=>r.ws.forEach((w,i)=>{ if(ocWordPrice(w, r.ws[i-1])) pxs.push(w.cx); }));
+  const hMed = ocGroupRows(words).hMed, priceCols = [];
+  pxs.sort((a,b)=>a-b).forEach(cx=>{
+    const c = priceCols[priceCols.length-1];
+    if(c && cx - c.max < hMed*3){ c.max = cx; c.n++; c.sum += cx; } else priceCols.push({max:cx, n:1, sum:cx});
+  });
+  const colCentres = priceCols.filter(c=>c.n>=2).map(c=>c.sum/c.n);
   for(const r of lines){
     const ws = r.ws;
     const prices = [];
@@ -1591,7 +1606,6 @@ function ocParseWords(words, forced){
       const inlineM = ocMarketsIn(segText)[0];
       const colM = colMarkets ? ocNearest(colMarkets, w.cx).k : null;
       const m = forcedM || inlineM || colM || market;
-      if(!m){ unmatched.push(`${who.hit.p.name} ${w.price.txt} (market not known: pick it above)`); continue; }
       const single = ['none','first','rc','yc'].includes(m);
       let k = 1, assumed = false;
       if(!single){
@@ -1600,15 +1614,66 @@ function ocParseWords(words, forced){
         else if(cols) k = ocColumnLine(cols, w.cx);
         else if(defaultK) k = defaultK;
         else if(inlineLines.length===prices.length) k = inlineLines[prices.indexOf(w)].k;
+        else if(colCentres.length>1){ k = colCentres.indexOf(ocNearest(colCentres.map(cx=>({cx})), w.cx).cx) + 1; assumed = true; }
         else { k = nInRow+1; assumed = true; }
       }
       nInRow++;
-      rows.push({who, market:m, k, price:w.price.dec, priceText:w.price.txt, assumed});
+      // No caption and no market picked: kept, with the market left for the user to pick.
+      rows.push({who, market:m || null, k, price:w.price.dec, priceText:w.price.txt, assumed});
     }
   }
-  unknown.forEach((prices, name)=>unmatched.push(`${name}: ${prices.join(', ')}`));
+  unknown.forEach((prices, name)=>{ if(!OC_DATE_JUNK.test(name)) unmatched.push(`${name}: ${prices.join(', ')}`); });
+  ocCheckOrder(rows);
+  ocCheckFixture(rows, unmatched);
   rows.unmatched = unmatched;
   return rows;
+}
+// A screenshot is normally one match. When nearly all of it is one match, a player
+// from another fixture is a name matched to the wrong player ("Rayan Ait Nouri" to
+// Bournemouth's Rayan): moved to the unmatched list. Otherwise such rows are flagged.
+function ocCheckFixture(rows, unmatched){
+  const n = new Map();
+  rows.forEach(r=>n.set(r.who.hit.fixture, (n.get(r.who.hit.fixture)||0)+1));
+  const [top, c] = [...n.entries()].sort((a,b)=>b[1]-a[1])[0] || [];
+  if(!top || c < rows.length*0.6) return;
+  const moved = new Map();
+  for(let i=rows.length-1;i>=0;i--){
+    const r = rows[i];
+    if(r.who.hit.fixture===top) continue;
+    if(c>=4 && c>=rows.length*0.8){
+      const key = `${r.who.hit.p.name} (${r.who.hit.fixture}, not this match: probably a misread or missing name)`;
+      moved.set(key, [r.priceText, ...(moved.get(key)||[])]);
+      rows.splice(i, 1);
+    } else r.note = (r.note ? r.note+'; ' : '') + `a different match from the rest of the screenshot (${top}): check the name`;
+  }
+  moved.forEach((prices, key)=>unmatched.push(`${key}: ${prices.join(', ')}`));
+}
+// Kick-off times and dates in the page header ("24 Oct 12:30") are not players.
+const OC_DATE_JUNK = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b|\d+:\d+/i;
+// In a count market the odds lengthen from 1+ to 2+ to 3+. A price that breaks this
+// was misread: most often a leading 1 is lost ("11/4" read as "1/4"). That case is
+// corrected and flagged; anything else is flagged for checking.
+function ocCheckOrder(rows){
+  const groups = new Map();
+  rows.forEach(r=>{
+    if(r.market && !OC_COUNT.includes(r.market)) return;
+    const key = r.who.hit.p.name + '|' + r.market;
+    if(!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(r);
+  });
+  groups.forEach(g=>{
+    g.sort((a,b)=>a.k-b.k);
+    for(let i=1;i<g.length;i++){
+      const a = g[i-1], b = g[i];
+      if(b.k===a.k || b.price>a.price) continue;
+      const m = /^1\/(\d+)$/.exec(b.priceText||'');
+      const fixed = m ? parseOddsInput('11/'+m[1]) : null;
+      if(fixed && fixed>a.price && (!g[i+1] || g[i+1].k===b.k || fixed<g[i+1].price)){
+        b.note = `read as ${b.priceText}, taken as 11/${m[1]} (odds must lengthen from ${a.k}+ to ${b.k}+): check`;
+        b.price = fixed; b.priceText = '11/'+m[1];
+      } else b.note = `shorter than the ${a.k}+ price, so probably misread: check`;
+    }
+  });
 }
 
 // Model chance for a parsed row. First card: each player's booking rate against the
@@ -1616,7 +1681,7 @@ function ocParseWords(words, forced){
 // P(first) = own rate / total x (1 - e^-total). An approximation, not backtested.
 function ocModelChance(r){
   const hit = r.who.hit, exp = hit.p.exp;
-  if(!exp || r.market==='none') return {prob:null};
+  if(!exp || !r.market || r.market==='none') return {prob:null};
   const disp = MODEL_INFO.players && MODEL_INFO.players.dispersion ? MODEL_INFO.players.dispersion[r.market] : null;
   if(r.market==='first'){
     const cards = hit.m.model.stats && hit.m.model.stats.cards;
@@ -1634,10 +1699,10 @@ const OC_COUNT = ['sh','sot','fc','fw'];
 function ocRowHTML(r, i){
   const mc = ocModelChance(r), prob = mc.prob;
   const edge = prob==null ? null : prob*r.price - 1;
-  const flags = [r.assumed ? 'line assumed' : '', r.who.ambiguous ? 'name matched more than one player' : '', mc.approx ? 'approximation, not backtested' : '',
+  const flags = [r.note || '', r.assumed ? 'line assumed' : '', r.who.ambiguous ? 'name matched more than one player' : '', mc.approx ? 'approximation, not backtested' : '',
     r.who.hit.extra ? (r.who.hit.status==='confirmed' ? 'on the bench: chance assumes he starts' : 'not in our probable XI: chance assumes he starts') : (r.who.hit.status==='probable' ? 'probable XI' : '')].filter(Boolean).join('; ');
-  const marketSel = `<select class="oc-market sim-select" style="font-size:12px;padding:3px;">${OC_PICK.map(([k,l])=>`<option value="${k}"${k===r.market?' selected':''}>${l}</option>`).join('')}</select>`;
-  const lineSel = OC_COUNT.includes(r.market) ? `<select class="oc-line sim-select" style="font-size:12px;padding:3px;">${[1,2,3,4,5].map(k=>`<option value="${k}"${k===r.k?' selected':''}>${k}+</option>`).join('')}</select>` : '';
+  const marketSel = `<select class="oc-market sim-select" style="font-size:12px;padding:3px;${r.market?'':'border:2px solid var(--brick);'}">${r.market?'':'<option value="" selected>Pick the market</option>'}${OC_PICK.map(([k,l])=>`<option value="${k}"${k===r.market?' selected':''}>${l}</option>`).join('')}</select>`;
+  const lineSel = !r.market || OC_COUNT.includes(r.market) ? `<select class="oc-line sim-select" style="font-size:12px;padding:3px;">${[1,2,3,4,5].map(k=>`<option value="${k}"${k===r.k?' selected':''}>${k}+</option>`).join('')}</select>` : '';
   return {edge, html:`<div class="oc-row" data-oc="${i}" style="border-top:1px solid var(--line);padding:8px 0;">
     <div style="font-weight:600;font-size:13px;">${escapeHTML(r.who.hit.p.name)} <span style="opacity:.6;font-weight:400;font-size:11px;">${escapeHTML(r.who.hit.fixture)}${flags?' · '+escapeHTML(flags):''}</span></div>
     <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap;">${marketSel}${lineSel}
@@ -1655,7 +1720,8 @@ function ocRender(){
     return;
   }
   const built = ocRows.map((r,i)=>({i, ...ocRowHTML(r,i)})).sort((a,b)=>(b.edge??-9)-(a.edge??-9));
-  box.innerHTML = `<div>${built.map(b=>b.html).join('')}</div>
+  const noMarket = ocRows.filter(r=>!r.market).length;
+  box.innerHTML = `${noMarket ? `<div style="margin:8px 0;padding:10px;border:2px solid var(--brick);border-radius:6px;font-size:13px;"><b>Which market is this?</b> The screenshot doesn't show the market name (the caption is scrolled off), so ${noMarket} price${noMarket>1?'s are':' is'} waiting. Pick it in <b>What's in this screenshot?</b> above (for example Fouls committed) and every row updates.${ocRows.some(r=>r.assumed)?' The columns are taken as 1+, 2+, 3+ from left to right.':''}</div>` : ''}<div>${built.map(b=>b.html).join('')}</div>
     ${ocRows.unmatched && ocRows.unmatched.length ? `<div class="tr-note" style="margin-top:8px;"><b>Couldn't match these lines</b> (player not in our list for this round, or the name was misread): ${ocRows.unmatched.map(l=>escapeHTML(l)).join(' · ')}</div>` : ''}
     <div class="tr-note" style="margin-top:6px;">Biggest disagreement first. Bookmaker: the chance its odds imply (including its margin). Model: our model's chance. Fair odds: the odds our model's chance is worth. Edge = model chance x decimal odds - 1. Change a row's market or line if it was read wrong. Check each price against your screenshot: the reader can misread. The player model is calibrated on past seasons but has not been tested against bookmaker prices, so a positive edge is something to check, not a sure thing.</div>`;
   const rowOf = e => ocRows[+e.target.closest('.oc-row').getAttribute('data-oc')];
@@ -1664,8 +1730,10 @@ function ocRender(){
     if(v){ r.price = v; r.priceText = e.target.value.trim(); ocRender(); } else { e.target.style.borderColor = 'var(--brick)'; }
   }));
   box.querySelectorAll('.oc-market').forEach(sel=>sel.addEventListener('change', e=>{
-    const r = rowOf(e); r.market = e.target.value; r.assumed = false;
+    const r = rowOf(e), was = r.market; r.market = e.target.value;
     if(!OC_COUNT.includes(r.market)) r.k = 1;
+    // Picking the market for one unlabelled row fills in the rest of the unlabelled rows.
+    if(!was) ocRows.forEach(x=>{ if(!x.market){ x.market = r.market; if(!OC_COUNT.includes(x.market)) x.k = 1; } });
     ocRender();
   }));
   box.querySelectorAll('.oc-line').forEach(sel=>sel.addEventListener('change', e=>{ const r = rowOf(e); r.k = +e.target.value; r.assumed = false; ocRender(); }));
@@ -1737,7 +1805,7 @@ function renderOddsCheck(){
   const n = ocPlayers().length;
   container.innerHTML = `
     <details class="track-record" open>
-      <summary>📷 Check bookmaker odds from a screenshot — player shots, fouls, cards <span style="font-weight:400;font-size:11px;opacity:.6;">(reader v4)</span></summary>
+      <summary>📷 Check bookmaker odds from a screenshot — player shots, fouls, cards <span style="font-weight:400;font-size:11px;opacity:.6;">(reader v5)</span></summary>
       <div class="tr-body">
         <div class="tr-note">SoT = shots on target; fouls = fouls committed; fouled = fouls won. Upload a screenshot of a bookmaker's player markets (shots, shots on target, fouls committed, fouls won, to be booked/carded, first card, red card/sent off), or paste the text. The section captions decide the market, so keep them in the screenshot. It is read on your device, matched to the ${n} players our model has priced this round, and each price is compared with the model. Works best with one market per screenshot, cropped to the list.</div>
         <label style="display:block;font-size:13px;margin-top:6px;">What's in this screenshot?
