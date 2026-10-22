@@ -139,6 +139,19 @@ export function modelForRound(root, fixtures) {
         ? `${name}: rated from ${DIV_NAME[t.group] || t.group} results and ${t.euroGames} European games.`
         : `${name}: no domestic league data, so rated from ${t.euroGames} European games only (weaker rating).`);
     }
+    // Confirmed lineups (tools/europe-lineups.mjs): shown, and a lineup-adjusted
+    // figure alongside, using the lineup effect measured on past league seasons. That
+    // effect did not improve the test seasons, so it does not replace the main numbers.
+    const L = f.lineups, Lfit = ctxFile.lineup;
+    if (L && L.home.reg != null && L.away.reg != null && Lfit && Lfit.gamma != null) {
+      const asFeat = s => ({ reg: s.reg, gk: !!s.backupKeeper });
+      const lm = lineupMultipliers(asFeat(L.home), asFeat(L.away), Lfit);
+      const qa = probsFor(e.h * lm.h, e.a * lm.a, xbt.rho);
+      const xa = calibrate1x2([qa.h, qa.d, qa.a], xbt.calibration.x12);
+      const pc = v => Math.round(v * 100);
+      const rot = s => s.reg < 0.7 ? ` HEAVILY ROTATED: ${pc(s.reg)}% of usual starters` : ` ${pc(s.reg)}% of usual starters`;
+      context.push(`Confirmed lineups: ${f.home}${rot(L.home)}${L.home.backupKeeper ? ', back-up keeper' : ''}; ${f.away}${rot(L.away)}${L.away.backupKeeper ? ', back-up keeper' : ''}. Lineup-adjusted: ${f.home} ${pc(xa[0])}%, draw ${pc(xa[1])}%, ${f.away} ${pc(xa[2])}% (expected goals ${(e.h * lm.h).toFixed(2)}-${(e.a * lm.a).toFixed(2)}). The adjustment uses the lineup effect measured on past league seasons, which did not make predictions more accurate on the test seasons, so the main numbers are not changed.`);
+    }
     const T = xbt.test;
     context.push(`Tested on ${T.n} European games it never saw (2024/25 to now): win/draw/loss log-loss ${T.x12.logloss} against ${T.x12.baseLogloss} for base rates, so it knows something; no bookmaker prices for these games, so it is not shown to beat the market. Over 2.5 ${T.o25.logloss < T.o25.base ? 'slightly better than' : 'no better than'} base rates; BTTS ${T.btts.logloss < T.btts.base ? 'slightly better than' : 'no better than'} base rates.`);
     byId[f.id] = {
