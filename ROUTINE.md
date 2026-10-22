@@ -46,7 +46,7 @@ The predictions come from **our own model** (`tools/model/`), which is fitted on
 
 ## Lineup-time updates
 
-Separate scheduled sessions run at Fri 19:00, Sat 11:00, 14:00 and 17:00, and Sun 13:00 and 15:15 (UK time). Team sheets come out about 60-75 minutes before kick-off. Each run:
+Separate scheduled sessions run at Fri 19:00, Sat 11:20, 14:00 and 17:00, and Sun 13:00 and 15:15 (UK time). Team sheets come out about 60-75 minutes before kick-off. Each run:
 
 1. `sh tools/model/fetch.sh` and `node tools/model/fetch-europe.mjs`. The model needs the results data to build.
 2. `node tools/lineup-update.mjs`. This updates the latest round file:
@@ -60,7 +60,7 @@ Separate scheduled sessions run at Fri 19:00, Sat 11:00, 14:00 and 17:00, and Su
 
 Lineups change the model's numbers only if the monthly backtest found that lineup adjustments improve accuracy on the test seasons (`lineup.enabled` in `data/model/context.json`). Until then they are shown, not applied.
 
-If no lineups are announced yet (the 11:00 run can be early for 12:30 kick-offs), the run still refreshes prices and results, and says so.
+If no lineups are announced yet (for example a 12:30 kick-off whose team sheets are late), the run still refreshes prices and results, and says so.
 
 ## Sources
 

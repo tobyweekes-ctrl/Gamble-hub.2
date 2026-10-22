@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Lineup-time update, run shortly after team sheets come out (scheduled Fri 19:00,
-// Sat 11:00 / 14:00 / 17:00, Sun 13:00 / 15:15 UK time). For the current round:
+// Sat 11:20 / 14:00 / 17:00, Sun 13:00 / 15:15 UK time). For the current round:
 //   1. results: finished fixtures get their scores (tools/results.mjs)
 //   2. lineups: confirmed XIs from ESPN, with the regulars missing from each side
 //   3. prices: Bet365 prices refreshed for every fixture not yet kicked off
