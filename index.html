@@ -1272,7 +1272,8 @@ function ocAtLeast(mu, k, r){
   return Math.max(0, 1-c);
 }
 function ocPrices(line){
-  const cleaned = line.replace(/(over|under|o|u)\s*\d+\.5/gi, ' ').replace(/\d\+/g, ' ');
+  const cleaned = line.replace(/(over|under|o|u)\s*\d+\.5/gi, ' ').replace(/\d\s*\+/g, ' ')
+    .replace(/(\d)\s*(or\s*more|plus)\b/gi, ' ').replace(/at\s*least\s*\d/gi, ' ');
   const out = [];
   const re = /(\d{1,3})\s*\/\s*(\d{1,3})|\bev(en)?s\b|\b(\d{1,3}\.\d{1,2})\b/gi;
   let mt;
@@ -1283,11 +1284,29 @@ function ocPrices(line){
   }
   return out;
 }
+// Lines (1+, 2+ ...) named in a line of text, left to right. Bookmakers write them
+// many ways: "2+", "Over 1.5", "2 or more", "at least 2", "two or more", "2 fouls".
+const OC_WORDNUM = {one:1, two:2, three:3, four:4, five:5};
+const OC_LINE_PATTERNS = [
+  [/(\d)\s*\+/g, m=>+m[1]],
+  [/over\s*(\d+)\.5/gi, m=>+m[1]+1],
+  [/(\d)\s*(?:or\s*more|plus)\b/gi, m=>+m[1]],
+  [/at\s*least\s*(\d)/gi, m=>+m[1]],
+  [/\b(one|two|three|four|five)\s*(?:or\s*more|\+|plus)/gi, m=>OC_WORDNUM[m[1].toLowerCase()]],
+  [/\b(\d)\s*(?:fouls?|shots?|tackles?|cards?)\b/gi, m=>+m[1]],
+];
 function ocThresholds(line){
-  const t = [];
-  line.replace(/(\d)\s*\+/g, (_, n)=>{ t.push(+n); return _; });
-  line.replace(/over\s*(\d+)\.5/gi, (_, n)=>{ t.push(+n+1); return _; });
-  return t;
+  const found = [], taken = [];
+  for(const [re, val] of OC_LINE_PATTERNS){
+    re.lastIndex = 0;
+    let m;
+    while((m = re.exec(line))){
+      if(taken.some(([a,b])=>m.index<b && m.index+m[0].length>a)) continue; // already read by an earlier pattern
+      taken.push([m.index, m.index+m[0].length]);
+      found.push({at:m.index, v:val(m)});
+    }
+  }
+  return found.sort((a,b)=>a.at-b.at).map(f=>f.v).filter(v=>v>=1 && v<=9);
 }
 // Every market named in a line, in left-to-right order. Each phrase is claimed by
 // the most specific market and blanked out, so "first card" is not also a "card".
@@ -1318,20 +1337,31 @@ function ocFindPlayer(line, index){
 function ocParse(text, forced){
   const index = ocPlayers();
   const rows = [];
-  let market = null, columns = null, header = [], pending = null;
+  let market = null, columns = null, header = [], pending = null, last = null;
   const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
   for(const line of lines){
     const mks = ocMarketsIn(line), th = ocThresholds(line), prices = ocPrices(line), who = ocFindPlayer(line, index);
     // A caption: names a market, no player, no prices. Two or more markets = column headings.
     if(mks.length && !who && !prices.length){
       if(mks.length>1){ columns = mks; market = null; } else { market = mks[0]; columns = null; }
-      header = th;
+      header = th; last = null;
       continue;
     }
-    if(!who && !prices.length && th.length>1){ header = th; continue; }
+    // A line-only caption or tab ("2+", "Over 1.5", "1+ 2+ 3+") sets the line(s).
+    if(!who && !prices.length && th.length){ header = th; last = null; continue; }
+    // Prices on a line of their own continue the previous player's row: the reader
+    // often splits a grid row ("Liam Delap" / "4/6" / "3/1").
+    if(!who && prices.length && !pending && last && !mks.length){
+      prices.forEach(pr=>{
+        const k = last.lines ? last.lines[last.n] : null;
+        rows.push({who:last.who, market:last.market, k:k || last.n+1, price:pr.dec, priceText:pr.txt, assumed:!k});
+        last.n++;
+      });
+      continue;
+    }
     const target = who || (prices.length && pending ? pending : null);
     if(!target) continue;
-    if(!prices.length){ pending = who; continue; }
+    if(!prices.length){ pending = who; last = null; continue; }
     pending = null;
     if(columns && prices.length===columns.length && !mks.length && (!forced || forced==='auto')){
       prices.forEach((pr, i)=>rows.push({who:target, market:columns[i], k:1, price:pr.dec, priceText:pr.txt, assumed:false}));
@@ -1349,6 +1379,8 @@ function ocParse(text, forced){
     const assumed = !lines_ && !single;
     if(!lines_) lines_ = prices.map((_, i)=>i+1);
     prices.forEach((pr, i)=>rows.push({who:target, market:m, k:single?1:lines_[i], price:pr.dec, priceText:pr.txt, assumed}));
+    // Remember the row, in case its remaining prices arrive on the following lines.
+    last = single ? null : {who:target, market:m, n:prices.length, lines:hdr.length>prices.length ? hdr : null};
   }
   return rows;
 }
