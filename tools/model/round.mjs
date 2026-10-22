@@ -71,7 +71,8 @@ export function modelForRound(root, fixtures) {
     r: Object.fromEntries(Object.entries(plReport.params.r).map(([s, v]) => [s, v == null ? Infinity : v])),
     context: plReport.params.context || {},
   };
-  const plTable = plParams ? playerTable(loadLineups(raw), asOf) : null;
+  // History window chosen by tools/model/backtest-players.mjs (players.json -> table).
+  const plTable = plParams ? playerTable(loadLineups(raw), asOf, plReport.table || {}) : null;
   const teamAvg = (team, hk, ak) => {
     let s = 0, n = 0;
     for (const m of matches) {

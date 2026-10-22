@@ -1,6 +1,7 @@
 // Player model for shots, shots on target, fouls committed, fouls won, bookings and red cards.
 //
-// For each player, a rate per start: his own totals over the last 365 days shrunk
+// For each player, a rate per start: his own totals over the last 730 days (each
+// match weighted 0.5^(age / 365 days); window set in data/model/players.json) shrunk
 // towards the average for his position group in that competition (a gamma-Poisson
 // estimate: (own total + k x group mean) / (own starts + k)). For a given match
 // the rate is scaled by the match context:
@@ -29,11 +30,14 @@ export function groupOf(pos) {
   return 'F';
 }
 
-// Player totals over [asOf - 365 days, asOf), starts only.
-export function playerTable(lineups, asOf) {
+// Player totals over [asOf - days, asOf), starts only. With halfLife (days), each
+// match counts 0.5^(age / halfLife), so recent form weighs more (the totals and
+// start counts are then weighted sums). Defaults: 365 days, unweighted.
+export function playerTable(lineups, asOf, { days = 365, halfLife = null } = {}) {
   const players = new Map(), group = new Map();
   for (const m of lineups) {
-    if (m.upcoming || m.t >= asOf || asOf - m.t > 365 * DAY) continue;
+    if (m.upcoming || m.t >= asOf || asOf - m.t > days * DAY) continue;
+    const w = halfLife ? 0.5 ** ((asOf - m.t) / DAY / halfLife) : 1;
     for (const side of ['home', 'away']) for (const p of m[side].players) {
       if (!p.start) continue;
       const g = `${m.div}|${groupOf(p.pos)}`;
@@ -43,7 +47,7 @@ export function playerTable(lineups, asOf) {
       pl.n++; pl.name = p.name; pl.groups[g] = (pl.groups[g] || 0) + 1; pl.lastPos = p.pos;
       for (const s of STATS) {
         if (p[s] === undefined) continue; // stat missing from the source for this match
-        pl.nStat[s]++; pl.sum[s] += p[s]; gr.n[s]++; gr.sum[s] += p[s];
+        pl.nStat[s] += w; pl.sum[s] += w * p[s]; gr.n[s] += w; gr.sum[s] += w * p[s];
       }
     }
   }

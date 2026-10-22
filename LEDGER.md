@@ -115,6 +115,8 @@ Everything below was chosen on the validation seasons (2023/24, 2024/25) and onl
 - Player-quality lineups: each XI's share of the team's usual shots on target and assists (and, separately, share of regulars) as a multiplier on expected goals, on 5,719 matches with ESPN lineups. Validation improved slightly (0.9901 v 0.9927) but the test seasons got worse (1.0171 v 1.0145), the same pattern as the regulars-only test in v4, so lineups stay off the numbers.
 - Referee effect on yellow cards (Premier League, where football-data records referees): a referee's past card rate did not predict cards beyond the two teams' own rates (Poisson log-loss, test: 2.0748 with the referee, 2.0737 without). Referees' raw rates (0.88-1.22 of average) mostly reflect which games they are given.
 
+**Player model: longer, weighted history (kept).** Player rates now use the last 730 days, each match weighted 0.5^(age / 365 days), in place of a flat 365 days. Chosen on validation (also tried 545/270, 730 flat, 730/180). Test log-loss, 46,000 player-matches: 1+ fouls committed 0.6516 (was 0.6535), 1+ fouls won 0.6402 (0.6421), 1+ shots on target 0.5240 (0.5257), 2+ shots 0.4954 (0.4973), booked 0.4134 (0.4142); still calibrated by position. 48 of 3,144 current Unibet player prices show value by the model (53 before).
+
 Pipeline check: the lineup-time update was run end to end from a fresh clone (fetch, results, lineups, prices, Unibet props, grading, build, verify) and passed. That run showed the scheduled updates fetched only 150 days of ESPN lineups while the player model rates players on 365 days; they now fetch 370 days.
 
 Log entries from this version are under `independent-v4.2-2026-10-23`.

@@ -899,7 +899,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072743,
     "homeName": "Ipswich Town",
     "awayName": "Nottingham Forest",
@@ -2741,7 +2741,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143027,
     "homeName": "Bolton",
     "awayName": "Middlesbrough",
@@ -3542,7 +3542,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072715,
     "homeName": "Aston Villa",
     "awayName": "Manchester City",
@@ -5360,7 +5360,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143036,
     "homeName": "Charlton Athletic",
     "awayName": "Norwich City",
@@ -6089,7 +6089,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143042,
     "homeName": "Portsmouth",
     "awayName": "Millwall",
@@ -6822,7 +6822,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143053,
     "homeName": "Sheffield United",
     "awayName": "Derby County",
@@ -7502,7 +7502,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072719,
     "homeName": "Arsenal",
     "awayName": "Everton",
@@ -9280,7 +9280,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072722,
     "homeName": "Coventry City",
     "awayName": "Fulham",
@@ -10981,7 +10981,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028142945,
     "homeName": "Blackburn Rovers",
     "awayName": "Wrexham",
@@ -11630,7 +11630,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143047,
     "homeName": "Cardiff City",
     "awayName": "Birmingham",
@@ -12413,7 +12413,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143040,
     "homeName": "Lincoln City",
     "awayName": "Burnley",
@@ -13130,7 +13130,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143045,
     "homeName": "Preston North End",
     "awayName": "West Bromwich",
@@ -13816,7 +13816,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143067,
     "homeName": "Queens Park Rangers",
     "awayName": "Swansea City",
@@ -14490,7 +14490,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143057,
     "homeName": "Stoke City",
     "awayName": "Bristol City",
@@ -15206,7 +15206,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028143060,
     "homeName": "West Ham",
     "awayName": "Southampton",
@@ -16247,7 +16247,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027911606,
     "homeName": "Napoli",
     "awayName": "Roma",
@@ -16256,7 +16256,7 @@
       "name": "Rasmus Højlund",
       "mk": "sot",
       "k": 1,
-      "odds": 1.47
+      "odds": 1.48
      },
      {
       "name": "Donyell Malen",
@@ -16298,7 +16298,7 @@
       "name": "Donyell Malen",
       "mk": "sot",
       "k": 1,
-      "odds": 1.21
+      "odds": 1.22
      },
      {
       "name": "Wesley Vinícius França Lima",
@@ -16310,7 +16310,7 @@
       "name": "Santiago Castro",
       "mk": "sot",
       "k": 1,
-      "odds": 1.66
+      "odds": 1.67
      },
      {
       "name": "Mathías Olivera",
@@ -16340,7 +16340,7 @@
       "name": "Giovane Santana do Nascimento",
       "mk": "sot",
       "k": 1,
-      "odds": 1.95
+      "odds": 1.96
      },
      {
       "name": "Scott McTominay",
@@ -16406,7 +16406,7 @@
       "name": "Donyell Malen",
       "mk": "sot",
       "k": 2,
-      "odds": 1.97
+      "odds": 1.98
      },
      {
       "name": "Donyell Malen",
@@ -16430,7 +16430,7 @@
       "name": "Rasmus Højlund",
       "mk": "sot",
       "k": 2,
-      "odds": 3
+      "odds": 3.05
      },
      {
       "name": "Niccolò Pisilli",
@@ -16442,7 +16442,7 @@
       "name": "Rodrigo Mora de Carvalho",
       "mk": "sot",
       "k": 1,
-      "odds": 2.3
+      "odds": 2.32
      },
      {
       "name": "Matteo Politano",
@@ -16490,7 +16490,7 @@
       "name": "Kevin De Bruyne",
       "mk": "sot",
       "k": 1,
-      "odds": 1.9
+      "odds": 1.91
      },
      {
       "name": "Kevin De Bruyne",
@@ -16508,7 +16508,7 @@
       "name": "Matías Soulé",
       "mk": "sot",
       "k": 1,
-      "odds": 1.63
+      "odds": 1.64
      },
      {
       "name": "Frank Anguissa",
@@ -16739,12 +16739,6 @@
       "odds": 8
      },
      {
-      "name": "Santiago Castro",
-      "mk": "sot",
-      "k": 3,
-      "odds": 10
-     },
-     {
       "name": "Matías Soulé",
       "mk": "sot",
       "k": 3,
@@ -16756,36 +16750,36 @@
       "scope": "match",
       "mk": "sot",
       "line": 11.5,
-      "over": 4,
-      "under": 1.15
+      "over": 4.1,
+      "under": 1.14
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.49,
+      "over": 1.5,
       "under": 2.25
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 8.5,
-      "over": 1.71,
-      "under": 1.89
+      "over": 1.73,
+      "under": 1.87
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 4.5,
-      "over": 2.08,
-      "under": 1.58
+      "over": 2.1,
+      "under": 1.57
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 4.5,
-      "over": 1.89,
-      "under": 1.72
+      "over": 1.9,
+      "under": 1.71
      },
      {
       "scope": "away",
@@ -16798,28 +16792,28 @@
       "scope": "match",
       "mk": "sot",
       "line": 7.5,
-      "over": 1.4,
-      "under": 2.5
+      "over": 1.41,
+      "under": 2.48
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 9.5,
-      "over": 2.23,
-      "under": 1.52
+      "over": 2.25,
+      "under": 1.5
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 10.5,
-      "over": 2.95,
-      "under": 1.29
+      "over": 3,
+      "under": 1.28
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 5.5,
-      "over": 3.1,
+      "over": 3.15,
       "under": 1.26
      },
      {
@@ -16827,48 +16821,48 @@
       "mk": "sot",
       "line": 3.5,
       "over": 1.41,
-      "under": 2.5
+      "under": 2.48
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 5.5,
       "over": 2.75,
-      "under": 1.34
+      "under": 1.33
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 6.5,
       "over": 1.2,
-      "under": 3.55
+      "under": 3.5
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 12.5,
-      "over": 1.68,
-      "under": 1.92
+      "over": 1.7,
+      "under": 1.9
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 14.5,
-      "over": 2.3,
-      "under": 1.47
+      "over": 2.32,
+      "under": 1.46
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 2.5,
-      "over": 1.17,
-      "under": 3.75
+      "over": 1.18,
+      "under": 3.7
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 6.5,
-      "over": 4.7,
+      "over": 4.8,
       "under": 1.1
      },
      {
@@ -16876,7 +16870,7 @@
       "mk": "shots",
       "line": 14.5,
       "over": 2,
-      "under": 1.63
+      "under": 1.62
      },
      {
       "scope": "away",
@@ -16889,36 +16883,36 @@
       "scope": "match",
       "mk": "shots",
       "line": 26.5,
-      "over": 1.63,
-      "under": 2
+      "over": 1.65,
+      "under": 1.98
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 28.5,
-      "over": 2.1,
-      "under": 1.58
+      "over": 2.12,
+      "under": 1.57
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 29.5,
-      "over": 2.4,
-      "under": 1.44
+      "over": 2.43,
+      "under": 1.43
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 13.5,
-      "over": 1.96,
+      "over": 1.98,
       "under": 1.65
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 27.5,
-      "over": 1.83,
-      "under": 1.77
+      "over": 1.85,
+      "under": 1.75
      },
      {
       "scope": "match",
@@ -16931,22 +16925,22 @@
       "scope": "match",
       "mk": "shots",
       "line": 25.5,
-      "over": 1.47,
-      "under": 2.32
+      "over": 1.48,
+      "under": 2.28
      },
      {
       "scope": "away",
       "mk": "shots",
       "line": 13.5,
-      "over": 1.72,
-      "under": 1.87
+      "over": 1.73,
+      "under": 1.86
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 30.5,
-      "over": 2.8,
-      "under": 1.33
+      "over": 2.85,
+      "under": 1.32
      },
      {
       "scope": "away",
@@ -17247,7 +17241,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072725,
     "homeName": "Chelsea",
     "awayName": "Tottenham",
@@ -18903,7 +18897,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028230642,
     "homeName": "Borussia Dortmund",
     "awayName": "Eintracht Frankfurt",
@@ -19809,7 +19803,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027911700,
     "homeName": "Lazio",
     "awayName": "Parma",
@@ -20874,7 +20868,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027973891,
     "homeName": "Lens",
     "awayName": "Paris FC",
@@ -21847,7 +21841,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/inter-milan-vs-fiorentina/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027911703,
     "homeName": "Inter",
     "awayName": "Fiorentina",
@@ -22885,7 +22879,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072735,
     "homeName": "Crystal Palace",
     "awayName": "Newcastle United",
@@ -24758,7 +24752,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072732,
     "homeName": "Hull City",
     "awayName": "Brentford",
@@ -26315,7 +26309,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072739,
     "homeName": "Liverpool",
     "awayName": "Brighton",
@@ -28229,7 +28223,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072804,
     "homeName": "Manchester United",
     "awayName": "Bournemouth",
@@ -28454,7 +28448,7 @@
       "name": "Marcus Tavernier",
       "mk": "sot",
       "k": 1,
-      "odds": 1.89
+      "odds": 1.8
      },
      {
       "name": "Evanilson Barbosa",
@@ -28592,7 +28586,7 @@
       "name": "Marcus Tavernier",
       "mk": "sh",
       "k": 2,
-      "odds": 1.33
+      "odds": 1.32
      },
      {
       "name": "Bruno Fernandes",
@@ -28904,7 +28898,7 @@
       "name": "Marcus Tavernier",
       "mk": "sot",
       "k": 2,
-      "odds": 5.1
+      "odds": 4.8
      },
      {
       "name": "Evanilson Barbosa",
@@ -29426,7 +29420,7 @@
       "name": "Carlos Baleba",
       "mk": "sh",
       "k": 2,
-      "odds": 3.8
+      "odds": 3.7
      },
      {
       "name": "Noussair Mazraoui",
@@ -29474,7 +29468,7 @@
       "name": "Marcus Tavernier",
       "mk": "sh",
       "k": 4,
-      "odds": 3.2
+      "odds": 3.1
      },
      {
       "name": "Ayden Heaven",
@@ -30101,7 +30095,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027973895,
     "homeName": "AS Monaco",
     "awayName": "Lille",
@@ -31289,7 +31283,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028230584,
     "homeName": "TSG Hoffenheim",
     "awayName": "Bayer Leverkusen",
@@ -32207,7 +32201,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028072814,
     "homeName": "Sunderland",
     "awayName": "Leeds United",
@@ -33950,7 +33944,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1028230591,
     "homeName": "SC Freiburg",
     "awayName": "Bayern Munich",
@@ -34954,7 +34948,7 @@
    },
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027911611,
     "homeName": "Udinese",
     "awayName": "AC Milan",
@@ -35675,7 +35669,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/french-ligue-predictions-stats-odds/psg-vs-olympique-lyonnais/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027973885,
     "homeName": "PSG",
     "awayName": "Lyon",
@@ -36677,7 +36671,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/sassuolo-vs-lazio/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027911641,
     "homeName": "Sassuolo",
     "awayName": "Lazio",
@@ -36926,7 +36920,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/roma-vs-cagliari/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027911600,
     "homeName": "Roma",
     "awayName": "Cagliari",
@@ -37157,7 +37151,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/ac-milan-vs-bologna/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027911598,
     "homeName": "AC Milan",
     "awayName": "Bologna",
@@ -37382,7 +37376,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/venezia-vs-inter-milan/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-22T21:50:44.008Z",
+    "at": "2026-10-22T23:49:44.630Z",
     "eventId": 1027911646,
     "homeName": "Venezia",
     "awayName": "Inter",
