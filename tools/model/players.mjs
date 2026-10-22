@@ -1,4 +1,4 @@
-// Player model for shots, shots on target, fouls committed, fouls won and bookings.
+// Player model for shots, shots on target, fouls committed, fouls won, bookings and red cards.
 //
 // For each player, a rate per start: his own totals over the last 365 days shrunk
 // towards the average for his position group in that competition (a gamma-Poisson
@@ -11,15 +11,16 @@
 // k and r are fitted on the validation seasons in tools/model/backtest-players.mjs.
 
 const DAY = 864e5;
-export const STATS = ['sh', 'sot', 'fc', 'fw', 'yc'];
+export const STATS = ['sh', 'sot', 'fc', 'fw', 'yc', 'rc'];
 export const MARKETS = [
   { key: 'sot1', stat: 'sot', atLeast: 1, label: '1+ shots on target' },
   { key: 'sh2', stat: 'sh', atLeast: 2, label: '2+ shots' },
   { key: 'fc1', stat: 'fc', atLeast: 1, label: '1+ fouls committed' },
   { key: 'fw1', stat: 'fw', atLeast: 1, label: '1+ fouls won' },
   { key: 'yc1', stat: 'yc', atLeast: 1, label: 'booked' },
+  { key: 'rc1', stat: 'rc', atLeast: 1, label: 'sent off' },
 ];
-const CONTEXT = { sh: 'shots', sot: 'shots', fc: 'fouls', yc: 'fouls', fw: 'oppFouls' };
+const CONTEXT = { sh: 'shots', sot: 'shots', fc: 'fouls', yc: 'fouls', rc: 'fouls', fw: 'oppFouls' };
 
 export function groupOf(pos) {
   if (pos === 'G') return 'G';

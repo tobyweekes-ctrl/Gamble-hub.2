@@ -71,7 +71,7 @@ for (const { m, asOf } of evalMatches) {
 const valid = rows.filter(r => r.season < TEST_FROM), test = rows.filter(r => r.season >= TEST_FROM);
 console.log(`${valid.length} validation and ${test.length} test player-matches`);
 
-const CTXKEY = { sh: 'shots', sot: 'shots', fc: 'fouls', yc: 'fouls', fw: 'oppFouls' };
+const CTXKEY = { sh: 'shots', sot: 'shots', fc: 'fouls', yc: 'fouls', rc: 'fouls', fw: 'oppFouls' };
 function prob(r, mk, k, rr, variant) {
   if (r.p[mk.stat] === undefined) return null;
   let mu;
@@ -101,8 +101,12 @@ for (const s of STATS) {
     if (!best || v.logloss < best.v.logloss) best = { k, rr, v };
   }
   params.k[s] = best.k; params.r[s] = best.rr === Infinity ? null : best.rr;
+  // If the player's own record doesn't beat his position's average on validation
+  // (red cards: too rare to tell players apart), use the position average.
+  const pos = score(valid, mk, best.k, best.rr, 'position');
+  if (pos.logloss <= best.v.logloss) { params.k[s] = 1e9; console.log(`${s}: position average beats player rates on validation (${pos.logloss} v ${best.v.logloss}); using position average`); }
   // Use the match context for this stat only if it beat the plain player rate on validation.
-  const noCtx = score(valid, mk, best.k, best.rr, 'player');
+  const noCtx = score(valid, mk, params.k[s], best.rr, 'player');
   params.context[s] = best.v.logloss < noCtx.logloss;
   console.log(`${s}: k=${best.k} r=${best.rr} (validation log-loss ${best.v.logloss}, without context ${noCtx.logloss}, context ${params.context[s] ? 'used' : 'not used'})`);
 }
@@ -114,14 +118,15 @@ for (const mk of MARKETS) {
   const res = { position: score(test, mk, k, rr, 'position'), player: score(test, mk, k, rr, 'player'), model: score(test, mk, k, rr, 'model') };
   // Calibration of the model on the test seasons.
   const bins = [];
-  for (let lo = 0; lo < 1; lo += 0.1) {
+  const step = mk.stat === 'rc' ? 0.01 : 0.1; // red cards are rare: finer bins
+  for (let lo = 0; lo < (mk.stat === 'rc' ? 0.05 : 1); lo += step) {
     let n = 0, ps = 0, ys = 0;
     for (const r of test) {
       const q = prob(r, mk, k, rr, 'model');
-      if (q == null || q < lo || q >= lo + 0.1) continue;
+      if (q == null || q < lo || q >= lo + step) continue;
       n++; ps += q; ys += r.p[mk.stat] >= mk.atLeast ? 1 : 0;
     }
-    if (n >= 50) bins.push({ bin: `${Math.round(lo * 100)}-${Math.round(lo * 100 + 10)}%`, n, predicted: +(ps / n).toFixed(3), actual: +(ys / n).toFixed(3) });
+    if (n >= 50) bins.push({ bin: `${+(lo * 100).toFixed(0)}-${+((lo + step) * 100).toFixed(0)}%`, n, predicted: +(ps / n).toFixed(4), actual: +(ys / n).toFixed(4) });
   }
   res.calibration = bins;
   report.markets[mk.key] = { label: mk.label, ...res };

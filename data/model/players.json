@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T09:28:24.601Z",
+ "generatedAt": "2026-10-22T11:09:50.782Z",
  "testSeasons": "2025/26 and 2026/27 to date",
  "params": {
   "k": {
@@ -7,21 +7,24 @@
    "sot": 10,
    "fc": 10,
    "fw": 5,
-   "yc": 40
+   "yc": 40,
+   "rc": 1000000000
   },
   "r": {
    "sh": 8,
    "sot": 8,
    "fc": null,
    "fw": 8,
-   "yc": null
+   "yc": null,
+   "rc": 1
   },
   "context": {
    "sh": true,
    "sot": true,
    "fc": true,
    "fw": false,
-   "yc": true
+   "yc": true,
+   "rc": false
   }
  },
  "markets": {
@@ -46,50 +49,50 @@
     {
      "bin": "0-10%",
      "n": 5920,
-     "predicted": 0.072,
-     "actual": 0.096
+     "predicted": 0.0724,
+     "actual": 0.0965
     },
     {
      "bin": "10-20%",
      "n": 13755,
-     "predicted": 0.149,
+     "predicted": 0.1493,
      "actual": 0.153
     },
     {
      "bin": "20-30%",
      "n": 9889,
-     "predicted": 0.246,
-     "actual": 0.238
+     "predicted": 0.2461,
+     "actual": 0.2381
     },
     {
      "bin": "30-40%",
      "n": 6207,
-     "predicted": 0.348,
-     "actual": 0.361
+     "predicted": 0.3478,
+     "actual": 0.3614
     },
     {
      "bin": "40-50%",
      "n": 5243,
-     "predicted": 0.449,
+     "predicted": 0.4491,
      "actual": 0.453
     },
     {
      "bin": "50-60%",
      "n": 3705,
-     "predicted": 0.544,
-     "actual": 0.543
+     "predicted": 0.5443,
+     "actual": 0.5425
     },
     {
      "bin": "60-70%",
      "n": 1269,
-     "predicted": 0.638,
-     "actual": 0.644
+     "predicted": 0.6376,
+     "actual": 0.6438
     },
     {
      "bin": "70-80%",
      "n": 225,
-     "predicted": 0.734,
-     "actual": 0.787
+     "predicted": 0.7338,
+     "actual": 0.7867
     }
    ]
   },
@@ -114,55 +117,55 @@
     {
      "bin": "0-10%",
      "n": 10695,
-     "predicted": 0.06,
-     "actual": 0.073
+     "predicted": 0.0596,
+     "actual": 0.0728
     },
     {
      "bin": "10-20%",
      "n": 10828,
-     "predicted": 0.146,
-     "actual": 0.153
+     "predicted": 0.1463,
+     "actual": 0.1527
     },
     {
      "bin": "20-30%",
      "n": 7117,
      "predicted": 0.248,
-     "actual": 0.249
+     "actual": 0.2486
     },
     {
      "bin": "30-40%",
      "n": 5321,
-     "predicted": 0.349,
-     "actual": 0.374
+     "predicted": 0.3488,
+     "actual": 0.3742
     },
     {
      "bin": "40-50%",
      "n": 4703,
-     "predicted": 0.448,
-     "actual": 0.472
+     "predicted": 0.4482,
+     "actual": 0.4718
     },
     {
      "bin": "50-60%",
      "n": 3869,
-     "predicted": 0.548,
-     "actual": 0.569
+     "predicted": 0.5483,
+     "actual": 0.5686
     },
     {
      "bin": "60-70%",
      "n": 2494,
-     "predicted": 0.644,
+     "predicted": 0.6439,
      "actual": 0.66
     },
     {
      "bin": "70-80%",
      "n": 982,
-     "predicted": 0.74,
-     "actual": 0.742
+     "predicted": 0.7399,
+     "actual": 0.7424
     },
     {
      "bin": "80-90%",
      "n": 226,
-     "predicted": 0.834,
+     "predicted": 0.8336,
      "actual": 0.854
     }
    ]
@@ -170,168 +173,200 @@
   "fc1": {
    "label": "1+ fouls committed",
    "position": {
-    "n": 46200,
+    "n": 46220,
     "logloss": 0.6743,
     "brier": 0.2406
    },
    "player": {
-    "n": 46200,
+    "n": 46220,
     "logloss": 0.6554,
-    "brier": 0.2316
+    "brier": 0.2317
    },
    "model": {
-    "n": 46200,
-    "logloss": 0.6534,
+    "n": 46220,
+    "logloss": 0.6535,
     "brier": 0.2307
    },
    "calibration": [
     {
      "bin": "30-40%",
      "n": 1206,
-     "predicted": 0.366,
-     "actual": 0.349
+     "predicted": 0.3658,
+     "actual": 0.3491
     },
     {
      "bin": "40-50%",
-     "n": 5831,
-     "predicted": 0.459,
-     "actual": 0.451
+     "n": 5830,
+     "predicted": 0.4592,
+     "actual": 0.4511
     },
     {
      "bin": "50-60%",
-     "n": 14508,
-     "predicted": 0.555,
-     "actual": 0.544
+     "n": 14506,
+     "predicted": 0.5552,
+     "actual": 0.5441
     },
     {
      "bin": "60-70%",
-     "n": 16116,
-     "predicted": 0.647,
-     "actual": 0.643
+     "n": 16128,
+     "predicted": 0.6473,
+     "actual": 0.6427
     },
     {
      "bin": "70-80%",
-     "n": 7411,
-     "predicted": 0.739,
-     "actual": 0.719
+     "n": 7421,
+     "predicted": 0.7393,
+     "actual": 0.7185
     },
     {
      "bin": "80-90%",
-     "n": 1071,
-     "predicted": 0.829,
-     "actual": 0.814
+     "n": 1072,
+     "predicted": 0.8293,
+     "actual": 0.8144
     }
    ]
   },
   "fw1": {
    "label": "1+ fouls won",
    "position": {
-    "n": 46200,
+    "n": 46220,
     "logloss": 0.6799,
     "brier": 0.2434
    },
    "player": {
-    "n": 46200,
+    "n": 46220,
     "logloss": 0.6421,
     "brier": 0.2256
    },
    "model": {
-    "n": 46200,
+    "n": 46220,
     "logloss": 0.6421,
     "brier": 0.2256
    },
    "calibration": [
     {
      "bin": "10-20%",
-     "n": 179,
-     "predicted": 0.174,
-     "actual": 0.201
+     "n": 178,
+     "predicted": 0.1739,
+     "actual": 0.2022
     },
     {
      "bin": "20-30%",
-     "n": 1792,
-     "predicted": 0.263,
-     "actual": 0.268
+     "n": 1794,
+     "predicted": 0.2627,
+     "actual": 0.2681
     },
     {
      "bin": "30-40%",
-     "n": 5022,
-     "predicted": 0.357,
-     "actual": 0.353
+     "n": 5027,
+     "predicted": 0.3569,
+     "actual": 0.3531
     },
     {
      "bin": "40-50%",
      "n": 8523,
-     "predicted": 0.454,
-     "actual": 0.445
+     "predicted": 0.4538,
+     "actual": 0.4453
     },
     {
      "bin": "50-60%",
-     "n": 11486,
-     "predicted": 0.552,
-     "actual": 0.548
+     "n": 11491,
+     "predicted": 0.5517,
+     "actual": 0.5476
     },
     {
      "bin": "60-70%",
-     "n": 10760,
-     "predicted": 0.648,
-     "actual": 0.642
+     "n": 10767,
+     "predicted": 0.6481,
+     "actual": 0.6426
     },
     {
      "bin": "70-80%",
-     "n": 6730,
-     "predicted": 0.743,
-     "actual": 0.745
+     "n": 6729,
+     "predicted": 0.7432,
+     "actual": 0.7453
     },
     {
      "bin": "80-90%",
-     "n": 1606,
-     "predicted": 0.836,
-     "actual": 0.836
+     "n": 1608,
+     "predicted": 0.8358,
+     "actual": 0.8358
     },
     {
      "bin": "90-100%",
-     "n": 102,
-     "predicted": 0.915,
-     "actual": 0.902
+     "n": 103,
+     "predicted": 0.9147,
+     "actual": 0.9029
     }
    ]
   },
   "yc1": {
    "label": "booked",
    "position": {
-    "n": 46200,
-    "logloss": 0.4176,
-    "brier": 0.1258
+    "n": 46220,
+    "logloss": 0.4175,
+    "brier": 0.1257
    },
    "player": {
-    "n": 46200,
+    "n": 46220,
     "logloss": 0.4147,
     "brier": 0.125
    },
    "model": {
-    "n": 46200,
-    "logloss": 0.4143,
+    "n": 46220,
+    "logloss": 0.4142,
     "brier": 0.1249
    },
    "calibration": [
     {
      "bin": "0-10%",
-     "n": 6906,
-     "predicted": 0.083,
+     "n": 6912,
+     "predicted": 0.0833,
      "actual": 0.089
     },
     {
      "bin": "10-20%",
-     "n": 37190,
-     "predicted": 0.144,
-     "actual": 0.154
+     "n": 37203,
+     "predicted": 0.1439,
+     "actual": 0.1536
     },
     {
      "bin": "20-30%",
-     "n": 2103,
-     "predicted": 0.216,
-     "actual": 0.245
+     "n": 2104,
+     "predicted": 0.2162,
+     "actual": 0.2452
+    }
+   ]
+  },
+  "rc1": {
+   "label": "sent off",
+   "position": {
+    "n": 46220,
+    "logloss": 0.0386,
+    "brier": 0.0064
+   },
+   "player": {
+    "n": 46220,
+    "logloss": 0.0386,
+    "brier": 0.0064
+   },
+   "model": {
+    "n": 46220,
+    "logloss": 0.0386,
+    "brier": 0.0064
+   },
+   "calibration": [
+    {
+     "bin": "0-1%",
+     "n": 41043,
+     "predicted": 0.0056,
+     "actual": 0.0058
+    },
+    {
+     "bin": "1-2%",
+     "n": 5177,
+     "predicted": 0.0141,
+     "actual": 0.011
     }
    ]
   }
