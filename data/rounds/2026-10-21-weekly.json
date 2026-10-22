@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-10-21-weekly",
- "dataUpdated": "Thu 22 Oct 17:31",
+ "dataUpdated": "Thu 22 Oct 19:03",
  "notes": [
   "Thu 22 - Thu 29 Oct 2026. Premier League and Championship in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "No Champions League games in this window (next league-phase matchday is in November).",
@@ -9165,21 +9165,21 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Ferencvaros",
-     "formation": "4-3-3",
+     "formation": "4-2-3-1",
      "xi": [
       "Dániel Radnóti",
-      "Ádám Madarász",
-      "Mariano Gómez",
-      "Bamidele Isa Yusuf",
-      "Ádám Nagy",
-      "Callum O'Dowda",
-      "Kristoffer Zachariassen",
       "Nathan Zohoré",
-      "Veljko Birmancevic",
+      "Mariano Gómez",
+      "Callum O'Dowda",
       "Olivér Nagy",
+      "Kristoffer Zachariassen",
+      "Ádám Madarász",
+      "Ádám Nagy",
+      "Bamidele Isa Yusuf",
+      "Veljko Birmancevic",
       "Daniel Arzani"
      ],
      "missing": [
@@ -9220,57 +9220,57 @@
       {
        "id": "368585",
        "name": "Dániel Radnóti",
-       "pos": "SUB"
-      },
-      {
-       "id": "402680",
-       "name": "Ádám Madarász",
-       "pos": "SUB"
-      },
-      {
-       "id": "266937",
-       "name": "Mariano Gómez",
-       "pos": "SUB"
-      },
-      {
-       "id": "322421",
-       "name": "Bamidele Isa Yusuf",
-       "pos": "SUB"
-      },
-      {
-       "id": "219449",
-       "name": "Ádám Nagy",
-       "pos": "SUB"
-      },
-      {
-       "id": "181525",
-       "name": "Callum O'Dowda",
-       "pos": "SUB"
-      },
-      {
-       "id": "253991",
-       "name": "Kristoffer Zachariassen",
-       "pos": "SUB"
+       "pos": "G"
       },
       {
        "id": "304742",
        "name": "Nathan Zohoré",
-       "pos": "SUB"
+       "pos": "CD-L"
       },
       {
-       "id": "238991",
-       "name": "Veljko Birmancevic",
-       "pos": "SUB"
+       "id": "266937",
+       "name": "Mariano Gómez",
+       "pos": "CD-R"
+      },
+      {
+       "id": "181525",
+       "name": "Callum O'Dowda",
+       "pos": "LB"
       },
       {
        "id": "344763",
        "name": "Olivér Nagy",
-       "pos": "SUB"
+       "pos": "RB"
+      },
+      {
+       "id": "253991",
+       "name": "Kristoffer Zachariassen",
+       "pos": "AM"
+      },
+      {
+       "id": "402680",
+       "name": "Ádám Madarász",
+       "pos": "LM"
+      },
+      {
+       "id": "219449",
+       "name": "Ádám Nagy",
+       "pos": "RM"
+      },
+      {
+       "id": "322421",
+       "name": "Bamidele Isa Yusuf",
+       "pos": "F"
+      },
+      {
+       "id": "238991",
+       "name": "Veljko Birmancevic",
+       "pos": "AM-L"
       },
       {
        "id": "225510",
        "name": "Daniel Arzani",
-       "pos": "SUB"
+       "pos": "AM-R"
       }
      ],
      "bench": [
@@ -9337,7 +9337,7 @@
      ],
      "reg": 0.486,
      "att": null,
-     "backupKeeper": null,
+     "backupKeeper": true,
      "history": 8,
      "changes": {
       "n": 5,
@@ -9349,10 +9349,10 @@
        "Lisztes"
       ],
       "in": [
-       "Madarász",
-       "O'Dowda",
        "Zohoré",
+       "O'Dowda",
        "Nagy",
+       "Madarász",
        "Arzani"
       ]
      }
@@ -9362,16 +9362,16 @@
      "formation": "4-2-3-1",
      "xi": [
       "Lucas Paes",
-      "Jonathan Mutombo",
       "Volnei Feltes",
-      "Javier Vazquez",
       "Mohamed Diadié",
-      "Amine Oudrhiri",
-      "Alejandro Alfaro",
-      "Manuel Pozo",
-      "Karem Zoabi",
+      "Javier Vazquez",
+      "Jonathan Mutombo",
       "João Marques",
-      "Musa Drammeh"
+      "Alejandro Alfaro",
+      "Amine Oudrhiri",
+      "Musa Drammeh",
+      "Karem Zoabi",
+      "Manuel Pozo"
      ],
      "missing": null,
      "starters": [
@@ -9381,54 +9381,54 @@
        "pos": "G"
       },
       {
-       "id": "355033",
-       "name": "Jonathan Mutombo",
-       "pos": "D"
-      },
-      {
        "id": "321364",
        "name": "Volnei Feltes",
-       "pos": "D"
-      },
-      {
-       "id": "266780",
-       "name": "Javier Vazquez",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
        "id": "396750",
        "name": "Mohamed Diadié",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
-       "id": "198154",
-       "name": "Amine Oudrhiri",
-       "pos": "M"
+       "id": "266780",
+       "name": "Javier Vazquez",
+       "pos": "LB"
       },
       {
-       "id": "347520",
-       "name": "Alejandro Alfaro",
-       "pos": "M"
-      },
-      {
-       "id": "359742",
-       "name": "Manuel Pozo",
-       "pos": "M"
-      },
-      {
-       "id": "386927",
-       "name": "Karem Zoabi",
-       "pos": "M"
+       "id": "355033",
+       "name": "Jonathan Mutombo",
+       "pos": "RB"
       },
       {
        "id": "347073",
        "name": "João Marques",
-       "pos": "M"
+       "pos": "AM"
+      },
+      {
+       "id": "347520",
+       "name": "Alejandro Alfaro",
+       "pos": "LM"
+      },
+      {
+       "id": "198154",
+       "name": "Amine Oudrhiri",
+       "pos": "RM"
       },
       {
        "id": "331396",
        "name": "Musa Drammeh",
        "pos": "F"
+      },
+      {
+       "id": "386927",
+       "name": "Karem Zoabi",
+       "pos": "AM-L"
+      },
+      {
+       "id": "359742",
+       "name": "Manuel Pozo",
+       "pos": "AM-R"
       }
      ],
      "bench": [
@@ -9523,7 +9523,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Union St.-Gilloise",
      "formation": "3-1-4-2",
@@ -9533,10 +9533,10 @@
       "Nikki Havenaar",
       "Nohim Chibani",
       "Kamiel Van De Perre",
-      "Louis Patris",
-      "Guilherme Smith",
       "Besfort Zeneli",
       "Darius Olaru",
+      "Guilherme Smith",
+      "Louis Patris",
       "Relebohile Mofokeng",
       "Mateo Biondic"
      ],
@@ -9559,104 +9559,104 @@
       {
        "id": "389282",
        "name": "Massiré Sylla",
-       "pos": "D"
+       "pos": "CD"
       },
       {
        "id": "275833",
        "name": "Nikki Havenaar",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
        "id": "356478",
        "name": "Nohim Chibani",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
        "id": "385284",
        "name": "Kamiel Van De Perre",
-       "pos": "M"
-      },
-      {
-       "id": "306031",
-       "name": "Louis Patris",
-       "pos": "M"
-      },
-      {
-       "id": "330077",
-       "name": "Guilherme Smith",
-       "pos": "M"
+       "pos": "SW"
       },
       {
        "id": "334024",
        "name": "Besfort Zeneli",
-       "pos": "M"
+       "pos": "CM-L"
       },
       {
        "id": "239870",
        "name": "Darius Olaru",
-       "pos": "M"
+       "pos": "CM-R"
+      },
+      {
+       "id": "330077",
+       "name": "Guilherme Smith",
+       "pos": "LM"
+      },
+      {
+       "id": "306031",
+       "name": "Louis Patris",
+       "pos": "RM"
       },
       {
        "id": "361211",
        "name": "Relebohile Mofokeng",
-       "pos": "F"
+       "pos": "CF-L"
       },
       {
        "id": "345526",
        "name": "Mateo Biondic",
-       "pos": "F"
+       "pos": "CF-R"
       }
      ],
      "bench": [
       {
        "id": "363516",
        "name": "Dylan Aquino",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "281316",
        "name": "Kevin Rodríguez",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "344857",
        "name": "Raul Florucz",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "316278",
        "name": "Vic Chambaere",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "214312",
        "name": "Sekou Keita",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "401048",
        "name": "Giorgi Kavlashvili",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "381587",
        "name": "Daniel Tshilanda",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "241066",
        "name": "Ross Sykes",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "363067",
        "name": "Denzel De Roeve",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "406909",
        "name": "Youssef Hamoutahar",
-       "pos": "SUB"
+       "pos": ""
       }
      ],
      "reg": 0.921,
@@ -9674,16 +9674,16 @@
      "formation": "4-3-3",
      "xi": [
       "Ofir Marciano",
-      "Miguel Vítor",
-      "Guy Mizrahi",
-      "Pedro Amador",
       "Itay Rotman",
-      "Forson Amankwah",
-      "Eliel Peretz",
+      "Miguel Vítor",
+      "Pedro Amador",
+      "Guy Mizrahi",
       "Niv Yehoshua",
+      "Eliel Peretz",
+      "Forson Amankwah",
       "Igor Zlatanovic",
-      "Javon East",
-      "Zahi Ahmed"
+      "Zahi Ahmed",
+      "Javon East"
      ],
      "missing": [
       {
@@ -9698,39 +9698,39 @@
        "pos": "G"
       },
       {
-       "id": "165422",
-       "name": "Miguel Vítor",
-       "pos": "D"
+       "id": "3097934",
+       "name": "Itay Rotman",
+       "pos": "CD-L"
       },
       {
-       "id": "324228",
-       "name": "Guy Mizrahi",
-       "pos": "D"
+       "id": "165422",
+       "name": "Miguel Vítor",
+       "pos": "CD-R"
       },
       {
        "id": "303125",
        "name": "Pedro Amador",
-       "pos": "D"
+       "pos": "LB"
       },
       {
-       "id": "3097934",
-       "name": "Itay Rotman",
-       "pos": "D"
-      },
-      {
-       "id": "324191",
-       "name": "Forson Amankwah",
-       "pos": "M"
-      },
-      {
-       "id": "237712",
-       "name": "Eliel Peretz",
-       "pos": "M"
+       "id": "324228",
+       "name": "Guy Mizrahi",
+       "pos": "RB"
       },
       {
        "id": "385090",
        "name": "Niv Yehoshua",
-       "pos": "M"
+       "pos": "CM"
+      },
+      {
+       "id": "237712",
+       "name": "Eliel Peretz",
+       "pos": "LM"
+      },
+      {
+       "id": "324191",
+       "name": "Forson Amankwah",
+       "pos": "RM"
       },
       {
        "id": "272185",
@@ -9738,14 +9738,14 @@
        "pos": "F"
       },
       {
-       "id": "229655",
-       "name": "Javon East",
-       "pos": "F"
-      },
-      {
        "id": "365734",
        "name": "Zahi Ahmed",
-       "pos": "F"
+       "pos": "LF"
+      },
+      {
+       "id": "229655",
+       "name": "Javon East",
+       "pos": "RF"
       }
      ],
      "bench": [
@@ -9818,8 +9818,8 @@
        "Rumi"
       ],
       "in": [
-       "Vítor",
        "Rotman",
+       "Vítor",
        "Yehoshua",
        "East"
       ]
@@ -9841,22 +9841,22 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Dinamo Zagreb",
      "formation": "4-1-4-1",
      "xi": [
       "Dominik Kotarski",
+      "Scott McKenna",
+      "Sergi Domínguez",
+      "Josip Misic",
+      "Matteo Vinlöf",
       "Niko Galesic",
-      "Dion Drena Beljo",
+      "Luka Ivanusec",
       "Luka Stojkovic",
       "Arbër Hoxha",
-      "Luka Ivanusec",
-      "Scott McKenna",
-      "Matteo Vinlöf",
-      "Josip Misic",
-      "Sergi Domínguez",
-      "Iker Almena"
+      "Iker Almena",
+      "Dion Drena Beljo"
      ],
      "missing": [
       {
@@ -9880,57 +9880,57 @@
       {
        "id": "239411",
        "name": "Dominik Kotarski",
-       "pos": "SUB"
-      },
-      {
-       "id": "306615",
-       "name": "Niko Galesic",
-       "pos": "SUB"
-      },
-      {
-       "id": "306647",
-       "name": "Dion Drena Beljo",
-       "pos": "SUB"
-      },
-      {
-       "id": "341418",
-       "name": "Luka Stojkovic",
-       "pos": "SUB"
-      },
-      {
-       "id": "274816",
-       "name": "Arbër Hoxha",
-       "pos": "SUB"
-      },
-      {
-       "id": "228334",
-       "name": "Luka Ivanusec",
-       "pos": "SUB"
+       "pos": "G"
       },
       {
        "id": "191450",
        "name": "Scott McKenna",
-       "pos": "SUB"
-      },
-      {
-       "id": "384415",
-       "name": "Matteo Vinlöf",
-       "pos": "SUB"
-      },
-      {
-       "id": "175812",
-       "name": "Josip Misic",
-       "pos": "SUB"
+       "pos": "CD-L"
       },
       {
        "id": "388284",
        "name": "Sergi Domínguez",
-       "pos": "SUB"
+       "pos": "CD-R"
+      },
+      {
+       "id": "175812",
+       "name": "Josip Misic",
+       "pos": "DM"
+      },
+      {
+       "id": "384415",
+       "name": "Matteo Vinlöf",
+       "pos": "LB"
+      },
+      {
+       "id": "306615",
+       "name": "Niko Galesic",
+       "pos": "RB"
+      },
+      {
+       "id": "228334",
+       "name": "Luka Ivanusec",
+       "pos": "CM-L"
+      },
+      {
+       "id": "341418",
+       "name": "Luka Stojkovic",
+       "pos": "CM-R"
+      },
+      {
+       "id": "274816",
+       "name": "Arbër Hoxha",
+       "pos": "LM"
       },
       {
        "id": "367662",
        "name": "Iker Almena",
-       "pos": "SUB"
+       "pos": "RM"
+      },
+      {
+       "id": "306647",
+       "name": "Dion Drena Beljo",
+       "pos": "F"
       }
      ],
      "bench": [
@@ -9997,7 +9997,7 @@
      ],
      "reg": 0.75,
      "att": null,
-     "backupKeeper": null,
+     "backupKeeper": true,
      "history": 8,
      "changes": {
       "n": 1,
@@ -10014,16 +10014,16 @@
      "formation": "3-4-2-1",
      "xi": [
       "Gonzalo Crettaz",
-      "Tobias Storm",
       "Ahmetcan Kaplan",
       "Deveron Fonville",
+      "Perr Schuurs",
       "Dennis Geiger",
       "Darko Nejasmic",
-      "Noé Lebreton",
-      "Perr Schuurs",
-      "Tjaronn Chery",
       "Clement Bischoff",
-      "Bryan Linssen"
+      "Tobias Storm",
+      "Bryan Linssen",
+      "Noé Lebreton",
+      "Tjaronn Chery"
      ],
      "missing": [
       {
@@ -10046,54 +10046,54 @@
        "pos": "G"
       },
       {
-       "id": "345556",
-       "name": "Tobias Storm",
-       "pos": "D"
-      },
-      {
        "id": "306806",
        "name": "Ahmetcan Kaplan",
-       "pos": "D"
+       "pos": "CD"
       },
       {
        "id": "335203",
        "name": "Deveron Fonville",
-       "pos": "D"
-      },
-      {
-       "id": "221466",
-       "name": "Dennis Geiger",
-       "pos": "M"
-      },
-      {
-       "id": "276579",
-       "name": "Darko Nejasmic",
-       "pos": "M"
-      },
-      {
-       "id": "340685",
-       "name": "Noé Lebreton",
-       "pos": "M"
+       "pos": "CD-L"
       },
       {
        "id": "233894",
        "name": "Perr Schuurs",
-       "pos": "M"
+       "pos": "CD-R"
       },
       {
-       "id": "116893",
-       "name": "Tjaronn Chery",
-       "pos": "M"
+       "id": "221466",
+       "name": "Dennis Geiger",
+       "pos": "CM-L"
+      },
+      {
+       "id": "276579",
+       "name": "Darko Nejasmic",
+       "pos": "CM-R"
       },
       {
        "id": "372851",
        "name": "Clement Bischoff",
-       "pos": "M"
+       "pos": "LM"
+      },
+      {
+       "id": "345556",
+       "name": "Tobias Storm",
+       "pos": "RM"
       },
       {
        "id": "122954",
        "name": "Bryan Linssen",
        "pos": "F"
+      },
+      {
+       "id": "340685",
+       "name": "Noé Lebreton",
+       "pos": "CF-L"
+      },
+      {
+       "id": "116893",
+       "name": "Tjaronn Chery",
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -10170,31 +10170,31 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "SK Sturm Graz",
      "formation": "3-4-1-2",
      "xi": [
       "Ammar Helac",
-      "Paul-Friedrich Koller",
       "Joshua Quarshie",
+      "Paul-Friedrich Koller",
       "Arjan Malic",
-      "Jürgen Heil",
       "Valmir Matoshi",
       "Jon Gorenc Stankovic",
-      "Jacob Peter Hödl",
       "Luca Weinhandl",
+      "Luís Balbo",
+      "Jacob Peter Hödl",
       "Oumar Diakité",
       "Simon Seidl"
      ],
      "missing": [
       {
-       "name": "Danill Khudiakov",
-       "started": "6/8"
+       "name": "Jürgen Heil",
+       "started": "7/8"
       },
       {
-       "name": "Luís Balbo",
-       "started": "4/8"
+       "name": "Danill Khudiakov",
+       "started": "6/8"
       }
      ],
      "starters": [
@@ -10204,62 +10204,57 @@
        "pos": "G"
       },
       {
-       "id": "283951",
-       "name": "Paul-Friedrich Koller",
-       "pos": "D"
-      },
-      {
        "id": "354014",
        "name": "Joshua Quarshie",
-       "pos": "D"
+       "pos": "CD"
+      },
+      {
+       "id": "283951",
+       "name": "Paul-Friedrich Koller",
+       "pos": "CD-L"
       },
       {
        "id": "374533",
        "name": "Arjan Malic",
-       "pos": "D"
-      },
-      {
-       "id": "274948",
-       "name": "Jürgen Heil",
-       "pos": "M"
+       "pos": "CD-R"
       },
       {
        "id": "370757",
        "name": "Valmir Matoshi",
-       "pos": "M"
+       "pos": "CM-L"
       },
       {
        "id": "214012",
        "name": "Jon Gorenc Stankovic",
-       "pos": "M"
-      },
-      {
-       "id": "388521",
-       "name": "Jacob Peter Hödl",
-       "pos": "M"
+       "pos": "CM-R"
       },
       {
        "id": "411273",
        "name": "Luca Weinhandl",
-       "pos": "M"
+       "pos": "AM"
+      },
+      {
+       "id": "362910",
+       "name": "Luís Balbo",
+       "pos": "LM"
+      },
+      {
+       "id": "388521",
+       "name": "Jacob Peter Hödl",
+       "pos": "RM"
       },
       {
        "id": "329483",
        "name": "Oumar Diakité",
-       "pos": "F"
+       "pos": "CF-L"
       },
       {
        "id": "364541",
        "name": "Simon Seidl",
-       "pos": "F"
+       "pos": "CF-R"
       }
      ],
      "bench": [
-      {
-       "id": "362910",
-       "name": "Luís Balbo",
-       "pos": "SUB"
-      },
       {
        "id": "365692",
        "name": "Axel Kayombo",
@@ -10301,7 +10296,7 @@
        "pos": "SUB"
       }
      ],
-     "reg": 0.909,
+     "reg": 0.864,
      "att": null,
      "backupKeeper": true,
      "history": 8,
@@ -10309,7 +10304,7 @@
       "n": 2,
       "out": [
        "Khudiakov",
-       "Balbo"
+       "Heil"
       ],
       "in": [
        "Helac",
@@ -10319,18 +10314,18 @@
     },
     "away": {
      "team": "Marseille",
-     "formation": "4-3-3",
+     "formation": "4-2-3-1",
      "xi": [
       "Jeffrey de Lange",
-      "Ulisses Garcia",
-      "Bamo Meïté",
       "Nayef Aguerd",
+      "Bamo Meïté",
+      "Ulisses Garcia",
       "Kelyann Bezahaf",
-      "Nouhoum Kamissoko",
       "Angel Gomes",
+      "Nouhoum Kamissoko",
       "Geoffrey Kondogbia",
-      "Amine Gouiri",
       "Neal Maupay",
+      "Amine Gouiri",
       "Keyliane Abdallah"
      ],
      "missing": [
@@ -10370,44 +10365,39 @@
        "pos": "G"
       },
       {
-       "id": "220718",
-       "name": "Ulisses Garcia",
-       "pos": "D"
+       "id": "245243",
+       "name": "Nayef Aguerd",
+       "pos": "CD-L"
       },
       {
        "id": "324960",
        "name": "Bamo Meïté",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
-       "id": "245243",
-       "name": "Nayef Aguerd",
-       "pos": "D"
+       "id": "220718",
+       "name": "Ulisses Garcia",
+       "pos": "LB"
       },
       {
        "id": "422095",
        "name": "Kelyann Bezahaf",
-       "pos": "D"
-      },
-      {
-       "id": "421851",
-       "name": "Nouhoum Kamissoko",
-       "pos": "M"
+       "pos": "RB"
       },
       {
        "id": "256773",
        "name": "Angel Gomes",
-       "pos": "M"
+       "pos": "AM"
+      },
+      {
+       "id": "421851",
+       "name": "Nouhoum Kamissoko",
+       "pos": "LM"
       },
       {
        "id": "152270",
        "name": "Geoffrey Kondogbia",
-       "pos": "M"
-      },
-      {
-       "id": "259743",
-       "name": "Amine Gouiri",
-       "pos": "F"
+       "pos": "RM"
       },
       {
        "id": "178760",
@@ -10415,9 +10405,14 @@
        "pos": "F"
       },
       {
+       "id": "259743",
+       "name": "Amine Gouiri",
+       "pos": "AM-L"
+      },
+      {
        "id": "384005",
        "name": "Keyliane Abdallah",
-       "pos": "F"
+       "pos": "AM-R"
       }
      ],
      "bench": [
@@ -10498,9 +10493,9 @@
        "Harit"
       ],
       "in": [
-       "Garcia",
-       "Meïté",
        "Aguerd",
+       "Meïté",
+       "Garcia",
        "Bezahaf",
        "Gomes",
        "Maupay",
@@ -10524,7 +10519,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Lech Poznan",
      "formation": "4-2-3-1",
@@ -10693,12 +10688,12 @@
       "Kevin Danso",
       "Dayann Methalie",
       "Nordi Mukiele",
-      "Jules Ahoka",
-      "Malick Fofana",
-      "Granit Xhaka",
       "Habib Diarra",
-      "Nilson Angulo",
-      "Tymur Tutierov"
+      "Jules Ahoka",
+      "Granit Xhaka",
+      "Tymur Tutierov",
+      "Malick Fofana",
+      "Nilson Angulo"
      ],
      "missing": [
       {
@@ -10735,52 +10730,52 @@
       {
        "id": "191574",
        "name": "Luke O'Nien",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
        "id": "250543",
        "name": "Kevin Danso",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
        "id": "388070",
        "name": "Dayann Methalie",
-       "pos": "D"
+       "pos": "LB"
       },
       {
        "id": "214188",
        "name": "Nordi Mukiele",
-       "pos": "D"
-      },
-      {
-       "id": "410687",
-       "name": "Jules Ahoka",
-       "pos": "M"
-      },
-      {
-       "id": "340645",
-       "name": "Malick Fofana",
-       "pos": "M"
-      },
-      {
-       "id": "149981",
-       "name": "Granit Xhaka",
-       "pos": "M"
+       "pos": "RB"
       },
       {
        "id": "324991",
        "name": "Habib Diarra",
-       "pos": "M"
+       "pos": "AM"
       },
       {
-       "id": "318090",
-       "name": "Nilson Angulo",
-       "pos": "M"
+       "id": "410687",
+       "name": "Jules Ahoka",
+       "pos": "LM"
+      },
+      {
+       "id": "149981",
+       "name": "Granit Xhaka",
+       "pos": "RM"
       },
       {
        "id": "387460",
        "name": "Tymur Tutierov",
        "pos": "F"
+      },
+      {
+       "id": "340645",
+       "name": "Malick Fofana",
+       "pos": "AM-L"
+      },
+      {
+       "id": "318090",
+       "name": "Nilson Angulo",
+       "pos": "AM-R"
       }
      ],
      "bench": [
@@ -10862,9 +10857,9 @@
       "in": [
        "O'Nien",
        "Methalie",
+       "Diarra",
        "Ahoka",
        "Fofana",
-       "Diarra",
        "Angulo"
       ]
      }
@@ -10885,22 +10880,22 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "OFI Crete",
      "formation": "3-4-3",
      "xi": [
       "Klidman Lilo",
-      "Konstantinos Kostoulas",
-      "Kresimir Krizmanic",
       "Achilleas Poungouras",
-      "Lorenzo Dickmann",
-      "Nicolaos Athanasiou",
+      "Kresimir Krizmanic",
+      "Konstantinos Kostoulas",
       "Andreas Bouchalakis",
       "Thanasis Androutsos",
-      "Aitor Cantalapiedra",
+      "Nicolaos Athanasiou",
+      "Lorenzo Dickmann",
+      "Kenan Kodro",
       "Thiago Thomas Nuss",
-      "Kenan Kodro"
+      "Aitor Cantalapiedra"
      ],
      "missing": [
       {
@@ -10923,54 +10918,54 @@
        "pos": "G"
       },
       {
-       "id": "387672",
-       "name": "Konstantinos Kostoulas",
-       "pos": "D"
+       "id": "219762",
+       "name": "Achilleas Poungouras",
+       "pos": "CD"
       },
       {
        "id": "316646",
        "name": "Kresimir Krizmanic",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
-       "id": "219762",
-       "name": "Achilleas Poungouras",
-       "pos": "D"
-      },
-      {
-       "id": "204769",
-       "name": "Lorenzo Dickmann",
-       "pos": "M"
-      },
-      {
-       "id": "312967",
-       "name": "Nicolaos Athanasiou",
-       "pos": "M"
+       "id": "387672",
+       "name": "Konstantinos Kostoulas",
+       "pos": "CD-R"
       },
       {
        "id": "187897",
        "name": "Andreas Bouchalakis",
-       "pos": "M"
+       "pos": "CM-L"
       },
       {
        "id": "241991",
        "name": "Thanasis Androutsos",
-       "pos": "M"
+       "pos": "CM-R"
       },
       {
-       "id": "229392",
-       "name": "Aitor Cantalapiedra",
-       "pos": "F"
+       "id": "312967",
+       "name": "Nicolaos Athanasiou",
+       "pos": "LM"
       },
       {
-       "id": "310785",
-       "name": "Thiago Thomas Nuss",
-       "pos": "F"
+       "id": "204769",
+       "name": "Lorenzo Dickmann",
+       "pos": "RM"
       },
       {
        "id": "208027",
        "name": "Kenan Kodro",
        "pos": "F"
+      },
+      {
+       "id": "310785",
+       "name": "Thiago Thomas Nuss",
+       "pos": "CF-L"
+      },
+      {
+       "id": "229392",
+       "name": "Aitor Cantalapiedra",
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -11052,9 +11047,9 @@
       "in": [
        "Lilo",
        "Poungouras",
-       "Dickmann",
        "Bouchalakis",
        "Androutsos",
+       "Dickmann",
        "Cantalapiedra"
       ]
      }
@@ -11064,16 +11059,16 @@
      "formation": "4-2-3-1",
      "xi": [
       "Janis Blaswich",
+      "Loïc Badé",
       "Jarell Quansah",
       "Facundo Medina",
-      "Loïc Badé",
       "Lucas Vázquez",
       "Malik Tillman",
-      "Afonso Moreira",
-      "Ezequiel Fernández",
       "Aleix García",
-      "Jonas Hofmann",
-      "Patrik Schick"
+      "Ezequiel Fernández",
+      "Patrik Schick",
+      "Afonso Moreira",
+      "Jonas Hofmann"
      ],
      "missing": [
       {
@@ -11104,54 +11099,54 @@
        "pos": "G"
       },
       {
+       "id": "300410",
+       "name": "Loïc Badé",
+       "pos": "CD-L"
+      },
+      {
        "id": "298524",
        "name": "Jarell Quansah",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
        "id": "249663",
        "name": "Facundo Medina",
-       "pos": "D"
-      },
-      {
-       "id": "300410",
-       "name": "Loïc Badé",
-       "pos": "D"
+       "pos": "LB"
       },
       {
        "id": "174967",
        "name": "Lucas Vázquez",
-       "pos": "D"
+       "pos": "RB"
       },
       {
        "id": "301416",
        "name": "Malik Tillman",
-       "pos": "M"
-      },
-      {
-       "id": "361258",
-       "name": "Afonso Moreira",
-       "pos": "M"
-      },
-      {
-       "id": "364080",
-       "name": "Ezequiel Fernández",
-       "pos": "M"
+       "pos": "AM"
       },
       {
        "id": "219294",
        "name": "Aleix García",
-       "pos": "M"
+       "pos": "LM"
       },
       {
-       "id": "174617",
-       "name": "Jonas Hofmann",
-       "pos": "M"
+       "id": "364080",
+       "name": "Ezequiel Fernández",
+       "pos": "RM"
       },
       {
        "id": "212330",
        "name": "Patrik Schick",
        "pos": "F"
+      },
+      {
+       "id": "361258",
+       "name": "Afonso Moreira",
+       "pos": "AM-L"
+      },
+      {
+       "id": "174617",
+       "name": "Jonas Hofmann",
+       "pos": "AM-R"
       }
      ],
      "bench": [
@@ -11239,22 +11234,22 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Ararat-Armenia",
-     "formation": "4-3-3",
+     "formation": "4-2-3-1",
      "xi": [
       "João Bravim",
-      "Edgar Grigoryan",
-      "Bruno Wilson",
       "Alexandros Malis",
+      "Bruno Wilson",
+      "Edgar Grigoryan",
       "Hugo Oliveira",
       "Armen Ambartsumyan",
-      "Juan Andrés Balanta",
       "Maxence Carlier",
+      "Juan Andrés Balanta",
       "Sandro Lima",
-      "Artur Serobyan",
-      "Zhirayr Shaghoyan"
+      "Zhirayr Shaghoyan",
+      "Artur Serobyan"
      ],
      "missing": [
       {
@@ -11277,39 +11272,39 @@
        "pos": "G"
       },
       {
-       "id": "322483",
-       "name": "Edgar Grigoryan",
-       "pos": "D"
+       "id": "243196",
+       "name": "Alexandros Malis",
+       "pos": "CD-L"
       },
       {
        "id": "250920",
        "name": "Bruno Wilson",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
-       "id": "243196",
-       "name": "Alexandros Malis",
-       "pos": "D"
+       "id": "322483",
+       "name": "Edgar Grigoryan",
+       "pos": "LB"
       },
       {
        "id": "323816",
        "name": "Hugo Oliveira",
-       "pos": "D"
+       "pos": "RB"
       },
       {
        "id": "196062",
        "name": "Armen Ambartsumyan",
-       "pos": "M"
-      },
-      {
-       "id": "201131",
-       "name": "Juan Andrés Balanta",
-       "pos": "M"
+       "pos": "AM"
       },
       {
        "id": "260550",
        "name": "Maxence Carlier",
-       "pos": "M"
+       "pos": "LM"
+      },
+      {
+       "id": "201131",
+       "name": "Juan Andrés Balanta",
+       "pos": "RM"
       },
       {
        "id": "192505",
@@ -11317,14 +11312,14 @@
        "pos": "F"
       },
       {
-       "id": "305632",
-       "name": "Artur Serobyan",
-       "pos": "F"
-      },
-      {
        "id": "289159",
        "name": "Zhirayr Shaghoyan",
-       "pos": "F"
+       "pos": "AM-L"
+      },
+      {
+       "id": "305632",
+       "name": "Artur Serobyan",
+       "pos": "AM-R"
       }
      ],
      "bench": [
@@ -11392,16 +11387,16 @@
      "formation": "4-3-3",
      "xi": [
       "Jari De Busser",
-      "Seiya Maikuma",
-      "Mees De Wit",
-      "Lewis Schouten",
       "Wesley Hoedt",
-      "Peer Koopmeiners",
-      "Dave Kwakman",
+      "Lewis Schouten",
+      "Mees De Wit",
+      "Seiya Maikuma",
       "Valdemar Byskov",
-      "Weslley Patati",
+      "Dave Kwakman",
+      "Peer Koopmeiners",
+      "Bendegúz Kovács",
       "Ayoub Oufkir",
-      "Bendegúz Kovács"
+      "Weslley Patati"
      ],
      "missing": [
       {
@@ -11440,54 +11435,54 @@
        "pos": "G"
       },
       {
-       "id": "333892",
-       "name": "Seiya Maikuma",
-       "pos": "D"
-      },
-      {
-       "id": "261596",
-       "name": "Mees De Wit",
-       "pos": "D"
+       "id": "190977",
+       "name": "Wesley Hoedt",
+       "pos": "CD-L"
       },
       {
        "id": "334064",
        "name": "Lewis Schouten",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
-       "id": "190977",
-       "name": "Wesley Hoedt",
-       "pos": "D"
+       "id": "261596",
+       "name": "Mees De Wit",
+       "pos": "LB"
       },
       {
-       "id": "269610",
-       "name": "Peer Koopmeiners",
-       "pos": "M"
-      },
-      {
-       "id": "346269",
-       "name": "Dave Kwakman",
-       "pos": "M"
+       "id": "333892",
+       "name": "Seiya Maikuma",
+       "pos": "RB"
       },
       {
        "id": "344870",
        "name": "Valdemar Byskov",
-       "pos": "M"
+       "pos": "CM"
       },
       {
-       "id": "338959",
-       "name": "Weslley Patati",
-       "pos": "F"
+       "id": "346269",
+       "name": "Dave Kwakman",
+       "pos": "LM"
       },
       {
-       "id": "389354",
-       "name": "Ayoub Oufkir",
-       "pos": "F"
+       "id": "269610",
+       "name": "Peer Koopmeiners",
+       "pos": "RM"
       },
       {
        "id": "408528",
        "name": "Bendegúz Kovács",
        "pos": "F"
+      },
+      {
+       "id": "389354",
+       "name": "Ayoub Oufkir",
+       "pos": "LF"
+      },
+      {
+       "id": "338959",
+       "name": "Weslley Patati",
+       "pos": "RF"
       }
      ],
      "bench": [
@@ -11568,13 +11563,13 @@
        "Daal"
       ],
       "in": [
-       "Maikuma",
-       "Wit",
        "Hoedt",
-       "Kwakman",
+       "Wit",
+       "Maikuma",
        "Byskov",
-       "Patati",
-       "Kovács"
+       "Kwakman",
+       "Kovács",
+       "Patati"
       ]
      }
     }
@@ -11591,7 +11586,361 @@
     "away": "Sparta Praha",
     "awayCountry": "CZE"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "Olympiacos",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Stefan Ortega",
+      "Lorenzo Pirola",
+      "Panagiotis Retsos",
+      "Manolis Saliakas",
+      "Bruno Onyemaechi",
+      "Gelson Martins",
+      "Remo Freuler",
+      "Jota Silva",
+      "Chiquinho",
+      "Santiago Hezze",
+      "Roman Yaremchuk"
+     ],
+     "missing": [
+      {
+       "name": "Nayair Tiknizyan",
+       "started": "5/8"
+      },
+      {
+       "name": "Gustavo Puerta",
+       "started": "5/8"
+      },
+      {
+       "name": "Kostas Fortounis",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "151855",
+       "name": "Stefan Ortega",
+       "pos": "G"
+      },
+      {
+       "id": "290069",
+       "name": "Lorenzo Pirola",
+       "pos": "D"
+      },
+      {
+       "id": "233973",
+       "name": "Panagiotis Retsos",
+       "pos": "D"
+      },
+      {
+       "id": "202696",
+       "name": "Manolis Saliakas",
+       "pos": "D"
+      },
+      {
+       "id": "347628",
+       "name": "Bruno Onyemaechi",
+       "pos": "D"
+      },
+      {
+       "id": "215319",
+       "name": "Gelson Martins",
+       "pos": "M"
+      },
+      {
+       "id": "152600",
+       "name": "Remo Freuler",
+       "pos": "M"
+      },
+      {
+       "id": "344692",
+       "name": "Jota Silva",
+       "pos": "M"
+      },
+      {
+       "id": "275935",
+       "name": "Chiquinho",
+       "pos": "M"
+      },
+      {
+       "id": "290539",
+       "name": "Santiago Hezze",
+       "pos": "M"
+      },
+      {
+       "id": "219543",
+       "name": "Roman Yaremchuk",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "3102535",
+       "name": "Christos Filis",
+       "pos": "SUB"
+      },
+      {
+       "id": "347406",
+       "name": "Gustavo Sá",
+       "pos": "SUB"
+      },
+      {
+       "id": "266070",
+       "name": "Nayair Tiknizyan",
+       "pos": "SUB"
+      },
+      {
+       "id": "387684",
+       "name": "Paschalis Toufakis",
+       "pos": "SUB"
+      },
+      {
+       "id": "341736",
+       "name": "Gustavo Puerta",
+       "pos": "SUB"
+      },
+      {
+       "id": "3126810",
+       "name": "Iason Georgakopoulos",
+       "pos": "SUB"
+      },
+      {
+       "id": "365771",
+       "name": "Zinedin Smajlovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "236301",
+       "name": "David Carmo",
+       "pos": "SUB"
+      },
+      {
+       "id": "376110",
+       "name": "Armando González",
+       "pos": "SUB"
+      },
+      {
+       "id": "308834",
+       "name": "Dimitrios Stournaras",
+       "pos": "SUB"
+      },
+      {
+       "id": "129285",
+       "name": "Marcus Holmgren Pedersen",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.892,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Tiknizyan",
+       "Pedersen",
+       "Sá",
+       "Puerta",
+       "Mouandilmadji",
+       "Fortounis",
+       "Roca"
+      ],
+      "in": [
+       "Saliakas",
+       "Onyemaechi",
+       "Martins",
+       "Silva",
+       "Chiquinho",
+       "Hezze",
+       "Yaremchuk"
+      ]
+     }
+    },
+    "away": {
+     "team": "Sparta Prague",
+     "formation": "4-3-3",
+     "xi": [
+      "Jakub Surovcik",
+      "Jaroslav Zelený",
+      "Tobias Guddal",
+      "Ki-Jana Hoever",
+      "Martin Suchomel",
+      "Hugo Sochurek",
+      "Santiago Eneme",
+      "Roman Macek",
+      "Matej Jurásek",
+      "Matyás Vojta",
+      "Josimar Alcócer"
+     ],
+     "missing": [
+      {
+       "name": "Jonatan Brunes",
+       "started": "4/4"
+      },
+      {
+       "name": "Adam Sevinsky",
+       "started": "3/4"
+      },
+      {
+       "name": "Andrew Irving",
+       "started": "3/4"
+      },
+      {
+       "name": "Matej Rynes",
+       "started": "3/4"
+      },
+      {
+       "name": "Adam Karabec",
+       "started": "3/4"
+      },
+      {
+       "name": "John Mercado",
+       "started": "3/4"
+      }
+     ],
+     "starters": [
+      {
+       "id": "336530",
+       "name": "Jakub Surovcik",
+       "pos": "G"
+      },
+      {
+       "id": "276659",
+       "name": "Jaroslav Zelený",
+       "pos": "D"
+      },
+      {
+       "id": "382244",
+       "name": "Tobias Guddal",
+       "pos": "D"
+      },
+      {
+       "id": "284591",
+       "name": "Ki-Jana Hoever",
+       "pos": "D"
+      },
+      {
+       "id": "330298",
+       "name": "Martin Suchomel",
+       "pos": "D"
+      },
+      {
+       "id": "403974",
+       "name": "Hugo Sochurek",
+       "pos": "M"
+      },
+      {
+       "id": "322792",
+       "name": "Santiago Eneme",
+       "pos": "M"
+      },
+      {
+       "id": "223222",
+       "name": "Roman Macek",
+       "pos": "M"
+      },
+      {
+       "id": "310026",
+       "name": "Matej Jurásek",
+       "pos": "F"
+      },
+      {
+       "id": "385849",
+       "name": "Matyás Vojta",
+       "pos": "F"
+      },
+      {
+       "id": "328393",
+       "name": "Josimar Alcócer",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "342633",
+       "name": "Ebrima Singhateh",
+       "pos": "SUB"
+      },
+      {
+       "id": "276334",
+       "name": "Loïc Mbe Soh",
+       "pos": "SUB"
+      },
+      {
+       "id": "294378",
+       "name": "Kristjan Hegyi",
+       "pos": "SUB"
+      },
+      {
+       "id": "239253",
+       "name": "Andrew Irving",
+       "pos": "SUB"
+      },
+      {
+       "id": "207401",
+       "name": "Pavel Kaderábek",
+       "pos": "SUB"
+      },
+      {
+       "id": "312162",
+       "name": "Sivert Mannsverk",
+       "pos": "SUB"
+      },
+      {
+       "id": "306595",
+       "name": "Jakub Martinec",
+       "pos": "SUB"
+      },
+      {
+       "id": "385886",
+       "name": "Viktor Vitályos",
+       "pos": "SUB"
+      },
+      {
+       "id": "312933",
+       "name": "Jonatan Brunes",
+       "pos": "SUB"
+      },
+      {
+       "id": "413729",
+       "name": "Lukás Franc",
+       "pos": "SUB"
+      },
+      {
+       "id": "340212",
+       "name": "Patrik Vydra",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.543,
+     "att": null,
+     "backupKeeper": false,
+     "history": 4,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Sevinsky",
+       "Vitályos",
+       "Mannsverk",
+       "Irving",
+       "Brunes",
+       "Singhateh"
+      ],
+      "in": [
+       "Zelený",
+       "Hoever",
+       "Eneme",
+       "Macek",
+       "Vojta",
+       "Alcócer"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -11604,7 +11953,351 @@
     "away": "Levski Sofia",
     "awayCountry": "BUL"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "Viktoria Plzen",
+     "formation": "4-1-2-1-2",
+     "xi": [
+      "Florian Wiegele",
+      "Amar Memic",
+      "Denis Vavro",
+      "Tobiás Paliscák",
+      "Sampson Dweh",
+      "Tomás Ladra",
+      "Cheick Souare",
+      "Lukás Cerv",
+      "Patrik Hrosovský",
+      "Christophe Kabongo",
+      "Denis Visinský"
+     ],
+     "missing": [
+      {
+       "name": "Filip Prebsl",
+       "started": "3/4"
+      },
+      {
+       "name": "Merchas Doski",
+       "started": "3/4"
+      },
+      {
+       "name": "Prince Adu",
+       "started": "3/4"
+      },
+      {
+       "name": "Stefan Pirgic",
+       "started": "2/4"
+      },
+      {
+       "name": "Alexandr Sojka",
+       "started": "2/4"
+      },
+      {
+       "name": "Karel Spácil",
+       "started": "2/4"
+      }
+     ],
+     "starters": [
+      {
+       "id": "387869",
+       "name": "Florian Wiegele",
+       "pos": "G"
+      },
+      {
+       "id": "338199",
+       "name": "Amar Memic",
+       "pos": "D"
+      },
+      {
+       "id": "191176",
+       "name": "Denis Vavro",
+       "pos": "D"
+      },
+      {
+       "id": "405942",
+       "name": "Tobiás Paliscák",
+       "pos": "D"
+      },
+      {
+       "id": "320391",
+       "name": "Sampson Dweh",
+       "pos": "D"
+      },
+      {
+       "id": "290630",
+       "name": "Tomás Ladra",
+       "pos": "M"
+      },
+      {
+       "id": "304489",
+       "name": "Cheick Souare",
+       "pos": "M"
+      },
+      {
+       "id": "303726",
+       "name": "Lukás Cerv",
+       "pos": "M"
+      },
+      {
+       "id": "169214",
+       "name": "Patrik Hrosovský",
+       "pos": "M"
+      },
+      {
+       "id": "370742",
+       "name": "Christophe Kabongo",
+       "pos": "F"
+      },
+      {
+       "id": "310027",
+       "name": "Denis Visinský",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "3098533",
+       "name": "Mohamed Toure",
+       "pos": "SUB"
+      },
+      {
+       "id": "345320",
+       "name": "Merchas Doski",
+       "pos": "SUB"
+      },
+      {
+       "id": "391012",
+       "name": "Karel Spácil",
+       "pos": "SUB"
+      },
+      {
+       "id": "309111",
+       "name": "Adam Gabriel",
+       "pos": "SUB"
+      },
+      {
+       "id": "148624",
+       "name": "Matej Vydra",
+       "pos": "SUB"
+      },
+      {
+       "id": "362666",
+       "name": "Salim Lawal",
+       "pos": "SUB"
+      },
+      {
+       "id": "3098951",
+       "name": "Baboucarr Faal",
+       "pos": "SUB"
+      },
+      {
+       "id": "394701",
+       "name": "Stefan Pirgic",
+       "pos": "SUB"
+      },
+      {
+       "id": "387866",
+       "name": "Jirí Panos",
+       "pos": "SUB"
+      },
+      {
+       "id": "360381",
+       "name": "Filip Prebsl",
+       "pos": "SUB"
+      },
+      {
+       "id": "342725",
+       "name": "Dominik Tapaj",
+       "pos": "SUB"
+      },
+      {
+       "id": "387865",
+       "name": "Alexandr Sojka",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.781,
+     "att": null,
+     "backupKeeper": false,
+     "history": 4,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Tapaj",
+       "Prebsl",
+       "Doski",
+       "Gabriel",
+       "Panos",
+       "Pirgic",
+       "Sojka"
+      ],
+      "in": [
+       "Wiegele",
+       "Vavro",
+       "Paliscák",
+       "Ladra",
+       "Souare",
+       "Cerv",
+       "Visinský"
+      ]
+     }
+    },
+    "away": {
+     "team": "Levski Sofia",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Svetoslav Vutsov",
+      "Kristian Dimitrov",
+      "Maicon",
+      "Aldair",
+      "Christian Makoun",
+      "El Mehdi El Moubarik",
+      "Marko Grujic",
+      "Serginho",
+      "Mazire Soula",
+      "Everton Bala",
+      "Reinaldo"
+     ],
+     "missing": [
+      {
+       "name": "Armstrong Okoflex",
+       "started": "7/8"
+      },
+      {
+       "name": "Nikola Serafimov",
+       "started": "6/8"
+      },
+      {
+       "name": "Álex Centelles",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "326583",
+       "name": "Svetoslav Vutsov",
+       "pos": "G"
+      },
+      {
+       "id": "257925",
+       "name": "Kristian Dimitrov",
+       "pos": "D"
+      },
+      {
+       "id": "379245",
+       "name": "Maicon",
+       "pos": "D"
+      },
+      {
+       "id": "345605",
+       "name": "Aldair",
+       "pos": "D"
+      },
+      {
+       "id": "241486",
+       "name": "Christian Makoun",
+       "pos": "D"
+      },
+      {
+       "id": "368957",
+       "name": "El Mehdi El Moubarik",
+       "pos": "M"
+      },
+      {
+       "id": "219536",
+       "name": "Marko Grujic",
+       "pos": "M"
+      },
+      {
+       "id": "351573",
+       "name": "Serginho",
+       "pos": "M"
+      },
+      {
+       "id": "255822",
+       "name": "Mazire Soula",
+       "pos": "M"
+      },
+      {
+       "id": "333970",
+       "name": "Everton Bala",
+       "pos": "M"
+      },
+      {
+       "id": "287830",
+       "name": "Reinaldo",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "286180",
+       "name": "Armstrong Okoflex",
+       "pos": "SUB"
+      },
+      {
+       "id": "345768",
+       "name": "Hevertton Santos",
+       "pos": "SUB"
+      },
+      {
+       "id": "335377",
+       "name": "Akram Bouras",
+       "pos": "SUB"
+      },
+      {
+       "id": "258203",
+       "name": "Martin Lukov",
+       "pos": "SUB"
+      },
+      {
+       "id": "392836",
+       "name": "David Kusso",
+       "pos": "SUB"
+      },
+      {
+       "id": "405699",
+       "name": "Ognyan Vladimirov",
+       "pos": "SUB"
+      },
+      {
+       "id": "373587",
+       "name": "Juan Esteban Perea Sanchez",
+       "pos": "SUB"
+      },
+      {
+       "id": "326078",
+       "name": "Nikola Serafimov",
+       "pos": "SUB"
+      },
+      {
+       "id": "276348",
+       "name": "Álex Centelles",
+       "pos": "SUB"
+      },
+      {
+       "id": "405700",
+       "name": "Stivan Stoyanchov",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.81,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Kusso"
+      ],
+      "in": [
+       "Soula"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -11630,7 +12323,350 @@
     "away": "Milan",
     "awayCountry": "ITA"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "AFC Bournemouth",
+     "formation": "4-4-2",
+     "xi": [
+      "Michele Di Gregorio",
+      "Adrien Truffert",
+      "António Silva",
+      "Bafodé Diakité",
+      "James Hill",
+      "Ryan Christie",
+      "Marcus Tavernier",
+      "Ben Gannon-Doak",
+      "Tyler Adams",
+      "Justin Kluivert",
+      "Evanilson"
+     ],
+     "missing": [
+      {
+       "name": "Djordje Petrovic",
+       "started": "7/8"
+      },
+      {
+       "name": "Adam Smith",
+       "started": "7/8"
+      },
+      {
+       "name": "Rayan",
+       "started": "6/8"
+      },
+      {
+       "name": "Alex Scott",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "240055",
+       "name": "Michele Di Gregorio",
+       "pos": "G"
+      },
+      {
+       "id": "305684",
+       "name": "Adrien Truffert",
+       "pos": "D"
+      },
+      {
+       "id": "346588",
+       "name": "António Silva",
+       "pos": "D"
+      },
+      {
+       "id": "282675",
+       "name": "Bafodé Diakité",
+       "pos": "D"
+      },
+      {
+       "id": "279155",
+       "name": "James Hill",
+       "pos": "D"
+      },
+      {
+       "id": "93435",
+       "name": "Ryan Christie",
+       "pos": "M"
+      },
+      {
+       "id": "243364",
+       "name": "Marcus Tavernier",
+       "pos": "M"
+      },
+      {
+       "id": "332948",
+       "name": "Ben Gannon-Doak",
+       "pos": "M"
+      },
+      {
+       "id": "222776",
+       "name": "Tyler Adams",
+       "pos": "M"
+      },
+      {
+       "id": "245916",
+       "name": "Justin Kluivert",
+       "pos": "F"
+      },
+      {
+       "id": "102368",
+       "name": "Evanilson",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "291613",
+       "name": "Amine Adli",
+       "pos": "SUB"
+      },
+      {
+       "id": "72487",
+       "name": "David Brooks",
+       "pos": "SUB"
+      },
+      {
+       "id": "3130136",
+       "name": "Mack Allan",
+       "pos": "SUB"
+      },
+      {
+       "id": "289824",
+       "name": "Djordje Petrovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "353151",
+       "name": "Álvaro Rodríguez",
+       "pos": "SUB"
+      },
+      {
+       "id": "122268",
+       "name": "Adam Smith",
+       "pos": "SUB"
+      },
+      {
+       "id": "339797",
+       "name": "Julio Soler",
+       "pos": "SUB"
+      },
+      {
+       "id": "357719",
+       "name": "Rayan",
+       "pos": "SUB"
+      },
+      {
+       "id": "360149",
+       "name": "Alex Tóth",
+       "pos": "SUB"
+      },
+      {
+       "id": "223452",
+       "name": "Lewis Cook",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.786,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Petrovic",
+       "Smith",
+       "Cook",
+       "Rayan"
+      ],
+      "in": [
+       "Gregorio",
+       "Diakité",
+       "Gannon-Doak",
+       "Kluivert"
+      ]
+     }
+    },
+    "away": {
+     "team": "AC Milan",
+     "formation": "3-4-2-1",
+     "xi": [
+      "Mike Maignan",
+      "Fikayo Tomori",
+      "Strahinja Pavlovic",
+      "Koni De Winter",
+      "Pervis Estupiñán",
+      "Ardon Jashari",
+      "Diego Moreira",
+      "Omari Hutchinson",
+      "Ruben Loftus-Cheek",
+      "Yunus Musah",
+      "Alphadjo Cissè"
+     ],
+     "missing": [
+      {
+       "name": "Gonçalo Ramos",
+       "started": "7/8"
+      },
+      {
+       "name": "Mario Gila",
+       "started": "6/8"
+      },
+      {
+       "name": "Samuel Chukwueze",
+       "started": "6/8"
+      },
+      {
+       "name": "Adrien Rabiot",
+       "started": "6/8"
+      },
+      {
+       "name": "Luka Modric",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "189026",
+       "name": "Mike Maignan",
+       "pos": "G"
+      },
+      {
+       "id": "236210",
+       "name": "Fikayo Tomori",
+       "pos": "D"
+      },
+      {
+       "id": "290375",
+       "name": "Strahinja Pavlovic",
+       "pos": "D"
+      },
+      {
+       "id": "309570",
+       "name": "Koni De Winter",
+       "pos": "D"
+      },
+      {
+       "id": "214689",
+       "name": "Pervis Estupiñán",
+       "pos": "M"
+      },
+      {
+       "id": "303973",
+       "name": "Ardon Jashari",
+       "pos": "M"
+      },
+      {
+       "id": "340678",
+       "name": "Diego Moreira",
+       "pos": "M"
+      },
+      {
+       "id": "322771",
+       "name": "Omari Hutchinson",
+       "pos": "M"
+      },
+      {
+       "id": "186505",
+       "name": "Ruben Loftus-Cheek",
+       "pos": "M"
+      },
+      {
+       "id": "307527",
+       "name": "Yunus Musah",
+       "pos": "M"
+      },
+      {
+       "id": "359754",
+       "name": "Alphadjo Cissè",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "384305",
+       "name": "Lorenzo Torriani",
+       "pos": "SUB"
+      },
+      {
+       "id": "324097",
+       "name": "Mario Gila",
+       "pos": "SUB"
+      },
+      {
+       "id": "403839",
+       "name": "Léo-Paul Bouyer",
+       "pos": "SUB"
+      },
+      {
+       "id": "388239",
+       "name": "Sankhoun Diawara",
+       "pos": "SUB"
+      },
+      {
+       "id": "409491",
+       "name": "Valeri Vladimirov",
+       "pos": "SUB"
+      },
+      {
+       "id": "345637",
+       "name": "Davide Bartesaghi",
+       "pos": "SUB"
+      },
+      {
+       "id": "225607",
+       "name": "Christian Pulisic",
+       "pos": "SUB"
+      },
+      {
+       "id": "403807",
+       "name": "Christian Comotto",
+       "pos": "SUB"
+      },
+      {
+       "id": "176203",
+       "name": "Adrien Rabiot",
+       "pos": "SUB"
+      },
+      {
+       "id": "76762",
+       "name": "Luka Modric",
+       "pos": "SUB"
+      },
+      {
+       "id": "377563",
+       "name": "Francesco Camarda",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.712,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Gila",
+       "Modric",
+       "Chukwueze",
+       "Ramos",
+       "Pulisic",
+       "Rabiot"
+      ],
+      "in": [
+       "Tomori",
+       "Estupiñán",
+       "Jashari",
+       "Hutchinson",
+       "Loftus-Cheek",
+       "Cissè"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -11643,7 +12679,354 @@
     "away": "Salzburg",
     "awayCountry": "AUT"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "NK Celje",
+     "formation": "4-3-3",
+     "xi": [
+      "Zan-Luk Leban",
+      "Lukasz Bejger",
+      "Pijus Sirvys",
+      "Milot Avdyli",
+      "Artemijus Tutyskinas",
+      "Svit Seslar",
+      "Mark Zabukovnik",
+      "Mario Kvesic",
+      "Blaz Kramer",
+      "Benjamin Verbic",
+      "Veton Tusha"
+     ],
+     "missing": [
+      {
+       "name": "Papa Daniel",
+       "started": "6/8"
+      },
+      {
+       "name": "Armandas Kucys",
+       "started": "6/8"
+      },
+      {
+       "name": "Darko Hrka",
+       "started": "6/8"
+      },
+      {
+       "name": "Yaya Dukuly",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "316540",
+       "name": "Zan-Luk Leban",
+       "pos": "G"
+      },
+      {
+       "id": "307206",
+       "name": "Lukasz Bejger",
+       "pos": "D"
+      },
+      {
+       "id": "289749",
+       "name": "Pijus Sirvys",
+       "pos": "D"
+      },
+      {
+       "id": "363569",
+       "name": "Milot Avdyli",
+       "pos": "D"
+      },
+      {
+       "id": "324201",
+       "name": "Artemijus Tutyskinas",
+       "pos": "D"
+      },
+      {
+       "id": "306199",
+       "name": "Svit Seslar",
+       "pos": "M"
+      },
+      {
+       "id": "326760",
+       "name": "Mark Zabukovnik",
+       "pos": "M"
+      },
+      {
+       "id": "206356",
+       "name": "Mario Kvesic",
+       "pos": "M"
+      },
+      {
+       "id": "290216",
+       "name": "Blaz Kramer",
+       "pos": "F"
+      },
+      {
+       "id": "189386",
+       "name": "Benjamin Verbic",
+       "pos": "F"
+      },
+      {
+       "id": "312664",
+       "name": "Veton Tusha",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "279136",
+       "name": "Alpha Dionkou",
+       "pos": "SUB"
+      },
+      {
+       "id": "415396",
+       "name": "Dejan Suhovrsnik",
+       "pos": "SUB"
+      },
+      {
+       "id": "239754",
+       "name": "Zan Zuzek",
+       "pos": "SUB"
+      },
+      {
+       "id": "239132",
+       "name": "Leonardo Koutris",
+       "pos": "SUB"
+      },
+      {
+       "id": "330626",
+       "name": "Armandas Kucys",
+       "pos": "SUB"
+      },
+      {
+       "id": "286984",
+       "name": "Yaya Dukuly",
+       "pos": "SUB"
+      },
+      {
+       "id": "398462",
+       "name": "Papa Daniel",
+       "pos": "SUB"
+      },
+      {
+       "id": "387224",
+       "name": "Luka Kolar",
+       "pos": "SUB"
+      },
+      {
+       "id": "306193",
+       "name": "Ziga Frelih",
+       "pos": "SUB"
+      },
+      {
+       "id": "385608",
+       "name": "Matic Ivansek",
+       "pos": "SUB"
+      },
+      {
+       "id": "407089",
+       "name": "Darko Hrka",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.764,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Zuzek",
+       "Daniel",
+       "Ticic",
+       "Dukuly"
+      ],
+      "in": [
+       "Sirvys",
+       "Kvesic",
+       "Verbic",
+       "Tusha"
+      ]
+     }
+    },
+    "away": {
+     "team": "RB Salzburg",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Christian Zawieschitzky",
+      "Kévin Boma",
+      "Tim Drexler",
+      "Leandro Morgalla",
+      "Dominik Schmid",
+      "Sota Kitano",
+      "Yorbe Vertessen",
+      "Damir Redzic",
+      "Abubakr Barry",
+      "Umut Tohumcu",
+      "Haris Tabakovic"
+     ],
+     "missing": [
+      {
+       "name": "Bartosz Mazurek",
+       "started": "7/8"
+      },
+      {
+       "name": "Edmund Baidoo",
+       "started": "6/8"
+      },
+      {
+       "name": "Valentin Zabransky",
+       "started": "5/8"
+      },
+      {
+       "name": "Nikolas Veratschnig",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "374530",
+       "name": "Christian Zawieschitzky",
+       "pos": "G"
+      },
+      {
+       "id": "306030",
+       "name": "Kévin Boma",
+       "pos": "D"
+      },
+      {
+       "id": "380916",
+       "name": "Tim Drexler",
+       "pos": "D"
+      },
+      {
+       "id": "325526",
+       "name": "Leandro Morgalla",
+       "pos": "D"
+      },
+      {
+       "id": "136597",
+       "name": "Dominik Schmid",
+       "pos": "D"
+      },
+      {
+       "id": "336346",
+       "name": "Sota Kitano",
+       "pos": "M"
+      },
+      {
+       "id": "291669",
+       "name": "Yorbe Vertessen",
+       "pos": "M"
+      },
+      {
+       "id": "308980",
+       "name": "Damir Redzic",
+       "pos": "M"
+      },
+      {
+       "id": "386242",
+       "name": "Abubakr Barry",
+       "pos": "M"
+      },
+      {
+       "id": "340683",
+       "name": "Umut Tohumcu",
+       "pos": "M"
+      },
+      {
+       "id": "184869",
+       "name": "Haris Tabakovic",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "278822",
+       "name": "Jesper Lindstrom",
+       "pos": "SUB"
+      },
+      {
+       "id": "380383",
+       "name": "Gaoussou Diakité",
+       "pos": "SUB"
+      },
+      {
+       "id": "375380",
+       "name": "Bartosz Mazurek",
+       "pos": "SUB"
+      },
+      {
+       "id": "214635",
+       "name": "Stefan Lainer",
+       "pos": "SUB"
+      },
+      {
+       "id": "407690",
+       "name": "Nikola Sarcevic",
+       "pos": "SUB"
+      },
+      {
+       "id": "99685",
+       "name": "Aboubacar Camara",
+       "pos": "SUB"
+      },
+      {
+       "id": "361750",
+       "name": "John Mellberg",
+       "pos": "SUB"
+      },
+      {
+       "id": "326475",
+       "name": "Karim Konaté",
+       "pos": "SUB"
+      },
+      {
+       "id": "259054",
+       "name": "Christian Früchtl",
+       "pos": "SUB"
+      },
+      {
+       "id": "388068",
+       "name": "Valentin Zabransky",
+       "pos": "SUB"
+      },
+      {
+       "id": "357736",
+       "name": "Soumaïla Diabaté",
+       "pos": "SUB"
+      },
+      {
+       "id": "346749",
+       "name": "Frans Krätzig",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.778,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Zabransky",
+       "Diakité",
+       "Mazurek",
+       "Lindstrom",
+       "Baidoo"
+      ],
+      "in": [
+       "Drexler",
+       "Kitano",
+       "Vertessen",
+       "Redzic",
+       "Tohumcu"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -11656,7 +13039,350 @@
     "away": "Anderlecht",
     "awayCountry": "BEL"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "Jagiellonia Bialystok",
+     "formation": "4-3-3",
+     "xi": [
+      "Slawomir Abramowicz",
+      "Yuki Kobayashi",
+      "Rodrigo Conceição",
+      "Guilherme Montoia",
+      "Bernardo Vital",
+      "Hampus Finndell",
+      "Anders Klynge",
+      "Eryk Kozlowski",
+      "Kamil Jozwiak",
+      "Nik Prelec",
+      "Kajetan Szmyt"
+     ],
+     "missing": [
+      {
+       "name": "Taras Romanczuk",
+       "started": "6/6"
+      },
+      {
+       "name": "Jesus Imaz",
+       "started": "6/6"
+      },
+      {
+       "name": "Norbert Wojtuszek",
+       "started": "5/6"
+      }
+     ],
+     "starters": [
+      {
+       "id": "364679",
+       "name": "Slawomir Abramowicz",
+       "pos": "G"
+      },
+      {
+       "id": "346925",
+       "name": "Yuki Kobayashi",
+       "pos": "D"
+      },
+      {
+       "id": "323813",
+       "name": "Rodrigo Conceição",
+       "pos": "D"
+      },
+      {
+       "id": "382780",
+       "name": "Guilherme Montoia",
+       "pos": "D"
+      },
+      {
+       "id": "321360",
+       "name": "Bernardo Vital",
+       "pos": "D"
+      },
+      {
+       "id": "272148",
+       "name": "Hampus Finndell",
+       "pos": "M"
+      },
+      {
+       "id": "303934",
+       "name": "Anders Klynge",
+       "pos": "M"
+      },
+      {
+       "id": "392560",
+       "name": "Eryk Kozlowski",
+       "pos": "M"
+      },
+      {
+       "id": "235672",
+       "name": "Kamil Jozwiak",
+       "pos": "F"
+      },
+      {
+       "id": "307060",
+       "name": "Nik Prelec",
+       "pos": "F"
+      },
+      {
+       "id": "370144",
+       "name": "Kajetan Szmyt",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "268751",
+       "name": "Sergio Lozano",
+       "pos": "SUB"
+      },
+      {
+       "id": "3100054",
+       "name": "Michał Perchel",
+       "pos": "SUB"
+      },
+      {
+       "id": "341444",
+       "name": "Bartlomiej Wdowik",
+       "pos": "SUB"
+      },
+      {
+       "id": "305431",
+       "name": "Dusan Stojinovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "296557",
+       "name": "Aleksandar Cirkovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "381082",
+       "name": "Jeremy Agbonifo",
+       "pos": "SUB"
+      },
+      {
+       "id": "303927",
+       "name": "Apostolos Konstantopoulos",
+       "pos": "SUB"
+      },
+      {
+       "id": "345447",
+       "name": "Ousmane Sow",
+       "pos": "SUB"
+      },
+      {
+       "id": "220849",
+       "name": "Taras Romanczuk",
+       "pos": "SUB"
+      },
+      {
+       "id": "312714",
+       "name": "Youssuf Sylla",
+       "pos": "SUB"
+      },
+      {
+       "id": "207720",
+       "name": "Jesus Imaz",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.724,
+     "att": null,
+     "backupKeeper": false,
+     "history": 6,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Romanczuk",
+       "Wdowik",
+       "Sow",
+       "Imaz"
+      ],
+      "in": [
+       "Montoia",
+       "Finndell",
+       "Kozlowski",
+       "Prelec"
+      ]
+     }
+    },
+    "away": {
+     "team": "Anderlecht",
+     "formation": "4-3-3",
+     "xi": [
+      "Colin Coosemans",
+      "Giulian Biancone",
+      "Kaïs Houdoussi Barry",
+      "Oleg Reabciuk",
+      "Léo Pétrot",
+      "Tristan Degreef",
+      "Mario Stroeykens",
+      "Thelo Aasgaard",
+      "Mihajlo Cvetkovic",
+      "Marten Winkler",
+      "Lukás Ambros"
+     ],
+     "missing": [
+      {
+       "name": "Ludwig Augustinsson",
+       "started": "7/8"
+      },
+      {
+       "name": "Ali Maamar",
+       "started": "7/8"
+      },
+      {
+       "name": "Danylo Sikan",
+       "started": "6/8"
+      },
+      {
+       "name": "Marco Kana",
+       "started": "6/8"
+      },
+      {
+       "name": "Ilias Koutsoupias",
+       "started": "4/8"
+      },
+      {
+       "name": "Tawfik Bentayeb",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "152749",
+       "name": "Colin Coosemans",
+       "pos": "G"
+      },
+      {
+       "id": "283681",
+       "name": "Giulian Biancone",
+       "pos": "D"
+      },
+      {
+       "id": "3116725",
+       "name": "Kaïs Houdoussi Barry",
+       "pos": "D"
+      },
+      {
+       "id": "272239",
+       "name": "Oleg Reabciuk",
+       "pos": "D"
+      },
+      {
+       "id": "231780",
+       "name": "Léo Pétrot",
+       "pos": "D"
+      },
+      {
+       "id": "365988",
+       "name": "Tristan Degreef",
+       "pos": "M"
+      },
+      {
+       "id": "312187",
+       "name": "Mario Stroeykens",
+       "pos": "M"
+      },
+      {
+       "id": "307477",
+       "name": "Thelo Aasgaard",
+       "pos": "M"
+      },
+      {
+       "id": "369978",
+       "name": "Mihajlo Cvetkovic",
+       "pos": "F"
+      },
+      {
+       "id": "319271",
+       "name": "Marten Winkler",
+       "pos": "F"
+      },
+      {
+       "id": "351860",
+       "name": "Lukás Ambros",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "334004",
+       "name": "Amane Romeo",
+       "pos": "SUB"
+      },
+      {
+       "id": "291360",
+       "name": "Marco Kana",
+       "pos": "SUB"
+      },
+      {
+       "id": "382432",
+       "name": "Tawfik Bentayeb",
+       "pos": "SUB"
+      },
+      {
+       "id": "277376",
+       "name": "Adriano Bertaccini",
+       "pos": "SUB"
+      },
+      {
+       "id": "285974",
+       "name": "Oliver Antman",
+       "pos": "SUB"
+      },
+      {
+       "id": "192475",
+       "name": "Ludwig Augustinsson",
+       "pos": "SUB"
+      },
+      {
+       "id": "410543",
+       "name": "Noa Cobiella",
+       "pos": "SUB"
+      },
+      {
+       "id": "287172",
+       "name": "Enric Llansana",
+       "pos": "SUB"
+      },
+      {
+       "id": "343985",
+       "name": "Justin Heekeren",
+       "pos": "SUB"
+      },
+      {
+       "id": "288490",
+       "name": "Danylo Sikan",
+       "pos": "SUB"
+      },
+      {
+       "id": "410536",
+       "name": "Jayden Onia-Seke",
+       "pos": "SUB"
+      },
+      {
+       "id": "395942",
+       "name": "Ali Maamar",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.646,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Omobamidele"
+      ],
+      "in": [
+       "Biancone"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -11669,7 +13395,368 @@
     "away": "Benfica",
     "awayCountry": "POR"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "Omonia Nicosia",
+     "formation": "4-4-2",
+     "xi": [
+      "Fabiano",
+      "Lubomir Satka",
+      "Jean-Kévin Duverne",
+      "Jure Balkovec",
+      "Loïc Négo",
+      "Mateo Maric",
+      "Panagiotis Andreou",
+      "Jaden Montnor",
+      "Ewandro",
+      "Florin Tanase",
+      "Andronikos Kakoulis"
+     ],
+     "missing": [
+      {
+       "name": "Senou Coulibaly",
+       "started": "7/8"
+      },
+      {
+       "name": "Muamer Tankovic",
+       "started": "7/8"
+      },
+      {
+       "name": "Loïs Diony",
+       "started": "6/8"
+      },
+      {
+       "name": "Nikolas Panagiotou",
+       "started": "6/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "165085",
+       "name": "Fabiano",
+       "pos": "G"
+      },
+      {
+       "id": "204701",
+       "name": "Lubomir Satka",
+       "pos": "CD-L"
+      },
+      {
+       "id": "241032",
+       "name": "Jean-Kévin Duverne",
+       "pos": "CD-R"
+      },
+      {
+       "id": "188962",
+       "name": "Jure Balkovec",
+       "pos": "LB"
+      },
+      {
+       "id": "138564",
+       "name": "Loïc Négo",
+       "pos": "RB"
+      },
+      {
+       "id": "275269",
+       "name": "Mateo Maric",
+       "pos": "CM-L"
+      },
+      {
+       "id": "366462",
+       "name": "Panagiotis Andreou",
+       "pos": "CM-R"
+      },
+      {
+       "id": "366131",
+       "name": "Jaden Montnor",
+       "pos": "LM"
+      },
+      {
+       "id": "199675",
+       "name": "Ewandro",
+       "pos": "RM"
+      },
+      {
+       "id": "205279",
+       "name": "Florin Tanase",
+       "pos": "CF-L"
+      },
+      {
+       "id": "305500",
+       "name": "Andronikos Kakoulis",
+       "pos": "CF-R"
+      }
+     ],
+     "bench": [
+      {
+       "id": "162424",
+       "name": "Muamer Tankovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "366929",
+       "name": "Andreas Christou",
+       "pos": "SUB"
+      },
+      {
+       "id": "181007",
+       "name": "Loïs Diony",
+       "pos": "SUB"
+      },
+      {
+       "id": "365315",
+       "name": "Angelos Neophytou",
+       "pos": "SUB"
+      },
+      {
+       "id": "235500",
+       "name": "Mihlali Mayambela",
+       "pos": "SUB"
+      },
+      {
+       "id": "3095852",
+       "name": "Panagiotis Christoforou",
+       "pos": "SUB"
+      },
+      {
+       "id": "218528",
+       "name": "Luuk Brouwers",
+       "pos": "SUB"
+      },
+      {
+       "id": "134909",
+       "name": "Thomas Kaminski",
+       "pos": "SUB"
+      },
+      {
+       "id": "388489",
+       "name": "Pantelis Michael",
+       "pos": "SUB"
+      },
+      {
+       "id": "408050",
+       "name": "Christos Konstantinidis",
+       "pos": "SUB"
+      },
+      {
+       "id": "192453",
+       "name": "Stefan Simic",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.74,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Coulibaly",
+       "Tankovic",
+       "Diony"
+      ],
+      "in": [
+       "Négo",
+       "Tanase",
+       "Kakoulis"
+      ]
+     }
+    },
+    "away": {
+     "team": "Benfica",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Anatoliy Trubin",
+      "Alessandro Circati",
+      "Tomás Araújo",
+      "Souffian El Karouani",
+      "Alexander Bah",
+      "Claudio Echeverri",
+      "Manu Silva",
+      "Fredrik Aursnes",
+      "Vangelis Pavlidis",
+      "Andreas Schjelderup",
+      "Rafa Silva"
+     ],
+     "missing": [
+      {
+       "name": "Samuel Dahl",
+       "started": "7/8"
+      },
+      {
+       "name": "Gianluca Prestianni",
+       "started": "7/8"
+      },
+      {
+       "name": "Clément Lenglet",
+       "started": "6/8"
+      },
+      {
+       "name": "João Palhinha",
+       "started": "6/8"
+      },
+      {
+       "name": "Samuel Soares",
+       "started": "6/8"
+      },
+      {
+       "name": "Georgiy Sudakov",
+       "started": "5/8"
+      },
+      {
+       "name": "Leandro Barreiro",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "286109",
+       "name": "Anatoliy Trubin",
+       "pos": "G"
+      },
+      {
+       "id": "332081",
+       "name": "Alessandro Circati",
+       "pos": "CD-L"
+      },
+      {
+       "id": "329691",
+       "name": "Tomás Araújo",
+       "pos": "CD-R"
+      },
+      {
+       "id": "291730",
+       "name": "Souffian El Karouani",
+       "pos": "LB"
+      },
+      {
+       "id": "265944",
+       "name": "Alexander Bah",
+       "pos": "RB"
+      },
+      {
+       "id": "361355",
+       "name": "Claudio Echeverri",
+       "pos": "AM"
+      },
+      {
+       "id": "358451",
+       "name": "Manu Silva",
+       "pos": "LM"
+      },
+      {
+       "id": "212900",
+       "name": "Fredrik Aursnes",
+       "pos": "RM"
+      },
+      {
+       "id": "220819",
+       "name": "Vangelis Pavlidis",
+       "pos": "F"
+      },
+      {
+       "id": "313415",
+       "name": "Andreas Schjelderup",
+       "pos": "AM-L"
+      },
+      {
+       "id": "192421",
+       "name": "Rafa Silva",
+       "pos": "AM-R"
+      }
+     ],
+     "bench": [
+      {
+       "id": "329653",
+       "name": "Samuel Dahl",
+       "pos": "SUB"
+      },
+      {
+       "id": "229443",
+       "name": "Dodi Lukébakio",
+       "pos": "SUB"
+      },
+      {
+       "id": "411353",
+       "name": "Gonçalo Moreira",
+       "pos": "SUB"
+      },
+      {
+       "id": "193917",
+       "name": "Clément Lenglet",
+       "pos": "SUB"
+      },
+      {
+       "id": "400474",
+       "name": "Tiago Dias Freitas",
+       "pos": "SUB"
+      },
+      {
+       "id": "338713",
+       "name": "Gabriel Índio",
+       "pos": "SUB"
+      },
+      {
+       "id": "307631",
+       "name": "Samuel Soares",
+       "pos": "SUB"
+      },
+      {
+       "id": "403878",
+       "name": "José Neto",
+       "pos": "SUB"
+      },
+      {
+       "id": "403873",
+       "name": "Anísio Cabral",
+       "pos": "SUB"
+      },
+      {
+       "id": "224144",
+       "name": "João Palhinha",
+       "pos": "SUB"
+      },
+      {
+       "id": "308603",
+       "name": "Georgiy Sudakov",
+       "pos": "SUB"
+      },
+      {
+       "id": "339191",
+       "name": "Gianluca Prestianni",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.537,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Lenglet",
+       "Dahl",
+       "Sudakov",
+       "Palhinha",
+       "Durán",
+       "Prestianni",
+       "Lukébakio"
+      ],
+      "in": [
+       "Circati",
+       "Karouani",
+       "Echeverri",
+       "Silva",
+       "Pavlidis",
+       "Schjelderup",
+       "Silva"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -11682,7 +13769,371 @@
     "away": "Lyon",
     "awayCountry": "FRA"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "TSG Hoffenheim",
+     "formation": "4-4-2",
+     "xi": [
+      "Oliver Baumann",
+      "Robin Hranác",
+      "Vladimír Coufal",
+      "Mats Rots",
+      "Ozan Kabak",
+      "Andrej Kramaric",
+      "Alexander Prass",
+      "Leon Avdullahu",
+      "Bambasé Conté",
+      "Tim Lemperle",
+      "Adam Daghim"
+     ],
+     "missing": [
+      {
+       "name": "Adam Hlozek",
+       "started": "7/8"
+      },
+      {
+       "name": "Wouter Burger",
+       "started": "7/8"
+      },
+      {
+       "name": "Koki Machida",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "138213",
+       "name": "Oliver Baumann",
+       "pos": "G"
+      },
+      {
+       "id": "322510",
+       "name": "Robin Hranác",
+       "pos": "D"
+      },
+      {
+       "id": "191209",
+       "name": "Vladimír Coufal",
+       "pos": "D"
+      },
+      {
+       "id": "359744",
+       "name": "Mats Rots",
+       "pos": "D"
+      },
+      {
+       "id": "266565",
+       "name": "Ozan Kabak",
+       "pos": "D"
+      },
+      {
+       "id": "139520",
+       "name": "Andrej Kramaric",
+       "pos": "M"
+      },
+      {
+       "id": "320939",
+       "name": "Alexander Prass",
+       "pos": "M"
+      },
+      {
+       "id": "362590",
+       "name": "Leon Avdullahu",
+       "pos": "M"
+      },
+      {
+       "id": "336355",
+       "name": "Bambasé Conté",
+       "pos": "M"
+      },
+      {
+       "id": "303792",
+       "name": "Tim Lemperle",
+       "pos": "F"
+      },
+      {
+       "id": "338854",
+       "name": "Adam Daghim",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "372035",
+       "name": "Max Moerstedt",
+       "pos": "SUB"
+      },
+      {
+       "id": "364646",
+       "name": "Lúkas Petersson",
+       "pos": "SUB"
+      },
+      {
+       "id": "274860",
+       "name": "Wouter Burger",
+       "pos": "SUB"
+      },
+      {
+       "id": "403802",
+       "name": "Natnael Abraha",
+       "pos": "SUB"
+      },
+      {
+       "id": "331057",
+       "name": "Fisnik Asllani",
+       "pos": "SUB"
+      },
+      {
+       "id": "218980",
+       "name": "Bernardo",
+       "pos": "SUB"
+      },
+      {
+       "id": "418789",
+       "name": "Valentin Lässig",
+       "pos": "SUB"
+      },
+      {
+       "id": "304795",
+       "name": "Luca Philipp",
+       "pos": "SUB"
+      },
+      {
+       "id": "238025",
+       "name": "Koki Machida",
+       "pos": "SUB"
+      },
+      {
+       "id": "277301",
+       "name": "Valentin Gendrey",
+       "pos": "SUB"
+      },
+      {
+       "id": "292169",
+       "name": "Adam Hlozek",
+       "pos": "SUB"
+      },
+      {
+       "id": "407682",
+       "name": "Cajetan Lenz",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.786,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Machida",
+       "Asllani",
+       "Hlozek"
+      ],
+      "in": [
+       "Kabak",
+       "Kramaric",
+       "Daghim"
+      ]
+     }
+    },
+    "away": {
+     "team": "Lyon",
+     "formation": "4-3-3",
+     "xi": [
+      "Dominik Greif",
+      "Steeve Kango",
+      "Ruben Kluivert",
+      "Felix Bacher",
+      "Clinton Mata",
+      "Tanner Tessmann",
+      "Noah Nartey",
+      "Mads Bidstrup",
+      "Keito Nakamura",
+      "Rémi Himbert",
+      "Kail Boudache"
+     ],
+     "missing": [
+      {
+       "name": "Zachary Athekame",
+       "started": "7/8"
+      },
+      {
+       "name": "Tyler Morton",
+       "started": "7/8"
+      },
+      {
+       "name": "Moussa Niakhaté",
+       "started": "6/8"
+      },
+      {
+       "name": "Abner",
+       "started": "6/8"
+      },
+      {
+       "name": "Corentin Tolisso",
+       "started": "6/8"
+      },
+      {
+       "name": "Ernest Nuamah",
+       "started": "6/8"
+      },
+      {
+       "name": "Loïs Openda",
+       "started": "6/8"
+      },
+      {
+       "name": "Pavel Sulc",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "221278",
+       "name": "Dominik Greif",
+       "pos": "G"
+      },
+      {
+       "id": "419943",
+       "name": "Steeve Kango",
+       "pos": "D"
+      },
+      {
+       "id": "301354",
+       "name": "Ruben Kluivert",
+       "pos": "D"
+      },
+      {
+       "id": "320945",
+       "name": "Felix Bacher",
+       "pos": "D"
+      },
+      {
+       "id": "214649",
+       "name": "Clinton Mata",
+       "pos": "D"
+      },
+      {
+       "id": "303308",
+       "name": "Tanner Tessmann",
+       "pos": "M"
+      },
+      {
+       "id": "365562",
+       "name": "Noah Nartey",
+       "pos": "M"
+      },
+      {
+       "id": "290401",
+       "name": "Mads Bidstrup",
+       "pos": "M"
+      },
+      {
+       "id": "265953",
+       "name": "Keito Nakamura",
+       "pos": "F"
+      },
+      {
+       "id": "403842",
+       "name": "Rémi Himbert",
+       "pos": "F"
+      },
+      {
+       "id": "379066",
+       "name": "Kail Boudache",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "403110",
+       "name": "Noham Kamara",
+       "pos": "SUB"
+      },
+      {
+       "id": "408345",
+       "name": "Khalis Merah",
+       "pos": "SUB"
+      },
+      {
+       "id": "285088",
+       "name": "Abner",
+       "pos": "SUB"
+      },
+      {
+       "id": "213181",
+       "name": "Moussa Niakhaté",
+       "pos": "SUB"
+      },
+      {
+       "id": "222175",
+       "name": "Rémy Descamps",
+       "pos": "SUB"
+      },
+      {
+       "id": "5325687",
+       "name": "Angel Daniel Garcia",
+       "pos": "SUB"
+      },
+      {
+       "id": "333310",
+       "name": "Ernest Nuamah",
+       "pos": "SUB"
+      },
+      {
+       "id": "298522",
+       "name": "Tyler Morton",
+       "pos": "SUB"
+      },
+      {
+       "id": "192060",
+       "name": "Corentin Tolisso",
+       "pos": "SUB"
+      },
+      {
+       "id": "370758",
+       "name": "Zachary Athekame",
+       "pos": "SUB"
+      },
+      {
+       "id": "362971",
+       "name": "Justin Bengui Joao",
+       "pos": "SUB"
+      },
+      {
+       "id": "341375",
+       "name": "Julien Duranville",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.493,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Descamps",
+       "Niakhaté",
+       "Abner",
+       "Athekame",
+       "Sulc",
+       "Duranville"
+      ],
+      "in": [
+       "Greif",
+       "Kango",
+       "Kluivert",
+       "Bacher",
+       "Nakamura",
+       "Himbert"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -11695,7 +14146,375 @@
     "away": "Crystal Palace",
     "awayCountry": "ENG"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "Besiktas",
+     "formation": "4-1-4-1",
+     "xi": [
+      "Alexander Nübel",
+      "Kassoum Ouattara",
+      "Umit Akdag",
+      "Taylan Bulut",
+      "Tiago Djaló",
+      "Wilfred Ndidi",
+      "Leandro Trossard",
+      "Kartal Kayra Yilmaz",
+      "Ilhan Fakili",
+      "Fabio Miretti",
+      "Oh Hyeon-Gyu"
+     ],
+     "missing": [
+      {
+       "name": "Amir Murillo",
+       "started": "8/8"
+      },
+      {
+       "name": "Emmanuel Agbadou",
+       "started": "7/8"
+      },
+      {
+       "name": "Salih Özcan",
+       "started": "7/8"
+      },
+      {
+       "name": "Junior Olaitan",
+       "started": "7/8"
+      },
+      {
+       "name": "Orkun Kökçü",
+       "started": "7/8"
+      },
+      {
+       "name": "Emir Han Topcu",
+       "started": "6/8"
+      },
+      {
+       "name": "Václav Cerný",
+       "started": "6/8"
+      },
+      {
+       "name": "Dusan Vlahovic",
+       "started": "6/8"
+      },
+      {
+       "name": "Ridvan Yilmaz",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "205750",
+       "name": "Alexander Nübel",
+       "pos": "G"
+      },
+      {
+       "id": "345243",
+       "name": "Kassoum Ouattara",
+       "pos": "D"
+      },
+      {
+       "id": "340741",
+       "name": "Umit Akdag",
+       "pos": "D"
+      },
+      {
+       "id": "372033",
+       "name": "Taylan Bulut",
+       "pos": "D"
+      },
+      {
+       "id": "283682",
+       "name": "Tiago Djaló",
+       "pos": "D"
+      },
+      {
+       "id": "187638",
+       "name": "Wilfred Ndidi",
+       "pos": "M"
+      },
+      {
+       "id": "174980",
+       "name": "Leandro Trossard",
+       "pos": "M"
+      },
+      {
+       "id": "283930",
+       "name": "Kartal Kayra Yilmaz",
+       "pos": "M"
+      },
+      {
+       "id": "384290",
+       "name": "Ilhan Fakili",
+       "pos": "M"
+      },
+      {
+       "id": "323975",
+       "name": "Fabio Miretti",
+       "pos": "M"
+      },
+      {
+       "id": "302434",
+       "name": "Oh Hyeon-Gyu",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "319985",
+       "name": "Junior Olaitan",
+       "pos": "SUB"
+      },
+      {
+       "id": "308449",
+       "name": "Emmanuel Agbadou",
+       "pos": "SUB"
+      },
+      {
+       "id": "280711",
+       "name": "Emir Han Topcu",
+       "pos": "SUB"
+      },
+      {
+       "id": "225563",
+       "name": "Salih Özcan",
+       "pos": "SUB"
+      },
+      {
+       "id": "283691",
+       "name": "Ridvan Yilmaz",
+       "pos": "SUB"
+      },
+      {
+       "id": "235677",
+       "name": "Dusan Vlahovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "318534",
+       "name": "Ernest Poku",
+       "pos": "SUB"
+      },
+      {
+       "id": "216420",
+       "name": "Amir Murillo",
+       "pos": "SUB"
+      },
+      {
+       "id": "217476",
+       "name": "Václav Cerný",
+       "pos": "SUB"
+      },
+      {
+       "id": "345212",
+       "name": "Semih Kiliçsoy",
+       "pos": "SUB"
+      },
+      {
+       "id": "278790",
+       "name": "Dogan Alemdar",
+       "pos": "SUB"
+      },
+      {
+       "id": "346213",
+       "name": "Yasin Ozcan",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.384,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 8,
+      "out": [
+       "Topcu",
+       "Agbadou",
+       "Özcan",
+       "Yilmaz",
+       "Murillo",
+       "Olaitan",
+       "Cerný",
+       "Vlahovic"
+      ],
+      "in": [
+       "Ouattara",
+       "Akdag",
+       "Bulut",
+       "Djaló",
+       "Ndidi",
+       "Yilmaz",
+       "Fakili",
+       "Hyeon-Gyu"
+      ]
+     }
+    },
+    "away": {
+     "team": "Crystal Palace",
+     "formation": "3-4-2-1",
+     "xi": [
+      "Walter Benítez",
+      "Chris Richards",
+      "Jaydee Canvot",
+      "Axel Disasi",
+      "Dwight McNeil",
+      "Daichi Kamada",
+      "Yéremy Pino",
+      "Anan Khalaili",
+      "Tyrick Mitchell",
+      "Adam Wharton",
+      "Jean-Philippe Mateta"
+     ],
+     "missing": [
+      {
+       "name": "Quinten Timber",
+       "started": "8/8"
+      },
+      {
+       "name": "Jørgen Strand Larsen",
+       "started": "7/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "195738",
+       "name": "Walter Benítez",
+       "pos": "G"
+      },
+      {
+       "id": "272585",
+       "name": "Chris Richards",
+       "pos": "D"
+      },
+      {
+       "id": "386252",
+       "name": "Jaydee Canvot",
+       "pos": "D"
+      },
+      {
+       "id": "231718",
+       "name": "Axel Disasi",
+       "pos": "D"
+      },
+      {
+       "id": "273495",
+       "name": "Dwight McNeil",
+       "pos": "M"
+      },
+      {
+       "id": "219362",
+       "name": "Daichi Kamada",
+       "pos": "M"
+      },
+      {
+       "id": "297370",
+       "name": "Yéremy Pino",
+       "pos": "M"
+      },
+      {
+       "id": "332648",
+       "name": "Anan Khalaili",
+       "pos": "M"
+      },
+      {
+       "id": "300853",
+       "name": "Tyrick Mitchell",
+       "pos": "M"
+      },
+      {
+       "id": "333419",
+       "name": "Adam Wharton",
+       "pos": "M"
+      },
+      {
+       "id": "241187",
+       "name": "Jean-Philippe Mateta",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "168421",
+       "name": "Will Hughes",
+       "pos": "SUB"
+      },
+      {
+       "id": "259486",
+       "name": "Eddie Nketiah",
+       "pos": "SUB"
+      },
+      {
+       "id": "3114844",
+       "name": "Lucca Benetton",
+       "pos": "SUB"
+      },
+      {
+       "id": "252747",
+       "name": "Jørgen Strand Larsen",
+       "pos": "SUB"
+      },
+      {
+       "id": "225426",
+       "name": "Ben Chilwell",
+       "pos": "SUB"
+      },
+      {
+       "id": "388605",
+       "name": "Honest Ahanor",
+       "pos": "SUB"
+      },
+      {
+       "id": "276546",
+       "name": "Óscar Mingueza",
+       "pos": "SUB"
+      },
+      {
+       "id": "403867",
+       "name": "Dean Benamar",
+       "pos": "SUB"
+      },
+      {
+       "id": "400110",
+       "name": "George King",
+       "pos": "SUB"
+      },
+      {
+       "id": "315668",
+       "name": "Darío Osorio",
+       "pos": "SUB"
+      },
+      {
+       "id": "241012",
+       "name": "Ismaïla Sarr",
+       "pos": "SUB"
+      },
+      {
+       "id": "205981",
+       "name": "Remi Matthews",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.795,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Ahanor",
+       "Timber",
+       "Larsen"
+      ],
+      "in": [
+       "Disasi",
+       "McNeil",
+       "Mateta"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Europa League",
@@ -11708,7 +14527,354 @@
     "away": "Real Sociedad",
     "awayCountry": "ESP"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "Lillestrom",
+     "formation": "4-3-3",
+     "xi": [
+      "Pontus Dahlberg",
+      "Ruben Gabrielsen",
+      "Sander Moen Foss",
+      "Yaw Paintsil",
+      "Sturla Ottesen",
+      "Ylldren Ibrahimaj",
+      "Gustav Nyheim",
+      "Filip Ottosson",
+      "Vá",
+      "Thomas Lehne Olsen",
+      "Daniel Bassi"
+     ],
+     "missing": [
+      {
+       "name": "Frederik Elkaer",
+       "started": "7/8"
+      },
+      {
+       "name": "Eric Kitolano",
+       "started": "6/8"
+      },
+      {
+       "name": "Lars Ranger",
+       "started": "6/8"
+      },
+      {
+       "name": "Fredrik Gulbrandsen",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "235504",
+       "name": "Pontus Dahlberg",
+       "pos": "G"
+      },
+      {
+       "id": "133099",
+       "name": "Ruben Gabrielsen",
+       "pos": "D"
+      },
+      {
+       "id": "271767",
+       "name": "Sander Moen Foss",
+       "pos": "D"
+      },
+      {
+       "id": "358392",
+       "name": "Yaw Paintsil",
+       "pos": "D"
+      },
+      {
+       "id": "308547",
+       "name": "Sturla Ottesen",
+       "pos": "D"
+      },
+      {
+       "id": "284210",
+       "name": "Ylldren Ibrahimaj",
+       "pos": "M"
+      },
+      {
+       "id": "363001",
+       "name": "Gustav Nyheim",
+       "pos": "M"
+      },
+      {
+       "id": "357025",
+       "name": "Filip Ottosson",
+       "pos": "M"
+      },
+      {
+       "id": "255219",
+       "name": "Vá",
+       "pos": "F"
+      },
+      {
+       "id": "221124",
+       "name": "Thomas Lehne Olsen",
+       "pos": "F"
+      },
+      {
+       "id": "340237",
+       "name": "Daniel Bassi",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "312881",
+       "name": "Gustav Nordh",
+       "pos": "SUB"
+      },
+      {
+       "id": "267062",
+       "name": "Lars Ranger",
+       "pos": "SUB"
+      },
+      {
+       "id": "223137",
+       "name": "Eric Kitolano",
+       "pos": "SUB"
+      },
+      {
+       "id": "236589",
+       "name": "Kevin Martin Krygard",
+       "pos": "SUB"
+      },
+      {
+       "id": "333776",
+       "name": "Henrik Melland",
+       "pos": "SUB"
+      },
+      {
+       "id": "234973",
+       "name": "Stefan Hagerup",
+       "pos": "SUB"
+      },
+      {
+       "id": "416559",
+       "name": "Linus Alperud",
+       "pos": "SUB"
+      },
+      {
+       "id": "3108858",
+       "name": "Seun Akanji",
+       "pos": "SUB"
+      },
+      {
+       "id": "304140",
+       "name": "Frederik Elkaer",
+       "pos": "SUB"
+      },
+      {
+       "id": "134827",
+       "name": "Fredrik Gulbrandsen",
+       "pos": "SUB"
+      },
+      {
+       "id": "368078",
+       "name": "Stian Kristiansen",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.836,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Kristiansen",
+       "Elkaer",
+       "Melland",
+       "Kitolano"
+      ],
+      "in": [
+       "Gabrielsen",
+       "Paintsil",
+       "Nyheim",
+       "Bassi"
+      ]
+     }
+    },
+    "away": {
+     "team": "Real Sociedad",
+     "formation": "4-4-2",
+     "xi": [
+      "Unai Marrero",
+      "Jon Martín",
+      "Igor Zubeldia",
+      "Mamadou Sarr",
+      "Sergio Gómez",
+      "Carlos Soler",
+      "Jon Gorrotxategi",
+      "Takefusa Kubo",
+      "Gonçalo Guedes",
+      "Mikel Oyarzabal",
+      "Luka Sucic"
+     ],
+     "missing": [
+      {
+       "name": "Yangel Herrera",
+       "started": "6/8"
+      },
+      {
+       "name": "Álex Remiro",
+       "started": "5/8"
+      },
+      {
+       "name": "Ander Barrenetxea",
+       "started": "5/8"
+      },
+      {
+       "name": "Jon Aramburu",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "312011",
+       "name": "Unai Marrero",
+       "pos": "G"
+      },
+      {
+       "id": "366885",
+       "name": "Jon Martín",
+       "pos": "D"
+      },
+      {
+       "id": "235693",
+       "name": "Igor Zubeldia",
+       "pos": "D"
+      },
+      {
+       "id": "355433",
+       "name": "Mamadou Sarr",
+       "pos": "D"
+      },
+      {
+       "id": "265993",
+       "name": "Sergio Gómez",
+       "pos": "D"
+      },
+      {
+       "id": "235072",
+       "name": "Carlos Soler",
+       "pos": "M"
+      },
+      {
+       "id": "388601",
+       "name": "Jon Gorrotxategi",
+       "pos": "M"
+      },
+      {
+       "id": "256587",
+       "name": "Takefusa Kubo",
+       "pos": "M"
+      },
+      {
+       "id": "213141",
+       "name": "Gonçalo Guedes",
+       "pos": "M"
+      },
+      {
+       "id": "229018",
+       "name": "Mikel Oyarzabal",
+       "pos": "F"
+      },
+      {
+       "id": "306263",
+       "name": "Luka Sucic",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "406379",
+       "name": "Job Ochieng",
+       "pos": "SUB"
+      },
+      {
+       "id": "363039",
+       "name": "Héctor Fort",
+       "pos": "SUB"
+      },
+      {
+       "id": "297371",
+       "name": "Beñat Turrientes",
+       "pos": "SUB"
+      },
+      {
+       "id": "297359",
+       "name": "Jon Pacheco",
+       "pos": "SUB"
+      },
+      {
+       "id": "366886",
+       "name": "Alex Lebarbier",
+       "pos": "SUB"
+      },
+      {
+       "id": "326900",
+       "name": "Pablo Marín",
+       "pos": "SUB"
+      },
+      {
+       "id": "283891",
+       "name": "Aihen Muñoz",
+       "pos": "SUB"
+      },
+      {
+       "id": "396613",
+       "name": "Alex Marchal",
+       "pos": "SUB"
+      },
+      {
+       "id": "341367",
+       "name": "Orri Óskarsson",
+       "pos": "SUB"
+      },
+      {
+       "id": "283941",
+       "name": "Ander Barrenetxea",
+       "pos": "SUB"
+      },
+      {
+       "id": "217319",
+       "name": "Álex Remiro",
+       "pos": "SUB"
+      },
+      {
+       "id": "307487",
+       "name": "Arsen Zakharyan",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.852,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Remiro",
+       "Muñoz",
+       "Fort",
+       "Barrenetxea",
+       "Óskarsson"
+      ],
+      "in": [
+       "Marrero",
+       "Zubeldia",
+       "Gómez",
+       "Guedes",
+       "Sucic"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Conference League",
@@ -11724,22 +14890,22 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Red Star Belgrade",
-     "formation": "3-4-2-1",
+     "formation": "3-2-4-1",
      "xi": [
-      "Timi Elsnik",
       "Matheus",
+      "Stefan Gudelj",
+      "Yuta Nakayama",
+      "Matej Gashtarov",
+      "Rade Krunic",
+      "Tomás Händel",
+      "Mihailo Ristic",
       "Vladimir Lucic",
       "Bamba Dieng",
-      "Rade Krunic",
-      "Stefan Gudelj",
-      "Mihailo Ristic",
-      "Matej Gashtarov",
-      "Yuta Nakayama",
       "Vasilije Kostov",
-      "Tomás Händel"
+      "Timi Elsnik"
      ],
      "missing": [
       {
@@ -11773,126 +14939,126 @@
      ],
      "starters": [
       {
-       "id": "235813",
-       "name": "Timi Elsnik",
-       "pos": "SUB"
-      },
-      {
        "id": "158174",
        "name": "Matheus",
-       "pos": "SUB"
-      },
-      {
-       "id": "345737",
-       "name": "Vladimir Lucic",
-       "pos": "SUB"
-      },
-      {
-       "id": "313889",
-       "name": "Bamba Dieng",
-       "pos": "SUB"
-      },
-      {
-       "id": "222595",
-       "name": "Rade Krunic",
-       "pos": "SUB"
+       "pos": "G"
       },
       {
        "id": "402677",
        "name": "Stefan Gudelj",
-       "pos": "SUB"
-      },
-      {
-       "id": "221334",
-       "name": "Mihailo Ristic",
-       "pos": "SUB"
-      },
-      {
-       "id": "402676",
-       "name": "Matej Gashtarov",
-       "pos": "SUB"
+       "pos": "CD"
       },
       {
        "id": "237079",
        "name": "Yuta Nakayama",
-       "pos": "SUB"
+       "pos": "LB"
       },
       {
-       "id": "400970",
-       "name": "Vasilije Kostov",
-       "pos": "SUB"
+       "id": "402676",
+       "name": "Matej Gashtarov",
+       "pos": "RB"
+      },
+      {
+       "id": "222595",
+       "name": "Rade Krunic",
+       "pos": "CM-L"
       },
       {
        "id": "324008",
        "name": "Tomás Händel",
-       "pos": "SUB"
+       "pos": "CM-R"
+      },
+      {
+       "id": "221334",
+       "name": "Mihailo Ristic",
+       "pos": "LM"
+      },
+      {
+       "id": "345737",
+       "name": "Vladimir Lucic",
+       "pos": "RM"
+      },
+      {
+       "id": "313889",
+       "name": "Bamba Dieng",
+       "pos": "F"
+      },
+      {
+       "id": "400970",
+       "name": "Vasilije Kostov",
+       "pos": "AM-L"
+      },
+      {
+       "id": "235813",
+       "name": "Timi Elsnik",
+       "pos": "AM-R"
       }
      ],
      "bench": [
       {
        "id": "289786",
        "name": "Mohammad Abu Fani",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "174981",
        "name": "Aleksandar Katai",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "403919",
        "name": "Kim Ye-Geon",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "324802",
        "name": "Franklin Tebo",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "197342",
        "name": "Milos Veljkovic",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "401106",
        "name": "Savo Radanovic",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "206405",
        "name": "Mirko Ivanic",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "305501",
        "name": "Loizos Loizou",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "362298",
        "name": "Mahmudu Bajo",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "293919",
        "name": "Muhammed-Cham Saracevic",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "98193",
        "name": "Marko Arnautovic",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "410123",
        "name": "Kristiyan Balov",
-       "pos": "SUB"
+       "pos": ""
       }
      ],
      "reg": 0.608,
      "att": null,
-     "backupKeeper": null,
+     "backupKeeper": false,
      "history": 7,
      "changes": {
       "n": 0,
@@ -11902,18 +15068,18 @@
     },
     "away": {
      "team": "F.C. København",
-     "formation": "3-4-3",
+     "formation": "3-4-2-1",
      "xi": [
       "Diant Ramaj",
       "Asger Sørensen",
-      "Felix Beijmo",
       "Junnosuke Suzuki",
+      "Felix Beijmo",
+      "Thomas Delaney",
+      "Hunor Németh",
       "Birger Meling",
       "Rodrigo Huescas",
-      "Hunor Németh",
-      "Thomas Delaney",
-      "Robert",
       "Andreas Cornelius",
+      "Robert",
       "Maher Carrizo"
      ],
      "missing": [
@@ -11951,42 +15117,37 @@
       {
        "id": "208595",
        "name": "Asger Sørensen",
-       "pos": "D"
-      },
-      {
-       "id": "255253",
-       "name": "Felix Beijmo",
-       "pos": "D"
+       "pos": "CD"
       },
       {
        "id": "333663",
        "name": "Junnosuke Suzuki",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
-       "id": "192115",
-       "name": "Birger Meling",
-       "pos": "M"
-      },
-      {
-       "id": "317453",
-       "name": "Rodrigo Huescas",
-       "pos": "M"
-      },
-      {
-       "id": "397863",
-       "name": "Hunor Németh",
-       "pos": "M"
+       "id": "255253",
+       "name": "Felix Beijmo",
+       "pos": "CD-R"
       },
       {
        "id": "151757",
        "name": "Thomas Delaney",
-       "pos": "M"
+       "pos": "CM-L"
       },
       {
-       "id": "363213",
-       "name": "Robert",
-       "pos": "F"
+       "id": "397863",
+       "name": "Hunor Németh",
+       "pos": "CM-R"
+      },
+      {
+       "id": "192115",
+       "name": "Birger Meling",
+       "pos": "LM"
+      },
+      {
+       "id": "317453",
+       "name": "Rodrigo Huescas",
+       "pos": "RM"
       },
       {
        "id": "176668",
@@ -11994,9 +15155,14 @@
        "pos": "F"
       },
       {
+       "id": "363213",
+       "name": "Robert",
+       "pos": "CF-L"
+      },
+      {
        "id": "376476",
        "name": "Maher Carrizo",
-       "pos": "F"
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -12076,10 +15242,10 @@
        "Dadason"
       ],
       "in": [
+       "Delaney",
+       "Németh",
        "Meling",
        "Huescas",
-       "Németh",
-       "Delaney",
        "Cornelius",
        "Carrizo"
       ]
@@ -12101,7 +15267,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Pafos",
      "formation": "4-3-3",
@@ -12111,12 +15277,12 @@
       "Samy Mmaee",
       "Nicholas Ioannou",
       "Bruno",
-      "Guga",
       "Alexandre Brito",
-      "João Correia",
-      "Gabriel Teixeira",
+      "Guga",
+      "Vlad Dragomir",
       "Anderson Silva",
-      "Vlad Dragomir"
+      "Gabriel Teixeira",
+      "João Correia"
      ],
      "missing": [
       {
@@ -12149,42 +15315,37 @@
       {
        "id": "98398",
        "name": "David Luiz",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
        "id": "206782",
        "name": "Samy Mmaee",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
        "id": "205240",
        "name": "Nicholas Ioannou",
-       "pos": "D"
+       "pos": "LB"
       },
       {
        "id": "258886",
        "name": "Bruno",
-       "pos": "D"
-      },
-      {
-       "id": "238899",
-       "name": "Guga",
-       "pos": "M"
+       "pos": "RB"
       },
       {
        "id": "397119",
        "name": "Alexandre Brito",
-       "pos": "M"
+       "pos": "CM"
       },
       {
-       "id": "107995",
-       "name": "João Correia",
-       "pos": "M"
+       "id": "238899",
+       "name": "Guga",
+       "pos": "LM"
       },
       {
-       "id": "314835",
-       "name": "Gabriel Teixeira",
-       "pos": "F"
+       "id": "266180",
+       "name": "Vlad Dragomir",
+       "pos": "RM"
       },
       {
        "id": "36807",
@@ -12192,9 +15353,14 @@
        "pos": "F"
       },
       {
-       "id": "266180",
-       "name": "Vlad Dragomir",
-       "pos": "F"
+       "id": "314835",
+       "name": "Gabriel Teixeira",
+       "pos": "LF"
+      },
+      {
+       "id": "107995",
+       "name": "João Correia",
+       "pos": "RF"
       }
      ],
      "bench": [
@@ -12252,10 +15418,10 @@
        "Quina"
       ],
       "in": [
-       "Guga",
        "Brito",
-       "Correia",
-       "Silva"
+       "Guga",
+       "Silva",
+       "Correia"
       ]
      }
     },
@@ -12264,16 +15430,16 @@
      "formation": "4-3-1-2",
      "xi": [
       "Kenan Piric",
-      "Raivis Andris Jurkovskis",
-      "Baba Musah",
       "Karl Wassom",
+      "Baba Musah",
+      "Raivis Andris Jurkovskis",
       "Maksims Tonisevs",
-      "Raki Aouani",
+      "Salah-Eddine Oulad",
       "Ahmed Ankrah",
-      "Meissa Diop",
       "Iago Siqueira",
-      "Reginaldo Ramires",
-      "Salah-Eddine Oulad"
+      "Raki Aouani",
+      "Meissa Diop",
+      "Reginaldo Ramires"
      ],
      "missing": [
       {
@@ -12300,96 +15466,96 @@
        "pos": "G"
       },
       {
-       "id": "258259",
-       "name": "Raivis Andris Jurkovskis",
-       "pos": "D"
+       "id": "405965",
+       "name": "Karl Wassom",
+       "pos": "CD-L"
       },
       {
        "id": "342563",
        "name": "Baba Musah",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
-       "id": "405965",
-       "name": "Karl Wassom",
-       "pos": "D"
+       "id": "258259",
+       "name": "Raivis Andris Jurkovskis",
+       "pos": "LB"
       },
       {
        "id": "305058",
        "name": "Maksims Tonisevs",
-       "pos": "D"
+       "pos": "RB"
       },
       {
-       "id": "362691",
-       "name": "Raki Aouani",
+       "id": "307172",
+       "name": "Salah-Eddine Oulad",
        "pos": "M"
       },
       {
        "id": "332082",
        "name": "Ahmed Ankrah",
-       "pos": "M"
-      },
-      {
-       "id": "322489",
-       "name": "Meissa Diop",
-       "pos": "M"
+       "pos": "CM"
       },
       {
        "id": "405885",
        "name": "Iago Siqueira",
-       "pos": "M"
+       "pos": "AM"
+      },
+      {
+       "id": "362691",
+       "name": "Raki Aouani",
+       "pos": "LM"
+      },
+      {
+       "id": "322489",
+       "name": "Meissa Diop",
+       "pos": "RM"
       },
       {
        "id": "320258",
        "name": "Reginaldo Ramires",
-       "pos": "F"
-      },
-      {
-       "id": "307172",
-       "name": "Salah-Eddine Oulad",
-       "pos": "F"
+       "pos": "CF-R"
       }
      ],
      "bench": [
       {
        "id": "368077",
        "name": "Coli Saco",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "228734",
        "name": "Antonijs Cernomordijs",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "406013",
        "name": "Marcis Kazainis",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "406405",
        "name": "Caio Martins",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "239559",
        "name": "Abdulrahman Taiwo",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "291708",
        "name": "Samuel Pedro",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "326504",
        "name": "Frenks Orols",
-       "pos": "SUB"
+       "pos": ""
       },
       {
        "id": "284131",
        "name": "Muhammed Badamosi",
-       "pos": "SUB"
+       "pos": ""
       }
      ],
      "reg": 0.808,
@@ -12422,22 +15588,22 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Getafe",
-     "formation": "4-2-3-1",
+     "formation": "4-4-2",
      "xi": [
       "David Soria",
+      "Jean Ives Valou",
       "Abdel Abqar",
-      "Djené",
       "Davinchi",
       "Kiko Femenía",
-      "Ivan Azón",
-      "Jean Ives Valou",
-      "Andrés García",
-      "Borja Mayoral",
       "Francho Serrano",
-      "Alberto Risco"
+      "Djené",
+      "Alberto Risco",
+      "Andrés García",
+      "Ivan Azón",
+      "Borja Mayoral"
      ],
      "missing": [
       {
@@ -12476,13 +15642,13 @@
        "pos": "G"
       },
       {
-       "id": "277876",
-       "name": "Abdel Abqar",
+       "id": "395479",
+       "name": "Jean Ives Valou",
        "pos": "CD-L"
       },
       {
-       "id": "181355",
-       "name": "Djené",
+       "id": "277876",
+       "name": "Abdel Abqar",
        "pos": "CD-R"
       },
       {
@@ -12496,13 +15662,18 @@
        "pos": "RB"
       },
       {
-       "id": "310259",
-       "name": "Ivan Azón",
-       "pos": "AM"
+       "id": "307186",
+       "name": "Francho Serrano",
+       "pos": "CM-L"
       },
       {
-       "id": "395479",
-       "name": "Jean Ives Valou",
+       "id": "181355",
+       "name": "Djené",
+       "pos": "CM-R"
+      },
+      {
+       "id": "383912",
+       "name": "Alberto Risco",
        "pos": "LM"
       },
       {
@@ -12511,19 +15682,14 @@
        "pos": "RM"
       },
       {
+       "id": "310259",
+       "name": "Ivan Azón",
+       "pos": "CF-L"
+      },
+      {
        "id": "218793",
        "name": "Borja Mayoral",
-       "pos": "F"
-      },
-      {
-       "id": "307186",
-       "name": "Francho Serrano",
-       "pos": "AM-L"
-      },
-      {
-       "id": "383912",
-       "name": "Alberto Risco",
-       "pos": "AM-R"
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -12596,11 +15762,11 @@
       "in": [
        "Abqar",
        "Davinchi",
-       "Azón",
-       "García",
-       "Mayoral",
        "Serrano",
-       "Risco"
+       "Risco",
+       "García",
+       "Azón",
+       "Mayoral"
       ]
      }
     },
@@ -12617,8 +15783,8 @@
       "Anto Grgic",
       "Yanis Cimignani",
       "Mattia Zanotti",
-      "Dereck Moncada",
-      "Albian Ajeti"
+      "Albian Ajeti",
+      "Dereck Moncada"
      ],
      "missing": [
       {
@@ -12677,13 +15843,13 @@
        "pos": "RM"
       },
       {
-       "id": "406463",
-       "name": "Dereck Moncada",
+       "id": "202100",
+       "name": "Albian Ajeti",
        "pos": "CF-L"
       },
       {
-       "id": "202100",
-       "name": "Albian Ajeti",
+       "id": "406463",
+       "name": "Dereck Moncada",
        "pos": "CF-R"
       }
      ],
@@ -12771,7 +15937,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Trabzonspor",
      "formation": "4-3-3",
@@ -12964,19 +16130,19 @@
     },
     "away": {
      "team": "Heart of Midlothian",
-     "formation": "4-3-3",
+     "formation": "4-4-2",
      "xi": [
       "Beau Reus",
       "Jamie McCart",
       "Malachi Walcott",
+      "Rogers Mato",
       "Christian Borchgrevink",
       "Jordi Altena",
       "Tómas Magnússon",
       "Severin Sabri Guendouz",
-      "Cláudio Braga",
+      "Calvin Miller",
       "James Wilson",
-      "Rogers Mato",
-      "Calvin Miller"
+      "Cláudio Braga"
      ],
      "missing": [
       {
@@ -13017,19 +16183,24 @@
        "pos": "CD-R"
       },
       {
+       "id": "333609",
+       "name": "Rogers Mato",
+       "pos": "LB"
+      },
+      {
        "id": "252741",
        "name": "Christian Borchgrevink",
-       "pos": "LB"
+       "pos": "RB"
       },
       {
        "id": "367663",
        "name": "Jordi Altena",
-       "pos": "RB"
+       "pos": "CM-L"
       },
       {
        "id": "405748",
        "name": "Tómas Magnússon",
-       "pos": "CM"
+       "pos": "CM-R"
       },
       {
        "id": "366334",
@@ -13037,24 +16208,19 @@
        "pos": "LM"
       },
       {
-       "id": "405624",
-       "name": "Cláudio Braga",
+       "id": "199731",
+       "name": "Calvin Miller",
        "pos": "RM"
       },
       {
        "id": "362560",
        "name": "James Wilson",
-       "pos": "F"
+       "pos": "CF-L"
       },
       {
-       "id": "333609",
-       "name": "Rogers Mato",
-       "pos": "LF"
-      },
-      {
-       "id": "199731",
-       "name": "Calvin Miller",
-       "pos": "RF"
+       "id": "405624",
+       "name": "Cláudio Braga",
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -13122,10 +16288,10 @@
        "McPake"
       ],
       "in": [
+       "Mato",
        "Borchgrevink",
        "Magnússon",
-       "Wilson",
-       "Mato"
+       "Wilson"
       ]
      }
     }
@@ -13145,22 +16311,22 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Jablonec",
      "formation": "4-2-3-1",
      "xi": [
-      "Richard Sedlacek",
       "Jan Hanus",
-      "Martin Cedidla",
-      "Jiri Sláma",
-      "Nemanja Tekijaski",
       "Dusan Pavlovic",
-      "Matej Polidar",
+      "Nemanja Tekijaski",
+      "Jiri Sláma",
+      "Martin Cedidla",
       "Saidou Alioum Moubarak",
+      "Nelson Okeke",
+      "Richard Sedlacek",
       "Antonin Rusek",
-      "Vakhtang Chanturishvili",
-      "Nelson Okeke"
+      "Matej Polidar",
+      "Vakhtang Chanturishvili"
      ],
      "missing": [
       {
@@ -13174,59 +16340,59 @@
      ],
      "starters": [
       {
-       "id": "277226",
-       "name": "Richard Sedlacek",
-       "pos": "SUB"
-      },
-      {
        "id": "141978",
        "name": "Jan Hanus",
-       "pos": "SUB"
-      },
-      {
-       "id": "338238",
-       "name": "Martin Cedidla",
-       "pos": "SUB"
-      },
-      {
-       "id": "276602",
-       "name": "Jiri Sláma",
-       "pos": "SUB"
-      },
-      {
-       "id": "275765",
-       "name": "Nemanja Tekijaski",
-       "pos": "SUB"
+       "pos": "G"
       },
       {
        "id": "26853",
        "name": "Dusan Pavlovic",
-       "pos": "SUB"
+       "pos": "CD-L"
       },
       {
-       "id": "308366",
-       "name": "Matej Polidar",
-       "pos": "SUB"
+       "id": "275765",
+       "name": "Nemanja Tekijaski",
+       "pos": "CD-R"
+      },
+      {
+       "id": "276602",
+       "name": "Jiri Sláma",
+       "pos": "LB"
+      },
+      {
+       "id": "338238",
+       "name": "Martin Cedidla",
+       "pos": "RB"
       },
       {
        "id": "297099",
        "name": "Saidou Alioum Moubarak",
-       "pos": "SUB"
-      },
-      {
-       "id": "257078",
-       "name": "Antonin Rusek",
-       "pos": "SUB"
-      },
-      {
-       "id": "221129",
-       "name": "Vakhtang Chanturishvili",
-       "pos": "SUB"
+       "pos": "AM"
       },
       {
        "id": "324434",
        "name": "Nelson Okeke",
-       "pos": "SUB"
+       "pos": "LM"
+      },
+      {
+       "id": "277226",
+       "name": "Richard Sedlacek",
+       "pos": "RM"
+      },
+      {
+       "id": "257078",
+       "name": "Antonin Rusek",
+       "pos": "F"
+      },
+      {
+       "id": "308366",
+       "name": "Matej Polidar",
+       "pos": "AM-L"
+      },
+      {
+       "id": "221129",
+       "name": "Vakhtang Chanturishvili",
+       "pos": "AM-R"
       }
      ],
      "bench": [
@@ -13288,7 +16454,7 @@
      ],
      "reg": 0.881,
      "att": null,
-     "backupKeeper": null,
+     "backupKeeper": false,
      "history": 7,
      "changes": {
       "n": 0,
@@ -13298,19 +16464,19 @@
     },
     "away": {
      "team": "Brighton & Hove Albion",
-     "formation": "4-3-3",
+     "formation": "4-2-3-1",
      "xi": [
       "Bart Verbruggen",
+      "Olivier Boscagli",
       "Michael Svoboda",
       "Jaouen Hadjam",
       "Costinha",
-      "Olivier Boscagli",
-      "Malick Yalcouyé",
       "Jack Hinshelwood",
+      "Malick Yalcouyé",
       "Pascal Gross",
+      "Georginio Rutter",
       "Ibrahim Osman",
-      "Matt O'Riley",
-      "Georginio Rutter"
+      "Matt O'Riley"
      ],
      "missing": [
       {
@@ -13349,54 +16515,54 @@
        "pos": "G"
       },
       {
+       "id": "216017",
+       "name": "Olivier Boscagli",
+       "pos": "CD-L"
+      },
+      {
        "id": "289942",
        "name": "Michael Svoboda",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
        "id": "306033",
        "name": "Jaouen Hadjam",
-       "pos": "D"
+       "pos": "LB"
       },
       {
        "id": "274285",
        "name": "Costinha",
-       "pos": "D"
-      },
-      {
-       "id": "216017",
-       "name": "Olivier Boscagli",
-       "pos": "D"
-      },
-      {
-       "id": "359097",
-       "name": "Malick Yalcouyé",
-       "pos": "M"
+       "pos": "RB"
       },
       {
        "id": "328011",
        "name": "Jack Hinshelwood",
-       "pos": "M"
+       "pos": "AM"
+      },
+      {
+       "id": "359097",
+       "name": "Malick Yalcouyé",
+       "pos": "LM"
       },
       {
        "id": "132659",
        "name": "Pascal Gross",
-       "pos": "M"
-      },
-      {
-       "id": "359400",
-       "name": "Ibrahim Osman",
-       "pos": "F"
-      },
-      {
-       "id": "261087",
-       "name": "Matt O'Riley",
-       "pos": "F"
+       "pos": "RM"
       },
       {
        "id": "278061",
        "name": "Georginio Rutter",
        "pos": "F"
+      },
+      {
+       "id": "359400",
+       "name": "Ibrahim Osman",
+       "pos": "AM-L"
+      },
+      {
+       "id": "261087",
+       "name": "Matt O'Riley",
+       "pos": "AM-R"
       }
      ],
      "bench": [
@@ -13481,11 +16647,11 @@
        "Svoboda",
        "Hadjam",
        "Costinha",
-       "Yalcouyé",
        "Hinshelwood",
+       "Yalcouyé",
+       "Rutter",
        "Osman",
-       "O'Riley",
-       "Rutter"
+       "O'Riley"
       ]
      }
     }
@@ -13505,22 +16671,22 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "FC Nordsjælland",
      "formation": "3-4-3",
      "xi": [
       "Andreas Hansen",
-      "Noah Markmann",
       "Victor Nelsson",
+      "Noah Markmann",
       "Stephen Acquah",
+      "Nicklas Rojkjaer",
       "Justin Janssen",
       "Juho Lähteenmäki",
       "Runar Norheim",
-      "Nicklas Rojkjaer",
+      "Alexander Lind",
       "Ibrahim Adel",
-      "Villum Berthelsen",
-      "Alexander Lind"
+      "Villum Berthelsen"
      ],
      "missing": [
       {
@@ -13543,54 +16709,54 @@
        "pos": "G"
       },
       {
-       "id": "372633",
-       "name": "Noah Markmann",
-       "pos": "D"
-      },
-      {
        "id": "241138",
        "name": "Victor Nelsson",
-       "pos": "D"
+       "pos": "CD"
+      },
+      {
+       "id": "372633",
+       "name": "Noah Markmann",
+       "pos": "CD-L"
       },
       {
        "id": "378549",
        "name": "Stephen Acquah",
-       "pos": "D"
-      },
-      {
-       "id": "387494",
-       "name": "Justin Janssen",
-       "pos": "M"
-      },
-      {
-       "id": "372632",
-       "name": "Juho Lähteenmäki",
-       "pos": "M"
-      },
-      {
-       "id": "312960",
-       "name": "Runar Norheim",
-       "pos": "M"
+       "pos": "CD-R"
       },
       {
        "id": "249171",
        "name": "Nicklas Rojkjaer",
-       "pos": "M"
+       "pos": "CM-L"
       },
       {
-       "id": "299619",
-       "name": "Ibrahim Adel",
-       "pos": "F"
+       "id": "387494",
+       "name": "Justin Janssen",
+       "pos": "CM-R"
       },
       {
-       "id": "401465",
-       "name": "Villum Berthelsen",
-       "pos": "F"
+       "id": "372632",
+       "name": "Juho Lähteenmäki",
+       "pos": "LM"
+      },
+      {
+       "id": "312960",
+       "name": "Runar Norheim",
+       "pos": "RM"
       },
       {
        "id": "202681",
        "name": "Alexander Lind",
        "pos": "F"
+      },
+      {
+       "id": "299619",
+       "name": "Ibrahim Adel",
+       "pos": "CF-L"
+      },
+      {
+       "id": "401465",
+       "name": "Villum Berthelsen",
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -13675,19 +16841,19 @@
     },
     "away": {
      "team": "CSKA Sofia",
-     "formation": "3-5-2",
+     "formation": "4-3-3",
      "xi": [
       "Fedor Lapoukhov",
-      "Bruno Jordão",
       "Facundo Rodríguez",
       "Dinis Almeida",
-      "Max Ebong",
-      "Pastor",
-      "Stefano Sensi",
       "Ángelo Martino",
+      "Pastor",
+      "Bruno Jordão",
+      "Stefano Sensi",
+      "Max Ebong",
+      "Santiago Godoy",
       "Petko Panayotov",
-      "Ioannis Pittas",
-      "Santiago Godoy"
+      "Ioannis Pittas"
      ],
      "missing": [
       {
@@ -13706,54 +16872,54 @@
        "pos": "G"
       },
       {
-       "id": "258439",
-       "name": "Bruno Jordão",
-       "pos": "D"
-      },
-      {
        "id": "118680",
        "name": "Facundo Rodríguez",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
        "id": "219280",
        "name": "Dinis Almeida",
-       "pos": "D"
-      },
-      {
-       "id": "274583",
-       "name": "Max Ebong",
-       "pos": "M"
-      },
-      {
-       "id": "314648",
-       "name": "Pastor",
-       "pos": "M"
-      },
-      {
-       "id": "180927",
-       "name": "Stefano Sensi",
-       "pos": "M"
+       "pos": "CD-R"
       },
       {
        "id": "249304",
        "name": "Ángelo Martino",
-       "pos": "M"
+       "pos": "LB"
       },
       {
-       "id": "410382",
-       "name": "Petko Panayotov",
-       "pos": "M"
+       "id": "314648",
+       "name": "Pastor",
+       "pos": "RB"
       },
       {
-       "id": "221149",
-       "name": "Ioannis Pittas",
-       "pos": "F"
+       "id": "258439",
+       "name": "Bruno Jordão",
+       "pos": "CM"
+      },
+      {
+       "id": "180927",
+       "name": "Stefano Sensi",
+       "pos": "LM"
+      },
+      {
+       "id": "274583",
+       "name": "Max Ebong",
+       "pos": "RM"
       },
       {
        "id": "147012",
        "name": "Santiago Godoy",
        "pos": "F"
+      },
+      {
+       "id": "410382",
+       "name": "Petko Panayotov",
+       "pos": "LF"
+      },
+      {
+       "id": "221149",
+       "name": "Ioannis Pittas",
+       "pos": "RF"
       }
      ],
      "bench": [
@@ -13833,21 +16999,21 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Inter D'Escaldes",
      "formation": "4-1-4-1",
      "xi": [
       "Javier Díaz",
       "Anwar Hernández",
-      "Jilmar Torres",
       "Álex Sánchez",
+      "Victor Alonso",
+      "Jilmar Torres",
       "Maurizio Pochettino",
       "David López",
       "Pablo Molina",
-      "Domi Berlanga",
-      "Victor Alonso",
       "Soule",
+      "Domi Berlanga",
       "Faysal Choaib"
      ],
      "missing": [
@@ -13865,47 +17031,47 @@
       {
        "id": "411685",
        "name": "Anwar Hernández",
-       "pos": "D"
-      },
-      {
-       "id": "196982",
-       "name": "Jilmar Torres",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
        "id": "112048",
        "name": "Álex Sánchez",
-       "pos": "D"
-      },
-      {
-       "id": "296885",
-       "name": "Maurizio Pochettino",
-       "pos": "D"
-      },
-      {
-       "id": "354456",
-       "name": "David López",
-       "pos": "M"
-      },
-      {
-       "id": "385442",
-       "name": "Pablo Molina",
-       "pos": "M"
-      },
-      {
-       "id": "363935",
-       "name": "Domi Berlanga",
-       "pos": "M"
+       "pos": "CD-R"
       },
       {
        "id": "75689",
        "name": "Victor Alonso",
-       "pos": "M"
+       "pos": "DM"
+      },
+      {
+       "id": "196982",
+       "name": "Jilmar Torres",
+       "pos": "LB"
+      },
+      {
+       "id": "296885",
+       "name": "Maurizio Pochettino",
+       "pos": "RB"
+      },
+      {
+       "id": "354456",
+       "name": "David López",
+       "pos": "CM-L"
+      },
+      {
+       "id": "385442",
+       "name": "Pablo Molina",
+       "pos": "CM-R"
       },
       {
        "id": "331929",
        "name": "Soule",
-       "pos": "M"
+       "pos": "LM"
+      },
+      {
+       "id": "363935",
+       "name": "Domi Berlanga",
+       "pos": "RM"
       },
       {
        "id": "344576",
@@ -13985,16 +17151,16 @@
      "formation": "3-4-3",
      "xi": [
       "Laurentiu Popescu",
-      "Vladimir Screciu",
       "Nikola Stevanovic",
+      "Vladimir Screciu",
       "Oleksandr Romanchuk",
-      "João Lameira",
-      "Carlos Mora",
-      "Nicusor Bancu",
       "Tudor Baluta",
+      "João Lameira",
+      "Nicusor Bancu",
+      "Carlos Mora",
+      "Assad Al-Hamlawi",
       "Stefan Baiaram",
-      "Alexandru Cicaldau",
-      "Assad Al-Hamlawi"
+      "Alexandru Cicaldau"
      ],
      "missing": [
       {
@@ -14013,54 +17179,54 @@
        "pos": "G"
       },
       {
-       "id": "239807",
-       "name": "Vladimir Screciu",
-       "pos": "D"
-      },
-      {
        "id": "275362",
        "name": "Nikola Stevanovic",
-       "pos": "D"
+       "pos": "CD"
+      },
+      {
+       "id": "239807",
+       "name": "Vladimir Screciu",
+       "pos": "CD-L"
       },
       {
        "id": "364179",
        "name": "Oleksandr Romanchuk",
-       "pos": "D"
-      },
-      {
-       "id": "364416",
-       "name": "João Lameira",
-       "pos": "M"
-      },
-      {
-       "id": "310002",
-       "name": "Carlos Mora",
-       "pos": "M"
-      },
-      {
-       "id": "239813",
-       "name": "Nicusor Bancu",
-       "pos": "M"
+       "pos": "CD-R"
       },
       {
        "id": "239721",
        "name": "Tudor Baluta",
-       "pos": "M"
+       "pos": "CM-L"
       },
       {
-       "id": "289724",
-       "name": "Stefan Baiaram",
-       "pos": "F"
+       "id": "364416",
+       "name": "João Lameira",
+       "pos": "CM-R"
       },
       {
-       "id": "239724",
-       "name": "Alexandru Cicaldau",
-       "pos": "F"
+       "id": "239813",
+       "name": "Nicusor Bancu",
+       "pos": "LM"
+      },
+      {
+       "id": "310002",
+       "name": "Carlos Mora",
+       "pos": "RM"
       },
       {
        "id": "301369",
        "name": "Assad Al-Hamlawi",
        "pos": "F"
+      },
+      {
+       "id": "289724",
+       "name": "Stefan Baiaram",
+       "pos": "CF-L"
+      },
+      {
+       "id": "239724",
+       "name": "Alexandru Cicaldau",
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -14150,21 +17316,21 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Kauno Zalgiris",
      "formation": "4-1-4-1",
      "xi": [
-      "Joris Moutachy",
-      "Léo Ribeiro",
       "Tomas Svedkauskas",
-      "Nosa Iyobosa Edokpolor",
-      "Ivan Fiolic",
-      "Gratas Sirgedas",
-      "Fabien Ourega",
-      "Anthony Kalik",
       "Rokas Lekiatas",
       "Anton Tolordava",
+      "Anthony Kalik",
+      "Nosa Iyobosa Edokpolor",
+      "Joris Moutachy",
+      "Gratas Sirgedas",
+      "Ivan Fiolic",
+      "Léo Ribeiro",
+      "Fabien Ourega",
       "Renan Oliveira"
      ],
      "missing": [
@@ -14183,59 +17349,59 @@
      ],
      "starters": [
       {
-       "id": "305774",
-       "name": "Joris Moutachy",
-       "pos": "SUB"
-      },
-      {
-       "id": "269497",
-       "name": "Léo Ribeiro",
-       "pos": "SUB"
-      },
-      {
        "id": "175221",
        "name": "Tomas Svedkauskas",
-       "pos": "SUB"
-      },
-      {
-       "id": "305581",
-       "name": "Nosa Iyobosa Edokpolor",
-       "pos": "SUB"
-      },
-      {
-       "id": "194779",
-       "name": "Ivan Fiolic",
-       "pos": "SUB"
-      },
-      {
-       "id": "193870",
-       "name": "Gratas Sirgedas",
-       "pos": "SUB"
-      },
-      {
-       "id": "170222",
-       "name": "Fabien Ourega",
-       "pos": "SUB"
-      },
-      {
-       "id": "208767",
-       "name": "Anthony Kalik",
-       "pos": "SUB"
+       "pos": "G"
       },
       {
        "id": "363446",
        "name": "Rokas Lekiatas",
-       "pos": "SUB"
+       "pos": "CD-L"
       },
       {
        "id": "345172",
        "name": "Anton Tolordava",
-       "pos": "SUB"
+       "pos": "CD-R"
+      },
+      {
+       "id": "208767",
+       "name": "Anthony Kalik",
+       "pos": "DM"
+      },
+      {
+       "id": "305581",
+       "name": "Nosa Iyobosa Edokpolor",
+       "pos": "LB"
+      },
+      {
+       "id": "305774",
+       "name": "Joris Moutachy",
+       "pos": "RB"
+      },
+      {
+       "id": "193870",
+       "name": "Gratas Sirgedas",
+       "pos": "CM-L"
+      },
+      {
+       "id": "194779",
+       "name": "Ivan Fiolic",
+       "pos": "CM-R"
+      },
+      {
+       "id": "269497",
+       "name": "Léo Ribeiro",
+       "pos": "LM"
+      },
+      {
+       "id": "170222",
+       "name": "Fabien Ourega",
+       "pos": "RM"
       },
       {
        "id": "308049",
        "name": "Renan Oliveira",
-       "pos": "SUB"
+       "pos": "F"
       }
      ],
      "bench": [
@@ -14297,7 +17463,7 @@
      ],
      "reg": 0.75,
      "att": null,
-     "backupKeeper": null,
+     "backupKeeper": false,
      "history": 8,
      "changes": {
       "n": 4,
@@ -14308,10 +17474,10 @@
        "Benchaib"
       ],
       "in": [
-       "Fiolic",
-       "Sirgedas",
+       "Lekiatas",
        "Kalik",
-       "Lekiatas"
+       "Sirgedas",
+       "Fiolic"
       ]
      }
     },
@@ -14320,16 +17486,16 @@
      "formation": "4-3-3",
      "xi": [
       "Simen Vidtun Nilsen",
-      "Fredrik Knudsen",
       "Jacob Sørensen",
+      "Fredrik Knudsen",
       "Joachim Soltvedt",
       "Jonas Torsvik",
-      "Eggert Aron Gudmundsson",
       "Niklas Jensen",
+      "Eggert Aron Gudmundsson",
       "Kristall Máni Ingason",
+      "Noah Holm",
       "Niklas Castro",
-      "Saevar Atli Magnússon",
-      "Noah Holm"
+      "Saevar Atli Magnússon"
      ],
      "missing": [
       {
@@ -14352,54 +17518,54 @@
        "pos": "G"
       },
       {
-       "id": "214177",
-       "name": "Fredrik Knudsen",
-       "pos": "D"
-      },
-      {
        "id": "243863",
        "name": "Jacob Sørensen",
-       "pos": "D"
+       "pos": "CD-L"
+      },
+      {
+       "id": "214177",
+       "name": "Fredrik Knudsen",
+       "pos": "CD-R"
       },
       {
        "id": "205582",
        "name": "Joachim Soltvedt",
-       "pos": "D"
+       "pos": "LB"
       },
       {
        "id": "356390",
        "name": "Jonas Torsvik",
-       "pos": "D"
-      },
-      {
-       "id": "321407",
-       "name": "Eggert Aron Gudmundsson",
-       "pos": "M"
+       "pos": "RB"
       },
       {
        "id": "314371",
        "name": "Niklas Jensen",
-       "pos": "M"
+       "pos": "CM"
+      },
+      {
+       "id": "321407",
+       "name": "Eggert Aron Gudmundsson",
+       "pos": "LM"
       },
       {
        "id": "305403",
        "name": "Kristall Máni Ingason",
-       "pos": "M"
-      },
-      {
-       "id": "234989",
-       "name": "Niklas Castro",
-       "pos": "F"
-      },
-      {
-       "id": "326637",
-       "name": "Saevar Atli Magnússon",
-       "pos": "F"
+       "pos": "RM"
       },
       {
        "id": "277007",
        "name": "Noah Holm",
        "pos": "F"
+      },
+      {
+       "id": "234989",
+       "name": "Niklas Castro",
+       "pos": "LF"
+      },
+      {
+       "id": "326637",
+       "name": "Saevar Atli Magnússon",
+       "pos": "RF"
       }
      ],
      "bench": [
@@ -14488,21 +17654,21 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-22T16:31:40.721Z",
+    "at": "2026-10-22T18:03:14.576Z",
     "home": {
      "team": "Iberia 1999",
-     "formation": "4-3-3",
+     "formation": "4-4-1-1",
      "xi": [
       "Georgi Makaridze",
-      "Giorgi Kobuladze",
       "Vahid Selimovic",
-      "Jemali-Giorgi Jinjolava",
       "Aleksandre Amisulashvili",
-      "Lucas Brune",
+      "Jemali-Giorgi Jinjolava",
+      "Giorgi Kobuladze",
       "Bakar Kardava",
       "Nikoloz Dadiani",
-      "Amiran Dzagania",
       "Zviad Natchkebia",
+      "Lucas Brune",
+      "Amiran Dzagania",
       "Nika Sikharulashvili"
      ],
      "missing": [
@@ -14522,39 +17688,44 @@
        "pos": "G"
       },
       {
-       "id": "322014",
-       "name": "Giorgi Kobuladze",
-       "pos": "D"
-      },
-      {
        "id": "239915",
        "name": "Vahid Selimovic",
-       "pos": "D"
-      },
-      {
-       "id": "289205",
-       "name": "Jemali-Giorgi Jinjolava",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
        "id": "405634",
        "name": "Aleksandre Amisulashvili",
-       "pos": "D"
+       "pos": "CD-R"
       },
       {
-       "id": "358181",
-       "name": "Lucas Brune",
-       "pos": "M"
+       "id": "289205",
+       "name": "Jemali-Giorgi Jinjolava",
+       "pos": "LB"
+      },
+      {
+       "id": "322014",
+       "name": "Giorgi Kobuladze",
+       "pos": "RB"
       },
       {
        "id": "221189",
        "name": "Bakar Kardava",
-       "pos": "M"
+       "pos": "CM-L"
       },
       {
        "id": "385863",
        "name": "Nikoloz Dadiani",
-       "pos": "M"
+       "pos": "CM-R"
+      },
+      {
+       "id": "3093406",
+       "name": "Zviad Natchkebia",
+       "pos": "LM"
+      },
+      {
+       "id": "358181",
+       "name": "Lucas Brune",
+       "pos": "RM"
       },
       {
        "id": "405633",
@@ -14562,14 +17733,9 @@
        "pos": "F"
       },
       {
-       "id": "3093406",
-       "name": "Zviad Natchkebia",
-       "pos": "F"
-      },
-      {
        "id": "382642",
        "name": "Nika Sikharulashvili",
-       "pos": "F"
+       "pos": "RCF"
       }
      ],
      "bench": [
@@ -14650,19 +17816,19 @@
     },
     "away": {
      "team": "Mjällby AIF",
-     "formation": "3-4-3",
+     "formation": "5-4-1",
      "xi": [
       "Alexander Lundin",
-      "Tony Miettinen",
       "Axel Norén",
       "Abdullah Iqbal",
-      "Viktor Gustafson",
-      "Villiam Granath",
-      "Jesper Gustavsson",
+      "Tony Miettinen",
       "Ian Hoffman",
-      "Jacob Bergstrom",
+      "Villiam Granath",
+      "Viktor Gustafson",
+      "Jesper Gustavsson",
+      "Áki Debes Samuelsen",
       "Olle Lindberg",
-      "Áki Debes Samuelsen"
+      "Jacob Bergstrom"
      ],
      "missing": [
       {
@@ -14689,53 +17855,53 @@
        "pos": "G"
       },
       {
-       "id": "342493",
-       "name": "Tony Miettinen",
-       "pos": "D"
-      },
-      {
        "id": "306289",
        "name": "Axel Norén",
-       "pos": "D"
+       "pos": "CD"
       },
       {
        "id": "356281",
        "name": "Abdullah Iqbal",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
-       "id": "303651",
-       "name": "Viktor Gustafson",
-       "pos": "M"
-      },
-      {
-       "id": "357140",
-       "name": "Villiam Granath",
-       "pos": "M"
-      },
-      {
-       "id": "192793",
-       "name": "Jesper Gustavsson",
-       "pos": "M"
+       "id": "342493",
+       "name": "Tony Miettinen",
+       "pos": "CD-R"
       },
       {
        "id": "306519",
        "name": "Ian Hoffman",
-       "pos": "M"
+       "pos": "LB"
       },
       {
-       "id": "293925",
-       "name": "Jacob Bergstrom",
-       "pos": "F"
+       "id": "357140",
+       "name": "Villiam Granath",
+       "pos": "RB"
       },
       {
-       "id": "403153",
-       "name": "Olle Lindberg",
-       "pos": "F"
+       "id": "303651",
+       "name": "Viktor Gustafson",
+       "pos": "CM-L"
+      },
+      {
+       "id": "192793",
+       "name": "Jesper Gustavsson",
+       "pos": "CM-R"
       },
       {
        "id": "305836",
        "name": "Áki Debes Samuelsen",
+       "pos": "LM"
+      },
+      {
+       "id": "403153",
+       "name": "Olle Lindberg",
+       "pos": "RM"
+      },
+      {
+       "id": "293925",
+       "name": "Jacob Bergstrom",
        "pos": "F"
       }
      ],
@@ -14803,8 +17969,8 @@
        "Nielsen"
       ],
       "in": [
-       "Gustafson",
        "Hoffman",
+       "Gustafson",
        "Samuelsen"
       ]
      }
@@ -14822,7 +17988,349 @@
     "away": "Gent",
     "awayCountry": "BEL"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "Braga",
+     "formation": "4-4-2",
+     "xi": [
+      "Bernardo",
+      "Adrian Leon Barisic",
+      "Bright Arrey-Mbi",
+      "Gustaf Lagerbielke",
+      "Víctor Gómez",
+      "Gabriel Silva",
+      "Pau Víctor",
+      "João Moutinho",
+      "Gorby",
+      "Jovan Milosevic",
+      "Ricardo Horta"
+     ],
+     "missing": [
+      {
+       "name": "Vítor Carvalho",
+       "started": "6/8"
+      },
+      {
+       "name": "Demir Ege Tiknaz",
+       "started": "5/8"
+      },
+      {
+       "name": "Adrian Bajrami",
+       "started": "4/8"
+      },
+      {
+       "name": "Diogo Travassos",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "340560",
+       "name": "Bernardo",
+       "pos": "G"
+      },
+      {
+       "id": "322209",
+       "name": "Adrian Leon Barisic",
+       "pos": "D"
+      },
+      {
+       "id": "301417",
+       "name": "Bright Arrey-Mbi",
+       "pos": "D"
+      },
+      {
+       "id": "324930",
+       "name": "Gustaf Lagerbielke",
+       "pos": "D"
+      },
+      {
+       "id": "265984",
+       "name": "Víctor Gómez",
+       "pos": "D"
+      },
+      {
+       "id": "297080",
+       "name": "Gabriel Silva",
+       "pos": "M"
+      },
+      {
+       "id": "303808",
+       "name": "Pau Víctor",
+       "pos": "M"
+      },
+      {
+       "id": "50959",
+       "name": "João Moutinho",
+       "pos": "M"
+      },
+      {
+       "id": "326029",
+       "name": "Gorby",
+       "pos": "M"
+      },
+      {
+       "id": "364204",
+       "name": "Jovan Milosevic",
+       "pos": "F"
+      },
+      {
+       "id": "184423",
+       "name": "Ricardo Horta",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "285434",
+       "name": "Fran Navarro",
+       "pos": "SUB"
+      },
+      {
+       "id": "398386",
+       "name": "Diego Rodrigues",
+       "pos": "SUB"
+      },
+      {
+       "id": "352651",
+       "name": "Diogo Travassos",
+       "pos": "SUB"
+      },
+      {
+       "id": "151272",
+       "name": "Tiago Sá",
+       "pos": "SUB"
+      },
+      {
+       "id": "403590",
+       "name": "Tomás Marqués",
+       "pos": "SUB"
+      },
+      {
+       "id": "343969",
+       "name": "Denis Huseinbasic",
+       "pos": "SUB"
+      },
+      {
+       "id": "310231",
+       "name": "Sergio Barcia",
+       "pos": "SUB"
+      },
+      {
+       "id": "250906",
+       "name": "Vítor Carvalho",
+       "pos": "SUB"
+      },
+      {
+       "id": "347459",
+       "name": "Mario Dorgeles",
+       "pos": "SUB"
+      },
+      {
+       "id": "328795",
+       "name": "Demir Ege Tiknaz",
+       "pos": "SUB"
+      },
+      {
+       "id": "98573",
+       "name": "Gabri Martínez",
+       "pos": "SUB"
+      },
+      {
+       "id": "338057",
+       "name": "Adrian Bajrami",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.839,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Carvalho",
+       "Bajrami",
+       "Travassos",
+       "Wind",
+       "Rodrigues"
+      ],
+      "in": [
+       "Barisic",
+       "Arrey-Mbi",
+       "Gómez",
+       "Silva",
+       "Milosevic"
+      ]
+     }
+    },
+    "away": {
+     "team": "KAA Gent",
+     "formation": "4-3-3",
+     "xi": [
+      "Davy Roef",
+      "Christian Burgess",
+      "Siebe van der Heyden",
+      "Maksim Paskotši",
+      "Tiago Araújo",
+      "Bi Goore",
+      "Mathias Delorge-Knieper",
+      "Tibe De Vlieger",
+      "Michel-Ange Balikwisha",
+      "Ibrahima Cisse",
+      "Momodou Sonko"
+     ],
+     "missing": [
+      {
+       "name": "Mouhamed Ngom",
+       "started": "6/8"
+      },
+      {
+       "name": "Josué Yamir Vergara Ortega",
+       "started": "6/8"
+      },
+      {
+       "name": "Matties Volckaert",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "178363",
+       "name": "Davy Roef",
+       "pos": "G"
+      },
+      {
+       "id": "181403",
+       "name": "Christian Burgess",
+       "pos": "D"
+      },
+      {
+       "id": "240517",
+       "name": "Siebe van der Heyden",
+       "pos": "D"
+      },
+      {
+       "id": "305459",
+       "name": "Maksim Paskotši",
+       "pos": "D"
+      },
+      {
+       "id": "310801",
+       "name": "Tiago Araújo",
+       "pos": "D"
+      },
+      {
+       "id": "399631",
+       "name": "Bi Goore",
+       "pos": "M"
+      },
+      {
+       "id": "313240",
+       "name": "Mathias Delorge-Knieper",
+       "pos": "M"
+      },
+      {
+       "id": "379297",
+       "name": "Tibe De Vlieger",
+       "pos": "M"
+      },
+      {
+       "id": "304204",
+       "name": "Michel-Ange Balikwisha",
+       "pos": "F"
+      },
+      {
+       "id": "418988",
+       "name": "Ibrahima Cisse",
+       "pos": "F"
+      },
+      {
+       "id": "325338",
+       "name": "Momodou Sonko",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "215077",
+       "name": "El Hadji Seck",
+       "pos": "SUB"
+      },
+      {
+       "id": "221047",
+       "name": "László Bénes",
+       "pos": "SUB"
+      },
+      {
+       "id": "414540",
+       "name": "Matties Volckaert",
+       "pos": "SUB"
+      },
+      {
+       "id": "379423",
+       "name": "Abdul Ayinde",
+       "pos": "SUB"
+      },
+      {
+       "id": "371548",
+       "name": "Mamadou Diallo",
+       "pos": "SUB"
+      },
+      {
+       "id": "299294",
+       "name": "Abdelkahar Kadri",
+       "pos": "SUB"
+      },
+      {
+       "id": "214439",
+       "name": "Leo Da Silva Lopes",
+       "pos": "SUB"
+      },
+      {
+       "id": "318781",
+       "name": "Kjell Peersman",
+       "pos": "SUB"
+      },
+      {
+       "id": "376638",
+       "name": "Kyrell Wilson",
+       "pos": "SUB"
+      },
+      {
+       "id": "395940",
+       "name": "Gilles De Meyer",
+       "pos": "SUB"
+      },
+      {
+       "id": "403618",
+       "name": "Mohammed El Adfaoui",
+       "pos": "SUB"
+      },
+      {
+       "id": "356927",
+       "name": "Aime Omgba",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.851,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Volckaert"
+      ],
+      "in": [
+       "Goore"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Conference League",
@@ -14861,7 +18369,356 @@
     "away": "Sint-Truidense",
     "awayCountry": "BEL"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "FC Midtjylland",
+     "formation": "3-4-2-1",
+     "xi": [
+      "Nordin Bakker",
+      "Rasmus Kristensen",
+      "Ousmane Diao",
+      "Mads Bech Sørensen",
+      "Julius Emefile",
+      "Sofus Johannesen",
+      "Pedro Bravo",
+      "Hong Hyun-Seok",
+      "Kjell-Arik Wätjen",
+      "David Martínez",
+      "Mileta Rajovic"
+     ],
+     "missing": [
+      {
+       "name": "Philip Billing",
+       "started": "8/8"
+      },
+      {
+       "name": "Denil Castillo",
+       "started": "7/8"
+      },
+      {
+       "name": "Friday Etim",
+       "started": "6/8"
+      },
+      {
+       "name": "Stanley Iheanacho",
+       "started": "5/8"
+      },
+      {
+       "name": "Cho Gue-Sung",
+       "started": "5/8"
+      },
+      {
+       "name": "Elias Ólafsson",
+       "started": "5/8"
+      },
+      {
+       "name": "Magnus Jensen",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "277224",
+       "name": "Nordin Bakker",
+       "pos": "G"
+      },
+      {
+       "id": "234787",
+       "name": "Rasmus Kristensen",
+       "pos": "D"
+      },
+      {
+       "id": "357804",
+       "name": "Ousmane Diao",
+       "pos": "D"
+      },
+      {
+       "id": "239004",
+       "name": "Mads Bech Sørensen",
+       "pos": "D"
+      },
+      {
+       "id": "418783",
+       "name": "Julius Emefile",
+       "pos": "M"
+      },
+      {
+       "id": "392978",
+       "name": "Sofus Johannesen",
+       "pos": "M"
+      },
+      {
+       "id": "316526",
+       "name": "Pedro Bravo",
+       "pos": "M"
+      },
+      {
+       "id": "271701",
+       "name": "Hong Hyun-Seok",
+       "pos": "M"
+      },
+      {
+       "id": "365788",
+       "name": "Kjell-Arik Wätjen",
+       "pos": "M"
+      },
+      {
+       "id": "115713",
+       "name": "David Martínez",
+       "pos": "M"
+      },
+      {
+       "id": "357141",
+       "name": "Mileta Rajovic",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "320879",
+       "name": "Viktor Bak",
+       "pos": "SUB"
+      },
+      {
+       "id": "333739",
+       "name": "Friday Etim",
+       "pos": "SUB"
+      },
+      {
+       "id": "393751",
+       "name": "Abdou Ndiaye",
+       "pos": "SUB"
+      },
+      {
+       "id": "203926",
+       "name": "Mikkel Uhre",
+       "pos": "SUB"
+      },
+      {
+       "id": "310290",
+       "name": "Ovie Ejeheri",
+       "pos": "SUB"
+      },
+      {
+       "id": "379260",
+       "name": "Djé Beni",
+       "pos": "SUB"
+      },
+      {
+       "id": "345830",
+       "name": "Mark Ugboh",
+       "pos": "SUB"
+      },
+      {
+       "id": "303464",
+       "name": "Cho Gue-Sung",
+       "pos": "SUB"
+      },
+      {
+       "id": "370490",
+       "name": "Stanley Iheanacho",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.578,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Maxsø",
+       "Billing",
+       "Castillo",
+       "Iheanacho",
+       "Etim"
+      ],
+      "in": [
+       "Emefile",
+       "Johannesen",
+       "Hyun-Seok",
+       "Martínez",
+       "Rajovic"
+      ]
+     }
+    },
+    "away": {
+     "team": "Sint-Truidense",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Leo Brian Kokubo",
+      "Robert-Jan Vanwesemael",
+      "Kota Takai",
+      "Joederik Pupe",
+      "Visar Musliu",
+      "Abdoulage Sissako",
+      "Nelson Ishiwatari",
+      "Ilias Sebaoui",
+      "Nathanaël Mbuku",
+      "Ryan Merlen",
+      "Frederic Soelle Soelle"
+     ],
+     "missing": [
+      {
+       "name": "Shogo Taniguchi",
+       "started": "6/8"
+      },
+      {
+       "name": "Samed Bazdar",
+       "started": "6/8"
+      },
+      {
+       "name": "Ryotaro Araki",
+       "started": "6/8"
+      },
+      {
+       "name": "Taiga Hata",
+       "started": "5/8"
+      },
+      {
+       "name": "Kaito Matsuzawa",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "327161",
+       "name": "Leo Brian Kokubo",
+       "pos": "G"
+      },
+      {
+       "id": "363541",
+       "name": "Robert-Jan Vanwesemael",
+       "pos": "D"
+      },
+      {
+       "id": "328492",
+       "name": "Kota Takai",
+       "pos": "D"
+      },
+      {
+       "id": "251089",
+       "name": "Joederik Pupe",
+       "pos": "D"
+      },
+      {
+       "id": "222063",
+       "name": "Visar Musliu",
+       "pos": "D"
+      },
+      {
+       "id": "241304",
+       "name": "Abdoulage Sissako",
+       "pos": "M"
+      },
+      {
+       "id": "336494",
+       "name": "Nelson Ishiwatari",
+       "pos": "M"
+      },
+      {
+       "id": "330042",
+       "name": "Ilias Sebaoui",
+       "pos": "M"
+      },
+      {
+       "id": "291750",
+       "name": "Nathanaël Mbuku",
+       "pos": "M"
+      },
+      {
+       "id": "406299",
+       "name": "Ryan Merlen",
+       "pos": "M"
+      },
+      {
+       "id": "350520",
+       "name": "Frederic Soelle Soelle",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "297569",
+       "name": "Taiga Hata",
+       "pos": "SUB"
+      },
+      {
+       "id": "362670",
+       "name": "Oumar Diouf",
+       "pos": "SUB"
+      },
+      {
+       "id": "202728",
+       "name": "Shogo Taniguchi",
+       "pos": "SUB"
+      },
+      {
+       "id": "240551",
+       "name": "Wolke Janssens",
+       "pos": "SUB"
+      },
+      {
+       "id": "417984",
+       "name": "Shion Shinkawa",
+       "pos": "SUB"
+      },
+      {
+       "id": "346680",
+       "name": "Matt Lendfers",
+       "pos": "SUB"
+      },
+      {
+       "id": "3131084",
+       "name": "Nkima Yanis Ngoy",
+       "pos": "SUB"
+      },
+      {
+       "id": "257897",
+       "name": "Arbnor Muja",
+       "pos": "SUB"
+      },
+      {
+       "id": "406998",
+       "name": "Kaito Matsuzawa",
+       "pos": "SUB"
+      },
+      {
+       "id": "297239",
+       "name": "Ryotaro Araki",
+       "pos": "SUB"
+      },
+      {
+       "id": "409490",
+       "name": "Jeremy Kandje Mbambi",
+       "pos": "SUB"
+      },
+      {
+       "id": "322244",
+       "name": "Samed Bazdar",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.74,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 2,
+      "out": [
+       "Taniguchi",
+       "Bazdar"
+      ],
+      "in": [
+       "Takai",
+       "Soelle"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Conference League",
@@ -14874,7 +18731,334 @@
     "away": "Twente",
     "awayCountry": "NED"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "Lincoln Red Imps",
+     "formation": "4-4-2",
+     "xi": [
+      "Jaylan Hankins",
+      "Christian Rutjens",
+      "Nano González",
+      "Julliani Eersteling",
+      "Bernardo Lopes",
+      "Alejandro Mula",
+      "Graeme Torrilla",
+      "Yussef Flalhi Idrissi",
+      "Mandi",
+      "Álvaro Romero",
+      "Enrique Gómez"
+     ],
+     "missing": [
+      {
+       "name": "Joe",
+       "started": "7/8"
+      },
+      {
+       "name": "Manu Toledano",
+       "started": "7/8"
+      },
+      {
+       "name": "Facundo Álvarez",
+       "started": "5/8"
+      },
+      {
+       "name": "Gabri Cardozo",
+       "started": "4/8"
+      },
+      {
+       "name": "Toni",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "238955",
+       "name": "Jaylan Hankins",
+       "pos": "G"
+      },
+      {
+       "id": "250760",
+       "name": "Christian Rutjens",
+       "pos": "D"
+      },
+      {
+       "id": "140295",
+       "name": "Nano González",
+       "pos": "D"
+      },
+      {
+       "id": "304636",
+       "name": "Julliani Eersteling",
+       "pos": "D"
+      },
+      {
+       "id": "214567",
+       "name": "Bernardo Lopes",
+       "pos": "D"
+      },
+      {
+       "id": "250756",
+       "name": "Alejandro Mula",
+       "pos": "M"
+      },
+      {
+       "id": "255549",
+       "name": "Graeme Torrilla",
+       "pos": "M"
+      },
+      {
+       "id": "418398",
+       "name": "Yussef Flalhi Idrissi",
+       "pos": "M"
+      },
+      {
+       "id": "158254",
+       "name": "Mandi",
+       "pos": "M"
+      },
+      {
+       "id": "194630",
+       "name": "Álvaro Romero",
+       "pos": "F"
+      },
+      {
+       "id": "257871",
+       "name": "Enrique Gómez",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "218248",
+       "name": "Ethan Jolley",
+       "pos": "SUB"
+      },
+      {
+       "id": "3102141",
+       "name": "Mark Hamm",
+       "pos": "SUB"
+      },
+      {
+       "id": "3102140",
+       "name": "Manu Toledano",
+       "pos": "SUB"
+      },
+      {
+       "id": "237643",
+       "name": "Toni",
+       "pos": "SUB"
+      },
+      {
+       "id": "194917",
+       "name": "Nauzet Santana",
+       "pos": "SUB"
+      },
+      {
+       "id": "201100",
+       "name": "Lee Casciaro",
+       "pos": "SUB"
+      },
+      {
+       "id": "238953",
+       "name": "Ethan Britto",
+       "pos": "SUB"
+      },
+      {
+       "id": "231228",
+       "name": "Joe",
+       "pos": "SUB"
+      },
+      {
+       "id": "376028",
+       "name": "Facundo Álvarez",
+       "pos": "SUB"
+      },
+      {
+       "id": "409625",
+       "name": "Nico Pinto",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.791,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Joe",
+       "Cardozo",
+       "Toni"
+      ],
+      "in": [
+       "Lopes",
+       "Mula",
+       "Idrissi"
+      ]
+     }
+    },
+    "away": {
+     "team": "FC Twente",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Joel Drommel",
+      "Aske Adelgaard",
+      "Bart van Rooij",
+      "Robin Pröpper",
+      "Ruud Nijstad",
+      "Ramiz Zerrouki",
+      "Younes Taha",
+      "Marko Pjaca",
+      "Daan Rots",
+      "Thomas van den Belt",
+      "Wout Weghorst"
+     ],
+     "missing": [
+      {
+       "name": "Daouda Weidmann",
+       "started": "8/8"
+      },
+      {
+       "name": "Sondre Ørjasaeter",
+       "started": "7/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "207780",
+       "name": "Joel Drommel",
+       "pos": "G"
+      },
+      {
+       "id": "347026",
+       "name": "Aske Adelgaard",
+       "pos": "D"
+      },
+      {
+       "id": "277855",
+       "name": "Bart van Rooij",
+       "pos": "D"
+      },
+      {
+       "id": "169050",
+       "name": "Robin Pröpper",
+       "pos": "D"
+      },
+      {
+       "id": "399213",
+       "name": "Ruud Nijstad",
+       "pos": "D"
+      },
+      {
+       "id": "290517",
+       "name": "Ramiz Zerrouki",
+       "pos": "M"
+      },
+      {
+       "id": "324583",
+       "name": "Younes Taha",
+       "pos": "M"
+      },
+      {
+       "id": "187956",
+       "name": "Marko Pjaca",
+       "pos": "M"
+      },
+      {
+       "id": "304905",
+       "name": "Daan Rots",
+       "pos": "M"
+      },
+      {
+       "id": "277315",
+       "name": "Thomas van den Belt",
+       "pos": "M"
+      },
+      {
+       "id": "177042",
+       "name": "Wout Weghorst",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "83802",
+       "name": "Remko Pasveer",
+       "pos": "SUB"
+      },
+      {
+       "id": "358436",
+       "name": "Michal Rosiak",
+       "pos": "SUB"
+      },
+      {
+       "id": "311168",
+       "name": "Kristian Hlynsson",
+       "pos": "SUB"
+      },
+      {
+       "id": "411096",
+       "name": "Benjamin Nagel",
+       "pos": "SUB"
+      },
+      {
+       "id": "379956",
+       "name": "Sondre Ørjasaeter",
+       "pos": "SUB"
+      },
+      {
+       "id": "371409",
+       "name": "Jordy Bawuah",
+       "pos": "SUB"
+      },
+      {
+       "id": "379839",
+       "name": "Lucas Vennegoor Of Hesselink",
+       "pos": "SUB"
+      },
+      {
+       "id": "345579",
+       "name": "Daouda Weidmann",
+       "pos": "SUB"
+      },
+      {
+       "id": "3134323",
+       "name": "Jip Meilink",
+       "pos": "SUB"
+      },
+      {
+       "id": "402998",
+       "name": "Yannick Gerritsen",
+       "pos": "SUB"
+      },
+      {
+       "id": "371984",
+       "name": "Krzysztof Kurowski",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.851,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Hlynsson",
+       "Weidmann",
+       "Ørjasaeter"
+      ],
+      "in": [
+       "Taha",
+       "Pjaca",
+       "Belt"
+      ]
+     }
+    }
+   }
   },
   {
    "league": "Conference League",
@@ -14900,7 +19084,335 @@
     "away": "Egnatia",
     "awayCountry": "ALB"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "AGF",
+     "formation": "3-4-2-1",
+     "xi": [
+      "Jesper Hansen",
+      "Colin Rösler",
+      "Frederik Tingager",
+      "Eric Kahl",
+      "Kristian Malt Arnstad",
+      "Sebastian Jorgensen",
+      "Jacob Andersen",
+      "Rasmus Carstensen",
+      "Callum McCowatt",
+      "Markus Solbakken",
+      "Janni Serra"
+     ],
+     "missing": [
+      {
+       "name": "Magnus Knudsen",
+       "started": "7/8"
+      },
+      {
+       "name": "Frederik Emmery",
+       "started": "6/8"
+      },
+      {
+       "name": "Mads Hedenstad Christiansen",
+       "started": "6/8"
+      },
+      {
+       "name": "Daniel Grétarsson",
+       "started": "5/8"
+      },
+      {
+       "name": "Tobias Bech",
+       "started": "5/8"
+      },
+      {
+       "name": "Mikkel Anderson",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "99920",
+       "name": "Jesper Hansen",
+       "pos": "G"
+      },
+      {
+       "id": "279135",
+       "name": "Colin Rösler",
+       "pos": "D"
+      },
+      {
+       "id": "234684",
+       "name": "Frederik Tingager",
+       "pos": "D"
+      },
+      {
+       "id": "296461",
+       "name": "Eric Kahl",
+       "pos": "D"
+      },
+      {
+       "id": "307481",
+       "name": "Kristian Malt Arnstad",
+       "pos": "M"
+      },
+      {
+       "id": "290034",
+       "name": "Sebastian Jorgensen",
+       "pos": "M"
+      },
+      {
+       "id": "214373",
+       "name": "Jacob Andersen",
+       "pos": "M"
+      },
+      {
+       "id": "290035",
+       "name": "Rasmus Carstensen",
+       "pos": "M"
+      },
+      {
+       "id": "228279",
+       "name": "Callum McCowatt",
+       "pos": "M"
+      },
+      {
+       "id": "290107",
+       "name": "Markus Solbakken",
+       "pos": "M"
+      },
+      {
+       "id": "225570",
+       "name": "Janni Serra",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "403046",
+       "name": "Marius Van Der Raad",
+       "pos": "SUB"
+      },
+      {
+       "id": "288813",
+       "name": "Tobias Bech",
+       "pos": "SUB"
+      },
+      {
+       "id": "403062",
+       "name": "Stefen Tchamche",
+       "pos": "SUB"
+      },
+      {
+       "id": "287274",
+       "name": "Magnus Knudsen",
+       "pos": "SUB"
+      },
+      {
+       "id": "257639",
+       "name": "Mads Hedenstad Christiansen",
+       "pos": "SUB"
+      },
+      {
+       "id": "274979",
+       "name": "Tobias Henriksen",
+       "pos": "SUB"
+      },
+      {
+       "id": "238084",
+       "name": "Daniel Grétarsson",
+       "pos": "SUB"
+      },
+      {
+       "id": "411588",
+       "name": "Zander Grantzau",
+       "pos": "SUB"
+      },
+      {
+       "id": "383942",
+       "name": "Luka Callo",
+       "pos": "SUB"
+      },
+      {
+       "id": "182466",
+       "name": "Jens Jonsson",
+       "pos": "SUB"
+      },
+      {
+       "id": "384470",
+       "name": "Frederik Emmery",
+       "pos": "SUB"
+      },
+      {
+       "id": "398701",
+       "name": "James Bogere",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.683,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 5,
+      "out": [
+       "Grétarsson",
+       "Henriksen",
+       "Knudsen",
+       "Emmery",
+       "Bech"
+      ],
+      "in": [
+       "Rösler",
+       "Kahl",
+       "Jorgensen",
+       "Andersen",
+       "Solbakken"
+      ]
+     }
+    },
+    "away": {
+     "team": "Egnatia",
+     "formation": "3-5-2",
+     "xi": [
+      "Mario Dajsinani",
+      "Andrey Yago",
+      "Eljon Sota",
+      "Enea Bitri",
+      "Karim Loukili",
+      "Alessandro Albanese",
+      "Altin Kryeziu",
+      "Albano Aleksi",
+      "Guillem Jaime",
+      "Daniel Claude Junior Adjessa",
+      "Ildi Gruda"
+     ],
+     "missing": [
+      {
+       "name": "Fernando Medeiros",
+       "started": "7/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "241783",
+       "name": "Mario Dajsinani",
+       "pos": "G"
+      },
+      {
+       "id": "363993",
+       "name": "Andrey Yago",
+       "pos": "D"
+      },
+      {
+       "id": "322257",
+       "name": "Eljon Sota",
+       "pos": "D"
+      },
+      {
+       "id": "275672",
+       "name": "Enea Bitri",
+       "pos": "D"
+      },
+      {
+       "id": "239360",
+       "name": "Karim Loukili",
+       "pos": "M"
+      },
+      {
+       "id": "304768",
+       "name": "Alessandro Albanese",
+       "pos": "M"
+      },
+      {
+       "id": "298407",
+       "name": "Altin Kryeziu",
+       "pos": "M"
+      },
+      {
+       "id": "271044",
+       "name": "Albano Aleksi",
+       "pos": "M"
+      },
+      {
+       "id": "283819",
+       "name": "Guillem Jaime",
+       "pos": "M"
+      },
+      {
+       "id": "3099337",
+       "name": "Daniel Claude Junior Adjessa",
+       "pos": "F"
+      },
+      {
+       "id": "305350",
+       "name": "Ildi Gruda",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "322513",
+       "name": "Geralb Smajli",
+       "pos": "SUB"
+      },
+      {
+       "id": "307687",
+       "name": "Zamiq Aliyev",
+       "pos": "SUB"
+      },
+      {
+       "id": "419920",
+       "name": "Ibrahim Diabaté",
+       "pos": "SUB"
+      },
+      {
+       "id": "360706",
+       "name": "Levan Tandilashvili",
+       "pos": "SUB"
+      },
+      {
+       "id": "363891",
+       "name": "Alessandro Kacbufi",
+       "pos": "SUB"
+      },
+      {
+       "id": "231325",
+       "name": "Fernando Medeiros",
+       "pos": "SUB"
+      },
+      {
+       "id": "338208",
+       "name": "Bruno Puja",
+       "pos": "SUB"
+      },
+      {
+       "id": "220904",
+       "name": "Edison Ndreca",
+       "pos": "SUB"
+      },
+      {
+       "id": "406976",
+       "name": "Numan Ajetovikj",
+       "pos": "SUB"
+      },
+      {
+       "id": "310828",
+       "name": "Jurguens Montenegro",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.959,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 0,
+      "out": [],
+      "in": []
+     }
+    }
+   }
   },
   {
    "league": "Conference League",
@@ -14913,8 +19425,336 @@
     "away": "Hajduk Split",
     "awayCountry": "CRO"
    },
-   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-22T18:03:14.576Z",
+    "home": {
+     "team": "FC Thun",
+     "formation": "4-4-2",
+     "xi": [
+      "Niklas Steffen",
+      "Fabio Fehr",
+      "Marco Bürki",
+      "Olivier Mambwa",
+      "Jan Bamert",
+      "Mattias Käit",
+      "Justin Roth",
+      "Nils Reichmuth",
+      "Nico Maier",
+      "Brighton Labeau",
+      "Furkan Dursun"
+     ],
+     "missing": [
+      {
+       "name": "Nassim Zoukit",
+       "started": "5/7"
+      },
+      {
+       "name": "Michael Heule",
+       "started": "5/7"
+      },
+      {
+       "name": "Valmir Matoshi",
+       "started": "5/7"
+      }
+     ],
+     "starters": [
+      {
+       "id": "275853",
+       "name": "Niklas Steffen",
+       "pos": "G"
+      },
+      {
+       "id": "320852",
+       "name": "Fabio Fehr",
+       "pos": "D"
+      },
+      {
+       "id": "199382",
+       "name": "Marco Bürki",
+       "pos": "D"
+      },
+      {
+       "id": "403832",
+       "name": "Olivier Mambwa",
+       "pos": "D"
+      },
+      {
+       "id": "233669",
+       "name": "Jan Bamert",
+       "pos": "D"
+      },
+      {
+       "id": "232280",
+       "name": "Mattias Käit",
+       "pos": "M"
+      },
+      {
+       "id": "271429",
+       "name": "Justin Roth",
+       "pos": "M"
+      },
+      {
+       "id": "304225",
+       "name": "Nils Reichmuth",
+       "pos": "M"
+      },
+      {
+       "id": "305610",
+       "name": "Nico Maier",
+       "pos": "M"
+      },
+      {
+       "id": "259023",
+       "name": "Brighton Labeau",
+       "pos": "F"
+      },
+      {
+       "id": "380351",
+       "name": "Furkan Dursun",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "214527",
+       "name": "Nicolas Bürgy",
+       "pos": "SUB"
+      },
+      {
+       "id": "408385",
+       "name": "Riccardo Braschi",
+       "pos": "SUB"
+      },
+      {
+       "id": "384570",
+       "name": "Lucien Dähler",
+       "pos": "SUB"
+      },
+      {
+       "id": "271663",
+       "name": "Noah Christofferson",
+       "pos": "SUB"
+      },
+      {
+       "id": "403675",
+       "name": "Dorian Derbaci",
+       "pos": "SUB"
+      },
+      {
+       "id": "3100692",
+       "name": "Simon Lengen",
+       "pos": "SUB"
+      },
+      {
+       "id": "3099324",
+       "name": "Adam Ilic",
+       "pos": "SUB"
+      },
+      {
+       "id": "3103155",
+       "name": "Louis Immanuel Passavant",
+       "pos": "SUB"
+      },
+      {
+       "id": "334167",
+       "name": "Nassim Zoukit",
+       "pos": "SUB"
+      },
+      {
+       "id": "323778",
+       "name": "Tim Spycher",
+       "pos": "SUB"
+      },
+      {
+       "id": "298020",
+       "name": "Tom Strannegard",
+       "pos": "SUB"
+      },
+      {
+       "id": "406189",
+       "name": "Dario Wälti",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.831,
+     "att": null,
+     "backupKeeper": false,
+     "history": 7,
+     "changes": {
+      "n": 2,
+      "out": [
+       "Bürgy",
+       "Kristal"
+      ],
+      "in": [
+       "Bürki",
+       "Maier"
+      ]
+     }
+    },
+    "away": {
+     "team": "Hajduk Split",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Toni Silic",
+      "Mathieu Acapandié",
+      "Dario Maresic",
+      "Simun Hrgovic",
+      "Dennis Hadzikadunic",
+      "Alberto Del Moral",
+      "Khalil Fayad",
+      "Abdoulie Sanyang",
+      "Marin Soticek",
+      "Dali",
+      "Michele Sego"
+     ],
+     "missing": [
+      {
+       "name": "Rokas Pukstas",
+       "started": "6/8"
+      },
+      {
+       "name": "Adrion Pajaziti",
+       "started": "6/8"
+      },
+      {
+       "name": "Dario Melnjak",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "322096",
+       "name": "Toni Silic",
+       "pos": "G"
+      },
+      {
+       "id": "358699",
+       "name": "Mathieu Acapandié",
+       "pos": "D"
+      },
+      {
+       "id": "238294",
+       "name": "Dario Maresic",
+       "pos": "D"
+      },
+      {
+       "id": "363661",
+       "name": "Simun Hrgovic",
+       "pos": "D"
+      },
+      {
+       "id": "246836",
+       "name": "Dennis Hadzikadunic",
+       "pos": "D"
+      },
+      {
+       "id": "299212",
+       "name": "Alberto Del Moral",
+       "pos": "M"
+      },
+      {
+       "id": "344231",
+       "name": "Khalil Fayad",
+       "pos": "M"
+      },
+      {
+       "id": "304749",
+       "name": "Abdoulie Sanyang",
+       "pos": "M"
+      },
+      {
+       "id": "345481",
+       "name": "Marin Soticek",
+       "pos": "M"
+      },
+      {
+       "id": "300713",
+       "name": "Dali",
+       "pos": "M"
+      },
+      {
+       "id": "274574",
+       "name": "Michele Sego",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "346678",
+       "name": "Davyd Fesyuk",
+       "pos": "SUB"
+      },
+      {
+       "id": "289363",
+       "name": "Alec Van Hoorenbeeck",
+       "pos": "SUB"
+      },
+      {
+       "id": "405682",
+       "name": "Ron Raqi",
+       "pos": "SUB"
+      },
+      {
+       "id": "217374",
+       "name": "Dario Melnjak",
+       "pos": "SUB"
+      },
+      {
+       "id": "3098720",
+       "name": "Adam Abdelilah Guram",
+       "pos": "SUB"
+      },
+      {
+       "id": "3098582",
+       "name": "Anđelo Šutalo",
+       "pos": "SUB"
+      },
+      {
+       "id": "363572",
+       "name": "Etnik Brruti",
+       "pos": "SUB"
+      },
+      {
+       "id": "191253",
+       "name": "Dante Stipica",
+       "pos": "SUB"
+      },
+      {
+       "id": "182680",
+       "name": "Leander Dendoncker",
+       "pos": "SUB"
+      },
+      {
+       "id": "3098581",
+       "name": "Roko Gabric",
+       "pos": "SUB"
+      },
+      {
+       "id": "165580",
+       "name": "Marko Livaja",
+       "pos": "SUB"
+      },
+      {
+       "id": "324192",
+       "name": "Carlos Martín",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.824,
+     "att": null,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 0,
+      "out": [],
+      "in": []
+     }
+    }
+   }
   }
  ],
- "updateTag": "Thu 22 Oct 17:31"
+ "updateTag": "Thu 22 Oct 19:03"
 }
