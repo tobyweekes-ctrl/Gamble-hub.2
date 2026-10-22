@@ -3,6 +3,7 @@
 // factors measured by the backtest, and returns per-fixture numbers for the app.
 
 import { readFileSync, existsSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { loadMatches, LEAGUE_DIV, GROUPS, fdName } from './data.mjs';
 import { buildState, predict, DEFAULT_CONFIG } from './ensemble.mjs';
@@ -115,6 +116,8 @@ export function modelForRound(root, fixtures) {
   const crossPredict = f => {
     if (!xbt) { warnings.push(`${f.home} v ${f.away}: no cross-league backtest (run tools/model/backtest-cross.mjs)`); return; }
     if (!cross) {
+      // Scheduled runs start from a fresh checkout without data/raw: fetch it first.
+      if (!existsSync(path.join(root, 'data/raw/cross/uefa.json'))) execFileSync('node', ['tools/model/fetch-cross.mjs'], { cwd: root, stdio: 'inherit' });
       const data = loadCross(root);
       const xAsOf = Math.min(now, ...fixtures.filter(x => x.uefa).map(x => Date.parse(x.kickoff)));
       cross = { data, model: fitCross(data.rows, data.euro, { asOf: xAsOf, ...xbt.settings }), asOf: xAsOf };
