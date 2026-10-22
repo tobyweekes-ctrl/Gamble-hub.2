@@ -1408,6 +1408,147 @@ function ocParse(text, forced){
   rows.unmatched = unmatched;
   return rows;
 }
+// ---- Reading a screenshot by position --------------------------------------------
+// Bookmaker screens are grids. Reading them as lines of text breaks when a cell is
+// empty or two lists sit side by side: prices shift into the wrong column. So the
+// screenshot is read by position, using where the reader found each word:
+//   column (1+, 2+, 1 foul, 2 fouls, Over 0.5 ...): the column header above the price
+//   player: the name to the left of the price on the same row (or on the row above,
+//           for layouts that put the prices under the name)
+//   market: the section caption above, or the column's caption when the header
+//           names markets ("Carded | Sent off")
+// A price beside a name we can't match is listed as unmatched, never given to
+// another player.
+const OC_PRICE_WORD = /^(\d{1,3})\/(\d{1,3})$|^ev(en)?s$|^(\d{1,3}\.\d{1,2})$/i;
+const OC_UNIT = /^(fouls?|shots?|cards?|tackles?|sot)$/i;
+function ocWordPrice(w, prev){
+  const m = OC_PRICE_WORD.exec(w.t.replace(/[,;:|]+$/,''));
+  if(!m) return null;
+  if(m[4] && prev && /^(over|under|o|u)$/i.test(prev.t)) return null; // "Over 1.5" is a line, not a price
+  if(m[1]) return {dec: 1 + (+m[1])/(+m[2]), txt: `${+m[1]}/${+m[2]}`};
+  if(m[4]){ const v = +m[4]; return v>=1.01 && v<=500 ? {dec:v, txt:fractionApprox(v)} : null; }
+  return {dec:2, txt:'evens'};
+}
+// Lines named in a row of words, each with the x-centre of the words that name it.
+function ocWordLines(ws){
+  const out = [];
+  for(let i=0;i<ws.length;i++){
+    const t = ws[i].t.toLowerCase(), nx = ws[i+1] ? ws[i+1].t.toLowerCase() : '', nx2 = ws[i+2] ? ws[i+2].t.toLowerCase() : '';
+    const at = (a, b)=>(ws[a].x0 + ws[b].x1)/2;
+    let m;
+    if((m = /^(\d)\+$/.exec(t))){ out.push({k:+m[1], cx:ws[i].cx}); continue; }
+    if(/^(over|o)$/.test(t) && (m = /^(\d+)\.5$/.exec(nx))){ out.push({k:+m[1]+1, cx:at(i,i+1)}); i++; continue; }
+    if(/^\d$/.test(t) && OC_UNIT.test(nx)){ out.push({k:+t, cx:at(i,i+1)}); i++; continue; }
+    if(/^\d$/.test(t) && nx==='or' && /^more/.test(nx2)){ out.push({k:+t, cx:at(i,i+2)}); i+=2; continue; }
+    if(OC_WORDNUM[t] && ((nx==='or' && /^more/.test(nx2)) || nx==='+')){ out.push({k:OC_WORDNUM[t], cx:at(i, nx==='or'?i+2:i+1)}); i+= nx==='or'?2:1; continue; }
+  }
+  return out;
+}
+// Markets named in a row of words, each with the x-centre where its caption starts.
+function ocWordMarkets(ws){
+  let text = '', starts = [];
+  ws.forEach(w=>{ starts.push(text.length); text += ocNorm(w.t) + ' '; });
+  let work = text;
+  const found = [];
+  for(const k of OC_ORDER){
+    const re = new RegExp(OC_MARKETS[k].re.source, 'g');
+    let mt;
+    while((mt = re.exec(work))){
+      let wi = 0;
+      while(wi+1<starts.length && starts[wi+1]<=mt.index) wi++;
+      found.push({k, cx: ws[wi].cx, at: mt.index});
+      work = work.slice(0, mt.index) + ' '.repeat(mt[0].length) + work.slice(mt.index + mt[0].length);
+      re.lastIndex = mt.index + mt[0].length;
+    }
+  }
+  return found.sort((a,b)=>a.at-b.at).filter((f,i,a)=>i===0 || a[i-1].k!==f.k);
+}
+function ocNearest(list, cx){
+  if(!list || !list.length) return null;
+  let best = list[0];
+  for(const c of list) if(Math.abs(c.cx-cx) < Math.abs(best.cx-cx)) best = c;
+  return best;
+}
+// The column (line) for a price at cx. Beyond the last header column, columns are
+// extrapolated from the header spacing (the reader sometimes misses a header, e.g.
+// reading "3+" as "=").
+function ocColumnLine(cols, cx){
+  if(!cols || !cols.length) return null;
+  const sorted = cols.slice().sort((a,b)=>a.cx-b.cx);
+  const gap = sorted.length>1 ? (sorted[sorted.length-1].cx - sorted[0].cx)/(sorted.length-1) : null;
+  const last = sorted[sorted.length-1], first = sorted[0];
+  if(gap && cx > last.cx + gap/2) return last.k + Math.round((cx-last.cx)/gap);
+  if(gap && cx < first.cx - gap/2) return Math.max(1, first.k - Math.round((first.cx-cx)/gap));
+  return ocNearest(sorted, cx).k;
+}
+function ocParseWords(words, forced){
+  const index = ocPlayers();
+  const rows = [], unmatched = [];
+  const W = words.map(w=>({t:String(w.text||'').trim(), x0:w.bbox.x0, x1:w.bbox.x1, y0:w.bbox.y0, y1:w.bbox.y1})).filter(w=>w.t);
+  if(!W.length){ rows.unmatched = unmatched; return rows; }
+  W.forEach(w=>{ w.cx = (w.x0+w.x1)/2; w.cy = (w.y0+w.y1)/2; });
+  const hs = W.map(w=>w.y1-w.y0).sort((a,b)=>a-b), hMed = hs[Math.floor(hs.length/2)] || 10;
+  // Group words into rows by vertical position.
+  const lines = [];
+  W.slice().sort((a,b)=>a.cy-b.cy).forEach(w=>{
+    const row = lines.find(r=>Math.abs(r.cy-w.cy) < hMed*0.6);
+    if(row){ row.ws.push(w); row.cy = (row.cy*(row.ws.length-1)+w.cy)/row.ws.length; } else lines.push({cy:w.cy, ws:[w]});
+  });
+  lines.forEach(r=>r.ws.sort((a,b)=>a.x0-b.x0));
+  let market = null, colMarkets = null, cols = null, abovePlayer = null;
+  const forcedM = forced && forced!=='auto' ? forced : null;
+  for(const r of lines){
+    const ws = r.ws;
+    const prices = [];
+    ws.forEach((w,i)=>{ const p = ocWordPrice(w, ws[i-1]); if(p){ w.price = p; prices.push(w); } });
+    const lns = ocWordLines(ws), mks = ocWordMarkets(ws);
+    const text = ws.map(w=>w.t).join(' ');
+    if(!prices.length){
+      const who = ocFindPlayer(text, index);
+      if(who){ abovePlayer = who; continue; }
+      if(lns.length){ cols = lns; if(mks.length===1 && !colMarkets) market = mks[0].k; abovePlayer = null; continue; }
+      if(mks.length){
+        if(mks.length>1){ colMarkets = mks; market = null; } else { market = mks[0].k; colMarkets = null; }
+        cols = null; abovePlayer = null; continue;
+      }
+      if(ocHasName(text)){ abovePlayer = null; unmatched.push(text); }
+      continue;
+    }
+    // A row with prices: walk left to right; the name before each price is its player.
+    let seg = [], rowPlayer = null, rowUnmatched = false, nInRow = 0;
+    const inlineLines = cols ? [] : lns;
+    for(const w of ws){
+      if(!w.price){ seg.push(w.t); continue; }
+      const segText = seg.join(' ');
+      seg = [];
+      if(ocHasName(segText)){
+        const who = ocFindPlayer(segText, index);
+        if(who){ rowPlayer = who; rowUnmatched = false; nInRow = 0; }
+        else { rowPlayer = null; rowUnmatched = true; unmatched.push(`${segText} ${w.price.txt}`); continue; }
+      } else if(rowUnmatched){ unmatched.push(`(same row) ${w.price.txt}`); continue; }
+      const who = rowPlayer || abovePlayer;
+      if(!who){ unmatched.push(`${segText || '(no name)'} ${w.price.txt}`.trim()); continue; }
+      const inlineM = ocMarketsIn(segText)[0];
+      const colM = colMarkets ? ocNearest(colMarkets, w.cx).k : null;
+      const m = forcedM || inlineM || colM || market;
+      if(!m){ unmatched.push(`${who.hit.p.name} ${w.price.txt} (market not known: pick it above)`); continue; }
+      const single = ['none','first','rc','yc'].includes(m);
+      let k = 1, assumed = false;
+      if(!single){
+        const own = ocWordLines(segText.split(/\s+/).map((t,i)=>({t, x0:i, x1:i, cx:i})));
+        if(own.length===1) k = own[0].k;
+        else if(cols) k = ocColumnLine(cols, w.cx);
+        else if(inlineLines.length===prices.length) k = inlineLines[prices.indexOf(w)].k;
+        else { k = nInRow+1; assumed = true; }
+      }
+      nInRow++;
+      rows.push({who, market:m, k, price:w.price.dec, priceText:w.price.txt, assumed});
+    }
+  }
+  rows.unmatched = unmatched;
+  return rows;
+}
+
 // Model chance for a parsed row. First card: each player's booking rate against the
 // match's expected total cards, as a race between independent card rates:
 // P(first) = own rate / total x (1 - e^-total). An approximation, not backtested.
@@ -1442,7 +1583,7 @@ function ocRowHTML(r, i){
       <b style="color:${edge>0?'var(--green)':'var(--brick)'}">Edge ${edge==null?'—':(edge>0?'+':'')+(edge*100).toFixed(1)+'%'}</b></div>
   </div>`};
 }
-let ocRows = [];
+let ocRows = [], ocWordsCache = null;
 function ocRender(){
   const box = document.getElementById('ocResults');
   if(!ocRows.length){
@@ -1512,7 +1653,11 @@ async function ocFromImage(file){
     const canvas = await ocPrepare(file);
     const res = await T.recognize(canvas, 'eng', {logger: m=>{ if(m.status==='recognizing text') status.textContent = `Reading the screenshot… ${Math.round(m.progress*100)}%`; }});
     document.getElementById('ocText').value = res.data.text;
-    ocRows = ocParse(res.data.text, document.getElementById('ocForced').value);
+    // Read by position when the reader gives word positions; the text box keeps the
+    // plain text for correcting and re-analysing.
+    const forced = document.getElementById('ocForced').value;
+    ocWordsCache = res.data.words && res.data.words.length ? res.data.words : null;
+    ocRows = ocWordsCache ? ocParseWords(ocWordsCache, forced) : ocParse(res.data.text, forced);
     status.textContent = `Read ${res.data.text.split('\n').filter(Boolean).length} lines; matched ${ocRows.length} prices. The text read is in the box above, so you can correct it and press Analyse again.`;
     ocRender();
   }catch(e){
@@ -1544,7 +1689,12 @@ function renderOddsCheck(){
     </details>`;
   container.querySelector('#ocFile').addEventListener('change', e=>{ if(e.target.files[0]) ocFromImage(e.target.files[0]); });
   // Changing the market re-reads the text already there.
-  container.querySelector('#ocForced').addEventListener('change', ()=>{ if(document.getElementById('ocText').value.trim()) container.querySelector('#ocAnalyse').click(); });
+  container.querySelector('#ocForced').addEventListener('change', e=>{
+    if(ocWordsCache){ ocRows = ocParseWords(ocWordsCache, e.target.value); ocRender(); return; }
+    if(document.getElementById('ocText').value.trim()) container.querySelector('#ocAnalyse').click();
+  });
+  // Editing the text means it is read as text from now on.
+  container.querySelector('#ocText').addEventListener('input', ()=>{ ocWordsCache = null; });
   container.querySelector('#ocAnalyse').addEventListener('click', ()=>{
     ocRows = ocParse(document.getElementById('ocText').value, document.getElementById('ocForced').value);
     document.getElementById('ocStatus').textContent = `Matched ${ocRows.length} prices.`;
