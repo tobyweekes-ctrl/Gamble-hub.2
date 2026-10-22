@@ -210,7 +210,7 @@ const MODEL_INFO = ${JSON.stringify(model.info)};
 const SEASON_SIM = ${JSON.stringify(seasonSim)};
 
 const DATA_UPDATED = ${JSON.stringify(round.dataUpdated)};
-const SEED_VERSION = ${JSON.stringify(round.seedVersion + (round.updateTag ? '@' + round.updateTag : ''))};
+const SEED_VERSION = ${JSON.stringify(round.seedVersion + '@' + (round.updateTag || 'weekly') + ' build ' + new Date(now).toISOString().slice(0, 16))};
 const LEAGUE_QUALITY = ${JSON.stringify(quality)};
 ${SEED_END}`;
 
