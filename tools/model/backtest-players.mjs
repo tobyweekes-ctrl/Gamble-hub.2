@@ -26,6 +26,10 @@ const DAY = 864e5;
 const matches = loadMatches(path.join(root, 'data/raw'));
 const lineups = loadLineups(path.join(root, 'data/raw'));
 const TEST_FROM = '2526';
+// Player history window (experiments: PT_DAYS, PT_HALF); the published model uses what is written to players.json.
+// Chosen on validation (23 Oct 2026: 365 days flat, 545/270, 730 flat, 730/180, 730/365;
+// 730 days with a 365-day half-life was best or level on every stat).
+const TABLE = { days: +(process.env.PT_DAYS || 730), halfLife: process.env.PT_HALF === 'none' ? null : +(process.env.PT_HALF || 365) };
 
 // Weeks from October 2023, so every player has some history.
 const wks = weeks(matches, '2324').filter(w => w.asOf >= Date.UTC(2023, 9, 1));
@@ -56,7 +60,7 @@ const tables = new Map();
 for (const { m, asOf } of evalMatches) {
   const l = joined.get(m);
   if (!l || !shotsL.has(m) || !foulsL.has(m)) continue;
-  if (!tables.has(asOf)) tables.set(asOf, playerTable(lineups, asOf));
+  if (!tables.has(asOf)) tables.set(asOf, playerTable(lineups, asOf, TABLE));
   const es = shotsL.get(m), ef = foulsL.get(m);
   const ratio = (e, a) => (e && a ? e / a : 1);
   const ctx = {
@@ -147,4 +151,5 @@ for (const mk of MARKETS) {
 }
 report.note = 'No historical bookmaker prices for player markets were available, so this tests accuracy and calibration only, not profit.';
 mkdirSync(path.join(root, 'data/model'), { recursive: true });
-writeFileSync(path.join(root, 'data/model/players.json'), JSON.stringify(report, null, 1) + '\n');
+report.table = TABLE;
+if (!process.env.NOWRITE) writeFileSync(path.join(root, 'data/model/players.json'), JSON.stringify(report, null, 1) + '\n');
