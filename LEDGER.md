@@ -58,6 +58,21 @@ Backtest of v4 on seasons it never saw (2025/26 and 2026/27 to date, 2,313 match
 - **Value bets:** flat stakes on every 1X2 edge above 5% placed 1,138 bets and returned -17.0% per unit (95% range -26% to -7%). The price shortened after the bet 46% of the time. Over 2.5 edges also lost.
 - **Verdict:** the model is calibrated, but it is less accurate than the bookmaker. Its disagreements have not been bargains so far.
 
+## Model update v4.1, 22 Oct 2026
+
+**Changes:**
+- Earlier seasons count for less (a squad-change discount).
+- Elo regresses between seasons.
+- The shots model uses 2026/27 xG.
+
+**Test seasons:** Brier 0.6070, log-loss 1.0136 (v4: 0.6073 / 1.014). Bet365: 0.5978 / 0.9997.
+
+**Value bets:** 1X2 edges above 5% still lost money, returning -18.9% per unit (95% range -29% to -9%).
+
+**Lineups:** measured from 6,700 ESPN XIs, and not applied because they did not improve the test seasons (log-loss 1.0169 with them against 1.0152 without). Confirmed lineups are shown on the site from the lineup-time runs.
+
+Log entries from this round are under `independent-v4.1-2026-10-22`.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.

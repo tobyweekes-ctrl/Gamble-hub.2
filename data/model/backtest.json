@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T07:46:51.932Z",
+ "generatedAt": "2026-10-22T07:50:15.371Z",
  "config": {
   "tunedOn": "2023/24 and 2024/25 seasons, walk-forward weekly refits, 1X2 log-loss; combination method by two-fold CV across those seasons",
   "tunedAt": "2026-10-22T07:34:44.349Z",
@@ -50,13 +50,13 @@
  "overall": {
   "model": {
    "n": 2313,
-   "brier": 0.6071,
+   "brier": 0.607,
    "logloss": 1.0136
   },
   "modelUncalibrated": {
    "n": 2313,
-   "brier": 0.6074,
-   "logloss": 1.0142
+   "brier": 0.6073,
+   "logloss": 1.0141
   },
   "goalsModel": {
    "n": 2313,
@@ -65,8 +65,8 @@
   },
   "shotsModel": {
    "n": 2313,
-   "brier": 0.6087,
-   "logloss": 1.0161
+   "brier": 0.6084,
+   "logloss": 1.0156
   },
   "eloModel": {
    "n": 2313,
@@ -91,8 +91,8 @@
   "Premier League": {
    "model": {
     "n": 450,
-    "brier": 0.6194,
-    "logloss": 1.031
+    "brier": 0.6202,
+    "logloss": 1.0321
    },
    "bet365PreMatch": {
     "n": 450,
@@ -108,8 +108,8 @@
   "Championship": {
    "model": {
     "n": 684,
-    "brier": 0.6407,
-    "logloss": 1.0606
+    "brier": 0.6405,
+    "logloss": 1.0605
    },
    "bet365PreMatch": {
     "n": 684,
@@ -125,8 +125,8 @@
   "Bundesliga": {
    "model": {
     "n": 360,
-    "brier": 0.5692,
-    "logloss": 0.9624
+    "brier": 0.5691,
+    "logloss": 0.9619
    },
    "bet365PreMatch": {
     "n": 360,
@@ -142,8 +142,8 @@
   "Serie A": {
    "model": {
     "n": 450,
-    "brier": 0.5875,
-    "logloss": 0.9858
+    "brier": 0.5873,
+    "logloss": 0.9855
    },
    "bet365PreMatch": {
     "n": 450,
@@ -159,8 +159,8 @@
   "Ligue 1": {
    "model": {
     "n": 369,
-    "brier": 0.5905,
-    "logloss": 0.9892
+    "brier": 0.5901,
+    "logloss": 0.9888
    },
    "bet365PreMatch": {
     "n": 369,
@@ -178,7 +178,7 @@
   "o25": {
    "model": {
     "n": 2313,
-    "brier": 0.2456
+    "brier": 0.2455
    },
    "market": {
     "n": 2313,
@@ -188,7 +188,7 @@
   "btts": {
    "model": {
     "n": 2313,
-    "brier": 0.2465
+    "brier": 0.2466
    }
   }
  },
@@ -312,13 +312,13 @@
   "note": "Test matches with confirmed XIs for both sides. \"withLineups\" applies the lineup effects measured on validation.",
   "model": {
    "n": 2140,
-   "brier": 0.6085,
-   "logloss": 1.0155
+   "brier": 0.6083,
+   "logloss": 1.0152
   },
   "withLineups": {
    "n": 2140,
-   "brier": 0.6095,
-   "logloss": 1.0172
+   "brier": 0.6093,
+   "logloss": 1.0169
   },
   "bet365PreMatch": {
    "n": 2140,
@@ -335,57 +335,57 @@
  "calibration": [
   {
    "bin": "0-10%",
-   "n": 23,
-   "predicted": 0.073,
-   "actual": 0.043
+   "n": 24,
+   "predicted": 0.072,
+   "actual": 0.042
   },
   {
    "bin": "10-20%",
-   "n": 145,
-   "predicted": 0.162,
-   "actual": 0.145
+   "n": 142,
+   "predicted": 0.161,
+   "actual": 0.148
   },
   {
    "bin": "20-30%",
-   "n": 298,
-   "predicted": 0.252,
-   "actual": 0.245
+   "n": 307,
+   "predicted": 0.253,
+   "actual": 0.241
   },
   {
    "bin": "30-40%",
-   "n": 542,
+   "n": 535,
    "predicted": 0.352,
-   "actual": 0.356
+   "actual": 0.359
   },
   {
    "bin": "40-50%",
-   "n": 590,
+   "n": 588,
    "predicted": 0.447,
    "actual": 0.451
   },
   {
    "bin": "50-60%",
-   "n": 375,
+   "n": 371,
    "predicted": 0.545,
-   "actual": 0.507
+   "actual": 0.501
   },
   {
    "bin": "60-70%",
-   "n": 240,
-   "predicted": 0.643,
-   "actual": 0.696
+   "n": 242,
+   "predicted": 0.642,
+   "actual": 0.702
   },
   {
    "bin": "70-80%",
    "n": 67,
-   "predicted": 0.741,
-   "actual": 0.701
+   "predicted": 0.737,
+   "actual": 0.672
   },
   {
    "bin": "80-90%",
-   "n": 29,
-   "predicted": 0.841,
-   "actual": 0.828
+   "n": 33,
+   "predicted": 0.837,
+   "actual": 0.848
   }
  ],
  "modelWeightInBlendWithMarket": {
@@ -401,91 +401,91 @@
   "1x2": [
    {
     "threshold": 0.02,
-    "bets": 1473,
-    "roi": -0.1841,
+    "bets": 1464,
+    "roi": -0.1881,
     "roi95": [
-     -0.2626,
-     -0.1018
+     -0.2642,
+     -0.1086
     ],
-    "meanClaimedEdge": 0.1354,
+    "meanClaimedEdge": 0.134,
     "beatClosingShare": 0.463,
-    "meanCLV": 0.0132
+    "meanCLV": 0.0129
    },
    {
     "threshold": 0.05,
-    "bets": 1121,
-    "roi": -0.17,
+    "bets": 1108,
+    "roi": -0.1894,
     "roi95": [
-     -0.2632,
-     -0.0763
+     -0.2855,
+     -0.0939
     ],
-    "meanClaimedEdge": 0.1671,
-    "beatClosingShare": 0.46,
-    "meanCLV": 0.0142
+    "meanClaimedEdge": 0.166,
+    "beatClosingShare": 0.462,
+    "meanCLV": 0.0144
    },
    {
     "threshold": 0.1,
-    "bets": 707,
-    "roi": -0.2322,
+    "bets": 696,
+    "roi": -0.2203,
     "roi95": [
-     -0.3543,
-     -0.1057
+     -0.3403,
+     -0.0927
     ],
-    "meanClaimedEdge": 0.2222,
-    "beatClosingShare": 0.477,
-    "meanCLV": 0.0207
+    "meanClaimedEdge": 0.2211,
+    "beatClosingShare": 0.47,
+    "meanCLV": 0.019
    },
    {
     "threshold": 0.2,
-    "bets": 283,
-    "roi": -0.2291,
+    "bets": 272,
+    "roi": -0.2614,
     "roi95": [
-     -0.4518,
-     0.006
+     -0.4674,
+     -0.0376
     ],
-    "meanClaimedEdge": 0.3415,
-    "beatClosingShare": 0.491,
-    "meanCLV": 0.0346
+    "meanClaimedEdge": 0.3433,
+    "beatClosingShare": 0.482,
+    "meanCLV": 0.0339
    }
   ],
   "overUnder2.5": [
    {
     "threshold": 0.02,
-    "bets": 994,
-    "roi": -0.0912,
+    "bets": 991,
+    "roi": -0.0915,
     "roi95": [
-     -0.1594,
-     -0.0211
+     -0.157,
+     -0.0255
     ],
     "meanClaimedEdge": 0.0851,
-    "beatClosingShare": 0.413,
-    "meanCLV": 0.006
+    "beatClosingShare": 0.422,
+    "meanCLV": 0.0071
    },
    {
     "threshold": 0.05,
-    "bets": 624,
-    "roi": -0.0497,
+    "bets": 623,
+    "roi": -0.0505,
     "roi95": [
-     -0.1375,
-     0.0404
+     -0.1438,
+     0.0374
     ],
-    "meanClaimedEdge": 0.1154,
-    "beatClosingShare": 0.412,
-    "meanCLV": 0.0078
+    "meanClaimedEdge": 0.1153,
+    "beatClosingShare": 0.416,
+    "meanCLV": 0.008
    },
    {
     "threshold": 0.1,
-    "bets": 288,
-    "roi": -0.0602,
+    "bets": 293,
+    "roi": -0.0432,
     "roi95": [
-     -0.1947,
-     0.0762
+     -0.1807,
+     0.0995
     ],
-    "meanClaimedEdge": 0.1659,
-    "beatClosingShare": 0.451,
-    "meanCLV": 0.0165
+    "meanClaimedEdge": 0.1646,
+    "beatClosingShare": 0.447,
+    "meanCLV": 0.0161
    }
   ]
  },
- "verdict": "The model was less accurate than Bet365's pre-match prices (Brier 0.6071 v 0.5978), as expected for a model without team news. Betting its edges lost money, so its disagreements with the bookmaker have not been bargains."
+ "verdict": "The model was less accurate than Bet365's pre-match prices (Brier 0.607 v 0.5978), as expected for a model without team news. Betting its edges lost money, so its disagreements with the bookmaker have not been bargains."
 }
