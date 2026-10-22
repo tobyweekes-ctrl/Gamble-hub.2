@@ -74,7 +74,7 @@ export function predict(state, fx, ctx = { h: 1, a: 1 }) {
   return {
     h: x3[0], d: x3[1], a: x3[2],
     btts: mix('btts'), o15: mix('o15'), o25: mix('o25'), o35: mix('o35'), csH: mix('csH'), csA: mix('csA'),
-    top: marketsFromGrid(grid).top,
+    top: marketsFromGrid(grid).top, grid,
     expH: wg * goalsL.h + ws * shotsL.h, expA: wg * goalsL.a + ws * shotsL.a,
     components: {
       goals: { h: goals.h, d: goals.d, a: goals.a, expH: goalsL.h, expA: goalsL.a },

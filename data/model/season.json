@@ -1,0 +1,1389 @@
+{
+ "generatedAt": "2026-10-22T09:11:46.513Z",
+ "sims": 10000,
+ "tau": 0.08,
+ "season": "2627",
+ "leagues": {
+  "Premier League": {
+   "remainingFixtures": 310,
+   "zones": [
+    "Title",
+    "Top 4",
+    "Down"
+   ],
+   "zoneNote": "Top 4: Champions League places. Down: bottom three, relegated.",
+   "table": [
+    {
+     "team": "Man City",
+     "played": 7,
+     "points": 21,
+     "gd": 12,
+     "projectedPoints": 81.5,
+     "averagePosition": 1.8,
+     "zones": {
+      "Title": 48.3,
+      "Top 4": 97.3,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Arsenal",
+     "played": 7,
+     "points": 18,
+     "gd": 6,
+     "projectedPoints": 81,
+     "averagePosition": 1.9,
+     "zones": {
+      "Title": 43.2,
+      "Top 4": 97.8,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Brighton",
+     "played": 7,
+     "points": 16,
+     "gd": 18,
+     "projectedPoints": 68.8,
+     "averagePosition": 4,
+     "zones": {
+      "Title": 5.6,
+      "Top 4": 71.1,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Liverpool",
+     "played": 7,
+     "points": 12,
+     "gd": 1,
+     "projectedPoints": 64,
+     "averagePosition": 5.4,
+     "zones": {
+      "Title": 1.8,
+      "Top 4": 47,
+      "Down": 0.1
+     }
+    },
+    {
+     "team": "Chelsea",
+     "played": 7,
+     "points": 13,
+     "gd": 4,
+     "projectedPoints": 59.8,
+     "averagePosition": 6.8,
+     "zones": {
+      "Title": 0.8,
+      "Top 4": 27.7,
+      "Down": 0.4
+     }
+    },
+    {
+     "team": "Brentford",
+     "played": 7,
+     "points": 10,
+     "gd": 5,
+     "projectedPoints": 55,
+     "averagePosition": 8.6,
+     "zones": {
+      "Title": 0.2,
+      "Top 4": 12.8,
+      "Down": 1.8
+     }
+    },
+    {
+     "team": "Man United",
+     "played": 7,
+     "points": 7,
+     "gd": 0,
+     "projectedPoints": 54.5,
+     "averagePosition": 8.8,
+     "zones": {
+      "Title": 0.1,
+      "Top 4": 12.3,
+      "Down": 1.9
+     }
+    },
+    {
+     "team": "Leeds",
+     "played": 7,
+     "points": 10,
+     "gd": 3,
+     "projectedPoints": 53.8,
+     "averagePosition": 9.2,
+     "zones": {
+      "Title": 0,
+      "Top 4": 9.6,
+      "Down": 2.2
+     }
+    },
+    {
+     "team": "Bournemouth",
+     "played": 7,
+     "points": 6,
+     "gd": -4,
+     "projectedPoints": 52.4,
+     "averagePosition": 9.8,
+     "zones": {
+      "Title": 0.1,
+      "Top 4": 7.4,
+      "Down": 3.6
+     }
+    },
+    {
+     "team": "Aston Villa",
+     "played": 7,
+     "points": 8,
+     "gd": -4,
+     "projectedPoints": 51.1,
+     "averagePosition": 10.5,
+     "zones": {
+      "Title": 0,
+      "Top 4": 5.6,
+      "Down": 4.7
+     }
+    },
+    {
+     "team": "Everton",
+     "played": 7,
+     "points": 10,
+     "gd": 1,
+     "projectedPoints": 48.3,
+     "averagePosition": 11.8,
+     "zones": {
+      "Title": 0,
+      "Top 4": 2.6,
+      "Down": 8
+     }
+    },
+    {
+     "team": "Nott'm Forest",
+     "played": 7,
+     "points": 5,
+     "gd": -4,
+     "projectedPoints": 48.3,
+     "averagePosition": 11.7,
+     "zones": {
+      "Title": 0,
+      "Top 4": 3,
+      "Down": 8.3
+     }
+    },
+    {
+     "team": "Newcastle",
+     "played": 7,
+     "points": 8,
+     "gd": -4,
+     "projectedPoints": 47.8,
+     "averagePosition": 12,
+     "zones": {
+      "Title": 0,
+      "Top 4": 2.6,
+      "Down": 10.4
+     }
+    },
+    {
+     "team": "Tottenham",
+     "played": 7,
+     "points": 6,
+     "gd": -4,
+     "projectedPoints": 44.2,
+     "averagePosition": 13.7,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.9,
+      "Down": 19
+     }
+    },
+    {
+     "team": "Fulham",
+     "played": 7,
+     "points": 5,
+     "gd": -3,
+     "projectedPoints": 43.9,
+     "averagePosition": 13.8,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1,
+      "Down": 20
+     }
+    },
+    {
+     "team": "Crystal Palace",
+     "played": 7,
+     "points": 7,
+     "gd": -8,
+     "projectedPoints": 43.3,
+     "averagePosition": 14.2,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.8,
+      "Down": 23.3
+     }
+    },
+    {
+     "team": "Ipswich",
+     "played": 7,
+     "points": 9,
+     "gd": -4,
+     "projectedPoints": 40.1,
+     "averagePosition": 15.6,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.3,
+      "Down": 37.1
+     }
+    },
+    {
+     "team": "Coventry",
+     "played": 7,
+     "points": 6,
+     "gd": -8,
+     "projectedPoints": 38.8,
+     "averagePosition": 16.1,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.1,
+      "Down": 43.8
+     }
+    },
+    {
+     "team": "Sunderland",
+     "played": 7,
+     "points": 4,
+     "gd": -8,
+     "projectedPoints": 38.4,
+     "averagePosition": 16.2,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.2,
+      "Down": 43.6
+     }
+    },
+    {
+     "team": "Hull",
+     "played": 7,
+     "points": 9,
+     "gd": 1,
+     "projectedPoints": 33.1,
+     "averagePosition": 18.1,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Down": 71.7
+     }
+    }
+   ]
+  },
+  "Championship": {
+   "remainingFixtures": 420,
+   "zones": [
+    "Title",
+    "Top 2",
+    "Top 6",
+    "Down"
+   ],
+   "zoneNote": "Top 2: automatic promotion. Top 6: play-offs or better. Down: bottom three, relegated.",
+   "table": [
+    {
+     "team": "West Ham",
+     "played": 11,
+     "points": 22,
+     "gd": 18,
+     "projectedPoints": 92.8,
+     "averagePosition": 1.8,
+     "zones": {
+      "Title": 62.3,
+      "Top 2": 82.3,
+      "Top 6": 98.5,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Middlesbrough",
+     "played": 11,
+     "points": 22,
+     "gd": 6,
+     "projectedPoints": 82.9,
+     "averagePosition": 3.8,
+     "zones": {
+      "Title": 14.7,
+      "Top 2": 39,
+      "Top 6": 86.4,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Southampton",
+     "played": 11,
+     "points": 21,
+     "gd": 11,
+     "projectedPoints": 79.1,
+     "averagePosition": 4.9,
+     "zones": {
+      "Title": 8.5,
+      "Top 2": 24.6,
+      "Top 6": 75.3,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Wolves",
+     "played": 11,
+     "points": 18,
+     "gd": 3,
+     "projectedPoints": 78.6,
+     "averagePosition": 5.1,
+     "zones": {
+      "Title": 6.6,
+      "Top 2": 21.2,
+      "Top 6": 74.3,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Birmingham",
+     "played": 11,
+     "points": 20,
+     "gd": 9,
+     "projectedPoints": 75,
+     "averagePosition": 6.4,
+     "zones": {
+      "Title": 3.2,
+      "Top 2": 12.3,
+      "Top 6": 60,
+      "Down": 0.1
+     }
+    },
+    {
+     "team": "Swansea",
+     "played": 11,
+     "points": 23,
+     "gd": 8,
+     "projectedPoints": 74.4,
+     "averagePosition": 6.7,
+     "zones": {
+      "Title": 2.6,
+      "Top 2": 10.2,
+      "Top 6": 55.8,
+      "Down": 0.1
+     }
+    },
+    {
+     "team": "West Brom",
+     "played": 11,
+     "points": 20,
+     "gd": 3,
+     "projectedPoints": 68.4,
+     "averagePosition": 9.5,
+     "zones": {
+      "Title": 0.6,
+      "Top 2": 2.7,
+      "Top 6": 29.8,
+      "Down": 0.8
+     }
+    },
+    {
+     "team": "Millwall",
+     "played": 11,
+     "points": 15,
+     "gd": 0,
+     "projectedPoints": 68.3,
+     "averagePosition": 9.4,
+     "zones": {
+      "Title": 0.7,
+      "Top 2": 3.1,
+      "Top 6": 30.4,
+      "Down": 1
+     }
+    },
+    {
+     "team": "QPR",
+     "played": 11,
+     "points": 17,
+     "gd": 3,
+     "projectedPoints": 64.1,
+     "averagePosition": 11.6,
+     "zones": {
+      "Title": 0.2,
+      "Top 2": 1.1,
+      "Top 6": 16.6,
+      "Down": 2.6
+     }
+    },
+    {
+     "team": "Sheffield United",
+     "played": 11,
+     "points": 15,
+     "gd": 1,
+     "projectedPoints": 62.5,
+     "averagePosition": 12.4,
+     "zones": {
+      "Title": 0.2,
+      "Top 2": 0.8,
+      "Top 6": 12.9,
+      "Down": 3.7
+     }
+    },
+    {
+     "team": "Wrexham",
+     "played": 11,
+     "points": 14,
+     "gd": -1,
+     "projectedPoints": 61,
+     "averagePosition": 13.2,
+     "zones": {
+      "Title": 0.1,
+      "Top 2": 0.4,
+      "Top 6": 9.5,
+      "Down": 5.3
+     }
+    },
+    {
+     "team": "Stoke",
+     "played": 11,
+     "points": 19,
+     "gd": 2,
+     "projectedPoints": 60.3,
+     "averagePosition": 13.8,
+     "zones": {
+      "Title": 0.1,
+      "Top 2": 0.3,
+      "Top 6": 7.7,
+      "Down": 5.8
+     }
+    },
+    {
+     "team": "Burnley",
+     "played": 11,
+     "points": 8,
+     "gd": -5,
+     "projectedPoints": 59.8,
+     "averagePosition": 13.8,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.4,
+      "Top 6": 8.5,
+      "Down": 6.7
+     }
+    },
+    {
+     "team": "Portsmouth",
+     "played": 11,
+     "points": 15,
+     "gd": 0,
+     "projectedPoints": 59.6,
+     "averagePosition": 14,
+     "zones": {
+      "Title": 0.1,
+      "Top 2": 0.4,
+      "Top 6": 7.3,
+      "Down": 6.5
+     }
+    },
+    {
+     "team": "Bristol City",
+     "played": 11,
+     "points": 14,
+     "gd": -3,
+     "projectedPoints": 58.7,
+     "averagePosition": 14.6,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.3,
+      "Top 6": 5.9,
+      "Down": 8.7
+     }
+    },
+    {
+     "team": "Norwich",
+     "played": 11,
+     "points": 9,
+     "gd": -4,
+     "projectedPoints": 58.5,
+     "averagePosition": 14.6,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.3,
+      "Top 6": 6,
+      "Down": 9
+     }
+    },
+    {
+     "team": "Lincoln",
+     "played": 11,
+     "points": 12,
+     "gd": -10,
+     "projectedPoints": 57,
+     "averagePosition": 15.6,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.2,
+      "Top 6": 4.2,
+      "Down": 12.2
+     }
+    },
+    {
+     "team": "Bolton",
+     "played": 11,
+     "points": 14,
+     "gd": -3,
+     "projectedPoints": 56,
+     "averagePosition": 16,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.1,
+      "Top 6": 3.2,
+      "Down": 14.7
+     }
+    },
+    {
+     "team": "Blackburn",
+     "played": 11,
+     "points": 15,
+     "gd": 1,
+     "projectedPoints": 55.9,
+     "averagePosition": 16.1,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.1,
+      "Top 6": 2.9,
+      "Down": 13.4
+     }
+    },
+    {
+     "team": "Cardiff",
+     "played": 11,
+     "points": 11,
+     "gd": 1,
+     "projectedPoints": 55,
+     "averagePosition": 16.4,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0.1,
+      "Top 6": 3.4,
+      "Down": 17
+     }
+    },
+    {
+     "team": "Charlton",
+     "played": 11,
+     "points": 14,
+     "gd": -5,
+     "projectedPoints": 51,
+     "averagePosition": 18.6,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0,
+      "Top 6": 0.7,
+      "Down": 30.5
+     }
+    },
+    {
+     "team": "Watford",
+     "played": 11,
+     "points": 11,
+     "gd": -9,
+     "projectedPoints": 49.1,
+     "averagePosition": 19.5,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0,
+      "Top 6": 0.4,
+      "Down": 39.6
+     }
+    },
+    {
+     "team": "Derby",
+     "played": 11,
+     "points": 6,
+     "gd": -11,
+     "projectedPoints": 46.8,
+     "averagePosition": 20.3,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0,
+      "Top 6": 0.2,
+      "Down": 49.1
+     }
+    },
+    {
+     "team": "Preston",
+     "played": 11,
+     "points": 4,
+     "gd": -15,
+     "projectedPoints": 41.5,
+     "averagePosition": 22.1,
+     "zones": {
+      "Title": 0,
+      "Top 2": 0,
+      "Top 6": 0.1,
+      "Down": 73.2
+     }
+    }
+   ]
+  },
+  "Bundesliga": {
+   "remainingFixtures": 252,
+   "zones": [
+    "Title",
+    "Top 4",
+    "Bottom 3"
+   ],
+   "zoneNote": "Top 4: Champions League places. Bottom 3: 17th and 18th go down, 16th plays off.",
+   "table": [
+    {
+     "team": "Bayern Munich",
+     "played": 6,
+     "points": 14,
+     "gd": 17,
+     "projectedPoints": 82,
+     "averagePosition": 1.1,
+     "zones": {
+      "Title": 91.5,
+      "Top 4": 99.9,
+      "Bottom 3": 0
+     }
+    },
+    {
+     "team": "Dortmund",
+     "played": 6,
+     "points": 14,
+     "gd": 7,
+     "projectedPoints": 65.1,
+     "averagePosition": 3.3,
+     "zones": {
+      "Title": 4.5,
+      "Top 4": 81.7,
+      "Bottom 3": 0
+     }
+    },
+    {
+     "team": "Leverkusen",
+     "played": 6,
+     "points": 13,
+     "gd": 7,
+     "projectedPoints": 63,
+     "averagePosition": 3.7,
+     "zones": {
+      "Title": 2.7,
+      "Top 4": 74,
+      "Bottom 3": 0
+     }
+    },
+    {
+     "team": "RB Leipzig",
+     "played": 6,
+     "points": 9,
+     "gd": 5,
+     "projectedPoints": 58.9,
+     "averagePosition": 4.7,
+     "zones": {
+      "Title": 0.8,
+      "Top 4": 55.4,
+      "Bottom 3": 0.1
+     }
+    },
+    {
+     "team": "Freiburg",
+     "played": 6,
+     "points": 13,
+     "gd": 9,
+     "projectedPoints": 53.6,
+     "averagePosition": 6.5,
+     "zones": {
+      "Title": 0.2,
+      "Top 4": 27.7,
+      "Bottom 3": 0.4
+     }
+    },
+    {
+     "team": "Stuttgart",
+     "played": 6,
+     "points": 6,
+     "gd": -2,
+     "projectedPoints": 52.9,
+     "averagePosition": 6.7,
+     "zones": {
+      "Title": 0.1,
+      "Top 4": 26.3,
+      "Bottom 3": 1
+     }
+    },
+    {
+     "team": "Mainz",
+     "played": 6,
+     "points": 10,
+     "gd": 4,
+     "projectedPoints": 49.2,
+     "averagePosition": 8.2,
+     "zones": {
+      "Title": 0.1,
+      "Top 4": 13,
+      "Bottom 3": 2.2
+     }
+    },
+    {
+     "team": "Hoffenheim",
+     "played": 6,
+     "points": 6,
+     "gd": -3,
+     "projectedPoints": 45,
+     "averagePosition": 9.9,
+     "zones": {
+      "Title": 0,
+      "Top 4": 4.8,
+      "Bottom 3": 7
+     }
+    },
+    {
+     "team": "Ein Frankfurt",
+     "played": 6,
+     "points": 8,
+     "gd": -6,
+     "projectedPoints": 44.8,
+     "averagePosition": 10.2,
+     "zones": {
+      "Title": 0,
+      "Top 4": 4.3,
+      "Bottom 3": 7.6
+     }
+    },
+    {
+     "team": "Augsburg",
+     "played": 6,
+     "points": 8,
+     "gd": 4,
+     "projectedPoints": 43.8,
+     "averagePosition": 10.4,
+     "zones": {
+      "Title": 0,
+      "Top 4": 4.2,
+      "Bottom 3": 9.1
+     }
+    },
+    {
+     "team": "Werder Bremen",
+     "played": 6,
+     "points": 9,
+     "gd": 0,
+     "projectedPoints": 43.4,
+     "averagePosition": 10.7,
+     "zones": {
+      "Title": 0,
+      "Top 4": 3.2,
+      "Bottom 3": 9.8
+     }
+    },
+    {
+     "team": "Elversberg",
+     "played": 6,
+     "points": 10,
+     "gd": 1,
+     "projectedPoints": 41.8,
+     "averagePosition": 11.4,
+     "zones": {
+      "Title": 0,
+      "Top 4": 2,
+      "Bottom 3": 13.2
+     }
+    },
+    {
+     "team": "Hamburg",
+     "played": 6,
+     "points": 9,
+     "gd": -9,
+     "projectedPoints": 41.7,
+     "averagePosition": 11.6,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1.9,
+      "Bottom 3": 13.9
+     }
+    },
+    {
+     "team": "FC Koln",
+     "played": 6,
+     "points": 7,
+     "gd": -3,
+     "projectedPoints": 39.3,
+     "averagePosition": 12.5,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1.1,
+      "Bottom 3": 20.6
+     }
+    },
+    {
+     "team": "Union Berlin",
+     "played": 6,
+     "points": 5,
+     "gd": -12,
+     "projectedPoints": 34.9,
+     "averagePosition": 14.3,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.2,
+      "Bottom 3": 42.9
+     }
+    },
+    {
+     "team": "Schalke 04",
+     "played": 6,
+     "points": 5,
+     "gd": -3,
+     "projectedPoints": 33.4,
+     "averagePosition": 14.8,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.1,
+      "Bottom 3": 49.1
+     }
+    },
+    {
+     "team": "Paderborn",
+     "played": 6,
+     "points": 5,
+     "gd": -4,
+     "projectedPoints": 32.5,
+     "averagePosition": 15.1,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Bottom 3": 54.5
+     }
+    },
+    {
+     "team": "M'gladbach",
+     "played": 6,
+     "points": 0,
+     "gd": -12,
+     "projectedPoints": 29.7,
+     "averagePosition": 16,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Bottom 3": 68.5
+     }
+    }
+   ]
+  },
+  "Serie A": {
+   "remainingFixtures": 310,
+   "zones": [
+    "Title",
+    "Top 4",
+    "Down"
+   ],
+   "zoneNote": "Top 4: Champions League places. Down: bottom three, relegated.",
+   "table": [
+    {
+     "team": "Inter",
+     "played": 7,
+     "points": 19,
+     "gd": 12,
+     "projectedPoints": 85.3,
+     "averagePosition": 1.5,
+     "zones": {
+      "Title": 72.5,
+      "Top 4": 98.1,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Roma",
+     "played": 7,
+     "points": 17,
+     "gd": 13,
+     "projectedPoints": 76,
+     "averagePosition": 2.8,
+     "zones": {
+      "Title": 17.2,
+      "Top 4": 86,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Juventus",
+     "played": 7,
+     "points": 11,
+     "gd": 1,
+     "projectedPoints": 66.6,
+     "averagePosition": 5.1,
+     "zones": {
+      "Title": 2.2,
+      "Top 4": 44.5,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Lazio",
+     "played": 7,
+     "points": 19,
+     "gd": 10,
+     "projectedPoints": 66.6,
+     "averagePosition": 5.2,
+     "zones": {
+      "Title": 2.4,
+      "Top 4": 44,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Como",
+     "played": 7,
+     "points": 14,
+     "gd": 5,
+     "projectedPoints": 66,
+     "averagePosition": 5.3,
+     "zones": {
+      "Title": 2.2,
+      "Top 4": 41.9,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Milan",
+     "played": 7,
+     "points": 15,
+     "gd": 7,
+     "projectedPoints": 65.5,
+     "averagePosition": 5.4,
+     "zones": {
+      "Title": 2.1,
+      "Top 4": 39.3,
+      "Down": 0
+     }
+    },
+    {
+     "team": "Napoli",
+     "played": 7,
+     "points": 10,
+     "gd": 3,
+     "projectedPoints": 64.1,
+     "averagePosition": 5.8,
+     "zones": {
+      "Title": 1.3,
+      "Top 4": 34.5,
+      "Down": 0.1
+     }
+    },
+    {
+     "team": "Atalanta",
+     "played": 7,
+     "points": 9,
+     "gd": -1,
+     "projectedPoints": 54.4,
+     "averagePosition": 9.2,
+     "zones": {
+      "Title": 0,
+      "Top 4": 6.2,
+      "Down": 1.8
+     }
+    },
+    {
+     "team": "Bologna",
+     "played": 7,
+     "points": 5,
+     "gd": -4,
+     "projectedPoints": 48.3,
+     "averagePosition": 11.6,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1.1,
+      "Down": 6.4
+     }
+    },
+    {
+     "team": "Frosinone",
+     "played": 7,
+     "points": 13,
+     "gd": 4,
+     "projectedPoints": 48.2,
+     "averagePosition": 11.8,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1.3,
+      "Down": 7.2
+     }
+    },
+    {
+     "team": "Sassuolo",
+     "played": 7,
+     "points": 8,
+     "gd": -2,
+     "projectedPoints": 47.1,
+     "averagePosition": 12.2,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.9,
+      "Down": 8.7
+     }
+    },
+    {
+     "team": "Cagliari",
+     "played": 7,
+     "points": 13,
+     "gd": -1,
+     "projectedPoints": 47,
+     "averagePosition": 12.4,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.6,
+      "Down": 8.3
+     }
+    },
+    {
+     "team": "Torino",
+     "played": 7,
+     "points": 10,
+     "gd": 1,
+     "projectedPoints": 46.9,
+     "averagePosition": 12.3,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.9,
+      "Down": 8.8
+     }
+    },
+    {
+     "team": "Fiorentina",
+     "played": 7,
+     "points": 4,
+     "gd": -9,
+     "projectedPoints": 43.2,
+     "averagePosition": 13.9,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.4,
+      "Down": 18.8
+     }
+    },
+    {
+     "team": "Monza",
+     "played": 7,
+     "points": 7,
+     "gd": -2,
+     "projectedPoints": 41.9,
+     "averagePosition": 14.4,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.1,
+      "Down": 22.3
+     }
+    },
+    {
+     "team": "Lecce",
+     "played": 7,
+     "points": 9,
+     "gd": -3,
+     "projectedPoints": 39.4,
+     "averagePosition": 15.5,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.1,
+      "Down": 32.9
+     }
+    },
+    {
+     "team": "Genoa",
+     "played": 7,
+     "points": 4,
+     "gd": -8,
+     "projectedPoints": 39,
+     "averagePosition": 15.6,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Down": 34.1
+     }
+    },
+    {
+     "team": "Udinese",
+     "played": 7,
+     "points": 4,
+     "gd": -7,
+     "projectedPoints": 37.9,
+     "averagePosition": 16.1,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Down": 40.9
+     }
+    },
+    {
+     "team": "Venezia",
+     "played": 7,
+     "points": 3,
+     "gd": -10,
+     "projectedPoints": 36.8,
+     "averagePosition": 16.5,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Down": 46
+     }
+    },
+    {
+     "team": "Parma",
+     "played": 7,
+     "points": 4,
+     "gd": -9,
+     "projectedPoints": 33.4,
+     "averagePosition": 17.7,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Down": 63.6
+     }
+    }
+   ]
+  },
+  "Ligue 1": {
+   "remainingFixtures": 243,
+   "zones": [
+    "Title",
+    "Top 4",
+    "Bottom 3"
+   ],
+   "zoneNote": "Top 4: Champions League places. Bottom 3: 17th and 18th go down, 16th plays off.",
+   "table": [
+    {
+     "team": "Paris SG",
+     "played": 7,
+     "points": 14,
+     "gd": 5,
+     "projectedPoints": 72.5,
+     "averagePosition": 1.4,
+     "zones": {
+      "Title": 77.6,
+      "Top 4": 97.6,
+      "Bottom 3": 0
+     }
+    },
+    {
+     "team": "Lyon",
+     "played": 7,
+     "points": 14,
+     "gd": 8,
+     "projectedPoints": 57.6,
+     "averagePosition": 5,
+     "zones": {
+      "Title": 5.8,
+      "Top 4": 51.9,
+      "Bottom 3": 0.1
+     }
+    },
+    {
+     "team": "Monaco",
+     "played": 7,
+     "points": 14,
+     "gd": 4,
+     "projectedPoints": 56.9,
+     "averagePosition": 5.3,
+     "zones": {
+      "Title": 4.3,
+      "Top 4": 47.3,
+      "Bottom 3": 0.1
+     }
+    },
+    {
+     "team": "Lille",
+     "played": 7,
+     "points": 14,
+     "gd": 5,
+     "projectedPoints": 56.3,
+     "averagePosition": 5.5,
+     "zones": {
+      "Title": 3.6,
+      "Top 4": 44.8,
+      "Bottom 3": 0.1
+     }
+    },
+    {
+     "team": "Lens",
+     "played": 7,
+     "points": 10,
+     "gd": 3,
+     "projectedPoints": 55.5,
+     "averagePosition": 5.8,
+     "zones": {
+      "Title": 3.3,
+      "Top 4": 41.7,
+      "Bottom 3": 0.2
+     }
+    },
+    {
+     "team": "Marseille",
+     "played": 7,
+     "points": 9,
+     "gd": 4,
+     "projectedPoints": 52.3,
+     "averagePosition": 7,
+     "zones": {
+      "Title": 1.5,
+      "Top 4": 28,
+      "Bottom 3": 1
+     }
+    },
+    {
+     "team": "Paris FC",
+     "played": 7,
+     "points": 14,
+     "gd": 5,
+     "projectedPoints": 52.3,
+     "averagePosition": 7.2,
+     "zones": {
+      "Title": 1.3,
+      "Top 4": 24.6,
+      "Bottom 3": 0.8
+     }
+    },
+    {
+     "team": "Rennes",
+     "played": 7,
+     "points": 13,
+     "gd": 1,
+     "projectedPoints": 52.2,
+     "averagePosition": 7.3,
+     "zones": {
+      "Title": 1.2,
+      "Top 4": 25.7,
+      "Bottom 3": 1.2
+     }
+    },
+    {
+     "team": "Toulouse",
+     "played": 7,
+     "points": 9,
+     "gd": 1,
+     "projectedPoints": 49.1,
+     "averagePosition": 8.5,
+     "zones": {
+      "Title": 0.6,
+      "Top 4": 14.7,
+      "Bottom 3": 2.3
+     }
+    },
+    {
+     "team": "Lorient",
+     "played": 7,
+     "points": 11,
+     "gd": 1,
+     "projectedPoints": 46.4,
+     "averagePosition": 9.8,
+     "zones": {
+      "Title": 0.2,
+      "Top 4": 7.8,
+      "Bottom 3": 4.4
+     }
+    },
+    {
+     "team": "Brest",
+     "played": 7,
+     "points": 9,
+     "gd": 3,
+     "projectedPoints": 45.6,
+     "averagePosition": 10,
+     "zones": {
+      "Title": 0.3,
+      "Top 4": 7.5,
+      "Bottom 3": 5.3
+     }
+    },
+    {
+     "team": "Strasbourg",
+     "played": 7,
+     "points": 7,
+     "gd": -3,
+     "projectedPoints": 44.4,
+     "averagePosition": 10.6,
+     "zones": {
+      "Title": 0.2,
+      "Top 4": 5.5,
+      "Bottom 3": 7.9
+     }
+    },
+    {
+     "team": "Auxerre",
+     "played": 7,
+     "points": 9,
+     "gd": -6,
+     "projectedPoints": 39.6,
+     "averagePosition": 12.8,
+     "zones": {
+      "Title": 0,
+      "Top 4": 1.3,
+      "Bottom 3": 20.6
+     }
+    },
+    {
+     "team": "Nice",
+     "played": 7,
+     "points": 8,
+     "gd": -3,
+     "projectedPoints": 39.2,
+     "averagePosition": 12.9,
+     "zones": {
+      "Title": 0.1,
+      "Top 4": 1,
+      "Bottom 3": 21.3
+     }
+    },
+    {
+     "team": "Le Mans",
+     "played": 7,
+     "points": 6,
+     "gd": -5,
+     "projectedPoints": 36.1,
+     "averagePosition": 14.1,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.4,
+      "Bottom 3": 35.9
+     }
+    },
+    {
+     "team": "Angers",
+     "played": 7,
+     "points": 7,
+     "gd": -6,
+     "projectedPoints": 31.8,
+     "averagePosition": 15.6,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.1,
+      "Bottom 3": 60.7
+     }
+    },
+    {
+     "team": "Le Havre",
+     "played": 7,
+     "points": 2,
+     "gd": -6,
+     "projectedPoints": 30.3,
+     "averagePosition": 15.8,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0.1,
+      "Bottom 3": 65.2
+     }
+    },
+    {
+     "team": "Troyes",
+     "played": 7,
+     "points": 4,
+     "gd": -11,
+     "projectedPoints": 29.4,
+     "averagePosition": 16.2,
+     "zones": {
+      "Title": 0,
+      "Top 4": 0,
+      "Bottom 3": 72.9
+     }
+    }
+   ]
+  }
+ },
+ "warnings": []
+}
