@@ -119,13 +119,13 @@ function tableLine(team, t) {
 const model = modelForRound(root, round.fixtures.map(f => ({ ...f, id: fixtureId(f) })));
 function lineupText(L, applied) {
   const side = s => {
-    const miss = s.missing && s.missing.length ? `without regulars ${s.missing.map(m => `${m.name} (${m.started} recent starts)`).join(', ')}` : 'usual XI';
-    const gk = s.backupKeeper ? '; back-up goalkeeper starts' : '';
-    return `${s.team}${s.formation ? ` (${s.formation})` : ''}: ${miss}${gk}.`;
+    // The starting XI itself; changes from the last game are in the fixture's key points.
+    const gk = s.backupKeeper ? ' (back-up goalkeeper starts)' : '';
+    return `${s.team}${s.formation ? ` (${s.formation})` : ''}: ${(s.xi || []).join(', ')}${gk}.`;
   };
   const when = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(L.at));
-  return `Confirmed lineups (${L.source}, ${when}). ${side(L.home)} ${side(L.away)} ` +
-    (applied ? 'Lineup effects measured in the backtest are applied to the model.' : 'Not applied to the model: in testing on past seasons, adjusting for lineups did not improve its accuracy.');
+  return `Confirmed lineups (${L.source}, ${when}). ${side(L.home)} ${side(L.away)}` +
+    (applied ? ' Lineup effects measured in the backtest are applied to the model.' : '');
 }
 
 const seasonPath = path.join(root, 'data/model/season.json');

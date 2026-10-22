@@ -36,6 +36,15 @@ const lineups = loadLineups(path.join(root, 'data/raw'), { includeUpcoming: true
 const hist = teamHistory(lineups);
 const upcoming = lineups.filter(l => l.upcoming);
 let withLineups = 0, probable = 0, priced = 0;
+// Starters changed from the team's previous match (ESPN data), for "N changes from last game".
+const changesFromLast = (team, t) => {
+  const prev = (hist.get(team.id) || []).filter(x => x.t < t - 3600e3).pop();
+  if (!prev) return null;
+  const last = prev.players.filter(p => p.start), now = team.players.filter(p => p.start);
+  const lastIds = new Set(last.map(p => p.id)), nowIds = new Set(now.map(p => p.id));
+  const sur = n => n.split(' ').slice(-1)[0];
+  return { n: now.filter(p => !lastIds.has(p.id)).length, out: last.filter(p => !nowIds.has(p.id)).map(p => sur(p.name)), in: now.filter(p => !lastIds.has(p.id)).map(p => sur(p.name)) };
+};
 for (const f of round.fixtures) {
   const t = Date.parse(f.kickoff);
   const u = upcoming.find(x => Math.abs(x.t - t) < 3 * 3600e3 && sameTeam(x.homeName, f.home) && sameTeam(x.awayName, f.away));
@@ -64,6 +73,7 @@ for (const f of round.fixtures) {
         bench: team.players.filter(p => !p.start).map(p => ({ id: p.id, name: p.name, pos: p.pos })),
         reg: feats ? +feats.reg.toFixed(3) : null, att: feats ? +feats.att.toFixed(3) : null,
         backupKeeper: feats ? feats.gk : null, history: feats ? feats.n : 0,
+        changes: changesFromLast(team, l.t),
       };
     };
     f.lineups = { source: 'ESPN', at: new Date(now).toISOString(), home: side(l.home), away: side(l.away) };

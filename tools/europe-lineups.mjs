@@ -72,7 +72,9 @@ for (const f of due) {
     const games = (await pool(past, 6, e => get(`${BASE}/${e.league?.slug || 'all'}/summary?event=${e.id}`))).map(s => s && starters(s, team.id)).filter(Boolean);
     const counts = new Map(), info = new Map();
     for (const g of games) for (const p of g.players) { info.set(p.id, p); if (p.start) counts.set(p.id, (counts.get(p.id) || 0) + 1); }
-    return { n: games.length, counts, info };
+    // The XI from the most recent of those matches, for "changes from last game".
+    const lastIdx = games.length ? 0 : -1;
+    return { n: games.length, counts, info, last: lastIdx >= 0 ? { ids: new Set(games[0].players.filter(p => p.start).map(p => p.id)), names: new Map(games[0].players.map(p => [p.id, p.name])) } : null };
   };
   const build = async (team, xi) => {
     const u = await usual(team);
@@ -89,11 +91,14 @@ for (const f of due) {
       starters: starting.map(p => ({ id: p.id, name: p.name, pos: p.pos })), bench: xi.players.filter(p => !p.start).map(p => ({ id: p.id, name: p.name, pos: p.pos })),
       reg: enough && usualSum ? +(starting.reduce((s, p) => s + rate(p.id), 0) / usualSum).toFixed(3) : null, att: null,
       backupKeeper: enough && gk ? rate(gk.id) < 0.5 : null, history: u.n,
+      changes: u.last ? { n: starting.filter(p => !u.last.ids.has(p.id)).length,
+        out: [...u.last.ids].filter(id => !ids.has(id)).map(id => u.last.names.get(id).split(' ').slice(-1)[0]),
+        in: starting.filter(p => !u.last.ids.has(p.id)).map(p => p.name.split(' ').slice(-1)[0]) } : null,
     };
   };
   f.lineups = { source: 'ESPN', at: new Date(now).toISOString(), home: await build(side('home'), H), away: await build(side('away'), A) };
   found++;
-  const s = x => `${x.team} ${x.reg == null ? '?' : Math.round(x.reg * 100) + '%'} regulars${x.missing && x.missing.length ? ' (missing ' + x.missing.map(m => m.name).join(', ') + ')' : ''}`;
+  const s = x => `${x.team} ${x.changes ? x.changes.n + ' changes (out ' + x.changes.out.join(', ') + ')' : '? changes'}`;
   console.log(`${f.home} v ${f.away}: ${s(f.lineups.home)}; ${s(f.lineups.away)}`);
 }
 round.updateTag = label(now);
