@@ -11,6 +11,7 @@ import { calibrate1x2, calibrate2 } from './calibration.mjs';
 import { lineupMultipliers, loadLineups } from './lineups.mjs';
 import { playerTable, playerProps, groupOf, MARKETS } from './players.mjs';
 import { loadEurope, schedule, teamFlags, isDerby, contextMultipliers, FLAGS } from './context.mjs';
+import { loadCross, fitCross, probsFor, DIV_NAME } from './cross.mjs';
 
 const DAY = 864e5;
 const FLAG_TEXT = {
@@ -105,9 +106,51 @@ export function modelForRound(root, fixtures) {
   }
 
   const byId = {};
+  // European ties (Europa League, Conference League ...): the cross-league goals model
+  // (cross.mjs), with the settings and calibration its own backtest chose
+  // (data/model/cross-backtest.json). Goals only; no shots, Elo or player markets.
+  let cross = null;
+  const xbtPath = path.join(root, 'data/model/cross-backtest.json');
+  const xbt = existsSync(xbtPath) ? JSON.parse(readFileSync(xbtPath, 'utf8')) : null;
+  const crossPredict = f => {
+    if (!xbt) { warnings.push(`${f.home} v ${f.away}: no cross-league backtest (run tools/model/backtest-cross.mjs)`); return; }
+    if (!cross) {
+      const data = loadCross(root);
+      const xAsOf = Math.min(now, ...fixtures.filter(x => x.uefa).map(x => Date.parse(x.kickoff)));
+      cross = { data, model: fitCross(data.rows, data.euro, { asOf: xAsOf, ...xbt.settings }), asOf: xAsOf };
+    }
+    const u = f.uefa, hk = cross.data.key(u.home, u.homeCountry), ak = cross.data.key(u.away, u.awayCountry);
+    const e = cross.model.expected(hk, ak, !!u.neutral);
+    if (!e) { warnings.push(`${f.home} v ${f.away}: a team has no results in the cross-league data`); return; }
+    const q = probsFor(e.h, e.a, xbt.rho);
+    const x3 = calibrate1x2([q.h, q.d, q.a], xbt.calibration.x12);
+    const btts = calibrate2(q.btts, xbt.calibration.btts), o25 = calibrate2(q.o25, xbt.calibration.o25);
+    const grid = calibratedGrid(q.grid, { h: x3[0], d: x3[1], a: x3[2], btts, o25 });
+    const gm = marketsFromGrid(grid);
+    const r1 = x => +(x * 100).toFixed(1);
+    const th = cross.model.team(hk), ta = cross.model.team(ak);
+    const domestic = t => !t.group.startsWith('U-');
+    const context = ['Cross-league model: domestic league results from 27 divisions plus every European club result since 2021, so clubs from different countries are rated on one scale. Goals only (no shots, xG, Elo or lineups for most of these leagues).'];
+    for (const [t, name] of [[th, f.home], [ta, f.away]]) {
+      context.push(domestic(t)
+        ? `${name}: rated from ${DIV_NAME[t.group] || t.group} results and ${t.euroGames} European games.`
+        : `${name}: no domestic league data, so rated from ${t.euroGames} European games only (weaker rating).`);
+    }
+    const T = xbt.test;
+    context.push(`Tested on ${T.n} European games it never saw (2024/25 to now): win/draw/loss log-loss ${T.x12.logloss} against ${T.x12.baseLogloss} for base rates, so it knows something; no bookmaker prices for these games, so it is not shown to beat the market. Over 2.5 ${T.o25.logloss < T.o25.base ? 'slightly better than' : 'no better than'} base rates; BTTS ${T.btts.logloss < T.btts.base ? 'slightly better than' : 'no better than'} base rates.`);
+    byId[f.id] = {
+      hw: r1(x3[0]), dw: r1(x3[1]), aw: r1(x3[2]), btts: r1(btts), ou25: r1(o25),
+      over15: r1(gm.o15), over35: r1(gm.o35), cleanSheetH: r1(gm.csH), cleanSheetA: r1(gm.csA),
+      grid, topScorelines: gm.top.map(s => ({ h: s.h, a: s.a, pct: r1(s.p) })),
+      expH: +e.h.toFixed(3), expA: +e.a.toFixed(3),
+      components: { goals: round3({ h: q.h, d: q.d, a: q.a }) },
+      cross: true, context, teamGames: { h: th.euroGames, a: ta.euroGames },
+      stats: {}, players: null,
+    };
+  };
   for (const f of fixtures) {
     const div = divOf(f);
-    if (!div) continue; // e.g. Champions League: no cross-league model yet
+    if (!div) { if (f.uefa) crossPredict(f); continue; } // European ties: cross-league model below
     const group = Object.keys(GROUPS).find(g => GROUPS[g].includes(div));
     const home = fdName(f.home), away = fdName(f.away);
     const t = Date.parse(f.kickoff);

@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-10-21-weekly",
- "dataUpdated": "Thu 22 Oct 14:01",
+ "dataUpdated": "Thu 22 Oct 17:07",
  "notes": [
   "Thu 22 - Thu 29 Oct 2026. Premier League and Championship in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "No Champions League games in this window (next league-phase matchday is in November).",
@@ -12,14 +12,18 @@
   "Champions League",
   "Bundesliga",
   "Serie A",
-  "Ligue 1"
+  "Ligue 1",
+  "Europa League",
+  "Conference League"
  ],
  "leagueQuality": {
   "Premier League": "researched",
   "Championship": "researched",
   "Bundesliga": "researched",
   "Serie A": "researched",
-  "Ligue 1": "researched"
+  "Ligue 1": "researched",
+  "Europa League": "researched",
+  "Conference League": "researched"
  },
  "tables": {
   "Premier League": {
@@ -8783,7 +8787,462 @@
    ],
    "form": "Included because Inter Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/venezia-vs-inter-milan/"
+  },
+  {
+   "league": "Europa League",
+   "home": "Juventus",
+   "away": "Rennes",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Juventus",
+    "homeCountry": "ITA",
+    "away": "Rennes",
+    "awayCountry": "FRA"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Ferencváros",
+   "away": "Torreense",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Ferencváros",
+    "homeCountry": "HUN",
+    "away": "Torreense",
+    "awayCountry": "POR"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Union SG",
+   "away": "H. Beer-Sheva",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Union SG",
+    "homeCountry": "BEL",
+    "away": "H. Beer-Sheva",
+    "awayCountry": "ISR"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "GNK Dinamo",
+   "away": "N.E.C.",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "GNK Dinamo",
+    "homeCountry": "CRO",
+    "away": "N.E.C.",
+    "awayCountry": "NED"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Sturm Graz",
+   "away": "Marseille",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Sturm Graz",
+    "homeCountry": "AUT",
+    "away": "Marseille",
+    "awayCountry": "FRA"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Lech Poznań",
+   "away": "Sunderland",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Lech Poznań",
+    "homeCountry": "POL",
+    "away": "Sunderland",
+    "awayCountry": "ENG"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "OFI Crete",
+   "away": "Leverkusen",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "OFI Crete",
+    "homeCountry": "GRE",
+    "away": "Leverkusen",
+    "awayCountry": "GER"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Ararat-Armenia",
+   "away": "AZ Alkmaar",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Ararat-Armenia",
+    "homeCountry": "ARM",
+    "away": "AZ Alkmaar",
+    "awayCountry": "NED"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Olympiacos",
+   "away": "Sparta Praha",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Olympiacos",
+    "homeCountry": "GRE",
+    "away": "Sparta Praha",
+    "awayCountry": "CZE"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Viktoria Plzeň",
+   "away": "Levski Sofia",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Viktoria Plzeň",
+    "homeCountry": "CZE",
+    "away": "Levski Sofia",
+    "awayCountry": "BUL"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Celtic",
+   "away": "Celta",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Celtic",
+    "homeCountry": "SCO",
+    "away": "Celta",
+    "awayCountry": "ESP"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Bournemouth",
+   "away": "Milan",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Bournemouth",
+    "homeCountry": "ENG",
+    "away": "Milan",
+    "awayCountry": "ITA"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Celje",
+   "away": "Salzburg",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Celje",
+    "homeCountry": "SVN",
+    "away": "Salzburg",
+    "awayCountry": "AUT"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Jagiellonia",
+   "away": "Anderlecht",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Jagiellonia",
+    "homeCountry": "POL",
+    "away": "Anderlecht",
+    "awayCountry": "BEL"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Omonia",
+   "away": "Benfica",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Omonia",
+    "homeCountry": "CYP",
+    "away": "Benfica",
+    "awayCountry": "POR"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Hoffenheim",
+   "away": "Lyon",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Hoffenheim",
+    "homeCountry": "GER",
+    "away": "Lyon",
+    "awayCountry": "FRA"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Beşiktaş",
+   "away": "Crystal Palace",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Beşiktaş",
+    "homeCountry": "TUR",
+    "away": "Crystal Palace",
+    "awayCountry": "ENG"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Europa League",
+   "home": "Lillestrøm",
+   "away": "Real Sociedad",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Lillestrøm",
+    "homeCountry": "NOR",
+    "away": "Real Sociedad",
+    "awayCountry": "ESP"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Crvena Zvezda",
+   "away": "Copenhagen",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Crvena Zvezda",
+    "homeCountry": "SRB",
+    "away": "Copenhagen",
+    "awayCountry": "DEN"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Pafos",
+   "away": "Riga",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Pafos",
+    "homeCountry": "CYP",
+    "away": "Riga",
+    "awayCountry": "LVA"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Getafe",
+   "away": "Lugano",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Getafe",
+    "homeCountry": "ESP",
+    "away": "Lugano",
+    "awayCountry": "SUI"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Trabzonspor",
+   "away": "Hearts",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Trabzonspor",
+    "homeCountry": "TUR",
+    "away": "Hearts",
+    "awayCountry": "SCO"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Jablonec",
+   "away": "Brighton",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Jablonec",
+    "homeCountry": "CZE",
+    "away": "Brighton",
+    "awayCountry": "ENG"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Nordsjælland",
+   "away": "CSKA Sofia",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Nordsjælland",
+    "homeCountry": "DEN",
+    "away": "CSKA Sofia",
+    "awayCountry": "BUL"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Inter Escaldes",
+   "away": "Univ. Craiova",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Inter Escaldes",
+    "homeCountry": "AND",
+    "away": "Univ. Craiova",
+    "awayCountry": "ROU"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Kauno Žalgiris",
+   "away": "Brann",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Kauno Žalgiris",
+    "homeCountry": "LTU",
+    "away": "Brann",
+    "awayCountry": "NOR"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Iberia Tbilisi",
+   "away": "Mjällby",
+   "kickoff": "2026-10-22T17:45:00+01:00",
+   "uefa": {
+    "home": "Iberia Tbilisi",
+    "homeCountry": "GEO",
+    "away": "Mjällby",
+    "awayCountry": "SWE"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Braga",
+   "away": "Gent",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Braga",
+    "homeCountry": "POR",
+    "away": "Gent",
+    "awayCountry": "BEL"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Ajax",
+   "away": "Atalanta",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Ajax",
+    "homeCountry": "NED",
+    "away": "Atalanta",
+    "awayCountry": "ITA"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Monaco",
+   "away": "Freiburg",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Monaco",
+    "homeCountry": "FRA",
+    "away": "Freiburg",
+    "awayCountry": "GER"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Midtjylland",
+   "away": "Sint-Truidense",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Midtjylland",
+    "homeCountry": "DEN",
+    "away": "Sint-Truidense",
+    "awayCountry": "BEL"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "L. Red Imps",
+   "away": "Twente",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "L. Red Imps",
+    "homeCountry": "GIB",
+    "away": "Twente",
+    "awayCountry": "NED"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Borac",
+   "away": "KuPS Kuopio",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Borac",
+    "homeCountry": "BIH",
+    "away": "KuPS Kuopio",
+    "awayCountry": "FIN"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Aarhus",
+   "away": "Egnatia",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Aarhus",
+    "homeCountry": "DEN",
+    "away": "Egnatia",
+    "awayCountry": "ALB"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
+  },
+  {
+   "league": "Conference League",
+   "home": "Thun",
+   "away": "Hajduk Split",
+   "kickoff": "2026-10-22T20:00:00+01:00",
+   "uefa": {
+    "home": "Thun",
+    "homeCountry": "SUI",
+    "away": "Hajduk Split",
+    "awayCountry": "CRO"
+   },
+   "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
   }
  ],
- "updateTag": "Thu 22 Oct 14:01"
+ "updateTag": "Thu 22 Oct 17:07"
 }

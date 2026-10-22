@@ -1,0 +1,297 @@
+{
+ "generatedAt": "2026-10-22T16:06:21.970Z",
+ "settings": {
+  "xi": 0.0015,
+  "sigma": 0.4,
+  "seasonDiscount": 0.7
+ },
+ "rho": 0.04,
+ "calibration": {
+  "x12": {
+   "T": 1.12,
+   "kd": 1.04
+  },
+  "btts": {
+   "a": 0.28,
+   "b": 0.16
+  },
+  "o25": {
+   "a": 0.28,
+   "b": 0.28
+  }
+ },
+ "validation": {
+  "seasons": [
+   "2023/24"
+  ],
+  "n": 776,
+  "x12": {
+   "logloss": 0.9194,
+   "baseLogloss": 1.0434,
+   "brier": 0.5405,
+   "baseBrier": 0.6289
+  },
+  "btts": {
+   "logloss": 0.6833,
+   "base": 0.6964
+  },
+  "o25": {
+   "logloss": 0.6793,
+   "base": 0.6913
+  },
+  "homeWinCalibration": [
+   {
+    "predicted": 6.1,
+    "actual": 5.3,
+    "n": 19
+   },
+   {
+    "predicted": 15.5,
+    "actual": 16.7,
+    "n": 72
+   },
+   {
+    "predicted": 25.4,
+    "actual": 32.7,
+    "n": 98
+   },
+   {
+    "predicted": 35.2,
+    "actual": 33.3,
+    "n": 120
+   },
+   {
+    "predicted": 45,
+    "actual": 43,
+    "n": 114
+   },
+   {
+    "predicted": 54.8,
+    "actual": 57.3,
+    "n": 110
+   },
+   {
+    "predicted": 64.9,
+    "actual": 64.8,
+    "n": 105
+   },
+   {
+    "predicted": 74.8,
+    "actual": 77.3,
+    "n": 75
+   },
+   {
+    "predicted": 84.5,
+    "actual": 82.6,
+    "n": 46
+   },
+   {
+    "predicted": 93.1,
+    "actual": 100,
+    "n": 17
+   }
+  ]
+ },
+ "test": {
+  "seasons": [
+   "2024/25",
+   "2025/26",
+   "2026/27 so far"
+  ],
+  "n": 2401,
+  "x12": {
+   "logloss": 0.9519,
+   "baseLogloss": 1.0385,
+   "brier": 0.5627,
+   "baseBrier": 0.6258
+  },
+  "btts": {
+   "logloss": 0.6998,
+   "base": 0.6933
+  },
+  "o25": {
+   "logloss": 0.684,
+   "base": 0.6898
+  },
+  "homeWinCalibration": [
+   {
+    "predicted": 6.8,
+    "actual": 14.3,
+    "n": 56
+   },
+   {
+    "predicted": 15.5,
+    "actual": 19.1,
+    "n": 183
+   },
+   {
+    "predicted": 25.2,
+    "actual": 30.6,
+    "n": 278
+   },
+   {
+    "predicted": 35.3,
+    "actual": 34.6,
+    "n": 358
+   },
+   {
+    "predicted": 45,
+    "actual": 50,
+    "n": 388
+   },
+   {
+    "predicted": 54.7,
+    "actual": 50.9,
+    "n": 369
+   },
+   {
+    "predicted": 64.6,
+    "actual": 60.2,
+    "n": 334
+   },
+   {
+    "predicted": 74.6,
+    "actual": 70.7,
+    "n": 225
+   },
+   {
+    "predicted": 84,
+    "actual": 86.8,
+    "n": 151
+   },
+   {
+    "predicted": 93.5,
+    "actual": 91.5,
+    "n": 59
+   }
+  ]
+ },
+ "testTeamsRatedFromEuropeOnly": {
+  "n": 1429,
+  "x12": {
+   "logloss": 0.9445,
+   "baseLogloss": 1.0416,
+   "brier": 0.5576,
+   "baseBrier": 0.6276
+  },
+  "btts": {
+   "logloss": 0.7071,
+   "base": 0.6931
+  },
+  "o25": {
+   "logloss": 0.6908,
+   "base": 0.692
+  },
+  "homeWinCalibration": [
+   {
+    "predicted": 6.7,
+    "actual": 13.5,
+    "n": 52
+   },
+   {
+    "predicted": 15.4,
+    "actual": 19.7,
+    "n": 142
+   },
+   {
+    "predicted": 25.2,
+    "actual": 31.7,
+    "n": 186
+   },
+   {
+    "predicted": 35.2,
+    "actual": 37.8,
+    "n": 180
+   },
+   {
+    "predicted": 45,
+    "actual": 53.2,
+    "n": 205
+   },
+   {
+    "predicted": 54.5,
+    "actual": 50.3,
+    "n": 199
+   },
+   {
+    "predicted": 64.8,
+    "actual": 55.4,
+    "n": 168
+   },
+   {
+    "predicted": 74.8,
+    "actual": 66.4,
+    "n": 134
+   },
+   {
+    "predicted": 84.2,
+    "actual": 87,
+    "n": 108
+   },
+   {
+    "predicted": 93.6,
+    "actual": 92.7,
+    "n": 55
+   }
+  ]
+ },
+ "testBothWithDomesticData": {
+  "n": 972,
+  "x12": {
+   "logloss": 0.9628,
+   "baseLogloss": 1.0341,
+   "brier": 0.5702,
+   "baseBrier": 0.6231
+  },
+  "btts": {
+   "logloss": 0.6891,
+   "base": 0.6937
+  },
+  "o25": {
+   "logloss": 0.6739,
+   "base": 0.6864
+  },
+  "homeWinCalibration": [
+   {
+    "predicted": 15.9,
+    "actual": 17.1,
+    "n": 41
+   },
+   {
+    "predicted": 25.2,
+    "actual": 28.3,
+    "n": 92
+   },
+   {
+    "predicted": 35.3,
+    "actual": 31.5,
+    "n": 178
+   },
+   {
+    "predicted": 45,
+    "actual": 46.4,
+    "n": 183
+   },
+   {
+    "predicted": 54.9,
+    "actual": 51.8,
+    "n": 170
+   },
+   {
+    "predicted": 64.3,
+    "actual": 65.1,
+    "n": 166
+   },
+   {
+    "predicted": 74.3,
+    "actual": 76.9,
+    "n": 91
+   },
+   {
+    "predicted": 83.5,
+    "actual": 86,
+    "n": 43
+   }
+  ]
+ }
+}
