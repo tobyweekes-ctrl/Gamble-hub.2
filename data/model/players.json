@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T11:09:50.782Z",
+ "generatedAt": "2026-10-22T23:02:26.590Z",
  "testSeasons": "2025/26 and 2026/27 to date",
  "params": {
   "k": {
@@ -94,7 +94,24 @@
      "predicted": 0.7338,
      "actual": 0.7867
     }
-   ]
+   ],
+   "byPosition": {
+    "D": {
+     "n": 17208,
+     "predicted": 0.1363,
+     "actual": 0.1385
+    },
+    "M": {
+     "n": 20321,
+     "predicted": 0.2857,
+     "actual": 0.2931
+    },
+    "F": {
+     "n": 8711,
+     "predicted": 0.4924,
+     "actual": 0.4979
+    }
+   }
   },
   "sh2": {
    "label": "2+ shots",
@@ -168,7 +185,24 @@
      "predicted": 0.8336,
      "actual": 0.854
     }
-   ]
+   ],
+   "byPosition": {
+    "D": {
+     "n": 17208,
+     "predicted": 0.1156,
+     "actual": 0.1204
+    },
+    "M": {
+     "n": 20321,
+     "predicted": 0.2984,
+     "actual": 0.313
+    },
+    "F": {
+     "n": 8711,
+     "predicted": 0.5217,
+     "actual": 0.5455
+    }
+   }
   },
   "fc1": {
    "label": "1+ fouls committed",
@@ -224,7 +258,24 @@
      "predicted": 0.8293,
      "actual": 0.8144
     }
-   ]
+   ],
+   "byPosition": {
+    "D": {
+     "n": 17200,
+     "predicted": 0.5754,
+     "actual": 0.5741
+    },
+    "M": {
+     "n": 20312,
+     "predicted": 0.6221,
+     "actual": 0.6074
+    },
+    "F": {
+     "n": 8708,
+     "predicted": 0.6299,
+     "actual": 0.6124
+    }
+   }
   },
   "fw1": {
    "label": "1+ fouls won",
@@ -298,7 +349,24 @@
      "predicted": 0.9147,
      "actual": 0.9029
     }
-   ]
+   ],
+   "byPosition": {
+    "D": {
+     "n": 17200,
+     "predicted": 0.4756,
+     "actual": 0.4788
+    },
+    "M": {
+     "n": 20312,
+     "predicted": 0.5998,
+     "actual": 0.593
+    },
+    "F": {
+     "n": 8708,
+     "predicted": 0.6381,
+     "actual": 0.6282
+    }
+   }
   },
   "yc1": {
    "label": "booked",
@@ -336,7 +404,24 @@
      "predicted": 0.2162,
      "actual": 0.2452
     }
-   ]
+   ],
+   "byPosition": {
+    "D": {
+     "n": 17200,
+     "predicted": 0.1524,
+     "actual": 0.1675
+    },
+    "M": {
+     "n": 20312,
+     "predicted": 0.1438,
+     "actual": 0.1518
+    },
+    "F": {
+     "n": 8708,
+     "predicted": 0.0967,
+     "actual": 0.1013
+    }
+   }
   },
   "rc1": {
    "label": "sent off",
@@ -368,7 +453,24 @@
      "predicted": 0.0141,
      "actual": 0.011
     }
-   ]
+   ],
+   "byPosition": {
+    "D": {
+     "n": 17200,
+     "predicted": 0.0094,
+     "actual": 0.0085
+    },
+    "M": {
+     "n": 20312,
+     "predicted": 0.0052,
+     "actual": 0.0058
+    },
+    "F": {
+     "n": 8708,
+     "predicted": 0.0041,
+     "actual": 0.0037
+    }
+   }
   }
  },
  "note": "No historical bookmaker prices for player markets were available, so this tests accuracy and calibration only, not profit."

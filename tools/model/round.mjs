@@ -80,13 +80,16 @@ export function modelForRound(root, fixtures) {
     }
     return n >= 5 ? s / n : null;
   };
-  function playerMarkets(f, group, div, home, away) {
+  // flat: European ties, which have no team shots/fouls model; each player's plain
+  // rate is used (the backtest's "player" variant: a little less accurate than with
+  // match context, still well calibrated), with Champions League position averages.
+  function playerMarkets(f, group, div, home, away, flat = false) {
     const xi = f.lineups ? { status: 'confirmed', h: f.lineups.home.starters, a: f.lineups.away.starters, hx: f.lineups.home.bench, ax: f.lineups.away.bench }
       : f.probableXI ? { status: 'probable', h: f.probableXI.home, a: f.probableXI.away, hx: f.probableXI.homeExtra, ax: f.probableXI.awayExtra } : null;
     if (!plParams || !xi || !xi.h || !xi.a) return null;
-    const es = statModels[group].shots.expected(div, home, away), ef = statModels[group].fouls.expected(div, home, away);
+    const es = flat ? null : statModels[group].shots.expected(div, home, away), ef = flat ? null : statModels[group].fouls.expected(div, home, away);
     const ratio = (e, a) => (e && a ? e / a : 1);
-    const ctx = {
+    const ctx = flat ? { h: { shots: 1, fouls: 1, oppFouls: 1 }, a: { shots: 1, fouls: 1, oppFouls: 1 } } : {
       h: { shots: ratio(es && es.h, teamAvg(home, 'hs', 'as')), fouls: ratio(ef && ef.h, teamAvg(home, 'hf', 'af')), oppFouls: ratio(ef && ef.a, teamAvg(away, 'hf', 'af')) },
       a: { shots: ratio(es && es.a, teamAvg(away, 'hs', 'as')), fouls: ratio(ef && ef.a, teamAvg(away, 'hf', 'af')), oppFouls: ratio(ef && ef.h, teamAvg(home, 'hf', 'af')) },
     };
@@ -174,7 +177,7 @@ export function modelForRound(root, fixtures) {
       expH: +e.h.toFixed(3), expA: +e.a.toFixed(3),
       components: { goals: round3({ h: q.h, d: q.d, a: q.a }) },
       cross: true, keyPoints, confidence, context: [], teamGames: { h: ratings[0].games, a: ratings[1].games },
-      stats: {}, players: null,
+      stats: {}, players: f.lineups ? playerMarkets(f, null, 'UCL', null, null, true) : null,
     };
   };
   for (const f of fixtures) {
