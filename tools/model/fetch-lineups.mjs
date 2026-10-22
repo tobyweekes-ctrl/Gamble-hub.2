@@ -7,7 +7,7 @@
 // Usage: node tools/model/fetch-lineups.mjs [--since YYYY-MM-DD] [--upcoming]
 //   --since     only fetch matches from this date (default 2023-07-01; the
 //               lineup-time runs use the last 150 days, which is all they need)
-//   --upcoming  also fetch matches in the next 3 days, with their lineups where
+//   --upcoming  also fetch matches in the next 4 days, with their lineups where
 //               announced (written to data/raw/lineups/upcoming.json)
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
@@ -56,6 +56,7 @@ export function extract(summary, ev, league) {
         id: String(p.athlete.id), name: p.athlete.displayName, pos: p.position?.abbreviation || '',
         start: !!p.starter, subIn: !!p.subbedIn, subOut: !!p.subbedOut,
         g: num(p.stats, 'totalGoals'), a: num(p.stats, 'goalAssists'), sh: num(p.stats, 'totalShots'), sot: num(p.stats, 'shotsOnTarget'),
+        fc: num(p.stats, 'foulsCommitted'), fw: num(p.stats, 'foulsSuffered'), yc: num(p.stats, 'yellowCards'), rc: num(p.stats, 'redCards'),
       })),
     };
   };
@@ -63,6 +64,7 @@ export function extract(summary, ev, league) {
     id: String(ev.id), league, date: ev.date, status: ev.status.type.name,
     home: team('home'), away: team('away'),
     homeName: side('home').team.displayName, awayName: side('away').team.displayName,
+    homeId: String(side('home').team.id), awayId: String(side('away').team.id),
     hg: side('home').score != null ? Number(side('home').score) : null, ag: side('away').score != null ? Number(side('away').score) : null,
   };
 }
@@ -73,6 +75,8 @@ async function scoreboard(league, year) {
 }
 
 const upcoming = process.argv.includes('--upcoming');
+// Cached matches stored before fouls and cards were kept are fetched again.
+const stale = m => !m.home || !m.home.players.length || m.home.players[0].fc === undefined;
 const now = new Date();
 const sinceArg = process.argv.indexOf('--since');
 const since = sinceArg >= 0 ? Date.parse(process.argv[sinceArg + 1]) : Date.UTC(2023, 6, 1);
@@ -82,7 +86,7 @@ for (const league of Object.keys(ESPN_LEAGUES)) {
   const cache = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {};
   let events = [];
   for (let y = firstYear; y <= now.getUTCFullYear(); y++) events = events.concat(await scoreboard(league, y));
-  const done = events.filter(e => e.status.type.completed && !cache[e.id] && Date.parse(e.date) >= since);
+  const done = events.filter(e => e.status.type.completed && (!cache[e.id] || stale(cache[e.id])) && Date.parse(e.date) >= since);
   const res = await pool(done, 8, async ev => extract(await get(`${BASE}/${league}/summary?event=${ev.id}`), ev, league));
   let added = 0, failed = 0;
   for (const r of res) { if (r.error) failed++; else if (r.home && r.away) { cache[r.id] = r; added++; } }
@@ -95,7 +99,7 @@ if (upcoming) {
   for (const league of Object.keys(ESPN_LEAGUES)) {
     const evs = (await scoreboard(league, now.getUTCFullYear())).filter(e => {
       const t = Date.parse(e.date);
-      return !e.status.type.completed && t > now.getTime() - 3 * 3600e3 && t < now.getTime() + 3 * 864e5;
+      return !e.status.type.completed && t > now.getTime() - 3 * 3600e3 && t < now.getTime() + 4 * 864e5;
     });
     const res = await pool(evs, 8, async ev => extract(await get(`${BASE}/${league}/summary?event=${ev.id}`), ev, league));
     for (const r of res) if (!r.error) out.push(r);
