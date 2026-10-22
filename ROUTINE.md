@@ -23,6 +23,8 @@ The predictions come from **our own model** (`tools/model/`), which is fitted on
 4. **Refresh the model data:**
    - `sh tools/model/fetch.sh` downloads results and match stats from football-data.co.uk.
    - `node tools/model/fetch-europe.mjs` downloads European fixtures and results from UEFA.
+   - `node tools/model/fetch-cross.mjs` downloads the cross-league data (more leagues, and every UEFA club result) for Europa League and Conference League games. The build fetches it on its own if it is missing.
+   - On the first Friday of each month, also run `node tools/model/backtest-cross.mjs` (about 1 minute). It refreshes the cross-league model's test and calibration.
    - On the first Friday of each month, also run:
      - `node tools/model/backtest.mjs` (about 15 minutes). It refreshes the context factors and the backtest summary shown on the site.
      - `node tools/model/fetch-lineups.mjs` then `node tools/model/backtest-players.mjs` (about 6 minutes). These refresh the player model's parameters and its test.
@@ -31,6 +33,8 @@ The predictions come from **our own model** (`tools/model/`), which is fitted on
    - BBC Sport tables and fixtures, with UK kick-off times;
    - the top-4 filter for Bundesliga, Serie A and Ligue 1;
    - Bet365 1X2, BTTS and Over 2.5 prices from kickoff.co.uk match pages, after checking the page's match date.
+
+   Then run `node tools/europe-fixtures.mjs --lead 30` to add the coming week's Europa League and Conference League games that haven't kicked off (UEFA match data, cross-league model, no bookmaker prices).
 
    It prints any gaps (a missing price or table). Fill a gap by hand only from a named source, and never estimate. Lineups are not known on Friday morning; the lineup-time runs add them.
 6. **Build and check:**
