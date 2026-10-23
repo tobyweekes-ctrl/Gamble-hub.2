@@ -123,8 +123,9 @@
   .src-btn.active{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(15,23,42,.08),0 2px 8px rgba(15,23,42,.08);}
   .src-btn.active::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:7px;vertical-align:1px;}
   #srcExplainer{font-size:12.5px;color:var(--ink-2);margin:2px 0 0;line-height:1.55;}
-  .target-btns{display:flex;gap:8px;}
-  .target-btns button{flex:1;padding:11px 8px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;background:var(--accent);color:var(--on-accent);border:none;border-radius:10px;cursor:pointer;transition:filter .15s,transform .05s;}
+  .target-btns{display:flex;gap:6px;}
+  .target-note{font-size:12px;color:var(--ink-2);margin:8px 0 0;line-height:1.45;}
+  .target-btns button{flex:1;min-width:0;padding:11px 4px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;background:var(--accent);color:var(--on-accent);border:none;border-radius:10px;cursor:pointer;transition:filter .15s,transform .05s;}
   .target-btns button:hover{filter:brightness(1.08);}
   .target-btns button:active{transform:translateY(1px);}
 
@@ -437,12 +438,15 @@
       </select>
     </div>
     <div class="controls stack">
-      <label>Generate a slip targeting real bookmaker-style odds</label>
+      <label>Build an acca at Bet365 odds of about…</label>
       <div class="target-btns">
-        <button id="slip5">~5/1</button>
-        <button id="slip10">~10/1</button>
-        <button id="slip20">~20/1</button>
+        <button data-target="3">2/1</button>
+        <button data-target="6">5/1</button>
+        <button data-target="11">10/1</button>
+        <button data-target="21">20/1</button>
+        <button data-target="51">50/1</button>
       </div>
+      <p class="target-note">Bet365's real prices, games that haven't kicked off, one leg per game, and only legs both our model and Bet365 rate at least 40% likely. Picks the combination most likely to land at about that price, judged by the lower of the two chances, so it's built from solid picks, not the model's disagreements with Bet365.</p>
     </div>
   </section>
 
@@ -2138,74 +2142,81 @@ function addMatchForm(league){
   return det;
 }
 
-function bestPickForMatch(m){
-  const ap = activeProbs(m);
-  if(!ap.available) return {label:'', prob:null, matchId:m.id, type:'win', bookOdds:null};
-  const tag = (probSource==='model' || ap.fallback) ? ' (model)' : '';
-  const legSrc = ap.fallback ? 'model' : probSource;
-  const candidates = [];
-  candidates.push({label:`${m.home} to win${tag}`, prob:ap.hw, sel:'H', src:legSrc, matchId:m.id, type:'win'});
-  candidates.push({label:`${m.away} to win${tag}`, prob:ap.aw, sel:'A', src:legSrc, matchId:m.id, type:'win'});
-  candidates.push({label:`Draw${tag} — ${m.home} vs ${m.away}`, prob:ap.dw, sel:'D', src:legSrc, matchId:m.id, type:'win'});
-  if(ap.btts!=null){
-    candidates.push({label:`BTTS Yes${tag} — ${m.home} vs ${m.away}`, prob:ap.btts, sel:'BTTSY', src:legSrc, matchId:m.id, type:'btts'});
-    candidates.push({label:`BTTS No${tag} — ${m.home} vs ${m.away}`, prob:100-ap.btts, sel:'BTTSN', src:legSrc, matchId:m.id, type:'btts'});
-  }
-  if(ap.ou25!=null){
-    candidates.push({label:`Over 2.5${tag} — ${m.home} vs ${m.away}`, prob:ap.ou25, sel:'O25', src:legSrc, matchId:m.id, type:'ou'});
-    candidates.push({label:`Under 2.5${tag} — ${m.home} vs ${m.away}`, prob:100-ap.ou25, sel:'U25', src:legSrc, matchId:m.id, type:'ou'});
-  }
-  candidates.sort((a,b)=>b.prob-a.prob);
-  const best = candidates[0];
-  best.bookOdds = toBookOdds(best.prob, best.type);
-  return best;
+// ---- Acca builder ----------------------------------------------------------------
+// Legs: every Bet365-priced selection (1X2, BTTS, Over/Under 2.5) on games that have
+// not kicked off, each with our model's chance and Bet365's own chance (its price with
+// the margin removed). For a target price, the builder picks at most one leg per game
+// so that the Bet365 odds multiply to about the target (within -15% / +20%) and the
+// chance of every leg winning is as high as possible, judged by the lower of the two
+// chances: a leg counts only as strongly as both rate it, so the slip is built from
+// solid picks, not the model's disagreements with Bet365 (backing those lost money
+// in testing). A small knapsack over log-odds, exact rather than greedy.
+const ACCA_MIN_LEG = 40;
+const ACCA_SELS = [['H','win'],['D','win'],['A','win'],['BTTSY','btts'],['BTTSN','btts'],['O25','ou'],['U25','ou']];
+function accaCandidates(){
+  const soon = Date.now() + 10*60*1000; // leave time to place the bet
+  const out = [];
+  matches.forEach(m=>{
+    if(isFinished(m) || !(Date.parse(m.kickoff) > soon) || !m.prices || !m.model) return;
+    const mp = computeModelProbs(m);
+    if(!mp) return;
+    const pr = m.prices;
+    const chance = {H:mp.hw, D:mp.dw, A:mp.aw, BTTSY:mp.btts, BTTSN:mp.btts==null?null:100-mp.btts, O25:mp.ou25, U25:mp.ou25==null?null:100-mp.ou25};
+    const price = {H:pr.h, D:pr.d, A:pr.a, BTTSY:pr.bttsY, BTTSN:pr.bttsN, O25:pr.o25, U25:pr.u25};
+    const name = {H:`${m.home} to win`, D:`Draw — ${m.home} vs ${m.away}`, A:`${m.away} to win`, BTTSY:`BTTS Yes — ${m.home} vs ${m.away}`,
+      BTTSN:`BTTS No — ${m.home} vs ${m.away}`, O25:`Over 2.5 — ${m.home} vs ${m.away}`, U25:`Under 2.5 — ${m.home} vs ${m.away}`};
+    // Bet365's chances with its margin removed, per market.
+    const fair = {};
+    const norm = (keys)=>{ const inv = keys.map(k=>price[k]>1 ? 1/price[k] : null); if(inv.some(x=>x==null)) return; const t = inv.reduce((a,b)=>a+b,0); keys.forEach((k,i)=>fair[k] = inv[i]/t*100); };
+    norm(['H','D','A']); norm(['BTTSY','BTTSN']); norm(['O25','U25']);
+    ACCA_SELS.forEach(([sel, type])=>{
+      const p = chance[sel], o = price[sel];
+      // Solid legs only: both our model and Bet365 give it at least 40%.
+      if(p==null || !(o>1) || fair[sel]==null || Math.min(p, fair[sel]) < ACCA_MIN_LEG) return;
+      out.push({label:`${name[sel]} (model)`, prob:+(+p).toFixed(1), bet365Prob:+fair[sel].toFixed(1), sel, src:'model', matchId:m.id, type, bookOdds:o, fixture:`${m.home} vs ${m.away}`});
+    });
+  });
+  return out;
 }
-
-function partitionedPools(){
-  // One candidate per match, sorted shortest-odds first, then split round-robin into
-  // three groups so each tier gets a mix of safe and risky legs — and, critically,
-  // no match ever appears in more than one of the three generated slips.
-  const pool = matches.map(bestPickForMatch).filter(c=>c.bookOdds!=null);
-  pool.sort((a,b)=> a.bookOdds - b.bookOdds);
-  const groups = [[],[],[]];
-  pool.forEach((c,i)=> groups[i%3].push(c));
-  return groups;
-}
-
-function buildTargetSlip(candidatePool, targetDecimal){
-  const legs = [];
-  let cumulative = 1;
-  let prevCumulative = 1;
-  for(const c of candidatePool){
-    prevCumulative = cumulative;
-    cumulative *= c.bookOdds;
-    legs.push(c);
-    if(cumulative >= targetDecimal){
-      const overshoot = Math.abs(cumulative - targetDecimal);
-      const undershoot = Math.abs(prevCumulative - targetDecimal);
-      if(undershoot < overshoot && legs.length > 1){
-        legs.pop();
-        cumulative = prevCumulative;
+function buildAcca(targetDecimal){
+  const cands = accaCandidates();
+  const byMatch = new Map();
+  cands.forEach(c=>{ if(!byMatch.has(c.matchId)) byMatch.set(c.matchId, []); byMatch.get(c.matchId).push(c); });
+  const STEP = 0.02, lo = Math.log(targetDecimal*0.9), hi = Math.log(targetDecimal*1.15), N = Math.ceil(hi/STEP)+1;
+  // best[b] = {lp: sum log chance, legs} for total log-odds in bin b
+  let best = new Array(N).fill(null); best[0] = {lp:0, legs:[], lo:0};
+  for(const legs of byMatch.values()){
+    const next = best.slice();
+    best.forEach((st, b)=>{
+      if(!st) return;
+      for(const c of legs){
+        const lo2 = st.lo + Math.log(c.bookOdds), nb = Math.round(lo2/STEP);
+        if(nb >= N) continue;
+        const lp = st.lp + Math.log(Math.min(c.prob, c.bet365Prob)/100);
+        if(!next[nb] || lp > next[nb].lp) next[nb] = {lp, legs:st.legs.concat([c]), lo:lo2};
       }
-      break;
-    }
+    });
+    best = next;
   }
-  return {legs, achieved:cumulative};
+  let pick = null;
+  best.forEach(st=>{ if(st && st.legs.length && st.lo >= lo && st.lo <= hi && (!pick || st.lp > pick.lp)) pick = st; });
+  return pick ? {legs:pick.legs, odds:Math.exp(pick.lo), games:byMatch.size} : {legs:[], odds:0, games:byMatch.size};
 }
-
-function generateTargetSlip(targetDecimal, targetLabel, groupIndex){
-  if(slip.length && !confirm(`This replaces the current slip with a ~${targetLabel} accumulator, using a set of games kept separate from the other two tiers. Continue?`)) return;
-  const groups = partitionedPools();
-  const result = buildTargetSlip(groups[groupIndex], targetDecimal);
-  slip = result.legs;
+function generateTargetSlip(targetDecimal){
+  const label = fractionApprox(targetDecimal);
+  const r = buildAcca(targetDecimal);
+  if(!r.legs.length){
+    alert(r.games ? `Couldn't make about ${label} from the ${r.games} upcoming games with Bet365 prices.` : 'No upcoming games with Bet365 prices on file right now.');
+    return;
+  }
+  if(slip.length && !confirm(`Replace your current slip with a ${r.legs.length}-leg acca at about ${label}?`)) return;
+  slip = r.legs;
   persistSlip();
   renderSlip();
   openSlip();
 }
-
-document.getElementById('slip5').addEventListener('click', ()=>generateTargetSlip(6.0, '5/1', 0));
-document.getElementById('slip10').addEventListener('click', ()=>generateTargetSlip(11.0, '10/1', 1));
-document.getElementById('slip20').addEventListener('click', ()=>generateTargetSlip(21.0, '20/1', 2));
+document.querySelectorAll('.target-btns button[data-target]').forEach(b=>
+  b.addEventListener('click', ()=>generateTargetSlip(+b.getAttribute('data-target'))));
 
 document.getElementById('sortMode').addEventListener('change', e=>{
   sortMode = e.target.value;
@@ -2435,17 +2446,26 @@ function removeLeg(idx){
   renderSlip();
 }
 
+// Legs on games that have been played (or are missing from this round) drop out of
+// the slip; saved accas keep theirs for grading.
+function pruneSlip(){
+  const before = slip.length;
+  slip = slip.filter(l=>{ const m = matches.find(x=>x.id===l.matchId); return m && !isFinished(m); });
+  if(slip.length !== before) persistSlip();
+  return before - slip.length;
+}
 function renderSlip(){
+  const pruned = pruneSlip();
   document.getElementById('slipCount').textContent = slip.length;
   document.getElementById('slipPreview').textContent = slip.length===0 ? 'Tap to build your acca' : `${slip.length} leg${slip.length!==1?'s':''} added`;
 
   const legsDiv = document.getElementById('slipLegs');
   if(slip.length===0){
-    legsDiv.innerHTML = '<div class="slip-empty">No legs yet. Add a Win, BTTS or Over/Under pick from any fixture above.</div>';
+    legsDiv.innerHTML = `<div class="slip-empty">${pruned ? `${pruned} leg${pruned>1?'s':''} on games already played removed. ` : ''}No legs yet. Add a Win, BTTS or Over/Under pick from any fixture above, or build an acca at a target price.</div>`;
   } else {
     legsDiv.innerHTML = slip.map((l,i)=>`
       <div class="slip-leg">
-        <span>${escapeHTML(l.label)} <span class="leg-prob">(${l.prob.toFixed ? l.prob.toFixed(1) : l.prob}%)</span></span>
+        <span>${escapeHTML(l.label)} <span class="leg-prob">${legPrice(l) ? `Bet365 ${fractionApprox(legPrice(l))} · ` : ''}model ${l.prob.toFixed ? l.prob.toFixed(1) : l.prob}%</span></span>
         <button class="x" data-idx="${i}">&times;</button>
       </div>
     `).join('');
@@ -2470,6 +2490,7 @@ function renderSlip(){
       ${sc.sameGame && Math.abs(sc.independent-sc.joint)>0.0005 ? `<div class="slip-summary-row"><span>Multiplying the legs separately would say</span><span>${(sc.independent*100).toFixed(1)}%</span></div>` : ''}
       <div class="slip-summary-row"><span>Fair odds (no margin)</span><span>${fractionApprox(fairOdds)}</span></div>
       ${bet365 ? `<div class="slip-summary-row big"><span>Bet365 prices multiplied</span><span>${fractionApprox(bet365)}</span></div>
+        <div class="slip-summary-row"><span>Bet365's chance (its prices, margin removed)</span><span>${slip.every(l=>l.bet365Prob!=null) ? (slip.reduce((a,l)=>a*l.bet365Prob/100,1)*100).toFixed(1)+'%' : '—'}</span></div>
         <div class="slip-summary-row"><span>Edge if the model is right</span><span>${((sc.joint*bet365-1)*100).toFixed(1)}%</span></div>
         <div class="slip-empty" style="padding:6px 0 0;">Bookmakers price same-game combinations differently from multiplying singles, and the backtest found the model's edges lost money, so treat this as a check, not a reason to bet.</div>`
       : `<div class="slip-summary-row big"><span>Bookmaker-style odds (estimated margin)</span><span>${fractionApprox(bookCombined)}</span></div>`}
