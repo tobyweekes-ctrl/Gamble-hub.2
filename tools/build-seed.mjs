@@ -129,8 +129,6 @@ function lineupText(L, applied) {
     (applied ? ' Lineup effects measured in the backtest are applied to the model.' : '');
 }
 
-const seasonPath = path.join(root, 'data/model/season.json');
-const seasonSim = existsSync(seasonPath) ? JSON.parse(readFileSync(seasonPath, 'utf8')) : {};
 
 const seen = new Set();
 const fixtures = round.fixtures.map(f => {
@@ -207,10 +205,6 @@ const SEED_RESULTS = ${JSON.stringify(seedResults)};
 
 // Model settings and backtest summary from tools/model/ (filled in by the build).
 const MODEL_INFO = ${JSON.stringify(model.info)};
-
-// Season simulator (tools/model/season-sim.mjs): the rest of each league season played
-// many times with our model. Empty when it hasn't been run.
-const SEASON_SIM = ${JSON.stringify(seasonSim)};
 
 const DATA_UPDATED = ${JSON.stringify(round.dataUpdated)};
 const SEED_VERSION = ${JSON.stringify(round.seedVersion + '@' + (round.updateTag || 'weekly') + ' build ' + new Date(now).toISOString().slice(0, 16))};

@@ -40,7 +40,6 @@ The predictions come from **our own model** (`tools/model/`), which is fitted on
 
    It prints any gaps (a missing price or table). Fill a gap by hand only from a named source, and never estimate. Lineups are not known on Friday morning; the lineup-time runs add them.
 6. **Build and check:**
-   - `node tools/model/season-sim.mjs` plays out the rest of each league season 10,000 times with the model, for the site's season simulator. It takes about 30 seconds, and any "warning" means a team name needs adding to `TEAM_ALIASES`.
    - `node tools/build-seed.mjs data/rounds/<seedVersion>.json`. This fits the model to every result before the round and stores its numbers on each fixture. Any "model:" warning, such as a team name not found, must be fixed in `TEAM_ALIASES` in `tools/model/data.mjs`.
    - `node tools/verify.mjs --browser` must pass. It checks the copy is identical, the script compiles, it runs in a Node vm, and the page renders in Chromium with no errors.
 7. **Publish.** Commit on a new branch `claude/weekly-YYYY-MM-DD`, push, open a pull request into `main`, and merge it. GitHub Pages serves `main`. `verify-shot.png` is ignored by git. On 21 Oct 2026 the owner asked for weekly updates to go onto the website automatically. So if the session has no GitHub pull-request tools, merge the branch into `main` locally and push `main`, but only after `tools/verify.mjs --browser` has passed.
@@ -63,7 +62,7 @@ Separate scheduled sessions run at Fri 19:00, Sat 11:20, 14:00 and 17:00, and Su
    - confirmed XIs from ESPN, naming each side's missing regulars and any back-up goalkeeper;
    - fresh Bet365 prices for games not yet started.
 
-   It then reruns the season simulator and rebuilds the site under the same round, tagged with the time, so visitors keep their draft slip.
+   It then rebuilds the site under the same round, tagged with the time, so visitors keep their draft slip.
 3. `node tools/verify.mjs --browser`, then publish as in step 7, on a branch named `claude/lineups-YYYY-MM-DD-HHMM`.
 4. Report which fixtures got lineups and which regulars are missing. Also report the top of the mispricing list now that prices reflect team news.
 

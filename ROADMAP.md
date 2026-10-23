@@ -39,9 +39,9 @@ For lineups, the share of regulars starting and a back-up goalkeeper were both m
 
 **Simulations (added 22 Oct):**
 
-- **Season simulator:** 10,000 seasons per league, with team-strength uncertainty. The size of that uncertainty is a judgement (sd 0.08), not fitted. Next step: backtest the simulator's top-4 and relegation chances from past mid-season points.
+- **Season simulator (removed 23 Oct):** taken off the site at the owner's request.
 - **Per-fixture breakdown:** "played 100 times" margins and totals, from the calibrated score grid.
-- **Bet slip:** legs from the same game are priced together from that grid, instead of multiplied.
+- **Bet slip:** legs from the same game are priced together from that grid, instead of multiplied. The automatic slip generator was removed on 23 Oct at the owner's request; slips are built by hand.
 
 **Player markets (added 22 Oct):**
 
