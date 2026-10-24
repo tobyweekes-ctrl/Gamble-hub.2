@@ -550,5 +550,53 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261024-asto-manc": {
+  "kickoff": "2026-10-24T12:30:00+01:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-char-norw": {
+  "kickoff": "2026-10-24T12:30:00+01:00",
+  "score": [
+   1,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-port-mill": {
+  "kickoff": "2026-10-24T12:30:00+01:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-shef-derb": {
+  "kickoff": "2026-10-24T12:30:00+01:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
