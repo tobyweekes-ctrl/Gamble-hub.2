@@ -526,5 +526,29 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261023-ipsw-nott": {
+  "kickoff": "2026-10-23T20:00:00+01:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261023-bolt-midd": {
+  "kickoff": "2026-10-23T20:00:00+01:00",
+  "score": [
+   1,
+   5
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
