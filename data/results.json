@@ -598,5 +598,137 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261024-arse-ever": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261024-cove-fulh": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-blac-wrex": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-card-birm": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-linc-burn": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   4,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-pres-west": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-quee-swan": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   5,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-stok-bris": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   0,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-west-sout": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   2,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261024-wolv-watf": {
+  "kickoff": "2026-10-24T15:00:00+01:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261024-napo-roma": {
+  "kickoff": "2026-10-24T17:00:00+01:00",
+  "score": [
+   3,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }

@@ -246,7 +246,10 @@
    "gfA": 1.296,
    "gaA": 1.225
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261024-cove-fulh",
@@ -279,7 +282,10 @@
    "gfA": 1.225,
    "gaA": 1.439
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-blac-wrex",
@@ -312,7 +318,10 @@
    "gfA": 1.402,
    "gaA": 1.447
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-card-birm",
@@ -345,7 +354,10 @@
    "gfA": 1.629,
    "gaA": 1.22
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-linc-burn",
@@ -378,7 +390,10 @@
    "gfA": 1.447,
    "gaA": 1.674
   },
-  "result": null
+  "result": {
+   "home": 4,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-pres-west",
@@ -411,7 +426,10 @@
    "gfA": 1.402,
    "gaA": 1.265
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-quee-swan",
@@ -444,7 +462,10 @@
    "gfA": 1.447,
    "gaA": 1.083
   },
-  "result": null
+  "result": {
+   "home": 5,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-stok-bris",
@@ -477,7 +498,10 @@
    "gfA": 1.265,
    "gaA": 1.402
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-west-sout",
@@ -510,7 +534,10 @@
    "gfA": 1.674,
    "gaA": 1.174
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 3
+  }
  },
  {
   "id": "ch-20261024-wolv-watf",
@@ -543,7 +570,10 @@
    "gfA": 1.174,
    "gaA": 1.583
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261024-napo-roma",
@@ -576,7 +606,10 @@
    "gfA": 1.882,
    "gaA": 0.954
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 3
+  }
  },
  {
   "id": "pl-20261024-chel-tott",
@@ -1501,7 +1534,10 @@
    "gfA": 1.296,
    "gaA": 1.225
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261024-cove-fulh",
@@ -1541,7 +1577,10 @@
    "gfA": 1.225,
    "gaA": 1.439
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-blac-wrex",
@@ -1581,7 +1620,10 @@
    "gfA": 1.402,
    "gaA": 1.447
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-card-birm",
@@ -1621,7 +1663,10 @@
    "gfA": 1.629,
    "gaA": 1.22
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-linc-burn",
@@ -1661,7 +1706,10 @@
    "gfA": 1.447,
    "gaA": 1.674
   },
-  "result": null
+  "result": {
+   "home": 4,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-pres-west",
@@ -1701,7 +1749,10 @@
    "gfA": 1.402,
    "gaA": 1.265
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-quee-swan",
@@ -1741,7 +1792,10 @@
    "gfA": 1.447,
    "gaA": 1.083
   },
-  "result": null
+  "result": {
+   "home": 5,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-stok-bris",
@@ -1781,7 +1835,10 @@
    "gfA": 1.265,
    "gaA": 1.402
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-west-sout",
@@ -1821,7 +1878,10 @@
    "gfA": 1.674,
    "gaA": 1.174
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 3
+  }
  },
  {
   "id": "ch-20261024-wolv-watf",
@@ -1861,7 +1921,10 @@
    "gfA": 1.174,
    "gaA": 1.583
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261024-napo-roma",
@@ -1901,7 +1964,10 @@
    "gfA": 1.882,
    "gaA": 0.954
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 3
+  }
  },
  {
   "id": "pl-20261024-chel-tott",
@@ -3008,7 +3074,10 @@
    "gfA": 1.296,
    "gaA": 1.225
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261024-cove-fulh",
@@ -3055,7 +3124,10 @@
    "gfA": 1.225,
    "gaA": 1.439
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-blac-wrex",
@@ -3102,7 +3174,10 @@
    "gfA": 1.402,
    "gaA": 1.447
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-card-birm",
@@ -3149,7 +3224,10 @@
    "gfA": 1.629,
    "gaA": 1.22
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-linc-burn",
@@ -3196,7 +3274,10 @@
    "gfA": 1.447,
    "gaA": 1.674
   },
-  "result": null
+  "result": {
+   "home": 4,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-pres-west",
@@ -3243,7 +3324,10 @@
    "gfA": 1.402,
    "gaA": 1.265
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-quee-swan",
@@ -3290,7 +3374,10 @@
    "gfA": 1.447,
    "gaA": 1.083
   },
-  "result": null
+  "result": {
+   "home": 5,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-stok-bris",
@@ -3337,7 +3424,10 @@
    "gfA": 1.265,
    "gaA": 1.402
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-west-sout",
@@ -3384,7 +3474,10 @@
    "gfA": 1.674,
    "gaA": 1.174
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 3
+  }
  },
  {
   "id": "ch-20261024-wolv-watf",
@@ -3431,7 +3524,10 @@
    "gfA": 1.174,
    "gaA": 1.583
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261024-napo-roma",
@@ -3478,7 +3574,10 @@
    "gfA": 1.882,
    "gaA": 0.954
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 3
+  }
  },
  {
   "id": "pl-20261024-chel-tott",
@@ -6103,7 +6202,10 @@
    "gfA": 1.296,
    "gaA": 1.225
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261024-cove-fulh",
@@ -6150,7 +6252,10 @@
    "gfA": 1.225,
    "gaA": 1.439
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-blac-wrex",
@@ -6197,7 +6302,10 @@
    "gfA": 1.402,
    "gaA": 1.447
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-card-birm",
@@ -6244,7 +6352,10 @@
    "gfA": 1.629,
    "gaA": 1.22
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-linc-burn",
@@ -6291,7 +6402,10 @@
    "gfA": 1.447,
    "gaA": 1.674
   },
-  "result": null
+  "result": {
+   "home": 4,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-pres-west",
@@ -6338,7 +6452,10 @@
    "gfA": 1.402,
    "gaA": 1.265
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261024-quee-swan",
@@ -6385,7 +6502,10 @@
    "gfA": 1.447,
    "gaA": 1.083
   },
-  "result": null
+  "result": {
+   "home": 5,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-stok-bris",
@@ -6432,7 +6552,10 @@
    "gfA": 1.265,
    "gaA": 1.402
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261024-west-sout",
@@ -6479,7 +6602,10 @@
    "gfA": 1.674,
    "gaA": 1.174
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 3
+  }
  },
  {
   "id": "ch-20261024-wolv-watf",
@@ -6526,7 +6652,10 @@
    "gfA": 1.174,
    "gaA": 1.583
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261024-napo-roma",
@@ -6573,7 +6702,10 @@
    "gfA": 1.882,
    "gaA": 0.954
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 3
+  }
  },
  {
   "id": "pl-20261024-chel-tott",
@@ -6768,9 +6900,9 @@
   "league": "Serie A",
   "fixture": "Inter Milan vs Fiorentina",
   "kickoff": "2026-10-25T11:30:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 70,
    "d": 18,
@@ -6815,9 +6947,9 @@
   "league": "Premier League",
   "fixture": "Crystal Palace vs Newcastle United",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 33,
    "d": 26,
@@ -6862,9 +6994,9 @@
   "league": "Premier League",
   "fixture": "Hull City vs Brentford",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 20,
    "d": 25,
@@ -6909,9 +7041,9 @@
   "league": "Premier League",
   "fixture": "Liverpool vs Brighton & Hove Albion",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 45,
    "d": 25,
@@ -6956,9 +7088,9 @@
   "league": "Premier League",
   "fixture": "Manchester United vs Bournemouth",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 43,
    "d": 26,
@@ -7003,9 +7135,9 @@
   "league": "Ligue 1",
   "fixture": "Monaco vs Lille",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 46,
    "d": 28,
@@ -7050,9 +7182,9 @@
   "league": "Bundesliga",
   "fixture": "Hoffenheim vs Bayer 04 Leverkusen",
   "kickoff": "2026-10-25T14:30:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 33,
    "d": 25,
@@ -7097,9 +7229,9 @@
   "league": "Premier League",
   "fixture": "Sunderland vs Leeds United",
   "kickoff": "2026-10-25T16:30:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 32,
    "d": 30,
@@ -7144,9 +7276,9 @@
   "league": "Bundesliga",
   "fixture": "Freiburg vs Bayern Munich",
   "kickoff": "2026-10-25T16:30:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 15,
    "d": 16,
@@ -7191,9 +7323,9 @@
   "league": "Serie A",
   "fixture": "Udinese vs AC Milan",
   "kickoff": "2026-10-25T19:45:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 20,
    "d": 26,
@@ -7238,9 +7370,9 @@
   "league": "Ligue 1",
   "fixture": "Paris Saint-Germain vs Olympique Lyonnais",
   "kickoff": "2026-10-25T19:45:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 65,
    "d": 20,
@@ -7285,9 +7417,9 @@
   "league": "Serie A",
   "fixture": "Sassuolo vs Lazio",
   "kickoff": "2026-10-27T17:30:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 32,
    "d": 28,
@@ -7332,9 +7464,9 @@
   "league": "Serie A",
   "fixture": "Roma vs Cagliari",
   "kickoff": "2026-10-27T19:45:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 70,
    "d": 20,
@@ -7379,9 +7511,9 @@
   "league": "Serie A",
   "fixture": "AC Milan vs Bologna",
   "kickoff": "2026-10-28T17:30:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 58,
    "d": 25,
@@ -7426,9 +7558,9 @@
   "league": "Serie A",
   "fixture": "Venezia vs Inter Milan",
   "kickoff": "2026-10-28T17:30:00+00:00",
-  "loggedAt": "2026-10-24T16:09:31.712Z",
+  "loggedAt": "2026-10-24T18:45:34.548Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T16:09",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
   "market": {
    "h": 11,
    "d": 19,
