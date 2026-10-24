@@ -642,7 +642,10 @@
    "gfA": 1.154,
    "gaA": 1.439
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "bl-20261024-boru-eint",
@@ -675,7 +678,10 @@
    "gfA": 1.755,
    "gaA": 2.255
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261024-lazi-parm",
@@ -2007,7 +2013,10 @@
    "gfA": 1.154,
    "gaA": 1.439
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "bl-20261024-boru-eint",
@@ -2047,7 +2056,10 @@
    "gfA": 1.755,
    "gaA": 2.255
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261024-lazi-parm",
@@ -3624,7 +3636,10 @@
    "gfA": 1.154,
    "gaA": 1.439
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "bl-20261024-boru-eint",
@@ -3671,7 +3686,10 @@
    "gfA": 1.755,
    "gaA": 2.255
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261024-lazi-parm",
@@ -6752,7 +6770,10 @@
    "gfA": 1.154,
    "gaA": 1.439
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "bl-20261024-boru-eint",
@@ -6799,7 +6820,10 @@
    "gfA": 1.755,
    "gaA": 2.255
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261024-lazi-parm",
@@ -6900,9 +6924,9 @@
   "league": "Serie A",
   "fixture": "Inter Milan vs Fiorentina",
   "kickoff": "2026-10-25T11:30:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 70,
    "d": 18,
@@ -6947,9 +6971,9 @@
   "league": "Premier League",
   "fixture": "Crystal Palace vs Newcastle United",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 33,
    "d": 26,
@@ -6994,9 +7018,9 @@
   "league": "Premier League",
   "fixture": "Hull City vs Brentford",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 20,
    "d": 25,
@@ -7041,9 +7065,9 @@
   "league": "Premier League",
   "fixture": "Liverpool vs Brighton & Hove Albion",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 45,
    "d": 25,
@@ -7088,9 +7112,9 @@
   "league": "Premier League",
   "fixture": "Manchester United vs Bournemouth",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 43,
    "d": 26,
@@ -7135,9 +7159,9 @@
   "league": "Ligue 1",
   "fixture": "Monaco vs Lille",
   "kickoff": "2026-10-25T14:00:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 46,
    "d": 28,
@@ -7182,9 +7206,9 @@
   "league": "Bundesliga",
   "fixture": "Hoffenheim vs Bayer 04 Leverkusen",
   "kickoff": "2026-10-25T14:30:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 33,
    "d": 25,
@@ -7229,9 +7253,9 @@
   "league": "Premier League",
   "fixture": "Sunderland vs Leeds United",
   "kickoff": "2026-10-25T16:30:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 32,
    "d": 30,
@@ -7276,9 +7300,9 @@
   "league": "Bundesliga",
   "fixture": "Freiburg vs Bayern Munich",
   "kickoff": "2026-10-25T16:30:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 15,
    "d": 16,
@@ -7323,9 +7347,9 @@
   "league": "Serie A",
   "fixture": "Udinese vs AC Milan",
   "kickoff": "2026-10-25T19:45:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 20,
    "d": 26,
@@ -7370,9 +7394,9 @@
   "league": "Ligue 1",
   "fixture": "Paris Saint-Germain vs Olympique Lyonnais",
   "kickoff": "2026-10-25T19:45:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 65,
    "d": 20,
@@ -7417,9 +7441,9 @@
   "league": "Serie A",
   "fixture": "Sassuolo vs Lazio",
   "kickoff": "2026-10-27T17:30:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 32,
    "d": 28,
@@ -7464,9 +7488,9 @@
   "league": "Serie A",
   "fixture": "Roma vs Cagliari",
   "kickoff": "2026-10-27T19:45:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 70,
    "d": 20,
@@ -7511,9 +7535,9 @@
   "league": "Serie A",
   "fixture": "AC Milan vs Bologna",
   "kickoff": "2026-10-28T17:30:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 58,
    "d": 25,
@@ -7558,9 +7582,9 @@
   "league": "Serie A",
   "fixture": "Venezia vs Inter Milan",
   "kickoff": "2026-10-28T17:30:00+00:00",
-  "loggedAt": "2026-10-24T18:45:34.548Z",
+  "loggedAt": "2026-10-24T19:01:23.868Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T18:45",
+  "seedVersion": "2026-10-21-weekly@Sat 24 Oct 17:08 build 2026-10-24T19:01",
   "market": {
    "h": 11,
    "d": 19,

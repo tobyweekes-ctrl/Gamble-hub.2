@@ -121,6 +121,19 @@ Pipeline check: the lineup-time update was run end to end from a fresh clone (fe
 
 Log entries from this version are under `independent-v4.2-2026-10-23`.
 
+## Weekend 23-24 Oct 2026 (v4.2, 19 games, graded 24 Oct)
+
+- **Win/draw/loss:** log-loss 1.035 v Bet365 1.029; Brier 0.623 v 0.619. Favourite won 9/19 (Bet365's 8/19).
+- **Over 2.5 called right:** 10/19 (Bet365 8/19). **BTTS called right:** 11/19 (Bet365 13/19).
+- **Value bets (edge 5%+ v Bet365):** 1X2 1 of 8 won, -4.40 units; goals/BTTS 5 of 10 won, +2.83 units. In the 2,300-game backtest, goals disagreements lost about 5%, so this is not evidence of an edge.
+- **Lineups:** on the 16 games with confirmed sheets, applying the lineup adjustment would have been worse (log-loss 1.038 v 1.026 without). Lineups stay off the numbers.
+- **Player props (Unibet, 1,708 prices, 18 games):**
+  - The model expected 23.4% to land, and 25.2% did. Unibet's prices implied 37.5%.
+  - Value picks (5%+): 30 bets, +1.27 units. By market: shots 5 of 10 won, +7.17; shots on target 5 of 20 won, -5.90 (about 6.5 expected).
+  - Shots are under-predicted in every probability band (for example, 64% predicted, 78% landed). Shots on target, fouls and cards are calibrated. To be checked on past seasons before any change.
+- **Grader fix:** unused substitutes are no longer graded as losses. Unibet voids those bets.
+- **Source conflict:** ESPN records Mikel Merino (Arsenal v Everton) with 0 fouls, but the owner reports the bookmaker settled his 1+ foul as a winner. Bookmakers settle on Opta data, so some foul gradings may differ.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.

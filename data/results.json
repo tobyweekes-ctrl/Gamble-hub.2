@@ -730,5 +730,29 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261024-chel-tott": {
+  "kickoff": "2026-10-24T17:30:00+01:00",
+  "score": [
+   0,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261024-boru-eint": {
+  "kickoff": "2026-10-24T17:30:00+01:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
