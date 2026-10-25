@@ -778,5 +778,16 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "sa-20261025-inte-fior": {
+  "kickoff": "2026-10-25T11:30:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures"
+  ],
+  "note": "single source"
  }
 }
