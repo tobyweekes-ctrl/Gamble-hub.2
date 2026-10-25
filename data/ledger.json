@@ -786,7 +786,10 @@
    "gfA": 1.311,
    "gaA": 1.954
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261025-crys-newc",
@@ -2191,7 +2194,10 @@
    "gfA": 1.311,
    "gaA": 1.954
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261025-crys-newc",
@@ -3848,7 +3854,10 @@
    "gfA": 1.311,
    "gaA": 1.954
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261025-crys-newc",
@@ -6988,7 +6997,10 @@
    "gfA": 1.311,
    "gaA": 1.954
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261025-crys-newc",
@@ -7277,15 +7289,15 @@
   "league": "Premier League",
   "fixture": "Sunderland vs Leeds United",
   "kickoff": "2026-10-25T16:30:00+00:00",
-  "loggedAt": "2026-10-25T13:10:07.935Z",
+  "loggedAt": "2026-10-25T15:25:00.124Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 13:09 build 2026-10-25T13:10",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
   "market": {
-   "h": 33,
+   "h": 32,
    "d": 31,
-   "a": 36
+   "a": 37
   },
-  "btts": 52,
+  "btts": 50,
   "ou25": 43,
   "goalModel": {
    "h": 29.1,
@@ -7302,12 +7314,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 13:09",
-   "h": 2.88,
+   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 15:24",
+   "h": 3,
    "d": 3.1,
-   "a": 2.6,
-   "bttsY": 1.8,
-   "bttsN": 1.95,
+   "a": 2.55,
+   "bttsY": 1.91,
+   "bttsN": 1.91,
    "o25": 2.2,
    "u25": 1.67
   },
@@ -7324,9 +7336,9 @@
   "league": "Bundesliga",
   "fixture": "Freiburg vs Bayern Munich",
   "kickoff": "2026-10-25T16:30:00+00:00",
-  "loggedAt": "2026-10-25T13:10:07.935Z",
+  "loggedAt": "2026-10-25T15:25:00.124Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 13:09 build 2026-10-25T13:10",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
   "market": {
    "h": 18,
    "d": 19,
@@ -7349,7 +7361,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 13:09",
+   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 15:24",
    "h": 5.25,
    "d": 5,
    "a": 1.48,
@@ -7371,9 +7383,9 @@
   "league": "Serie A",
   "fixture": "Udinese vs AC Milan",
   "kickoff": "2026-10-25T19:45:00+00:00",
-  "loggedAt": "2026-10-25T13:10:07.935Z",
+  "loggedAt": "2026-10-25T15:25:00.124Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 13:09 build 2026-10-25T13:10",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
   "market": {
    "h": 21,
    "d": 27,
@@ -7396,7 +7408,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 13:09",
+   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 15:24",
    "h": 4.5,
    "d": 3.5,
    "a": 1.8,
@@ -7418,9 +7430,9 @@
   "league": "Ligue 1",
   "fixture": "Paris Saint-Germain vs Olympique Lyonnais",
   "kickoff": "2026-10-25T19:45:00+00:00",
-  "loggedAt": "2026-10-25T13:10:07.935Z",
+  "loggedAt": "2026-10-25T15:25:00.124Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 13:09 build 2026-10-25T13:10",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
   "market": {
    "h": 68,
    "d": 17,
@@ -7443,7 +7455,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 13:09",
+   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 15:24",
    "h": 1.4,
    "d": 5.5,
    "a": 6.25,
@@ -7465,9 +7477,9 @@
   "league": "Serie A",
   "fixture": "Sassuolo vs Lazio",
   "kickoff": "2026-10-27T17:30:00+00:00",
-  "loggedAt": "2026-10-25T13:10:07.935Z",
+  "loggedAt": "2026-10-25T15:25:00.124Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 13:09 build 2026-10-25T13:10",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
   "market": {
    "h": 30,
    "d": 28,
@@ -7490,7 +7502,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 13:09",
+   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 15:24",
    "h": 3.1,
    "d": 3.4,
    "a": 2.2,
@@ -7512,9 +7524,9 @@
   "league": "Serie A",
   "fixture": "Roma vs Cagliari",
   "kickoff": "2026-10-27T19:45:00+00:00",
-  "loggedAt": "2026-10-25T13:10:07.935Z",
+  "loggedAt": "2026-10-25T15:25:00.124Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 13:09 build 2026-10-25T13:10",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
   "market": {
    "h": 70,
    "d": 20,
@@ -7537,7 +7549,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 13:09",
+   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 15:24",
    "h": 1.36,
    "d": 4.75,
    "a": 9,
@@ -7559,9 +7571,9 @@
   "league": "Serie A",
   "fixture": "AC Milan vs Bologna",
   "kickoff": "2026-10-28T17:30:00+00:00",
-  "loggedAt": "2026-10-25T13:10:07.935Z",
+  "loggedAt": "2026-10-25T15:25:00.124Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 13:09 build 2026-10-25T13:10",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
   "market": {
    "h": 58,
    "d": 25,
@@ -7584,7 +7596,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 13:09",
+   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 15:24",
    "h": 1.62,
    "d": 3.8,
    "a": 5.5,
@@ -7606,9 +7618,9 @@
   "league": "Serie A",
   "fixture": "Venezia vs Inter Milan",
   "kickoff": "2026-10-28T17:30:00+00:00",
-  "loggedAt": "2026-10-25T13:10:07.935Z",
+  "loggedAt": "2026-10-25T15:25:00.124Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 13:09 build 2026-10-25T13:10",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
   "market": {
    "h": 11,
    "d": 19,
@@ -7631,7 +7643,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 13:09",
+   "source": "kickoff.co.uk match page (Bet365), Sun 25 Oct 15:24",
    "h": 8.5,
    "d": 5,
    "a": 1.33,
