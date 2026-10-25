@@ -754,5 +754,29 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "sa-20261024-lazi-parm": {
+  "kickoff": "2026-10-24T19:45:00+01:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261024-lens-pari": {
+  "kickoff": "2026-10-24T19:45:00+01:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
