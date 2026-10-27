@@ -56,7 +56,7 @@ const STOP = new Set(['fc', 'afc', 'cf', 'sc', 'fk', 'sk', 'if', 'bk', 'ac', 'as
 const toks = s => norm(s).split(/[^a-z0-9]+/).filter(w => w.length > 1 && !STOP.has(w));
 // UEFA international names that the word match cannot pair with football-data names.
 const ALIAS = {
-  'ENG:Nottm Forest': "Nott'm Forest", 'ENG:Man City': 'Man City', 'ENG:Man United': 'Man United', 'ENG:Man Utd': 'Man United', 'ENG:Spurs': 'Tottenham',
+  'ENG:Nottm Forest': "Nott'm Forest", 'ENG:Man City': 'Man City', 'ENG:Manchester City': 'Man City', 'ENG:Manchester United': 'Man United', 'ENG:Tottenham Hotspur': 'Tottenham', 'ENG:Nottingham Forest': "Nott'm Forest", 'ENG:Wolverhampton Wanderers': 'Wolves', 'ENG:Man United': 'Man United', 'ENG:Man Utd': 'Man United', 'ENG:Spurs': 'Tottenham',
   'ENG:Wolves': 'Wolves', 'ENG:West Ham': 'West Ham', 'ENG:Newcastle': 'Newcastle',
   'GER:Leverkusen': 'Leverkusen', 'GER:B. Dortmund': 'Dortmund', 'GER:Frankfurt': 'Ein Frankfurt', 'GER:Bayern München': 'Bayern Munich',
   'GER:Mönchengladbach': "M'gladbach", 'GER:Köln': 'FC Koln', 'GER:Leipzig': 'RB Leipzig',

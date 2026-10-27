@@ -176,6 +176,17 @@ Log entries from this version are under `independent-v4.2-2026-10-23`.
 
 **Model more bullish than Bet365 on home favourites.** On the test seasons there were 170 games where our model made the home side favourite at least 3 points above Bet365's margin-free price (example: West Ham v Southampton, 60% v 56%). Model average 63%, Bet365 56%, home side won 49%. When we disagree with the market, the market has usually been closer. That matches the blend weight of 0 fitted on validation.
 
+## League Cup ties added (27 Oct 2026)
+
+League Cup (Carabao Cup) ties are now on the site, predicted by the cross-league model. It rates Premier League, Championship and League One sides together on league form.
+- **Not tested on cup games.** The model doesn't see cup rotation, and data confidence starts LOW. The site doesn't list its gaps with Bet365 as value.
+- **Fleetwood v Arsenal is left out:** Fleetwood have no recent league games in our data (League Two is not covered).
+- **Results are graded on 90 minutes.** A tie that goes to extra time is left out, because ESPN's score then includes extra time. Ties settled on penalties straight after 90 minutes are fine.
+- **Biggest gaps with Bet365 on the first ties:**
+  - Liverpool v Chelsea: model 63% Liverpool, Bet365 44%.
+  - Man City v Brighton: model 69%, Bet365 57%.
+  - These are what you'd expect if Bet365 is pricing in rotation and our model isn't, so they aren't value.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.

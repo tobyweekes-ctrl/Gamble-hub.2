@@ -41,7 +41,7 @@ const RESULTS_DAYS = 28; // how far back SEED_RESULTS reaches for auto-grading i
 
 const LEAGUE_CODES = {
   'Premier League': 'pl', 'Championship': 'ch', 'Champions League': 'ucl', 'Europa League': 'uel', 'Conference League': 'uecl',
-  'Bundesliga': 'bl', 'Serie A': 'sa', 'Ligue 1': 'l1',
+  'Bundesliga': 'bl', 'Serie A': 'sa', 'Ligue 1': 'l1', 'League Cup': 'elc',
 };
 
 function decimal(price) {
