@@ -789,5 +789,126 @@
    "bbc.co.uk scores-fixtures"
   ],
   "note": "single source"
+ },
+ "pl-20261025-crys-newc": {
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "score": [
+   0,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261025-hull-bren": {
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261025-live-brig": {
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261025-manc-bour": {
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "score": [
+   0,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261025-mona-lill": {
+  "kickoff": "2026-10-25T14:00:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261025-hoff-baye": {
+  "kickoff": "2026-10-25T14:30:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261025-sund-leed": {
+  "kickoff": "2026-10-25T16:30:00+00:00",
+  "score": [
+   0,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261025-frei-baye": {
+  "kickoff": "2026-10-25T16:30:00+00:00",
+  "score": [
+   1,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261025-udin-acmi": {
+  "kickoff": "2026-10-25T19:45:00+00:00",
+  "score": [
+   0,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261025-pari-olym": {
+  "kickoff": "2026-10-25T19:45:00+00:00",
+  "playedAt": "2026-10-26T19:30:00.000Z",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": "rescheduled: played 2026-10-26 19:30 UTC"
  }
 }

@@ -37,13 +37,16 @@ for (const e of latest.values()) {
     const p = players.find(x => norm(x.name) === n) || players.find(x => norm(x.name).split(' ').pop() === n.split(' ').pop() && norm(x.name)[0] === n[0]);
     // Did not play (absent, or an unused substitute): Unibet voids these bets.
     if (!p || !(p.start || p.subIn)) continue;
-    if (r.mk === 'yc' && p.rc) { graded.push({ ...r, won: true }); continue; } // "to get a card" includes reds
-    graded.push({ ...r, won: (p[STAT[r.mk]] || 0) >= r.k, started: p.start });
+    const lu = e.lineups === 'confirmed' ? 'confirmed' : 'preLineups';
+    if (r.mk === 'yc' && p.rc) { graded.push({ ...r, lu, won: true }); continue; } // "to get a card" includes reds
+    graded.push({ ...r, lu, won: (p[STAT[r.mk]] || 0) >= r.k, started: p.start });
   }
 }
 const summary = {};
-for (const mk of ['fc', 'sh', 'sot', 'yc', 'rc', 'all']) {
-  const rows = graded.filter(r => mk === 'all' || r.mk === mk);
+// 'confirmed' and 'preLineups': all markets, split by whether the price was logged
+// after the team sheets were out (the site only flags value on confirmed starters).
+for (const mk of ['fc', 'sh', 'sot', 'yc', 'rc', 'all', 'confirmed', 'preLineups']) {
+  const rows = graded.filter(r => mk === 'all' || r.mk === mk || r.lu === mk);
   if (!rows.length) continue;
   const ll = rows.reduce((s, r) => s - Math.log(Math.min(Math.max(r.won ? r.prob : 1 - r.prob, 1e-6), 1)), 0) / rows.length;
   const value = th => { const b = rows.filter(r => r.prob * r.odds - 1 >= th); const ret = b.reduce((s, r) => s + (r.won ? r.odds - 1 : -1), 0); return { bets: b.length, profit: +ret.toFixed(2), roi: b.length ? +(ret / b.length).toFixed(3) : null }; };

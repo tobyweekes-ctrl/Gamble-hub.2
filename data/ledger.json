@@ -822,7 +822,10 @@
    "gfA": 1.439,
    "gaA": 1.725
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "pl-20261025-hull-bren",
@@ -855,7 +858,10 @@
    "gfA": 1.654,
    "gaA": 1.296
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261025-live-brig",
@@ -888,7 +894,10 @@
    "gfA": 2.368,
    "gaA": 1.082
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261025-manc-bour",
@@ -921,7 +930,10 @@
    "gfA": 1.368,
    "gaA": 1.654
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 3
+  }
  },
  {
   "id": "l1-20261025-mona-lill",
@@ -954,7 +966,10 @@
    "gfA": 1.476,
    "gaA": 1.119
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "bl-20261025-hoff-baye",
@@ -987,7 +1002,10 @@
    "gfA": 2.255,
    "gaA": 1.671
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261025-sund-leed",
@@ -1020,7 +1038,10 @@
    "gfA": 1.368,
    "gaA": 1.154
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "bl-20261025-frei-baye",
@@ -1053,7 +1074,10 @@
    "gfA": 2.755,
    "gaA": 1.338
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 3
+  }
  },
  {
   "id": "sa-20261025-udin-acmi",
@@ -1086,7 +1110,10 @@
    "gfA": 1.739,
    "gaA": 1.239
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "l1-20261025-pari-olym",
@@ -1119,7 +1146,10 @@
    "gfA": 1.69,
    "gaA": 1.119
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261027-sass-lazi",
@@ -2237,7 +2267,10 @@
    "gfA": 1.439,
    "gaA": 1.725
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "pl-20261025-hull-bren",
@@ -2277,7 +2310,10 @@
    "gfA": 1.654,
    "gaA": 1.296
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261025-live-brig",
@@ -2317,7 +2353,10 @@
    "gfA": 2.368,
    "gaA": 1.082
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261025-manc-bour",
@@ -2357,7 +2396,10 @@
    "gfA": 1.368,
    "gaA": 1.654
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 3
+  }
  },
  {
   "id": "l1-20261025-mona-lill",
@@ -2397,7 +2439,10 @@
    "gfA": 1.476,
    "gaA": 1.119
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "bl-20261025-hoff-baye",
@@ -2437,7 +2482,10 @@
    "gfA": 2.255,
    "gaA": 1.671
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261025-sund-leed",
@@ -2477,7 +2525,10 @@
    "gfA": 1.368,
    "gaA": 1.154
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "bl-20261025-frei-baye",
@@ -2517,7 +2568,10 @@
    "gfA": 2.755,
    "gaA": 1.338
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 3
+  }
  },
  {
   "id": "sa-20261025-udin-acmi",
@@ -2557,7 +2611,10 @@
    "gfA": 1.739,
    "gaA": 1.239
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "l1-20261025-pari-olym",
@@ -2597,7 +2654,10 @@
    "gfA": 1.69,
    "gaA": 1.119
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261027-sass-lazi",
@@ -3904,7 +3964,10 @@
    "gfA": 1.439,
    "gaA": 1.725
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "pl-20261025-hull-bren",
@@ -3951,7 +4014,10 @@
    "gfA": 1.654,
    "gaA": 1.296
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261025-live-brig",
@@ -3998,7 +4064,10 @@
    "gfA": 2.368,
    "gaA": 1.082
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261025-manc-bour",
@@ -4045,7 +4114,10 @@
    "gfA": 1.368,
    "gaA": 1.654
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 3
+  }
  },
  {
   "id": "l1-20261025-mona-lill",
@@ -4092,7 +4164,10 @@
    "gfA": 1.476,
    "gaA": 1.119
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "bl-20261025-hoff-baye",
@@ -4139,7 +4214,10 @@
    "gfA": 2.255,
    "gaA": 1.671
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261025-sund-leed",
@@ -4186,7 +4264,10 @@
    "gfA": 1.368,
    "gaA": 1.154
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "bl-20261025-frei-baye",
@@ -4233,7 +4314,10 @@
    "gfA": 2.755,
    "gaA": 1.338
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 3
+  }
  },
  {
   "id": "sa-20261025-udin-acmi",
@@ -4280,7 +4364,10 @@
    "gfA": 1.739,
    "gaA": 1.239
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "l1-20261025-pari-olym",
@@ -4327,7 +4414,10 @@
    "gfA": 1.69,
    "gaA": 1.119
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261027-sass-lazi",
@@ -7047,7 +7137,10 @@
    "gfA": 1.439,
    "gaA": 1.725
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "pl-20261025-hull-bren",
@@ -7094,7 +7187,10 @@
    "gfA": 1.654,
    "gaA": 1.296
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261025-live-brig",
@@ -7141,7 +7237,10 @@
    "gfA": 2.368,
    "gaA": 1.082
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261025-manc-bour",
@@ -7188,7 +7287,10 @@
    "gfA": 1.368,
    "gaA": 1.654
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 3
+  }
  },
  {
   "id": "l1-20261025-mona-lill",
@@ -7235,7 +7337,10 @@
    "gfA": 1.476,
    "gaA": 1.119
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "bl-20261025-hoff-baye",
@@ -7282,7 +7387,10 @@
    "gfA": 2.255,
    "gaA": 1.671
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261025-sund-leed",
@@ -7329,7 +7437,10 @@
    "gfA": 1.368,
    "gaA": 1.154
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "bl-20261025-frei-baye",
@@ -7376,7 +7487,10 @@
    "gfA": 2.755,
    "gaA": 1.338
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 3
+  }
  },
  {
   "id": "sa-20261025-udin-acmi",
@@ -7423,7 +7537,10 @@
    "gfA": 1.739,
    "gaA": 1.239
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 2
+  }
  },
  {
   "id": "l1-20261025-pari-olym",
@@ -7470,16 +7587,19 @@
    "gfA": 1.69,
    "gaA": 1.119
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261027-sass-lazi",
   "league": "Serie A",
   "fixture": "Sassuolo vs Lazio",
   "kickoff": "2026-10-27T17:30:00+00:00",
-  "loggedAt": "2026-10-25T15:25:00.124Z",
+  "loggedAt": "2026-10-27T15:09:33.689Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-27T15:09",
   "market": {
    "h": 30,
    "d": 28,
@@ -7524,9 +7644,9 @@
   "league": "Serie A",
   "fixture": "Roma vs Cagliari",
   "kickoff": "2026-10-27T19:45:00+00:00",
-  "loggedAt": "2026-10-25T15:25:00.124Z",
+  "loggedAt": "2026-10-27T15:09:33.689Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-27T15:09",
   "market": {
    "h": 70,
    "d": 20,
@@ -7571,9 +7691,9 @@
   "league": "Serie A",
   "fixture": "AC Milan vs Bologna",
   "kickoff": "2026-10-28T17:30:00+00:00",
-  "loggedAt": "2026-10-25T15:25:00.124Z",
+  "loggedAt": "2026-10-27T15:09:33.689Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-27T15:09",
   "market": {
    "h": 58,
    "d": 25,
@@ -7618,9 +7738,9 @@
   "league": "Serie A",
   "fixture": "Venezia vs Inter Milan",
   "kickoff": "2026-10-28T17:30:00+00:00",
-  "loggedAt": "2026-10-25T15:25:00.124Z",
+  "loggedAt": "2026-10-27T15:09:33.689Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-25T15:25",
+  "seedVersion": "2026-10-21-weekly@Sun 25 Oct 15:24 build 2026-10-27T15:09",
   "market": {
    "h": 11,
    "d": 19,

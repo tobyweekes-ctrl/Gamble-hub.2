@@ -134,6 +134,33 @@ Log entries from this version are under `independent-v4.2-2026-10-23`.
 - **Grader fix:** unused substitutes are no longer graded as losses. Unibet voids those bets.
 - **Source conflict:** ESPN records Mikel Merino (Arsenal v Everton) with 0 fouls, but the owner reports the bookmaker settled his 1+ foul as a winner. Bookmakers settle on Opta data, so some foul gradings may differ.
 
+## Full weekend 23-26 Oct 2026 (v4.2, 32 games, graded 27 Oct)
+
+- **Win/draw/loss:** log-loss 0.956 v Bet365 0.966; Brier 0.568 v 0.575. Favourite won 16/32 (Bet365's 15/32). Ahead of Bet365 this weekend. On 2,313 test games we are behind, so one weekend changes nothing.
+- **Over 2.5 called right:** 17/32 (Bet365 15/32). **BTTS called right:** 16/32 (Bet365 19/32).
+- **Value bets (edge 5%+ v Bet365):**
+  - 1X2: 3 of 15 won, -5.57 units (-37%).
+  - Goals/BTTS: 9 of 18 won, +5.43 units (+30%).
+  - The backtest says both lose over time (1X2 -16%, goals about -5%). No change.
+- **Lineups:** on 22 games with confirmed sheets, the lineup adjustment would have made predictions worse (log-loss 1.062 v 1.053). Lineups stay off the numbers.
+- **Data confidence:** "high" (team sheets confirmed) games were no easier to call than "medium" ones (16 each). Confidence describes the data, not how predictable a game is.
+- **Player props (Unibet, 3,336 prices graded):**
+  - The model's average is close: 24.9% predicted, 24.8% landed. Unibet's prices implied 39.2%.
+  - Value picks (5%+), all: 61 bets, +0.23 units. Shots: 26 bets, +8.33. Shots on target: 33 bets, -6.10, with 8 won against 10.0 expected.
+  - The shots under-prediction seen on Saturday did not hold over the whole weekend (33.3% predicted, 35.0% landed).
+  - **Prices logged before lineups were confirmed:**
+    - value picks 17 bets, -9.26 units (-54%);
+    - players who then came off the bench: 27.8% predicted, 19.1% landed.
+  - **Prices logged on confirmed lineups:** value picks 44 bets, +9.49 units (+22%), 16 won against 15.0 expected.
+- **PSG v Lyon** was moved from Sun 25 to Mon 26 Oct; BBC and ESPN agree it finished 2-0. The fixture keeps its original id so the prediction logged before it still grades.
+
+**Changes made**
+- **Player-price value flags (site):** a price goes green only once both team sheets are out and the player starts. Before that, a gap shows as "wait for lineups". Starters are listed first in the biggest-gaps board.
+- **Prop grading:** `data/props/graded.json` also reports `confirmed` and `preLineups` separately.
+- **Results:** `tools/results.mjs` finds rescheduled league games, up to 7 days either side of the listed date. It takes the result only when BBC and ESPN agree on the date and score.
+- **Team-name matching:** ESPN's short "Lyon" now matches "Olympique Lyonnais".
+- **Model numbers:** unchanged. Nothing this weekend is enough evidence against the backtests.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.

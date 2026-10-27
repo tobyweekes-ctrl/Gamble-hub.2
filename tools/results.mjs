@@ -93,13 +93,37 @@ for (const f of pending) {
   const sources = [];
   if (b) sources.push(['bbc.co.uk scores-fixtures', [b.hg, b.ag]]);
   if (e) sources.push(['ESPN', e]);
-  if (!sources.length) { notFound.push(`${f.home} v ${f.away} (${f.kickoff.slice(0, 10)})`); continue; }
+  if (!sources.length) {
+    // Rescheduled? Look up to 7 days either side on ESPN, and take it only if BBC
+    // has the same match, date and score (PSG v Lyon moved from Sun 25 to Mon 26 Oct 2026).
+    const moved = movedResult(f, t);
+    if (moved) { results[f.id] = moved; added++; console.log(`  moved: ${f.home} v ${f.away} played ${moved.playedAt}`); continue; }
+    notFound.push(`${f.home} v ${f.away} (${f.kickoff.slice(0, 10)})`); continue;
+  }
   if (sources.length === 2 && (sources[0][1][0] !== sources[1][1][0] || sources[0][1][1] !== sources[1][1][1])) {
     conflicts.push(`${f.home} v ${f.away}: BBC ${b.hg}-${b.ag}, ESPN ${e[0]}-${e[1]}`);
     continue;
   }
   results[f.id] = { kickoff: f.kickoff, score: sources[0][1], sources: sources.map(s => s[0]), note: sources.length === 1 ? 'single source' : '' };
   added++;
+}
+function movedResult(f, t) {
+  for (let d = -7; d <= 7; d++) {
+    const day = t + d * 864e5;
+    if (d === 0 || day > Date.now()) continue;
+    const ymd = new Date(day).toISOString().slice(0, 10).replace(/-/g, '');
+    const ev = espnEvents(f.league, ymd).find(x => {
+      const c = x.competitions[0].competitors, h = c.find(y => y.homeAway === 'home'), a = c.find(y => y.homeAway === 'away');
+      return x.status.type.completed && sameTeam(h.team.displayName, f.home) && sameTeam(a.team.displayName, f.away);
+    });
+    if (!ev) continue;
+    const c = ev.competitions[0].competitors, at = Date.parse(ev.date);
+    const e = [Number(c.find(x => x.homeAway === 'home').score), Number(c.find(x => x.homeAway === 'away').score)];
+    const b = bbcFixtures(f.league, at - 12 * 3600e3, at + 12 * 3600e3).find(x => x.hg != null && sameTeam(x.home, f.home) && sameTeam(x.away, f.away));
+    if (!b || b.hg !== e[0] || b.ag !== e[1]) return null;
+    return { kickoff: f.kickoff, playedAt: new Date(at).toISOString(), score: e, sources: ['bbc.co.uk scores-fixtures', 'ESPN'], note: `rescheduled: played ${new Date(at).toISOString().slice(0, 16).replace('T', ' ')} UTC` };
+  }
+  return null;
 }
 writeFileSync(resultsPath, JSON.stringify(results, null, 1) + '\n');
 console.log(`results: ${added} added, ${notFound.length} not found, ${conflicts.length} conflicts`);
