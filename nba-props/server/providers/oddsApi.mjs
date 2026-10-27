@@ -1,13 +1,18 @@
 // The Odds API v4 (https://the-odds-api.com). Lines come from the API only; no bookmaker scraping.
 // Quota: /events is free; /events/{id}/odds costs (#markets x #regions) per call, so we request all
 // prop markets for one game in a single call, only when a player in that game is viewed, and cache it.
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { fetchJson } from '../http.mjs';
 import { config } from '../env.mjs';
 import { teamAbbr } from '../teams.mjs';
 import { STATS, statForMarket } from '../stats.mjs';
 
 const BASE = 'https://api.the-odds-api.com/v4/sports/basketball_nba';
-export const quota = { remaining: null, used: null, lastCost: null };
+// Credits as reported by the API's response headers, saved so the counter survives restarts.
+const QUOTA_FILE = join(config.cacheDir, 'odds-quota.json');
+export const quota = { remaining: null, used: null, lastCost: null, updated: null };
+try { Object.assign(quota, JSON.parse(readFileSync(QUOTA_FILE, 'utf8'))); } catch { /* none saved yet */ }
 
 async function call(path, params = {}) {
   if (!config.oddsKey) throw new Error('ODDS_API_KEY is not set');
@@ -18,6 +23,8 @@ async function call(path, params = {}) {
     quota.remaining = Number(rem);
     quota.used = Number(headers.get('x-requests-used'));
     quota.lastCost = Number(headers.get('x-requests-last'));
+    quota.updated = new Date().toISOString();
+    try { writeFileSync(QUOTA_FILE, JSON.stringify(quota)); } catch { /* cache dir not writable */ }
   }
   return json;
 }

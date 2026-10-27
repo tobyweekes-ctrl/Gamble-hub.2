@@ -17,7 +17,11 @@ const state = { stats: {}, stat: 'pts', player: null };
 async function loadStatus() {
   const s = await api('/api/health');
   const demo = s.statsProvider === 'demo';
-  $('#status').innerHTML = `${demo ? '<span class="demo">DEMO DATA</span> ' : ''}stats <b>${esc(s.statsProvider)}</b> · odds <b>${esc(s.odds)}</b>${s.oddsQuota?.remaining != null ? ` (${s.oddsQuota.remaining} left)` : ''} · inj <b>${esc(s.injuryProvider)}</b> · <b>${esc(s.today)}</b>`;
+  const q = s.oddsQuota || {};
+  const credits = q.remaining != null
+    ? ` · credits <b>${q.used}</b> used / <b class="${q.remaining < 50 ? 'low' : ''}">${q.remaining}</b> left${q.lastCost != null ? ` (last call ${q.lastCost})` : ''}`
+    : s.keys?.oddsApi ? ' · credits <b>–</b>' : '';
+  $('#status').innerHTML = `${demo ? '<span class="demo">DEMO DATA</span> ' : ''}stats <b>${esc(s.statsProvider)}</b> · odds <b>${esc(s.odds)}</b>${credits} · inj <b>${esc(s.injuryProvider)}</b> · <b>${esc(s.today)}</b>`;
 }
 async function loadSlate() {
   try {
@@ -82,6 +86,7 @@ async function route() {
     const [d, lines] = await Promise.all([api(`/api/player/${m[1]}`), api(`/api/player/${m[1]}/lines?stat=${state.stat}`)]);
     state.player = d;
     renderPlayer(d, lines);
+    loadStatus(); // a lines fetch may have spent Odds API credits
   } catch (e) {
     $('#view').innerHTML = `<p class="err">${esc(e.message)}</p>`;
   }
