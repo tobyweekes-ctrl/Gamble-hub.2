@@ -1,0 +1,15 @@
+{
+  "name": "nba-props",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NBA player prop analyser: projections, no-vig edges, verdicts.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server/index.mjs",
+    "dev": "node --watch server/index.mjs",
+    "test": "node --test test/*.test.mjs",
+    "warm": "node scripts/warm-cache.mjs",
+    "backtest": "node scripts/backtest.mjs"
+  }
+}

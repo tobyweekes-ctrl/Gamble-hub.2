@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prop Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">PROP<span>DESK</span></div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search player" autocomplete="off" spellcheck="false" aria-label="Search player" role="combobox" aria-expanded="false" aria-controls="ac">
+    <kbd>/</kbd>
+    <ul id="ac" class="ac" role="listbox" hidden></ul>
+  </div>
+  <div id="status" class="status"></div>
+</header>
+<main id="main">
+  <section id="slate" class="slate"></section>
+  <section id="view"></section>
+</main>
+<footer class="foot">For analysis only. Not betting advice. Gamble responsibly. 18+.</footer>
+<script type="module" src="/app.js"></script>
+</body>
+</html>
