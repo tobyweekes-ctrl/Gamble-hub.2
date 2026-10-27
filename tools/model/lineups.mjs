@@ -160,6 +160,16 @@ export function lineupMultipliers(fh, fa, L) {
   return { h: scored(fh) * conceded(fa), a: scored(fa) * conceded(fh) };
 }
 
+// Heavy rotation (data/model/context.json -> rotation): a side starting fewer of
+// its regulars than the threshold scores x scored and concedes x conceded.
+export function rotationMultipliers(fh, fa, R) {
+  if (!R || !fh || !fa || fh.reg == null || fa.reg == null) return { h: 1, a: 1 };
+  let h = 1, a = 1;
+  if (fh.reg < R.threshold) { h *= R.scored; a *= R.conceded; }
+  if (fa.reg < R.threshold) { a *= R.scored; h *= R.conceded; }
+  return { h, a };
+}
+
 export function fitLineupEffects(rows) {
   // rows: [{ lh, la, hg, ag, fh, fa }] -> gamma, delta, kappa maximising the Poisson likelihood
   const v = rows.flatMap(r => [r.fh.reg, r.fa.reg]).sort((a, b) => a - b);
