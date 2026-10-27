@@ -42079,7 +42079,7 @@
      "under": 3.2
     }
    ],
-   "form": "Included because Paris Saint-Germain and Olympique Lyonnais are in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
+   "form": "Included because Paris Saint-Germain and Olympique Lyonnais are in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365). Moved to Mon 26 Oct 19:30 (BBC and ESPN); originally listed for Sun 25 Oct 19:45.",
    "kickoffUrl": "https://www.kickoff.co.uk/french-ligue-predictions-stats-odds/psg-vs-olympique-lyonnais/",
    "props": {
     "source": "Unibet (Kambi feed)",
@@ -43052,7 +43052,8 @@
       "under": 2.23
      }
     ]
-   }
+   },
+   "id": "l1-20261025-pari-olym"
   },
   {
    "league": "Serie A",

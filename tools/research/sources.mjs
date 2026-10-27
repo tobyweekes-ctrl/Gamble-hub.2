@@ -143,7 +143,9 @@ export function espnEvents(league, ymd) {
 export function espnSummary(league, id) {
   return get(`https://site.api.espn.com/apis/site/v2/sports/soccer/${COMPETITIONS[league].espn}/summary?event=${id}`, { json: true });
 }
+// Short names (ESPN, BBC) that share no word with ours.
+const SHORT_NAME = { lyon: 'olympique lyonnais' };
 export const sameTeam = (a, b) => {
-  const ta = koToks(a), tb = koToks(b);
-  return [...ta].some(w => tb.has(w)) || [...toks(a)].some(w => toks(b).has(w));
+  const ta = koToks(a), tb = koToks(b), long = x => toks(SHORT_NAME[norm(x)] || x);
+  return [...ta].some(w => tb.has(w)) || [...long(a)].some(w => long(b).has(w));
 };
