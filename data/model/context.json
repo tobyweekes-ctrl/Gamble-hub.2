@@ -22,6 +22,12 @@
   "kappa": 1.05,
   "enabled": false
  },
+ "rotation": {
+  "threshold": 0.6,
+  "scored": 1.029,
+  "conceded": 1.108,
+  "enabled": false
+ },
  "report": {
   "shortRest": {
    "teamMatches": 1257,

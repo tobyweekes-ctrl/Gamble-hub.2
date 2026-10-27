@@ -161,6 +161,21 @@ Log entries from this version are under `independent-v4.2-2026-10-23`.
 - **Team-name matching:** ESPN's short "Lyon" now matches "Olympique Lyonnais".
 - **Model numbers:** unchanged. Nothing this weekend is enough evidence against the backtests.
 
+## Heavy rotation and model-v-market disagreements (27 Oct 2026)
+
+**Heavy rotation (tested; not applied).** Asked after the owner's point about cup rotation: does a side that starts few of its regulars do worse than the model expects? Tested on 5,700 league matches with ESPN lineups. Shares of regulars: median 85%, 10th percentile 69%.
+- **Validation (2023/24-2024/25):**
+  - Rotated sides concede more: under 70% of regulars, conceded x1.05 and scored x0.96; under 60%, conceded x1.11 and scored x1.03.
+  - Validation chose the 60% threshold: log-loss 0.9946 against 1.0001 without, on 171 games.
+- **Test (2025/26-2026/27, 157 games):** 0.9863 with the adjustment and 0.9863 without, so no gain. Bet365 scored 0.9784 on the same games.
+- **The extreme cases are too few and point different ways:** under 50% of regulars, 48 validation and 67 test team-matches.
+- **Weekend check:** this weekend's two most rotated sides both won: Newcastle (60% of regulars) 2-0 at Palace, and Wolves (67%) 1-0 v Watford.
+- **So the numbers still don't move for lineups.** The site keeps showing changes and missing regulars, and lowers data confidence for 5+ changes.
+- **What this can't tell us:** our data has no domestic cup games, where rotation is bigger and usually on both sides.
+- The test is in `tools/model/backtest.mjs` (`heavyRotation` in `data/model/backtest.json`; `rotation` in `context.json`, on only if it improves the test matches).
+
+**Model more bullish than Bet365 on home favourites.** On the test seasons there were 170 games where our model made the home side favourite at least 3 points above Bet365's margin-free price (example: West Ham v Southampton, 60% v 56%). Model average 63%, Bet365 56%, home side won 49%. When we disagree with the market, the market has usually been closer. That matches the blend weight of 0 fitted on validation.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.

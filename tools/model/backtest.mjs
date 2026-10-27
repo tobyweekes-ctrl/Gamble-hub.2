@@ -23,7 +23,7 @@ import { scoreGrid, marketsFromGrid } from './models.mjs';
 import { loadEurope, schedule, teamFlags, isDerby, FLAGS, contextMultipliers } from './context.mjs';
 import { calibrate1x2, calibrate2, fitCalibration } from './calibration.mjs';
 import { pool3 } from './ensemble.mjs';
-import { loadLineups, joinLineups, teamHistory, lineupFeatures, fitLineupEffects, lineupMultipliers } from './lineups.mjs';
+import { loadLineups, joinLineups, teamHistory, lineupFeatures, fitLineupEffects, lineupMultipliers, rotationMultipliers } from './lineups.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
@@ -164,6 +164,38 @@ for (const r of test) {
   }
 }
 const mean = (xs) => xs.reduce((s, x) => s + x, 0) / xs.length;
+
+// ---- Heavy rotation, measured on validation only ---------------------------
+// The continuous lineup effect above did not help the test seasons. This asks a
+// narrower question: when a side starts few of its regulars (share of regulars
+// below a threshold), does it score and concede differently from the model?
+// Factors and threshold come from validation; the test seasons only score them.
+const rotationFactors = (rs, threshold) => {
+  let so = 0, se = 0, co = 0, ce = 0, n = 0;
+  for (const r of rs) {
+    if (r.lu.fh.reg < threshold) { so += r.m.hg; se += r.base.lh; co += r.m.ag; ce += r.base.la; n++; }
+    if (r.lu.fa.reg < threshold) { so += r.m.ag; se += r.base.la; co += r.m.hg; ce += r.base.lh; n++; }
+  }
+  const K = 100; // pseudo-goals of "no effect", as for the context factors
+  return { threshold, teamMatches: n, scored: +((so + K) / (se + K)).toFixed(3), conceded: +((co + K) / (ce + K)).toFixed(3) };
+};
+const rotationChoice = (() => {
+  const vl = valid.filter(r => r.lu);
+  const ll = (rs, f) => rs.reduce((s, r) => s + logloss3(f(r), outcome(r.m)), 0) / rs.length;
+  const tried = [0.6, 0.65, 0.7, 0.75, 0.8].map(threshold => {
+    const R = rotationFactors(vl, threshold);
+    const hit = vl.filter(r => r.lu.fh.reg < threshold || r.lu.fa.reg < threshold);
+    return { ...R, games: hit.length, without: +ll(hit, r => calibrated(r.base)).toFixed(4), with: +ll(hit, r => calibrated(ensemble(r.m, rotationMultipliers(r.lu.fh, r.lu.fa, R)))).toFixed(4) };
+  });
+  const best = tried.slice().sort((a, b) => (a.with - a.without) - (b.with - b.without))[0];
+  return { tried, best: best.with < best.without ? best : null };
+})();
+console.log('Heavy rotation (validation):', JSON.stringify(rotationChoice));
+for (const r of test) {
+  if (!r.lu || !rotationChoice.best) continue;
+  const mult = contextMultipliers(factors, r.fh, r.fa, r.derby), rm = rotationMultipliers(r.lu.fh, r.lu.fa, rotationChoice.best);
+  r.pr = calibrated(ensemble(r.m, { h: mult.h * rm.h, a: mult.a * rm.a }));
+}
 function scoreSet(rs, getP) {
   const ok = rs.filter(r => getP(r));
   return { n: ok.length, brier: +mean(ok.map(r => brier3(getP(r), r.o))).toFixed(4), logloss: +mean(ok.map(r => logloss3(getP(r), r.o))).toFixed(4) };
@@ -208,6 +240,16 @@ const report = {
       note: 'Test matches with confirmed XIs for both sides. "withLineups" applies the lineup effects measured on validation.',
       model: scoreSet(lu, r => r.p), withLineups: scoreSet(lu, r => r.pl),
       bet365PreMatch: scoreSet(lu, pre), closing: scoreSet(lu, closing),
+    };
+  })(),
+  heavyRotation: (() => {
+    const B = rotationChoice.best;
+    if (!B) return { note: 'No threshold improved the validation seasons.', validation: rotationChoice.tried };
+    const hit = both.filter(r => r.pr && (r.lu.fh.reg < B.threshold || r.lu.fa.reg < B.threshold));
+    return {
+      note: `Sides starting under ${Math.round(B.threshold * 100)}% of their regulars: goals scored x${B.scored}, conceded x${B.conceded} (validation). Test matches where a side was that rotated.`,
+      chosen: B, validation: rotationChoice.tried,
+      test: { model: scoreSet(hit, r => r.p), withRotation: scoreSet(hit, r => r.pr), bet365PreMatch: scoreSet(hit, pre) },
     };
   })(),
   calibration,
@@ -306,5 +348,11 @@ writeFileSync(path.join(root, 'data/model/backtest.json'), JSON.stringify(report
 const lineupEnabled = report.lineups.withLineups.logloss < report.lineups.model.logloss;
 report.lineups.enabled = lineupEnabled;
 writeFileSync(path.join(root, 'data/model/backtest.json'), JSON.stringify(report, null, 1) + '\n');
-writeFileSync(path.join(root, 'data/model/context.json'), JSON.stringify({ measuredOn: report.context.measuredOn, factors, calibration, lineup: { ...lineupFit, enabled: lineupEnabled }, report: ctxReport }, null, 1) + '\n');
-console.log(JSON.stringify({ overall: report.overall, lineups: report.lineups, blend: report.modelWeightInBlendWithMarket, value: report.valueBets }, null, 1));
+// The heavy-rotation adjustment likewise: on only if validation chose a threshold
+// and it improved the test matches it applies to.
+const HR = report.heavyRotation;
+const rotation = HR.chosen ? { threshold: HR.chosen.threshold, scored: HR.chosen.scored, conceded: HR.chosen.conceded,
+  enabled: HR.test.withRotation.logloss < HR.test.model.logloss } : { enabled: false };
+writeFileSync(path.join(root, 'data/model/backtest.json'), JSON.stringify(report, null, 1) + '\n');
+writeFileSync(path.join(root, 'data/model/context.json'), JSON.stringify({ measuredOn: report.context.measuredOn, factors, calibration, lineup: { ...lineupFit, enabled: lineupEnabled }, rotation, report: ctxReport }, null, 1) + '\n');
+console.log(JSON.stringify({ overall: report.overall, lineups: report.lineups, heavyRotation: report.heavyRotation, blend: report.modelWeightInBlendWithMarket, value: report.valueBets }, null, 1));
