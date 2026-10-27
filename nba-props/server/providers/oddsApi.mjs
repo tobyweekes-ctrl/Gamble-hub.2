@@ -38,6 +38,19 @@ export function normaliseEvents(events) {
   }));
 }
 
+/** Median home-team spread across books (negative = home favourite), or null. */
+export function normaliseSpread(json) {
+  const pts = [];
+  for (const bk of json.bookmakers || []) {
+    const m = (bk.markets || []).find((x) => x.key === 'spreads');
+    const o = m?.outcomes?.find((x) => x.name === json.home_team);
+    if (o?.point != null) pts.push(o.point);
+  }
+  if (!pts.length) return null;
+  pts.sort((a, b) => a - b);
+  return pts[Math.floor(pts.length / 2)];
+}
+
 /** Flatten a bookmaker/markets/outcomes tree into one row per (player, stat, bookmaker, line). */
 export function normaliseEventOdds(json) {
   const out = [];
@@ -67,11 +80,13 @@ export const oddsApiProvider = {
   async events() {
     return normaliseEvents(await call('/events', { dateFormat: 'iso' }));
   },
+  /** All prop markets for one game in one call (+ the spread if ODDS_FETCH_SPREADS is on). */
   async eventProps(eventId) {
-    const markets = Object.values(STATS).map((s) => s.market).join(',');
+    const markets = Object.values(STATS).map((s) => s.market);
+    if (config.oddsFetchSpreads) markets.push('spreads');
     const json = await call(`/events/${eventId}/odds`, {
-      regions: config.oddsRegions, markets, oddsFormat: 'decimal', dateFormat: 'iso',
+      regions: config.oddsRegions, markets: markets.join(','), oddsFormat: 'decimal', dateFormat: 'iso',
     });
-    return normaliseEventOdds(json);
+    return { rows: normaliseEventOdds(json), homeSpread: config.oddsFetchSpreads ? normaliseSpread(json) : null };
   },
 };

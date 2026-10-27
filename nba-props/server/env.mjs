@@ -25,7 +25,11 @@ export const config = {
   oddsKey: e.ODDS_API_KEY || '',
   oddsRegions: e.ODDS_REGIONS || 'us',
   oddsTtlMin: Number(e.ODDS_TTL_MIN || 10),
+  // Also fetch the game spread with the props (1 extra market per call) for the blowout model.
+  // Off by default; without it the model estimates the margin from team ratings.
+  oddsFetchSpreads: /^(1|true|yes)$/i.test(e.ODDS_FETCH_SPREADS || ''),
   cacheDir: e.CACHE_DIR || join(ROOT, 'cache'),
+  userDataDir: e.USERDATA_DIR || null,
   // Fixed "today" for reproducible runs/tests (YYYY-MM-DD). Defaults to the real date (US Eastern).
   today: e.TODAY || null,
 };

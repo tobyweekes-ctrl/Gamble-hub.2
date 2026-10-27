@@ -11,6 +11,7 @@ import { demoProvider, demoInjuries, demoEventProps } from '../providers/demo.mj
 import { seasonOf, prevSeason, todayET, normName, mean, round } from '../util.mjs';
 import { teamGames, teamSummaries, addUsage, positionDefense, posGroup, absenceInfo, restDays } from './derive.mjs';
 import { STATS, statValue } from '../stats.mjs';
+import { recordOddsSnapshot } from './userdata.mjs';
 
 const HOUR = 3600;
 export const today = () => todayET(config.today);
@@ -23,7 +24,7 @@ function statsProvider() {
 }
 
 // ---------- seasons ----------
-async function loadSeason(season) {
+export async function loadSeason(season) {
   const p = statsProvider();
   if (p.name === 'demo') return p.loadSeason(season);
   const key = `season:${p.name}:${season}`;
@@ -195,10 +196,19 @@ async function getOddsEvents() {
   return cached('odds:events', 30 * 60, () => oddsApiProvider.events());
 }
 
-async function eventProps(game) {
-  if (!game?.eventId) return [];
-  if (game.eventId.startsWith('demo:')) return demoEventProps(game.gameId, game.date);
-  return cached(`odds:props:${game.eventId}`, config.oddsTtlMin * 60, () => oddsApiProvider.eventProps(game.eventId));
+/** { rows, homeSpread } for a game. Live fetches are also saved as snapshots for the real-line backtest. */
+export async function eventProps(game) {
+  if (!game?.eventId) return { rows: [], homeSpread: null };
+  if (game.eventId.startsWith('demo:')) return { rows: demoEventProps(game.gameId, game.date), homeSpread: null };
+  return cached(`odds:props:${game.eventId}`, config.oddsTtlMin * 60, async () => {
+    const res = await oddsApiProvider.eventProps(game.eventId);
+    try {
+      recordOddsSnapshot({ date: game.date, eventId: game.eventId, gameId: game.gameId, tipoff: game.tipoff, home: game.home, away: game.away, rows: res.rows });
+    } catch (err) {
+      console.warn('[userdata] snapshot not saved:', err.message);
+    }
+    return res;
+  });
 }
 
 /**
@@ -209,7 +219,7 @@ async function eventProps(game) {
 export async function getPlayerLines(player, stat, date = today()) {
   const game = await gameFor(player.team, date);
   if (!game) return { game: null, lines: [], source: null };
-  const rows = await eventProps(game);
+  const { rows, homeSpread } = await eventProps(game);
   const n = normName(player.name);
   const lines = rows.filter((r) => r.stat === stat && normName(r.player) === n)
     .map((r) => ({ book: r.book, bookTitle: r.bookTitle, line: r.line, over: r.over, under: r.under, updated: r.updated }))
@@ -219,7 +229,8 @@ export async function getPlayerLines(player, stat, date = today()) {
   const bestUnder = pick((l, b) => l.line > b.line || (l.line === b.line && l.under > b.under));
   for (const l of lines) { l.bestOver = l === bestOver; l.bestUnder = l === bestUnder; }
   const source = game.eventId?.startsWith('demo:') ? 'demo' : oddsApiProvider.enabled() ? 'The Odds API' : null;
-  return { game, lines, source, cacheAgeSec: game.eventId ? cacheAge(`odds:props:${game.eventId}`) : null };
+  const spread = homeSpread == null ? null : game.home === player.team ? homeSpread : -homeSpread;
+  return { game, lines, source, spread, cacheAgeSec: game.eventId ? cacheAge(`odds:props:${game.eventId}`) : null };
 }
 
 export function status() {
@@ -228,6 +239,7 @@ export function status() {
     statsProvider: statsProvider().name,
     injuryProvider: demo() ? 'demo' : config.injuryProvider,
     odds: demo() ? 'demo' : oddsApiProvider.enabled() ? 'The Odds API' : 'disabled (no ODDS_API_KEY)',
+    oddsSpreads: config.oddsFetchSpreads,
     oddsQuota: quota,
     keys: { balldontlie: Boolean(config.balldontlieKey), oddsApi: Boolean(config.oddsKey) },
   };
