@@ -123,7 +123,7 @@ export function modelForRound(root, fixtures) {
       // Scheduled runs start from a fresh checkout without data/raw: fetch it first.
       if (!existsSync(path.join(root, 'data/raw/cross/uefa.json'))) execFileSync('node', ['tools/model/fetch-cross.mjs'], { cwd: root, stdio: 'inherit' });
       const data = loadCross(root);
-      const xAsOf = Math.min(now, ...fixtures.filter(x => x.uefa).map(x => Date.parse(x.kickoff)));
+      const xAsOf = Math.min(now, ...fixtures.filter(x => x.uefa && Date.parse(x.kickoff) > now).map(x => Date.parse(x.kickoff)));
       cross = { data, model: fitCross(data.rows, data.euro, { asOf: xAsOf, ...xbt.settings }), asOf: xAsOf };
     }
     const u = f.uefa, hk = cross.data.key(u.home, u.homeCountry), ak = cross.data.key(u.away, u.awayCountry);
@@ -166,10 +166,14 @@ export function modelForRound(root, fixtures) {
     }
     const T = xbt.test;
     const { keyPoints, confidence } = summarise({
-      base: ratings.every(r => r.domestic) ? 55 : ratings.some(r => r.domestic) ? 40 : 30, // goals only, not tested against bookmakers: MEDIUM at best
-      model: `Cross-league goals model. Tested on ${T.n.toLocaleString('en-GB')} past European games: clearly better than base rates; not tested against bookmakers`,
+      // Domestic cup ties: rated on league form only. Cups bring heavy rotation that
+      // our data cannot measure (no cup games in it), so these start lower.
+      base: f.cup ? 40 : ratings.every(r => r.domestic) ? 55 : ratings.some(r => r.domestic) ? 40 : 30, // goals only, not tested against bookmakers: MEDIUM at best
+      model: f.cup ? 'Cross-league goals model, rating both sides on league form. Not tested on cup games; 90-minute result only'
+        : `Cross-league goals model. Tested on ${T.n.toLocaleString('en-GB')} past European games: clearly better than base rates; not tested against bookmakers`,
       ratings, lineups: L, probable: null, adjusted, f,
-      notes: ratings.every(r => r.domestic) ? [] : ['A side with no league data is rated from European games only'],
+      notes: f.cup ? ['Cup ties often see heavy rotation; the numbers assume normal-strength sides. Check the team sheets (about an hour before kick-off)']
+        : ratings.every(r => r.domestic) ? [] : ['A side with no league data is rated from European games only'],
     });
     byId[f.id] = {
       hw: r1(x3[0]), dw: r1(x3[1]), aw: r1(x3[2]), btts: r1(btts), ou25: r1(o25),

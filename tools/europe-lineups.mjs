@@ -24,7 +24,7 @@ const roundsDir = path.join(root, 'data/rounds');
 const roundPath = args.find(a => a.endsWith('.json')) || path.join(roundsDir, readdirSync(roundsDir).filter(f => f.endsWith('.json')).sort().pop());
 const round = JSON.parse(readFileSync(roundPath, 'utf8'));
 const BASE = 'https://site.api.espn.com/apis/site/v2/sports/soccer';
-const LEAGUE = { 'Europa League': 'uefa.europa', 'Conference League': 'uefa.europa.conf', 'Champions League': 'uefa.champions' };
+const LEAGUE = { 'Europa League': 'uefa.europa', 'Conference League': 'uefa.europa.conf', 'Champions League': 'uefa.champions', 'League Cup': 'eng.league_cup' };
 const now = Date.now();
 const label = t => new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(t)).replace(',', '');
 

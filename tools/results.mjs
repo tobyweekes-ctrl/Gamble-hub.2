@@ -10,14 +10,14 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { bbcFixtures, espnEvents, sameTeam } from './research/sources.mjs';
+import { bbcFixtures, espnEvents, espnSummary, sameTeam } from './research/sources.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const resultsPath = path.join(root, 'data/results.json');
 const results = existsSync(resultsPath) ? JSON.parse(readFileSync(resultsPath, 'utf8')) : {};
 
 // Fixture ids exactly as tools/build-seed.mjs generates them (an explicit id wins).
-const LEAGUE_CODES = { 'Premier League': 'pl', Championship: 'ch', 'Champions League': 'ucl', 'Europa League': 'uel', 'Conference League': 'uecl', Bundesliga: 'bl', 'Serie A': 'sa', 'Ligue 1': 'l1' };
+const LEAGUE_CODES = { 'Premier League': 'pl', Championship: 'ch', 'Champions League': 'ucl', 'Europa League': 'uel', 'Conference League': 'uecl', Bundesliga: 'bl', 'Serie A': 'sa', 'Ligue 1': 'l1', 'League Cup': 'elc' };
 // European competitions: UEFA's own match data (90-minute score) and ESPN, in place of BBC.
 const UEFA_COMP = { 'Champions League': 1, 'Europa League': 14, 'Conference League': 2019 };
 const ESPN_EURO = { 'Champions League': 'uefa.champions', 'Europa League': 'uefa.europa', 'Conference League': 'uefa.europa.conf' };
@@ -86,6 +86,9 @@ for (const f of pending) {
     const h = c.find(x => x.homeAway === 'home'), a = c.find(x => x.homeAway === 'away');
     return e.status.type.completed && sameTeam(h.team.displayName, f.home) && sameTeam(a.team.displayName, f.away);
   });
+  // Cup ties: our markets are on 90 minutes. Penalties straight after 90 minutes keep
+  // the 90-minute score; after extra time it is not reliably available, so leave it out.
+  if (ev && extraTimePlayed(f.league, ev)) { notFound.push(`${f.home} v ${f.away} (${f.kickoff.slice(0, 10)}): went to extra time, 90-minute score not recorded`); continue; }
   const e = ev && (() => {
     const c = ev.competitions[0].competitors;
     return [Number(c.find(x => x.homeAway === 'home').score), Number(c.find(x => x.homeAway === 'away').score)];
@@ -106,6 +109,13 @@ for (const f of pending) {
   }
   results[f.id] = { kickoff: f.kickoff, score: sources[0][1], sources: sources.map(s => s[0]), note: sources.length === 1 ? 'single source' : '' };
   added++;
+}
+function extraTimePlayed(league, ev) {
+  const st = ev.status.type.name || '';
+  if (/AET/.test(st)) return true;
+  if (!/PEN/.test(st)) return false;
+  const sum = espnSummary(league, ev.id);
+  return !sum || (sum.keyEvents || []).some(k => k.period && (k.period.number === 3 || k.period.number === 4));
 }
 function movedResult(f, t) {
   for (let d = -7; d <= 7; d++) {

@@ -37,6 +37,7 @@ The predictions come from **our own model** (`tools/model/`), which is fitted on
    Then run `node tools/props.mjs` (Unibet player fouls/shots/cards prices and totals, set against our player model on the site, and logged to `data/props/log.jsonl`) and `node tools/grade-props.mjs` (grades logged prices for finished games against ESPN player stats; report its summary, and say plainly if backing the model's player-prop "value" is losing).
 
    Then run `node tools/europe-fixtures.mjs --lead 30` to add the coming week's Europa League and Conference League games that haven't kicked off (UEFA match data, cross-league model, no bookmaker prices).
+   Then run `node tools/cup-fixtures.mjs --lead 30` for League Cup ties. These come from ESPN, cross-checked with BBC, and are predicted by the cross-league model on league form. Bet365 prices come from kickoff.co.uk and lineups from `tools/europe-lineups.mjs`. A tie is left out when a side has fewer than 10 league games in our data (League Two and below). Cup ties are not shown as value: the model can't see cup rotation and is untested on cups. Results are 90-minute scores; ties that went to extra time are left out.
 
    It prints any gaps (a missing price or table). Fill a gap by hand only from a named source, and never estimate. Lineups are not known on Friday morning; the lineup-time runs add them.
 6. **Build and check:**
