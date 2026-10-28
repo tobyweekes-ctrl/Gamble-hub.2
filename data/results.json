@@ -910,5 +910,41 @@
    "ESPN"
   ],
   "note": "rescheduled: played 2026-10-26 19:30 UTC"
+ },
+ "sa-20261027-sass-lazi": {
+  "kickoff": "2026-10-27T17:30:00+00:00",
+  "score": [
+   2,
+   6
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261027-roma-cagl": {
+  "kickoff": "2026-10-27T19:45:00+00:00",
+  "score": [
+   4,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "elc-20261027-brad-pete": {
+  "kickoff": "2026-10-27T19:45:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }

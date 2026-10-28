@@ -94,6 +94,7 @@ const koToks = name => toks(KO_ALIAS[norm(name)] || name);
 
 const listingCache = new Map();
 export function kickoffMatchPage(league, home, away) {
+  if (!COMPETITIONS[league]) return null; // no Bet365 source for this competition (Europa, Conference League)
   const slug = COMPETITIONS[league].kickoff;
   if (!listingCache.has(slug)) {
     const s = get(`https://www.kickoff.co.uk/${slug}-predictions-stats-odds/`) || '';
