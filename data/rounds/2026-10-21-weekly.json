@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-10-21-weekly",
- "dataUpdated": "Wed 28 Oct 17:10",
+ "dataUpdated": "Wed 28 Oct 19:09",
  "notes": [
   "Thu 22 - Thu 29 Oct 2026. Premier League and Championship in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "No Champions League games in this window (next league-phase matchday is in November).",
@@ -47720,7 +47720,7 @@
    },
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-28T17:10:03.349Z",
+    "at": "2026-10-28T19:09:43.341Z",
     "home": {
      "team": "AC Milan",
      "formation": "4-2-3-1",
@@ -47908,19 +47908,19 @@
     },
     "away": {
      "team": "Bologna",
-     "formation": "3-4-3",
+     "formation": "3-4-2-1",
      "xi": [
       "Lukasz Skorupski",
-      "Matteo Darmian",
+      "Nicoló Casale",
       "Arthur Theate",
-      "Nicoló",
+      "Matteo Darmian",
       "Tommaso Pobega",
+      "Lewis Ferguson",
       "Rahim Alhassane",
       "Nadir Zortea",
-      "Lewis Ferguson",
       "Jens Odgaard",
-      "Federico Bernardeschi",
-      "Samuel Mbangula"
+      "Samuel Mbangula",
+      "Federico Bernardeschi"
      ],
      "missing": [
       {
@@ -47947,39 +47947,39 @@
        "pos": "G"
       },
       {
-       "id": "91873",
-       "name": "Matteo Darmian",
-       "pos": "D"
+       "id": "250707",
+       "name": "Nicoló Casale",
+       "pos": "CD"
       },
       {
        "id": "304222",
        "name": "Arthur Theate",
-       "pos": "D"
+       "pos": "CD-L"
       },
       {
-       "id": "250707",
-       "name": "Nicoló",
-       "pos": "D"
+       "id": "91873",
+       "name": "Matteo Darmian",
+       "pos": "CD-R"
       },
       {
        "id": "276654",
        "name": "Tommaso Pobega",
-       "pos": "M"
-      },
-      {
-       "id": "331770",
-       "name": "Rahim Alhassane",
-       "pos": "M"
-      },
-      {
-       "id": "291560",
-       "name": "Nadir Zortea",
-       "pos": "M"
+       "pos": "CM-L"
       },
       {
        "id": "202429",
        "name": "Lewis Ferguson",
-       "pos": "M"
+       "pos": "CM-R"
+      },
+      {
+       "id": "331770",
+       "name": "Rahim Alhassane",
+       "pos": "LM"
+      },
+      {
+       "id": "291560",
+       "name": "Nadir Zortea",
+       "pos": "RM"
       },
       {
        "id": "238407",
@@ -47987,14 +47987,14 @@
        "pos": "F"
       },
       {
-       "id": "180956",
-       "name": "Federico Bernardeschi",
-       "pos": "F"
-      },
-      {
        "id": "355997",
        "name": "Samuel Mbangula",
-       "pos": "F"
+       "pos": "CF-L"
+      },
+      {
+       "id": "180956",
+       "name": "Federico Bernardeschi",
+       "pos": "CF-R"
       }
      ],
      "bench": [
@@ -62174,7 +62174,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 3.7,
      "d": 3.7,
      "a": 1.9
@@ -62182,14 +62182,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.67,
      "under": 2.2
     }
@@ -62197,7 +62197,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/shakhtar-vs-sporting-lisbon/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1029226843,
     "homeName": "Shakhtar Donetsk",
     "awayName": "Sporting Lisbon",
@@ -62619,7 +62619,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 2.25,
      "d": 3.6,
      "a": 2.88
@@ -62627,14 +62627,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.36,
      "no": 3
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.44,
      "under": 2.75
     }
@@ -62642,7 +62642,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/galatasaray-vs-stuttgart/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1029226844,
     "homeName": "Galatasaray",
     "awayName": "VfB Stuttgart",
@@ -63120,7 +63120,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 1.22,
      "d": 6.5,
      "a": 11
@@ -63128,14 +63128,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.22,
      "under": 4.33
     }
@@ -63143,7 +63143,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/barcelona-vs-aston-villa/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1029226846,
     "homeName": "FC Barcelona",
     "awayName": "Aston Villa",
@@ -63617,7 +63617,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 2.3,
      "d": 3.8,
      "a": 2.7
@@ -63625,16 +63625,16 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "over": 1.53,
-     "under": 2.5
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "over": 1.5,
+     "under": 2.63
     }
    ],
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/man-united-vs-roma/"
@@ -63653,7 +63653,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 4.2,
      "d": 4.1,
      "a": 1.7
@@ -63661,14 +63661,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.4,
      "under": 3
     }
@@ -63676,7 +63676,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/feyenoord-vs-inter-milan/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943215,
     "homeName": "Feyenoord",
     "awayName": "Inter",
@@ -64156,7 +64156,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 1.85,
      "d": 3.75,
      "a": 3.9
@@ -64164,14 +64164,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.5,
      "under": 2.63
     }
@@ -64179,7 +64179,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/bodo-glimt-vs-lille/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1029226845,
     "homeName": "Bodø/Glimt",
     "awayName": "Lille",
@@ -64591,7 +64591,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 1.42,
      "d": 4.5,
      "a": 7
@@ -64599,14 +64599,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.44,
      "under": 2.75
     }
@@ -64614,7 +64614,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/lask-linz-vs-s-bratislava/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943212,
     "homeName": "LASK",
     "awayName": "Slovan Bratislava",
@@ -64815,7 +64815,7 @@
       "name": "Christoph Lang",
       "mk": "sot",
       "k": 3,
-      "odds": 5.1
+      "odds": 5
      },
      {
       "name": "Christoph Lang",
@@ -65025,7 +65025,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 4.75,
      "d": 4.33,
      "a": 1.62
@@ -65033,14 +65033,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.5,
      "under": 2.63
     }
@@ -65048,7 +65048,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/fenerbahce-vs-liverpool/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943225,
     "homeName": "Fenerbahçe",
     "awayName": "Liverpool",
@@ -65507,7 +65507,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 7,
      "d": 6,
      "a": 1.33
@@ -65515,14 +65515,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.33,
      "under": 3.4
     }
@@ -65530,7 +65530,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/aek-vs-real-madrid/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943230,
     "homeName": "AEK Athens",
     "awayName": "Real Madrid",
@@ -66002,7 +66002,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 1.75,
      "d": 3.9,
      "a": 4.2
@@ -66010,14 +66010,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.5,
      "under": 2.63
     }
@@ -66025,7 +66025,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/borussia-dortmund-vs-real-betis/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943211,
     "homeName": "Borussia Dortmund",
     "awayName": "Real Betis",
@@ -66070,13 +66070,13 @@
       "name": "Héctor Bellerín",
       "mk": "sot",
       "k": 1,
-      "odds": 5
+      "odds": 5.1
      },
      {
       "name": "Marc Roca",
       "mk": "sot",
       "k": 1,
-      "odds": 5.4
+      "odds": 5.3
      },
      {
       "name": "Daniel Svensson",
@@ -66118,13 +66118,13 @@
       "name": "Aitor Ruibal",
       "mk": "sot",
       "k": 1,
-      "odds": 3.05
+      "odds": 3.1
      },
      {
       "name": "Jobe Bellingham",
       "mk": "sot",
       "k": 1,
-      "odds": 2.28
+      "odds": 2.25
      },
      {
       "name": "Troy Parrott",
@@ -66136,13 +66136,13 @@
       "name": "Carney Chukwuemeka",
       "mk": "sot",
       "k": 1,
-      "odds": 2.5
+      "odds": 2.55
      },
      {
       "name": "Álvaro Fidalgo",
       "mk": "sot",
       "k": 1,
-      "odds": 3.8
+      "odds": 3.7
      },
      {
       "name": "Abde Ezzalzouli",
@@ -66160,25 +66160,25 @@
       "name": "Cucho Hernández",
       "mk": "sot",
       "k": 2,
-      "odds": 4.4
+      "odds": 4.3
      },
      {
       "name": "Cucho Hernández",
       "mk": "sot",
       "k": 1,
-      "odds": 1.72
+      "odds": 1.71
      },
      {
       "name": "Konstantinos Karetsas",
       "mk": "sot",
       "k": 2,
-      "odds": 5.4
+      "odds": 5.3
      },
      {
       "name": "Konstantinos Karetsas",
       "mk": "sot",
       "k": 1,
-      "odds": 1.93
+      "odds": 1.92
      },
      {
       "name": "Angel Ortiz",
@@ -66256,7 +66256,7 @@
       "name": "Ramy Bensebaïni",
       "mk": "sot",
       "k": 1,
-      "odds": 3
+      "odds": 2.95
      },
      {
       "name": "Waldemar Anton",
@@ -66274,13 +66274,13 @@
       "name": "Joey Veerman",
       "mk": "sot",
       "k": 1,
-      "odds": 2.55
+      "odds": 2.5
      },
      {
       "name": "Marcel Sabitzer",
       "mk": "sot",
       "k": 1,
-      "odds": 3.2
+      "odds": 3.15
      },
      {
       "name": "Isco",
@@ -66298,7 +66298,7 @@
       "name": "Nelson Alexander Deossa",
       "mk": "sot",
       "k": 1,
-      "odds": 2.75
+      "odds": 2.7
      },
      {
       "name": "Ethan Nwaneri",
@@ -66316,7 +66316,7 @@
       "name": "Dani Ceballos",
       "mk": "sot",
       "k": 1,
-      "odds": 5.5
+      "odds": 5.4
      },
      {
       "name": "Fabio Silva",
@@ -66368,8 +66368,8 @@
       "scope": "match",
       "mk": "sot",
       "line": 10.5,
-      "over": 2.18,
-      "under": 1.53
+      "over": 2.17,
+      "under": 1.54
      },
      {
       "scope": "away",
@@ -66389,7 +66389,7 @@
       "scope": "match",
       "mk": "sot",
       "line": 7.5,
-      "over": 1.22,
+      "over": 1.21,
       "under": 3.4
      },
      {
@@ -66431,7 +66431,7 @@
       "scope": "match",
       "mk": "sot",
       "line": 9.5,
-      "over": 1.72,
+      "over": 1.71,
       "under": 1.89
      },
      {
@@ -66445,7 +66445,7 @@
       "scope": "match",
       "mk": "sot",
       "line": 8.5,
-      "over": 1.42,
+      "over": 1.41,
       "under": 2.48
      },
      {
@@ -66459,7 +66459,7 @@
       "scope": "away",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.66,
+      "over": 1.65,
       "under": 1.97
      }
     ]
@@ -66479,7 +66479,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 2.15,
      "d": 3.4,
      "a": 3.3
@@ -66487,14 +66487,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.8,
      "under": 2
     }
@@ -66502,7 +66502,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/porto-vs-napoli/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943213,
     "homeName": "FC Porto",
     "awayName": "Napoli",
@@ -66998,7 +66998,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 2.05,
      "d": 4.1,
      "a": 2.9
@@ -67006,14 +67006,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.36,
      "no": 3
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.36,
      "under": 3.2
     }
@@ -67021,7 +67021,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/psv-vs-club-brugge/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943227,
     "homeName": "PSV Eindhoven",
     "awayName": "Club Brugge",
@@ -67464,7 +67464,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 5.5,
      "d": 4.5,
      "a": 1.53
@@ -67472,14 +67472,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.36,
      "under": 3.2
     }
@@ -67487,7 +67487,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/rb-leipzig-vs-man-city/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943229,
     "homeName": "RB Leipzig",
     "awayName": "Manchester City",
@@ -67965,7 +67965,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 7.5,
      "d": 5.75,
      "a": 1.33
@@ -67973,14 +67973,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.91,
      "no": 1.91
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.57,
      "under": 2.38
     }
@@ -67988,7 +67988,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/slavia-vs-arsenal/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943223,
     "homeName": "Slavia Prague",
     "awayName": "Arsenal",
@@ -68428,7 +68428,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 3,
      "d": 3.75,
      "a": 2.15
@@ -68436,14 +68436,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.5,
      "under": 2.63
     }
@@ -68451,7 +68451,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/lens-vs-como-calcio/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943224,
     "homeName": "Lens",
     "awayName": "Como",
@@ -68911,7 +68911,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 1.53,
      "d": 4.75,
      "a": 5.75
@@ -68919,14 +68919,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.44,
      "under": 2.75
     }
@@ -68934,7 +68934,7 @@
    "kickoffUrl": "https://www.kickoff.co.uk/uefa-champions-league-predictions-stats-odds/viking-vs-sabah/",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-28T17:10:44.523Z",
+    "at": "2026-10-28T19:10:24.741Z",
     "eventId": 1028943222,
     "homeName": "Viking Stavanger",
     "awayName": "Sabah FK",
@@ -69302,24 +69302,392 @@
    },
    "cup": true,
    "form": "Fixture and kick-off from ESPN, confirmed by BBC Sport. Prices are a single source (Bet365) when found.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-28T19:09:24.641Z",
+    "home": {
+     "team": "Manchester City",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Gerónimo Rulli",
+      "Marc Guéhi",
+      "Rico Lewis",
+      "Vitor Reis",
+      "Nico O'Reilly",
+      "Allan Elias",
+      "Rayan Cherki",
+      "Ayyoub Bouaddi",
+      "Phil Foden",
+      "Mateo Kovacic",
+      "Floyd Samba"
+     ],
+     "missing": [
+      {
+       "name": "Gianluigi Donnarumma",
+       "started": "7/8"
+      },
+      {
+       "name": "Rúben Dias",
+       "started": "7/8"
+      },
+      {
+       "name": "Enzo Fernández",
+       "started": "6/8"
+      },
+      {
+       "name": "Elliot Anderson",
+       "started": "6/8"
+      },
+      {
+       "name": "Erling Haaland",
+       "started": "6/8"
+      },
+      {
+       "name": "Josko Gvardiol",
+       "started": "5/8"
+      },
+      {
+       "name": "Abdukodir Khusanov",
+       "started": "4/8"
+      },
+      {
+       "name": "Iliman Ndiaye",
+       "started": "4/8"
+      },
+      {
+       "name": "Matheus Nunes",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "167192",
+       "name": "Gerónimo Rulli",
+       "pos": "G"
+      },
+      {
+       "id": "265907",
+       "name": "Marc Guéhi",
+       "pos": "D"
+      },
+      {
+       "id": "325564",
+       "name": "Rico Lewis",
+       "pos": "D"
+      },
+      {
+       "id": "361434",
+       "name": "Vitor Reis",
+       "pos": "D"
+      },
+      {
+       "id": "328464",
+       "name": "Nico O'Reilly",
+       "pos": "D"
+      },
+      {
+       "id": "382966",
+       "name": "Allan Elias",
+       "pos": "M"
+      },
+      {
+       "id": "298008",
+       "name": "Rayan Cherki",
+       "pos": "M"
+      },
+      {
+       "id": "373927",
+       "name": "Ayyoub Bouaddi",
+       "pos": "M"
+      },
+      {
+       "id": "250787",
+       "name": "Phil Foden",
+       "pos": "M"
+      },
+      {
+       "id": "154595",
+       "name": "Mateo Kovacic",
+       "pos": "M"
+      },
+      {
+       "id": "410320",
+       "name": "Floyd Samba",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "395463",
+       "name": "Ryan McAidoo",
+       "pos": "SUB"
+      },
+      {
+       "id": "272512",
+       "name": "Rayan Aït-Nouri",
+       "pos": "SUB"
+      },
+      {
+       "id": "285450",
+       "name": "Enzo Fernández",
+       "pos": "SUB"
+      },
+      {
+       "id": "283672",
+       "name": "Jérémy Doku",
+       "pos": "SUB"
+      },
+      {
+       "id": "268641",
+       "name": "Iliman Ndiaye",
+       "pos": "SUB"
+      },
+      {
+       "id": "390094",
+       "name": "Kaden Braithwaite",
+       "pos": "SUB"
+      },
+      {
+       "id": "362211",
+       "name": "Abdukodir Khusanov",
+       "pos": "SUB"
+      },
+      {
+       "id": "177545",
+       "name": "Marcus Bettinelli",
+       "pos": "SUB"
+      },
+      {
+       "id": "3129530",
+       "name": "Dexter Oliver",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.5,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 9,
+      "out": [
+       "Donnarumma",
+       "Dias",
+       "Gvardiol",
+       "Khusanov",
+       "Fernández",
+       "Anderson",
+       "Haaland",
+       "Doku",
+       "Ndiaye"
+      ],
+      "in": [
+       "Rulli",
+       "Lewis",
+       "Reis",
+       "O'Reilly",
+       "Elias",
+       "Bouaddi",
+       "Foden",
+       "Kovacic",
+       "Samba"
+      ]
+     }
+    },
+    "away": {
+     "team": "Brighton & Hove Albion",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Jason Steele",
+      "Michael Svoboda",
+      "Jaouen Hadjam",
+      "Olivier Boscagli",
+      "Costinha",
+      "Pascal Gross",
+      "Malick Yalcouyé",
+      "Jack Hinshelwood",
+      "Yasin Ayari",
+      "Diego Gómez",
+      "Georginio Rutter"
+     ],
+     "missing": [
+      {
+       "name": "Bart Verbruggen",
+       "started": "7/8"
+      },
+      {
+       "name": "Luka Vuskovic",
+       "started": "6/8"
+      },
+      {
+       "name": "Charalambos Kostoulas",
+       "started": "6/8"
+      },
+      {
+       "name": "Ferdi Kadioglu",
+       "started": "5/8"
+      },
+      {
+       "name": "Chema Andrés",
+       "started": "5/8"
+      },
+      {
+       "name": "Maxim De Cuyper",
+       "started": "5/8"
+      },
+      {
+       "name": "Lewis Dunk",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "111114",
+       "name": "Jason Steele",
+       "pos": "G"
+      },
+      {
+       "id": "289942",
+       "name": "Michael Svoboda",
+       "pos": "D"
+      },
+      {
+       "id": "306033",
+       "name": "Jaouen Hadjam",
+       "pos": "D"
+      },
+      {
+       "id": "216017",
+       "name": "Olivier Boscagli",
+       "pos": "D"
+      },
+      {
+       "id": "274285",
+       "name": "Costinha",
+       "pos": "D"
+      },
+      {
+       "id": "132659",
+       "name": "Pascal Gross",
+       "pos": "M"
+      },
+      {
+       "id": "359097",
+       "name": "Malick Yalcouyé",
+       "pos": "M"
+      },
+      {
+       "id": "328011",
+       "name": "Jack Hinshelwood",
+       "pos": "M"
+      },
+      {
+       "id": "304242",
+       "name": "Yasin Ayari",
+       "pos": "M"
+      },
+      {
+       "id": "192278",
+       "name": "Diego Gómez",
+       "pos": "M"
+      },
+      {
+       "id": "278061",
+       "name": "Georginio Rutter",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "282186",
+       "name": "Mats Wieffer",
+       "pos": "SUB"
+      },
+      {
+       "id": "147106",
+       "name": "Lewis Dunk",
+       "pos": "SUB"
+      },
+      {
+       "id": "318522",
+       "name": "Promise David",
+       "pos": "SUB"
+      },
+      {
+       "id": "291609",
+       "name": "Bart Verbruggen",
+       "pos": "SUB"
+      },
+      {
+       "id": "364962",
+       "name": "Luka Vuskovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "359400",
+       "name": "Ibrahim Osman",
+       "pos": "SUB"
+      },
+      {
+       "id": "348787",
+       "name": "Yankuba Minteh",
+       "pos": "SUB"
+      },
+      {
+       "id": "301327",
+       "name": "Maxim De Cuyper",
+       "pos": "SUB"
+      },
+      {
+       "id": "261087",
+       "name": "Matt O'Riley",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.656,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Verbruggen",
+       "Dunk",
+       "Vuskovic",
+       "Kadioglu",
+       "Andrés",
+       "Kostoulas",
+       "Cuyper"
+      ],
+      "in": [
+       "Steele",
+       "Svoboda",
+       "Hadjam",
+       "Costinha",
+       "Yalcouyé",
+       "Hinshelwood",
+       "Rutter"
+      ]
+     }
+    }
+   },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "h": 1.65,
-     "d": 4.2,
-     "a": 4.5
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "h": 1.75,
+     "d": 4,
+     "a": 4
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "yes": 1.5,
-     "no": 2.5
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "yes": 1.44,
+     "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.44,
      "under": 2.7
     }
@@ -69339,24 +69707,394 @@
    },
    "cup": true,
    "form": "Fixture and kick-off from ESPN, confirmed by BBC Sport. Prices are a single source (Bet365) when found.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-28T19:09:24.641Z",
+    "home": {
+     "team": "AFC Bournemouth",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Michele Di Gregorio",
+      "Juanlu Sanchez",
+      "Bafodé Diakité",
+      "António Silva",
+      "Julio Soler",
+      "Lewis Cook",
+      "Ryan Christie",
+      "Marcus Tavernier",
+      "Ben Gannon-Doak",
+      "Amine Adli",
+      "Álvaro Rodríguez"
+     ],
+     "missing": [
+      {
+       "name": "Tyler Adams",
+       "started": "8/8"
+      },
+      {
+       "name": "Evanilson",
+       "started": "8/8"
+      },
+      {
+       "name": "Djordje Petrovic",
+       "started": "7/8"
+      },
+      {
+       "name": "James Hill",
+       "started": "7/8"
+      },
+      {
+       "name": "Adrien Truffert",
+       "started": "7/8"
+      },
+      {
+       "name": "Adam Smith",
+       "started": "7/8"
+      },
+      {
+       "name": "Rayan",
+       "started": "6/8"
+      },
+      {
+       "name": "Justin Kluivert",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "240055",
+       "name": "Michele Di Gregorio",
+       "pos": "G"
+      },
+      {
+       "id": "303804",
+       "name": "Juanlu Sanchez",
+       "pos": "D"
+      },
+      {
+       "id": "282675",
+       "name": "Bafodé Diakité",
+       "pos": "D"
+      },
+      {
+       "id": "346588",
+       "name": "António Silva",
+       "pos": "D"
+      },
+      {
+       "id": "339797",
+       "name": "Julio Soler",
+       "pos": "D"
+      },
+      {
+       "id": "223452",
+       "name": "Lewis Cook",
+       "pos": "M"
+      },
+      {
+       "id": "93435",
+       "name": "Ryan Christie",
+       "pos": "M"
+      },
+      {
+       "id": "243364",
+       "name": "Marcus Tavernier",
+       "pos": "M"
+      },
+      {
+       "id": "332948",
+       "name": "Ben Gannon-Doak",
+       "pos": "M"
+      },
+      {
+       "id": "291613",
+       "name": "Amine Adli",
+       "pos": "M"
+      },
+      {
+       "id": "353151",
+       "name": "Álvaro Rodríguez",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "361809",
+       "name": "Junior Kroupi",
+       "pos": "SUB"
+      },
+      {
+       "id": "122268",
+       "name": "Adam Smith",
+       "pos": "SUB"
+      },
+      {
+       "id": "279155",
+       "name": "James Hill",
+       "pos": "SUB"
+      },
+      {
+       "id": "72487",
+       "name": "David Brooks",
+       "pos": "SUB"
+      },
+      {
+       "id": "357719",
+       "name": "Rayan",
+       "pos": "SUB"
+      },
+      {
+       "id": "245916",
+       "name": "Justin Kluivert",
+       "pos": "SUB"
+      },
+      {
+       "id": "305684",
+       "name": "Adrien Truffert",
+       "pos": "SUB"
+      },
+      {
+       "id": "222776",
+       "name": "Tyler Adams",
+       "pos": "SUB"
+      },
+      {
+       "id": "289824",
+       "name": "Djordje Petrovic",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.405,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 8,
+      "out": [
+       "Petrovic",
+       "Hill",
+       "Truffert",
+       "Smith",
+       "Kluivert",
+       "Adams",
+       "Evanilson",
+       "Rayan"
+      ],
+      "in": [
+       "Gregorio",
+       "Sanchez",
+       "Diakité",
+       "Soler",
+       "Christie",
+       "Gannon-Doak",
+       "Adli",
+       "Rodríguez"
+      ]
+     }
+    },
+    "away": {
+     "team": "Aston Villa",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Marco Bizot",
+      "Ian Maatsen",
+      "Lamare Bogarde",
+      "Tyrone Mings",
+      "Taylor Harwood-Bellis",
+      "João Gomes",
+      "Ibrahim Mbaye",
+      "George Hemmings",
+      "Leon Goretzka",
+      "Emiliano Buendía",
+      "Brian Madjo"
+     ],
+     "missing": [
+      {
+       "name": "Zion Suzuki",
+       "started": "7/8"
+      },
+      {
+       "name": "Victor Lindelöf",
+       "started": "7/8"
+      },
+      {
+       "name": "John McGinn",
+       "started": "7/8"
+      },
+      {
+       "name": "Nicolas Jackson",
+       "started": "7/8"
+      },
+      {
+       "name": "Boubacar Kamara",
+       "started": "6/8"
+      },
+      {
+       "name": "Johan Manzambi",
+       "started": "5/8"
+      },
+      {
+       "name": "Aaron Wan-Bissaka",
+       "started": "5/8"
+      },
+      {
+       "name": "Pau Torres",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "132233",
+       "name": "Marco Bizot",
+       "pos": "G"
+      },
+      {
+       "id": "281125",
+       "name": "Ian Maatsen",
+       "pos": "D"
+      },
+      {
+       "id": "310607",
+       "name": "Lamare Bogarde",
+       "pos": "D"
+      },
+      {
+       "id": "181312",
+       "name": "Tyrone Mings",
+       "pos": "D"
+      },
+      {
+       "id": "281121",
+       "name": "Taylor Harwood-Bellis",
+       "pos": "D"
+      },
+      {
+       "id": "301524",
+       "name": "João Gomes",
+       "pos": "M"
+      },
+      {
+       "id": "388522",
+       "name": "Ibrahim Mbaye",
+       "pos": "M"
+      },
+      {
+       "id": "366248",
+       "name": "George Hemmings",
+       "pos": "M"
+      },
+      {
+       "id": "174550",
+       "name": "Leon Goretzka",
+       "pos": "M"
+      },
+      {
+       "id": "214375",
+       "name": "Emiliano Buendía",
+       "pos": "M"
+      },
+      {
+       "id": "401451",
+       "name": "Brian Madjo",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "162843",
+       "name": "John McGinn",
+       "pos": "SUB"
+      },
+      {
+       "id": "382839",
+       "name": "Alysson",
+       "pos": "SUB"
+      },
+      {
+       "id": "234698",
+       "name": "Matty Cash",
+       "pos": "SUB"
+      },
+      {
+       "id": "265958",
+       "name": "Zion Suzuki",
+       "pos": "SUB"
+      },
+      {
+       "id": "250936",
+       "name": "Boubacar Kamara",
+       "pos": "SUB"
+      },
+      {
+       "id": "152469",
+       "name": "Ross Barkley",
+       "pos": "SUB"
+      },
+      {
+       "id": "325555",
+       "name": "Alejandro Garnacho",
+       "pos": "SUB"
+      },
+      {
+       "id": "392682",
+       "name": "Modou Cissé",
+       "pos": "SUB"
+      },
+      {
+       "id": "236209",
+       "name": "Tammy Abraham",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.397,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 9,
+      "out": [
+       "Suzuki",
+       "Torres",
+       "Lindelöf",
+       "Cash",
+       "McGinn",
+       "Kamara",
+       "Jackson",
+       "Manzambi",
+       "Alysson"
+      ],
+      "in": [
+       "Bizot",
+       "Bogarde",
+       "Mings",
+       "Harwood-Bellis",
+       "Mbaye",
+       "Hemmings",
+       "Goretzka",
+       "Buendía",
+       "Madjo"
+      ]
+     }
+    }
+   },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "h": 2.3,
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "h": 2.25,
      "d": 3.6,
-     "a": 2.8
+     "a": 2.9
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.57,
      "under": 2.35
     }
@@ -69376,26 +70114,394 @@
    },
    "cup": true,
    "form": "Fixture and kick-off from ESPN, confirmed by BBC Sport. Prices are a single source (Bet365) when found.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-28T19:09:24.641Z",
+    "home": {
+     "team": "Fulham",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Benjamin Lecomte",
+      "Calvin Bassey",
+      "Kenny Tete",
+      "Antonee Robinson",
+      "Joachim Andersen",
+      "Hugo Larsson",
+      "Sander Berge",
+      "César Palacios",
+      "Alex Iwobi",
+      "Oscar Bobb",
+      "Rodrigo Muniz"
+     ],
+     "missing": [
+      {
+       "name": "Bernd Leno",
+       "started": "7/8"
+      },
+      {
+       "name": "Timothy Castagne",
+       "started": "7/8"
+      },
+      {
+       "name": "Josh King",
+       "started": "7/8"
+      },
+      {
+       "name": "Gonzalo García",
+       "started": "7/8"
+      },
+      {
+       "name": "Shea Charles",
+       "started": "6/8"
+      },
+      {
+       "name": "David Affengruber",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "149517",
+       "name": "Benjamin Lecomte",
+       "pos": "G"
+      },
+      {
+       "id": "263110",
+       "name": "Calvin Bassey",
+       "pos": "D"
+      },
+      {
+       "id": "190974",
+       "name": "Kenny Tete",
+       "pos": "D"
+      },
+      {
+       "id": "222396",
+       "name": "Antonee Robinson",
+       "pos": "D"
+      },
+      {
+       "id": "196081",
+       "name": "Joachim Andersen",
+       "pos": "D"
+      },
+      {
+       "id": "336460",
+       "name": "Hugo Larsson",
+       "pos": "M"
+      },
+      {
+       "id": "218998",
+       "name": "Sander Berge",
+       "pos": "M"
+      },
+      {
+       "id": "12172",
+       "name": "César Palacios",
+       "pos": "M"
+      },
+      {
+       "id": "175063",
+       "name": "Alex Iwobi",
+       "pos": "M"
+      },
+      {
+       "id": "307111",
+       "name": "Oscar Bobb",
+       "pos": "M"
+      },
+      {
+       "id": "301525",
+       "name": "Rodrigo Muniz",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "197163",
+       "name": "Timothy Castagne",
+       "pos": "SUB"
+      },
+      {
+       "id": "140033",
+       "name": "Tom Cairney",
+       "pos": "SUB"
+      },
+      {
+       "id": "252031",
+       "name": "Jorge Cuenca",
+       "pos": "SUB"
+      },
+      {
+       "id": "409541",
+       "name": "Josh King",
+       "pos": "SUB"
+      },
+      {
+       "id": "193246",
+       "name": "Harrison Reed",
+       "pos": "SUB"
+      },
+      {
+       "id": "364812",
+       "name": "Manuel Ángel",
+       "pos": "SUB"
+      },
+      {
+       "id": "330764",
+       "name": "Kevin",
+       "pos": "SUB"
+      },
+      {
+       "id": "153765",
+       "name": "Bernd Leno",
+       "pos": "SUB"
+      },
+      {
+       "id": "87297",
+       "name": "Gonzalo García",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.611,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 6,
+      "out": [
+       "Leno",
+       "Affengruber",
+       "Castagne",
+       "King",
+       "Charles",
+       "García"
+      ],
+      "in": [
+       "Lecomte",
+       "Tete",
+       "Andersen",
+       "Berge",
+       "Palacios",
+       "Muniz"
+      ]
+     }
+    },
+    "away": {
+     "team": "Crystal Palace",
+     "formation": "3-4-2-1",
+     "xi": [
+      "Dean Henderson",
+      "Ben Chilwell",
+      "Honest Ahanor",
+      "Chris Richards",
+      "Will Hughes",
+      "Darío Osorio",
+      "Evann Guessand",
+      "Cheick Doucouré",
+      "Jefferson Lerma",
+      "Óscar Mingueza",
+      "Eddie Nketiah"
+     ],
+     "missing": [
+      {
+       "name": "Walter Benítez",
+       "started": "8/8"
+      },
+      {
+       "name": "Adam Wharton",
+       "started": "8/8"
+      },
+      {
+       "name": "Tyrick Mitchell",
+       "started": "8/8"
+      },
+      {
+       "name": "Yéremy Pino",
+       "started": "8/8"
+      },
+      {
+       "name": "Daichi Kamada",
+       "started": "7/8"
+      },
+      {
+       "name": "Anan Khalaili",
+       "started": "7/8"
+      },
+      {
+       "name": "Jaydee Canvot",
+       "started": "6/8"
+      },
+      {
+       "name": "Quinten Timber",
+       "started": "6/8"
+      },
+      {
+       "name": "Jørgen Strand Larsen",
+       "started": "6/8"
+      },
+      {
+       "name": "Axel Disasi",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "234172",
+       "name": "Dean Henderson",
+       "pos": "G"
+      },
+      {
+       "id": "225426",
+       "name": "Ben Chilwell",
+       "pos": "D"
+      },
+      {
+       "id": "388605",
+       "name": "Honest Ahanor",
+       "pos": "D"
+      },
+      {
+       "id": "272585",
+       "name": "Chris Richards",
+       "pos": "D"
+      },
+      {
+       "id": "168421",
+       "name": "Will Hughes",
+       "pos": "M"
+      },
+      {
+       "id": "315668",
+       "name": "Darío Osorio",
+       "pos": "M"
+      },
+      {
+       "id": "288924",
+       "name": "Evann Guessand",
+       "pos": "M"
+      },
+      {
+       "id": "266628",
+       "name": "Cheick Doucouré",
+       "pos": "M"
+      },
+      {
+       "id": "197399",
+       "name": "Jefferson Lerma",
+       "pos": "M"
+      },
+      {
+       "id": "276546",
+       "name": "Óscar Mingueza",
+       "pos": "M"
+      },
+      {
+       "id": "259486",
+       "name": "Eddie Nketiah",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "219362",
+       "name": "Daichi Kamada",
+       "pos": "SUB"
+      },
+      {
+       "id": "273495",
+       "name": "Dwight McNeil",
+       "pos": "SUB"
+      },
+      {
+       "id": "195738",
+       "name": "Walter Benítez",
+       "pos": "SUB"
+      },
+      {
+       "id": "332648",
+       "name": "Anan Khalaili",
+       "pos": "SUB"
+      },
+      {
+       "id": "297370",
+       "name": "Yéremy Pino",
+       "pos": "SUB"
+      },
+      {
+       "id": "374519",
+       "name": "Zavier Gozo",
+       "pos": "SUB"
+      },
+      {
+       "id": "300853",
+       "name": "Tyrick Mitchell",
+       "pos": "SUB"
+      },
+      {
+       "id": "231718",
+       "name": "Axel Disasi",
+       "pos": "SUB"
+      },
+      {
+       "id": "333419",
+       "name": "Adam Wharton",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.169,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 10,
+      "out": [
+       "Benítez",
+       "Disasi",
+       "Canvot",
+       "Kamada",
+       "Wharton",
+       "Mitchell",
+       "Khalaili",
+       "Mateta",
+       "Pino",
+       "McNeil"
+      ],
+      "in": [
+       "Henderson",
+       "Chilwell",
+       "Ahanor",
+       "Hughes",
+       "Osorio",
+       "Guessand",
+       "Doucouré",
+       "Lerma",
+       "Mingueza",
+       "Nketiah"
+      ]
+     }
+    }
+   },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "h": 1.7,
-     "d": 3.9,
-     "a": 4.5
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "h": 1.67,
+     "d": 4,
+     "a": 4.75
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "over": 1.6,
-     "under": 2.3
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "over": 1.62,
+     "under": 2.25
     }
    ],
    "kickoffUrl": "https://www.kickoff.co.uk/english-league-cup-predictions-stats-odds/fulham-vs-crystal-palace/"
@@ -69413,26 +70519,400 @@
    },
    "cup": true,
    "form": "Fixture and kick-off from ESPN, confirmed by BBC Sport. Prices are a single source (Bet365) when found.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-28T19:09:24.641Z",
+    "home": {
+     "team": "Sunderland",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Melker Ellborg",
+      "Omar Alderete",
+      "Kevin Danso",
+      "Dayann Methalie",
+      "Alan Browne",
+      "Jules Ahoka",
+      "Malick Fofana",
+      "Jocelin Ta Bi",
+      "Habib Diarra",
+      "Chemsdine Talbi",
+      "Tymur Tutierov"
+     ],
+     "missing": [
+      {
+       "name": "Robin Roefs",
+       "started": "8/8"
+      },
+      {
+       "name": "Nordi Mukiele",
+       "started": "7/8"
+      },
+      {
+       "name": "Noah Sadiki",
+       "started": "7/8"
+      },
+      {
+       "name": "Granit Xhaka",
+       "started": "7/8"
+      },
+      {
+       "name": "Enzo Le Fée",
+       "started": "6/8"
+      },
+      {
+       "name": "Nilson Angulo",
+       "started": "6/8"
+      },
+      {
+       "name": "Reinildo Mandava",
+       "started": "5/8"
+      },
+      {
+       "name": "Trai Hume",
+       "started": "5/8"
+      },
+      {
+       "name": "Luke O'Nien",
+       "started": "3/8"
+      },
+      {
+       "name": "Brian Brobbey",
+       "started": "3/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "307800",
+       "name": "Melker Ellborg",
+       "pos": "G"
+      },
+      {
+       "id": "215401",
+       "name": "Omar Alderete",
+       "pos": "D"
+      },
+      {
+       "id": "250543",
+       "name": "Kevin Danso",
+       "pos": "D"
+      },
+      {
+       "id": "388070",
+       "name": "Dayann Methalie",
+       "pos": "D"
+      },
+      {
+       "id": "197627",
+       "name": "Alan Browne",
+       "pos": "D"
+      },
+      {
+       "id": "410687",
+       "name": "Jules Ahoka",
+       "pos": "M"
+      },
+      {
+       "id": "340645",
+       "name": "Malick Fofana",
+       "pos": "M"
+      },
+      {
+       "id": "417825",
+       "name": "Jocelin Ta Bi",
+       "pos": "M"
+      },
+      {
+       "id": "324991",
+       "name": "Habib Diarra",
+       "pos": "M"
+      },
+      {
+       "id": "360062",
+       "name": "Chemsdine Talbi",
+       "pos": "M"
+      },
+      {
+       "id": "387460",
+       "name": "Tymur Tutierov",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "166473",
+       "name": "Thomas Meunier",
+       "pos": "SUB"
+      },
+      {
+       "id": "356295",
+       "name": "Chris Rigg",
+       "pos": "SUB"
+      },
+      {
+       "id": "243578",
+       "name": "Jenson Arron Jones",
+       "pos": "SUB"
+      },
+      {
+       "id": "138481",
+       "name": "Simon Moore",
+       "pos": "SUB"
+      },
+      {
+       "id": "191574",
+       "name": "Luke O'Nien",
+       "pos": "SUB"
+      },
+      {
+       "id": "3111010",
+       "name": "Tom Proctor",
+       "pos": "SUB"
+      },
+      {
+       "id": "3111009",
+       "name": "Felix Scott",
+       "pos": "SUB"
+      },
+      {
+       "id": "236211",
+       "name": "Jack Whittaker",
+       "pos": "SUB"
+      },
+      {
+       "id": "392107",
+       "name": "Trey Ogunsuyi",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.333,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 11,
+      "out": [
+       "Roefs",
+       "O'Nien",
+       "Mukiele",
+       "Mandava",
+       "Hume",
+       "Fée",
+       "Sadiki",
+       "Xhaka",
+       "Brobbey",
+       "Angulo",
+       "Rigg"
+      ],
+      "in": [
+       "Ellborg",
+       "Alderete",
+       "Danso",
+       "Methalie",
+       "Browne",
+       "Ahoka",
+       "Fofana",
+       "Bi",
+       "Diarra",
+       "Talbi",
+       "Tutierov"
+      ]
+     }
+    },
+    "away": {
+     "team": "Brentford",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Hákon Valdimarsson",
+      "Nathan Collins",
+      "Jannik Schuster",
+      "El Hadji Malick Diouf",
+      "Michael Kayode",
+      "Mikkel Damsgaard",
+      "Vitaly Janelt",
+      "Callum Wilson",
+      "Jaidon Anthony",
+      "Mamadou Sangare",
+      "Igor Thiago"
+     ],
+     "missing": [
+      {
+       "name": "Kristoffer Ajer",
+       "started": "8/8"
+      },
+      {
+       "name": "Keane Lewis-Potter",
+       "started": "8/8"
+      },
+      {
+       "name": "Caoimhín Kelleher",
+       "started": "7/8"
+      },
+      {
+       "name": "Kevin Schade",
+       "started": "6/8"
+      },
+      {
+       "name": "Dango Ouattara",
+       "started": "4/8"
+      },
+      {
+       "name": "Yehor Yarmoliuk",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "311527",
+       "name": "Hákon Valdimarsson",
+       "pos": "G"
+      },
+      {
+       "id": "279780",
+       "name": "Nathan Collins",
+       "pos": "D"
+      },
+      {
+       "id": "376683",
+       "name": "Jannik Schuster",
+       "pos": "D"
+      },
+      {
+       "id": "359796",
+       "name": "El Hadji Malick Diouf",
+       "pos": "D"
+      },
+      {
+       "id": "356640",
+       "name": "Michael Kayode",
+       "pos": "D"
+      },
+      {
+       "id": "308932",
+       "name": "Mikkel Damsgaard",
+       "pos": "M"
+      },
+      {
+       "id": "225564",
+       "name": "Vitaly Janelt",
+       "pos": "M"
+      },
+      {
+       "id": "138924",
+       "name": "Callum Wilson",
+       "pos": "M"
+      },
+      {
+       "id": "307657",
+       "name": "Jaidon Anthony",
+       "pos": "M"
+      },
+      {
+       "id": "228547",
+       "name": "Mamadou Sangare",
+       "pos": "M"
+      },
+      {
+       "id": "301894",
+       "name": "Igor Thiago",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "315530",
+       "name": "Dango Ouattara",
+       "pos": "SUB"
+      },
+      {
+       "id": "310958",
+       "name": "Kevin Schade",
+       "pos": "SUB"
+      },
+      {
+       "id": "270507",
+       "name": "Sepp van den Berg",
+       "pos": "SUB"
+      },
+      {
+       "id": "206173",
+       "name": "Kristoffer Ajer",
+       "pos": "SUB"
+      },
+      {
+       "id": "366004",
+       "name": "Gustavo Nunes",
+       "pos": "SUB"
+      },
+      {
+       "id": "283940",
+       "name": "Aaron Hickey",
+       "pos": "SUB"
+      },
+      {
+       "id": "227472",
+       "name": "Mathias Jensen",
+       "pos": "SUB"
+      },
+      {
+       "id": "275599",
+       "name": "Caoimhín Kelleher",
+       "pos": "SUB"
+      },
+      {
+       "id": "284490",
+       "name": "Keane Lewis-Potter",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.627,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 8,
+      "out": [
+       "Kelleher",
+       "Ajer",
+       "Berg",
+       "Lewis-Potter",
+       "Jensen",
+       "Hickey",
+       "Schade",
+       "Ouattara"
+      ],
+      "in": [
+       "Valdimarsson",
+       "Collins",
+       "Schuster",
+       "Diouf",
+       "Damsgaard",
+       "Janelt",
+       "Wilson",
+       "Anthony"
+      ]
+     }
+    }
+   },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "h": 4,
-     "d": 3.75,
-     "a": 1.8
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "h": 4.33,
+     "d": 3.9,
+     "a": 1.73
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "over": 1.73,
-     "under": 2.08
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "over": 1.67,
+     "under": 2.15
     }
    ],
    "kickoffUrl": "https://www.kickoff.co.uk/english-league-cup-predictions-stats-odds/sunderland-vs-brentford/"
@@ -69450,26 +70930,368 @@
    },
    "cup": true,
    "form": "Fixture and kick-off from ESPN, confirmed by BBC Sport. Prices are a single source (Bet365) when found.",
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-28T19:09:24.641Z",
+    "home": {
+     "team": "Liverpool",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Giorgi Mamardashvili",
+      "Ronald Araujo",
+      "Virgil van Dijk",
+      "Kostas Tsimikas",
+      "Joe Gomez",
+      "James McConnell",
+      "Trey Nyoni",
+      "Ryan Gravenberch",
+      "Lewis Koumas",
+      "Cody Gakpo",
+      "Rio Ngumoha"
+     ],
+     "missing": [
+      {
+       "name": "Alisson Becker",
+       "started": "7/8"
+      },
+      {
+       "name": "Jérémy Jacquet",
+       "started": "7/8"
+      },
+      {
+       "name": "Florian Wirtz",
+       "started": "6/8"
+      },
+      {
+       "name": "Alexis Mac Allister",
+       "started": "6/8"
+      },
+      {
+       "name": "Bradley Barcola",
+       "started": "6/8"
+      },
+      {
+       "name": "Milos Kerkez",
+       "started": "5/8"
+      },
+      {
+       "name": "Alexander Isak",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "274742",
+       "name": "Giorgi Mamardashvili",
+       "pos": "G"
+      },
+      {
+       "id": "270821",
+       "name": "Ronald Araujo",
+       "pos": "CD-L"
+      },
+      {
+       "id": "157892",
+       "name": "Virgil van Dijk",
+       "pos": "CD-R"
+      },
+      {
+       "id": "226177",
+       "name": "Kostas Tsimikas",
+       "pos": "LB"
+      },
+      {
+       "id": "102053",
+       "name": "Joe Gomez",
+       "pos": "RB"
+      },
+      {
+       "id": "326230",
+       "name": "James McConnell",
+       "pos": "AM"
+      },
+      {
+       "id": "356075",
+       "name": "Trey Nyoni",
+       "pos": "LM"
+      },
+      {
+       "id": "274632",
+       "name": "Ryan Gravenberch",
+       "pos": "RM"
+      },
+      {
+       "id": "350661",
+       "name": "Lewis Koumas",
+       "pos": "F"
+      },
+      {
+       "id": "249524",
+       "name": "Cody Gakpo",
+       "pos": "AM-L"
+      },
+      {
+       "id": "379588",
+       "name": "Rio Ngumoha",
+       "pos": "AM-R"
+      }
+     ],
+     "bench": [
+      {
+       "id": "355980",
+       "name": "Jérémy Jacquet",
+       "pos": "SUB"
+      },
+      {
+       "id": "303748",
+       "name": "Florian Wirtz",
+       "pos": "SUB"
+      },
+      {
+       "id": "152479",
+       "name": "Wataru Endo",
+       "pos": "SUB"
+      },
+      {
+       "id": "196876",
+       "name": "Alisson Becker",
+       "pos": "SUB"
+      },
+      {
+       "id": "328238",
+       "name": "Bradley Barcola",
+       "pos": "SUB"
+      },
+      {
+       "id": "32572",
+       "name": "Luke Chambers",
+       "pos": "SUB"
+      },
+      {
+       "id": "235662",
+       "name": "Alexander Isak",
+       "pos": "SUB"
+      },
+      {
+       "id": "249299",
+       "name": "Alexis Mac Allister",
+       "pos": "SUB"
+      },
+      {
+       "id": "234306",
+       "name": "Federico Chiesa",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.609,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 7,
+      "out": [
+       "Becker",
+       "Jacquet",
+       "Kerkez",
+       "Wirtz",
+       "Allister",
+       "Isak",
+       "Barcola"
+      ],
+      "in": [
+       "Mamardashvili",
+       "Tsimikas",
+       "Gomez",
+       "McConnell",
+       "Nyoni",
+       "Koumas",
+       "Ngumoha"
+      ]
+     }
+    },
+    "away": {
+     "team": "Chelsea",
+     "formation": "4-3-3",
+     "xi": [
+      "Mike Penders",
+      "Malo Gusto",
+      "Josh Acheampong",
+      "Maxence Lacroix",
+      "Wesley Fofana",
+      "Jordan Henderson",
+      "Romeo Lavia",
+      "Moisés Caicedo",
+      "Danny Welbeck",
+      "Pedro Neto",
+      "Morgan Rogers"
+     ],
+     "missing": [
+      {
+       "name": "Levi Colwill",
+       "started": "7/8"
+      },
+      {
+       "name": "Cole Palmer",
+       "started": "7/8"
+      },
+      {
+       "name": "Emiliano Martínez",
+       "started": "6/8"
+      },
+      {
+       "name": "Jorrel Hato",
+       "started": "5/8"
+      },
+      {
+       "name": "João Pedro",
+       "started": "5/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "332343",
+       "name": "Mike Penders",
+       "pos": "G"
+      },
+      {
+       "id": "308947",
+       "name": "Malo Gusto",
+       "pos": "D"
+      },
+      {
+       "id": "368317",
+       "name": "Josh Acheampong",
+       "pos": "D"
+      },
+      {
+       "id": "265918",
+       "name": "Maxence Lacroix",
+       "pos": "D"
+      },
+      {
+       "id": "270190",
+       "name": "Wesley Fofana",
+       "pos": "D"
+      },
+      {
+       "id": "127262",
+       "name": "Jordan Henderson",
+       "pos": "M"
+      },
+      {
+       "id": "308217",
+       "name": "Romeo Lavia",
+       "pos": "M"
+      },
+      {
+       "id": "289877",
+       "name": "Moisés Caicedo",
+       "pos": "M"
+      },
+      {
+       "id": "115271",
+       "name": "Danny Welbeck",
+       "pos": "F"
+      },
+      {
+       "id": "256115",
+       "name": "Pedro Neto",
+       "pos": "F"
+      },
+      {
+       "id": "265653",
+       "name": "Morgan Rogers",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "399562",
+       "name": "Mahdi Nicoll-Jazuli",
+       "pos": "SUB"
+      },
+      {
+       "id": "376274",
+       "name": "Geovany Quenda",
+       "pos": "SUB"
+      },
+      {
+       "id": "320760",
+       "name": "Valentín Barco",
+       "pos": "SUB"
+      },
+      {
+       "id": "362486",
+       "name": "Marco Palestra",
+       "pos": "SUB"
+      },
+      {
+       "id": "296410",
+       "name": "Levi Colwill",
+       "pos": "SUB"
+      },
+      {
+       "id": "408508",
+       "name": "Olutayo Subuloye",
+       "pos": "SUB"
+      },
+      {
+       "id": "304871",
+       "name": "Emmanuel Emegha",
+       "pos": "SUB"
+      },
+      {
+       "id": "300049",
+       "name": "Teddy Sharman-Lowe",
+       "pos": "SUB"
+      },
+      {
+       "id": "376481",
+       "name": "Estêvão",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.734,
+     "att": null,
+     "backupKeeper": true,
+     "history": 8,
+     "changes": {
+      "n": 4,
+      "out": [
+       "Colwill",
+       "Hato",
+       "Quenda",
+       "Palmer"
+      ],
+      "in": [
+       "Gusto",
+       "Fofana",
+       "Lavia",
+       "Welbeck"
+      ]
+     }
+    }
+   },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "h": 2.25,
-     "d": 3.75,
-     "a": 2.9
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "h": 2.35,
+     "d": 3.7,
+     "a": 2.8
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "yes": 1.44,
-     "no": 2.63
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "yes": 1.5,
+     "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
-     "over": 1.53,
-     "under": 2.4
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
+     "over": 1.57,
+     "under": 2.35
     }
    ],
    "kickoffUrl": "https://www.kickoff.co.uk/english-league-cup-predictions-stats-odds/liverpool-vs-chelsea/"
@@ -69489,7 +71311,7 @@
    "form": "Fixture and kick-off from ESPN (single source). Prices are a single source (Bet365) when found.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "h": 2.15,
      "d": 3.5,
      "a": 3.1
@@ -69497,14 +71319,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 17:10",
+     "source": "kickoff.co.uk match page (Bet365), Wed 28 Oct 19:09",
      "over": 1.73,
      "under": 2.08
     }
@@ -69512,5 +71334,5 @@
    "kickoffUrl": "https://www.kickoff.co.uk/english-league-cup-predictions-stats-odds/everton-vs-newcastle/"
   }
  ],
- "updateTag": "Wed 28 Oct 17:10"
+ "updateTag": "Wed 28 Oct 19:09"
 }
