@@ -946,5 +946,88 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "sa-20261028-acmi-bolo": {
+  "kickoff": "2026-10-28T17:30:00+00:00",
+  "score": [
+   2,
+   4
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261028-vene-inte": {
+  "kickoff": "2026-10-28T17:30:00+00:00",
+  "score": [
+   0,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures"
+  ],
+  "note": "single source"
+ },
+ "elc-20261028-manc-brig": {
+  "kickoff": "2026-10-28T19:30:00+00:00",
+  "score": [
+   2,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "elc-20261028-afcb-asto": {
+  "kickoff": "2026-10-28T19:45:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "elc-20261028-fulh-crys": {
+  "kickoff": "2026-10-28T19:45:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "elc-20261028-sund-bren": {
+  "kickoff": "2026-10-28T19:45:00+00:00",
+  "score": [
+   3,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "elc-20261028-live-chel": {
+  "kickoff": "2026-10-28T20:00:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
