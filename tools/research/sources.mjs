@@ -26,7 +26,8 @@ export const COMPETITIONS = {
   Bundesliga: { bbc: 'german-bundesliga', kickoff: 'german-bundesliga', espn: 'ger.1' },
   'Serie A': { bbc: 'italian-serie-a', kickoff: 'italian-serie-a', espn: 'ita.1' },
   'Ligue 1': { bbc: 'french-ligue-one', kickoff: 'french-ligue', espn: 'fra.1' },
-  'League Cup': { bbc: 'league-cup', kickoff: 'english-league-cup', espn: 'eng.league_cup' },
+  // Cup: fixtures come from tools/cup-fixtures.mjs, not make-round.mjs.
+  'League Cup': { bbc: 'league-cup', kickoff: 'english-league-cup', espn: 'eng.league_cup', cup: true },
 };
 
 // ---- BBC Sport -----------------------------------------------------------------

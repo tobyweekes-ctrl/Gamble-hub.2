@@ -187,6 +187,20 @@ League Cup (Carabao Cup) ties are now on the site, predicted by the cross-league
   - Man City v Brighton: model 69%, Bet365 57%.
   - These are what you'd expect if Bet365 is pricing in rotation and our model isn't, so they aren't value.
 
+## Weekly build 30 Oct 2026 (round 2026-10-30-weekly)
+
+- **Live record:** 78 v4.2 games graded. Favourite won 48.7%; Brier 0.602.
+  - On the 53 games with Bet365 prices logged, Bet365 was more accurate: Brier 0.575 v 0.585.
+  - Over 2.5 called right: 60% for us, 57% for Bet365.
+- **Player props (3,834 graded):**
+  - Value picks on confirmed lineups: 58 bets, +19.4 units.
+  - Value picks before lineups: 17 bets, -9.3 units.
+  - Shots value: +13.2 units on 28 bets. Shots on target: -0.7 on 41.
+  - Still too few to call an edge.
+- **Source gap: BBC left out Saturday 31 Oct's Bundesliga and Championship games**, including Bayern v Dortmund. `make-round.mjs` now adds fixtures ESPN lists and BBC does not, labelled "ESPN (single source)". 14 such fixtures this week.
+- **Price gaps:** no Bet365 price yet for the 12 Championship midweek games (3-4 Nov). The lineup-time runs refresh prices.
+- **Make-round fix:** it no longer treats the League Cup as a league. Cup ties come from `cup-fixtures.mjs`.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.
