@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-10-30-weekly",
- "dataUpdated": "Fri 30 Oct 17:57",
+ "dataUpdated": "Fri 30 Oct 19:08",
  "notes": [
   "Fri 30 Oct 08:54 to Fri 6 Nov 08:54. Premier League, Championship and Champions League in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "Fixtures and tables: BBC Sport. Prices: Bet365 via kickoff.co.uk match pages. Predictions: our own model (tools/model/).",
@@ -2063,7 +2063,7 @@
    },
    "lineups": {
     "source": "ESPN",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": {
      "team": "Le Havre AC",
      "formation": "3-4-2-1",
@@ -2076,9 +2076,9 @@
       "Simon Ebonog",
       "Mouhamed N'Diaye",
       "Djibril Ouziad",
-      "Rayan Fofana",
       "Josh Maja",
-      "Sota Nakamura"
+      "Sota Nakamura",
+      "Rayan Fofana"
      ],
      "missing": [
       {
@@ -2140,18 +2140,18 @@
        "pos": "RM"
       },
       {
-       "id": "401045",
-       "name": "Rayan Fofana",
-       "pos": "F"
-      },
-      {
        "id": "243514",
        "name": "Josh Maja",
-       "pos": "CF-L"
+       "pos": "F"
       },
       {
        "id": "399434",
        "name": "Sota Nakamura",
+       "pos": "CF-L"
+      },
+      {
+       "id": "401045",
+       "name": "Rayan Fofana",
        "pos": "CF-R"
       }
      ],
@@ -2231,12 +2231,12 @@
       "Illia Zabarnyi",
       "Lucas Digne",
       "Achraf Hakimi",
-      "Warren Zaïre-Emery",
+      "Maghnes Akliouche",
       "Dro Fernández",
+      "Warren Zaïre-Emery",
       "Senny Mayulu",
-      "Ferran Torres",
       "Mika Godts",
-      "Maghnes Akliouche"
+      "Ferran Torres"
      ],
      "missing": [
       {
@@ -2287,8 +2287,8 @@
        "pos": "RB"
       },
       {
-       "id": "345581",
-       "name": "Warren Zaïre-Emery",
+       "id": "329690",
+       "name": "Maghnes Akliouche",
        "pos": "CM"
       },
       {
@@ -2297,13 +2297,13 @@
        "pos": "LM"
       },
       {
-       "id": "379088",
-       "name": "Senny Mayulu",
+       "id": "345581",
+       "name": "Warren Zaïre-Emery",
        "pos": "RM"
       },
       {
-       "id": "265869",
-       "name": "Ferran Torres",
+       "id": "379088",
+       "name": "Senny Mayulu",
        "pos": "F"
       },
       {
@@ -2312,8 +2312,8 @@
        "pos": "LF"
       },
       {
-       "id": "329690",
-       "name": "Maghnes Akliouche",
+       "id": "265869",
+       "name": "Ferran Torres",
        "pos": "RF"
       }
      ],
@@ -3211,7 +3211,7 @@
    "kickoff": "2026-10-30T20:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.25,
      "d": 3.4,
      "a": 3
@@ -3219,14 +3219,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.91,
      "under": 1.91
     }
@@ -3235,76 +3235,16 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143022,
     "homeName": "Sheffield United",
     "awayName": "Wrexham",
     "players": [
      {
-      "name": "Patrick Bamford",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.5
-     },
-     {
-      "name": "Jairo Riedewald",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.4
-     },
-     {
-      "name": "Danny Imray",
-      "mk": "sot",
-      "k": 1,
-      "odds": 3.8
-     },
-     {
-      "name": "Sam Smith",
-      "mk": "sot",
-      "k": 2,
-      "odds": 3
-     },
-     {
-      "name": "Josh Windass",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.9
-     },
-     {
-      "name": "Josh Windass",
-      "mk": "yc",
-      "k": 1,
-      "odds": 5
-     },
-     {
-      "name": "Thomas Cannon",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.47
-     },
-     {
-      "name": "Thomas Cannon",
-      "mk": "sot",
-      "k": 2,
-      "odds": 2.95
-     },
-     {
-      "name": "Bailey Cadamarteri",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.88
-     },
-     {
       "name": "Harrison Burrows",
       "mk": "sot",
       "k": 1,
       "odds": 2.45
-     },
-     {
-      "name": "Matt Doherty",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.2
      },
      {
       "name": "Japhet Tanganga",
@@ -3316,13 +3256,13 @@
       "name": "Oliver Rathbone",
       "mk": "yc",
       "k": 1,
-      "odds": 4.3
+      "odds": 4.4
      },
      {
       "name": "Liam Kitching",
       "mk": "yc",
       "k": 1,
-      "odds": 4.3
+      "odds": 4.1
      },
      {
       "name": "Romelle Donovan",
@@ -3334,13 +3274,7 @@
       "name": "Dominic Hyam",
       "mk": "sot",
       "k": 1,
-      "odds": 5.1
-     },
-     {
-      "name": "Callum O'Hare",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.9
+      "odds": 5.2
      },
      {
       "name": "Romelle Donovan",
@@ -3352,19 +3286,7 @@
       "name": "Sydie Peck",
       "mk": "sot",
       "k": 1,
-      "odds": 2.15
-     },
-     {
-      "name": "Sam Smith",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.45
-     },
-     {
-      "name": "Mark McGuinness",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.8
+      "odds": 2.1
      },
      {
       "name": "Kieffer Moore",
@@ -3376,31 +3298,19 @@
       "name": "Kieffer Moore",
       "mk": "sot",
       "k": 1,
-      "odds": 1.6
+      "odds": 1.61
      },
      {
       "name": "Jordan Ayew",
       "mk": "sot",
       "k": 1,
-      "odds": 1.53
-     },
-     {
-      "name": "Tyrese Campbell",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.73
-     },
-     {
-      "name": "Danny Imray",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.3
+      "odds": 1.52
      },
      {
       "name": "Sydie Peck",
       "mk": "yc",
       "k": 1,
-      "odds": 3.9
+      "odds": 3.8
      },
      {
       "name": "Kieffer Moore",
@@ -3409,28 +3319,10 @@
       "odds": 4.9
      },
      {
-      "name": "Oliver Arblaster",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.3
-     },
-     {
-      "name": "Rhys Norrington-Davies",
-      "mk": "yc",
-      "k": 1,
-      "odds": 6.25
-     },
-     {
       "name": "Joe Worrall",
       "mk": "yc",
       "k": 1,
-      "odds": 4.6
-     },
-     {
-      "name": "Callum O'Hare",
-      "mk": "yc",
-      "k": 1,
-      "odds": 5.5
+      "odds": 4.7
      },
      {
       "name": "Ben Brereton",
@@ -3439,82 +3331,40 @@
       "odds": 3.7
      },
      {
-      "name": "Sam McCallum",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.5
-     },
-     {
-      "name": "Ryan Longman",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.8
-     },
-     {
       "name": "Hamza Choudhury",
       "mk": "yc",
       "k": 1,
       "odds": 5.5
      },
      {
-      "name": "George Dobson",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.4
-     },
-     {
       "name": "Callum Doyle",
       "mk": "sot",
       "k": 1,
-      "odds": 5
-     },
-     {
-      "name": "Zak Vyner",
-      "mk": "yc",
-      "k": 1,
-      "odds": 5.75
+      "odds": 5.2
      },
      {
       "name": "Issa Kabore",
       "mk": "yc",
       "k": 1,
-      "odds": 4.4
-     },
-     {
-      "name": "Oliver Arblaster",
-      "mk": "sot",
-      "k": 1,
-      "odds": 2.8
-     },
-     {
-      "name": "Joe Rothwell",
-      "mk": "yc",
-      "k": 1,
-      "odds": 5.1
+      "odds": 4.3
      },
      {
       "name": "Ben Brereton",
       "mk": "sot",
       "k": 1,
-      "odds": 1.72
+      "odds": 1.73
      },
      {
       "name": "Oliver Rathbone",
       "mk": "sot",
       "k": 1,
-      "odds": 2.15
-     },
-     {
-      "name": "Femi Seriki",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.3
+      "odds": 2.25
      },
      {
       "name": "Jacques Ekomié",
       "mk": "sot",
       "k": 1,
-      "odds": 4.8
+      "odds": 5
      },
      {
       "name": "Tahith Chong",
@@ -3529,46 +3379,22 @@
       "odds": 4
      },
      {
-      "name": "Sam Smith",
-      "mk": "yc",
-      "k": 1,
-      "odds": 5.4
-     },
-     {
       "name": "Jordan Ayew",
       "mk": "yc",
       "k": 1,
-      "odds": 4.8
+      "odds": 4.7
      },
      {
       "name": "Harrison Burrows",
       "mk": "yc",
       "k": 1,
-      "odds": 5.4
-     },
-     {
-      "name": "Ben Whiteman",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4
+      "odds": 5.3
      },
      {
       "name": "Callum Doyle",
       "mk": "yc",
       "k": 1,
-      "odds": 5.2
-     },
-     {
-      "name": "Bailey Cadamarteri",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.8
-     },
-     {
-      "name": "Thomas Cannon",
-      "mk": "yc",
-      "k": 1,
-      "odds": 5.6
+      "odds": 5.1
      },
      {
       "name": "Jacques Ekomié",
@@ -3577,28 +3403,16 @@
       "odds": 4.5
      },
      {
-      "name": "Patrick Bamford",
-      "mk": "yc",
-      "k": 1,
-      "odds": 5.2
-     },
-     {
-      "name": "Tyrese Campbell",
-      "mk": "yc",
-      "k": 1,
-      "odds": 5.8
-     },
-     {
       "name": "Tahith Chong",
       "mk": "yc",
       "k": 1,
-      "odds": 5.2
+      "odds": 5.3
      },
      {
       "name": "Lewis O'Brien",
       "mk": "sot",
       "k": 1,
-      "odds": 2.75
+      "odds": 2.9
      },
      {
       "name": "Lewis O'Brien",
@@ -3610,49 +3424,31 @@
       "name": "Matty James",
       "mk": "yc",
       "k": 1,
-      "odds": 4.8
+      "odds": 4.9
      },
      {
       "name": "Ben Sheaf",
       "mk": "yc",
       "k": 1,
-      "odds": 4.9
+      "odds": 4.7
      },
      {
       "name": "Jordan Ayew",
       "mk": "sot",
       "k": 2,
-      "odds": 3.1
-     },
-     {
-      "name": "Tyrese Campbell",
-      "mk": "sot",
-      "k": 2,
-      "odds": 4
-     },
-     {
-      "name": "Callum O'Hare",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.7
+      "odds": 3.2
      },
      {
       "name": "Oliver Rathbone",
       "mk": "sh",
       "k": 1,
-      "odds": 1.23
+      "odds": 1.24
      },
      {
       "name": "Matty James",
       "mk": "sh",
       "k": 1,
-      "odds": 1.93
-     },
-     {
-      "name": "Sam Smith",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.24
+      "odds": 1.9
      },
      {
       "name": "Tahith Chong",
@@ -3664,103 +3460,55 @@
       "name": "Lewis O'Brien",
       "mk": "sh",
       "k": 1,
-      "odds": 1.45
-     },
-     {
-      "name": "Femi Seriki",
-      "mk": "sot",
-      "k": 1,
-      "odds": 5
-     },
-     {
-      "name": "Josh Windass",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.62
-     },
-     {
-      "name": "Josh Windass",
-      "mk": "sh",
-      "k": 1,
-      "odds": 1.12
-     },
-     {
-      "name": "George Dobson",
-      "mk": "sot",
-      "k": 1,
-      "odds": 5.3
+      "odds": 1.48
      },
      {
       "name": "Sydie Peck",
       "mk": "sh",
       "k": 3,
-      "odds": 3.1
+      "odds": 2.9
      },
      {
       "name": "Ben Sheaf",
       "mk": "sh",
       "k": 1,
-      "odds": 1.83
-     },
-     {
-      "name": "Thomas Cannon",
-      "mk": "sh",
-      "k": 4,
-      "odds": 2.3
+      "odds": 1.88
      },
      {
       "name": "Jordan Ayew",
       "mk": "sh",
       "k": 4,
-      "odds": 2.6
+      "odds": 2.5
+     },
+     {
+      "name": "Jordan Ayew",
+      "mk": "sh",
+      "k": 5,
+      "odds": 3.9
      },
      {
       "name": "Jordan Ayew",
       "mk": "sh",
       "k": 3,
-      "odds": 1.72
-     },
-     {
-      "name": "Rhys Norrington-Davies",
-      "mk": "sot",
-      "k": 1,
-      "odds": 4.7
+      "odds": 1.7
      },
      {
       "name": "Hamza Choudhury",
       "mk": "sot",
       "k": 1,
-      "odds": 5
-     },
-     {
-      "name": "Zak Vyner",
-      "mk": "sot",
-      "k": 1,
-      "odds": 5
-     },
-     {
-      "name": "Tyrese Campbell",
-      "mk": "sh",
-      "k": 3,
-      "odds": 2.2
+      "odds": 4.7
      },
      {
       "name": "Ben Brereton",
       "mk": "sh",
       "k": 1,
-      "odds": 1.03
+      "odds": 1.02
      },
      {
       "name": "Ben Brereton",
       "mk": "sh",
       "k": 3,
-      "odds": 2.15
-     },
-     {
-      "name": "Tyrese Campbell",
-      "mk": "sh",
-      "k": 1,
-      "odds": 1.1
+      "odds": 2.07
      },
      {
       "name": "Harrison Burrows",
@@ -3769,76 +3517,22 @@
       "odds": 1.3
      },
      {
-      "name": "Sam McCallum",
-      "mk": "sot",
-      "k": 1,
-      "odds": 4.7
-     },
-     {
       "name": "Kieffer Moore",
       "mk": "sh",
       "k": 4,
-      "odds": 2.8
+      "odds": 2.75
      },
      {
-      "name": "Joe Rothwell",
-      "mk": "sot",
-      "k": 1,
-      "odds": 4.8
-     },
-     {
-      "name": "Patrick Bamford",
-      "mk": "sh",
-      "k": 3,
-      "odds": 1.63
-     },
-     {
-      "name": "Patrick Bamford",
+      "name": "Lewis O'Brien",
       "mk": "sh",
       "k": 2,
-      "odds": 1.22
-     },
-     {
-      "name": "Issa Kabore",
-      "mk": "sh",
-      "k": 1,
-      "odds": 2.05
-     },
-     {
-      "name": "Danny Imray",
-      "mk": "sh",
-      "k": 2,
-      "odds": 5.1
-     },
-     {
-      "name": "Oliver Arblaster",
-      "mk": "sh",
-      "k": 1,
-      "odds": 1.43
-     },
-     {
-      "name": "Bailey Cadamarteri",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.65
-     },
-     {
-      "name": "Bailey Cadamarteri",
-      "mk": "sh",
-      "k": 1,
-      "odds": 1.14
+      "odds": 2.9
      },
      {
       "name": "Ben Sheaf",
       "mk": "sot",
       "k": 1,
-      "odds": 3.7
-     },
-     {
-      "name": "Josh Windass",
-      "mk": "sh",
-      "k": 3,
-      "odds": 2.65
+      "odds": 3.9
      },
      {
       "name": "Kieffer Moore",
@@ -3850,31 +3544,13 @@
       "name": "Romelle Donovan",
       "mk": "sh",
       "k": 3,
-      "odds": 2.9
+      "odds": 2.8
      },
      {
       "name": "Sydie Peck",
       "mk": "sh",
       "k": 1,
-      "odds": 1.18
-     },
-     {
-      "name": "Ben Whiteman",
-      "mk": "sot",
-      "k": 1,
-      "odds": 4.9
-     },
-     {
-      "name": "Thomas Cannon",
-      "mk": "sh",
-      "k": 3,
-      "odds": 1.6
-     },
-     {
-      "name": "Thomas Cannon",
-      "mk": "sh",
-      "k": 5,
-      "odds": 3.5
+      "odds": 1.16
      },
      {
       "name": "Sydie Peck",
@@ -3883,52 +3559,22 @@
       "odds": 6.25
      },
      {
-      "name": "Matt Doherty",
-      "mk": "sot",
-      "k": 1,
-      "odds": 4.9
-     },
-     {
       "name": "Issa Kabore",
-      "mk": "sot",
-      "k": 1,
-      "odds": 4
-     },
-     {
-      "name": "Ben Brereton",
-      "mk": "sh",
-      "k": 4,
-      "odds": 3.5
-     },
-     {
-      "name": "Ben Brereton",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.42
-     },
-     {
-      "name": "Bailey Cadamarteri",
-      "mk": "sot",
-      "k": 2,
-      "odds": 5
-     },
-     {
-      "name": "Tyrese Campbell",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.44
-     },
-     {
-      "name": "Jairo Riedewald",
       "mk": "sot",
       "k": 1,
       "odds": 4.5
      },
      {
-      "name": "Ryan Longman",
-      "mk": "sot",
-      "k": 1,
-      "odds": 3.7
+      "name": "Ben Brereton",
+      "mk": "sh",
+      "k": 4,
+      "odds": 3.3
+     },
+     {
+      "name": "Ben Brereton",
+      "mk": "sh",
+      "k": 2,
+      "odds": 1.4
      },
      {
       "name": "Kieffer Moore",
@@ -3940,19 +3586,25 @@
       "name": "Kieffer Moore",
       "mk": "sh",
       "k": 3,
-      "odds": 1.85
+      "odds": 1.83
+     },
+     {
+      "name": "Kieffer Moore",
+      "mk": "sh",
+      "k": 5,
+      "odds": 4.5
      },
      {
       "name": "Liam Kitching",
       "mk": "sot",
       "k": 1,
-      "odds": 4.8
+      "odds": 4.7
      },
      {
       "name": "Matty James",
       "mk": "sot",
       "k": 1,
-      "odds": 3.8
+      "odds": 3.9
      },
      {
       "name": "Romelle Donovan",
@@ -3961,40 +3613,10 @@
       "odds": 5.5
      },
      {
-      "name": "Ryan Longman",
-      "mk": "sh",
-      "k": 1,
-      "odds": 1.83
-     },
-     {
-      "name": "Callum O'Hare",
-      "mk": "sh",
-      "k": 1,
-      "odds": 1.14
-     },
-     {
       "name": "Oliver Rathbone",
       "mk": "sh",
       "k": 2,
-      "odds": 2.07
-     },
-     {
-      "name": "Danny Imray",
-      "mk": "sh",
-      "k": 1,
-      "odds": 1.9
-     },
-     {
-      "name": "Sam Smith",
-      "mk": "sh",
-      "k": 3,
-      "odds": 1.7
-     },
-     {
-      "name": "Sam Smith",
-      "mk": "sh",
-      "k": 4,
-      "odds": 2.5
+      "odds": 2.05
      },
      {
       "name": "Tahith Chong",
@@ -4003,46 +3625,22 @@
       "odds": 1.38
      },
      {
-      "name": "Oliver Arblaster",
-      "mk": "sh",
-      "k": 2,
-      "odds": 2.8
-     },
-     {
-      "name": "Bailey Cadamarteri",
-      "mk": "sh",
-      "k": 3,
-      "odds": 2.7
-     },
-     {
-      "name": "Mark McGuinness",
-      "mk": "sot",
-      "k": 1,
-      "odds": 4.8
-     },
-     {
-      "name": "Callum O'Hare",
-      "mk": "sot",
-      "k": 2,
-      "odds": 4.9
-     },
-     {
       "name": "Romelle Donovan",
       "mk": "sh",
       "k": 2,
-      "odds": 1.72
+      "odds": 1.7
      },
      {
       "name": "Sydie Peck",
       "mk": "sh",
       "k": 2,
-      "odds": 1.8
+      "odds": 1.75
      },
      {
       "name": "Romelle Donovan",
       "mk": "sh",
       "k": 1,
-      "odds": 1.16
+      "odds": 1.15
      },
      {
       "name": "Ben Brereton",
@@ -4051,22 +3649,10 @@
       "odds": 4.2
      },
      {
-      "name": "Thomas Cannon",
-      "mk": "sot",
-      "k": 3,
-      "odds": 7.5
-     },
-     {
-      "name": "Thomas Cannon",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.2
-     },
-     {
       "name": "Jordan Ayew",
       "mk": "sh",
       "k": 2,
-      "odds": 1.25
+      "odds": 1.24
      },
      {
       "name": "Japhet Tanganga",
@@ -4078,31 +3664,97 @@
       "name": "Joe Worrall",
       "mk": "sot",
       "k": 1,
-      "odds": 5.2
+      "odds": 5.5
+     },
+     {
+      "name": "Jordan Ayew",
+      "mk": "sot",
+      "k": 3,
+      "odds": 8
      },
      {
       "name": "Harrison Burrows",
       "mk": "sh",
       "k": 2,
-      "odds": 2.3
+      "odds": 2.25
      },
      {
-      "name": "Josh Windass",
+      "name": "Sydie Peck",
+      "mk": "sh",
+      "k": 4,
+      "odds": 5.5
+     },
+     {
+      "name": "Oliver Rathbone",
       "mk": "sot",
+      "k": 2,
+      "odds": 7
+     },
+     {
+      "name": "Matty James",
+      "mk": "sh",
       "k": 2,
       "odds": 5
      },
      {
-      "name": "Patrick Bamford",
+      "name": "Oliver Rathbone",
       "mk": "sh",
       "k": 4,
-      "odds": 2.4
+      "odds": 8
      },
      {
-      "name": "Patrick Bamford",
+      "name": "Harrison Burrows",
+      "mk": "sh",
+      "k": 3,
+      "odds": 4.5
+     },
+     {
+      "name": "Harrison Burrows",
       "mk": "sot",
       "k": 2,
-      "odds": 3.1
+      "odds": 8.5
+     },
+     {
+      "name": "Ben Sheaf",
+      "mk": "sh",
+      "k": 2,
+      "odds": 4.7
+     },
+     {
+      "name": "Tahith Chong",
+      "mk": "sh",
+      "k": 3,
+      "odds": 5.75
+     },
+     {
+      "name": "Jordan Ayew",
+      "mk": "sh",
+      "k": 6,
+      "odds": 6.5
+     },
+     {
+      "name": "Ben Brereton",
+      "mk": "sh",
+      "k": 5,
+      "odds": 5.75
+     },
+     {
+      "name": "Romelle Donovan",
+      "mk": "sh",
+      "k": 4,
+      "odds": 5.2
+     },
+     {
+      "name": "Oliver Rathbone",
+      "mk": "sh",
+      "k": 3,
+      "odds": 3.8
+     },
+     {
+      "name": "Lewis O'Brien",
+      "mk": "sh",
+      "k": 3,
+      "odds": 6.5
      }
     ],
     "totals": [
@@ -4110,394 +3762,469 @@
       "scope": "match",
       "mk": "cards",
       "line": 3.5,
-      "over": 2.4,
-      "under": 1.49
+      "over": 2.35,
+      "under": 1.5
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 4.5,
-      "over": 2.65,
-      "under": 1.36
+      "over": 2.85,
+      "under": 1.32
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 9.5,
-      "over": 2.65,
-      "under": 1.34
+      "over": 2.9,
+      "under": 1.28
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 7.5,
-      "over": 1.56,
-      "under": 2.08
+      "over": 1.64,
+      "under": 1.94
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.77,
-      "under": 1.83
+      "over": 1.87,
+      "under": 1.74
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.41,
-      "under": 2.5
+      "over": 1.46,
+      "under": 2.35
      },
      {
       "scope": "away",
       "mk": "cards",
       "line": 1.5,
-      "over": 2,
-      "under": 1.68
-     },
-     {
-      "scope": "match",
-      "mk": "sot",
-      "line": 8.5,
-      "over": 1.98,
-      "under": 1.62
-     },
-     {
-      "scope": "home",
-      "mk": "cards",
-      "line": 1.5,
-      "over": 2.07,
-      "under": 1.65
-     },
-     {
-      "scope": "home",
-      "mk": "sot",
-      "line": 5.5,
-      "over": 2.75,
-      "under": 1.34
-     },
-     {
-      "scope": "home",
-      "mk": "sot",
-      "line": 4.5,
-      "over": 1.9,
+      "over": 1.97,
       "under": 1.71
      },
      {
       "scope": "match",
       "mk": "sot",
+      "line": 8.5,
+      "over": 2.12,
+      "under": 1.53
+     },
+     {
+      "scope": "home",
+      "mk": "cards",
+      "line": 1.5,
+      "over": 2.04,
+      "under": 1.67
+     },
+     {
+      "scope": "home",
+      "mk": "sot",
+      "line": 5.5,
+      "over": 3,
+      "under": 1.29
+     },
+     {
+      "scope": "home",
+      "mk": "sot",
+      "line": 4.5,
+      "over": 2.02,
+      "under": 1.63
+     },
+     {
+      "scope": "match",
+      "mk": "sot",
       "line": 6.5,
-      "over": 1.28,
-      "under": 2.9
+      "over": 1.33,
+      "under": 2.7
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 14.5,
-      "over": 1.91,
-      "under": 1.63
+      "over": 2.02,
+      "under": 1.56
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 26.5,
-      "over": 2.07,
-      "under": 1.53
+      "over": 2.2,
+      "under": 1.46
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 25.5,
-      "over": 1.81,
-      "under": 1.72
+      "over": 1.91,
+      "under": 1.63
+     },
+     {
+      "scope": "away",
+      "mk": "sot",
+      "line": 2.5,
+      "over": 1.35,
+      "under": 2.7
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 13.5,
-      "over": 1.65,
-      "under": 1.89
+      "over": 1.71,
+      "under": 1.81
      },
      {
       "scope": "away",
       "mk": "shots",
       "line": 11.5,
-      "over": 2,
-      "under": 1.57
+      "over": 2.08,
+      "under": 1.53
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 24.5,
-      "over": 1.6,
-      "under": 1.96
+      "over": 1.68,
+      "under": 1.84
+     },
+     {
+      "scope": "match",
+      "mk": "shots",
+      "line": 23.5,
+      "over": 1.5,
+      "under": 2.12
      },
      {
       "scope": "match",
       "mk": "cards",
       "line": 2.5,
-      "over": 1.63,
-      "under": 2.1
+      "over": 1.62,
+      "under": 2.12
+     },
+     {
+      "scope": "away",
+      "mk": "shots",
+      "line": 10.5,
+      "over": 1.72,
+      "under": 1.8
      }
     ]
    },
-   "probableXI": {
-    "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
-    "home": [
-     {
-      "id": "262792",
-      "name": "Michael Cooper",
-      "pos": "G",
-      "started": "8/8"
-     },
-     {
-      "id": "269341",
-      "name": "Liam Kitching",
-      "pos": "CD-L",
-      "started": "8/8"
-     },
-     {
-      "id": "256912",
-      "name": "Japhet Tanganga",
-      "pos": "CD-R",
-      "started": "8/8"
-     },
-     {
-      "id": "251701",
-      "name": "Ben Brereton Díaz",
-      "pos": "AM-L",
-      "started": "8/8"
-     },
-     {
-      "id": "234320",
-      "name": "Hamza Choudhury",
-      "pos": "RB",
-      "started": "7/8"
-     },
-     {
-      "id": "354729",
-      "name": "Sydie Peck",
-      "pos": "CM-R",
-      "started": "6/8"
-     },
-     {
-      "id": "167114",
-      "name": "Patrick Bamford",
-      "pos": "F",
-      "started": "6/8"
-     },
-     {
-      "id": "328023",
-      "name": "Thomas Cannon",
-      "pos": "AM",
-      "started": "5/8"
-     },
-     {
-      "id": "280550",
-      "name": "Sam McCallum",
-      "pos": "LB",
-      "started": "4/8"
-     },
-     {
-      "id": "223453",
-      "name": "Kalvin Phillips",
-      "pos": "RM",
-      "started": "4/8"
-     },
-     {
-      "id": "337083",
-      "name": "Oliver Arblaster",
-      "pos": "LM",
-      "started": "4/8"
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-30T19:08:26.714Z",
+    "home": {
+     "team": "Sheffield United",
+     "formation": "4-2-3-1",
+     "xi": [
+      "Michael Cooper",
+      "Liam Kitching",
+      "Harrison Burrows",
+      "Hamza Choudhury",
+      "Japhet Tanganga",
+      "Romelle Donovan",
+      "Kalvin Phillips",
+      "Ben Brereton Díaz",
+      "Tahith Chong",
+      "Sydie Peck",
+      "Jordan Ayew"
+     ],
+     "missing": [
+      {
+       "name": "Patrick Bamford",
+       "started": "6/8"
+      },
+      {
+       "name": "Thomas Cannon",
+       "started": "5/8"
+      },
+      {
+       "name": "Sam McCallum",
+       "started": "4/8"
+      },
+      {
+       "name": "Oliver Arblaster",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "262792",
+       "name": "Michael Cooper",
+       "pos": "G"
+      },
+      {
+       "id": "269341",
+       "name": "Liam Kitching",
+       "pos": "D"
+      },
+      {
+       "id": "263132",
+       "name": "Harrison Burrows",
+       "pos": "D"
+      },
+      {
+       "id": "234320",
+       "name": "Hamza Choudhury",
+       "pos": "D"
+      },
+      {
+       "id": "256912",
+       "name": "Japhet Tanganga",
+       "pos": "D"
+      },
+      {
+       "id": "357477",
+       "name": "Romelle Donovan",
+       "pos": "M"
+      },
+      {
+       "id": "223453",
+       "name": "Kalvin Phillips",
+       "pos": "M"
+      },
+      {
+       "id": "251701",
+       "name": "Ben Brereton Díaz",
+       "pos": "M"
+      },
+      {
+       "id": "276218",
+       "name": "Tahith Chong",
+       "pos": "M"
+      },
+      {
+       "id": "354729",
+       "name": "Sydie Peck",
+       "pos": "M"
+      },
+      {
+       "id": "123518",
+       "name": "Jordan Ayew",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "414193",
+       "name": "Tommy Betts",
+       "pos": "SUB"
+      },
+      {
+       "id": "328023",
+       "name": "Thomas Cannon",
+       "pos": "SUB"
+      },
+      {
+       "id": "227777",
+       "name": "Tyrese Campbell",
+       "pos": "SUB"
+      },
+      {
+       "id": "215790",
+       "name": "Joe Rothwell",
+       "pos": "SUB"
+      },
+      {
+       "id": "337083",
+       "name": "Oliver Arblaster",
+       "pos": "SUB"
+      },
+      {
+       "id": "280550",
+       "name": "Sam McCallum",
+       "pos": "SUB"
+      },
+      {
+       "id": "290105",
+       "name": "Mark McGuinness",
+       "pos": "SUB"
+      },
+      {
+       "id": "283798",
+       "name": "Femi Seriki",
+       "pos": "SUB"
+      },
+      {
+       "id": "195599",
+       "name": "Jairo Riedewald",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.853,
+     "att": 0.828,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Cannon",
+       "Arblaster",
+       "Bamford"
+      ],
+      "in": [
+       "Donovan",
+       "Peck",
+       "Ayew"
+      ]
      }
-    ],
-    "away": [
-     {
-      "id": "281705",
-      "name": "Anthony Patterson",
-      "pos": "G",
-      "started": "8/8"
-     },
-     {
-      "id": "223590",
-      "name": "Benjamin Whiteman",
-      "pos": "CM-L",
-      "started": "8/8"
-     },
-     {
-      "id": "231572",
-      "name": "Dominic Hyam",
-      "pos": "CD-R",
-      "started": "7/8"
-     },
-     {
-      "id": "310598",
-      "name": "Callum Doyle",
-      "pos": "CD-L",
-      "started": "7/8"
-     },
-     {
-      "id": "254023",
-      "name": "Callum O'Hare",
-      "pos": "CF-L",
-      "started": "7/8"
-     },
-     {
-      "id": "333218",
-      "name": "Jacques Ekomie",
-      "pos": "LM",
-      "started": "7/8"
-     },
-     {
-      "id": "189605",
-      "name": "Kieffer Moore",
-      "pos": "F",
-      "started": "6/8"
-     },
-     {
-      "id": "294427",
-      "name": "Issa Kaboré",
-      "pos": "RM",
-      "started": "5/8"
-     },
-     {
-      "id": "135430",
-      "name": "Matty James",
-      "pos": "CM-R",
-      "started": "4/8"
-     },
-     {
-      "id": "243757",
-      "name": "Sam Smith",
-      "pos": "CF-R",
-      "started": "4/8"
-     },
-     {
-      "id": "232291",
-      "name": "Joe Worrall",
-      "pos": "CD",
-      "started": "4/8"
+    },
+    "away": {
+     "team": "Wrexham",
+     "formation": "3-4-2-1",
+     "xi": [
+      "Anthony Patterson",
+      "Joe Worrall",
+      "Callum Doyle",
+      "Dominic Hyam",
+      "Ben Sheaf",
+      "Oliver Rathbone",
+      "Jacques Ekomie",
+      "Lewis O'Brien",
+      "Matty James",
+      "Issa Kaboré",
+      "Kieffer Moore"
+     ],
+     "missing": [
+      {
+       "name": "Benjamin Whiteman",
+       "started": "8/8"
+      },
+      {
+       "name": "Callum O'Hare",
+       "started": "7/8"
+      },
+      {
+       "name": "Sam Smith",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "281705",
+       "name": "Anthony Patterson",
+       "pos": "G"
+      },
+      {
+       "id": "232291",
+       "name": "Joe Worrall",
+       "pos": "D"
+      },
+      {
+       "id": "310598",
+       "name": "Callum Doyle",
+       "pos": "D"
+      },
+      {
+       "id": "231572",
+       "name": "Dominic Hyam",
+       "pos": "D"
+      },
+      {
+       "id": "229106",
+       "name": "Ben Sheaf",
+       "pos": "M"
+      },
+      {
+       "id": "238486",
+       "name": "Oliver Rathbone",
+       "pos": "M"
+      },
+      {
+       "id": "333218",
+       "name": "Jacques Ekomie",
+       "pos": "M"
+      },
+      {
+       "id": "269288",
+       "name": "Lewis O'Brien",
+       "pos": "M"
+      },
+      {
+       "id": "135430",
+       "name": "Matty James",
+       "pos": "M"
+      },
+      {
+       "id": "294427",
+       "name": "Issa Kaboré",
+       "pos": "M"
+      },
+      {
+       "id": "189605",
+       "name": "Kieffer Moore",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "326250",
+       "name": "Danny Imray",
+       "pos": "SUB"
+      },
+      {
+       "id": "295012",
+       "name": "Max Cleworth",
+       "pos": "SUB"
+      },
+      {
+       "id": "232415",
+       "name": "Zak Vyner",
+       "pos": "SUB"
+      },
+      {
+       "id": "352804",
+       "name": "Bailey Cadamarteri",
+       "pos": "SUB"
+      },
+      {
+       "id": "223590",
+       "name": "Benjamin Whiteman",
+       "pos": "SUB"
+      },
+      {
+       "id": "234449",
+       "name": "George Dobson",
+       "pos": "SUB"
+      },
+      {
+       "id": "301285",
+       "name": "George Thomason",
+       "pos": "SUB"
+      },
+      {
+       "id": "17861",
+       "name": "Danny Ward",
+       "pos": "SUB"
+      },
+      {
+       "id": "243757",
+       "name": "Sam Smith",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.806,
+     "att": 0.76,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 3,
+      "out": [
+       "Whiteman",
+       "O'Hare",
+       "Smith"
+      ],
+      "in": [
+       "Sheaf",
+       "Rathbone",
+       "O'Brien"
+      ]
      }
-    ],
-    "homeExtra": [
-     {
-      "id": "276218",
-      "name": "Tahith Chong",
-      "pos": "AM-R",
-      "started": "4/8"
-     },
-     {
-      "id": "269276",
-      "name": "Rhys Norrington-Davies",
-      "pos": "LM",
-      "started": "3/8"
-     },
-     {
-      "id": "215790",
-      "name": "Joe Rothwell",
-      "pos": "CM-L",
-      "started": "3/8"
-     },
-     {
-      "id": "357477",
-      "name": "Romelle Donovan",
-      "pos": "RM",
-      "started": "2/8"
-     },
-     {
-      "id": "290105",
-      "name": "Mark McGuinness",
-      "pos": "CD-R",
-      "started": "2/8"
-     },
-     {
-      "id": "263132",
-      "name": "Harrison Burrows",
-      "pos": "LB",
-      "started": "2/8"
-     },
-     {
-      "id": "195599",
-      "name": "Jairo Riedewald",
-      "pos": "CM-L",
-      "started": "1/8"
-     },
-     {
-      "id": "227777",
-      "name": "Tyrese Campbell",
-      "pos": "CF-L",
-      "started": "1/8"
-     },
-     {
-      "id": "298957",
-      "name": "Jamal Baptiste",
-      "pos": "CD-R",
-      "started": "1/8"
-     },
-     {
-      "id": "123518",
-      "name": "Jordan Ayew",
-      "pos": "CF-L",
-      "started": "1/8"
-     }
-    ],
-    "awayExtra": [
-     {
-      "id": "232415",
-      "name": "Zak Vyner",
-      "pos": "CD-R",
-      "started": "4/8"
-     },
-     {
-      "id": "326250",
-      "name": "Danny Imray",
-      "pos": "RM",
-      "started": "3/8"
-     },
-     {
-      "id": "269288",
-      "name": "Lewis O'Brien",
-      "pos": "CM-L",
-      "started": "3/8"
-     },
-     {
-      "id": "182338",
-      "name": "Josh Windass",
-      "pos": "CF-R",
-      "started": "3/8"
-     },
-     {
-      "id": "295012",
-      "name": "Max Cleworth",
-      "pos": "CD-R",
-      "started": "2/8"
-     },
-     {
-      "id": "238486",
-      "name": "Oliver Rathbone",
-      "pos": "CM-L",
-      "started": "2/8"
-     },
-     {
-      "id": "234449",
-      "name": "George Dobson",
-      "pos": "CM-R",
-      "started": "2/8"
-     },
-     {
-      "id": "266411",
-      "name": "Ryan Longman",
-      "pos": "LM",
-      "started": "1/8"
-     },
-     {
-      "id": "229106",
-      "name": "Ben Sheaf",
-      "pos": "CM-R",
-      "started": "1/8"
-     }
-    ]
+    }
    }
   },
   {
@@ -4507,22 +4234,22 @@
    "kickoff": "2026-10-30T20:05:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "h": 2.63,
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "h": 2.55,
      "d": 3.3,
-     "a": 2.75
+     "a": 2.8
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "yes": 1.8,
-     "no": 1.95
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "yes": 1.75,
+     "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 2,
      "under": 1.8
     }
@@ -4531,7 +4258,7 @@
    "form": "Included because Lille is in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1027973883,
     "homeName": "Lille",
     "awayName": "Lens",
@@ -4540,25 +4267,25 @@
       "name": "Florian Thauvin",
       "mk": "sot",
       "k": 2,
-      "odds": 2.8
+      "odds": 2.7
      },
      {
       "name": "Benjamin Andre",
       "mk": "yc",
       "k": 1,
-      "odds": 2.65
+      "odds": 2.7
      },
      {
       "name": "Ethan Mbappé",
       "mk": "yc",
       "k": 1,
-      "odds": 2.8
+      "odds": 2.9
      },
      {
       "name": "Hákon Haraldsson",
       "mk": "sot",
       "k": 2,
-      "odds": 4.3
+      "odds": 4.1
      },
      {
       "name": "Florian Thauvin",
@@ -4576,37 +4303,31 @@
       "name": "Nathan Ngoy",
       "mk": "yc",
       "k": 1,
-      "odds": 3.1
+      "odds": 3.2
      },
      {
       "name": "Matthieu Udol",
       "mk": "sot",
       "k": 1,
-      "odds": 3
+      "odds": 3.1
      },
      {
       "name": "Florian Thauvin",
       "mk": "sh",
       "k": 2,
-      "odds": 1.23
+      "odds": 1.22
      },
      {
       "name": "Ruben Aguilar",
       "mk": "sot",
       "k": 1,
-      "odds": 4.9
-     },
-     {
-      "name": "Olivier Giroud",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.41
+      "odds": 5
      },
      {
       "name": "Ruben Aguilar",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Hákon Haraldsson",
@@ -4627,16 +4348,10 @@
       "odds": 3.4
      },
      {
-      "name": "Franjo Ivanovic",
-      "mk": "sot",
-      "k": 1,
-      "odds": 1.48
-     },
-     {
       "name": "Saud Abdulhamid",
       "mk": "sh",
       "k": 1,
-      "odds": 1.83
+      "odds": 1.85
      },
      {
       "name": "Ethan Mbappé",
@@ -4649,18 +4364,6 @@
       "mk": "sot",
       "k": 2,
       "odds": 5.5
-     },
-     {
-      "name": "Dilane Bakwa",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.93
-     },
-     {
-      "name": "Jonathan Gradit",
-      "mk": "yc",
-      "k": 1,
-      "odds": 2.7
      },
      {
       "name": "Mickaël Cuisance",
@@ -4678,19 +4381,19 @@
       "name": "Romain Perraud",
       "mk": "sh",
       "k": 1,
-      "odds": 1.62
+      "odds": 1.6
      },
      {
       "name": "Ngay Ayel Mukau",
       "mk": "sh",
       "k": 1,
-      "odds": 1.68
+      "odds": 1.65
      },
      {
       "name": "Nabil Bentaleb",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.6
      },
      {
       "name": "Hákon Haraldsson",
@@ -4702,7 +4405,7 @@
       "name": "Ethan Mbappé",
       "mk": "sh",
       "k": 2,
-      "odds": 1.65
+      "odds": 1.6
      },
      {
       "name": "Samson Baidoo",
@@ -4714,13 +4417,13 @@
       "name": "Samson Baidoo",
       "mk": "sot",
       "k": 1,
-      "odds": 5
+      "odds": 4.9
      },
      {
       "name": "Florian Sotoca",
       "mk": "sh",
       "k": 2,
-      "odds": 1.73
+      "odds": 1.75
      },
      {
       "name": "Florian Sotoca",
@@ -4735,40 +4438,16 @@
       "odds": 4.8
      },
      {
-      "name": "Dilane Bakwa",
-      "mk": "sot",
-      "k": 1,
-      "odds": 2.08
-     },
-     {
       "name": "Romain Perraud",
       "mk": "yc",
       "k": 1,
       "odds": 4
      },
      {
-      "name": "Olivier Giroud",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.23
-     },
-     {
-      "name": "Olivier Giroud",
-      "mk": "sh",
-      "k": 5,
-      "odds": 3.8
-     },
-     {
       "name": "Mickaël Cuisance",
       "mk": "sot",
       "k": 1,
-      "odds": 2.45
-     },
-     {
-      "name": "Olivier Giroud",
-      "mk": "sot",
-      "k": 2,
-      "odds": 2.7
+      "odds": 2.5
      },
      {
       "name": "Nathan Ngoy",
@@ -4780,19 +4459,19 @@
       "name": "Nabil Bentaleb",
       "mk": "sh",
       "k": 1,
-      "odds": 1.55
+      "odds": 1.5
      },
      {
       "name": "Matthieu Udol",
       "mk": "sh",
       "k": 1,
-      "odds": 1.35
+      "odds": 1.37
      },
      {
       "name": "Maxima Adeagan Goffi",
       "mk": "sot",
       "k": 1,
-      "odds": 4.6
+      "odds": 4.5
      },
      {
       "name": "Thorgan Hazard",
@@ -4804,7 +4483,7 @@
       "name": "Benjamin Andre",
       "mk": "sot",
       "k": 1,
-      "odds": 4
+      "odds": 3.9
      },
      {
       "name": "Florian Sotoca",
@@ -4813,28 +4492,10 @@
       "odds": 3.3
      },
      {
-      "name": "Franjo Ivanovic",
-      "mk": "sh",
-      "k": 3,
-      "odds": 1.72
-     },
-     {
-      "name": "Olivier Giroud",
-      "mk": "yc",
-      "k": 1,
-      "odds": 3.4
-     },
-     {
       "name": "Thorgan Hazard",
       "mk": "sh",
       "k": 2,
       "odds": 1.55
-     },
-     {
-      "name": "Dilane Bakwa",
-      "mk": "sh",
-      "k": 1,
-      "odds": 1.2
      },
      {
       "name": "Florian Sotoca",
@@ -4852,37 +4513,31 @@
       "name": "Nabil Bentaleb",
       "mk": "sot",
       "k": 1,
-      "odds": 2.9
+      "odds": 2.8
      },
      {
       "name": "Benjamin Andre",
       "mk": "sh",
       "k": 1,
-      "odds": 2
+      "odds": 1.95
      },
      {
       "name": "Ethan Mbappé",
       "mk": "sh",
       "k": 1,
-      "odds": 1.14
-     },
-     {
-      "name": "Dilane Bakwa",
-      "mk": "yc",
-      "k": 1,
-      "odds": 2.9
+      "odds": 1.13
      },
      {
       "name": "Nabil Bentaleb",
       "mk": "sh",
       "k": 2,
-      "odds": 3.2
+      "odds": 3.1
      },
      {
       "name": "Maxima Adeagan Goffi",
       "mk": "yc",
       "k": 1,
-      "odds": 2.7
+      "odds": 2.75
      },
      {
       "name": "Mickaël Cuisance",
@@ -4894,7 +4549,7 @@
       "name": "Ngay Ayel Mukau",
       "mk": "yc",
       "k": 1,
-      "odds": 3.3
+      "odds": 3.4
      },
      {
       "name": "Mickaël Cuisance",
@@ -4906,13 +4561,13 @@
       "name": "Florian Thauvin",
       "mk": "sot",
       "k": 1,
-      "odds": 1.44
+      "odds": 1.41
      },
      {
       "name": "Amadou Haidara",
       "mk": "sot",
       "k": 1,
-      "odds": 3.7
+      "odds": 3.8
      },
      {
       "name": "Amadou Haidara",
@@ -4924,25 +4579,13 @@
       "name": "Alexsandro De Souza",
       "mk": "yc",
       "k": 1,
-      "odds": 3.1
+      "odds": 3.3
      },
      {
       "name": "Hákon Haraldsson",
       "mk": "sot",
       "k": 1,
-      "odds": 1.78
-     },
-     {
-      "name": "Olivier Giroud",
-      "mk": "sh",
-      "k": 4,
-      "odds": 2.45
-     },
-     {
-      "name": "Olivier Giroud",
-      "mk": "sh",
-      "k": 3,
-      "odds": 1.68
+      "odds": 1.73
      },
      {
       "name": "Thorgan Hazard",
@@ -4957,12 +4600,6 @@
       "odds": 1.67
      },
      {
-      "name": "Franjo Ivanovic",
-      "mk": "sh",
-      "k": 2,
-      "odds": 1.25
-     },
-     {
       "name": "Ngay Ayel Mukau",
       "mk": "sot",
       "k": 1,
@@ -4972,19 +4609,13 @@
       "name": "Thorgan Hazard",
       "mk": "sot",
       "k": 1,
-      "odds": 1.8
-     },
-     {
-      "name": "Olivier Giroud",
-      "mk": "sot",
-      "k": 3,
-      "odds": 6.1
+      "odds": 1.82
      },
      {
       "name": "Matthieu Udol",
       "mk": "sh",
       "k": 2,
-      "odds": 2.45
+      "odds": 2.5
      },
      {
       "name": "Amadou Haidara",
@@ -4993,142 +4624,118 @@
       "odds": 2.9
      },
      {
-      "name": "Franjo Ivanovic",
-      "mk": "sot",
-      "k": 2,
-      "odds": 3
-     },
-     {
       "name": "Thorgan Hazard",
       "mk": "sh",
       "k": 1,
-      "odds": 1.05
+      "odds": 1.06
      },
      {
       "name": "Matthieu Udol",
       "mk": "yc",
       "k": 1,
-      "odds": 3.2
-     },
-     {
-      "name": "Franjo Ivanovic",
-      "mk": "yc",
-      "k": 1,
-      "odds": 4.2
-     },
-     {
-      "name": "Jonathan Gradit",
-      "mk": "sot",
-      "k": 1,
-      "odds": 4.9
+      "odds": 3.15
      },
      {
       "name": "Hákon Haraldsson",
       "mk": "sh",
       "k": 2,
-      "odds": 1.56
+      "odds": 1.5
      },
      {
       "name": "Romain Perraud",
       "mk": "sot",
       "k": 1,
-      "odds": 3.1
-     },
-     {
-      "name": "Olivier Giroud",
-      "mk": "sh",
-      "k": 6,
-      "odds": 6.25
+      "odds": 3
      },
      {
       "name": "Florian Thauvin",
       "mk": "sh",
       "k": 4,
-      "odds": 2.45
+      "odds": 2.4
      },
      {
       "name": "Florian Sotoca",
       "mk": "sh",
       "k": 3,
-      "odds": 2.9
+      "odds": 2.95
      },
      {
       "name": "Ethan Mbappé",
       "mk": "sot",
       "k": 2,
-      "odds": 4.9
+      "odds": 4.5
      },
      {
       "name": "Hákon Haraldsson",
       "mk": "sh",
       "k": 3,
-      "odds": 2.5
+      "odds": 2.35
      },
      {
       "name": "Soriba Diaoune",
       "mk": "yc",
       "k": 1,
-      "odds": 5.2
+      "odds": 5.3
      },
      {
       "name": "Soriba Diaoune",
       "mk": "sot",
       "k": 1,
-      "odds": 1.65
+      "odds": 1.62
      },
      {
       "name": "Soriba Diaoune",
       "mk": "sh",
       "k": 5,
-      "odds": 6.5
+      "odds": 6.25
      },
      {
       "name": "Soriba Diaoune",
       "mk": "sh",
       "k": 3,
-      "odds": 2.25
+      "odds": 2.15
      },
      {
       "name": "Soriba Diaoune",
       "mk": "sot",
       "k": 2,
-      "odds": 3.7
+      "odds": 3.6
      },
      {
       "name": "Soriba Diaoune",
       "mk": "sh",
       "k": 2,
-      "odds": 1.46
+      "odds": 1.43
      },
      {
       "name": "Soriba Diaoune",
       "mk": "sh",
       "k": 1,
-      "odds": 1.03
+      "odds": 1.02
      },
      {
       "name": "Soriba Diaoune",
       "mk": "sh",
       "k": 4,
-      "odds": 3.7
+      "odds": 3.5
      },
      {
       "name": "Mickaël Cuisance",
       "mk": "sot",
       "k": 2,
-      "odds": 8.5
+      "odds": 9
      },
      {
       "name": "Florian Thauvin",
       "mk": "sot",
       "k": 3,
-      "odds": 6.5
+      "odds": 6.25
      },
      {
       "name": "Ethan Mbappé",
       "mk": "sh",
       "k": 3,
-      "odds": 2.7
+      "odds": 2.6
      },
      {
       "name": "Ngay Ayel Mukau",
@@ -5146,13 +4753,19 @@
       "name": "Saud Abdulhamid",
       "mk": "sh",
       "k": 2,
-      "odds": 4.5
+      "odds": 4.7
      },
      {
       "name": "Thorgan Hazard",
       "mk": "sh",
       "k": 3,
       "odds": 2.45
+     },
+     {
+      "name": "Florian Sotoca",
+      "mk": "sh",
+      "k": 4,
+      "odds": 5.5
      },
      {
       "name": "Florian Thauvin",
@@ -5170,13 +4783,49 @@
       "name": "Matthieu Udol",
       "mk": "sh",
       "k": 3,
-      "odds": 5.1
+      "odds": 5.3
      },
      {
       "name": "Thorgan Hazard",
       "mk": "sh",
       "k": 4,
       "odds": 4.2
+     },
+     {
+      "name": "Benjamin Andre",
+      "mk": "sh",
+      "k": 2,
+      "odds": 5.3
+     },
+     {
+      "name": "Nabil Bentaleb",
+      "mk": "sh",
+      "k": 3,
+      "odds": 7.5
+     },
+     {
+      "name": "Ethan Mbappé",
+      "mk": "sh",
+      "k": 4,
+      "odds": 4.5
+     },
+     {
+      "name": "Hákon Haraldsson",
+      "mk": "sh",
+      "k": 5,
+      "odds": 7.5
+     },
+     {
+      "name": "Hákon Haraldsson",
+      "mk": "sh",
+      "k": 4,
+      "odds": 4
+     },
+     {
+      "name": "Florian Thauvin",
+      "mk": "sh",
+      "k": 6,
+      "odds": 6
      }
     ],
     "totals": [
@@ -5184,78 +4833,78 @@
       "scope": "match",
       "mk": "sot",
       "line": 8.5,
-      "over": 1.84,
-      "under": 1.76
+      "over": 1.85,
+      "under": 1.75
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 12.5,
-      "over": 1.97,
-      "under": 1.65
+      "over": 1.93,
+      "under": 1.68
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 5.5,
-      "over": 3,
-      "under": 1.28
+      "over": 2.95,
+      "under": 1.29
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.48,
-      "under": 2.3
+      "over": 1.46,
+      "under": 2.35
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.54,
-      "under": 2.17
+      "over": 1.55,
+      "under": 2.14
      },
      {
       "scope": "match",
       "mk": "cards",
       "line": 5.5,
-      "over": 2.12,
-      "under": 1.61
+      "over": 2.1,
+      "under": 1.62
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 4.5,
-      "over": 2.17,
-      "under": 1.54
+      "over": 2.2,
+      "under": 1.53
      },
      {
       "scope": "away",
       "mk": "cards",
       "line": 2.5,
-      "over": 1.85,
-      "under": 1.82
+      "over": 1.84,
+      "under": 1.83
      },
      {
       "scope": "home",
       "mk": "cards",
       "line": 1.5,
-      "over": 1.32,
-      "under": 3
+      "over": 1.34,
+      "under": 2.9
      },
      {
       "scope": "home",
       "mk": "cards",
       "line": 2.5,
-      "over": 1.92,
-      "under": 1.76
+      "over": 1.97,
+      "under": 1.72
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 9.5,
-      "over": 2.43,
-      "under": 1.43
+      "over": 2.4,
+      "under": 1.44
      },
      {
       "scope": "match",
@@ -5268,29 +4917,29 @@
       "scope": "away",
       "mk": "shots",
       "line": 12.5,
-      "over": 1.88,
-      "under": 1.72
+      "over": 1.9,
+      "under": 1.7
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 4.5,
-      "over": 2.05,
-      "under": 1.61
+      "over": 2,
+      "under": 1.63
      },
      {
       "scope": "away",
       "mk": "cards",
       "line": 1.5,
-      "over": 1.28,
-      "under": 3.25
+      "over": 1.29,
+      "under": 3.2
      },
      {
       "scope": "match",
       "mk": "cards",
       "line": 4.5,
-      "over": 1.58,
-      "under": 2.17
+      "over": 1.61,
+      "under": 2.14
      },
      {
       "scope": "match",
@@ -5310,50 +4959,43 @@
       "scope": "match",
       "mk": "shots",
       "line": 26.5,
-      "over": 2.3,
-      "under": 1.48
-     },
-     {
-      "scope": "away",
-      "mk": "shots",
-      "line": 13.5,
-      "over": 2.2,
-      "under": 1.52
-     },
-     {
-      "scope": "away",
-      "mk": "sot",
-      "line": 5.5,
-      "over": 3.25,
-      "under": 1.24
+      "over": 2.28,
+      "under": 1.49
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 24.5,
       "over": 1.74,
-      "under": 1.87
+      "under": 1.86
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 23.5,
-      "over": 1.55,
-      "under": 2.15
+      "over": 1.54,
+      "under": 2.16
+     },
+     {
+      "scope": "home",
+      "mk": "shots",
+      "line": 11.5,
+      "over": 1.66,
+      "under": 1.95
      },
      {
       "scope": "home",
       "mk": "cards",
       "line": 3.5,
-      "over": 3.15,
-      "under": 1.29
+      "over": 3.25,
+      "under": 1.28
      },
      {
       "scope": "away",
       "mk": "cards",
       "line": 3.5,
-      "over": 2.95,
-      "under": 1.33
+      "over": 2.9,
+      "under": 1.34
      },
      {
       "scope": "match",
@@ -5364,281 +5006,313 @@
      }
     ]
    },
-   "probableXI": {
-    "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
-    "home": [
-     {
-      "id": "257267",
-      "name": "Berke Özer",
-      "pos": "G",
-      "started": "7/8"
-     },
-     {
-      "id": "340900",
-      "name": "Alexsandro",
-      "pos": "CD-L",
-      "started": "7/8"
-     },
-     {
-      "id": "318577",
-      "name": "Nathan Ngoy",
-      "pos": "RB",
-      "started": "7/8"
-     },
-     {
-      "id": "250853",
-      "name": "Romain Perraud",
-      "pos": "LB",
-      "started": "7/8"
-     },
-     {
-      "id": "318779",
-      "name": "Hákon Haraldsson",
-      "pos": "F",
-      "started": "7/8"
-     },
-     {
-      "id": "179187",
-      "name": "Nabil Bentaleb",
-      "pos": "CM",
-      "started": "7/8"
-     },
-     {
-      "id": "123683",
-      "name": "Benjamin André",
-      "pos": "LM",
-      "started": "6/8"
-     },
-     {
-      "id": "345988",
-      "name": "Ngal'ayel Mukau",
-      "pos": "RM",
-      "started": "6/8"
-     },
-     {
-      "id": "297157",
-      "name": "Dilane Bakwa",
-      "pos": "RF",
-      "started": "5/8"
-     },
-     {
-      "id": "346844",
-      "name": "Tiago Santos",
-      "pos": "RB",
-      "started": "4/8"
-     },
-     {
-      "id": "274277",
-      "name": "Ayase Ueda",
-      "pos": "F",
-      "started": "4/8"
+   "lineups": {
+    "source": "ESPN",
+    "at": "2026-10-30T19:08:26.714Z",
+    "home": {
+     "team": "Lille",
+     "formation": "4-3-3",
+     "xi": [
+      "Alexsandro",
+      "Berke Özer",
+      "Nabil Bentaleb",
+      "Benjamin André",
+      "Ngal'ayel Mukau",
+      "Maxima Goffi",
+      "Soriba Diaoune",
+      "Romain Perraud",
+      "Ethan Mbappé",
+      "Hákon Haraldsson",
+      "Nathan Ngoy"
+     ],
+     "missing": [
+      {
+       "name": "Dilane Bakwa",
+       "started": "5/8"
+      },
+      {
+       "name": "Tiago Santos",
+       "started": "4/8"
+      },
+      {
+       "name": "Ayase Ueda",
+       "started": "4/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "340900",
+       "name": "Alexsandro",
+       "pos": "SUB"
+      },
+      {
+       "id": "257267",
+       "name": "Berke Özer",
+       "pos": "SUB"
+      },
+      {
+       "id": "179187",
+       "name": "Nabil Bentaleb",
+       "pos": "SUB"
+      },
+      {
+       "id": "123683",
+       "name": "Benjamin André",
+       "pos": "SUB"
+      },
+      {
+       "id": "345988",
+       "name": "Ngal'ayel Mukau",
+       "pos": "SUB"
+      },
+      {
+       "id": "408359",
+       "name": "Maxima Goffi",
+       "pos": "SUB"
+      },
+      {
+       "id": "400352",
+       "name": "Soriba Diaoune",
+       "pos": "SUB"
+      },
+      {
+       "id": "250853",
+       "name": "Romain Perraud",
+       "pos": "SUB"
+      },
+      {
+       "id": "355971",
+       "name": "Ethan Mbappé",
+       "pos": "SUB"
+      },
+      {
+       "id": "318779",
+       "name": "Hákon Haraldsson",
+       "pos": "SUB"
+      },
+      {
+       "id": "318577",
+       "name": "Nathan Ngoy",
+       "pos": "SUB"
+      }
+     ],
+     "bench": [
+      {
+       "id": "231778",
+       "name": "Gaetan Perrin",
+       "pos": "SUB"
+      },
+      {
+       "id": "304011",
+       "name": "Maurits Kjaergaard",
+       "pos": "SUB"
+      },
+      {
+       "id": "217381",
+       "name": "Calvin Verdonk",
+       "pos": "SUB"
+      },
+      {
+       "id": "88965",
+       "name": "Olivier Giroud",
+       "pos": "SUB"
+      },
+      {
+       "id": "337855",
+       "name": "Basar Önal",
+       "pos": "SUB"
+      },
+      {
+       "id": "283626",
+       "name": "Osame Sahraoui",
+       "pos": "SUB"
+      },
+      {
+       "id": "301648",
+       "name": "Orlando Gill",
+       "pos": "SUB"
+      },
+      {
+       "id": "297157",
+       "name": "Dilane Bakwa",
+       "pos": "SUB"
+      },
+      {
+       "id": "393321",
+       "name": "Isaac Cossier",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.94,
+     "att": 0.8,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Nianzou"
+      ],
+      "in": [
+       "Goffi"
+      ]
      }
-    ],
-    "away": [
-     {
-      "id": "344517",
-      "name": "Robin Risser",
-      "pos": "G",
-      "started": "8/8"
-     },
-     {
-      "id": "233199",
-      "name": "Matthieu Udol",
-      "pos": "LM",
-      "started": "7/8"
-     },
-     {
-      "id": "156898",
-      "name": "Florian Thauvin",
-      "pos": "CF-R",
-      "started": "7/8"
-     },
-     {
-      "id": "393432",
-      "name": "Kyllian Antonio",
-      "pos": "CD-R",
-      "started": "6/8"
-     },
-     {
-      "id": "258871",
-      "name": "Michaël Cuisance",
-      "pos": "CM-R",
-      "started": "6/8"
-     },
-     {
-      "id": "181946",
-      "name": "Ruben Aguilar",
-      "pos": "CD-R",
-      "started": "6/8"
-     },
-     {
-      "id": "228557",
-      "name": "Amadou Haidara",
-      "pos": "CM-L",
-      "started": "5/8"
-     },
-     {
-      "id": "350577",
-      "name": "Pierre Ganiou",
-      "pos": "CD",
-      "started": "4/8"
-     },
-     {
-      "id": "288481",
-      "name": "Michal Skoras",
-      "pos": "LM",
-      "started": "4/8"
-     },
-     {
-      "id": "364180",
-      "name": "Franjo Ivanovic",
-      "pos": "F",
-      "started": "4/8"
-     },
-     {
-      "id": "387061",
-      "name": "Andrija Bulatovic",
-      "pos": "CM-L",
-      "started": "3/8"
+    },
+    "away": {
+     "team": "Lens",
+     "formation": "3-4-2-1",
+     "xi": [
+      "Robin Risser",
+      "Samson Baidoo",
+      "Jean-Clair Todibo",
+      "Ruben Aguilar",
+      "Michaël Cuisance",
+      "Saud Abdulhamid",
+      "Florian Thauvin",
+      "Matthieu Udol",
+      "Florian Sotoca",
+      "Amadou Haidara",
+      "Thorgan Hazard"
+     ],
+     "missing": [
+      {
+       "name": "Kyllian Antonio",
+       "started": "6/8"
+      },
+      {
+       "name": "Pierre Ganiou",
+       "started": "4/8"
+      },
+      {
+       "name": "Michal Skoras",
+       "started": "4/8"
+      },
+      {
+       "name": "Franjo Ivanovic",
+       "started": "4/8"
+      },
+      {
+       "name": "Andrija Bulatovic",
+       "started": "3/8"
+      }
+     ],
+     "starters": [
+      {
+       "id": "344517",
+       "name": "Robin Risser",
+       "pos": "G"
+      },
+      {
+       "id": "329484",
+       "name": "Samson Baidoo",
+       "pos": "D"
+      },
+      {
+       "id": "277327",
+       "name": "Jean-Clair Todibo",
+       "pos": "D"
+      },
+      {
+       "id": "181946",
+       "name": "Ruben Aguilar",
+       "pos": "D"
+      },
+      {
+       "id": "258871",
+       "name": "Michaël Cuisance",
+       "pos": "M"
+      },
+      {
+       "id": "286011",
+       "name": "Saud Abdulhamid",
+       "pos": "M"
+      },
+      {
+       "id": "156898",
+       "name": "Florian Thauvin",
+       "pos": "M"
+      },
+      {
+       "id": "233199",
+       "name": "Matthieu Udol",
+       "pos": "M"
+      },
+      {
+       "id": "215687",
+       "name": "Florian Sotoca",
+       "pos": "M"
+      },
+      {
+       "id": "228557",
+       "name": "Amadou Haidara",
+       "pos": "M"
+      },
+      {
+       "id": "158066",
+       "name": "Thorgan Hazard",
+       "pos": "F"
+      }
+     ],
+     "bench": [
+      {
+       "id": "341720",
+       "name": "Yassine Titraoui",
+       "pos": "SUB"
+      },
+      {
+       "id": "131742",
+       "name": "Mathieu Gorgelin",
+       "pos": "SUB"
+      },
+      {
+       "id": "393432",
+       "name": "Kyllian Antonio",
+       "pos": "SUB"
+      },
+      {
+       "id": "197187",
+       "name": "Jonathan Gradit",
+       "pos": "SUB"
+      },
+      {
+       "id": "364180",
+       "name": "Franjo Ivanovic",
+       "pos": "SUB"
+      },
+      {
+       "id": "412217",
+       "name": "Mezian Soares",
+       "pos": "SUB"
+      },
+      {
+       "id": "333228",
+       "name": "Junior Kadile",
+       "pos": "SUB"
+      },
+      {
+       "id": "288481",
+       "name": "Michal Skoras",
+       "pos": "SUB"
+      },
+      {
+       "id": "387061",
+       "name": "Andrija Bulatovic",
+       "pos": "SUB"
+      }
+     ],
+     "reg": 0.867,
+     "att": 1.094,
+     "backupKeeper": false,
+     "history": 8,
+     "changes": {
+      "n": 1,
+      "out": [
+       "Ivanovic"
+      ],
+      "in": [
+       "Hazard"
+      ]
      }
-    ],
-    "homeExtra": [
-     {
-      "id": "355971",
-      "name": "Ethan Mbappé",
-      "pos": "RF",
-      "started": "4/8"
-     },
-     {
-      "id": "290165",
-      "name": "Tanguy Nianzou",
-      "pos": "CD-R",
-      "started": "3/8"
-     },
-     {
-      "id": "408359",
-      "name": "Maxima Goffi",
-      "pos": "RB",
-      "started": "3/8"
-     },
-     {
-      "id": "231778",
-      "name": "Gaetan Perrin",
-      "pos": "AM-L",
-      "started": "2/8"
-     },
-     {
-      "id": "337855",
-      "name": "Basar Önal",
-      "pos": "AM-L",
-      "started": "2/8"
-     },
-     {
-      "id": "88965",
-      "name": "Olivier Giroud",
-      "pos": "F",
-      "started": "2/8"
-     },
-     {
-      "id": "400352",
-      "name": "Soriba Diaoune",
-      "pos": "LF",
-      "started": "2/8"
-     },
-     {
-      "id": "304011",
-      "name": "Maurits Kjaergaard",
-      "pos": "LM",
-      "started": "1/8"
-     },
-     {
-      "id": "301648",
-      "name": "Orlando Gill",
-      "pos": "G",
-      "started": "1/8"
-     },
-     {
-      "id": "217381",
-      "name": "Calvin Verdonk",
-      "pos": "LB",
-      "started": "1/8"
-     }
-    ],
-    "awayExtra": [
-     {
-      "id": "308246",
-      "name": "Abdallah Sima",
-      "pos": "F",
-      "started": "3/8"
-     },
-     {
-      "id": "222180",
-      "name": "Odsonne Édouard",
-      "pos": "F",
-      "started": "3/8"
-     },
-     {
-      "id": "277327",
-      "name": "Jean-Clair Todibo",
-      "pos": "CD-L",
-      "started": "3/8"
-     },
-     {
-      "id": "333228",
-      "name": "Junior Kadile",
-      "pos": "CF-R",
-      "started": "3/8"
-     },
-     {
-      "id": "215687",
-      "name": "Florian Sotoca",
-      "pos": "CF-L",
-      "started": "3/8"
-     },
-     {
-      "id": "329484",
-      "name": "Samson Baidoo",
-      "pos": "CD",
-      "started": "3/8"
-     },
-     {
-      "id": "286011",
-      "name": "Saud Abdulhamid",
-      "pos": "RM",
-      "started": "3/8"
-     },
-     {
-      "id": "197187",
-      "name": "Jonathan Gradit",
-      "pos": "CD-R",
-      "started": "2/8"
-     },
-     {
-      "id": "341720",
-      "name": "Yassine Titraoui",
-      "pos": "CM-R",
-      "started": "2/8"
-     },
-     {
-      "id": "401306",
-      "name": "Souleymane Sagnan",
-      "pos": "CD-L",
-      "started": "1/8"
-     },
-     {
-      "id": "412217",
-      "name": "Mezian Soares",
-      "pos": "CF-L",
-      "started": "1/8"
-     },
-     {
-      "id": "158066",
-      "name": "Thorgan Hazard",
-      "pos": "CF-L",
-      "started": "1/8"
-     }
-    ]
+    }
    }
   },
   {
@@ -5648,22 +5322,22 @@
    "kickoff": "2026-10-31T12:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "h": 1.8,
-     "d": 3.8,
-     "a": 4.2
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "h": 1.95,
+     "d": 3.7,
+     "a": 3.7
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "yes": 1.57,
-     "no": 2.25
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "yes": 1.53,
+     "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.62,
      "under": 2.3
     }
@@ -5672,7 +5346,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072823,
     "homeName": "Chelsea",
     "awayName": "Manchester United",
@@ -7340,7 +7014,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "265653",
@@ -7610,7 +7284,7 @@
    "kickoff": "2026-10-31T12:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 3.3,
      "d": 3.5,
      "a": 2.1
@@ -7618,14 +7292,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.91,
      "under": 1.91
     }
@@ -7634,7 +7308,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142999,
     "homeName": "Lincoln City",
     "awayName": "Birmingham",
@@ -8116,7 +7790,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "279794",
@@ -8344,7 +8018,7 @@
    "kickoff": "2026-10-31T12:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.53,
      "d": 4.2,
      "a": 5.75
@@ -8352,14 +8026,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.57,
      "under": 2.38
     }
@@ -8368,7 +8042,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143020,
     "homeName": "Norwich City",
     "awayName": "Watford",
@@ -8905,7 +8579,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "328008",
@@ -9181,7 +8855,7 @@
    "kickoff": "2026-10-31T12:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.73,
      "d": 3.75,
      "a": 4.5
@@ -9189,14 +8863,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.83,
      "no": 1.83
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.91,
      "under": 1.91
     }
@@ -9205,7 +8879,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143015,
     "homeName": "Stoke City",
     "awayName": "Preston North End",
@@ -9680,7 +9354,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "258902",
@@ -9926,7 +9600,7 @@
    "kickoff": "2026-10-31T14:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.75,
      "d": 4.33,
      "a": 4
@@ -9934,14 +9608,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.33,
      "no": 3.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.3,
      "under": 3.5
     }
@@ -9950,7 +9624,7 @@
    "form": "Included because Bayer 04 Leverkusen is in the Bundesliga top 4. Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028230600,
     "homeName": "Bayer Leverkusen",
     "awayName": "VfB Stuttgart",
@@ -11050,7 +10724,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "177821",
@@ -11278,7 +10952,7 @@
    "kickoff": "2026-10-31T14:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 3.1,
      "d": 3.8,
      "a": 2.15
@@ -11286,14 +10960,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.4,
      "no": 2.75
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.5,
      "under": 2.63
     }
@@ -11302,7 +10976,7 @@
    "form": "Included because Freiburg is in the Bundesliga top 4. Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028230612,
     "homeName": "FC Augsburg",
     "awayName": "SC Freiburg",
@@ -12369,7 +12043,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "228507",
@@ -12573,7 +12247,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.1,
      "d": 3.4,
      "a": 3.6
@@ -12581,14 +12255,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.8,
      "under": 2
     }
@@ -12597,7 +12271,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072820,
     "homeName": "Bournemouth",
     "awayName": "Leeds United",
@@ -14066,7 +13740,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "289824",
@@ -14258,7 +13932,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.05,
      "d": 3.6,
      "a": 3.5
@@ -14266,14 +13940,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.73,
      "under": 2.1
     }
@@ -14282,7 +13956,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072817,
     "homeName": "Brentford",
     "awayName": "Nottingham Forest",
@@ -15841,7 +15515,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "275599",
@@ -16063,7 +15737,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 3.2,
      "d": 3.4,
      "a": 2.25
@@ -16071,14 +15745,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.75,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.91,
      "under": 1.91
     }
@@ -16087,7 +15761,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072826,
     "homeName": "Coventry City",
     "awayName": "Sunderland",
@@ -17753,7 +17427,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "307069",
@@ -17987,7 +17661,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.6,
      "d": 3.4,
      "a": 2.7
@@ -17995,14 +17669,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.8,
      "under": 2
     }
@@ -18011,7 +17685,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072832,
     "homeName": "Hull City",
     "awayName": "Ipswich Town",
@@ -19672,7 +19346,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "284199",
@@ -19900,22 +19574,22 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "h": 1.6,
-     "d": 4.5,
-     "a": 4.75
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "h": 1.73,
+     "d": 4.33,
+     "a": 4.1
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.4,
      "under": 3
     }
@@ -19924,7 +19598,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072838,
     "homeName": "Manchester City",
     "awayName": "Brighton",
@@ -21483,7 +21157,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "217092",
@@ -21717,7 +21391,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 3.1,
      "d": 3.3,
      "a": 2.3
@@ -21725,14 +21399,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.8,
      "under": 2
     }
@@ -21741,7 +21415,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143006,
     "homeName": "Bolton",
     "awayName": "Bristol City",
@@ -22240,7 +21914,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "187177",
@@ -22510,7 +22184,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.2,
      "d": 3.3,
      "a": 3.25
@@ -22518,14 +22192,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.73,
      "no": 2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 2,
      "under": 1.8
     }
@@ -22534,7 +22208,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143008,
     "homeName": "Burnley",
     "awayName": "Portsmouth",
@@ -23021,7 +22695,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "347046",
@@ -23285,7 +22959,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.25,
      "d": 6,
      "a": 10
@@ -23293,14 +22967,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.8,
      "no": 1.91
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.4,
      "under": 3
     }
@@ -23309,7 +22983,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143002,
     "homeName": "Middlesbrough",
     "awayName": "Charlton Athletic",
@@ -23868,7 +23542,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "325556",
@@ -24108,22 +23782,22 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "h": 1.67,
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "h": 1.65,
      "d": 3.8,
      "a": 5
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.8,
      "no": 1.91
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.8,
      "under": 2
     }
@@ -24132,7 +23806,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143004,
     "homeName": "Millwall",
     "awayName": "Derby County",
@@ -24650,7 +24324,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "190963",
@@ -24884,22 +24558,22 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "h": 1.85,
-     "d": 3.8,
-     "a": 3.8
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "h": 1.9,
+     "d": 3.75,
+     "a": 3.7
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.62,
      "under": 2.3
     }
@@ -24908,7 +24582,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143013,
     "homeName": "Southampton",
     "awayName": "Queens Park Rangers",
@@ -25395,7 +25069,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "305926",
@@ -25653,22 +25327,22 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.75,
      "d": 3.5,
-     "a": 5
+     "a": 4.75
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.8,
      "no": 1.91
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.91,
      "under": 1.91
     }
@@ -25677,7 +25351,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143018,
     "homeName": "Swansea City",
     "awayName": "Blackburn Rovers",
@@ -26134,7 +25808,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "195816",
@@ -26368,7 +26042,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.62,
      "d": 4.2,
      "a": 4.75
@@ -26376,14 +26050,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.62,
      "under": 2.3
     }
@@ -26392,7 +26066,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142965,
     "homeName": "West Ham",
     "awayName": "West Bromwich",
@@ -26857,7 +26531,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "281564",
@@ -27085,7 +26759,7 @@
    "kickoff": "2026-10-31T15:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.67,
      "d": 3.9,
      "a": 4.75
@@ -27093,14 +26767,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.5,
      "under": 2.63
     }
@@ -27109,7 +26783,7 @@
    "form": "Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "181278",
@@ -27361,7 +27035,7 @@
    "kickoff": "2026-10-31T17:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 5.75,
      "d": 4.2,
      "a": 1.57
@@ -27369,23 +27043,23 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "over": 1.62,
-     "under": 2.3
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "over": 1.57,
+     "under": 2.38
     }
    ],
    "kickoffUrl": "https://www.kickoff.co.uk/italian-serie-a-predictions-stats-odds/udinese-vs-roma/",
    "form": "Included because Roma is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1027911559,
     "homeName": "Udinese",
     "awayName": "Roma",
@@ -27842,7 +27516,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "295476",
@@ -28106,7 +27780,7 @@
    "kickoff": "2026-10-31T17:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.57,
      "d": 4.33,
      "a": 5.25
@@ -28114,14 +27788,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.62,
      "under": 2.3
     }
@@ -28130,7 +27804,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072840,
     "homeName": "Tottenham",
     "awayName": "Crystal Palace",
@@ -28139,7 +27813,7 @@
       "name": "Mateus Fernandes",
       "mk": "sot",
       "k": 1,
-      "odds": 2.35
+      "odds": 2.32
      },
      {
       "name": "Micky Van de Ven",
@@ -28151,31 +27825,31 @@
       "name": "Omar Marmoush",
       "mk": "sot",
       "k": 2,
-      "odds": 2.15
+      "odds": 2.12
      },
      {
       "name": "Chris Richards",
       "mk": "yc",
       "k": 1,
-      "odds": 3.6
+      "odds": 3.7
      },
      {
       "name": "Archie Gray",
       "mk": "yc",
       "k": 1,
-      "odds": 4
+      "odds": 4.1
      },
      {
       "name": "Daichi Kamada",
       "mk": "yc",
       "k": 1,
-      "odds": 4
+      "odds": 3.8
      },
      {
       "name": "Adam Wharton",
       "mk": "sot",
       "k": 1,
-      "odds": 5.5
+      "odds": 5.6
      },
      {
       "name": "Honest Ahanor",
@@ -28187,7 +27861,7 @@
       "name": "Archie Gray",
       "mk": "sot",
       "k": 1,
-      "odds": 3.1
+      "odds": 3.15
      },
      {
       "name": "Mohammed Kudus",
@@ -28199,7 +27873,13 @@
       "name": "Jaydee Canvot",
       "mk": "yc",
       "k": 1,
-      "odds": 3.9
+      "odds": 3.8
+     },
+     {
+      "name": "Quinten Timber",
+      "mk": "yc",
+      "k": 1,
+      "odds": 3.4
      },
      {
       "name": "Dominic Solanke",
@@ -28223,7 +27903,7 @@
       "name": "Anan Khalaili",
       "mk": "sot",
       "k": 1,
-      "odds": 2.8
+      "odds": 2.75
      },
      {
       "name": "Jan Paul van Hecke",
@@ -28241,13 +27921,13 @@
       "name": "Destiny Udogie",
       "mk": "yc",
       "k": 1,
-      "odds": 4.1
+      "odds": 4.2
      },
      {
       "name": "Pedro Porro",
       "mk": "yc",
       "k": 1,
-      "odds": 3.9
+      "odds": 4
      },
      {
       "name": "Andy Robertson",
@@ -28259,7 +27939,7 @@
       "name": "Conor Gallagher",
       "mk": "sot",
       "k": 1,
-      "odds": 2.15
+      "odds": 2.12
      },
      {
       "name": "Yeremy Pino",
@@ -28271,7 +27951,7 @@
       "name": "Sandro Tonali",
       "mk": "sot",
       "k": 1,
-      "odds": 2.65
+      "odds": 2.7
      },
      {
       "name": "Jefferson Lerma",
@@ -28283,7 +27963,7 @@
       "name": "Jørgen Strand Larsen",
       "mk": "sot",
       "k": 2,
-      "odds": 3.6
+      "odds": 3.7
      },
      {
       "name": "Sandro Tonali",
@@ -28295,7 +27975,7 @@
       "name": "Jørgen Strand Larsen",
       "mk": "yc",
       "k": 1,
-      "odds": 3.6
+      "odds": 3.7
      },
      {
       "name": "Tyrick Mitchell",
@@ -28313,13 +27993,13 @@
       "name": "Adam Wharton",
       "mk": "yc",
       "k": 1,
-      "odds": 3.9
+      "odds": 4
      },
      {
       "name": "Mohammed Kudus",
       "mk": "sot",
       "k": 2,
-      "odds": 3.9
+      "odds": 4
      },
      {
       "name": "Yeremy Pino",
@@ -28334,6 +28014,12 @@
       "odds": 2.7
      },
      {
+      "name": "Quinten Timber",
+      "mk": "sot",
+      "k": 1,
+      "odds": 3.9
+     },
+     {
       "name": "Anan Khalaili",
       "mk": "yc",
       "k": 1,
@@ -28343,7 +28029,7 @@
       "name": "Mateus Fernandes",
       "mk": "yc",
       "k": 1,
-      "odds": 3.4
+      "odds": 3.5
      },
      {
       "name": "Dominic Solanke",
@@ -28373,7 +28059,7 @@
       "name": "Oscar Mingueza",
       "mk": "yc",
       "k": 1,
-      "odds": 3.6
+      "odds": 3.8
      },
      {
       "name": "Omar Marmoush",
@@ -28385,7 +28071,7 @@
       "name": "Jørgen Strand Larsen",
       "mk": "sot",
       "k": 1,
-      "odds": 1.6
+      "odds": 1.61
      },
      {
       "name": "Mohammed Kudus",
@@ -28397,13 +28083,13 @@
       "name": "James Maddison",
       "mk": "sot",
       "k": 1,
-      "odds": 1.49
+      "odds": 1.5
      },
      {
       "name": "Dominic Solanke",
       "mk": "sot",
       "k": 3,
-      "odds": 5.8
+      "odds": 6
      },
      {
       "name": "Jean-Philippe Mateta",
@@ -28415,7 +28101,7 @@
       "name": "Andy Robertson",
       "mk": "sot",
       "k": 1,
-      "odds": 4.2
+      "odds": 4.1
      },
      {
       "name": "Jean-Philippe Mateta",
@@ -28427,7 +28113,7 @@
       "name": "James Maddison",
       "mk": "yc",
       "k": 1,
-      "odds": 4
+      "odds": 4.1
      },
      {
       "name": "Omar Marmoush",
@@ -28475,19 +28161,25 @@
       "name": "Dominic Solanke",
       "mk": "sh",
       "k": 4,
-      "odds": 2.1
+      "odds": 2.15
      },
      {
       "name": "Archie Gray",
       "mk": "sh",
       "k": 1,
-      "odds": 1.56
+      "odds": 1.55
+     },
+     {
+      "name": "Andy Robertson",
+      "mk": "sh",
+      "k": 1,
+      "odds": 2.1
      },
      {
       "name": "Destiny Udogie",
       "mk": "sot",
       "k": 1,
-      "odds": 4.2
+      "odds": 4.1
      },
      {
       "name": "Daichi Kamada",
@@ -28505,7 +28197,7 @@
       "name": "Pedro Porro",
       "mk": "rc",
       "k": 1,
-      "odds": 34
+      "odds": 35
      },
      {
       "name": "Omar Marmoush",
@@ -28541,7 +28233,7 @@
       "name": "Mohammed Kudus",
       "mk": "sh",
       "k": 2,
-      "odds": 1.35
+      "odds": 1.34
      },
      {
       "name": "Sandro Tonali",
@@ -28565,19 +28257,19 @@
       "name": "Omar Marmoush",
       "mk": "sh",
       "k": 5,
-      "odds": 2.35
+      "odds": 2.3
      },
      {
       "name": "Omar Marmoush",
       "mk": "sh",
       "k": 3,
-      "odds": 1.23
+      "odds": 1.22
      },
      {
       "name": "Omar Marmoush",
       "mk": "sh",
       "k": 6,
-      "odds": 3.4
+      "odds": 3.3
      },
      {
       "name": "Jean-Philippe Mateta",
@@ -28589,7 +28281,7 @@
       "name": "Omar Marmoush",
       "mk": "sh",
       "k": 7,
-      "odds": 5.2
+      "odds": 5
      },
      {
       "name": "Conor Gallagher",
@@ -28601,7 +28293,7 @@
       "name": "Jefferson Lerma",
       "mk": "sot",
       "k": 1,
-      "odds": 5.2
+      "odds": 5.1
      },
      {
       "name": "Jaydee Canvot",
@@ -28613,7 +28305,7 @@
       "name": "Mateus Fernandes",
       "mk": "sh",
       "k": 2,
-      "odds": 2.1
+      "odds": 2.08
      },
      {
       "name": "Jean-Philippe Mateta",
@@ -28625,31 +28317,31 @@
       "name": "Jean-Philippe Mateta",
       "mk": "rc",
       "k": 1,
-      "odds": 46
+      "odds": 41
      },
      {
       "name": "Oscar Mingueza",
       "mk": "rc",
       "k": 1,
-      "odds": 30
+      "odds": 29
      },
      {
       "name": "Mohammed Kudus",
       "mk": "rc",
       "k": 1,
-      "odds": 51
+      "odds": 46
      },
      {
       "name": "James Maddison",
       "mk": "rc",
       "k": 1,
-      "odds": 30
+      "odds": 31
      },
      {
       "name": "Micky Van de Ven",
       "mk": "rc",
       "k": 1,
-      "odds": 35
+      "odds": 36
      },
      {
       "name": "Axel Disasi",
@@ -28667,7 +28359,7 @@
       "name": "Chris Richards",
       "mk": "rc",
       "k": 1,
-      "odds": 23
+      "odds": 21
      },
      {
       "name": "Omar Marmoush",
@@ -28685,7 +28377,7 @@
       "name": "Dominic Solanke",
       "mk": "fc",
       "k": 1,
-      "odds": 1.16
+      "odds": 1.11
      },
      {
       "name": "Jaydee Canvot",
@@ -28709,7 +28401,7 @@
       "name": "Oscar Mingueza",
       "mk": "fc",
       "k": 2,
-      "odds": 1.95
+      "odds": 2
      },
      {
       "name": "Axel Disasi",
@@ -28721,25 +28413,25 @@
       "name": "Archie Gray",
       "mk": "fc",
       "k": 2,
-      "odds": 2.05
+      "odds": 2.08
      },
      {
       "name": "Honest Ahanor",
       "mk": "fc",
       "k": 3,
-      "odds": 3.8
+      "odds": 3.9
      },
      {
       "name": "Anan Khalaili",
       "mk": "fc",
       "k": 1,
-      "odds": 1.2
+      "odds": 1.21
      },
      {
       "name": "Omar Marmoush",
       "mk": "fc",
       "k": 1,
-      "odds": 1.24
+      "odds": 1.25
      },
      {
       "name": "Jefferson Lerma",
@@ -28751,19 +28443,19 @@
       "name": "Jefferson Lerma",
       "mk": "fc",
       "k": 2,
-      "odds": 1.82
+      "odds": 1.85
      },
      {
       "name": "Sandro Tonali",
       "mk": "fc",
       "k": 2,
-      "odds": 1.97
+      "odds": 1.98
      },
      {
       "name": "Sandro Tonali",
       "mk": "fc",
       "k": 1,
-      "odds": 1.21
+      "odds": 1.22
      },
      {
       "name": "Micky Van de Ven",
@@ -28775,7 +28467,7 @@
       "name": "Chris Richards",
       "mk": "fc",
       "k": 1,
-      "odds": 1.2
+      "odds": 1.15
      },
      {
       "name": "Jean-Philippe Mateta",
@@ -28787,25 +28479,25 @@
       "name": "Jean-Philippe Mateta",
       "mk": "fc",
       "k": 3,
-      "odds": 4.1
+      "odds": 4.2
      },
      {
       "name": "Mateus Fernandes",
       "mk": "fc",
       "k": 2,
-      "odds": 1.65
+      "odds": 1.68
      },
      {
       "name": "Yeremy Pino",
       "mk": "fc",
       "k": 3,
-      "odds": 3.4
+      "odds": 3.3
      },
      {
       "name": "Conor Gallagher",
       "mk": "fc",
       "k": 2,
-      "odds": 1.7
+      "odds": 1.68
      },
      {
       "name": "Mathys Tel",
@@ -28817,7 +28509,7 @@
       "name": "Mathys Tel",
       "mk": "sh",
       "k": 3,
-      "odds": 2.08
+      "odds": 2.05
      },
      {
       "name": "Mathys Tel",
@@ -28829,7 +28521,7 @@
       "name": "Conor Gallagher",
       "mk": "sot",
       "k": 2,
-      "odds": 6.5
+      "odds": 6.25
      },
      {
       "name": "Eddie Nketiah",
@@ -28853,13 +28545,13 @@
       "name": "Darío Osorio",
       "mk": "sh",
       "k": 2,
-      "odds": 2.18
+      "odds": 2.15
      },
      {
       "name": "Darío Osorio",
       "mk": "yc",
       "k": 1,
-      "odds": 4
+      "odds": 3.8
      },
      {
       "name": "Eddie Nketiah",
@@ -28913,7 +28605,7 @@
       "name": "Dominic Solanke",
       "mk": "sh",
       "k": 3,
-      "odds": 1.47
+      "odds": 1.46
      },
      {
       "name": "Jan Paul van Hecke",
@@ -28925,37 +28617,37 @@
       "name": "Jan Paul van Hecke",
       "mk": "sh",
       "k": 1,
-      "odds": 1.77
+      "odds": 1.76
      },
      {
       "name": "Daichi Kamada",
       "mk": "sh",
       "k": 2,
-      "odds": 2.9
+      "odds": 3
      },
      {
       "name": "Yeremy Pino",
       "mk": "sh",
       "k": 2,
-      "odds": 1.9
+      "odds": 1.88
      },
      {
       "name": "Yeremy Pino",
       "mk": "sh",
       "k": 1,
-      "odds": 1.14
+      "odds": 1.13
      },
      {
       "name": "Oscar Mingueza",
       "mk": "sot",
       "k": 1,
-      "odds": 5.8
+      "odds": 6
      },
      {
       "name": "Tyrick Mitchell",
       "mk": "sot",
       "k": 1,
-      "odds": 5.4
+      "odds": 5.5
      },
      {
       "name": "Sandro Tonali",
@@ -28985,19 +28677,19 @@
       "name": "Mateus Fernandes",
       "mk": "sh",
       "k": 1,
-      "odds": 1.19
+      "odds": 1.18
      },
      {
       "name": "Adam Wharton",
       "mk": "rc",
       "k": 1,
-      "odds": 25
+      "odds": 23
      },
      {
       "name": "Dominic Solanke",
       "mk": "rc",
       "k": 1,
-      "odds": 67
+      "odds": 71
      },
      {
       "name": "Jan Paul van Hecke",
@@ -29009,7 +28701,7 @@
       "name": "Jaydee Canvot",
       "mk": "rc",
       "k": 1,
-      "odds": 21
+      "odds": 23
      },
      {
       "name": "Yeremy Pino",
@@ -29021,7 +28713,7 @@
       "name": "Archie Gray",
       "mk": "rc",
       "k": 1,
-      "odds": 46
+      "odds": 41
      },
      {
       "name": "Conor Gallagher",
@@ -29033,19 +28725,19 @@
       "name": "Dominic Solanke",
       "mk": "fc",
       "k": 2,
-      "odds": 1.75
+      "odds": 1.77
      },
      {
       "name": "Dominic Solanke",
       "mk": "fc",
       "k": 3,
-      "odds": 3
+      "odds": 2.95
      },
      {
       "name": "Jaydee Canvot",
       "mk": "fc",
       "k": 3,
-      "odds": 3.4
+      "odds": 3.3
      },
      {
       "name": "Daichi Kamada",
@@ -29057,19 +28749,19 @@
       "name": "Oscar Mingueza",
       "mk": "fc",
       "k": 1,
-      "odds": 1.21
+      "odds": 1.22
      },
      {
       "name": "Adam Wharton",
       "mk": "fc",
       "k": 2,
-      "odds": 2
+      "odds": 2.02
      },
      {
       "name": "Adam Wharton",
       "mk": "fc",
       "k": 1,
-      "odds": 1.22
+      "odds": 1.23
      },
      {
       "name": "Honest Ahanor",
@@ -29084,28 +28776,22 @@
       "odds": 2.35
      },
      {
-      "name": "Anan Khalaili",
-      "mk": "fc",
-      "k": 3,
-      "odds": 3.5
-     },
-     {
       "name": "Tyrick Mitchell",
       "mk": "fc",
       "k": 1,
-      "odds": 1.26
+      "odds": 1.27
      },
      {
       "name": "James Maddison",
       "mk": "fc",
       "k": 1,
-      "odds": 1.24
+      "odds": 1.23
      },
      {
       "name": "Jefferson Lerma",
       "mk": "fc",
       "k": 3,
-      "odds": 3.1
+      "odds": 3.2
      },
      {
       "name": "Sandro Tonali",
@@ -29129,7 +28815,7 @@
       "name": "Conor Gallagher",
       "mk": "fc",
       "k": 1,
-      "odds": 1.08
+      "odds": 1.09
      },
      {
       "name": "Yeremy Pino",
@@ -29147,7 +28833,7 @@
       "name": "Mathys Tel",
       "mk": "fc",
       "k": 1,
-      "odds": 1.3
+      "odds": 1.32
      },
      {
       "name": "Mathys Tel",
@@ -29177,7 +28863,7 @@
       "name": "Eddie Nketiah",
       "mk": "rc",
       "k": 1,
-      "odds": 26
+      "odds": 29
      },
      {
       "name": "Dwight McNeil",
@@ -29189,31 +28875,43 @@
       "name": "Dwight McNeil",
       "mk": "rc",
       "k": 1,
-      "odds": 41
+      "odds": 46
      },
      {
       "name": "Darío Osorio",
       "mk": "rc",
       "k": 1,
-      "odds": 30
+      "odds": 34
      },
      {
       "name": "Dwight McNeil",
       "mk": "fc",
       "k": 1,
-      "odds": 1.29
+      "odds": 1.3
      },
      {
       "name": "Dominic Solanke",
       "mk": "sh",
       "k": 2,
-      "odds": 1.09
+      "odds": 1.08
      },
      {
       "name": "Archie Gray",
       "mk": "sh",
       "k": 2,
-      "odds": 3.5
+      "odds": 3.4
+     },
+     {
+      "name": "Andy Robertson",
+      "mk": "sh",
+      "k": 2,
+      "odds": 6
+     },
+     {
+      "name": "Destiny Udogie",
+      "mk": "sh",
+      "k": 1,
+      "odds": 2.05
      },
      {
       "name": "Anan Khalaili",
@@ -29226,12 +28924,6 @@
       "mk": "sh",
       "k": 2,
       "odds": 2.55
-     },
-     {
-      "name": "Adam Wharton",
-      "mk": "sh",
-      "k": 2,
-      "odds": 4.2
      },
      {
       "name": "Adam Wharton",
@@ -29255,7 +28947,7 @@
       "name": "James Maddison",
       "mk": "sh",
       "k": 2,
-      "odds": 1.25
+      "odds": 1.28
      },
      {
       "name": "Honest Ahanor",
@@ -29285,19 +28977,19 @@
       "name": "Jean-Philippe Mateta",
       "mk": "sh",
       "k": 4,
-      "odds": 2.6
+      "odds": 2.65
      },
      {
       "name": "Conor Gallagher",
       "mk": "sh",
       "k": 2,
-      "odds": 1.83
+      "odds": 1.82
      },
      {
       "name": "James Maddison",
       "mk": "sot",
       "k": 2,
-      "odds": 3.4
+      "odds": 3.5
      },
      {
       "name": "Anan Khalaili",
@@ -29315,13 +29007,13 @@
       "name": "Tyrick Mitchell",
       "mk": "rc",
       "k": 1,
-      "odds": 30
+      "odds": 29
      },
      {
       "name": "Sandro Tonali",
       "mk": "rc",
       "k": 1,
-      "odds": 29
+      "odds": 31
      },
      {
       "name": "Honest Ahanor",
@@ -29333,7 +29025,7 @@
       "name": "Daichi Kamada",
       "mk": "rc",
       "k": 1,
-      "odds": 31
+      "odds": 30
      },
      {
       "name": "Destiny Udogie",
@@ -29357,7 +29049,7 @@
       "name": "Pedro Porro",
       "mk": "fc",
       "k": 1,
-      "odds": 1.25
+      "odds": 1.26
      },
      {
       "name": "Axel Disasi",
@@ -29369,7 +29061,7 @@
       "name": "Honest Ahanor",
       "mk": "fc",
       "k": 2,
-      "odds": 2.05
+      "odds": 2.07
      },
      {
       "name": "Archie Gray",
@@ -29381,13 +29073,13 @@
       "name": "Jan Paul van Hecke",
       "mk": "fc",
       "k": 1,
-      "odds": 1.3
+      "odds": 1.32
      },
      {
       "name": "Anan Khalaili",
       "mk": "fc",
       "k": 2,
-      "odds": 1.9
+      "odds": 1.95
      },
      {
       "name": "Andy Robertson",
@@ -29405,7 +29097,7 @@
       "name": "Tyrick Mitchell",
       "mk": "fc",
       "k": 2,
-      "odds": 2.15
+      "odds": 2.2
      },
      {
       "name": "James Maddison",
@@ -29417,7 +29109,7 @@
       "name": "Omar Marmoush",
       "mk": "fc",
       "k": 3,
-      "odds": 3.8
+      "odds": 3.9
      },
      {
       "name": "Omar Marmoush",
@@ -29429,7 +29121,7 @@
       "name": "Mohammed Kudus",
       "mk": "fc",
       "k": 1,
-      "odds": 1.28
+      "odds": 1.27
      },
      {
       "name": "Micky Van de Ven",
@@ -29447,7 +29139,7 @@
       "name": "Chris Richards",
       "mk": "fc",
       "k": 2,
-      "odds": 1.93
+      "odds": 1.95
      },
      {
       "name": "Mateus Fernandes",
@@ -29465,7 +29157,7 @@
       "name": "Mateus Fernandes",
       "mk": "fc",
       "k": 3,
-      "odds": 2.7
+      "odds": 2.8
      },
      {
       "name": "Mathys Tel",
@@ -29477,31 +29169,31 @@
       "name": "Mathys Tel",
       "mk": "sot",
       "k": 2,
-      "odds": 3.8
+      "odds": 3.9
      },
      {
       "name": "Mathys Tel",
       "mk": "fc",
       "k": 2,
-      "odds": 2.3
+      "odds": 2.35
      },
      {
       "name": "Mathys Tel",
       "mk": "sh",
       "k": 4,
-      "odds": 3.4
+      "odds": 3.3
      },
      {
       "name": "Mateus Fernandes",
       "mk": "sh",
       "k": 3,
-      "odds": 4
+      "odds": 3.9
      },
      {
       "name": "Mathys Tel",
       "mk": "rc",
       "k": 1,
-      "odds": 51
+      "odds": 56
      },
      {
       "name": "Eddie Nketiah",
@@ -29513,13 +29205,13 @@
       "name": "Eddie Nketiah",
       "mk": "yc",
       "k": 1,
-      "odds": 4.2
+      "odds": 4.1
      },
      {
       "name": "Darío Osorio",
       "mk": "sh",
       "k": 1,
-      "odds": 1.23
+      "odds": 1.22
      },
      {
       "name": "Dwight McNeil",
@@ -29531,25 +29223,25 @@
       "name": "Dwight McNeil",
       "mk": "yc",
       "k": 1,
-      "odds": 4.4
+      "odds": 4.5
      },
      {
       "name": "Jørgen Strand Larsen",
       "mk": "sh",
       "k": 3,
-      "odds": 1.97
+      "odds": 2
      },
      {
       "name": "Jørgen Strand Larsen",
       "mk": "rc",
       "k": 1,
-      "odds": 23
+      "odds": 25
      },
      {
       "name": "Jørgen Strand Larsen",
       "mk": "fc",
       "k": 1,
-      "odds": 1.15
+      "odds": 1.16
      },
      {
       "name": "Jørgen Strand Larsen",
@@ -29561,19 +29253,49 @@
       "name": "Jørgen Strand Larsen",
       "mk": "sh",
       "k": 2,
-      "odds": 1.29
+      "odds": 1.3
      },
      {
       "name": "Jørgen Strand Larsen",
       "mk": "fc",
       "k": 2,
-      "odds": 1.7
+      "odds": 1.75
      },
      {
       "name": "Destiny Udogie",
       "mk": "fc",
       "k": 3,
       "odds": 2.9
+     },
+     {
+      "name": "Quinten Timber",
+      "mk": "fc",
+      "k": 1,
+      "odds": 1.08
+     },
+     {
+      "name": "Quinten Timber",
+      "mk": "rc",
+      "k": 1,
+      "odds": 21
+     },
+     {
+      "name": "Quinten Timber",
+      "mk": "fc",
+      "k": 3,
+      "odds": 2.8
+     },
+     {
+      "name": "Quinten Timber",
+      "mk": "sh",
+      "k": 1,
+      "odds": 1.7
+     },
+     {
+      "name": "Quinten Timber",
+      "mk": "fc",
+      "k": 2,
+      "odds": 1.7
      }
     ],
     "totals": [
@@ -29588,14 +29310,14 @@
       "scope": "match",
       "mk": "sot",
       "line": 8.5,
-      "over": 1.6,
+      "over": 1.61,
       "under": 2.05
      },
      {
       "scope": "home",
       "mk": "cards",
       "line": 2.5,
-      "over": 3.15,
+      "over": 3.2,
       "under": 1.29
      },
      {
@@ -29603,7 +29325,7 @@
       "mk": "sot",
       "line": 5.5,
       "over": 1.75,
-      "under": 1.85
+      "under": 1.86
      },
      {
       "scope": "home",
@@ -29624,14 +29346,14 @@
       "mk": "sot",
       "line": 7.5,
       "over": 1.33,
-      "under": 2.8
+      "under": 2.75
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 2.5,
-      "over": 1.43,
-      "under": 2.43
+      "over": 1.44,
+      "under": 2.4
      },
      {
       "scope": "match",
@@ -29644,8 +29366,8 @@
       "scope": "match",
       "mk": "sot",
       "line": 9.5,
-      "over": 2.04,
-      "under": 1.61
+      "over": 2.02,
+      "under": 1.63
      },
      {
       "scope": "home",
@@ -29658,8 +29380,8 @@
       "scope": "away",
       "mk": "sot",
       "line": 3.5,
-      "over": 2.06,
-      "under": 1.6
+      "over": 2.08,
+      "under": 1.58
      },
      {
       "scope": "away",
@@ -29680,49 +29402,49 @@
       "mk": "cards",
       "line": 1.5,
       "over": 1.77,
-      "under": 1.91
+      "under": 1.9
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 17.5,
-      "over": 1.97,
+      "over": 1.96,
       "under": 1.65
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 18.5,
-      "over": 2.28,
-      "under": 1.48
+      "over": 2.25,
+      "under": 1.49
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 6.5,
-      "over": 1.15,
-      "under": 3.95
+      "over": 1.16,
+      "under": 3.9
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 27.5,
-      "over": 1.82,
-      "under": 1.78
+      "over": 1.81,
+      "under": 1.79
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 28.5,
-      "over": 2.06,
-      "under": 1.6
+      "over": 2.05,
+      "under": 1.61
      },
      {
       "scope": "away",
       "mk": "cards",
       "line": 1.5,
-      "over": 1.61,
-      "under": 2.14
+      "over": 1.6,
+      "under": 2.15
      },
      {
       "scope": "away",
@@ -29736,7 +29458,7 @@
       "mk": "sot",
       "line": 7.5,
       "over": 3.4,
-      "under": 1.21
+      "under": 1.22
      },
      {
       "scope": "match",
@@ -29749,8 +29471,8 @@
       "scope": "match",
       "mk": "shots",
       "line": 30.5,
-      "over": 2.75,
-      "under": 1.34
+      "over": 2.7,
+      "under": 1.35
      },
      {
       "scope": "match",
@@ -29763,7 +29485,7 @@
       "scope": "match",
       "mk": "cards",
       "line": 3.5,
-      "over": 1.81,
+      "over": 1.82,
       "under": 1.85
      },
      {
@@ -29784,29 +29506,29 @@
       "scope": "match",
       "mk": "sot",
       "line": 11.5,
-      "over": 3.55,
-      "under": 1.2
+      "over": 3.6,
+      "under": 1.19
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 16.5,
-      "over": 1.73,
-      "under": 1.86
+      "over": 1.72,
+      "under": 1.87
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 29.5,
-      "over": 2.38,
-      "under": 1.45
+      "over": 2.35,
+      "under": 1.46
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 26.5,
       "over": 1.62,
-      "under": 2.02
+      "under": 2.04
      },
      {
       "scope": "match",
@@ -29821,19 +29543,12 @@
       "line": 11.5,
       "over": 2.35,
       "under": 1.45
-     },
-     {
-      "scope": "home",
-      "mk": "shots",
-      "line": 15.5,
-      "over": 1.53,
-      "under": 2.17
      }
     ]
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "324393",
@@ -30103,7 +29818,7 @@
    "kickoff": "2026-10-31T17:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.33,
      "d": 5.75,
      "a": 7.5
@@ -30111,14 +29826,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.25,
      "under": 4
     }
@@ -30127,7 +29842,7 @@
    "form": "Included because Bayern Munich and Borussia Dortmund are in the Bundesliga top 4. Fixture and kick-off from ESPN (single source: BBC does not list it), date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028230594,
     "homeName": "Bayern Munich",
     "awayName": "Borussia Dortmund",
@@ -30298,7 +30013,7 @@
       "name": "Harry Kane",
       "mk": "sh",
       "k": 7,
-      "odds": 2.23
+      "odds": 2.2
      },
      {
       "name": "Ismael Saibari",
@@ -30454,7 +30169,7 @@
       "name": "Aleksandar Pavlovic",
       "mk": "sh",
       "k": 1,
-      "odds": 1.64
+      "odds": 1.63
      },
      {
       "name": "Julian Ryerson",
@@ -30490,7 +30205,7 @@
       "name": "Konrad Laimer",
       "mk": "sh",
       "k": 1,
-      "odds": 1.9
+      "odds": 1.88
      },
      {
       "name": "Nathaniel Brown",
@@ -30760,7 +30475,7 @@
       "name": "Jobe Bellingham",
       "mk": "sot",
       "k": 1,
-      "odds": 2.9
+      "odds": 2.95
      },
      {
       "name": "Ethan Nwaneri",
@@ -30796,7 +30511,7 @@
       "name": "Michael Olise",
       "mk": "yc",
       "k": 1,
-      "odds": 4.5
+      "odds": 4.6
      },
      {
       "name": "Felix Nmecha",
@@ -30880,7 +30595,7 @@
       "name": "Lennart Karl",
       "mk": "yc",
       "k": 1,
-      "odds": 6.1
+      "odds": 6
      },
      {
       "name": "Maximilian Beier",
@@ -31114,7 +30829,7 @@
       "name": "Serge Gnabry",
       "mk": "fc",
       "k": 2,
-      "odds": 2.05
+      "odds": 2.02
      },
      {
       "name": "Ramy Bensebaïni",
@@ -31180,7 +30895,7 @@
       "name": "Lennart Karl",
       "mk": "fc",
       "k": 1,
-      "odds": 1.52
+      "odds": 1.54
      },
      {
       "name": "Alphonso Davies",
@@ -31402,7 +31117,7 @@
       "name": "Felix Nmecha",
       "mk": "fc",
       "k": 2,
-      "odds": 1.58
+      "odds": 1.57
      },
      {
       "name": "Joey Veerman",
@@ -31474,7 +31189,7 @@
       "name": "Konstantinos Karetsas",
       "mk": "rc",
       "k": 1,
-      "odds": 26
+      "odds": 29
      },
      {
       "name": "Alphonso Davies",
@@ -31757,7 +31472,7 @@
       "mk": "sot",
       "line": 8.5,
       "over": 2.75,
-      "under": 1.34
+      "under": 1.33
      },
      {
       "scope": "home",
@@ -31834,7 +31549,7 @@
       "mk": "sot",
       "line": 7.5,
       "over": 2.05,
-      "under": 1.61
+      "under": 1.6
      },
      {
       "scope": "match",
@@ -31876,13 +31591,13 @@
       "mk": "shots",
       "line": 32.5,
       "over": 2.7,
-      "under": 1.35
+      "under": 1.36
      },
      {
       "scope": "match",
       "mk": "cards",
       "line": 5.5,
-      "over": 3.9,
+      "over": 3.85,
       "under": 1.2
      },
      {
@@ -31931,7 +31646,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "142200",
@@ -32171,7 +31886,7 @@
    "kickoff": "2026-10-31T19:45:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 3.6,
      "d": 3.6,
      "a": 2
@@ -32179,14 +31894,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.67,
      "under": 2.2
     }
@@ -32195,7 +31910,7 @@
    "form": "Included because Inter Milan is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1027911558,
     "homeName": "AC Milan",
     "awayName": "Inter",
@@ -32240,7 +31955,7 @@
       "name": "Benjamin Pavard",
       "mk": "yc",
       "k": 1,
-      "odds": 3.3
+      "odds": 3.2
      },
      {
       "name": "Strahinja Pavlovic",
@@ -32252,7 +31967,7 @@
       "name": "Carlos Augusto",
       "mk": "yc",
       "k": 1,
-      "odds": 3.4
+      "odds": 3.3
      },
      {
       "name": "Andy Diouf",
@@ -32270,7 +31985,7 @@
       "name": "Djed Spence",
       "mk": "yc",
       "k": 1,
-      "odds": 3.8
+      "odds": 3.7
      },
      {
       "name": "Aleksandar Stankovic",
@@ -32282,25 +31997,25 @@
       "name": "Nicolò Barella",
       "mk": "yc",
       "k": 1,
-      "odds": 4.1
+      "odds": 4
      },
      {
       "name": "Pervis Estupiñán",
       "mk": "yc",
       "k": 1,
-      "odds": 3.2
+      "odds": 3.1
      },
      {
       "name": "Koni De Winter",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Gonçalo Ramos",
       "mk": "yc",
       "k": 1,
-      "odds": 4.7
+      "odds": 4.5
      },
      {
       "name": "Gonçalo Ramos",
@@ -32336,13 +32051,13 @@
       "name": "Federico Dimarco",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Henrikh Mkhitaryan",
       "mk": "yc",
       "k": 1,
-      "odds": 3.6
+      "odds": 3.5
      },
      {
       "name": "Christian Pulisic",
@@ -32372,13 +32087,13 @@
       "name": "Mario Gila",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Strahinja Pavlovic",
       "mk": "yc",
       "k": 1,
-      "odds": 4
+      "odds": 3.8
      },
      {
       "name": "Petar Sucic",
@@ -32390,19 +32105,19 @@
       "name": "Alessandro Bastoni",
       "mk": "yc",
       "k": 1,
-      "odds": 3.1
+      "odds": 3.05
      },
      {
       "name": "Hakan Çalhanoglu",
       "mk": "yc",
       "k": 1,
-      "odds": 3.7
+      "odds": 3.6
      },
      {
       "name": "Aleksandar Stankovic",
       "mk": "yc",
       "k": 1,
-      "odds": 3.3
+      "odds": 3.2
      },
      {
       "name": "Francesco Camarda",
@@ -32420,7 +32135,7 @@
       "name": "Ardon Jashari",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Federico Dimarco",
@@ -32432,13 +32147,13 @@
       "name": "Davide Bartesaghi",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Marcus Thuram",
       "mk": "yc",
       "k": 1,
-      "odds": 6
+      "odds": 5.8
      },
      {
       "name": "Nicolò Barella",
@@ -32450,7 +32165,7 @@
       "name": "Filippo Terracciano",
       "mk": "yc",
       "k": 1,
-      "odds": 3.6
+      "odds": 3.5
      },
      {
       "name": "Henrikh Mkhitaryan",
@@ -32462,7 +32177,7 @@
       "name": "Manuel Akanji",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Sankhoun Diawara",
@@ -32474,7 +32189,7 @@
       "name": "Andy Diouf",
       "mk": "yc",
       "k": 1,
-      "odds": 4.1
+      "odds": 4
      },
      {
       "name": "Yunus Musah",
@@ -32486,7 +32201,7 @@
       "name": "Petar Sucic",
       "mk": "yc",
       "k": 1,
-      "odds": 3.9
+      "odds": 3.8
      },
      {
       "name": "Marcus Thuram",
@@ -32516,13 +32231,13 @@
       "name": "Omari Hutchinson",
       "mk": "yc",
       "k": 1,
-      "odds": 3.8
+      "odds": 3.7
      },
      {
       "name": "Luka Modric",
       "mk": "yc",
       "k": 1,
-      "odds": 3.7
+      "odds": 3.6
      },
      {
       "name": "Francesco Camarda",
@@ -32534,19 +32249,19 @@
       "name": "Ange-Yoan Bonny",
       "mk": "yc",
       "k": 1,
-      "odds": 4
+      "odds": 3.9
      },
      {
       "name": "Yann Bisseck",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Alphadjo Cissè",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "Manuel Akanji",
@@ -33674,7 +33389,7 @@
       "name": "Diego Moreira",
       "mk": "fc",
       "k": 2,
-      "odds": 2.02
+      "odds": 2
      },
      {
       "name": "Mario Gila",
@@ -33724,15 +33439,15 @@
       "scope": "away",
       "mk": "cards",
       "line": 1.5,
-      "over": 1.54,
-      "under": 2.28
+      "over": 1.49,
+      "under": 2.38
      },
      {
       "scope": "home",
       "mk": "cards",
       "line": 1.5,
-      "over": 1.52,
-      "under": 2.3
+      "over": 1.48,
+      "under": 2.4
      },
      {
       "scope": "away",
@@ -33752,8 +33467,8 @@
       "scope": "match",
       "mk": "cards",
       "line": 2.5,
-      "over": 1.25,
-      "under": 3.45
+      "over": 1.22,
+      "under": 3.65
      },
      {
       "scope": "away",
@@ -33780,8 +33495,8 @@
       "scope": "match",
       "mk": "cards",
       "line": 3.5,
-      "over": 1.6,
-      "under": 2.15
+      "over": 1.54,
+      "under": 2.28
      },
      {
       "scope": "match",
@@ -33829,8 +33544,8 @@
       "scope": "match",
       "mk": "cards",
       "line": 4.5,
-      "over": 2.2,
-      "under": 1.58
+      "over": 2.08,
+      "under": 1.64
      },
      {
       "scope": "away",
@@ -33843,8 +33558,8 @@
       "scope": "home",
       "mk": "cards",
       "line": 2.5,
-      "over": 2.5,
-      "under": 1.45
+      "over": 2.38,
+      "under": 1.49
      },
      {
       "scope": "home",
@@ -33885,15 +33600,15 @@
       "scope": "away",
       "mk": "cards",
       "line": 2.5,
-      "over": 2.5,
-      "under": 1.45
+      "over": 2.38,
+      "under": 1.49
      },
      {
       "scope": "match",
       "mk": "cards",
       "line": 5.5,
-      "over": 3.15,
-      "under": 1.29
+      "over": 2.95,
+      "under": 1.33
      },
      {
       "scope": "away",
@@ -33989,22 +33704,22 @@
    "kickoff": "2026-10-31T20:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
-     "h": 1.95,
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+     "h": 2,
      "d": 3.7,
-     "a": 3.75
+     "a": 3.6
     }
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.67,
      "under": 2.2
     }
@@ -34013,7 +33728,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072807,
     "homeName": "Aston Villa",
     "awayName": "Fulham",
@@ -34034,7 +33749,7 @@
       "name": "Johan Manzambi",
       "mk": "sot",
       "k": 1,
-      "odds": 1.43
+      "odds": 1.46
      },
      {
       "name": "Shea Charles",
@@ -34058,7 +33773,7 @@
       "name": "Ibrahima Mbaye",
       "mk": "sot",
       "k": 1,
-      "odds": 1.62
+      "odds": 1.65
      },
      {
       "name": "Ibrahima Mbaye",
@@ -34076,7 +33791,7 @@
       "name": "Nicolas Jackson",
       "mk": "sot",
       "k": 2,
-      "odds": 2.28
+      "odds": 2.35
      },
      {
       "name": "Gonzalo García",
@@ -34088,7 +33803,7 @@
       "name": "Emiliano Buendía",
       "mk": "sot",
       "k": 1,
-      "odds": 1.64
+      "odds": 1.66
      },
      {
       "name": "Oscar Bobb",
@@ -34154,31 +33869,31 @@
       "name": "Matty Cash",
       "mk": "sot",
       "k": 1,
-      "odds": 3
+      "odds": 3.1
      },
      {
       "name": "Alex Iwobi",
       "mk": "sot",
       "k": 1,
-      "odds": 2.7
+      "odds": 2.65
      },
      {
       "name": "Nicolas Jackson",
       "mk": "sot",
       "k": 1,
-      "odds": 1.21
+      "odds": 1.22
      },
      {
       "name": "Gonzalo García",
       "mk": "sot",
       "k": 2,
-      "odds": 3
+      "odds": 2.95
      },
      {
       "name": "John McGinn",
       "mk": "sot",
       "k": 1,
-      "odds": 2.23
+      "odds": 2.25
      },
      {
       "name": "Emiliano Buendía",
@@ -34196,13 +33911,13 @@
       "name": "Leon Goretzka",
       "mk": "sot",
       "k": 1,
-      "odds": 2.6
+      "odds": 2.7
      },
      {
       "name": "Joshua King",
       "mk": "sot",
       "k": 1,
-      "odds": 1.84
+      "odds": 1.82
      },
      {
       "name": "João Gomes",
@@ -34232,7 +33947,7 @@
       "name": "Tammy Abraham",
       "mk": "sot",
       "k": 2,
-      "odds": 2.8
+      "odds": 2.9
      },
      {
       "name": "Alysson",
@@ -34244,13 +33959,13 @@
       "name": "Tammy Abraham",
       "mk": "sot",
       "k": 1,
-      "odds": 1.34
+      "odds": 1.36
      },
      {
       "name": "Alysson",
       "mk": "sot",
       "k": 1,
-      "odds": 2.2
+      "odds": 2.25
      },
      {
       "name": "Calvin Bassey",
@@ -34280,13 +33995,13 @@
       "name": "Shea Charles",
       "mk": "sot",
       "k": 1,
-      "odds": 3.3
+      "odds": 3.25
      },
      {
       "name": "Gonzalo García",
       "mk": "sot",
       "k": 1,
-      "odds": 1.38
+      "odds": 1.37
      },
      {
       "name": "Kenny Tete",
@@ -34298,7 +34013,7 @@
       "name": "Ian Maatsen",
       "mk": "sot",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.6
      },
      {
       "name": "Taylor Harwood-Bellis",
@@ -34310,7 +34025,7 @@
       "name": "Victor Lindelöf",
       "mk": "sot",
       "k": 1,
-      "odds": 4.3
+      "odds": 4.4
      },
      {
       "name": "Tyrone Mings",
@@ -34322,7 +34037,7 @@
       "name": "Ibrahima Mbaye",
       "mk": "sot",
       "k": 2,
-      "odds": 3.9
+      "odds": 4
      },
      {
       "name": "João Gomes",
@@ -34334,31 +34049,31 @@
       "name": "Pau Torres",
       "mk": "sot",
       "k": 1,
-      "odds": 4.4
+      "odds": 4.5
      },
      {
       "name": "Hugo Larsson",
       "mk": "yc",
       "k": 1,
-      "odds": 3.2
+      "odds": 3.3
      },
      {
       "name": "Antonee Robinson",
       "mk": "sot",
       "k": 1,
-      "odds": 5.5
+      "odds": 5.4
      },
      {
       "name": "Nicolas Jackson",
       "mk": "sot",
       "k": 3,
-      "odds": 4.6
+      "odds": 4.8
      },
      {
       "name": "David Affengruber",
       "mk": "sot",
       "k": 1,
-      "odds": 5.5
+      "odds": 5.4
      },
      {
       "name": "Calvin Bassey",
@@ -34370,31 +34085,31 @@
       "name": "Matty Cash",
       "mk": "sh",
       "k": 2,
-      "odds": 3
+      "odds": 3.05
      },
      {
       "name": "Alex Iwobi",
       "mk": "sot",
       "k": 2,
-      "odds": 10
+      "odds": 9.5
      },
      {
       "name": "Nicolas Jackson",
       "mk": "sh",
       "k": 4,
-      "odds": 1.85
+      "odds": 1.9
      },
      {
       "name": "Nicolas Jackson",
       "mk": "sh",
       "k": 6,
-      "odds": 3.9
+      "odds": 4
      },
      {
       "name": "Oscar Bobb",
       "mk": "sh",
       "k": 1,
-      "odds": 1.24
+      "odds": 1.23
      },
      {
       "name": "John McGinn",
@@ -34418,37 +34133,37 @@
       "name": "Joshua King",
       "mk": "sot",
       "k": 2,
-      "odds": 4.9
+      "odds": 4.8
      },
      {
       "name": "Emiliano Buendía",
       "mk": "sot",
       "k": 2,
-      "odds": 4
+      "odds": 4.1
      },
      {
       "name": "Ibrahima Mbaye",
       "mk": "sh",
       "k": 2,
-      "odds": 1.38
+      "odds": 1.41
      },
      {
       "name": "Ian Maatsen",
       "mk": "sh",
       "k": 1,
-      "odds": 1.55
+      "odds": 1.57
      },
      {
       "name": "Johan Manzambi",
       "mk": "sh",
       "k": 3,
-      "odds": 1.5
+      "odds": 1.54
      },
      {
       "name": "João Gomes",
       "mk": "sh",
       "k": 1,
-      "odds": 1.61
+      "odds": 1.62
      },
      {
       "name": "David Affengruber",
@@ -34490,7 +34205,7 @@
       "name": "Gonzalo García",
       "mk": "sh",
       "k": 6,
-      "odds": 4.8
+      "odds": 4.6
      },
      {
       "name": "Shea Charles",
@@ -34514,7 +34229,7 @@
       "name": "Tammy Abraham",
       "mk": "sh",
       "k": 4,
-      "odds": 2.35
+      "odds": 2.4
      },
      {
       "name": "Kenny Tete",
@@ -34586,7 +34301,7 @@
       "name": "Kenny Tete",
       "mk": "fc",
       "k": 2,
-      "odds": 1.78
+      "odds": 1.8
      },
      {
       "name": "Kenny Tete",
@@ -34676,7 +34391,7 @@
       "name": "Oscar Bobb",
       "mk": "sh",
       "k": 2,
-      "odds": 2.28
+      "odds": 2.25
      },
      {
       "name": "Timothy Castagne",
@@ -34688,61 +34403,61 @@
       "name": "Nicolas Jackson",
       "mk": "sh",
       "k": 5,
-      "odds": 2.6
+      "odds": 2.7
      },
      {
       "name": "Nicolas Jackson",
       "mk": "sh",
       "k": 2,
-      "odds": 1.03
+      "odds": 1.04
      },
      {
       "name": "Joshua King",
       "mk": "sh",
       "k": 2,
-      "odds": 1.42
+      "odds": 1.4
      },
      {
       "name": "Alex Iwobi",
       "mk": "sh",
       "k": 2,
-      "odds": 1.92
+      "odds": 1.9
      },
      {
       "name": "Ibrahima Mbaye",
       "mk": "sh",
       "k": 4,
-      "odds": 3.6
+      "odds": 3.7
      },
      {
       "name": "Tammy Abraham",
       "mk": "sot",
       "k": 3,
-      "odds": 6.25
+      "odds": 6.5
      },
      {
       "name": "Johan Manzambi",
       "mk": "sh",
       "k": 4,
-      "odds": 2.2
+      "odds": 2.25
      },
      {
       "name": "Shea Charles",
       "mk": "sh",
       "k": 1,
-      "odds": 1.48
+      "odds": 1.47
      },
      {
       "name": "Taylor Harwood-Bellis",
       "mk": "sh",
       "k": 1,
-      "odds": 1.63
+      "odds": 1.65
      },
      {
       "name": "Johan Manzambi",
       "mk": "sot",
       "k": 2,
-      "odds": 3.2
+      "odds": 3.3
      },
      {
       "name": "Nicolas Jackson",
@@ -34778,13 +34493,13 @@
       "name": "Gonzalo García",
       "mk": "sh",
       "k": 3,
-      "odds": 1.48
+      "odds": 1.46
      },
      {
       "name": "Gonzalo García",
       "mk": "sh",
       "k": 5,
-      "odds": 3.1
+      "odds": 3
      },
      {
       "name": "Gonzalo García",
@@ -34796,7 +34511,7 @@
       "name": "Gonzalo García",
       "mk": "sh",
       "k": 2,
-      "odds": 1.1
+      "odds": 1.09
      },
      {
       "name": "Gonzalo García",
@@ -34814,13 +34529,13 @@
       "name": "Tammy Abraham",
       "mk": "sh",
       "k": 3,
-      "odds": 1.6
+      "odds": 1.63
      },
      {
       "name": "Tammy Abraham",
       "mk": "sh",
       "k": 2,
-      "odds": 1.14
+      "odds": 1.15
      },
      {
       "name": "Tammy Abraham",
@@ -34994,13 +34709,13 @@
       "name": "Boubacar Kamara",
       "mk": "sh",
       "k": 1,
-      "odds": 2.05
+      "odds": 2.07
      },
      {
       "name": "Matty Cash",
       "mk": "sh",
       "k": 1,
-      "odds": 1.43
+      "odds": 1.45
      },
      {
       "name": "Ross Barkley",
@@ -35018,7 +34733,7 @@
       "name": "Nicolas Jackson",
       "mk": "sh",
       "k": 3,
-      "odds": 1.32
+      "odds": 1.34
      },
      {
       "name": "Kenny Tete",
@@ -35030,19 +34745,19 @@
       "name": "Hugo Larsson",
       "mk": "sh",
       "k": 1,
-      "odds": 2
+      "odds": 1.98
      },
      {
       "name": "John McGinn",
       "mk": "sh",
       "k": 2,
-      "odds": 1.98
+      "odds": 2
      },
      {
       "name": "Joshua King",
       "mk": "sh",
       "k": 3,
-      "odds": 2.25
+      "odds": 2.2
      },
      {
       "name": "Gonzalo García",
@@ -35054,37 +34769,37 @@
       "name": "Ibrahima Mbaye",
       "mk": "sh",
       "k": 3,
-      "odds": 2.2
+      "odds": 2.25
      },
      {
       "name": "Ian Maatsen",
       "mk": "sh",
       "k": 2,
-      "odds": 3.3
+      "odds": 3.4
      },
      {
       "name": "Emiliano Buendía",
       "mk": "sh",
       "k": 3,
-      "odds": 2.05
+      "odds": 2.1
      },
      {
       "name": "Emiliano Buendía",
       "mk": "sh",
       "k": 2,
-      "odds": 1.34
+      "odds": 1.36
      },
      {
       "name": "Johan Manzambi",
       "mk": "sh",
       "k": 2,
-      "odds": 1.1
+      "odds": 1.12
      },
      {
       "name": "Shea Charles",
       "mk": "sh",
       "k": 2,
-      "odds": 3.1
+      "odds": 3.05
      },
      {
       "name": "João Gomes",
@@ -35102,7 +34817,7 @@
       "name": "Leon Goretzka",
       "mk": "sh",
       "k": 1,
-      "odds": 1.27
+      "odds": 1.29
      },
      {
       "name": "Johan Manzambi",
@@ -35120,7 +34835,7 @@
       "name": "Tammy Abraham",
       "mk": "sh",
       "k": 5,
-      "odds": 3.6
+      "odds": 3.7
      },
      {
       "name": "Hugo Larsson",
@@ -35270,7 +34985,7 @@
       "name": "Taylor Harwood-Bellis",
       "mk": "sh",
       "k": 2,
-      "odds": 3.7
+      "odds": 3.8
      },
      {
       "name": "Alysson",
@@ -35315,35 +35030,35 @@
       "mk": "cards",
       "line": 3.5,
       "over": 1.65,
-      "under": 2.06
+      "under": 2.07
      },
      {
       "scope": "home",
       "mk": "cards",
       "line": 1.5,
-      "over": 1.82,
+      "over": 1.81,
       "under": 1.85
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.83,
-      "under": 1.78
+      "over": 1.79,
+      "under": 1.81
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 10.5,
-      "over": 2.7,
-      "under": 1.35
+      "over": 2.8,
+      "under": 1.33
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 9.5,
-      "over": 2.05,
-      "under": 1.61
+      "over": 2.1,
+      "under": 1.58
      },
      {
       "scope": "match",
@@ -35356,28 +35071,28 @@
       "scope": "home",
       "mk": "sot",
       "line": 4.5,
-      "over": 1.46,
-      "under": 2.35
+      "over": 1.5,
+      "under": 2.23
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.19,
-      "under": 3.65
+      "over": 1.21,
+      "under": 3.45
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 5.5,
-      "over": 1.95,
-      "under": 1.67
+      "over": 2.04,
+      "under": 1.61
      },
      {
       "scope": "match",
       "mk": "cards",
       "line": 5.5,
-      "over": 3.4,
+      "over": 3.35,
       "under": 1.26
      },
      {
@@ -35391,57 +35106,57 @@
       "scope": "away",
       "mk": "sot",
       "line": 4.5,
-      "over": 2.75,
-      "under": 1.33
+      "over": 2.7,
+      "under": 1.35
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 7.5,
-      "over": 1.34,
-      "under": 2.75
+      "over": 1.35,
+      "under": 2.7
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 8.5,
-      "over": 1.61,
-      "under": 2.04
+      "over": 1.64,
+      "under": 2
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 6.5,
-      "over": 2.75,
-      "under": 1.34
+      "over": 2.9,
+      "under": 1.3
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 2.5,
-      "over": 1.32,
-      "under": 2.85
+      "over": 1.3,
+      "under": 2.9
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 5.5,
-      "over": 4.3,
-      "under": 1.13
+      "over": 4.2,
+      "under": 1.14
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 30.5,
-      "over": 2.8,
-      "under": 1.33
+      "over": 2.85,
+      "under": 1.32
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 7.5,
-      "over": 3.9,
-      "under": 1.16
+      "over": 4.2,
+      "under": 1.13
      },
      {
       "scope": "match",
@@ -35454,112 +35169,119 @@
       "scope": "away",
       "mk": "shots",
       "line": 12.5,
-      "over": 2.25,
-      "under": 1.49
+      "over": 2.2,
+      "under": 1.52
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 6.5,
-      "over": 1.16,
-      "under": 3.9
+      "over": 1.17,
+      "under": 3.8
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 11.5,
-      "over": 3.6,
-      "under": 1.19
+      "over": 3.7,
+      "under": 1.18
      },
      {
       "scope": "away",
       "mk": "cards",
       "line": 1.5,
-      "over": 1.4,
-      "under": 2.65
+      "over": 1.41,
+      "under": 2.63
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 14.5,
-      "over": 1.55,
-      "under": 2.12
-     },
-     {
-      "scope": "match",
-      "mk": "shots",
-      "line": 25.5,
-      "over": 1.48,
-      "under": 2.3
-     },
-     {
-      "scope": "match",
-      "mk": "shots",
-      "line": 27.5,
-      "over": 1.83,
-      "under": 1.77
-     },
-     {
-      "scope": "match",
-      "mk": "shots",
-      "line": 26.5,
-      "over": 1.63,
+      "over": 1.61,
       "under": 2.02
      },
      {
       "scope": "match",
       "mk": "shots",
+      "line": 25.5,
+      "over": 1.49,
+      "under": 2.28
+     },
+     {
+      "scope": "match",
+      "mk": "shots",
+      "line": 27.5,
+      "over": 1.86,
+      "under": 1.74
+     },
+     {
+      "scope": "match",
+      "mk": "shots",
+      "line": 26.5,
+      "over": 1.66,
+      "under": 1.97
+     },
+     {
+      "scope": "match",
+      "mk": "shots",
       "line": 28.5,
-      "over": 2.08,
-      "under": 1.58
+      "over": 2.12,
+      "under": 1.56
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 29.5,
-      "over": 2.4,
-      "under": 1.44
+      "over": 2.45,
+      "under": 1.42
+     },
+     {
+      "scope": "home",
+      "mk": "cards",
+      "line": 2.5,
+      "over": 3.35,
+      "under": 1.26
      },
      {
       "scope": "away",
       "mk": "shots",
       "line": 11.5,
-      "over": 1.9,
-      "under": 1.7
+      "over": 1.85,
+      "under": 1.75
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 15.5,
-      "over": 1.77,
-      "under": 1.82
+      "over": 1.85,
+      "under": 1.75
      },
      {
       "scope": "home",
       "mk": "shots",
       "line": 16.5,
-      "over": 2.05,
-      "under": 1.6
+      "over": 2.15,
+      "under": 1.55
      },
      {
       "scope": "match",
       "mk": "shots",
       "line": 24.5,
-      "over": 1.34,
+      "over": 1.35,
       "under": 2.7
      },
      {
       "scope": "away",
       "mk": "shots",
       "line": 10.5,
-      "over": 1.62,
-      "under": 2.02
+      "over": 1.58,
+      "under": 2.07
      }
     ]
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "265958",
@@ -35787,7 +35509,7 @@
    "kickoff": "2026-11-01T11:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.3,
      "d": 5.75,
      "a": 9.5
@@ -35795,14 +35517,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.7,
      "no": 2.05
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.4,
      "under": 3
     }
@@ -35811,7 +35533,7 @@
    "form": "Included because Como is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1027911629,
     "homeName": "Como",
     "awayName": "Venezia",
@@ -35826,13 +35548,13 @@
       "name": "Ridgeciano Haps",
       "mk": "yc",
       "k": 1,
-      "odds": 3.3
+      "odds": 3.2
      },
      {
       "name": "Ivan Smolčić",
       "mk": "yc",
       "k": 1,
-      "odds": 5.75
+      "odds": 5.5
      },
      {
       "name": "Kaiki Bruno da Silva",
@@ -35850,25 +35572,25 @@
       "name": "Trevoh Chalobah",
       "mk": "yc",
       "k": 1,
-      "odds": 5.2
+      "odds": 5
      },
      {
       "name": "Richie Sagrado",
       "mk": "yc",
       "k": 1,
-      "odds": 3.4
+      "odds": 3.3
      },
      {
       "name": "Mattia Liberali",
       "mk": "yc",
       "k": 1,
-      "odds": 5
+      "odds": 4.9
      },
      {
       "name": "Andrea Adorante",
       "mk": "yc",
       "k": 1,
-      "odds": 3.7
+      "odds": 3.6
      },
      {
       "name": "Matteo Dagasso",
@@ -35880,25 +35602,25 @@
       "name": "Edoardo Goldaniga",
       "mk": "yc",
       "k": 1,
-      "odds": 4.5
+      "odds": 4.4
      },
      {
       "name": "Toma Basic",
       "mk": "yc",
       "k": 1,
-      "odds": 4
+      "odds": 3.9
      },
      {
       "name": "Simone Panada",
       "mk": "yc",
       "k": 1,
-      "odds": 3.5
+      "odds": 3.4
      },
      {
       "name": "John Yeboah",
       "mk": "yc",
       "k": 1,
-      "odds": 4.7
+      "odds": 4.5
      },
      {
       "name": "Samuele Ricci",
@@ -35922,7 +35644,7 @@
       "name": "Kike Pérez",
       "mk": "yc",
       "k": 1,
-      "odds": 3
+      "odds": 2.9
      },
      {
       "name": "Máximo Perrone",
@@ -35934,19 +35656,19 @@
       "name": "Juan Jesus",
       "mk": "yc",
       "k": 1,
-      "odds": 3.2
+      "odds": 3.1
      },
      {
       "name": "Akor Jerome Adams",
       "mk": "yc",
       "k": 1,
-      "odds": 3.9
+      "odds": 3.8
      },
      {
       "name": "Lamine Fanne",
       "mk": "yc",
       "k": 1,
-      "odds": 3.6
+      "odds": 3.5
      },
      {
       "name": "Joel Schingtienne",
@@ -35982,31 +35704,31 @@
       "name": "Matías Moreno",
       "mk": "yc",
       "k": 1,
-      "odds": 3.7
+      "odds": 3.6
      },
      {
       "name": "Marc-Oliver Kempf",
       "mk": "yc",
       "k": 1,
-      "odds": 5.1
+      "odds": 5
      },
      {
       "name": "Redouane Halhal",
       "mk": "yc",
       "k": 1,
-      "odds": 4
+      "odds": 3.9
      },
      {
       "name": "Maxence Caqueret",
       "mk": "yc",
       "k": 1,
-      "odds": 5.75
+      "odds": 5.5
      },
      {
       "name": "Pasquale Mazzocchi",
       "mk": "yc",
       "k": 1,
-      "odds": 3.9
+      "odds": 3.8
      },
      {
       "name": "Toma Basic",
@@ -36018,19 +35740,19 @@
       "name": "Yan Couto",
       "mk": "yc",
       "k": 1,
-      "odds": 5.5
+      "odds": 5.3
      },
      {
       "name": "Nico Paz",
       "mk": "yc",
       "k": 1,
-      "odds": 5.3
+      "odds": 5.2
      },
      {
       "name": "Kornel Lisman",
       "mk": "yc",
       "k": 1,
-      "odds": 3.8
+      "odds": 3.7
      },
      {
       "name": "Tasos Douvikas",
@@ -36042,7 +35764,7 @@
       "name": "Willy Kambwala",
       "mk": "yc",
       "k": 1,
-      "odds": 4.7
+      "odds": 4.5
      },
      {
       "name": "Marc-Oliver Kempf",
@@ -36054,31 +35776,31 @@
       "name": "Martin Baturina",
       "mk": "yc",
       "k": 1,
-      "odds": 7.5
+      "odds": 7
      },
      {
       "name": "Máximo Perrone",
       "mk": "yc",
       "k": 1,
-      "odds": 4.9
+      "odds": 4.7
      },
      {
       "name": "Armel Bella-Kotchap",
       "mk": "yc",
       "k": 1,
-      "odds": 3.8
+      "odds": 3.6
      },
      {
       "name": "Ale Gomes",
       "mk": "yc",
       "k": 1,
-      "odds": 3.6
+      "odds": 3.5
      },
      {
       "name": "Antoine Hainaut",
       "mk": "yc",
       "k": 1,
-      "odds": 3.9
+      "odds": 3.7
      },
      {
       "name": "Gianluca Busio",
@@ -36096,7 +35818,7 @@
       "name": "Thierry Correia",
       "mk": "yc",
       "k": 1,
-      "odds": 3.6
+      "odds": 3.5
      },
      {
       "name": "Jacobo Ramón",
@@ -36108,7 +35830,7 @@
       "name": "Álex Valle",
       "mk": "yc",
       "k": 1,
-      "odds": 5.3
+      "odds": 5.2
      },
      {
       "name": "John Yeboah",
@@ -36120,31 +35842,31 @@
       "name": "Lucas Da Cunha",
       "mk": "yc",
       "k": 1,
-      "odds": 4.8
+      "odds": 4.7
      },
      {
       "name": "Thórir Helgason",
       "mk": "yc",
       "k": 1,
-      "odds": 3.7
+      "odds": 3.6
      },
      {
       "name": "Lion Lauberbach",
       "mk": "yc",
       "k": 1,
-      "odds": 3.7
+      "odds": 3.5
      },
      {
       "name": "Samuele Ricci",
       "mk": "yc",
       "k": 1,
-      "odds": 4.6
+      "odds": 4.5
      },
      {
       "name": "Jacobo Ramón",
       "mk": "yc",
       "k": 1,
-      "odds": 5.4
+      "odds": 5.2
      },
      {
       "name": "Tasos Douvikas",
@@ -36156,13 +35878,13 @@
       "name": "Moise Kean",
       "mk": "yc",
       "k": 1,
-      "odds": 5.2
+      "odds": 5
      },
      {
       "name": "Kaiki Bruno da Silva",
       "mk": "yc",
       "k": 1,
-      "odds": 4.1
+      "odds": 4
      },
      {
       "name": "Lion Lauberbach",
@@ -36174,7 +35896,7 @@
       "name": "Tasos Douvikas",
       "mk": "yc",
       "k": 1,
-      "odds": 6.25
+      "odds": 6
      },
      {
       "name": "Moise Kean",
@@ -36204,19 +35926,19 @@
       "name": "Albion Rrahmani",
       "mk": "yc",
       "k": 1,
-      "odds": 4.1
+      "odds": 4
      },
      {
       "name": "Luis Milla",
       "mk": "yc",
       "k": 1,
-      "odds": 5
+      "odds": 4.9
      },
      {
       "name": "Simon Sohm",
       "mk": "yc",
       "k": 1,
-      "odds": 5
+      "odds": 4.8
      },
      {
       "name": "Alfred Duncan",
@@ -37700,15 +37422,15 @@
       "scope": "home",
       "mk": "cards",
       "line": 1.5,
-      "over": 2.55,
-      "under": 1.44
+      "over": 2.4,
+      "under": 1.48
      },
      {
       "scope": "away",
       "mk": "cards",
       "line": 2.5,
-      "over": 2.6,
-      "under": 1.41
+      "over": 2.45,
+      "under": 1.47
      },
      {
       "scope": "home",
@@ -37721,8 +37443,8 @@
       "scope": "match",
       "mk": "cards",
       "line": 3.5,
-      "over": 2.18,
-      "under": 1.58
+      "over": 2.05,
+      "under": 1.66
      },
      {
       "scope": "match",
@@ -37763,8 +37485,8 @@
       "scope": "match",
       "mk": "cards",
       "line": 4.5,
-      "over": 3.35,
-      "under": 1.26
+      "over": 3.1,
+      "under": 1.3
      },
      {
       "scope": "away",
@@ -37791,8 +37513,8 @@
       "scope": "match",
       "mk": "cards",
       "line": 2.5,
-      "over": 1.54,
-      "under": 2.28
+      "over": 1.47,
+      "under": 2.45
      },
      {
       "scope": "home",
@@ -37840,8 +37562,8 @@
       "scope": "away",
       "mk": "cards",
       "line": 1.5,
-      "over": 1.58,
-      "under": 2.2
+      "over": 1.5,
+      "under": 2.33
      },
      {
       "scope": "home",
@@ -37875,8 +37597,15 @@
       "scope": "home",
       "mk": "cards",
       "line": 0.5,
-      "over": 1.36,
-      "under": 2.8
+      "over": 1.33,
+      "under": 2.95
+     },
+     {
+      "scope": "match",
+      "mk": "cards",
+      "line": 5.5,
+      "over": 4.8,
+      "under": 1.13
      },
      {
       "scope": "home",
@@ -37910,7 +37639,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "337970",
@@ -38180,7 +37909,7 @@
    "kickoff": "2026-11-01T14:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.44,
      "d": 4.33,
      "a": 7.5
@@ -38188,14 +37917,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.95,
      "no": 1.8
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.8,
      "under": 2
     }
@@ -38204,7 +37933,7 @@
    "form": "Included because Lazio is in the Serie A top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1027911632,
     "homeName": "Lazio",
     "awayName": "Cagliari",
@@ -38678,7 +38407,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "265140",
@@ -38894,7 +38623,7 @@
    "kickoff": "2026-11-01T16:15:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.35,
      "d": 3.5,
      "a": 2.9
@@ -38902,14 +38631,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.8,
      "under": 2
     }
@@ -38918,7 +38647,7 @@
    "form": "Included because Monaco is in the Ligue 1 top 4. Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1027973924,
     "homeName": "Paris FC",
     "awayName": "AS Monaco",
@@ -39775,7 +39504,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "332549",
@@ -40003,7 +39732,7 @@
    "kickoff": "2026-11-01T16:30:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.88,
      "d": 3.4,
      "a": 2.45
@@ -40011,14 +39740,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.67,
      "no": 2.1
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.91,
      "under": 1.91
     }
@@ -40027,7 +39756,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072829,
     "homeName": "Liverpool",
     "awayName": "Arsenal",
@@ -41706,7 +41435,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "196876",
@@ -41940,7 +41669,7 @@
    "kickoff": "2026-11-02T20:00:00+00:00",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.3,
      "d": 3.5,
      "a": 3
@@ -41948,14 +41677,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.73,
      "under": 2.1
     }
@@ -41964,7 +41693,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028072835,
     "homeName": "Newcastle United",
     "awayName": "Everton",
@@ -43722,7 +43451,7 @@
    },
    "probableXI": {
     "source": "ESPN, most-started players in the last 8 matches",
-    "at": "2026-10-30T17:57:50.361Z",
+    "at": "2026-10-30T19:08:26.714Z",
     "home": [
      {
       "id": "319267",
@@ -43955,7 +43684,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142957,
     "homeName": "Blackburn Rovers",
     "awayName": "Stoke City",
@@ -44190,7 +43919,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143038,
     "homeName": "Charlton Athletic",
     "awayName": "Bolton",
@@ -44425,7 +44154,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142960,
     "homeName": "Derby County",
     "awayName": "Norwich City",
@@ -44691,7 +44420,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142984,
     "homeName": "Portsmouth",
     "awayName": "Swansea City",
@@ -44955,7 +44684,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142986,
     "homeName": "Preston North End",
     "awayName": "Sheffield United",
@@ -45184,7 +44913,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142988,
     "homeName": "Queens Park Rangers",
     "awayName": "Burnley",
@@ -45443,7 +45172,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142977,
     "homeName": "Watford",
     "awayName": "Lincoln City",
@@ -45672,7 +45401,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:56:57.628Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142969,
     "homeName": "Birmingham",
     "awayName": "Millwall",
@@ -45920,7 +45649,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142979,
     "homeName": "West Bromwich",
     "awayName": "Southampton",
@@ -46162,7 +45891,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028142935,
     "homeName": "Cardiff City",
     "awayName": "West Ham",
@@ -46447,7 +46176,7 @@
    "form": "Fixture and kick-off from BBC Sport, date matched on kickoff.co.uk. Prices are a single source (Bet365).",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028143034,
     "homeName": "Wrexham",
     "awayName": "Middlesbrough",
@@ -46689,7 +46418,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1029226843,
     "homeName": "Shakhtar Donetsk",
     "awayName": "Sporting Lisbon",
@@ -47098,7 +46827,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 3.7,
      "d": 3.7,
      "a": 1.9
@@ -47106,14 +46835,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.73,
      "under": 2.1
     }
@@ -47134,7 +46863,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1029226844,
     "homeName": "Galatasaray",
     "awayName": "VfB Stuttgart",
@@ -47605,7 +47334,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.15,
      "d": 3.6,
      "a": 3
@@ -47613,14 +47342,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.36,
      "no": 3
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.4,
      "under": 3
     }
@@ -47641,7 +47370,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1029226846,
     "homeName": "FC Barcelona",
     "awayName": "Aston Villa",
@@ -48089,7 +47818,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.25,
      "d": 6.25,
      "a": 11
@@ -48097,14 +47826,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.22,
      "under": 4.33
     }
@@ -48138,7 +47867,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.3,
      "d": 3.8,
      "a": 2.7
@@ -48146,14 +47875,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.5,
      "no": 2.5
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.5,
      "under": 2.63
     }
@@ -48174,7 +47903,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943215,
     "homeName": "Feyenoord",
     "awayName": "Inter",
@@ -48652,7 +48381,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 4.2,
      "d": 4.1,
      "a": 1.7
@@ -48660,14 +48389,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.4,
      "under": 3
     }
@@ -48688,7 +48417,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1029226845,
     "homeName": "Bodø/Glimt",
     "awayName": "Lille",
@@ -49074,7 +48803,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.8,
      "d": 3.8,
      "a": 4.1
@@ -49082,14 +48811,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.5,
      "under": 2.63
     }
@@ -49123,7 +48852,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943212,
     "homeName": "LASK",
     "awayName": "Slovan Bratislava",
@@ -49521,7 +49250,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.42,
      "d": 4.5,
      "a": 7
@@ -49529,14 +49258,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.44,
      "under": 2.75
     }
@@ -49557,7 +49286,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943225,
     "homeName": "Fenerbahçe",
     "awayName": "Liverpool",
@@ -50022,7 +49751,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 5,
      "d": 4.5,
      "a": 1.57
@@ -50030,14 +49759,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.5,
      "under": 2.63
     }
@@ -50058,7 +49787,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943230,
     "homeName": "AEK Athens",
     "awayName": "Real Madrid",
@@ -50517,7 +50246,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 8,
      "d": 7,
      "a": 1.25
@@ -50525,14 +50254,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.33,
      "under": 3.4
     }
@@ -50553,7 +50282,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943211,
     "homeName": "Borussia Dortmund",
     "awayName": "Real Betis",
@@ -50994,7 +50723,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.75,
      "d": 3.9,
      "a": 4.2
@@ -51002,14 +50731,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.53,
      "no": 2.38
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.53,
      "under": 2.5
     }
@@ -51030,7 +50759,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943213,
     "homeName": "FC Porto",
     "awayName": "Napoli",
@@ -51500,7 +51229,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.15,
      "d": 3.4,
      "a": 3.3
@@ -51508,14 +51237,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.62,
      "no": 2.2
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.73,
      "under": 2.1
     }
@@ -51536,7 +51265,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943227,
     "homeName": "PSV Eindhoven",
     "awayName": "Club Brugge",
@@ -51960,7 +51689,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.05,
      "d": 4.1,
      "a": 2.9
@@ -51968,14 +51697,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.36,
      "no": 3
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.36,
      "under": 3.2
     }
@@ -51996,7 +51725,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943229,
     "homeName": "RB Leipzig",
     "awayName": "Manchester City",
@@ -52461,7 +52190,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 5.75,
      "d": 4.5,
      "a": 1.53
@@ -52469,14 +52198,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.36,
      "under": 3.2
     }
@@ -52497,7 +52226,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943223,
     "homeName": "Slavia Prague",
     "awayName": "Arsenal",
@@ -52924,7 +52653,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 8.5,
      "d": 6.5,
      "a": 1.25
@@ -52932,14 +52661,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.95,
      "no": 1.8
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.57,
      "under": 2.38
     }
@@ -52960,7 +52689,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943224,
     "homeName": "Lens",
     "awayName": "Como",
@@ -53407,7 +53136,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 2.9,
      "d": 3.75,
      "a": 2.2
@@ -53415,14 +53144,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.44,
      "no": 2.63
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.5,
      "under": 2.63
     }
@@ -53443,7 +53172,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028943222,
     "homeName": "Viking Stavanger",
     "awayName": "Sabah FK",
@@ -53786,7 +53515,7 @@
    },
    "odds1x2": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "h": 1.48,
      "d": 4.75,
      "a": 6.25
@@ -53794,14 +53523,14 @@
    ],
    "oddsBtts": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "yes": 1.57,
      "no": 2.25
     }
    ],
    "oddsOu25": [
     {
-     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 17:57",
+     "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
      "over": 1.44,
      "under": 2.75
     }
@@ -53835,7 +53564,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946346,
     "homeName": "AC Milan",
     "awayName": "Ferencváros",
@@ -54097,7 +53826,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946344,
     "homeName": "Real Sociedad",
     "awayName": "Lyon",
@@ -54373,7 +54102,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946350,
     "homeName": "Sparta Prague",
     "awayName": "Bournemouth",
@@ -54623,7 +54352,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946348,
     "homeName": "Anderlecht",
     "awayName": "Red Bull Salzburg",
@@ -54886,7 +54615,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946353,
     "homeName": "Crystal Palace",
     "awayName": "TSG Hoffenheim",
@@ -54919,13 +54648,13 @@
       "name": "Wouter Burger",
       "mk": "sot",
       "k": 1,
-      "odds": 3.3
+      "odds": 3.2
      },
      {
       "name": "Max Moerstedt",
       "mk": "sot",
       "k": 1,
-      "odds": 1.8
+      "odds": 1.78
      },
      {
       "name": "Tim Lemperle",
@@ -54938,12 +54667,6 @@
       "mk": "sot",
       "k": 1,
       "odds": 3.9
-     },
-     {
-      "name": "Jean-Philippe Mateta",
-      "mk": "sot",
-      "k": 3,
-      "odds": 3.4
      },
      {
       "name": "Dwight McNeil",
@@ -54961,7 +54684,7 @@
       "name": "Anan Khalaili",
       "mk": "sot",
       "k": 1,
-      "odds": 2.05
+      "odds": 2.02
      },
      {
       "name": "Daichi Kamada",
@@ -54985,7 +54708,7 @@
       "name": "Leon Avdullahu",
       "mk": "sot",
       "k": 1,
-      "odds": 3.05
+      "odds": 3.1
      },
      {
       "name": "Fisnik Asllani",
@@ -55003,13 +54726,13 @@
       "name": "Jean-Philippe Mateta",
       "mk": "sot",
       "k": 1,
-      "odds": 1.19
+      "odds": 1.18
      },
      {
       "name": "Yeremy Pino",
       "mk": "sot",
       "k": 1,
-      "odds": 1.7
+      "odds": 1.68
      },
      {
       "name": "Mats Rots",
@@ -55030,10 +54753,16 @@
       "odds": 1.88
      },
      {
-      "name": "Yeremy Pino",
+      "name": "Ismaïla Sarr",
+      "mk": "sot",
+      "k": 1,
+      "odds": 1.44
+     },
+     {
+      "name": "Ismaïla Sarr",
       "mk": "sot",
       "k": 2,
-      "odds": 4
+      "odds": 2.8
      }
     ],
     "totals": [
@@ -55048,29 +54777,29 @@
       "scope": "match",
       "mk": "sot",
       "line": 9.5,
-      "over": 2.04,
-      "under": 1.61
+      "over": 2.02,
+      "under": 1.62
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 5.5,
-      "over": 2.04,
-      "under": 1.62
+      "over": 2.05,
+      "under": 1.6
      },
      {
       "scope": "match",
       "mk": "sot",
       "line": 8.5,
-      "over": 1.62,
-      "under": 2.02
+      "over": 1.61,
+      "under": 2.04
      },
      {
       "scope": "home",
       "mk": "sot",
       "line": 4.5,
       "over": 1.52,
-      "under": 2.23
+      "under": 2.2
      },
      {
       "scope": "home",
@@ -55090,15 +54819,15 @@
       "scope": "away",
       "mk": "sot",
       "line": 4.5,
-      "over": 2.55,
+      "over": 2.5,
       "under": 1.4
      },
      {
       "scope": "away",
       "mk": "sot",
       "line": 3.5,
-      "over": 1.72,
-      "under": 1.89
+      "over": 1.7,
+      "under": 1.91
      },
      {
       "scope": "match",
@@ -55137,7 +54866,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946354,
     "homeName": "Lillestrøm",
     "awayName": "Viktoria Plzeň",
@@ -55447,7 +55176,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946359,
     "homeName": "Levski Sofia",
     "awayName": "Jagiellonia Białystok",
@@ -55697,7 +55426,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946360,
     "homeName": "Bayer Leverkusen",
     "awayName": "Marseille",
@@ -55947,7 +55676,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946343,
     "homeName": "Benfica",
     "awayName": "Lech Poznań",
@@ -56233,7 +55962,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946357,
     "homeName": "AZ Alkmaar",
     "awayName": "Juventus",
@@ -56459,7 +56188,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946345,
     "homeName": "Celtic",
     "awayName": "Beşiktaş",
@@ -56709,7 +56438,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946358,
     "homeName": "Sturm Graz",
     "awayName": "NK Celje",
@@ -56981,7 +56710,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946347,
     "homeName": "Sunderland",
     "awayName": "Dinamo Zagreb",
@@ -57224,7 +56953,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946352,
     "homeName": "Celta Vigo",
     "awayName": "Union Saint-Gilloise",
@@ -57491,7 +57220,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946356,
     "homeName": "Torreense",
     "awayName": "Ararat-Armenia FC",
@@ -57728,7 +57457,7 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game.",
    "props": {
     "source": "Unibet (Kambi feed)",
-    "at": "2026-10-30T17:59:04.247Z",
+    "at": "2026-10-30T19:09:49.227Z",
     "eventId": 1028946349,
     "homeName": "Hapoel Beer Sheva",
     "awayName": "OFI Crete",
@@ -58192,5 +57921,5 @@
    "form": "Fixture and kick-off from UEFA match data (League Phase). No bookmaker prices gathered for this game."
   }
  ],
- "updateTag": "Fri 30 Oct 17:57"
+ "updateTag": "Fri 30 Oct 19:08"
 }
