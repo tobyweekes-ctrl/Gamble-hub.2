@@ -1041,5 +1041,52 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "l1-20261030-leha-pari": {
+  "kickoff": "2026-10-30T18:00:00+00:00",
+  "score": [
+   1,
+   5
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261030-nice-renn": {
+  "kickoff": "2026-10-30T18:00:00+00:00",
+  "score": [
+   5,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures"
+  ],
+  "note": "single source"
+ },
+ "ch-20261030-shef-wrex": {
+  "kickoff": "2026-10-30T20:00:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261030-lill-lens": {
+  "kickoff": "2026-10-30T20:05:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }

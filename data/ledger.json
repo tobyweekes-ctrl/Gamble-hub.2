@@ -8183,13 +8183,13 @@
   "league": "Champions League",
   "fixture": "Shakhtar vs Sporting CP",
   "kickoff": "2026-11-03T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 25,
-   "d": 25,
-   "a": 50
+   "h": 26,
+   "d": 26,
+   "a": 48
   },
   "btts": 58,
   "ou25": 55,
@@ -8208,10 +8208,10 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 3.7,
-   "d": 3.7,
-   "a": 1.9,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 3.6,
+   "d": 3.6,
+   "a": 1.91,
    "bttsY": 1.62,
    "bttsN": 2.2,
    "o25": 1.73,
@@ -8230,9 +8230,9 @@
   "league": "Champions League",
   "fixture": "Galatasaray vs Stuttgart",
   "kickoff": "2026-11-03T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 43,
    "d": 26,
@@ -8255,7 +8255,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 2.15,
    "d": 3.6,
    "a": 3,
@@ -8277,12 +8277,12 @@
   "league": "Champions League",
   "fixture": "Barcelona vs Aston Villa",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 76,
-   "d": 15,
+   "h": 75,
+   "d": 16,
    "a": 9
   },
   "btts": 63,
@@ -8302,10 +8302,10 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.25,
-   "d": 6.25,
-   "a": 11,
+   "d": 6,
+   "a": 10,
    "bttsY": 1.5,
    "bttsN": 2.5,
    "o25": 1.22,
@@ -8324,9 +8324,9 @@
   "league": "Champions League",
   "fixture": "Atleti vs Bayern München",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -8362,9 +8362,9 @@
   "league": "Champions League",
   "fixture": "Man Utd vs Roma",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 41,
    "d": 24,
@@ -8387,7 +8387,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 2.3,
    "d": 3.8,
    "a": 2.7,
@@ -8409,9 +8409,9 @@
   "league": "Champions League",
   "fixture": "Feyenoord vs Inter",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 22,
    "d": 23,
@@ -8434,7 +8434,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 4.2,
    "d": 4.1,
    "a": 1.7,
@@ -8456,9 +8456,9 @@
   "league": "Champions League",
   "fixture": "Bodø/Glimt vs Lille",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 52,
    "d": 25,
@@ -8481,7 +8481,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.8,
    "d": 3.8,
    "a": 4.1,
@@ -8503,9 +8503,9 @@
   "league": "Champions League",
   "fixture": "Villarreal vs Paris",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -8541,9 +8541,9 @@
   "league": "Champions League",
   "fixture": "LASK vs S. Bratislava",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 66,
    "d": 21,
@@ -8566,7 +8566,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.42,
    "d": 4.5,
    "a": 7,
@@ -8588,9 +8588,9 @@
   "league": "Champions League",
   "fixture": "Fenerbahçe vs Liverpool",
   "kickoff": "2026-11-04T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 19,
    "d": 21,
@@ -8613,7 +8613,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 5,
    "d": 4.5,
    "a": 1.57,
@@ -8635,9 +8635,9 @@
   "league": "Champions League",
   "fixture": "AEK Athens vs Real Madrid",
   "kickoff": "2026-11-04T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 12,
    "d": 13,
@@ -8660,7 +8660,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 8,
    "d": 7,
    "a": 1.25,
@@ -8682,9 +8682,9 @@
   "league": "Champions League",
   "fixture": "B. Dortmund vs Real Betis",
   "kickoff": "2026-11-04T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 54,
    "d": 24,
@@ -8707,7 +8707,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.75,
    "d": 3.9,
    "a": 4.2,
@@ -8729,9 +8729,9 @@
   "league": "Champions League",
   "fixture": "Porto vs Napoli",
   "kickoff": "2026-11-04T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 44,
    "d": 28,
@@ -8754,7 +8754,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 2.15,
    "d": 3.4,
    "a": 3.3,
@@ -8776,9 +8776,9 @@
   "league": "Champions League",
   "fixture": "PSV vs Club Brugge",
   "kickoff": "2026-11-04T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 45,
    "d": 23,
@@ -8801,7 +8801,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 2.05,
    "d": 4.1,
    "a": 2.9,
@@ -8823,9 +8823,9 @@
   "league": "Champions League",
   "fixture": "Leipzig vs Man City",
   "kickoff": "2026-11-04T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 17,
    "d": 21,
@@ -8848,7 +8848,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 5.75,
    "d": 4.5,
    "a": 1.53,
@@ -8870,9 +8870,9 @@
   "league": "Champions League",
   "fixture": "Slavia Praha vs Arsenal",
   "kickoff": "2026-11-04T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 11,
    "d": 14,
@@ -8895,7 +8895,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 8.5,
    "d": 6.5,
    "a": 1.25,
@@ -8917,9 +8917,9 @@
   "league": "Champions League",
   "fixture": "Lens vs Como",
   "kickoff": "2026-11-04T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 32,
    "d": 25,
@@ -8942,7 +8942,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 2.9,
    "d": 3.75,
    "a": 2.2,
@@ -8964,9 +8964,9 @@
   "league": "Champions League",
   "fixture": "Viking vs Sabah",
   "kickoff": "2026-11-04T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 65,
    "d": 20,
@@ -8989,7 +8989,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.48,
    "d": 4.75,
    "a": 6.25,
@@ -9011,9 +9011,9 @@
   "league": "Europa League",
   "fixture": "Rennes vs Olympiacos",
   "kickoff": "2026-11-04T15:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9049,9 +9049,9 @@
   "league": "Europa League",
   "fixture": "Milan vs Ferencváros",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9087,9 +9087,9 @@
   "league": "Europa League",
   "fixture": "Real Sociedad vs Lyon",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9125,9 +9125,9 @@
   "league": "Europa League",
   "fixture": "Sparta Praha vs Bournemouth",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9163,9 +9163,9 @@
   "league": "Europa League",
   "fixture": "Anderlecht vs Salzburg",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9201,9 +9201,9 @@
   "league": "Europa League",
   "fixture": "Crystal Palace vs Hoffenheim",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9239,9 +9239,9 @@
   "league": "Europa League",
   "fixture": "N.E.C. vs Omonia",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9277,9 +9277,9 @@
   "league": "Europa League",
   "fixture": "Lillestrøm vs Viktoria Plzeň",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9288,7 +9288,7 @@
   "btts": null,
   "ou25": null,
   "goalModel": {
-   "h": 30.2,
+   "h": 30.3,
    "d": 27.1,
    "a": 42.6
   },
@@ -9315,9 +9315,9 @@
   "league": "Europa League",
   "fixture": "Levski Sofia vs Jagiellonia",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9353,9 +9353,9 @@
   "league": "Europa League",
   "fixture": "Leverkusen vs Marseille",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9391,9 +9391,9 @@
   "league": "Europa League",
   "fixture": "Benfica vs Lech Poznań",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9429,9 +9429,9 @@
   "league": "Europa League",
   "fixture": "AZ Alkmaar vs Juventus",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9467,9 +9467,9 @@
   "league": "Europa League",
   "fixture": "Celtic vs Beşiktaş",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9505,9 +9505,9 @@
   "league": "Europa League",
   "fixture": "Sturm Graz vs Celje",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9543,9 +9543,9 @@
   "league": "Europa League",
   "fixture": "Sunderland vs GNK Dinamo",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9581,9 +9581,9 @@
   "league": "Europa League",
   "fixture": "Celta vs Union SG",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9619,9 +9619,9 @@
   "league": "Europa League",
   "fixture": "Torreense vs Ararat-Armenia",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9657,9 +9657,9 @@
   "league": "Europa League",
   "fixture": "H. Beer-Sheva vs OFI Crete",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9695,9 +9695,9 @@
   "league": "Conference League",
   "fixture": "Atalanta vs Kairat Almaty",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9733,9 +9733,9 @@
   "league": "Conference League",
   "fixture": "Midtjylland vs Ajax",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9771,9 +9771,9 @@
   "league": "Conference League",
   "fixture": "Crvena Zvezda vs Inter Escaldes",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9809,9 +9809,9 @@
   "league": "Conference League",
   "fixture": "KuPS Kuopio vs Gent",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9847,9 +9847,9 @@
   "league": "Conference League",
   "fixture": "L. Red Imps vs Hajduk Split",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9885,9 +9885,9 @@
   "league": "Conference League",
   "fixture": "Trabzonspor vs Freiburg",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9923,9 +9923,9 @@
   "league": "Conference League",
   "fixture": "Aarhus vs Braga",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9961,9 +9961,9 @@
   "league": "Conference League",
   "fixture": "Thun vs Hearts",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -9999,9 +9999,9 @@
   "league": "Conference League",
   "fixture": "Mjällby vs Borac",
   "kickoff": "2026-11-05T17:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10037,9 +10037,9 @@
   "league": "Conference League",
   "fixture": "Monaco vs Nordsjælland",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10075,9 +10075,9 @@
   "league": "Conference League",
   "fixture": "Copenhagen vs Iberia Tbilisi",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10113,9 +10113,9 @@
   "league": "Conference League",
   "fixture": "Panathinaikos vs CSKA Sofia",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10151,9 +10151,9 @@
   "league": "Conference League",
   "fixture": "Lugano vs Kauno Žalgiris",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10189,9 +10189,9 @@
   "league": "Conference League",
   "fixture": "Getafe vs Brighton",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10227,9 +10227,9 @@
   "league": "Conference League",
   "fixture": "Twente vs Pafos",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10265,9 +10265,9 @@
   "league": "Conference League",
   "fixture": "Sint-Truidense vs Brann",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10303,9 +10303,9 @@
   "league": "Conference League",
   "fixture": "Univ. Craiova vs Egnatia",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10341,9 +10341,9 @@
   "league": "Conference League",
   "fixture": "Riga vs Jablonec",
   "kickoff": "2026-11-05T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -10419,7 +10419,10 @@
    "gfA": 1.743,
    "gaA": 1.306
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 5
+  }
  },
  {
   "id": "l1-20261030-nice-renn",
@@ -10466,7 +10469,10 @@
    "gfA": 1.868,
    "gaA": 1.618
   },
-  "result": null
+  "result": {
+   "home": 5,
+   "away": 2
+  }
  },
  {
   "id": "ch-20261030-shef-wrex",
@@ -10513,7 +10519,10 @@
    "gfA": 1.347,
    "gaA": 1.472
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "l1-20261030-lill-lens",
@@ -10560,23 +10569,26 @@
    "gfA": 1.743,
    "gaA": 1.493
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261031-chel-manc",
   "league": "Premier League",
   "fixture": "Chelsea vs Manchester United",
   "kickoff": "2026-10-31T12:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 49,
+   "h": 43,
    "d": 26,
-   "a": 25
+   "a": 31
   },
-  "btts": 61,
-  "ou25": 59,
+  "btts": 63,
+  "ou25": 60,
   "goalModel": {
    "h": 40.8,
    "d": 25.3,
@@ -10592,14 +10604,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.95,
-   "d": 3.7,
-   "a": 3.7,
-   "bttsY": 1.53,
-   "bttsN": 2.38,
-   "o25": 1.62,
-   "u25": 2.3
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 2.2,
+   "d": 3.6,
+   "a": 3.1,
+   "bttsY": 1.5,
+   "bttsN": 2.5,
+   "o25": 1.57,
+   "u25": 2.38
   },
   "inputs": {
    "gfH": 1.756,
@@ -10614,13 +10626,13 @@
   "league": "Championship",
   "fixture": "Lincoln City vs Birmingham City",
   "kickoff": "2026-10-31T12:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 28,
+   "h": 30,
    "d": 27,
-   "a": 45
+   "a": 43
   },
   "btts": 54,
   "ou25": 50,
@@ -10639,10 +10651,10 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 3.3,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 3.1,
    "d": 3.5,
-   "a": 2.1,
+   "a": 2.2,
    "bttsY": 1.73,
    "bttsN": 2,
    "o25": 1.91,
@@ -10661,16 +10673,16 @@
   "league": "Championship",
   "fixture": "Norwich City vs Watford",
   "kickoff": "2026-10-31T12:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 61,
-   "d": 23,
-   "a": 16
+   "h": 63,
+   "d": 22,
+   "a": 15
   },
-  "btts": 58,
-  "ou25": 60,
+  "btts": 56,
+  "ou25": 62,
   "goalModel": {
    "h": 58.2,
    "d": 23.3,
@@ -10686,14 +10698,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.53,
-   "d": 4.2,
-   "a": 5.75,
-   "bttsY": 1.62,
-   "bttsN": 2.2,
-   "o25": 1.57,
-   "u25": 2.38
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.48,
+   "d": 4.33,
+   "a": 6.25,
+   "bttsY": 1.67,
+   "bttsN": 2.1,
+   "o25": 1.53,
+   "u25": 2.5
   },
   "inputs": {
    "gfH": 1.556,
@@ -10708,15 +10720,15 @@
   "league": "Championship",
   "fixture": "Stoke City vs Preston North End",
   "kickoff": "2026-10-31T12:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 54,
    "d": 25,
    "a": 21
   },
-  "btts": 50,
+  "btts": 51,
   "ou25": 50,
   "goalModel": {
    "h": 43.8,
@@ -10733,12 +10745,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.73,
-   "d": 3.75,
+   "d": 3.7,
    "a": 4.5,
-   "bttsY": 1.83,
-   "bttsN": 1.83,
+   "bttsY": 1.8,
+   "bttsN": 1.91,
    "o25": 1.91,
    "u25": 1.91
   },
@@ -10755,15 +10767,15 @@
   "league": "Bundesliga",
   "fixture": "Bayer 04 Leverkusen vs Stuttgart",
   "kickoff": "2026-10-31T14:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 54,
-   "d": 22,
-   "a": 24
+   "h": 58,
+   "d": 21,
+   "a": 21
   },
-  "btts": 71,
+  "btts": 69,
   "ou25": 73,
   "goalModel": {
    "h": 55.1,
@@ -10780,12 +10792,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.75,
-   "d": 4.33,
-   "a": 4,
-   "bttsY": 1.33,
-   "bttsN": 3.25,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.65,
+   "d": 4.5,
+   "a": 4.5,
+   "bttsY": 1.36,
+   "bttsN": 3,
    "o25": 1.3,
    "u25": 3.5
   },
@@ -10802,16 +10814,16 @@
   "league": "Bundesliga",
   "fixture": "Augsburg vs Freiburg",
   "kickoff": "2026-10-31T14:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 31,
-   "d": 25,
-   "a": 44
+   "h": 33,
+   "d": 26,
+   "a": 41
   },
-  "btts": 66,
-  "ou25": 64,
+  "btts": 63,
+  "ou25": 60,
   "goalModel": {
    "h": 38.2,
    "d": 24.6,
@@ -10827,14 +10839,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 3.1,
-   "d": 3.8,
-   "a": 2.15,
-   "bttsY": 1.4,
-   "bttsN": 2.75,
-   "o25": 1.5,
-   "u25": 2.63
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 2.88,
+   "d": 3.6,
+   "a": 2.35,
+   "bttsY": 1.5,
+   "bttsN": 2.5,
+   "o25": 1.57,
+   "u25": 2.38
   },
   "inputs": {
    "gfH": 2.103,
@@ -10849,16 +10861,16 @@
   "league": "Premier League",
   "fixture": "Bournemouth vs Leeds United",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 45,
-   "d": 28,
-   "a": 27
+   "d": 29,
+   "a": 26
   },
-  "btts": 56,
-  "ou25": 53,
+  "btts": 53,
+  "ou25": 47,
   "goalModel": {
    "h": 47.8,
    "d": 27.4,
@@ -10874,14 +10886,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 2.1,
-   "d": 3.4,
-   "a": 3.6,
-   "bttsY": 1.67,
-   "bttsN": 2.1,
-   "o25": 1.8,
-   "u25": 2
+   "d": 3.3,
+   "a": 3.7,
+   "bttsY": 1.75,
+   "bttsN": 2,
+   "o25": 2,
+   "u25": 1.8
   },
   "inputs": {
    "gfH": 1.444,
@@ -10896,16 +10908,16 @@
   "league": "Premier League",
   "fixture": "Brentford vs Nottingham Forest",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 46,
+   "h": 44,
    "d": 27,
-   "a": 27
+   "a": 29
   },
-  "btts": 58,
-  "ou25": 55,
+  "btts": 59,
+  "ou25": 57,
   "goalModel": {
    "h": 41.3,
    "d": 26.9,
@@ -10921,14 +10933,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 2.05,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 2.15,
    "d": 3.6,
-   "a": 3.5,
-   "bttsY": 1.62,
-   "bttsN": 2.2,
-   "o25": 1.73,
-   "u25": 2.1
+   "a": 3.3,
+   "bttsY": 1.57,
+   "bttsN": 2.25,
+   "o25": 1.67,
+   "u25": 2.2
   },
   "inputs": {
    "gfH": 1.569,
@@ -10943,13 +10955,13 @@
   "league": "Premier League",
   "fixture": "Coventry City vs Sunderland",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 30,
-   "d": 28,
-   "a": 42
+   "h": 31,
+   "d": 29,
+   "a": 40
   },
   "btts": 53,
   "ou25": 50,
@@ -10968,10 +10980,10 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 3.2,
-   "d": 3.4,
-   "a": 2.25,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 3,
+   "d": 3.3,
+   "a": 2.38,
    "bttsY": 1.75,
    "bttsN": 2,
    "o25": 1.91,
@@ -10990,16 +11002,16 @@
   "league": "Premier League",
   "fixture": "Hull City vs Ipswich Town",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 37,
+   "h": 34,
    "d": 28,
-   "a": 35
+   "a": 38
   },
   "btts": 56,
-  "ou25": 53,
+  "ou25": 50,
   "goalModel": {
    "h": 33.1,
    "d": 27.6,
@@ -11015,14 +11027,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 2.6,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 2.8,
    "d": 3.4,
-   "a": 2.7,
+   "a": 2.55,
    "bttsY": 1.67,
    "bttsN": 2.1,
-   "o25": 1.8,
-   "u25": 2
+   "o25": 1.91,
+   "u25": 1.91
   },
   "inputs": {
    "gfH": 1.256,
@@ -11037,16 +11049,16 @@
   "league": "Premier League",
   "fixture": "Manchester City vs Brighton & Hove Albion",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 55,
+   "h": 56,
    "d": 22,
-   "a": 23
+   "a": 22
   },
-  "btts": 65,
-  "ou25": 68,
+  "btts": 63,
+  "ou25": 64,
   "goalModel": {
    "h": 55,
    "d": 22.6,
@@ -11062,14 +11074,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.73,
-   "d": 4.33,
-   "a": 4.1,
-   "bttsY": 1.44,
-   "bttsN": 2.63,
-   "o25": 1.4,
-   "u25": 3
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.7,
+   "d": 4.2,
+   "a": 4.33,
+   "bttsY": 1.5,
+   "bttsN": 2.5,
+   "o25": 1.5,
+   "u25": 2.63
   },
   "inputs": {
    "gfH": 1.944,
@@ -11084,15 +11096,15 @@
   "league": "Championship",
   "fixture": "Bolton Wanderers vs Bristol City",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 30,
-   "d": 29,
+   "h": 31,
+   "d": 28,
    "a": 41
   },
-  "btts": 58,
+  "btts": 56,
   "ou25": 53,
   "goalModel": {
    "h": 37.4,
@@ -11109,12 +11121,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 3.1,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 3,
    "d": 3.3,
    "a": 2.3,
-   "bttsY": 1.62,
-   "bttsN": 2.2,
+   "bttsY": 1.67,
+   "bttsN": 2.1,
    "o25": 1.8,
    "u25": 2
   },
@@ -11131,15 +11143,15 @@
   "league": "Championship",
   "fixture": "Burnley vs Portsmouth",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 43,
-   "d": 28,
-   "a": 29
+   "h": 40,
+   "d": 29,
+   "a": 31
   },
-  "btts": 54,
+  "btts": 51,
   "ou25": 47,
   "goalModel": {
    "h": 47.2,
@@ -11156,12 +11168,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 2.2,
-   "d": 3.3,
-   "a": 3.25,
-   "bttsY": 1.73,
-   "bttsN": 2,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 2.3,
+   "d": 3.25,
+   "a": 3,
+   "bttsY": 1.8,
+   "bttsN": 1.91,
    "o25": 2,
    "u25": 1.8
   },
@@ -11178,13 +11190,13 @@
   "league": "Championship",
   "fixture": "Middlesbrough vs Charlton Athletic",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 75,
-   "d": 16,
-   "a": 9
+   "h": 77,
+   "d": 15,
+   "a": 8
   },
   "btts": 51,
   "ou25": 68,
@@ -11203,10 +11215,10 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.25,
-   "d": 6,
-   "a": 10,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.22,
+   "d": 6.25,
+   "a": 11,
    "bttsY": 1.8,
    "bttsN": 1.91,
    "o25": 1.4,
@@ -11225,13 +11237,13 @@
   "league": "Championship",
   "fixture": "Millwall vs Derby County",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 57,
+   "h": 58,
    "d": 24,
-   "a": 19
+   "a": 18
   },
   "btts": 51,
   "ou25": 53,
@@ -11250,10 +11262,10 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.65,
-   "d": 3.8,
-   "a": 5,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.62,
+   "d": 3.9,
+   "a": 5.25,
    "bttsY": 1.8,
    "bttsN": 1.91,
    "o25": 1.8,
@@ -11272,15 +11284,15 @@
   "league": "Championship",
   "fixture": "Southampton vs Queens Park Rangers",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 50,
    "d": 25,
    "a": 25
   },
-  "btts": 61,
+  "btts": 63,
   "ou25": 59,
   "goalModel": {
    "h": 53.9,
@@ -11297,12 +11309,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.9,
-   "d": 3.75,
+   "d": 3.7,
    "a": 3.7,
-   "bttsY": 1.53,
-   "bttsN": 2.38,
+   "bttsY": 1.5,
+   "bttsN": 2.5,
    "o25": 1.62,
    "u25": 2.3
   },
@@ -11319,16 +11331,16 @@
   "league": "Championship",
   "fixture": "Swansea City vs Blackburn Rovers",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 53,
-   "d": 27,
+   "h": 55,
+   "d": 25,
    "a": 20
   },
-  "btts": 51,
-  "ou25": 50,
+  "btts": 54,
+  "ou25": 53,
   "goalModel": {
    "h": 50,
    "d": 28,
@@ -11344,14 +11356,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.75,
-   "d": 3.5,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.73,
+   "d": 3.75,
    "a": 4.75,
-   "bttsY": 1.8,
-   "bttsN": 1.91,
-   "o25": 1.91,
-   "u25": 1.91
+   "bttsY": 1.73,
+   "bttsN": 2,
+   "o25": 1.8,
+   "u25": 2
   },
   "inputs": {
    "gfH": 1.389,
@@ -11366,16 +11378,16 @@
   "league": "Championship",
   "fixture": "West Ham United vs West Bromwich Albion",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 58,
-   "d": 22,
-   "a": 20
+   "h": 55,
+   "d": 23,
+   "a": 22
   },
-  "btts": 56,
-  "ou25": 59,
+  "btts": 54,
+  "ou25": 55,
   "goalModel": {
    "h": 65.7,
    "d": 20.4,
@@ -11391,14 +11403,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.62,
-   "d": 4.2,
-   "a": 4.75,
-   "bttsY": 1.67,
-   "bttsN": 2.1,
-   "o25": 1.62,
-   "u25": 2.3
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.7,
+   "d": 4,
+   "a": 4.33,
+   "bttsY": 1.73,
+   "bttsN": 2,
+   "o25": 1.73,
+   "u25": 2.1
   },
   "inputs": {
    "gfH": 2.056,
@@ -11413,16 +11425,16 @@
   "league": "Championship",
   "fixture": "Wolverhampton Wanderers vs Cardiff City",
   "kickoff": "2026-10-31T15:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 56,
-   "d": 24,
-   "a": 20
+   "h": 60,
+   "d": 21,
+   "a": 19
   },
-  "btts": 63,
-  "ou25": 64,
+  "btts": 61,
+  "ou25": 66,
   "goalModel": {
    "h": 61.9,
    "d": 21.2,
@@ -11438,14 +11450,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.67,
-   "d": 3.9,
-   "a": 4.75,
-   "bttsY": 1.5,
-   "bttsN": 2.5,
-   "o25": 1.5,
-   "u25": 2.63
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.57,
+   "d": 4.5,
+   "a": 5,
+   "bttsY": 1.53,
+   "bttsN": 2.38,
+   "o25": 1.44,
+   "u25": 2.75
   },
   "inputs": {
    "gfH": 1.556,
@@ -11460,15 +11472,15 @@
   "league": "Serie A",
   "fixture": "Udinese vs Roma",
   "kickoff": "2026-10-31T17:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 16,
+   "h": 17,
    "d": 23,
-   "a": 61
+   "a": 60
   },
-  "btts": 56,
+  "btts": 58,
   "ou25": 60,
   "goalModel": {
    "h": 13.4,
@@ -11485,12 +11497,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 5.75,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 5.5,
    "d": 4.2,
-   "a": 1.57,
-   "bttsY": 1.67,
-   "bttsN": 2.1,
+   "a": 1.6,
+   "bttsY": 1.62,
+   "bttsN": 2.2,
    "o25": 1.57,
    "u25": 2.38
   },
@@ -11507,16 +11519,16 @@
   "league": "Premier League",
   "fixture": "Tottenham Hotspur vs Crystal Palace",
   "kickoff": "2026-10-31T17:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 60,
-   "d": 22,
-   "a": 18
+   "h": 57,
+   "d": 23,
+   "a": 20
   },
-  "btts": 56,
-  "ou25": 59,
+  "btts": 55,
+  "ou25": 55,
   "goalModel": {
    "h": 47.2,
    "d": 27.2,
@@ -11532,14 +11544,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.57,
-   "d": 4.33,
-   "a": 5.25,
-   "bttsY": 1.67,
-   "bttsN": 2.1,
-   "o25": 1.62,
-   "u25": 2.3
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.67,
+   "d": 4.1,
+   "a": 4.75,
+   "bttsY": 1.7,
+   "bttsN": 2.05,
+   "o25": 1.73,
+   "u25": 2.1
   },
   "inputs": {
    "gfH": 1.194,
@@ -11554,16 +11566,16 @@
   "league": "Bundesliga",
   "fixture": "Bayern Munich vs Borussia Dortmund",
   "kickoff": "2026-10-31T17:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 71,
+   "h": 72,
    "d": 16,
-   "a": 13
+   "a": 12
   },
-  "btts": 65,
-  "ou25": 76,
+  "btts": 61,
+  "ou25": 73,
   "goalModel": {
    "h": 70.1,
    "d": 18.1,
@@ -11579,14 +11591,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.33,
-   "d": 5.75,
-   "a": 7.5,
-   "bttsY": 1.44,
-   "bttsN": 2.63,
-   "o25": 1.25,
-   "u25": 4
+   "d": 6,
+   "a": 8,
+   "bttsY": 1.53,
+   "bttsN": 2.38,
+   "o25": 1.3,
+   "u25": 3.5
   },
   "inputs": {
    "gfH": 2.675,
@@ -11601,16 +11613,16 @@
   "league": "Serie A",
   "fixture": "AC Milan vs Inter Milan",
   "kickoff": "2026-10-31T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 26,
-   "d": 26,
-   "a": 48
+   "h": 27,
+   "d": 27,
+   "a": 46
   },
-  "btts": 61,
-  "ou25": 57,
+  "btts": 58,
+  "ou25": 55,
   "goalModel": {
    "h": 22.7,
    "d": 23.8,
@@ -11626,14 +11638,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 3.6,
-   "d": 3.6,
-   "a": 2,
-   "bttsY": 1.53,
-   "bttsN": 2.38,
-   "o25": 1.67,
-   "u25": 2.2
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 3.5,
+   "d": 3.5,
+   "a": 2.05,
+   "bttsY": 1.62,
+   "bttsN": 2.2,
+   "o25": 1.73,
+   "u25": 2.1
   },
   "inputs": {
    "gfH": 1.789,
@@ -11648,16 +11660,16 @@
   "league": "Premier League",
   "fixture": "Aston Villa vs Fulham",
   "kickoff": "2026-10-31T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 48,
-   "d": 26,
-   "a": 26
+   "h": 44,
+   "d": 27,
+   "a": 29
   },
   "btts": 58,
-  "ou25": 57,
+  "ou25": 55,
   "goalModel": {
    "h": 44.1,
    "d": 28.2,
@@ -11673,14 +11685,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 2,
-   "d": 3.7,
-   "a": 3.6,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 2.15,
+   "d": 3.5,
+   "a": 3.25,
    "bttsY": 1.62,
    "bttsN": 2.2,
-   "o25": 1.67,
-   "u25": 2.2
+   "o25": 1.73,
+   "u25": 2.1
   },
   "inputs": {
    "gfH": 1.256,
@@ -11695,9 +11707,9 @@
   "league": "Serie A",
   "fixture": "Como vs Venezia",
   "kickoff": "2026-11-01T11:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 73,
    "d": 17,
@@ -11720,7 +11732,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 1.3,
    "d": 5.75,
    "a": 9.5,
@@ -11742,15 +11754,15 @@
   "league": "Serie A",
   "fixture": "Lazio vs Cagliari",
   "kickoff": "2026-11-01T14:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 65,
-   "d": 22,
+   "h": 67,
+   "d": 20,
    "a": 13
   },
-  "btts": 48,
+  "btts": 47,
   "ou25": 53,
   "goalModel": {
    "h": 60.5,
@@ -11767,12 +11779,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 1.44,
-   "d": 4.33,
-   "a": 7.5,
-   "bttsY": 1.95,
-   "bttsN": 1.8,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 1.42,
+   "d": 4.75,
+   "a": 7,
+   "bttsY": 2,
+   "bttsN": 1.75,
    "o25": 1.8,
    "u25": 2
   },
@@ -11789,13 +11801,13 @@
   "league": "Ligue 1",
   "fixture": "Paris FC vs Monaco",
   "kickoff": "2026-11-01T16:15:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
-   "h": 40,
+   "h": 39,
    "d": 27,
-   "a": 33
+   "a": 34
   },
   "btts": 56,
   "ou25": 53,
@@ -11814,10 +11826,10 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
-   "h": 2.35,
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
+   "h": 2.4,
    "d": 3.5,
-   "a": 2.9,
+   "a": 2.8,
    "bttsY": 1.67,
    "bttsN": 2.1,
    "o25": 1.8,
@@ -11836,9 +11848,9 @@
   "league": "Premier League",
   "fixture": "Liverpool vs Arsenal",
   "kickoff": "2026-11-01T16:30:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 33,
    "d": 28,
@@ -11861,7 +11873,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 2.88,
    "d": 3.4,
    "a": 2.45,
@@ -11883,9 +11895,9 @@
   "league": "Premier League",
   "fixture": "Newcastle United vs Everton",
   "kickoff": "2026-11-02T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": 41,
    "d": 27,
@@ -11908,7 +11920,7 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Fri 30 Oct 19:08",
+   "source": "kickoff.co.uk match page (Bet365), Sat 31 Oct 11:23",
    "h": 2.3,
    "d": 3.5,
    "a": 3,
@@ -11930,9 +11942,9 @@
   "league": "Championship",
   "fixture": "Blackburn Rovers vs Stoke City",
   "kickoff": "2026-11-03T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -11968,9 +11980,9 @@
   "league": "Championship",
   "fixture": "Charlton Athletic vs Bolton Wanderers",
   "kickoff": "2026-11-03T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12006,9 +12018,9 @@
   "league": "Championship",
   "fixture": "Derby County vs Norwich City",
   "kickoff": "2026-11-03T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12044,9 +12056,9 @@
   "league": "Championship",
   "fixture": "Portsmouth vs Swansea City",
   "kickoff": "2026-11-03T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12082,9 +12094,9 @@
   "league": "Championship",
   "fixture": "Preston North End vs Sheffield United",
   "kickoff": "2026-11-03T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12120,9 +12132,9 @@
   "league": "Championship",
   "fixture": "Queens Park Rangers vs Burnley",
   "kickoff": "2026-11-03T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12158,9 +12170,9 @@
   "league": "Championship",
   "fixture": "Watford vs Lincoln City",
   "kickoff": "2026-11-03T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12196,9 +12208,9 @@
   "league": "Championship",
   "fixture": "Birmingham City vs Millwall",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12234,9 +12246,9 @@
   "league": "Championship",
   "fixture": "West Bromwich Albion vs Southampton",
   "kickoff": "2026-11-03T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12272,9 +12284,9 @@
   "league": "Championship",
   "fixture": "Cardiff City vs West Ham United",
   "kickoff": "2026-11-04T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12310,9 +12322,9 @@
   "league": "Championship",
   "fixture": "Wrexham vs Middlesbrough",
   "kickoff": "2026-11-04T19:45:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
@@ -12348,9 +12360,9 @@
   "league": "Championship",
   "fixture": "Bristol City vs Wolverhampton Wanderers",
   "kickoff": "2026-11-04T20:00:00+00:00",
-  "loggedAt": "2026-10-30T19:10:23.452Z",
+  "loggedAt": "2026-10-31T11:25:30.977Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-10-30-weekly@Fri 30 Oct 19:08 build 2026-10-30T19:10",
+  "seedVersion": "2026-10-30-weekly@Sat 31 Oct 11:23 build 2026-10-31T11:25",
   "market": {
    "h": null,
    "d": null,
