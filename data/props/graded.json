@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-01T13:11:42.616Z",
+ "generatedAt": "2026-11-01T15:25:07.818Z",
  "fixtures": 109,
- "graded": 6532,
+ "graded": 6711,
  "summary": {
   "fc": {
-   "n": 1472,
-   "logloss": 0.5323,
-   "modelAvg": 0.355,
-   "actualRate": 0.334,
-   "unibetAvg": 0.571,
+   "n": 1524,
+   "logloss": 0.5336,
+   "modelAvg": 0.357,
+   "actualRate": 0.331,
+   "unibetAvg": 0.573,
    "value5": {
     "bets": 4,
     "profit": 1.6,
@@ -21,11 +21,11 @@
    }
   },
   "sh": {
-   "n": 1736,
-   "logloss": 0.5143,
-   "modelAvg": 0.319,
-   "actualRate": 0.339,
-   "unibetAvg": 0.485,
+   "n": 1777,
+   "logloss": 0.5169,
+   "modelAvg": 0.321,
+   "actualRate": 0.34,
+   "unibetAvg": 0.488,
    "value5": {
     "bets": 46,
     "profit": 7.14,
@@ -38,10 +38,10 @@
    }
   },
   "sot": {
-   "n": 1606,
-   "logloss": 0.4781,
+   "n": 1640,
+   "logloss": 0.4773,
    "modelAvg": 0.229,
-   "actualRate": 0.229,
+   "actualRate": 0.227,
    "unibetAvg": 0.341,
    "value5": {
     "bets": 69,
@@ -55,10 +55,10 @@
    }
   },
   "yc": {
-   "n": 1134,
-   "logloss": 0.4164,
-   "modelAvg": 0.141,
-   "actualRate": 0.151,
+   "n": 1160,
+   "logloss": 0.4128,
+   "modelAvg": 0.14,
+   "actualRate": 0.149,
    "unibetAvg": 0.264,
    "value5": {
     "bets": 4,
@@ -72,10 +72,10 @@
    }
   },
   "rc": {
-   "n": 584,
-   "logloss": 0.0495,
+   "n": 610,
+   "logloss": 0.0477,
    "modelAvg": 0.006,
-   "actualRate": 0.009,
+   "actualRate": 0.008,
    "unibetAvg": 0.031,
    "value5": {
     "bets": 0,
@@ -89,11 +89,11 @@
    }
   },
   "all": {
-   "n": 6532,
-   "logloss": 0.4509,
-   "modelAvg": 0.246,
-   "actualRate": 0.248,
-   "unibetAvg": 0.39,
+   "n": 6711,
+   "logloss": 0.4504,
+   "modelAvg": 0.247,
+   "actualRate": 0.247,
+   "unibetAvg": 0.391,
    "value5": {
     "bets": 123,
     "profit": -1.04,
@@ -123,11 +123,11 @@
    }
   },
   "preLineups": {
-   "n": 1747,
-   "logloss": 0.4639,
+   "n": 1926,
+   "logloss": 0.4609,
    "modelAvg": 0.267,
-   "actualRate": 0.245,
-   "unibetAvg": 0.411,
+   "actualRate": 0.241,
+   "unibetAvg": 0.412,
    "value5": {
     "bets": 22,
     "profit": -10.34,

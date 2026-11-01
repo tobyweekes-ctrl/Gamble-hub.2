@@ -1375,5 +1375,17 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "sa-20261101-como-vene": {
+  "kickoff": "2026-11-01T11:30:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
