@@ -1160,5 +1160,220 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261031-bour-leed": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261031-bren-nott": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261031-cove-sund": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261031-hull-ipsw": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   2,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261031-manc-brig": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261031-bolt-bris": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   2,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261031-burn-port": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   0,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261031-midd-char": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261031-mill-derb": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   4,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261031-sout-quee": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   4,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261031-swan-blac": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   4,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261031-west-west": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   1,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261031-wolv-card": {
+  "kickoff": "2026-10-31T15:00:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261031-udin-roma": {
+  "kickoff": "2026-10-31T17:00:00+00:00",
+  "score": [
+   2,
+   5
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261031-tott-crys": {
+  "kickoff": "2026-10-31T17:30:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261031-baye-boru": {
+  "kickoff": "2026-10-31T17:30:00+00:00",
+  "score": [
+   2,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261031-acmi-inte": {
+  "kickoff": "2026-10-31T19:45:00+00:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures"
+  ],
+  "note": "single source"
+ },
+ "pl-20261031-asto-fulh": {
+  "kickoff": "2026-10-31T20:00:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
