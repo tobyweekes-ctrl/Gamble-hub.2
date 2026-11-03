@@ -37,7 +37,8 @@ async function pool(items, n, fn) {
 }
 // ESPN spellings that share no word with UEFA's.
 const ESPN_ALIAS = { 'crvena zvezda': 'red star belgrade', copenhagen: 'kobenhavn', 'h. beer-sheva': "hapoel be'er sheva", 'univ. craiova': 'csu craiova',
-  'l. red imps': 'lincoln red imps', 'iberia tbilisi': 'iberia 1999', aarhus: 'agf', 'n.e.c.': 'nec nijmegen', borac: 'borac banja luka', rennes: 'stade rennais' };
+  'l. red imps': 'lincoln red imps', 'iberia tbilisi': 'iberia 1999', aarhus: 'agf', 'n.e.c.': 'nec nijmegen', borac: 'borac banja luka', rennes: 'stade rennais',
+  'manchester united': 'man utd', 'manchester city': 'man city' };
 const words = s => new Set(norm(ESPN_ALIAS[norm(s)] || s).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !['fc', 'afc', 'club', 'the'].includes(w)));
 const overlap = (a, b) => { const B = new Set([...words(b), ...words(ESPN_ALIAS[norm(b)] || b)]); return [...words(a)].some(w => B.has(w) || [...B].some(x => x.length >= 4 && w.length >= 4 && (x.startsWith(w) || w.startsWith(x)))); };
 const starters = (summary, teamId) => {
