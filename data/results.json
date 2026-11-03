@@ -1387,5 +1387,53 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "sa-20261101-lazi-cagl": {
+  "kickoff": "2026-11-01T14:00:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261101-pari-mona": {
+  "kickoff": "2026-11-01T16:15:00+00:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261101-live-arse": {
+  "kickoff": "2026-11-01T16:30:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261102-newc-ever": {
+  "kickoff": "2026-11-02T20:00:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
