@@ -1435,5 +1435,220 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "ucl-20261103-shak-spor": {
+  "kickoff": "2026-11-03T17:45:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261103-gala-stut": {
+  "kickoff": "2026-11-03T17:45:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261103-barc-asto": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261103-atle-baye": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   0,
+   2
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261103-manu-roma": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   3,
+   2
+  ],
+  "sources": [
+   "match.uefa.com"
+  ],
+  "note": "single source"
+ },
+ "ucl-20261103-feye-inte": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   0,
+   3
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261103-bodg-lill": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   0,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261103-vill-pari": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   0,
+   6
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261103-lask-sbra": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   4,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-blac-stok": {
+  "kickoff": "2026-11-03T19:45:00+00:00",
+  "score": [
+   1,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-char-bolt": {
+  "kickoff": "2026-11-03T19:45:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-derb-norw": {
+  "kickoff": "2026-11-03T19:45:00+00:00",
+  "score": [
+   0,
+   4
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-port-swan": {
+  "kickoff": "2026-11-03T19:45:00+00:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-pres-shef": {
+  "kickoff": "2026-11-03T19:45:00+00:00",
+  "score": [
+   2,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-quee-burn": {
+  "kickoff": "2026-11-03T19:45:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-watf-linc": {
+  "kickoff": "2026-11-03T19:45:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-birm-mill": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261103-west-sout": {
+  "kickoff": "2026-11-03T20:00:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
