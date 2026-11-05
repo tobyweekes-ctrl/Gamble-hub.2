@@ -1662,5 +1662,149 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "ucl-20261104-fene-live": {
+  "kickoff": "2026-11-04T17:45:00+00:00",
+  "score": [
+   3,
+   2
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261104-aeka-real": {
+  "kickoff": "2026-11-04T17:45:00+00:00",
+  "score": [
+   2,
+   3
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261104-bdor-real": {
+  "kickoff": "2026-11-04T20:00:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261104-port-napo": {
+  "kickoff": "2026-11-04T20:00:00+00:00",
+  "score": [
+   4,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261104-psv-club": {
+  "kickoff": "2026-11-04T20:00:00+00:00",
+  "score": [
+   1,
+   2
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261104-leip-manc": {
+  "kickoff": "2026-11-04T20:00:00+00:00",
+  "score": [
+   2,
+   3
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261104-slav-arse": {
+  "kickoff": "2026-11-04T20:00:00+00:00",
+  "score": [
+   1,
+   2
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261104-lens-como": {
+  "kickoff": "2026-11-04T20:00:00+00:00",
+  "score": [
+   1,
+   9
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261104-viki-saba": {
+  "kickoff": "2026-11-04T20:00:00+00:00",
+  "score": [
+   4,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261104-card-west": {
+  "kickoff": "2026-11-04T19:45:00+00:00",
+  "score": [
+   3,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261104-wrex-midd": {
+  "kickoff": "2026-11-04T19:45:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261104-bris-wolv": {
+  "kickoff": "2026-11-04T20:00:00+00:00",
+  "score": [
+   1,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
