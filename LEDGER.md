@@ -201,6 +201,28 @@ League Cup (Carabao Cup) ties are now on the site, predicted by the cross-league
 - **Price gaps:** no Bet365 price yet for the 12 Championship midweek games (3-4 Nov). The lineup-time runs refresh prices.
 - **Make-round fix:** it no longer treats the League Cup as a league. Cup ties come from `cup-fixtures.mjs`.
 
+## Weekly build and monthly backtests, 6 Nov 2026 (round 2026-11-06-weekly)
+
+- **Live record:** 177 v4.2 and cross-league games graded.
+  - Favourite won 55%; Brier 0.582.
+  - On the 114 games with Bet365 prices logged, Bet365 was more accurate: Brier 0.545 v 0.564; favourite won 59.6% v 57.0%.
+  - Over 2.5 called right: 60.5% for both.
+- **Player props (10,003 Unibet prices graded, 157 fixtures):**
+  - The model's average is right: 24.8% predicted, 24.8% landed. Unibet's prices implied 38.8%.
+  - **Value picks lose:**
+    - confirmed starters: 228 bets, -34.7 units (-15%);
+    - all picks: 258 bets, -15%;
+    - shots: -16%; shots on target: -19%.
+  - The early profit (+19 units on 58 bets to 30 Oct) did not last. The site's note now says the green prices have lost money.
+- **Monthly backtests (domestic test seasons, 2,435 games):**
+  - Model log-loss 1.0113 v Bet365 0.9977.
+  - Value bets at 5%: 1,183 bets, -16.6% (95% range -25.9% to -7.1%).
+  - Heavy-rotation adjustment: still no gain (0.9879 with, 0.9875 without, 158 games). It stays off.
+  - Cross-league and player models are refitted; the player model still beats position averages.
+- **Elo weight:** the weights are chosen on the validation seasons (2023/24-2024/25), which do not change, so re-running the tuning would give the same zero weight for Elo. On today's test seasons, Elo alone scores 1.0137, against 1.0113 for the combined model.
+- **Fix:** "Stade Rennais" (ESPN spelling) is now mapped to Rennes in `TEAM_ALIASES`.
+- **Gaps:** no Bet365 price yet for Auxerre v PSG or Rennes v Lille.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.

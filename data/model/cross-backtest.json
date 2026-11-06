@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T23:20:18.146Z",
+ "generatedAt": "2026-11-06T08:51:45.798Z",
  "settings": {
   "xi": 0.001,
   "sigma": 0.4,
@@ -15,7 +15,7 @@
  "goalsWeight": 1,
  "shotsCoverage": {
   "validation": 0.763,
-  "test": 0.966
+  "test": 0.967
  },
  "rho": 0.02,
  "calibration": {
@@ -110,194 +110,194 @@
    "2025/26",
    "2026/27 so far"
   ],
-  "n": 2401,
+  "n": 2491,
   "x12": {
-   "logloss": 0.9484,
-   "baseLogloss": 1.0385,
-   "brier": 0.561,
-   "baseBrier": 0.6258
+   "logloss": 0.9488,
+   "baseLogloss": 1.0401,
+   "brier": 0.5613,
+   "baseBrier": 0.627
   },
   "btts": {
-   "logloss": 0.7012,
+   "logloss": 0.7007,
    "base": 0.6933
   },
   "o25": {
-   "logloss": 0.6832,
-   "base": 0.6898
+   "logloss": 0.6825,
+   "base": 0.6895
   },
   "homeWinCalibration": [
    {
     "predicted": 6.5,
-    "actual": 11.1,
-    "n": 54
+    "actual": 12.1,
+    "n": 58
    },
    {
     "predicted": 15.7,
-    "actual": 19.3,
-    "n": 187
+    "actual": 18.9,
+    "n": 196
    },
    {
-    "predicted": 25.1,
-    "actual": 27.6,
-    "n": 286
+    "predicted": 25,
+    "actual": 26.8,
+    "n": 298
    },
    {
     "predicted": 35.2,
-    "actual": 37.6,
-    "n": 348
+    "actual": 37.1,
+    "n": 356
    },
    {
     "predicted": 44.8,
-    "actual": 48.5,
-    "n": 402
+    "actual": 48,
+    "n": 415
    },
    {
     "predicted": 54.9,
-    "actual": 51.6,
-    "n": 376
+    "actual": 51.8,
+    "n": 392
    },
    {
     "predicted": 64.8,
-    "actual": 60.1,
-    "n": 323
+    "actual": 60.2,
+    "n": 339
    },
    {
-    "predicted": 75.1,
-    "actual": 76.7,
-    "n": 232
+    "predicted": 75,
+    "actual": 76.3,
+    "n": 240
    },
    {
     "predicted": 84.5,
-    "actual": 83.5,
-    "n": 139
+    "actual": 83.6,
+    "n": 140
    },
    {
     "predicted": 93.2,
-    "actual": 92.6,
-    "n": 54
+    "actual": 91.2,
+    "n": 57
    }
   ]
  },
  "testTeamsRatedFromEuropeOnly": {
-  "n": 1429,
+  "n": 1472,
   "x12": {
    "logloss": 0.9381,
-   "baseLogloss": 1.0416,
-   "brier": 0.5546,
-   "baseBrier": 0.6276
+   "baseLogloss": 1.0423,
+   "brier": 0.5545,
+   "baseBrier": 0.6282
   },
   "btts": {
-   "logloss": 0.7089,
+   "logloss": 0.7077,
    "base": 0.6931
   },
   "o25": {
-   "logloss": 0.6893,
-   "base": 0.692
+   "logloss": 0.6882,
+   "base": 0.6917
   },
   "homeWinCalibration": [
    {
-    "predicted": 6.3,
-    "actual": 10.2,
-    "n": 49
+    "predicted": 6.4,
+    "actual": 11.5,
+    "n": 52
    },
    {
-    "predicted": 15.5,
-    "actual": 18.4,
-    "n": 141
+    "predicted": 15.6,
+    "actual": 17.7,
+    "n": 147
    },
    {
     "predicted": 24.7,
-    "actual": 28.7,
-    "n": 181
+    "actual": 28.1,
+    "n": 185
    },
    {
     "predicted": 35,
-    "actual": 43.1,
-    "n": 181
+    "actual": 42.4,
+    "n": 184
    },
    {
     "predicted": 44.6,
-    "actual": 49.5,
-    "n": 222
+    "actual": 49.8,
+    "n": 225
    },
    {
-    "predicted": 54.7,
+    "predicted": 54.8,
     "actual": 51.2,
-    "n": 203
+    "n": 209
    },
    {
-    "predicted": 64.9,
-    "actual": 54,
-    "n": 163
+    "predicted": 64.8,
+    "actual": 55,
+    "n": 171
    },
    {
-    "predicted": 75.4,
-    "actual": 75.7,
-    "n": 136
+    "predicted": 75.2,
+    "actual": 74.6,
+    "n": 142
    },
    {
     "predicted": 84.5,
-    "actual": 82.7,
-    "n": 104
+    "actual": 82.9,
+    "n": 105
    },
    {
-    "predicted": 93.4,
-    "actual": 93.9,
-    "n": 49
+    "predicted": 93.3,
+    "actual": 92.3,
+    "n": 52
    }
   ]
  },
  "testBothWithDomesticData": {
-  "n": 972,
+  "n": 1019,
   "x12": {
-   "logloss": 0.9634,
-   "baseLogloss": 1.0341,
-   "brier": 0.5705,
-   "baseBrier": 0.6231
+   "logloss": 0.9641,
+   "baseLogloss": 1.0371,
+   "brier": 0.5711,
+   "baseBrier": 0.6253
   },
   "btts": {
-   "logloss": 0.6899,
-   "base": 0.6937
+   "logloss": 0.6907,
+   "base": 0.6936
   },
   "o25": {
-   "logloss": 0.6743,
-   "base": 0.6864
+   "logloss": 0.6741,
+   "base": 0.6863
   },
   "homeWinCalibration": [
    {
-    "predicted": 16.2,
-    "actual": 21.7,
-    "n": 46
+    "predicted": 16.3,
+    "actual": 22.4,
+    "n": 49
    },
    {
-    "predicted": 25.7,
-    "actual": 25.7,
-    "n": 105
+    "predicted": 25.6,
+    "actual": 24.8,
+    "n": 113
    },
    {
     "predicted": 35.4,
-    "actual": 31.7,
-    "n": 167
+    "actual": 31.4,
+    "n": 172
    },
    {
     "predicted": 45,
-    "actual": 47.2,
-    "n": 180
+    "actual": 45.8,
+    "n": 190
    },
    {
     "predicted": 55,
-    "actual": 52,
-    "n": 173
+    "actual": 52.5,
+    "n": 183
    },
    {
-    "predicted": 64.8,
-    "actual": 66.3,
-    "n": 160
+    "predicted": 64.7,
+    "actual": 65.5,
+    "n": 168
    },
    {
     "predicted": 74.7,
-    "actual": 78.1,
-    "n": 96
+    "actual": 78.6,
+    "n": 98
    },
    {
     "predicted": 84.4,
