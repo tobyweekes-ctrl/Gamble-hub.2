@@ -33,7 +33,7 @@ export const TEAM_ALIASES = {
   'Wolverhampton Wanderers': 'Wolves', 'Sheffield United': 'Sheffield United',
   'Borussia Dortmund': 'Dortmund', 'Eintracht Frankfurt': 'Ein Frankfurt', 'Köln': 'FC Koln', 'Hamburger SV': 'Hamburg',
   'Bayer 04 Leverkusen': 'Leverkusen', "Borussia M'gladbach": "M'gladbach", 'Mainz 05': 'Mainz',
-  'Inter Milan': 'Inter', 'AC Milan': 'Milan', 'Paris Saint-Germain': 'Paris SG', 'Olympique Lyonnais': 'Lyon',
+  'Inter Milan': 'Inter', 'AC Milan': 'Milan', 'Paris Saint-Germain': 'Paris SG', 'Olympique Lyonnais': 'Lyon', 'Stade Rennais': 'Rennes',
 };
 export const fdName = name => TEAM_ALIASES[name] || name;
 
