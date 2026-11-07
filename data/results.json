@@ -2226,5 +2226,29 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261106-ever-cove": {
+  "kickoff": "2026-11-06T20:00:00+00:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261106-derb-bolt": {
+  "kickoff": "2026-11-06T20:00:00+00:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
