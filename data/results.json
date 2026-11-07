@@ -2250,5 +2250,89 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261107-leed-tott": {
+  "kickoff": "2026-11-07T12:30:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-bris-norw": {
+  "kickoff": "2026-11-07T12:30:00+00:00",
+  "score": [
+   0,
+   5
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-port-stok": {
+  "kickoff": "2026-11-07T12:30:00+00:00",
+  "score": [
+   1,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-wrex-wolv": {
+  "kickoff": "2026-11-07T12:30:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261107-boru-elve": {
+  "kickoff": "2026-11-07T14:30:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261107-main-baye": {
+  "kickoff": "2026-11-07T14:30:00+00:00",
+  "score": [
+   1,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261107-rble-augs": {
+  "kickoff": "2026-11-07T14:30:00+00:00",
+  "score": [
+   5,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
