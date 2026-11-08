@@ -2334,5 +2334,173 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261107-arse-hull": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261107-fulh-newc": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-birm-swan": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-blac-west": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-card-burn": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   5,
+   4
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-char-shef": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-pres-sout": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-quee-linc": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-watf-midd": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   0,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261107-west-mill": {
+  "kickoff": "2026-11-07T15:00:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261107-nott-manc": {
+  "kickoff": "2026-11-07T17:30:00+00:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261107-auxe-pari": {
+  "kickoff": "2026-11-07T18:00:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261107-roma-sass": {
+  "kickoff": "2026-11-07T19:45:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261107-pari-troy": {
+  "kickoff": "2026-11-07T20:05:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
