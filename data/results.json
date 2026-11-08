@@ -2502,5 +2502,17 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "sa-20261108-napo-lazi": {
+  "kickoff": "2026-11-08T11:30:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }

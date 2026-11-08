@@ -13972,7 +13972,10 @@
    "gfA": 1.995,
    "gaA": 1.195
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "pl-20261108-brig-bren",
@@ -14167,16 +14170,16 @@
   "league": "Premier League",
   "fixture": "Manchester United vs Aston Villa",
   "kickoff": "2026-11-08T16:30:00+00:00",
-  "loggedAt": "2026-11-08T13:11:35.264Z",
+  "loggedAt": "2026-11-08T15:23:25.421Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 15:23 build 2026-11-08T15:23",
   "market": {
-   "h": 45,
+   "h": 46,
    "d": 24,
-   "a": 31
+   "a": 30
   },
   "btts": 65,
-  "ou25": 64,
+  "ou25": 62,
   "goalModel": {
    "h": 47.5,
    "d": 24.6,
@@ -14192,14 +14195,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
-   "h": 2.1,
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 15:23",
+   "h": 2.05,
    "d": 3.9,
-   "a": 3.1,
+   "a": 3.2,
    "bttsY": 1.44,
    "bttsN": 2.63,
-   "o25": 1.5,
-   "u25": 2.63
+   "o25": 1.53,
+   "u25": 2.5
   },
   "inputs": {
    "gfH": 1.231,
@@ -14214,15 +14217,15 @@
   "league": "Bundesliga",
   "fixture": "Freiburg vs Union Berlin",
   "kickoff": "2026-11-08T16:30:00+00:00",
-  "loggedAt": "2026-11-08T13:11:35.264Z",
+  "loggedAt": "2026-11-08T15:23:25.421Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 15:23 build 2026-11-08T15:23",
   "market": {
    "h": 66,
    "d": 21,
    "a": 13
   },
-  "btts": 52,
+  "btts": 50,
   "ou25": 57,
   "goalModel": {
    "h": 60.1,
@@ -14239,12 +14242,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 15:23",
    "h": 1.44,
    "d": 4.5,
    "a": 7,
-   "bttsY": 1.8,
-   "bttsN": 1.95,
+   "bttsY": 1.91,
+   "bttsN": 1.91,
    "o25": 1.67,
    "u25": 2.2
   },
@@ -14261,15 +14264,15 @@
   "league": "Serie A",
   "fixture": "Inter Milan vs Como",
   "kickoff": "2026-11-08T17:00:00+00:00",
-  "loggedAt": "2026-11-08T13:11:35.264Z",
+  "loggedAt": "2026-11-08T15:23:25.421Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 15:23 build 2026-11-08T15:23",
   "market": {
-   "h": 47,
+   "h": 46,
    "d": 23,
-   "a": 30
+   "a": 31
   },
-  "btts": 61,
+  "btts": 63,
   "ou25": 62,
   "goalModel": {
    "h": 55.3,
@@ -14286,12 +14289,12 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
-   "h": 2,
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 15:23",
+   "h": 2.05,
    "d": 4.1,
-   "a": 3.2,
-   "bttsY": 1.53,
-   "bttsN": 2.38,
+   "a": 3.1,
+   "bttsY": 1.5,
+   "bttsN": 2.5,
    "o25": 1.53,
    "u25": 2.5
   },
