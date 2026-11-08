@@ -13281,7 +13281,10 @@
    "gfA": 1.286,
    "gaA": 1.231
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261107-fulh-newc",
@@ -13328,7 +13331,10 @@
    "gfA": 1.342,
    "gaA": 1.508
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261107-birm-swan",
@@ -13375,7 +13381,10 @@
    "gfA": 1.484,
    "gaA": 1.305
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261107-blac-west",
@@ -13422,7 +13431,10 @@
    "gfA": 2.019,
    "gaA": 1.484
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261107-card-burn",
@@ -13469,7 +13481,10 @@
    "gfA": 1.376,
    "gaA": 1.662
   },
-  "result": null
+  "result": {
+   "home": 5,
+   "away": 4
+  }
  },
  {
   "id": "ch-20261107-char-shef",
@@ -13516,7 +13531,10 @@
    "gfA": 1.448,
    "gaA": 1.341
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261107-pres-sout",
@@ -13563,7 +13581,10 @@
    "gfA": 1.769,
    "gaA": 1.234
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261107-quee-linc",
@@ -13610,7 +13631,10 @@
    "gfA": 1.234,
    "gaA": 1.591
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 1
+  }
  },
  {
   "id": "ch-20261107-watf-midd",
@@ -13657,7 +13681,10 @@
    "gfA": 1.805,
    "gaA": 1.412
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 0
+  }
  },
  {
   "id": "ch-20261107-west-mill",
@@ -13704,7 +13731,10 @@
    "gfA": 1.555,
    "gaA": 1.591
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261107-nott-manc",
@@ -13751,7 +13781,10 @@
    "gfA": 1.786,
    "gaA": 1.231
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 1
+  }
  },
  {
   "id": "l1-20261107-auxe-pari",
@@ -13789,7 +13822,10 @@
    "gfA": 1.926,
    "gaA": 1.315
   },
-  "result": null
+  "result": {
+   "home": 0,
+   "away": 1
+  }
  },
  {
   "id": "sa-20261107-roma-sass",
@@ -13836,7 +13872,10 @@
    "gfA": 1.595,
    "gaA": 2.095
   },
-  "result": null
+  "result": {
+   "home": 3,
+   "away": 0
+  }
  },
  {
   "id": "l1-20261107-pari-troy",
@@ -13883,7 +13922,10 @@
    "gfA": 1.148,
    "gaA": 1.648
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261108-napo-lazi",
@@ -13937,15 +13979,15 @@
   "league": "Premier League",
   "fixture": "Brighton & Hove Albion vs Brentford",
   "kickoff": "2026-11-08T14:00:00+00:00",
-  "loggedAt": "2026-11-07T17:09:31.500Z",
+  "loggedAt": "2026-11-08T13:11:35.264Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sat 7 Nov 17:08 build 2026-11-07T17:09",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
   "market": {
-   "h": 50,
-   "d": 25,
+   "h": 51,
+   "d": 24,
    "a": 25
   },
-  "btts": 61,
+  "btts": 59,
   "ou25": 60,
   "goalModel": {
    "h": 54.6,
@@ -13958,16 +14000,16 @@
    "expH": 1.892,
    "expA": 1.218
   },
-  "confidence": "medium",
+  "confidence": "high",
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sat 7 Nov 17:08",
-   "h": 1.9,
-   "d": 3.8,
-   "a": 3.7,
-   "bttsY": 1.53,
-   "bttsN": 2.38,
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
+   "h": 1.85,
+   "d": 4,
+   "a": 3.8,
+   "bttsY": 1.57,
+   "bttsN": 2.25,
    "o25": 1.57,
    "u25": 2.38
   },
@@ -13984,16 +14026,16 @@
   "league": "Premier League",
   "fixture": "Crystal Palace vs Liverpool",
   "kickoff": "2026-11-08T14:00:00+00:00",
-  "loggedAt": "2026-11-07T17:09:31.500Z",
+  "loggedAt": "2026-11-08T13:11:35.264Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sat 7 Nov 17:08 build 2026-11-07T17:09",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
   "market": {
-   "h": 17,
+   "h": 18,
    "d": 22,
-   "a": 61
+   "a": 60
   },
-  "btts": 58,
-  "ou25": 60,
+  "btts": 61,
+  "ou25": 64,
   "goalModel": {
    "h": 21.2,
    "d": 24.4,
@@ -14009,14 +14051,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sat 7 Nov 17:08",
-   "h": 5.5,
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
+   "h": 5.25,
    "d": 4.33,
    "a": 1.57,
-   "bttsY": 1.62,
-   "bttsN": 2.2,
-   "o25": 1.57,
-   "u25": 2.38
+   "bttsY": 1.53,
+   "bttsN": 2.38,
+   "o25": 1.5,
+   "u25": 2.63
   },
   "inputs": {
    "gfH": 1.175,
@@ -14031,9 +14073,9 @@
   "league": "Premier League",
   "fixture": "Ipswich Town vs Bournemouth",
   "kickoff": "2026-11-08T14:00:00+00:00",
-  "loggedAt": "2026-11-07T17:09:31.500Z",
+  "loggedAt": "2026-11-08T13:11:35.264Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sat 7 Nov 17:08 build 2026-11-07T17:09",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
   "market": {
    "h": 25,
    "d": 26,
@@ -14052,11 +14094,11 @@
    "expH": 1.189,
    "expA": 1.886
   },
-  "confidence": "medium",
+  "confidence": "high",
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sat 7 Nov 17:08",
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
    "h": 3.8,
    "d": 3.7,
    "a": 1.91,
@@ -14078,13 +14120,13 @@
   "league": "Premier League",
   "fixture": "Sunderland vs Chelsea",
   "kickoff": "2026-11-08T14:00:00+00:00",
-  "loggedAt": "2026-11-07T17:09:31.500Z",
+  "loggedAt": "2026-11-08T13:11:35.264Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sat 7 Nov 17:08 build 2026-11-07T17:09",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
   "market": {
    "h": 25,
-   "d": 26,
-   "a": 49
+   "d": 25,
+   "a": 50
   },
   "btts": 55,
   "ou25": 53,
@@ -14099,14 +14141,14 @@
    "expH": 1.189,
    "expA": 1.541
   },
-  "confidence": "medium",
+  "confidence": "high",
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sat 7 Nov 17:08",
-   "h": 3.75,
-   "d": 3.6,
-   "a": 1.95,
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
+   "h": 3.8,
+   "d": 3.8,
+   "a": 1.85,
    "bttsY": 1.7,
    "bttsN": 2.05,
    "o25": 1.8,
@@ -14125,16 +14167,16 @@
   "league": "Premier League",
   "fixture": "Manchester United vs Aston Villa",
   "kickoff": "2026-11-08T16:30:00+00:00",
-  "loggedAt": "2026-11-07T17:09:31.500Z",
+  "loggedAt": "2026-11-08T13:11:35.264Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sat 7 Nov 17:08 build 2026-11-07T17:09",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
   "market": {
-   "h": 44,
-   "d": 26,
-   "a": 30
+   "h": 45,
+   "d": 24,
+   "a": 31
   },
-  "btts": 63,
-  "ou25": 60,
+  "btts": 65,
+  "ou25": 64,
   "goalModel": {
    "h": 47.5,
    "d": 24.6,
@@ -14150,14 +14192,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sat 7 Nov 17:08",
-   "h": 2.15,
-   "d": 3.7,
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
+   "h": 2.1,
+   "d": 3.9,
    "a": 3.1,
-   "bttsY": 1.5,
-   "bttsN": 2.5,
-   "o25": 1.57,
-   "u25": 2.38
+   "bttsY": 1.44,
+   "bttsN": 2.63,
+   "o25": 1.5,
+   "u25": 2.63
   },
   "inputs": {
    "gfH": 1.231,
@@ -14172,16 +14214,16 @@
   "league": "Bundesliga",
   "fixture": "Freiburg vs Union Berlin",
   "kickoff": "2026-11-08T16:30:00+00:00",
-  "loggedAt": "2026-11-07T17:09:31.500Z",
+  "loggedAt": "2026-11-08T13:11:35.264Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sat 7 Nov 17:08 build 2026-11-07T17:09",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
   "market": {
-   "h": 64,
+   "h": 66,
    "d": 21,
-   "a": 15
+   "a": 13
   },
-  "btts": 53,
-  "ou25": 59,
+  "btts": 52,
+  "ou25": 57,
   "goalModel": {
    "h": 60.1,
    "d": 24.5,
@@ -14197,14 +14239,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sat 7 Nov 17:08",
-   "h": 1.48,
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
+   "h": 1.44,
    "d": 4.5,
-   "a": 6.25,
-   "bttsY": 1.75,
-   "bttsN": 2,
-   "o25": 1.62,
-   "u25": 2.3
+   "a": 7,
+   "bttsY": 1.8,
+   "bttsN": 1.95,
+   "o25": 1.67,
+   "u25": 2.2
   },
   "inputs": {
    "gfH": 2,
@@ -14219,16 +14261,16 @@
   "league": "Serie A",
   "fixture": "Inter Milan vs Como",
   "kickoff": "2026-11-08T17:00:00+00:00",
-  "loggedAt": "2026-11-07T17:09:31.500Z",
+  "loggedAt": "2026-11-08T13:11:35.264Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sat 7 Nov 17:08 build 2026-11-07T17:09",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
   "market": {
-   "h": 51,
-   "d": 22,
-   "a": 27
+   "h": 47,
+   "d": 23,
+   "a": 30
   },
-  "btts": 65,
-  "ou25": 64,
+  "btts": 61,
+  "ou25": 62,
   "goalModel": {
    "h": 55.3,
    "d": 24.5,
@@ -14244,14 +14286,14 @@
   "blend": null,
   "modelBasis": "independent",
   "prices": {
-   "source": "kickoff.co.uk match page (Bet365), Sat 7 Nov 17:08",
-   "h": 1.85,
-   "d": 4.33,
-   "a": 3.4,
-   "bttsY": 1.44,
-   "bttsN": 2.63,
-   "o25": 1.5,
-   "u25": 2.63
+   "source": "kickoff.co.uk match page (Bet365), Sun 8 Nov 13:11",
+   "h": 2,
+   "d": 4.1,
+   "a": 3.2,
+   "bttsY": 1.53,
+   "bttsN": 2.38,
+   "o25": 1.53,
+   "u25": 2.5
   },
   "inputs": {
    "gfH": 2.095,
@@ -14266,9 +14308,9 @@
   "league": "Ligue 1",
   "fixture": "Stade Rennais vs Lille",
   "kickoff": "2026-11-08T14:00:00+00:00",
-  "loggedAt": "2026-11-07T17:09:31.500Z",
+  "loggedAt": "2026-11-08T13:11:35.264Z",
   "modelVersion": "independent-v4.2-2026-10-23",
-  "seedVersion": "2026-11-06-weekly@Sat 7 Nov 17:08 build 2026-11-07T17:09",
+  "seedVersion": "2026-11-06-weekly@Sun 8 Nov 13:11 build 2026-11-08T13:11",
   "market": {
    "h": null,
    "d": null,
