@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-11-08T15:23:27.509Z",
+ "generatedAt": "2026-11-10T17:10:06.409Z",
  "fixtures": 157,
- "graded": 12400,
+ "graded": 13326,
  "summary": {
   "fc": {
-   "n": 2749,
-   "logloss": 0.5437,
+   "n": 2999,
+   "logloss": 0.5457,
    "modelAvg": 0.36,
-   "actualRate": 0.341,
+   "actualRate": 0.343,
    "unibetAvg": 0.568,
    "value5": {
     "bets": 10,
@@ -21,45 +21,45 @@
    }
   },
   "sh": {
-   "n": 3283,
-   "logloss": 0.5196,
+   "n": 3548,
+   "logloss": 0.5172,
    "modelAvg": 0.32,
-   "actualRate": 0.324,
-   "unibetAvg": 0.484,
+   "actualRate": 0.323,
+   "unibetAvg": 0.485,
    "value5": {
-    "bets": 122,
-    "profit": -21.28,
-    "roi": -0.174
+    "bets": 129,
+    "profit": -26.45,
+    "roi": -0.205
    },
    "value10": {
-    "bets": 82,
-    "profit": -15.89,
-    "roi": -0.194
+    "bets": 86,
+    "profit": -19.89,
+    "roi": -0.231
    }
   },
   "sot": {
-   "n": 3085,
-   "logloss": 0.4866,
-   "modelAvg": 0.233,
+   "n": 3276,
+   "logloss": 0.4825,
+   "modelAvg": 0.232,
    "actualRate": 0.235,
-   "unibetAvg": 0.345,
+   "unibetAvg": 0.344,
    "value5": {
-    "bets": 154,
-    "profit": -30.92,
-    "roi": -0.201
+    "bets": 161,
+    "profit": -27.92,
+    "roi": -0.173
    },
    "value10": {
-    "bets": 109,
-    "profit": -27.62,
-    "roi": -0.253
+    "bets": 116,
+    "profit": -24.62,
+    "roi": -0.212
    }
   },
   "yc": {
-   "n": 2167,
-   "logloss": 0.4161,
-   "modelAvg": 0.139,
-   "actualRate": 0.151,
-   "unibetAvg": 0.261,
+   "n": 2289,
+   "logloss": 0.4213,
+   "modelAvg": 0.14,
+   "actualRate": 0.155,
+   "unibetAvg": 0.262,
    "value5": {
     "bets": 7,
     "profit": 7.7,
@@ -72,9 +72,9 @@
    }
   },
   "rc": {
-   "n": 1116,
-   "logloss": 0.0462,
-   "modelAvg": 0.007,
+   "n": 1214,
+   "logloss": 0.0473,
+   "modelAvg": 0.006,
    "actualRate": 0.008,
    "unibetAvg": 0.031,
    "value5": {
@@ -89,54 +89,54 @@
    }
   },
   "all": {
-   "n": 12400,
-   "logloss": 0.456,
-   "modelAvg": 0.247,
-   "actualRate": 0.247,
-   "unibetAvg": 0.388,
+   "n": 13326,
+   "logloss": 0.4558,
+   "modelAvg": 0.248,
+   "actualRate": 0.248,
+   "unibetAvg": 0.389,
    "value5": {
-    "bets": 293,
-    "profit": -40.61,
+    "bets": 307,
+    "profit": -42.78,
     "roi": -0.139
    },
    "value10": {
-    "bets": 195,
-    "profit": -37.21,
-    "roi": -0.191
+    "bets": 206,
+    "profit": -38.21,
+    "roi": -0.185
    }
   },
   "confirmed": {
-   "n": 9060,
-   "logloss": 0.4549,
-   "modelAvg": 0.24,
-   "actualRate": 0.25,
-   "unibetAvg": 0.38,
+   "n": 9711,
+   "logloss": 0.4553,
+   "modelAvg": 0.241,
+   "actualRate": 0.251,
+   "unibetAvg": 0.381,
    "value5": {
-    "bets": 245,
-    "profit": -30.47,
-    "roi": -0.124
+    "bets": 256,
+    "profit": -31.47,
+    "roi": -0.123
    },
    "value10": {
-    "bets": 167,
-    "profit": -29.23,
-    "roi": -0.175
+    "bets": 176,
+    "profit": -28.23,
+    "roi": -0.16
    }
   },
   "preLineups": {
-   "n": 3340,
-   "logloss": 0.4591,
+   "n": 3615,
+   "logloss": 0.4572,
    "modelAvg": 0.267,
-   "actualRate": 0.24,
-   "unibetAvg": 0.41,
+   "actualRate": 0.241,
+   "unibetAvg": 0.412,
    "value5": {
-    "bets": 48,
-    "profit": -10.14,
-    "roi": -0.211
+    "bets": 51,
+    "profit": -11.31,
+    "roi": -0.222
    },
    "value10": {
-    "bets": 28,
-    "profit": -7.98,
-    "roi": -0.285
+    "bets": 30,
+    "profit": -9.98,
+    "roi": -0.333
    }
   }
  }

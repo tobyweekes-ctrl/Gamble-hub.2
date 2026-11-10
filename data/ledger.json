@@ -14022,7 +14022,10 @@
    "gfA": 1.564,
    "gaA": 1.175
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261108-crys-live",
@@ -14069,7 +14072,10 @@
    "gfA": 1.286,
    "gaA": 1.175
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 3
+  }
  },
  {
   "id": "pl-20261108-ipsw-bour",
@@ -14116,7 +14122,10 @@
    "gfA": 1.453,
    "gaA": 1.397
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 2
+  }
  },
  {
   "id": "pl-20261108-sund-chel",
@@ -14163,7 +14172,10 @@
    "gfA": 1.731,
    "gaA": 1.508
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 0
+  }
  },
  {
   "id": "pl-20261108-manc-asto",
@@ -14210,7 +14222,10 @@
    "gfA": 1.231,
    "gaA": 1.397
   },
-  "result": null
+  "result": {
+   "home": 4,
+   "away": 4
+  }
  },
  {
   "id": "bl-20261108-frei-unio",
@@ -14257,7 +14272,10 @@
    "gfA": 1.313,
    "gaA": 2.063
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "sa-20261108-inte-como",
@@ -14304,7 +14322,10 @@
    "gfA": 1.695,
    "gaA": 1.195
   },
-  "result": null
+  "result": {
+   "home": 2,
+   "away": 0
+  }
  },
  {
   "id": "l1-20261108-stad-lill",
@@ -14342,6 +14363,9 @@
    "gfA": 1.426,
    "gaA": 1.093
   },
-  "result": null
+  "result": {
+   "home": 1,
+   "away": 2
+  }
  }
 ]

@@ -2514,5 +2514,99 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261108-brig-bren": {
+  "kickoff": "2026-11-08T14:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261108-crys-live": {
+  "kickoff": "2026-11-08T14:00:00+00:00",
+  "score": [
+   1,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261108-ipsw-bour": {
+  "kickoff": "2026-11-08T14:00:00+00:00",
+  "score": [
+   1,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261108-sund-chel": {
+  "kickoff": "2026-11-08T14:00:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261108-stad-lill": {
+  "kickoff": "2026-11-08T14:00:00+00:00",
+  "score": [
+   1,
+   2
+  ],
+  "sources": [
+   "ESPN"
+  ],
+  "note": "single source"
+ },
+ "pl-20261108-manc-asto": {
+  "kickoff": "2026-11-08T16:30:00+00:00",
+  "score": [
+   4,
+   4
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261108-frei-unio": {
+  "kickoff": "2026-11-08T16:30:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261108-inte-como": {
+  "kickoff": "2026-11-08T17:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures"
+  ],
+  "note": "single source"
  }
 }

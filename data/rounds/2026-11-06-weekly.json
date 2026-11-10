@@ -1,6 +1,6 @@
 {
  "seedVersion": "2026-11-06-weekly",
- "dataUpdated": "Sun 8 Nov 15:23",
+ "dataUpdated": "Tue 10 Nov 17:09",
  "notes": [
   "Fri 6 Nov 08:49 to Fri 13 Nov 08:49. Premier League, Championship and Champions League in full; Bundesliga, Serie A and Ligue 1 games with a top-4 side.",
   "Fixtures and tables: BBC Sport. Prices: Bet365 via kickoff.co.uk match pages. Predictions: our own model (tools/model/).",
@@ -41649,5 +41649,5 @@
    }
   }
  ],
- "updateTag": "Sun 8 Nov 15:23"
+ "updateTag": "Tue 10 Nov 17:09"
 }
