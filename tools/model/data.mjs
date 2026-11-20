@@ -31,7 +31,7 @@ export const TEAM_ALIASES = {
   'Norwich City': 'Norwich', 'Preston North End': 'Preston', 'Queens Park Rangers': 'QPR', 'Stoke City': 'Stoke',
   'Swansea City': 'Swansea', 'West Bromwich Albion': 'West Brom', 'West Ham United': 'West Ham',
   'Wolverhampton Wanderers': 'Wolves', 'Sheffield United': 'Sheffield United',
-  'Borussia Dortmund': 'Dortmund', 'Eintracht Frankfurt': 'Ein Frankfurt', 'Köln': 'FC Koln', 'Hamburger SV': 'Hamburg',
+  'Borussia Dortmund': 'Dortmund', 'Eintracht Frankfurt': 'Ein Frankfurt', 'Köln': 'FC Koln', 'FC Cologne': 'FC Koln', 'Borussia Mönchengladbach': "M'gladbach", 'Hamburger SV': 'Hamburg',
   'Bayer 04 Leverkusen': 'Leverkusen', "Borussia M'gladbach": "M'gladbach", 'Mainz 05': 'Mainz',
   'Inter Milan': 'Inter', 'AC Milan': 'Milan', 'Paris Saint-Germain': 'Paris SG', 'Olympique Lyonnais': 'Lyon', 'Stade Rennais': 'Rennes',
 };

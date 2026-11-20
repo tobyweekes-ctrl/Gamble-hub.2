@@ -223,6 +223,18 @@ League Cup (Carabao Cup) ties are now on the site, predicted by the cross-league
 - **Fix:** "Stade Rennais" (ESPN spelling) is now mapped to Rennes in `TEAM_ALIASES`.
 - **Gaps:** no Bet365 price yet for Auxerre v PSG or Rennes v Lille.
 
+## Weekly build 20 Nov 2026 (round 2026-11-20-weekly)
+
+- **International break:** no games from 9 to 19 Nov. The 13 Nov build had no fixtures, so it was not published.
+- **Live record:** unchanged at 209 graded games. Favourite won 56%.
+  - On the 144 games with Bet365 prices logged, Bet365 was more accurate: Brier 0.543 v 0.554.
+- **Player props (13,326 graded):** value picks on confirmed starters, 256 bets, -12% per bet. They still lose.
+- **This round:** 101 fixtures, Fri 20 to Thu 26 Nov.
+  - Domestic: Premier League 10, Championship 24, Bundesliga 5, Serie A 4, Ligue 1 4.
+  - European: Champions League, Europa League and Conference League, 54 ties.
+- **Gaps:** no Bet365 price yet for 12 Championship games, Bayern v Köln, Lille v Lyon or PSG v Angers.
+- **Fix:** "FC Cologne" and "Borussia Mönchengladbach" (ESPN spellings) are now mapped in `TEAM_ALIASES`.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.
