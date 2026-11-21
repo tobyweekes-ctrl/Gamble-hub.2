@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T19:10:04.371Z",
+ "generatedAt": "2026-11-21T11:28:54.922Z",
  "fixtures": 232,
  "graded": 13326,
  "summary": {
@@ -56,7 +56,7 @@
   },
   "yc": {
    "n": 2289,
-   "logloss": 0.4213,
+   "logloss": 0.4219,
    "modelAvg": 0.14,
    "actualRate": 0.155,
    "unibetAvg": 0.262,
@@ -90,7 +90,7 @@
   },
   "all": {
    "n": 13326,
-   "logloss": 0.4558,
+   "logloss": 0.4559,
    "modelAvg": 0.248,
    "actualRate": 0.248,
    "unibetAvg": 0.389,
@@ -107,7 +107,7 @@
   },
   "confirmed": {
    "n": 9711,
-   "logloss": 0.4553,
+   "logloss": 0.4554,
    "modelAvg": 0.241,
    "actualRate": 0.251,
    "unibetAvg": 0.381,
