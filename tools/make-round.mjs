@@ -42,7 +42,7 @@ for (const league of LEAGUES) {
   // 31 Oct 2026). Names are put in the BBC table's spelling where one matches.
   // Strict: every word of the shorter name appears in the longer one ("Bayern Munich"
   // = "FC Bayern Munich"), so "Borussia Mönchengladbach" never becomes "Borussia Dortmund".
-  const w = n => n.replace(/^Internazionale$/, 'Inter Milan').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter(x => x.length > 1 && !['fc', 'afc'].includes(x));
+  const w = n => n.replace(/^Internazionale$/, 'Inter Milan').replace(/^FC Cologne$/, 'Köln').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().split(/[^a-z0-9]+/).filter(x => x.length > 1 && !['fc', 'afc'].includes(x));
   const same = (a, b) => { const A = w(a), B = w(b), [s1, l1] = A.length <= B.length ? [A, B] : [B, A]; return s1.length > 0 && s1.every(x => l1.includes(x)); };
   const tableName = n => (tables[league] && Object.keys(tables[league].teams).find(k => same(k, n))) || n;
   for (let t = from; t <= to; t += 864e5) {

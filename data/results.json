@@ -2619,16 +2619,5 @@
    "bbc.co.uk scores-fixtures"
   ],
   "note": "single source"
- },
- "bl-20261120-baye-fcco": {
-  "kickoff": "2026-11-20T19:30:00+00:00",
-  "score": [
-   1,
-   1
-  ],
-  "sources": [
-   "ESPN"
-  ],
-  "note": "single source"
  }
 }
