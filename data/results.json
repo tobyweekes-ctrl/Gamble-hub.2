@@ -2619,5 +2619,101 @@
    "bbc.co.uk scores-fixtures"
   ],
   "note": "single source"
+ },
+ "pl-20261121-manc-fulh": {
+  "kickoff": "2026-11-21T12:30:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261121-mill-quee": {
+  "kickoff": "2026-11-21T12:30:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261121-norw-card": {
+  "kickoff": "2026-11-21T12:30:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261121-sout-derb": {
+  "kickoff": "2026-11-21T12:30:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261121-lazi-lecc": {
+  "kickoff": "2026-11-21T14:00:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261121-unio-rble": {
+  "kickoff": "2026-11-21T14:30:00+00:00",
+  "score": [
+   1,
+   5
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261121-boru-boru": {
+  "kickoff": "2026-11-21T14:30:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261121-elve-frei": {
+  "kickoff": "2026-11-21T14:30:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
