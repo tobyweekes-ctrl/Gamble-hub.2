@@ -2919,5 +2919,17 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "ch-20261122-burn-blac": {
+  "kickoff": "2026-11-22T12:00:00+00:00",
+  "score": [
+   2,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
