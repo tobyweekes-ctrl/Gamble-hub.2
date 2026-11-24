@@ -2931,5 +2931,88 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "pl-20261122-hull-brig": {
+  "kickoff": "2026-11-22T14:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "l1-20261122-pari-ange": {
+  "kickoff": "2026-11-22T14:00:00+00:00",
+  "score": [
+   4,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261122-live-manc": {
+  "kickoff": "2026-11-22T16:30:00+00:00",
+  "score": [
+   4,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261122-acmi-fros": {
+  "kickoff": "2026-11-22T17:00:00+00:00",
+  "score": [
+   5,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "sa-20261122-atal-inte": {
+  "kickoff": "2026-11-22T19:45:00+00:00",
+  "score": [
+   4,
+   4
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures"
+  ],
+  "note": "single source"
+ },
+ "l1-20261122-mars-lema": {
+  "kickoff": "2026-11-22T19:45:00+00:00",
+  "score": [
+   2,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261123-bren-ever": {
+  "kickoff": "2026-11-23T20:00:00+00:00",
+  "score": [
+   4,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
