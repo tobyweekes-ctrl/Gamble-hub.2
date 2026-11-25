@@ -3014,5 +3014,209 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "ch-20261124-bris-wrex": {
+  "kickoff": "2026-11-24T19:45:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261124-card-pres": {
+  "kickoff": "2026-11-24T19:45:00+00:00",
+  "score": [
+   0,
+   4
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261124-char-linc": {
+  "kickoff": "2026-11-24T19:45:00+00:00",
+  "score": [
+   4,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261124-midd-swan": {
+  "kickoff": "2026-11-24T19:45:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261124-norw-quee": {
+  "kickoff": "2026-11-24T19:45:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261124-port-west": {
+  "kickoff": "2026-11-24T19:45:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261124-shef-sout": {
+  "kickoff": "2026-11-24T19:45:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261124-wolv-derb": {
+  "kickoff": "2026-11-24T20:00:00+00:00",
+  "score": [
+   3,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-bodg-lask": {
+  "kickoff": "2026-11-24T17:45:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-gala-asto": {
+  "kickoff": "2026-11-24T17:45:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-real-psv": {
+  "kickoff": "2026-11-24T20:00:00+00:00",
+  "score": [
+   5,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-manc-napo": {
+  "kickoff": "2026-11-24T20:00:00+00:00",
+  "score": [
+   2,
+   2
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-arse-bdor": {
+  "kickoff": "2026-11-24T20:00:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-feye-port": {
+  "kickoff": "2026-11-24T20:00:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-leip-lens": {
+  "kickoff": "2026-11-24T20:00:00+00:00",
+  "score": [
+   3,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-sbra-real": {
+  "kickoff": "2026-11-24T20:00:00+00:00",
+  "score": [
+   0,
+   2
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261124-como-aeka": {
+  "kickoff": "2026-11-24T20:00:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
