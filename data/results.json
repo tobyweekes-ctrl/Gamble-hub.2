@@ -3218,5 +3218,160 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "ch-20261125-bolt-west": {
+  "kickoff": "2026-11-25T19:45:00+00:00",
+  "score": [
+   1,
+   3
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261125-burn-birm": {
+  "kickoff": "2026-11-25T19:45:00+00:00",
+  "score": [
+   0,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261125-watf-blac": {
+  "kickoff": "2026-11-25T19:45:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261125-stok-mill": {
+  "kickoff": "2026-11-25T20:00:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261125-slav-vill": {
+  "kickoff": "2026-11-25T17:45:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261125-saba-barc": {
+  "kickoff": "2026-11-25T17:45:00+00:00",
+  "score": [
+   1,
+   4
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261125-pari-roma": {
+  "kickoff": "2026-11-25T20:00:00+00:00",
+  "score": [
+   2,
+   2
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261125-inte-stut": {
+  "kickoff": "2026-11-25T20:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261125-atle-viki": {
+  "kickoff": "2026-11-25T20:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261125-spor-manu": {
+  "kickoff": "2026-11-25T20:00:00+00:00",
+  "score": [
+   2,
+   2
+  ],
+  "sources": [
+   "match.uefa.com"
+  ],
+  "note": "single source"
+ },
+ "ucl-20261125-club-live": {
+  "kickoff": "2026-11-25T20:00:00+00:00",
+  "score": [
+   0,
+   3
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261125-lill-baye": {
+  "kickoff": "2026-11-25T20:00:00+00:00",
+  "score": [
+   2,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ucl-20261125-shak-fene": {
+  "kickoff": "2026-11-25T20:00:00+00:00",
+  "score": [
+   0,
+   1
+  ],
+  "sources": [
+   "match.uefa.com",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
