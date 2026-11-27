@@ -235,6 +235,16 @@ League Cup (Carabao Cup) ties are now on the site, predicted by the cross-league
 - **Gaps:** no Bet365 price yet for 12 Championship games, Bayern v Köln, Lille v Lyon or PSG v Angers.
 - **Fix:** "FC Cologne" and "Borussia Mönchengladbach" (ESPN spellings) are now mapped in `TEAM_ALIASES`.
 
+## Weekly build 27 Nov 2026 (round 2026-11-27-weekly)
+
+- **Results graded:** 35, covering Thursday's Europa and Conference League games and the weekend's late games.
+- **Live record:** 309 graded games. Favourite won 56%; Brier 0.570.
+  - On the 204 games with Bet365 prices logged, Bet365 was more accurate: Brier 0.550 v 0.566.
+- **Player props (19,644 graded):** value picks on confirmed starters, 355 bets, -79.8 units (-22.5%).
+- **This round:** 42 fixtures (Premier League 20, Championship 12, Bundesliga 3, Serie A 4, Ligue 1 3). No European ties this week.
+- **Gap:** no Bet365 price yet for Brest v Paris FC.
+- **Fix:** "Hamburg SV" (ESPN spelling) is now mapped to Hamburg.
+
 ## Pending
 
 - **Round 2026-10-21-weekly:** 36 fixtures, Thu 22 to Wed 28 Oct. Grade them at the next weekly run.
