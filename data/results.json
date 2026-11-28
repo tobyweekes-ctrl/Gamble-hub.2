@@ -3805,5 +3805,41 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "l1-20261127-bres-pari": {
+  "kickoff": "2026-11-27T19:45:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "pl-20261127-nott-chel": {
+  "kickoff": "2026-11-27T20:00:00+00:00",
+  "score": [
+   3,
+   2
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261127-sout-midd": {
+  "kickoff": "2026-11-27T20:00:00+00:00",
+  "score": [
+   2,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
