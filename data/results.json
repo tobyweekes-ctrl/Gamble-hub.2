@@ -3841,5 +3841,53 @@
    "ESPN"
   ],
   "note": ""
+ },
+ "ch-20261128-blac-char": {
+  "kickoff": "2026-11-28T12:30:00+00:00",
+  "score": [
+   1,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261128-linc-wolv": {
+  "kickoff": "2026-11-28T12:30:00+00:00",
+  "score": [
+   0,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "ch-20261128-pres-norw": {
+  "kickoff": "2026-11-28T12:30:00+00:00",
+  "score": [
+   1,
+   1
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
+ },
+ "bl-20261128-hamb-baye": {
+  "kickoff": "2026-11-28T14:30:00+00:00",
+  "score": [
+   0,
+   0
+  ],
+  "sources": [
+   "bbc.co.uk scores-fixtures",
+   "ESPN"
+  ],
+  "note": ""
  }
 }
